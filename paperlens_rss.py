@@ -50,9 +50,73 @@ def parse_entry(source: str, entry: feedparser.FeedParserDict, doi_only: bool = 
         return parse_iop_entry(entry, doi_only)
     elif source == "Copernicus":
         return parse_copernicus_entry(entry, doi_only)
+    elif source == "Elsevier":
+        return parse_elsevier_entry(entry)
     else:
         raise ValueError(f"Unsupported source: {source}")
 
+def parse_elsevier_entry(entry: feedparser.FeedParserDict) -> Dict[str, str]:
+    """Parse an Elsevier RSS entry."""
+    url = entry.get('id')
+    doi, abstract = get_elsevier_abstract(url)
+    return {
+        'doi': doi,
+        'title': entry.get('title', 'Title not available'),
+        'abstract': abstract,
+        'authors': re.search(r'Author\(s\):\s*(.*?)</p>', entry.summary).group(1).replace(', ', ';'),
+        'journal': re.search(r'<b>Source:</b>\s*(.*?),\s*Volume', entry.summary).group(1),
+    }
+
+def get_elsevier_abstract(url: str) -> str:
+    """Attempt to fetch and extract the full text of an article."""
+    try:
+        command = [
+            "./curl_chrome116",  # from https://github.com/lwthiker/curl-impersonate
+            url,
+            "-H", "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+            "-H", "accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+            "-H", "cache-control: max-age=0",
+            "-H", "priority: u=0, i",
+            "-H", 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Microsoft Edge";v="128"',
+            "-H", 'sec-ch-ua-arch: "arm"',
+            "-H", 'sec-ch-ua-bitness: "64"',
+            "-H", 'sec-ch-ua-full-version: "128.0.2739.42"',
+            "-H", 'sec-ch-ua-full-version-list: "Chromium";v="128.0.6613.85", "Not;A=Brand";v="24.0.0.0", "Microsoft Edge";v="128.0.2739.42"',
+            "-H", 'sec-ch-ua-mobile: ?0',
+            "-H", 'sec-ch-ua-model: ""',
+            "-H", 'sec-ch-ua-platform: "macOS"',
+            "-H", 'sec-ch-ua-platform-version: "14.6.1"',
+            "-H", 'sec-fetch-dest: document',
+            "-H", 'sec-fetch-mode: navigate',
+            "-H", 'sec-fetch-site: none',
+            "-H", 'sec-fetch-user: ?1',
+            "-H", 'upgrade-insecure-requests: 1',
+            "-H", 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0'
+        ]
+        # 使用 subprocess 来执行命令并捕获输出
+        try:
+            result = subprocess.run(command, capture_output=True, text=True, check=True)
+            response = result.stdout
+        except subprocess.CalledProcessError as e:
+            print("Error executing command:", e)
+
+        soup = BeautifulSoup(response, 'html.parser')
+
+        doi = soup.find('a', class_='anchor doi anchor-primary').get('href').split('doi.org/')[-1]
+
+        highlights = soup.find('div', class_='abstract author-highlights')
+        highlights = highlights.find_all('li')
+        highlights = " ".join([li.get_text(strip=True) for li in highlights])
+
+        abstract = soup.find('div', class_='abstract author').text.replace('Abstract', '')
+
+        abstract = highlights + ' \n ' + abstract
+        abstract = abstract.replace('\u2009',' ').replace('\xa0',' ').replace('\u200b','')  # 处理特殊空格
+        return doi, abstract
+    except Exception as e:
+        print(f"Error fetching full text from {url}: {str(e)}")
+        return '', ''
+        
 def parse_acs_entry(entry: feedparser.FeedParserDict, doi_only: bool = False) -> Dict[str, str]:
     """Parse an ACS RSS entry."""
     doi = entry.get('id', 'DOI not available').split('doi.org/')[-1]
@@ -263,7 +327,10 @@ for feed_url, source in RSS_FEEDS.items():
             parsed_entry = parse_entry(source, entry, doi_only=True)
             if parsed_entry['doi'] not in existing_dois:
                 # If DOI is new, then get full entry details
-                full_entry = parse_entry(source, entry, doi_only=False)
+                if len(parsed_entry) == 1:
+                    full_entry = parse_entry(source, entry, doi_only=False)
+                else:
+                    full_entry = parsed_entry
                 analysis = analyze_relevance(full_entry['title'], full_entry['abstract'])
                 full_entry.update(analysis)  # combine the analysis into the full entry
                 relevant_entries.append(full_entry)
