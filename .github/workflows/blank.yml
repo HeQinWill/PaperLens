@@ -48,13 +48,13 @@ jobs:
       
       - name: Run Python script
         env:
-          KEY_GENAI: ${{ secrets.KEY_GENAI }}  # set up your GENAI_TOKEN from gemini
+          KEY_GENAI: ${{ secrets.KEY_GENAI }}  # set up your GENAI token from gemini
         run: |
           python paperlens_rss.py  # Replace this with the actual path to your script
 
       - name: Commit and Push changes
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # set up your GITHUB_TOKEN
+          GITHUB_TOKEN: ${{ secrets.KEY_GITHUB }}  # set up your GITHUB token
         run: |
             git config --global user.name 'github-actions[bot]'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
