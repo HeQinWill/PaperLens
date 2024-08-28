@@ -80,7 +80,25 @@ def get_acs_abstract(doi: str) -> str:
         command = [
             "./curl_chrome116",  # from https://github.com/lwthiker/curl-impersonate
             url,
-            "-H", "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+            "-H", "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+            "-H", "accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+            "-H", "cache-control: max-age=0",
+            "-H", "priority: u=0, i",
+            "-H", 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Microsoft Edge";v="128"',
+            "-H", 'sec-ch-ua-arch: "arm"',
+            "-H", 'sec-ch-ua-bitness: "64"',
+            "-H", 'sec-ch-ua-full-version: "128.0.2739.42"',
+            "-H", 'sec-ch-ua-full-version-list: "Chromium";v="128.0.6613.85", "Not;A=Brand";v="24.0.0.0", "Microsoft Edge";v="128.0.2739.42"',
+            "-H", 'sec-ch-ua-mobile: ?0',
+            "-H", 'sec-ch-ua-model: ""',
+            "-H", 'sec-ch-ua-platform: "macOS"',
+            "-H", 'sec-ch-ua-platform-version: "14.6.1"',
+            "-H", 'sec-fetch-dest: document',
+            "-H", 'sec-fetch-mode: navigate',
+            "-H", 'sec-fetch-site: none',
+            "-H", 'sec-fetch-user: ?1',
+            "-H", 'upgrade-insecure-requests: 1',
+            "-H", 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0'
         ]
         # 使用 subprocess 来执行命令并捕获输出
         try:
