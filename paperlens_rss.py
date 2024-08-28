@@ -225,7 +225,7 @@ def analyze_relevance(title: str, abstract: str) -> Tuple[bool, str]:
         }
 
     model = genai.GenerativeModel(
-            model_name="gemini-1.5-pro-exp-0827",  # gemini-1.5-flash
+            model_name="gemini-1.5-flash",
             generation_config=generation_config,
             system_instruction="You are an expert in literature analysis, skilled in qualitative research methods, literature retrieval, and critical thinking. You excel at interpreting complex texts, identifying key ideas and methodologies, and conducting comprehensive literature reviews to identify research trends and gaps.",
             )
