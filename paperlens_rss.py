@@ -22,23 +22,23 @@ KEY_GENAI = os.getenv('KEY_GENAI')
 genai.configure(api_key=KEY_GENAI, transport='rest')
 
 RSS_FEEDS: Dict[str, str] = {
-    "https://iopscience.iop.org/journal/rss/1748-9326": "IOP",  # ERL
-    "https://acp.copernicus.org/xml/rss2_0.xml": "Copernicus",
-    "https://amt.copernicus.org/xml/rss2_0.xml": "Copernicus",
-    "https://essd.copernicus.org/xml/rss2_0.xml": "Copernicus",
-    "https://gmd.copernicus.org/xml/rss2_0.xml": "Copernicus",
+    # "https://iopscience.iop.org/journal/rss/1748-9326": "IOP",  # ERL
+    # "https://acp.copernicus.org/xml/rss2_0.xml": "Copernicus",
+    # "https://amt.copernicus.org/xml/rss2_0.xml": "Copernicus",
+    # "https://essd.copernicus.org/xml/rss2_0.xml": "Copernicus",
+    # "https://gmd.copernicus.org/xml/rss2_0.xml": "Copernicus",
     "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=esthag": "ACS",  # ES&T
-    "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=estlcu": "ACS",  # ES&T Letters
-    "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=aeacd5": "ACS",  # ES&T Air
-    "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=ehnea2": "ACS",  # ES&T EH
-    "https://agupubs.onlinelibrary.wiley.com/feed/2576604x/most-recent": "AGU",  # Advances
-    "https://agupubs.onlinelibrary.wiley.com/feed/19448007/most-recent": "AGU",  # GRL
-    "https://agupubs.onlinelibrary.wiley.com/feed/21698996/most-recent": "AGU",  # JGR:A
-    "https://agupubs.onlinelibrary.wiley.com/feed/23284277/most-recent": "AGU",  # EF
-    "https://agupubs.onlinelibrary.wiley.com/feed/24711403/most-recent": "AGU",  # GeoH
-    "https://www.nature.com/nature.rss": "Nature",  # Nature
-    "https://www.nature.com/ngeo.rss": "Nature",  # NatureGeo
-    "https://www.nature.com/ncomms.rss": "Nature",  # NatureComms
+    # "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=estlcu": "ACS",  # ES&T Letters
+    # "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=aeacd5": "ACS",  # ES&T Air
+    # "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=ehnea2": "ACS",  # ES&T EH
+    # "https://agupubs.onlinelibrary.wiley.com/feed/2576604x/most-recent": "AGU",  # Advances
+    # "https://agupubs.onlinelibrary.wiley.com/feed/19448007/most-recent": "AGU",  # GRL
+    # "https://agupubs.onlinelibrary.wiley.com/feed/21698996/most-recent": "AGU",  # JGR:A
+    # "https://agupubs.onlinelibrary.wiley.com/feed/23284277/most-recent": "AGU",  # EF
+    # "https://agupubs.onlinelibrary.wiley.com/feed/24711403/most-recent": "AGU",  # GeoH
+    # "https://www.nature.com/nature.rss": "Nature",  # Nature
+    # "https://www.nature.com/ngeo.rss": "Nature",  # NatureGeo
+    # "https://www.nature.com/ncomms.rss": "Nature",  # NatureComms
 }
 
 def fetch_rss_feed(url: str) -> feedparser.FeedParserDict:
