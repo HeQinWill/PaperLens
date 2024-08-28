@@ -23,10 +23,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: chmod +X curl_chrome116
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -40,7 +36,12 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libnss3 nss-plugin-pem ca-certificates wget tar
-  
+      
+      - name: Download and extract curl-impersonate
+        run: |
+          wget https://github.com/lwthiker/curl-impersonate/releases/download/v0.6.1/curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz
+          tar -zxvf curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz
+          
       - name: Run Python script
         env:
           KEY_GENAI: ${{ secrets.KEY_GENAI }}  # set up your GENAI token from gemini
