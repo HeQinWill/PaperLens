@@ -1,4 +1,3 @@
-#%%
 import feedparser
 import requests
 from bs4 import BeautifulSoup
@@ -13,61 +12,59 @@ import html
 import subprocess
 import shutil
 import os
-
-
-
 from typing import Dict, List, Tuple
 import google.generativeai as genai
 KEY_GENAI = os.getenv('KEY_GENAI')
 genai.configure(api_key=KEY_GENAI, transport='rest')
 
 RSS_FEEDS: Dict[str, str] = {
-    # "https://iopscience.iop.org/journal/rss/1748-9326": "IOP",  # ERL
-    # "https://acp.copernicus.org/xml/rss2_0.xml": "Copernicus",
-    # "https://amt.copernicus.org/xml/rss2_0.xml": "Copernicus",
-    # "https://essd.copernicus.org/xml/rss2_0.xml": "Copernicus",
-    # "https://gmd.copernicus.org/xml/rss2_0.xml": "Copernicus",
+    "https://iopscience.iop.org/journal/rss/1748-9326": "IOP",  # ERL
+    "https://acp.copernicus.org/xml/rss2_0.xml": "Copernicus",
+    "https://amt.copernicus.org/xml/rss2_0.xml": "Copernicus",
+    "https://essd.copernicus.org/xml/rss2_0.xml": "Copernicus",
+    "https://gmd.copernicus.org/xml/rss2_0.xml": "Copernicus",
     "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=esthag": "ACS",  # ES&T
-    # "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=estlcu": "ACS",  # ES&T Letters
-    # "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=aeacd5": "ACS",  # ES&T Air
-    # "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=ehnea2": "ACS",  # ES&T EH
-    # "https://agupubs.onlinelibrary.wiley.com/feed/2576604x/most-recent": "AGU",  # Advances
-    # "https://agupubs.onlinelibrary.wiley.com/feed/19448007/most-recent": "AGU",  # GRL
-    # "https://agupubs.onlinelibrary.wiley.com/feed/21698996/most-recent": "AGU",  # JGR:A
-    # "https://agupubs.onlinelibrary.wiley.com/feed/23284277/most-recent": "AGU",  # EF
-    # "https://agupubs.onlinelibrary.wiley.com/feed/24711403/most-recent": "AGU",  # GeoH
-    # "https://www.nature.com/nature.rss": "Nature",  # Nature
-    # "https://www.nature.com/ngeo.rss": "Nature",  # NatureGeo
-    # "https://www.nature.com/ncomms.rss": "Nature",  # NatureComms
+    "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=estlcu": "ACS",  # ES&T Letters
+    "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=aeacd5": "ACS",  # ES&T Air
+    "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=ehnea2": "ACS",  # ES&T EH
+    "https://agupubs.onlinelibrary.wiley.com/feed/2576604x/most-recent": "AGU",  # Advances
+    "https://agupubs.onlinelibrary.wiley.com/feed/19448007/most-recent": "AGU",  # GRL
+    "https://agupubs.onlinelibrary.wiley.com/feed/21698996/most-recent": "AGU",  # JGR:A
+    "https://agupubs.onlinelibrary.wiley.com/feed/23284277/most-recent": "AGU",  # EF
+    "https://agupubs.onlinelibrary.wiley.com/feed/24711403/most-recent": "AGU",  # GeoH
+    "https://www.nature.com/nature.rss": "Nature",  # Nature
+    "https://www.nature.com/ngeo.rss": "Nature",  # NatureGeo
+    "https://www.nature.com/ncomms.rss": "Nature",  # NatureComms
 }
 
 def fetch_rss_feed(url: str) -> feedparser.FeedParserDict:
     """Fetch and parse an RSS feed."""
     return feedparser.parse(url)
 
-def parse_entry(source: str, entry: feedparser.FeedParserDict) -> Dict[str, str]:
+def parse_entry(source: str, entry: feedparser.FeedParserDict, doi_only: bool = False) -> Dict[str, str]:
     """Parse an RSS entry based on its source."""
-    if source in ["Nature"]:
-        return parse_nature_entry(entry)
-    elif source in ["AGU"]:
-        return parse_agu_entry(entry)
-    elif source in ["ACS"]:
-        return parse_acs_entry(entry)
-    elif source in ["IOP"]:
-        return parse_iop_entry(entry)
-    elif source in ["Copernicus"]:
-        return parse_copernicus_entry(entry)
+    if source == "Nature":
+        return parse_nature_entry(entry, doi_only)
+    elif source == "AGU":
+        return parse_agu_entry(entry, doi_only)
+    elif source == "ACS":
+        return parse_acs_entry(entry, doi_only)
+    elif source == "IOP":
+        return parse_iop_entry(entry, doi_only)
+    elif source == "Copernicus":
+        return parse_copernicus_entry(entry, doi_only)
     else:
         raise ValueError(f"Unsupported source: {source}")
 
-
-
-def parse_acs_entry(entry: feedparser.FeedParserDict) -> Dict[str, str]:
+def parse_acs_entry(entry: feedparser.FeedParserDict, doi_only: bool = False) -> Dict[str, str]:
     """Parse an ACS RSS entry."""
+    doi = entry.get('id', 'DOI not available').split('doi.org/')[-1]
+    if doi_only:
+        return {'doi': doi}
     return {
-        'doi': entry.get('id', 'DOI not available').split('doi.org/')[-1],
+        'doi': doi,
         'title': entry.get('title', 'Title not available').split('[ASAP] ')[-1],
-        'abstract': get_acs_abstract( entry.get('id').split('doi.org/')[-1] ),
+        'abstract': get_acs_abstract(doi),
         'authors': entry.get('author', 'Authors not available').replace(', ', ';').replace(';and ', ';'),
         'journal': html.unescape(re.findall(r'<cite>(.*?)</cite>', entry['summary'])[0]),
     }
@@ -122,15 +119,17 @@ def get_acs_abstract(doi: str) -> str:
         print(f"Error fetching full text from {url}: {str(e)}")
         return ''
 
-
-def parse_copernicus_entry(entry: feedparser.FeedParserDict) -> Dict[str, str]:
-    """Parse an copernicus RSS entry."""
-    abstract, journal = get_copernicus_abstract( entry.get('id') )
+def parse_copernicus_entry(entry: feedparser.FeedParserDict, doi_only: bool = False) -> Dict[str, str]:
+    """Parse a Copernicus RSS entry."""
+    doi = entry.get('id').replace('https://doi.org/', '')
+    if doi_only:
+        return {'doi': doi}
+    abstract, journal = get_copernicus_abstract(entry.get('id'))
     short_summary = entry['summary'].split('\n')[-1].strip()
     return {
-        'doi': entry.get('id').replace('https://doi.org/', ''),
+        'doi': doi,
         'title': entry.get('title', 'Title not available'),
-        'abstract': short_summary+' \n '+abstract,
+        'abstract': short_summary + ' \n ' + abstract,
         'authors': entry['summary'].split('\n')[1].strip().replace(', ', ';').replace(';and ', ';').split('<br')[0].replace(' and ', ';'),
         'journal': journal,
     }
@@ -147,16 +146,17 @@ def get_copernicus_abstract(url: str):
     journal = soup.find('meta', attrs={'name': 'citation_journal_title'})['content']
     return abstract, journal
 
-
-
-def parse_nature_entry(entry: feedparser.FeedParserDict) -> Dict[str, str]:
+def parse_nature_entry(entry: feedparser.FeedParserDict, doi_only: bool = False) -> Dict[str, str]:
     """Parse a Nature RSS entry."""
-    abstract = get_nature_abstract( entry.get('prism_doi') )
+    doi = entry.get('prism_doi', 'DOI not available')
+    if doi_only:
+        return {'doi': doi}
+    abstract = get_nature_abstract(doi)
     short_summary = entry.get('content', '')[0].value.split('</a></p>')[-1]
     return {
-        'doi': entry.get('prism_doi', 'DOI not available'),
+        'doi': doi,
         'title': entry.get('title', 'Title not available'),
-        'abstract': short_summary+' \n '+abstract,
+        'abstract': short_summary + ' \n ' + abstract,
         'authors': ';'.join(author['name'] for author in entry.get('authors', [])),
         'journal': entry.get('prism_publicationname', 'Journal not available'),
     }
@@ -184,31 +184,31 @@ def get_nature_abstract(doi: str) -> str:
         print(f"Error fetching full text from {url}: {str(e)}")
         return ''
 
-
-
-def parse_agu_entry(entry: feedparser.FeedParserDict) -> Dict[str, str]:
+def parse_agu_entry(entry: feedparser.FeedParserDict, doi_only: bool = False) -> Dict[str, str]:
     """Parse an AGU RSS entry."""
+    doi = entry.get('prism_doi', 'DOI not available')
+    if doi_only:
+        return {'doi': doi}
     return {
-        'doi': entry.get('prism_doi', 'DOI not available'),
+        'doi': doi,
         'title': entry.get('title', 'Title not available'),
         'abstract': entry.get('content', '')[0].value.replace('Abstract\n', '', 1),
         'authors': entry.get('author', 'Authors not available').replace(', \n', ';'),
         'journal': entry.get('prism_publicationname', 'Journal not available'),
     }
 
-
-
-def parse_iop_entry(entry: feedparser.FeedParserDict) -> Dict[str, str]:
-    """Parse an AGU RSS entry."""
+def parse_iop_entry(entry: feedparser.FeedParserDict, doi_only: bool = False) -> Dict[str, str]:
+    """Parse an IOP RSS entry."""
+    doi = entry.get('prism_doi', 'DOI not available')
+    if doi_only:
+        return {'doi': doi}
     return {
-        'doi': entry.get('prism_doi', 'DOI not available'),
+        'doi': doi,
         'title': entry.get('title', 'Title not available'),
         'abstract': entry.get('summary', 'Abstract not available'),
         'authors': entry.get('author', 'Authors not available').replace(', ', ';').replace(' and ', ';'),
         'journal': entry.get('prism_publicationname', 'Journal not available'),
     }
-
-
 
 def analyze_relevance(title: str, abstract: str) -> Tuple[bool, str]:
     """Analyze the relevance of a paper to atmospheric environmental remote sensing."""
@@ -244,4 +244,47 @@ def analyze_relevance(title: str, abstract: str) -> Tuple[bool, str]:
     return json.loads(response.text)
 
 
-print(get_acs_abstract('10.1021/acs.est.3c06447'))
+#%% Main function to process RSS feeds and generate a report
+# Create a directory for storing CSV files if it doesn't exist
+csv_dir = Path('./paper_entries')
+csv_dir.mkdir(exist_ok=True)
+
+# Load existing data from all CSV files in the directory
+existing_dois = set()
+for file in csv_dir.glob('*.csv'):
+    existing_df = pd.read_csv(file)
+    existing_dois.update(existing_df['doi'])
+print(len(existing_dois))
+
+# Parse all entries from all feeds
+relevant_entries = []
+for feed_url, source in RSS_FEEDS.items():
+    feed = fetch_rss_feed(feed_url)
+    for entry in tqdm(feed.entries):
+        try:
+            # First, only get the DOI
+            parsed_entry = parse_entry(source, entry, doi_only=True)
+            if parsed_entry['doi'] not in existing_dois:
+                # If DOI is new, then get full entry details
+                full_entry = parse_entry(source, entry, doi_only=False)
+                analysis = analyze_relevance(full_entry['title'], full_entry['abstract'])
+                full_entry.update(analysis)  # combine the analysis into the full entry
+                relevant_entries.append(full_entry)
+                time.sleep(1.42)
+            else:
+                print(f"Skipping entry with DOI {parsed_entry['doi']} as it already exists.")
+        except Exception as e:
+            bad_entry = full_entry
+            print(f"Error processing entry from {bad_entry}: {str(e)}")
+
+# Generate a timestamp for the new file
+utc_now = datetime.now(timezone.utc)
+utc_plus_8 = utc_now + timedelta(hours=8)
+timestamp = utc_plus_8.strftime("%Y%m%d_%H%M%S")
+new_csv_file = csv_dir / f'{timestamp}.csv'
+
+# Save the updated data to the new CSV file
+if len(relevant_entries)>0:
+    df = pd.DataFrame(relevant_entries)
+    df.to_csv(new_csv_file, index=False)
+    print(f"Data saved to {new_csv_file}")
