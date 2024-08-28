@@ -85,7 +85,7 @@ def get_acs_abstract(doi: str) -> str:
         # 使用 subprocess 来执行命令并捕获输出
         try:
             result = subprocess.run(command, capture_output=True, text=True, check=True)
-            response = result.stdout  # 标准输出
+            response = result.stdout
         except subprocess.CalledProcessError as e:
             print("Error executing command:", e)
 
@@ -199,8 +199,8 @@ def analyze_relevance(title: str, abstract: str) -> Tuple[bool, str]:
     # print(title, abstract)
 
     generation_config = {
-        "temperature": 0.5,
-        "top_p": 0.95,
+        "temperature": 0.42,
+        "top_p": 0.98,
         "top_k": 64,
         "max_output_tokens": 256,
         "response_mime_type": "application/json",
@@ -219,7 +219,7 @@ def analyze_relevance(title: str, abstract: str) -> Tuple[bool, str]:
                 }]
             )
     prompt = """Analyze the title and abstract of the research paper. Determine if it's strongly related to atmospheric environmental remote sensing technology like air quality monitoring, satellite observations, and atmospheric composition analysis.
-    Respond with 'True' or 'False', give topic words (which kind of atmospheric composition, which kind of satellite/sensor, which kind of application) and then provide a brief explanation about the paper itself in Chinese using this JSON schema:
+    Respond with 'True' or 'False', give topic words in English (which kind of atmospheric composition, which kind of satellite/sensor, which kind of application， etc.) and then provide a brief explanation about the paper itself in Chinese using this JSON schema:
     Return {"is_relevant": bool, "topic_words": list[str], "explanation": str}"""
     response = chat.send_message(prompt)
     # print(response.text)
