@@ -226,46 +226,4 @@ def analyze_relevance(title: str, abstract: str) -> Tuple[bool, str]:
     return json.loads(response.text)
 
 
-
-#%% Main function to process RSS feeds and generate a report
-# Create a directory for storing CSV files if it doesn't exist
-csv_dir = Path('./paper_entries')
-csv_dir.mkdir(exist_ok=True)
-
-# Load existing data from all CSV files in the directory
-existing_dois = set()
-for file in csv_dir.glob('*.csv'):
-    existing_df = pd.read_csv(file)
-    existing_dois.update(existing_df['doi'])
-print(len(existing_dois))
-
-# Parse all entries from all feeds
-relevant_entries = []
-for feed_url, source in RSS_FEEDS.items():
-    feed = fetch_rss_feed(feed_url)
-    for entry in tqdm(feed.entries):
-        try:
-            parsed_entry = parse_entry(source, entry)
-            if parsed_entry['doi'] not in existing_dois:
-                analysis = analyze_relevance(parsed_entry['title'], parsed_entry['abstract'])
-                parsed_entry.update(analysis)
-                relevant_entries.append(parsed_entry)
-                time.sleep(1.42)
-            else:
-                print(f"Skipping entry with DOI {parsed_entry['doi']} as it already exists.")
-        except Exception as e:
-            bad_entry = parsed_entry
-            bad_analysis = analysis
-            print(f"Error processing entry from {bad_entry}: {str(e)}")
-
-# Generate a timestamp for the new file
-utc_now = datetime.now(timezone.utc)
-utc_plus_8 = utc_now + timedelta(hours=8)
-timestamp = utc_plus_8.strftime("%Y%m%d_%H%M%S")
-new_csv_file = csv_dir / f'{timestamp}.csv'
-
-# Save the updated data to the new CSV file
-if len(relevant_entries)>0:
-    df = pd.DataFrame(relevant_entries)
-    df.to_csv(new_csv_file, index=False)
-    print(f"Data saved to {new_csv_file}")
+print(get_acs_abstract('10.1021/acs.est.3c06447'))
