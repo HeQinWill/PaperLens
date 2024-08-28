@@ -1,18 +1,22 @@
-import feedparser
-import requests
-from bs4 import BeautifulSoup
-import json
+import os
+import shutil
+import subprocess
 import pandas as pd
+import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from tqdm import tqdm
-import time
-import re
-import html
-import subprocess
-import shutil
-import os
 from typing import Dict, List, Tuple
+
+import feedparser
+import requests
+
+import re
+import json
+import html
+import yaml
+from bs4 import BeautifulSoup
+
 import google.generativeai as genai
 KEY_GENAI = os.getenv('KEY_GENAI')
 genai.configure(api_key=KEY_GENAI, transport='rest')
