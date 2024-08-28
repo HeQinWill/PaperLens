@@ -48,12 +48,11 @@ jobs:
           python paperlens_rss.py  # Replace this with the actual path to your script
 
       - name: Commit and Push changes
-        uses: actions-x/commit@v6
-        with:
-          email: heqin@cumt.edu.cn
-          name: GitHub Actions Autocommitter
-          branch: master
-          files: paper_entries
-          repository: https://github.com/HeQinWill/PaperLens
-          token: ${{ secrets.KEY_GITHUB }}
-          force: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.KEY_GITHUB }}  # set up your GITHUB token
+        run: |
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add paper_entries
+            git commit -m "Update"
+            git push origin main
