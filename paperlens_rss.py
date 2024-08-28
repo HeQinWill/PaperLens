@@ -22,13 +22,13 @@ KEY_GENAI = os.getenv('KEY_GENAI')
 genai.configure(api_key=KEY_GENAI, transport='rest')
 
 RSS_FEEDS: Dict[str, str] = {
-      "https://iopscience.iop.org/journal/rss/1748-9326": "IOP",  # ERL
+      # "https://iopscience.iop.org/journal/rss/1748-9326": "IOP",  # ERL
     # "https://acp.copernicus.org/xml/rss2_0.xml": "Copernicus",
     # "https://amt.copernicus.org/xml/rss2_0.xml": "Copernicus",
     # "https://essd.copernicus.org/xml/rss2_0.xml": "Copernicus",
     # "https://gmd.copernicus.org/xml/rss2_0.xml": "Copernicus",
     # "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=esthag": "ACS",  # ES&T
-    # "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=estlcu": "ACS",  # ES&T Letters
+    "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=estlcu": "ACS",  # ES&T Letters
     # "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=aeacd5": "ACS",  # ES&T Air
     # "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=ehnea2": "ACS",  # ES&T EH
     # "https://agupubs.onlinelibrary.wiley.com/feed/2576604x/most-recent": "AGU",  # Advances
