@@ -52,9 +52,74 @@ def parse_entry(source: str, entry: feedparser.FeedParserDict, doi_only: bool = 
         return parse_copernicus_entry(entry, doi_only)
     elif source == "Elsevier":
         return parse_elsevier_entry(entry)
+    elif source == "Science":
+        return parse_science_entry(entry)
     else:
         raise ValueError(f"Unsupported source: {source}")
 
+def parse_science_entry(entry: feedparser.FeedParserDict, doi_only: bool = False) -> Dict[str, str]:
+    """Parse an AAAS Science RSS entry."""
+    doi = entry.get('prism_doi', 'DOI not available')
+    if doi_only:
+        return {'doi': doi}
+    return {
+        'doi': doi,
+        'title': entry.get('title', 'Title not available').split('[ASAP] ')[-1],
+        'abstract': get_science_abstract(doi),
+        'authors': entry.get('author', 'Authors not available').replace(', ', ';').replace(';and ', ';'),
+        'journal': entry['prism_publicationname'],
+    }
+
+def get_science_abstract(doi: str) -> str:
+    """Attempt to fetch and extract the full text of an article."""
+    try:
+        url = 'https://www.science.org/doi/' + doi
+
+        command = [
+            "./curl_chrome116",  # from https://github.com/lwthiker/curl-impersonate
+            url,
+            "-H", "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+            "-H", "accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+            "-H", "cache-control: max-age=0",
+            "-H", "priority: u=0, i",
+            "-H", 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Microsoft Edge";v="128"',
+            "-H", 'sec-ch-ua-arch: "arm"',
+            "-H", 'sec-ch-ua-bitness: "64"',
+            "-H", 'sec-ch-ua-full-version: "128.0.2739.42"',
+            "-H", 'sec-ch-ua-full-version-list: "Chromium";v="128.0.6613.85", "Not;A=Brand";v="24.0.0.0", "Microsoft Edge";v="128.0.2739.42"',
+            "-H", 'sec-ch-ua-mobile: ?0',
+            "-H", 'sec-ch-ua-model: ""',
+            "-H", 'sec-ch-ua-platform: "macOS"',
+            "-H", 'sec-ch-ua-platform-version: "14.6.1"',
+            "-H", 'sec-fetch-dest: document',
+            "-H", 'sec-fetch-mode: navigate',
+            "-H", 'sec-fetch-site: none',
+            "-H", 'sec-fetch-user: ?1',
+            "-H", 'upgrade-insecure-requests: 1',
+            "-H", 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0'
+        ]
+        # 使用 subprocess 来执行命令并捕获输出
+        try:
+            result = subprocess.run(command, capture_output=True, text=True, check=True)
+            response = result.stdout
+        except subprocess.CalledProcessError as e:
+            print("Error executing command:", e)
+
+        soup = BeautifulSoup(response, 'html.parser')
+
+        # Find the script tag containing the abstract
+        script_tag = soup.find('section', {'id': 'abstract'})
+        
+        if script_tag:
+            abstract = script_tag.find('div', {'role': 'paragraph'}).get_text(strip=True)
+            return abstract
+        else:
+            print("Full text not available. Please check the original article.")
+            return ''
+    except Exception as e:
+        print(f"Error fetching full text from {url}: {str(e)}")
+        return ''
+        
 def parse_elsevier_entry(entry: feedparser.FeedParserDict) -> Dict[str, str]:
     """Parse an Elsevier RSS entry."""
     url = entry.get('id')
