@@ -51,9 +51,9 @@ def parse_entry(source: str, entry: feedparser.FeedParserDict, doi_only: bool = 
     elif source == "Copernicus":
         return parse_copernicus_entry(entry, doi_only)
     elif source == "Elsevier":
-        return parse_elsevier_entry(entry)
+        return parse_elsevier_entry(entry)  # 它的DOI必须解析网页后才能得到
     elif source == "Science":
-        return parse_science_entry(entry)
+        return parse_science_entry(entry, doi_only)
     else:
         raise ValueError(f"Unsupported source: {source}")
 
