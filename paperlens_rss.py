@@ -384,7 +384,7 @@ new_csv_file = csv_dir / f'{timestamp}.csv'
 # Save the updated data to the new CSV file
 if len(relevant_entries)>0:
     df = pd.DataFrame(relevant_entries)
-    column_order = ['doi', 'journal', 'is_relevant', 'topic_words', 'title', 'abstract', 'authors', 'explanation']
+    column_order = ['doi', 'is_relevant', 'journal', 'explanation', 'topic_words', 'authors', 'title', 'abstract']
     df = df[column_order]
     df.to_csv(new_csv_file, index=False)
     print(f"Data saved to {new_csv_file}")
