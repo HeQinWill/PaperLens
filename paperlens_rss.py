@@ -153,7 +153,7 @@ def get_elsevier_abstract(url: str) -> str:
                 response = result.stdout
             except subprocess.CalledProcessError as e:
                 print("Error executing command on modified URL:", e)
-                return '', ''
+                return 'None', ''
 
         soup = BeautifulSoup(response, 'html.parser')
 
