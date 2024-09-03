@@ -142,7 +142,7 @@ def get_elsevier_abstract(url: str) -> str:
             response = result.stdout
         except subprocess.CalledProcessError as e:
             print("Error executing command:", e)
-            return '', ''
+            return 'None', ''
 
         # 如果response为空，尝试替换URL并重新请求
         if response == '':
@@ -170,7 +170,7 @@ def get_elsevier_abstract(url: str) -> str:
         return doi, abstract
     except Exception as e:
         print(f"Error fetching full text from {url}: {str(e)}")
-        return '', ''
+        return 'None', ''
         
 def parse_acs_entry(entry: feedparser.FeedParserDict, doi_only: bool = False) -> Dict[str, str]:
     """Parse an ACS RSS entry."""
