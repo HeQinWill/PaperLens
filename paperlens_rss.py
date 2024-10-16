@@ -314,13 +314,13 @@ def analyze_relevance(title: str, abstract: str) -> Tuple[bool, str]:
     generation_config = {
         "temperature": 0.42,
         "top_p": 0.98,
-        "top_k": 64,
-        "max_output_tokens": 256,
+        "top_k": 40,
+        "max_output_tokens": 512,
         "response_mime_type": "application/json",
         }
 
     model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-1.5-flash-002",
             generation_config=generation_config,
             system_instruction="You are an expert in literature analysis, skilled in qualitative research methods, literature retrieval, and critical thinking. You excel at interpreting complex texts, identifying key ideas and methodologies, and conducting comprehensive literature reviews to identify research trends and gaps.",
             )
