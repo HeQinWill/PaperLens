@@ -87,7 +87,7 @@ print(len(relevant_true))
 # Send the information to GPT
 info = relevant_true[['title', 'abstract', 'topic_words', 'explanation','authors']]
 
-BS = 20  # Batch size
+BS = 10  # Batch size
 DFS = []
 for i in range(len(info)//BS +1):
     print(i, i*BS, i*BS+BS)
@@ -118,9 +118,9 @@ for i, row in relevant_true.iterrows():
             <section class="paper-journal">{row['journal']}</section>
             <section class="paper-doi">http://doi.org/{row['doi']}</section>
             <section class="topic-tags">
-                <span class="topic-tag">{row['tags'][0]}</span>
-                <span class="topic-tag">{row['tags'][1]}</span>
-                <span class="topic-tag">{row['tags'][2]}</span>
+                <span class="topic-tag">{tag1}</span>
+                <span class="topic-tag">{tag2}</span>
+                <span class="topic-tag">{tag3}</span>
             </section>
             <section class="abstract-content">{row['summary']}</section>
             </section>
