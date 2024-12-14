@@ -45,7 +45,8 @@ def analyze_paper(info_json: str) -> Tuple[bool, str]:
                 }]
             )
     prompt = """Analyze the information of each research paper and summarize the most important topic-tags in Chinese (exactly 3), 
-    and generate a Chinese summary of around 200 words to introduce what this paper is about especially the data and method and its conclusions on the basis of the previous explanation as well as the original title and abstract. Be specific and concrete and Skip the pleasantries.
+    and generate a Chinese summary of around 200 words to introduce what this paper is about especially the data and method and its conclusions on the basis of the previous explanation as well as the original title and abstract. 
+    Please be specific and concrete and skip the pleasantries. You can bold the key words and warp them into HTML tags <b></b>.
     Finally, as a reviewer for professional academic journals, please rate this article. You need to comprehensively consider its influence, such as the novelty of its research, the writing ability, the imapact factor of the Journal and the popularity of the authors, and rate it on a scale from 0 to 100, with 100 being the highest and 0 being the lowest. 
     Output the above results using the following JSON schema and the number of entries should be the same:
     Return {"summary": str, "tags": list[str], "score": float}"""
@@ -116,7 +117,7 @@ for i, row in relevant_true.iterrows():
             <section class="paper-title">{row['title']}</section>
             <section class="paper-authors">{row['authors'].replace(';', ', ')}</section>
             <section class="paper-journal">{row['journal']}</section>
-            <section class="paper-doi">http://doi.org/{row['doi']}</section>
+            <section class="paper-doi"><a href="https://doi.org/{row['doi']}" target="_blank">https://doi.org/{row['doi']}</a></section>
             <section class="topic-tags">
                 <span class="topic-tag">{tag1}</span>
                 <span class="topic-tag">{tag2}</span>
@@ -129,7 +130,7 @@ for i, row in relevant_true.iterrows():
 # Concatenate all strings in the list
 html_string = ''.join(HTMLs)
 
-template_head = '''<!DOCTYPE html>
+template_head = f'''<!DOCTYPE html>
 <html lang="zh">
 <head>
 <meta charset="UTF-8">
@@ -137,6 +138,10 @@ template_head = '''<!DOCTYPE html>
   <link rel="stylesheet" type="text/css" href="wechat.css">
 </head>
 <body>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">{current_date[:4]}/{current_date[4:6]}/{current_date[6:8]}</section>
+</section>
 <section id="papers-container">'''
 
 template_tail = '''</section>
