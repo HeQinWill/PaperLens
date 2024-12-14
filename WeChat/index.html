@@ -36,16 +36,38 @@
         color: #0056b3;
         text-decoration: underline;
     }
+
+    #navigation {
+        /* Flexbox 方案 */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        /* 固定到底部的关键样式 */
+        position: fixed; /* 将元素固定定位 */
+        bottom: 0;      /* 距离视口底部 0 像素 */
+        left: 0;        /* 距离视口左侧 0 像素 */
+        width: 100%;    /* 宽度设置为 100%，铺满底部 */
+        background-color: #f0f0f0; /* 添加背景色，使其更明显（可选） */
+        padding: 2px 0; /* 上下内边距 2px */
+        padding-left: 20%;  /* 左内边 */
+        padding-right: 20%;  /* 右内边距 */
+    }
+
+    #last-update {
+        flex-grow: 1; /* 允许中间元素填充可用空间 */
+        text-align: center; /* 文字居中 */
+    }
 </style>
 <body>
-    <h1>WeChat Archive Viewer</h1>
+    <h1>PaperLens</h1>
     <div id="content">
         <!-- 这里会动态加载对应日期的 HTML 文件 -->
     </div>
     <div id="navigation">
-        <a id="prev-link" href="#">← Previous Day</a>
+        <a id="prev-link" href="#">← Prev</a>
         <span id="last-update"></span>
-        <a id="next-link" href="#">Next Day →</a>
+        <a id="next-link" href="#">Next →</a>
     </div>
 
     <script src="script.js"></script>

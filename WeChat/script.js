@@ -46,7 +46,7 @@ function loadDateFile(date) {
             );
             prevDate.setDate(prevDate.getDate() - 1);
             const prevDateString = getFormattedDateFromDate(prevDate);
-            loadDateFile(prevDateString); // 递归调用
+            // loadDateFile(prevDateString); // 递归调用
         });
 }
 
