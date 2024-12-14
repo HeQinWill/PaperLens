@@ -1,0 +1,54 @@
+# This is a basic workflow to help you get started with Actions
+
+name: generate html for WeChat official account
+
+# Controls when the workflow will run
+on:
+  schedule:
+    # Runs at 05:55 UTC every day
+    - cron: '55 05 * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install feedparser requests beautifulsoup4 pandas tqdm pyyaml google-generativeai
+  
+      - name: Install system dependencies
+        run: |
+          # sudo apt-get update
+          sudo apt-get install -y libnss3 nss-plugin-pem ca-certificates wget tar
+      
+      - name: Run Python script
+        env:
+          KEY_GENAI: ${{ secrets.KEY_GENAI }}  # set up your GENAI token from gemini
+        run: |
+          python paperlens_WeChat.py  # Replace this with the actual path to your script
+
+      - name: Commit and Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.KEY_GITHUB }}  # set up your GITHUB token
+        run: |
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add paper_entries
+            git commit -m "Update"
+            git push origin main
