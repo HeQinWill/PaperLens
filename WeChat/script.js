@@ -7,6 +7,15 @@ const lastUpdateSpan = document.getElementById("last-update");
 // 获取格式化日期，格式为 YYYYMMDD
 function getFormattedDate(offset = 0) {
     const date = new Date();
+    
+    // 获取当前 UTC 时间的小时（24小时制）
+    const utcHour = date.getUTCHours();
+    // 判断 UTC 时间是否在 05 点之前
+    if (utcHour < 5) {
+        // 如果在 05 点之前，使用前一天的日期
+        offset = - 1;
+    };
+    
     date.setDate(date.getDate() + offset); // 偏移日期
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, "0");
