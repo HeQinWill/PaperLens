@@ -45,7 +45,7 @@ function loadDateFile(date) {
         })
         .then(html => {
             contentDiv.innerHTML = html; // 加载文件内容
-            lastUpdateSpan.textContent = `Last update: ${date}`;
+            lastUpdateSpan.textContent = `${date}`;
             updateNavigation(date); // 更新导航链接
         })
         .catch(() => {
