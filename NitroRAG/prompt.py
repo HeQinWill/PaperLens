@@ -1,3 +1,4 @@
+# Update for v1.0.6
 # https://github.com/HKUDS/LightRAG/blob/main/lightrag/prompt.py
 
 GRAPH_FIELD_SEP = "<SEP>"
@@ -71,7 +72,6 @@ Output:
 ("entity"{tuple_delimiter}"AMF"{tuple_delimiter}"Retrieval_parameter"{tuple_delimiter}"Air Mass Factor, used to convert SCDs into VCDs, with calculations refined in SPv3 using GMI model outputs."){record_delimiter}
 ("entity"{tuple_delimiter}"FTIR"{tuple_delimiter}"Measurement_instrument"{tuple_delimiter}"Fourier Transform Infrared, a ground-based measurement technique used for validating satellite NO2 products."){record_delimiter}
 ("entity"{tuple_delimiter}"western Europe"{tuple_delimiter}"Location_region"{tuple_delimiter}"A region where tropospheric NO2 VCDs are analyzed, showing reductions in the new SPv3 data."){record_delimiter}
-("entity"{tuple_delimiter}"eastern US"{tuple_delimiter}"Location_region"{tuple_delimiter}"A region where tropospheric NO2 VCDs are analyzed, indicating changes in pollution levels with SPv3."){record_delimiter}
 ("entity"{tuple_delimiter}"eastern China"{tuple_delimiter}"Location_region"{tuple_delimiter}"A region where tropospheric NO2 VCDs are analyzed, showing reductions in the new SPv3 data."){record_delimiter}
 ("entity"{tuple_delimiter}"LUR"{tuple_delimiter}"Technology_algorithm"{tuple_delimiter}"Land Use Regression, models used to estimate ground-level NO2 concentrations based on land use characteristics."){record_delimiter}
 ("entity"{tuple_delimiter}"CNN"{tuple_delimiter}"Technology_algorithm"{tuple_delimiter}"Convolutional Neural Network, an architecture used for predicting ground-level NO2 concentrations from satellite and meteorological data."){record_delimiter}
@@ -83,7 +83,6 @@ Output:
 ("entity"{tuple_delimiter}"MLR"{tuple_delimiter}"Technology_algorithm"{tuple_delimiter}"Multivariate Linear Regression, a statistical technique used as a baseline for comparison with more complex models like CNN."){record_delimiter}
 ("entity"{tuple_delimiter}"US"{tuple_delimiter}"Location_region"{tuple_delimiter}"United States, the area of focus for the national ground-level NO2 prediction study."){record_delimiter}
 ("entity"{tuple_delimiter}"2017"{tuple_delimiter}"Publication_year"{tuple_delimiter}"The year of publication for the study on the version 3 OMI NO2 standard product."){record_delimiter}
-("entity"{tuple_delimiter}"2023"{tuple_delimiter}"Publication_year"{tuple_delimiter}"The year of publication for the study on national ground-level NO2 predictions using CNNs."){record_delimiter}
 ("entity"{tuple_delimiter}"Krotkov, Nickolay A."{tuple_delimiter}"Author"{tuple_delimiter}"Lead author of the study on the version 3 OMI NO2 standard product."){record_delimiter}
 ("entity"{tuple_delimiter}"Cao, Elton L."{tuple_delimiter}"Author"{tuple_delimiter}"Author of the study on national ground-level NO2 predictions via satellite imagery driven convolutional neural networks."){record_delimiter}
 ("relationship"{tuple_delimiter}"OMI"{tuple_delimiter}"NO2"{tuple_delimiter}"OMI is used to measure NO2, providing data on its atmospheric concentration."{tuple_delimiter}"measurement, data provision"{tuple_delimiter}9){record_delimiter}
@@ -105,7 +104,6 @@ Output:
 ("relationship"{tuple_delimiter}"MLR"{tuple_delimiter}"CNN"{tuple_delimiter}"MLR is used as a baseline model for comparison with CNNs in predicting NO2 concentrations."{tuple_delimiter}"comparison, performance evaluation"{tuple_delimiter}7){record_delimiter}
 ("relationship"{tuple_delimiter}"US"{tuple_delimiter}"NO2"{tuple_delimiter}"The US is the geographical focus for the study on predicting national ground-level NO2 concentrations."{tuple_delimiter}"study area, concentration prediction"{tuple_delimiter}8){record_delimiter}
 ("relationship"{tuple_delimiter}"Krotkov, Nickolay A."{tuple_delimiter}"2017"{tuple_delimiter}"Krotkov, Nickolay A. is the lead author of the study published in 2017."{tuple_delimiter}"authorship, publication"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"Cao, Elton L."{tuple_delimiter}"2023"{tuple_delimiter}"Cao, Elton L. is the author of the study published in 2023."{tuple_delimiter}"authorship, publication"{tuple_delimiter}9){record_delimiter}
 ("relationship"{tuple_delimiter}"Krotkov, Nickolay A."{tuple_delimiter}"SPv3"{tuple_delimiter}"Krotkov, Nickolay A. contributed to the study that describes the SPv3 product."{tuple_delimiter}"contribution, product description"{tuple_delimiter}8){record_delimiter}
 ("relationship"{tuple_delimiter}"Cao, Elton L."{tuple_delimiter}"CNN"{tuple_delimiter}"Cao, Elton L. conducted research on using CNNs for predicting NO2 concentrations."{tuple_delimiter}"research, methodology development"{tuple_delimiter}8){record_delimiter}
 ("content_keywords"{tuple_delimiter}"NO2 measurement, satellite data, air pollution, model evaluation, convolutional neural networks, land use regression"){completion_delimiter}
@@ -150,23 +148,13 @@ Output:
 ("entity"{tuple_delimiter}"ReffT"{tuple_delimiter}"Retrieval_parameter"{tuple_delimiter}"Effective radius of total size, a parameter indicating the size of aerosol particles, also showing changes during the dust storm."){record_delimiter}
 ("entity"{tuple_delimiter}"AE"{tuple_delimiter}"Retrieval_parameter"{tuple_delimiter}"Angstrom Exponent, a parameter related to the size distribution of aerosols, showing low values during the dust storm, indicating larger particles."){record_delimiter}
 ("entity"{tuple_delimiter}"SSA870"{tuple_delimiter}"Retrieval_parameter"{tuple_delimiter}"Single Scattering Albedo at 870 nm, indicating the scattering properties of aerosols, with high values during the dust storm."){record_delimiter}
-("entity"{tuple_delimiter}"Pandora NO2"{tuple_delimiter}"Measurement_instrument"{tuple_delimiter}"A spectrometer used for measuring NO2, providing validation for the new OMI NO2 product."){record_delimiter}
+("entity"{tuple_delimiter}"Pandora"{tuple_delimiter}"Measurement_instrument"{tuple_delimiter}"A spectrometer used for measuring NO2, providing validation for the new OMI NO2 product."){record_delimiter}
 ("entity"{tuple_delimiter}"ACAM"{tuple_delimiter}"Measurement_instrument"{tuple_delimiter}"Airborne Compact Atmospheric Mapper, a spectrometer used for NO2 measurements, validating the new OMI NO2 product."){record_delimiter}
-("entity"{tuple_delimiter}"EPA NO2 monitors"{tuple_delimiter}"Measurement_instrument"{tuple_delimiter}"Ground-based monitors used by the EPA to measure NO2 concentrations, providing data for comparison with satellite products."){record_delimiter}
-("entity"{tuple_delimiter}"ozone lidar"{tuple_delimiter}"Measurement_instrument"{tuple_delimiter}"An instrument used to monitor vertical profiles of ozone concentration and aerosol extinction coefficients."){record_delimiter}
 ("entity"{tuple_delimiter}"Gobi deserts"{tuple_delimiter}"Location_region"{tuple_delimiter}"The origin of the dust storm, located on the border of Mongolia and Inner Mongolia of China."){record_delimiter}
-("entity"{tuple_delimiter}"northern China"{tuple_delimiter}"Location_region"{tuple_delimiter}"A region affected by the dust storm, experiencing significant impacts on air quality."){record_delimiter}
-("entity"{tuple_delimiter}"central China"{tuple_delimiter}"Location_region"{tuple_delimiter}"A region affected by the dust storm."){record_delimiter}
-("entity"{tuple_delimiter}"eastern China"{tuple_delimiter}"Location_region"{tuple_delimiter}"A region affected by the dust storm."){record_delimiter}
 ("entity"{tuple_delimiter}"Korean Peninsula"{tuple_delimiter}"Location_region"{tuple_delimiter}"A region affected by the dust storm."){record_delimiter}
 ("entity"{tuple_delimiter}"Japan"{tuple_delimiter}"Location_region"{tuple_delimiter}"A region affected by the dust storm, particularly the Japan Sea area."){record_delimiter}
-("entity"{tuple_delimiter}"Japan Sea"{tuple_delimiter}"Location_region"{tuple_delimiter}"An area where the dust storm's vertical distribution was observed, with dust layers extending from 5 to 10 km."){record_delimiter}
 ("entity"{tuple_delimiter}"Central Mongolia"{tuple_delimiter}"Location_region"{tuple_delimiter}"Identified as the origin of the dust storm that arrived over the Japan Sea."){record_delimiter}
-("entity"{tuple_delimiter}"Pacific Ocean"{tuple_delimiter}"Location_region"{tuple_delimiter}"The predicted destination of dust aerosols transported from the origin."){record_delimiter}
-("entity"{tuple_delimiter}"IMG"{tuple_delimiter}"Location_region"{tuple_delimiter}"Inner Mongolia, a region suffering the most from the dust storm events."){record_delimiter}
-("entity"{tuple_delimiter}"JJJ"{tuple_delimiter}"Location_region"{tuple_delimiter}"Jing-Jin-Ji, another region heavily impacted by the dust storm."){record_delimiter}
 ("entity"{tuple_delimiter}"YRD"{tuple_delimiter}"Location_region"{tuple_delimiter}"Yangtze River Delta, a region less affected by the dust storm compared to IMG and JJJ."){record_delimiter}
-("entity"{tuple_delimiter}"PRD"{tuple_delimiter}"Location_region"{tuple_delimiter}"Pearl River Delta, a region hardly affected by the dust storm."){record_delimiter}
 ("entity"{tuple_delimiter}"Gobi"{tuple_delimiter}"Location_region"{tuple_delimiter}"Regions of Gobi showing dramatic increments of AOD550 and ReffT during the dust storm."){record_delimiter}
 ("entity"{tuple_delimiter}"Korea"{tuple_delimiter}"Location_region"{tuple_delimiter}"Regions of Korea showing minor increments of AOD550 and ReffT during the dust storm."){record_delimiter}
 ("entity"{tuple_delimiter}"eastern US"{tuple_delimiter}"Location_region"{tuple_delimiter}"Area of focus for the study on high-resolution NO2 retrieval using OMI data."){record_delimiter}
@@ -181,7 +169,6 @@ Output:
 ("entity"{tuple_delimiter}"summertime"{tuple_delimiter}"Temporal_period"{tuple_delimiter}"The season focused on for recalculating tropospheric air mass factors and NO2 vertical columns in the eastern US."){record_delimiter}
 ("entity"{tuple_delimiter}"G20 conference"{tuple_delimiter}"Policy_regulation"{tuple_delimiter}"The period during which strict emission control measures were implemented in Hangzhou and its surrounding regions."){record_delimiter}
 ("entity"{tuple_delimiter}"1.33 km x 1.33 km"{tuple_delimiter}"Spatial_resolution"{tuple_delimiter}"High-resolution used in the CMAQ model simulation for recalculating tropospheric air mass factors."){record_delimiter}
-("entity"{tuple_delimiter}"2024"{tuple_delimiter}"Publication_year"{tuple_delimiter}"The publication year of the study on the multi-faceted analysis of the dust storm."){record_delimiter}
 ("entity"{tuple_delimiter}"2017"{tuple_delimiter}"Publication_year"{tuple_delimiter}"The publication year of the study on high-resolution and observationally constrained OMI NO2 satellite retrieval and the study about ozone in the lower troposphere during the 2016 G20 conference in Hangzhou") {record_delimiter}
 ("entity"{tuple_delimiter}"Li, Jing"{tuple_delimiter}"Author"{tuple_delimiter}"One of the authors of the study on the multi-faceted analysis of the dust storm."){record_delimiter}
 ("entity"{tuple_delimiter}"Wong, Man Sing"{tuple_delimiter}"Author"{tuple_delimiter}"One of the authors of the study on the multi-faceted analysis of the dust storm."){record_delimiter}
@@ -194,34 +181,18 @@ Output:
 ("entity"{tuple_delimiter}"Streets, David G."{tuple_delimiter}"Author"{tuple_delimiter}"One of the authors of the study on high-resolution and observationally constrained OMI NO2 satellite retrieval."){record_delimiter}
 ("entity"{tuple_delimiter}"Su, Wenjing"{tuple_delimiter}"Author"{tuple_delimiter}"An author of the study on the characterization of ozone during the 2016 G20 conference."){record_delimiter}
 ("entity"{tuple_delimiter}"Liu, Jianguo"{tuple_delimiter}"Author"{tuple_delimiter}"An author of the study on the characterization of ozone during the 2016 G20 conference."){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"Gobi deserts"{tuple_delimiter}"The dust storm originated from the Gobi deserts, indicating a causal relationship between the location and the event."{tuple_delimiter}"source, origin"{tuple_delimiter}9){record_delimiter}
 ("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"northern China"{tuple_delimiter}"Northern China was affected by the dust storm, demonstrating the impact of the storm on the region's air quality."{tuple_delimiter}"impact, affect"{tuple_delimiter}8){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"central China"{tuple_delimiter}"Central China was affected by the dust storm, indicating the geographical spread of the event."{tuple_delimiter}"impact, affect"{tuple_delimiter}8){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"eastern China"{tuple_delimiter}"Eastern China was affected by the dust storm, showing the wide-reaching impact of the event."{tuple_delimiter}"impact, affect"{tuple_delimiter}8){record_delimiter}
 ("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"Korean Peninsula"{tuple_delimiter}"The Korean Peninsula experienced the effects of the dust storm, highlighting the transboundary nature of such events."{tuple_delimiter}"impact, affect"{tuple_delimiter}8){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"Japan"{tuple_delimiter}"Japan, especially the Japan Sea area, was impacted by the dust storm, demonstrating the event's significant geographical extent."{tuple_delimiter}"impact, affect"{tuple_delimiter}8){record_delimiter}
 ("relationship"{tuple_delimiter}"CALIPSO"{tuple_delimiter}"dust storm"{tuple_delimiter}"CALIPSO provided data on the vertical distribution of the dust storm, showcasing the satellite's capability in observing such atmospheric events."{tuple_delimiter}"observation, data provision"{tuple_delimiter}9){record_delimiter}
 ("relationship"{tuple_delimiter}"HYSPLIT"{tuple_delimiter}"dust storm"{tuple_delimiter}"The HYSPLIT model traced the dust storm's origin and transport path, indicating its utility in understanding the dynamics of dust storms."{tuple_delimiter}"modeling, analysis"{tuple_delimiter}9){record_delimiter}
 ("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"Central Mongolia"{tuple_delimiter}"HYSPLIT model identified Central Mongolia as the origin of the dust storm that reached the Japan Sea, linking the location to the event."{tuple_delimiter}"source, origin identification"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"Pacific Ocean"{tuple_delimiter}"The dust storm's aerosols were predicted to be transported to the Pacific Ocean, indicating the long-range transport potential of such events."{tuple_delimiter}"transport, prediction"{tuple_delimiter}8){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"IMG"{tuple_delimiter}"IMG suffered the most from the dust storm, highlighting the severe impact on this region's air quality."{tuple_delimiter}"impact, severity"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"JJJ"{tuple_delimiter}"JJJ was heavily impacted by the dust storm, showing significant effects on air quality indicators like PM10 and PM2.5."{tuple_delimiter}"impact, severity"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"YRD"{tuple_delimiter}"The YRD was less affected by the dust storm compared to IMG and JJJ, indicating regional differences in the storm's impact."{tuple_delimiter}"impact, comparison"{tuple_delimiter}7){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"PRD"{tuple_delimiter}"The PRD was hardly affected by the dust storm, demonstrating minimal impact on this region."{tuple_delimiter}"impact, minimal effect"{tuple_delimiter}2){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"AOD550"{tuple_delimiter}"The dust storm caused dramatic increments in AOD550 in regions like Gobi and JJJ, indicating increased aerosol loading."{tuple_delimiter}"increase, correlation"{tuple_delimiter}8){record_delimiter}
 ("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"ReffT"{tuple_delimiter}"Increments of ReffT were observed during the dust storm, suggesting changes in aerosol size distribution."{tuple_delimiter}"increase, correlation"{tuple_delimiter}7){record_delimiter}
 ("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"AE"{tuple_delimiter}"Low AE values during the dust storm indicated the presence of larger dust particles, affecting the aerosol size distribution."{tuple_delimiter}"correlation, indication"{tuple_delimiter}7){record_delimiter}
 ("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"SSA870"{tuple_delimiter}"High SSA870 values during the dust storm suggest enhanced scattering properties of aerosols due to dust particles."{tuple_delimiter}"correlation, indication"{tuple_delimiter}7){record_delimiter}
 ("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"PM10"{tuple_delimiter}"The dust storm significantly impacted PM10 levels, especially in regions like IMG and JJJ, showing a direct link between the event and air quality degradation."{tuple_delimiter}"impact, increase"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"PM2.5"{tuple_delimiter}"Similar to PM10, PM2.5 levels were also affected by the dust storm, indicating the event's role in increasing fine particulate matter concentrations."{tuple_delimiter}"impact, increase"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"CO"{tuple_delimiter}"The dust storm had no significant influence on CO levels, suggesting that not all air quality indicators are affected equally by such events."{tuple_delimiter}"no impact, observation"{tuple_delimiter}2){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"NO2"{tuple_delimiter}"Similarly, NO2 levels were not significantly impacted by the dust storm, indicating a selective effect on certain pollutants."{tuple_delimiter}"no impact, observation"{tuple_delimiter}2){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"O3"{tuple_delimiter}"O3 levels remained unchanged during the dust storm, highlighting the complex interactions between different atmospheric components and dust events."{tuple_delimiter}"no impact, observation"{tuple_delimiter}2){record_delimiter}
-("relationship"{tuple_delimiter}"dust storm"{tuple_delimiter}"SO2"{tuple_delimiter}"The dust storm did not significantly affect SO2 concentrations, further demonstrating the varied impact of dust events on different pollutants."{tuple_delimiter}"no impact, observation"{tuple_delimiter}2){record_delimiter}
 ("relationship"{tuple_delimiter}"8 April to 11 April 2023"{tuple_delimiter}"dust storm"{tuple_delimiter}"This period marked the occurrence of the intense dust storm, defining the temporal scope of the event."{tuple_delimiter}"event period, definition"{tuple_delimiter}10){record_delimiter}
 ("relationship"{tuple_delimiter}"April 9, 2022"{tuple_delimiter}"dust storm"{tuple_delimiter}"The dust storm arrived over the Japan Sea on this date, indicating a specific point in the event's timeline."{tuple_delimiter}"event milestone, arrival"{tuple_delimiter}10){record_delimiter}
 ("relationship"{tuple_delimiter}"springtime of the year 2023"{tuple_delimiter}"PM10"{tuple_delimiter}"The springtime of 2023 showed comparable PM10 levels to 2021, suggesting similar air quality conditions regarding this pollutant."{tuple_delimiter}"comparison, similarity"{tuple_delimiter}8){record_delimiter}
-("relationship"{tuple_delimiter}"springtime of the year 2023"{tuple_delimiter}"PM2.5"{tuple_delimiter}"Similar to PM10, PM2.5 levels in the springtime of 2023 were comparable to those in 2021, indicating a pattern in air quality for these years."{tuple_delimiter}"comparison, similarity"{tuple_delimiter}8){record_delimiter}
 ("relationship"{tuple_delimiter}"Li, Jing"{tuple_delimiter}"2024"{tuple_delimiter}"Li, Jing is an author of the study published in 2024, linking the researcher to their work and its publication date."{tuple_delimiter}"authorship, publication year"{tuple_delimiter}10){record_delimiter}
 ("relationship"{tuple_delimiter}"Wong, Man Sing"{tuple_delimiter}"2024"{tuple_delimiter}"Wong, Man Sing co-authored the study published in 2024, establishing their contribution to the research and its publication timeline."{tuple_delimiter}"authorship, publication year"{tuple_delimiter}10){record_delimiter}
 ("relationship"{tuple_delimiter}"Shi, Guoqiang"{tuple_delimiter}"2024"{tuple_delimiter}"Shi, Guoqiang is also an author of the study from 2024, highlighting their involvement in the research and its publication."{tuple_delimiter}"authorship, publication year"{tuple_delimiter}10){record_delimiter}
@@ -232,9 +203,8 @@ Output:
 ("relationship"{tuple_delimiter}"OMI"{tuple_delimiter}"eastern US"{tuple_delimiter}"OMI data is used to study NO2 levels in the eastern US, demonstrating the application of satellite data in regional air quality analysis."{tuple_delimiter}"application, regional study"{tuple_delimiter}8){record_delimiter}
 ("relationship"{tuple_delimiter}"city centers"{tuple_delimiter}"NO2"{tuple_delimiter}"City centers show increased OMI NO2 tropospheric columns, indicating higher pollution levels in urban areas."{tuple_delimiter}"increase, pollution indication"{tuple_delimiter}8){record_delimiter}
 ("relationship"{tuple_delimiter}"rural areas"{tuple_delimiter}"NO2"{tuple_delimiter}"Rural areas exhibit decreased OMI NO2 tropospheric columns, suggesting lower pollution levels compared to urban centers."{tuple_delimiter}"decrease, pollution indication"{tuple_delimiter}8){record_delimiter}
-("relationship"{tuple_delimiter}"Pandora NO2"{tuple_delimiter}"OMI"{tuple_delimiter}"Pandora NO2 measurements are used to validate the new OMI NO2 product, ensuring the accuracy of the satellite-derived data."{tuple_delimiter}"validation, accuracy assurance"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"Pandora"{tuple_delimiter}"OMI"{tuple_delimiter}"Pandora NO2 measurements are used to validate the new OMI NO2 product, ensuring the accuracy of the satellite-derived data."{tuple_delimiter}"validation, accuracy assurance"{tuple_delimiter}9){record_delimiter}
 ("relationship"{tuple_delimiter}"ACAM"{tuple_delimiter}"OMI"{tuple_delimiter}"ACAM measurements also validate the new OMI NO2 product, further confirming the reliability of the satellite data."{tuple_delimiter}"validation, reliability confirmation"{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"EPA NO2 monitors"{tuple_delimiter}"OMI"{tuple_delimiter}"The correlation between EPA NO2 monitor data and the OMI satellite product is analyzed, highlighting the comparison between ground-based and satellite measurements."{tuple_delimiter}"comparison, correlation analysis"{tuple_delimiter}8){record_delimiter}
 ("relationship"{tuple_delimiter}"Goldberg, Daniel L."{tuple_delimiter}"2017"{tuple_delimiter}"Goldberg, Daniel L. is an author of the study published in 2017, linking the researcher to their work and its publication date."{tuple_delimiter}"authorship, publication year"{tuple_delimiter}10){record_delimiter}
 ("relationship"{tuple_delimiter}"Lamsal, Lok N."{tuple_delimiter}"2017"{tuple_delimiter}"Lamsal, Lok N. co-authored the study published in 2017, establishing their contribution to the research and its publication timeline."{tuple_delimiter}"authorship, publication year"{tuple_delimiter}10){record_delimiter}
 ("relationship"{tuple_delimiter}"Loughner, Christopher P."{tuple_delimiter}"2017"{tuple_delimiter}"Loughner, Christopher P. is also an author of the 2017 study, highlighting their involvement in the research and its publication."{tuple_delimiter}"authorship, publication year"{tuple_delimiter}10){record_delimiter}
@@ -309,7 +279,6 @@ Add sections and commentary to the response as appropriate for the length and fo
 PROMPTS["keywords_extraction"] = """---Role---
 
 You are a helpful assistant tasked with identifying both high-level and low-level keywords in the user's query.
-Use {language} as output language.
 
 ---Goal---
 
@@ -391,4 +360,28 @@ Do not include information where the supporting evidence for it is not provided.
 {content_data}
 
 Add sections and commentary to the response as appropriate for the length and format. Style the response in markdown.
+"""
+
+PROMPTS[
+    "similarity_check"
+] = """Please analyze the similarity between these two questions:
+
+Question 1: {original_prompt}
+Question 2: {cached_prompt}
+
+Please evaluate the following two points and provide a similarity score between 0 and 1 directly:
+1. Whether these two questions are semantically similar
+2. Whether the answer to Question 2 can be used to answer Question 1
+Similarity score criteria:
+0: Completely unrelated or answer cannot be reused, including but not limited to:
+   - The questions have different topics
+   - The locations mentioned in the questions are different
+   - The times mentioned in the questions are different
+   - The specific individuals mentioned in the questions are different
+   - The specific events mentioned in the questions are different
+   - The background information in the questions is different
+   - The key conditions in the questions are different
+1: Identical and answer can be directly reused
+0.5: Partially related and answer needs modification to be used
+Return only a number between 0-1, without any additional content.
 """
