@@ -116,13 +116,20 @@ for i, row in relevant_true.iterrows():
     HTML = f'''<section class="paper-card">
             <section class="paper-title">{row['title']}</section>
             <section class="paper-authors">{row['authors'].replace(';', ', ')}</section>
-            <section class="paper-journal">{row['journal']}</section>
-            <section class="paper-doi"><a href="https://doi.org/{row['doi']}" target="_blank">https://doi.org/{row['doi']}</a></section>
-            <section class="topic-tags">
-                <span class="topic-tag">{tag1}</span>
-                <span class="topic-tag">{tag2}</span>
-                <span class="topic-tag">{tag3}</span>
-            </section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">{row['journal']}</section>
+                    <section class="paper-doi"><a href="https://doi.org/{row['doi']}" target="_blank">https://doi.org/{row['doi']}</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">{tag1}</span>
+                        <span class="topic-tag">{tag2}</span>
+                        <span class="topic-tag">{tag3}</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/{row['doi']}" alt="QR Code" />
+                </div>
+            </div>
             <section class="abstract-content">{row['summary']}</section>
             </section>
             '''
