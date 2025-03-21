@@ -33,7 +33,7 @@ def analyze_paper(info_json: str) -> Tuple[bool, str]:
         }
 
     model = genai.GenerativeModel(
-            model_name="gemini-2.0-flash-exp",
+            model_name="gemini-2.0-pro",
             generation_config=generation_config,
             system_instruction="You are an expert in literature analysis, skilled in qualitative research methods, literature retrieval, and critical thinking. You excel at interpreting complex texts, identifying key ideas and methodologies, and conducting comprehensive literature reviews to identify research trends and gaps.",
             )
@@ -45,7 +45,7 @@ def analyze_paper(info_json: str) -> Tuple[bool, str]:
                 }]
             )
     prompt = """Analyze the information of each research paper and summarize the most important topic-tags in Chinese (exactly 3), 
-    and generate a Chinese summary of around 200 words to introduce what this paper is about especially the data and method and its conclusions on the basis of the previous explanation as well as the original title and abstract. 
+    and generate a Chinese summary of around 250 words to introduce what this paper is about especially the data and method and its conclusions on the basis of the previous explanation as well as the original title and abstract. 
     Please be specific and concrete and skip the pleasantries. You can bold the key words and warp them into HTML tags <b></b>.
     Finally, as a reviewer for professional academic journals, please rate this article. You need to comprehensively consider its influence, such as the novelty of its research, the writing ability, the imapact factor of the Journal and the popularity of the authors, and rate it on a scale from 0 to 100, with 100 being the highest and 0 being the lowest. 
     Output the above results using the following JSON schema and the number of entries should be the same:
@@ -88,7 +88,7 @@ print(len(relevant_true))
 # Send the information to GPT
 info = relevant_true[['title', 'abstract', 'topic_words', 'explanation','authors']]
 
-BS = 10  # Batch size
+BS = 16  # Batch size
 DFS = []
 for i in range(len(info)//BS +1):
     print(i, i*BS, i*BS+BS)
