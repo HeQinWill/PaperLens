@@ -114,6 +114,7 @@ HTMLs = []
 for i, row in relevant_true.iterrows():
     tag1, tag2, tag3 = row['tags']  # eval(tags_str)  if read it from csv
     HTML = f'''<section class="paper-card">
+            <button class="export-button">📤</button>
             <section class="paper-title">{row['title']}</section>
             <section class="paper-authors">{row['authors'].replace(';', ', ')}</section>
             <div class="paper-info-container">
@@ -142,9 +143,23 @@ template_head = f'''<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="wechat.css">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="./printcard.js"></script>
 </head>
 <body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
 <section class="header">
     <h1>大气环境遥感论文速递</h1>
     <section class="date">{current_date[:4]}/{current_date[4:6]}/{current_date[6:8]}</section>
@@ -152,6 +167,9 @@ template_head = f'''<!DOCTYPE html>
 <section id="papers-container">'''
 
 template_tail = '''</section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
 <section class="footer">
     论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
 </section>
