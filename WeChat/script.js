@@ -44,9 +44,20 @@ function loadDateFile(date) {
             }
         })
         .then(html => {
+            
+            // 调试打印原始内容
+            // console.log('[DEBUG] Raw HTML content:', html + '...');
+
             contentDiv.innerHTML = html; // 加载文件内容
             lastUpdateSpan.textContent = `${date}`;
             updateNavigation(date); // 更新导航链接
+            
+            // 隐藏所有导出按钮
+            const exportButtons = contentDiv.querySelectorAll('.export-button, .export-all-container');
+            exportButtons.forEach(button => {
+                button.style.display = 'none';
+            });
+
         })
         .catch(() => {
             // 如果文件不存在，尝试加载前一天

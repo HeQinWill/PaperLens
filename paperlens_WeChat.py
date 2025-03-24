@@ -145,7 +145,6 @@ template_head = f'''<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="wechat.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="./printcard.js"></script>
 </head>
 <body>
     <div class="loading-overlay" id="loadingOverlay">
@@ -174,6 +173,7 @@ template_tail = '''</section>
     论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
 </section>
 </body>
+<script src="./printcard.js"></script>
 </html>'''
 
 html_string = template_head+html_string+template_tail

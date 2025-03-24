@@ -1,6 +1,8 @@
 // 直接<script>...</script>没问题但是直接放在js中，可能会导致DOMContentLoaded事件在脚本加载之前触发。
 // 为了解决这个问题，将脚本放在DOMContentLoaded事件的回调函数中，确保DOM已经加载完成后再执行脚本。
-document.addEventListener('DOMContentLoaded', function() {
+// 不过我直接将<script src="./printcard.js"></script>放在html的最后，也就同样没有问题了。
+
+// document.addEventListener('DOMContentLoaded', function() {
     // 检测暗黑模式
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.documentElement.classList.add('dark');
@@ -169,4 +171,5 @@ document.addEventListener('DOMContentLoaded', function() {
             previewModal.style.display = 'none';
         }
     });
-});
+    
+// });
