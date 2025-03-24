@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="./printcard.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/03/24</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Evaluation of the Directional Derivative Approach for Timely and Accurate Satellite‐Based Emission Estimation Using Chemical Transport Model Simulation of Nitrogen Oxides</section>
+            <section class="paper-authors">Zolal Ayazpour, Kang Sun, Ruixin Zhang, Huizhong Shen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042817" target="_blank">https://doi.org/10.1029/2024JD042817</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">排放估算</span>
+                        <span class="topic-tag">方向导数法</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042817" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文研究了一种名为<b>方向导数法（DDA）</b>的新方法，用于利用卫星观测数据快速准确地估算排放源分布，重点关注<b>氮氧化物（NOx）</b>。研究基于三维连续性方程推导了不同复杂程度的DDA排放估算器，并将其与常用的<b>散度方法</b>进行了比较。研究利用<b>WRF-CMAQ模型</b>模拟的NOx数据，评估了利用卫星观测的NO2柱浓度估算NOx排放的DDA估算器的性能。结果表明, 考虑了地形和化学过程的DDA估算器表现最佳, 优于散度方法估算器. 该研究提出的方法可以有效地利用卫星观测数据进行排放估算，对空气质量监测和管理具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">KAZR‐CloudSat Analysis of Snowing Profiles at the North Slope of Alaska: Implications of the Satellite Radar Blind Zone</section>
+            <section class="paper-authors">J. A. Shates, C. Pettersen, T. S. L’Ecuyer, M. S. Kulie</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042700" target="_blank">https://doi.org/10.1029/2024JD042700</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星雷达</span>
+                        <span class="topic-tag">降雪观测</span>
+                        <span class="topic-tag">雷达盲区</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042700" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">这项研究利用2011年至2021年美国能源部大气辐射测量（ARM）北阿拉斯加大气观测站的<b>地面Ka波段天顶雷达（KAZR）</b>数据, 研究了不同降雪类型（深降雪、浅降雪和雪幡）的特征。研究发现，浅降雪占总降雪事件的近一半（48%），但其中大部分（62%）可能因<b>卫星雷达盲区</b>而被低估或未被检测到。研究还将KAZR观测到的降雪垂直结构与<b>CloudSat卫星</b>观测结果进行了比较, 评估了雪幡被错误标记为地面降雪的情况, 研究指出在十月份, 误判率高达12%. 该研究为理解卫星观测降雪数据提供了重要参考，并对未来星载雷达的设计和数据解读具有指导意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Gaseous Air Pollutants and Lung Function in Fibrotic Interstitial Lung Disease (fILD): Evaluation of Different Spatial Analysis Approaches</section>
+            <section class="paper-authors">Shuangjia Xue, Matthew J. Broerman, Gillian C. Goobie, Daniel J. Kass, James P. Fabisiak, Sally E. Wenzel, Seyed Mehdi Nouraie</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.4c11275" target="_blank">https://doi.org/10.1021/acs.est.4c11275</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空间分析</span>
+                        <span class="topic-tag">污染物暴露</span>
+                        <span class="topic-tag">克里金法</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.4c11275" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究评估了三种空间分析方法（<b>最近邻</b>、<b>反距离权重</b>和<b>克里金法</b>）在估算气体污染物（CO、NO2、O3、SO2）暴露对纤维化间质性肺病（fILD）患者肺功能影响方面的表现。研究使用了10折交叉验证来比较不同方法的预测误差，发现<b>克里金法</b>在预测误差方面表现最优, 具有最低的均方根误差(RMSE)。研究还发现，通过克里金法估算的SO2和CO暴露与肺功能降低之间的关联强度和精度更高。数据主要来自fILD患者队列的临床数据以及不同空间分析方法估算的污染物浓度。该研究强调了<b>克里金法</b>作为估算气体污染物水平的可靠方法的价值，并为未来的流行病学研究提供了有价值的见解。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+</html>
