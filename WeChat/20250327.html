@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/03/27</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The dominant role of aerosol’s CCN effect in cloud glaciation</section>
+            <section class="paper-authors">Iqra Munawar, Yannian Zhu, Minghuai Wang, Daniel Rosenfeld, Jihu Liu, Yichuan Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-00999-w" target="_blank">https://doi.org/10.1038/s41612-025-00999-w</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶-云相互作用</span>
+                        <span class="topic-tag">云物理</span>
+                        <span class="topic-tag">卫星遥感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-00999-w" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究探讨了<b>气溶胶</b>在云的<b>冰化过程</b>中所扮演的角色，特别是区分了其作为<b>云凝结核（CCN）</b>和冰核（INP）的不同影响。云的冰化对降水形成、大气辐射平衡和水循环至关重要。研究利用了一整年的全球<b>MODIS卫星数据</b>（主要关注云特性）和<b>MERRA2再分析资料</b>（提供气象背景和气溶胶信息），集中分析了深对流云中的冰化温度（Tg）。核心发现是，在-5°C时的<b>云滴有效半径（re-5）</b>是决定云开始冰化温度（Tg）的关键因素：re-5越大，Tg越高（即在更暖的温度下开始冰化）。这强烈表明，云滴的大小（主要受CCN浓度和类型影响）比INP浓度更能主导冰化启动温度。研究推测，较大的过冷云滴更容易冻结，并可能通过增强<b>次生冰晶过程（SIP）</b>来加速冰化，这种效应甚至可能掩盖了INP在初级冰晶核化中的作用。进一步分析显示，在给定的re-5条件下，即使改变气溶胶（无论是细颗粒还是粗颗粒）浓度，对Tg的影响也相对较小。虽然细、粗气溶胶作为CCN对re-5本身有显著且相反的影响（细颗粒通常使re减小，粗颗粒使其增大），但re-5与Tg之间稳健的关系得以维持。基于这些发现，研究建立了一个多元线性回归模型，能够以0.87的高相关系数预测Tg。这项工作强调了<b>气溶胶-云相互作用</b>中CCN效应对云冰化过程的主导性，为改进<b>气候模型</b>中相关参数化方案提供了重要依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Aerosol Toxicokinetics: A Framework for Unraveling Toxicological Dynamics from Air to the Body</section>
+            <section class="paper-authors">Xiwen Song, Di Wu, Ling N. Jin, Yanyi Xu, Xiu Chen, Qing Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c00751" target="_blank">https://doi.org/10.1021/acs.est.5c00751</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶毒性</span>
+                        <span class="topic-tag">暴露评估</span>
+                        <span class="topic-tag">健康风险</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c00751" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">这篇观点性文章提出了一个关于<b>气溶胶毒性</b>动力学的概念框架，旨在系统性地理解大气气溶胶从环境空气暴露到在人体内产生毒性效应的完整过程。当前面临的挑战是，气溶胶的成分和浓度在<b>大气转化</b>、<b>吸入</b>、体内分布、代谢和排泄等各个环节都在不断变化，使得难以准确评估其健康风险。该文提出的框架试图通过建立一系列数学方程（<b>毒性动力学-毒性效应动力学模型</b>），从大气中测量的气溶胶组分浓度出发，推算出进入人体的<b>生物有效浓度</b>，并基于此浓度预测其可能产生的<b>生物效应</b>或毒性反应。这个框架强调了连接外部暴露（大气浓度）与内部剂量（生物有效浓度）以及最终健康效应的重要性。通过这种方式，可以弥合环境空气质量监测数据与人群健康影响之间的鸿沟。文章还指出，从吸入途径的角度进行预测，可以与更广泛的<b>暴露组学</b>研究相结合。作者呼吁进一步发展和验证该模型框架，并将其与定量的<b>不良结局路径（AOP）</b>整合，应用于暴露-疾病建模，从而为制定基于健康的<b>空气质量标准</b>和公共卫生管理策略提供新的科学依据和视角，旨在更有效地管理<b>健康风险</b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Chemical Composition of Fresh and Aged Asphalt-Related Organic Aerosols: From Ambient Observations to Laboratory Experiments</section>
+            <section class="paper-authors">Peeyush Khare, Jo Machesky, Leah Williams, Mackenzie Humes, Edward C. Fortner, Manjula Canagaratna, Jordan E. Krechmer, Andrew T. Lambe, Albert A. Presto, Drew R. Gentner</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.4c00193" target="_blank">https://doi.org/10.1021/acsestair.4c00193</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有机气溶胶</span>
+                        <span class="topic-tag">沥青排放</span>
+                        <span class="topic-tag">大气化学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.4c00193" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究深入探讨了与<b>沥青</b>相关的<b>有机气溶胶（OA）</b>的化学特性，包括其新鲜排放和经过<b>大气化学</b>老化后的成分变化。沥青作为一种重要的建筑材料，其在铺设（高温）和使用（常温）过程中会排放活性有机化合物，这些化合物是形成OA（尤其是二次有机气溶胶SOA）的前体物，但其贡献常被低估。研究采用了<b>现场观测</b>与<b>实验室模拟</b>相结合的方法。现场部分，研究人员在一个持续一个月的道路铺设工程附近，利用<b>气溶胶质谱仪（AMS）</b>实时监测了环境空气中OA浓度和化学成分的变化。实验室部分，研究人员收集了实际使用的沥青样品，在模拟其应用温度（140°C）和使用温度（60°C）条件下加热，将其气态排放物引入环境模拟舱和氧化流动反应器中，模拟不同程度的大气氧化过程，并分析生成的<b>气相和气溶胶相产物</b>。结果表明，沥青排放在大气氧化条件下确实会生成<b>SOA</b>，其化学性质（如氧化程度）取决于沥青的初始温度和经历的氧化程度。有趣的是，无论是在现场观测还是实验室模拟中，老化程度较低的沥青相关OA与其它石化源（如交通排放）产生的OA以及城市地区常见的类烃OA（HOA）因子在化学成分上表现出相似性。而深度老化的OA则更接近于环境大气中普遍存在的氧化态OA（OOA）。这一发现提示，在实际大气环境中，沥青源对<b>城市OA</b>的贡献可能因其化学特征与其他来源相似而难以被准确区分和量化。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Effects of 2010–2045 climate change on ozone levels in China under a carbon neutrality scenario: key meteorological parameters and processes</section>
+            <section class="paper-authors">Ling Kang, Hong Liao, Ke Li, Xu Yue, Yang Yang, Ye Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-3603-2025" target="_blank">https://doi.org/10.5194/acp-25-3603-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气候变化</span>
+                        <span class="topic-tag">臭氧污染</span>
+                        <span class="topic-tag">气象参数</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-3603-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究旨在评估在<b>碳中和情景</b>下，未来（2010-2045年）<b>气候变化</b>对中国<b>臭氧（O3）</b>浓度的潜在影响。研究利用<b>Global Change and Air Pollution version 2.0 (GCAP 2.0)</b> 模型进行模拟，并结合了耦合模式比较计划第六阶段（CMIP6）中其他六个模型的预测结果进行对比和不确定性分析。模拟数据主要包括未来气候预测（如温度、辐射、湿度、气压、边界层高度等）和相应的O3浓度变化。研究发现，即使在积极减排的碳中和路径下，气候变化本身仍将导致中国东部、华北平原和长江三角洲等区域夏季<b>日最大8小时平均（MDA8）O3浓度</b>显著升高，预计分别增加2.3 ppbv (3.9 %)、4.7 ppbv (7.3 %) 和 3.0 ppbv (5.1 %)。分析表明，<b>最高气温（T2max）、地面短波辐射（SW）</b>和<b>相对湿度（RH）</b>是驱动O3浓度变化的最关键<b>气象参数</b>，它们共同解释了气候驱动O3变化的58%-76%。从过程来看，<b>净化学产生</b>是边界层内导致O3增加的最主要途径。该研究强调了气候变化对未来空气质量的挑战，即使在减排背景下，仍需考虑气候变化带来的“惩罚效应”，这对制定有效的空气污染控制策略至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Inclusion of the ECMWF ecRad radiation scheme (v1.5.0) in the MAR (v3.14), regional evaluation for Belgium, and assessment of surface shortwave spectral fluxes at Uccle</section>
+            <section class="paper-authors">Jean-François Grailet, Robin J. Hogan, Nicolas Ghilain, David Bolsée, Xavier Fettweis, Marilaure Grégoire</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-1965-2025" target="_blank">https://doi.org/10.5194/gmd-18-1965-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">辐射传输模型</span>
+                        <span class="topic-tag">光谱通量</span>
+                        <span class="topic-tag">区域气候模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-1965-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究介绍了区域气候模型<b>MAR (Modèle Atmosphérique Régional)</b> 的一个重要更新（版本3.14），主要内容是将欧洲中期天气预报中心（ECMWF）开发的先进<b>辐射传输方案ecRad</b>（v1.5.0）成功集成到MAR模型中。先前的辐射方案已显陈旧且缺乏灵活性。ecRad方案的设计具有模块化特点且仍在积极开发中，其引入使得MAR能够模拟高分辨率的<b>光谱通量</b>，尤其是在<b>紫外线（UV）</b>和光合有效辐射等特定波段，这对评估气候对人类健康和生态系统的影响至关重要。研究团队使用更新后的MAR模型对2011-2020年的比利时地区进行了模拟，并将输出结果与比利时皇家气象研究所（RMIB）的格点数据以及<b>EUMETSAT卫星应用设施</b>的陆面分析产品进行了对比评估。通过敏感性实验确定了最优配置以实现平衡的辐射收支。此外，研究还利用高光谱分辨率的ecCKD气体光学模型运行ecRad，模拟了280-500nm范围内的<b>光谱短波通量</b>，并与Uccle站（比利时）2017-2020年的<b>地面光谱测量数据</b>进行了验证。作为初步应用，论文还提出并评估了一种利用MAR模型计算光谱通量来预测<b>UV指数</b>的方法。这项工作显著提升了MAR模型在辐射过程模拟方面的能力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurement report: Can zenith wet delay from GNSS “see” atmospheric turbulence? Insights from case studies across diverse climate zones</section>
+            <section class="paper-authors">Gaël Kermarrec, Xavier Calbet, Zhiguo Deng, Cintia Carbajal Henken</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-3567-2025" target="_blank">https://doi.org/10.5194/acp-25-3567-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">GNSS信号</span>
+                        <span class="topic-tag">大气湍流</span>
+                        <span class="topic-tag">湿延迟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-3567-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究旨在探索利用全球导航卫星系统（<b>GNSS</b>）信号中的<b>天顶湿延迟（ZWD）</b>来探测<b>大气湍流</b>的可能性。GNSS信号在穿过对流层时会产生延迟，其中湿延迟主要由变化剧烈的大气水汽引起。虽然ZWD的平均项能描述中尺度事件，但其小尺度变化与<b>大气边界层（ABL）</b>中的湍流过程密切相关。本研究提出了一种新的<b>滤波和估计策略</b>来专门分析ZWD的这些小尺度变化。研究选取了分布在全球<b>不同气候带</b>（如热带、中纬度、极地等）的五个GNSS站点进行案例研究，利用这些站点的<b>GNSS观测数据</b>来估计ZWD及其小尺度波动。分析结果揭示了湍流活动存在特定的<b>日变化和季节性模式</b>，且这些模式与各站点的主要湍流驱动机制（如浮力或风切变）有关。这项研究为更准确地模拟和预测<b>积分水汽（IWV）</b>、湍流以及潜在的液态水云提供了基础，并有望改进临近预报的不确定性评估、优化甚长基线干涉测量（VLBI）和GNSS数据处理中的随机模型。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Development of a fast radiative transfer model for ground-based microwave radiometers (ARMS-gb v1.0): validation and comparison to RTTOV-gb</section>
+            <section class="paper-authors">Yi-Ning Shi, Jun Yang, Wei Han, Lujie Han, Jiajia Mao, Wanlin Kan, Fuzhong Weng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-1947-2025" target="_blank">https://doi.org/10.5194/gmd-18-1947-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">辐射传输模型</span>
+                        <span class="topic-tag">地基微波辐射计</span>
+                        <span class="topic-tag">亮温模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-1947-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究开发了一种名为<b>ARMS-gb (Advanced Radiative Transfer Modeling System – Ground-Based)</b> 的新型快速<b>辐射传输模型（RTM）</b>，专门用于模拟<b>地基微波辐射计（GMR）</b>观测的<b>亮温（Brightness Temperature）</b>及其对大气参数变化的敏感度（雅可比矩阵）。直接同化GMR数据对改进数值天气预报具有重要潜力，而精确快速的RTM是实现同化的关键工具。ARMS-gb模型采用晴空辐射传输求解器计算大气热辐射，并通过统计回归方案估算气体吸收。为了提高模拟精度，尤其是在<b>高湿环境</b>下，该模型在训练气体吸收方案时，在标准的83个廓线数据集基础上额外增加了7个湿润廓线。此外，模型还集成了一种先进的<b>水汽垂直插值</b>方法，相比于常用的<b>RTTOV-gb模型</b>中采用的方法，这种新方法能更准确地处理水汽廓线，在强水汽吸收通道的标准差减少了0.15 K。研究通过将ARMS-gb和RTTOV-gb的模拟结果与两个真实GMR站点的观测数据进行对比验证。结果表明，ARMS-gb与RTTOV-gb总体表现一致，但在高湿度条件下，ARMS-gb的模拟结果与观测值的偏差（标准差）更小。研究还展示了ARMS-gb可用于监测GMR的<b>观测质量</b>。该模型的开发为GMR数据的<b>数据同化</b>应用提供了更优的选择。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
