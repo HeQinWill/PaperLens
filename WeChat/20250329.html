@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/03/29</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Tempests in the troposphere: Mapping the impact of giant storms on Jupiter’s deep atmosphere</section>
+            <section class="paper-authors">Chris Moeckel, Huazhi Ge, Imke de Pater</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.ado9779" target="_blank">https://doi.org/10.1126/sciadv.ado9779</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">木星大气</span>
+                        <span class="topic-tag">微波遥感</span>
+                        <span class="topic-tag">氨气丰度</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.ado9779" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用NASA<b>朱诺号（Juno）探测器</b>搭载的<b>微波辐射计（MWR）</b>的观测数据，深入探究了<b>木星</b>上的<b>大型风暴</b>对其<b>深层大气</b>结构（特别是氨气和温度分布）产生的影响。研究聚焦于2017年观测到的一次大规模风暴事件。<b>数据</b>主要来源于<b>Juno MWR</b>，该仪器能够穿透木星可见云层，探测不同深度大气的微波辐射，从而反演出<b>氨气（NH3）丰度</b>和<b>大气温度</b>的垂直廓线。<b>方法</b>包括从MWR数据中反演受风暴影响区域及其周边平静区域的氨气丰度和温度廓线，识别并分析风暴过后大气参数的<b>异常特征</b>。结合可能的<b>大气模拟</b>结果，研究人员解释了这些异常现象，揭示了风暴驱动的物质和能量的<b>垂直输送</b>与混合过程。研究还将观测结果与<b>水</b>和<b>氨</b>在大气中的循环过程联系起来。<b>结论</b>表明，木星上的大型风暴是重塑其深层大气结构的关键驱动力。观测显示，风暴活动导致其影响范围内的<b>上层大气氨气耗尽</b>且<b>温度升高</b>，同时将富含氨的物质向下输送到远低于风暴触发层位的深处。这些观测结果及其与模拟的比对，有力证明了木星大气中<b>水循环与氨循环是相互耦合</b>的。风暴驱动的这种耦合作用，对于解释为何<b>木星和土星</b>的对流层上部普遍存在<b>氨气亏损</b>现象至关重要。研究强调了风暴在塑造富氢巨行星大气成分和结构中的核心作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impacts of abatement in anthropogenic emissions in the context of China’s carbon neutrality on global photovoltaic potential</section>
+            <section class="paper-authors">Zhiyao Hu, Zhili Wang, Zhun Guo, Yadong Lei, Xiaochao Yu, Yingfang Li, Lin Liu, Huizheng Che, Xiaoye Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01005-z" target="_blank">https://doi.org/10.1038/s41612-025-01005-z</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">碳中和</span>
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">光伏潜力</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01005-z" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>地球系统模型（CESM2）</b>，定量评估了在中国实现<b>碳中和</b>及推行<b>清洁空气政策</b>背景下，<b>人为源排放</b>（特别是<b>气溶胶</b>及其前体物）的大幅削减将如何影响全球的<b>光伏发电潜力（PVPOT）</b>。研究着眼于21世纪中期（2041-2060年）。<b>数据</b>主要来源于不同排放情景下的<b>CESM2模型模拟输出</b>，包括模拟的<b>地表向下太阳辐射通量</b>（用于计算PVPOT）以及极端低光伏输出事件的发生频率等。<b>方法</b>是通过对比分析中国大幅减排情景与基准情景下的模拟结果，评估PVPOT的全球时空变化，特别关注中低纬度大陆地区。研究将PVPOT的变化归因于<b>地表太阳辐射</b>的变化，而后者主要受减排导致的<b>大气气溶胶浓度降低</b>的影响。<b>结论</b>表明，中国为实现碳中和目标而采取的大规模减排措施，将显著<b>提高</b>全球多个中低纬度大陆地区的<b>光伏发电潜力</b>，并<b>减少极端低光伏输出事件</b>的发生。这种积极效应在<b>东亚地区</b>尤为显著，同时也能惠及包括<b>澳大利亚东部、南亚、非洲南部和南美洲东部</b>在内的<b>遥远区域</b>。其主要机制是，随着气溶胶等污染物的减少，到达<b>地表的太阳辐射通量增加</b>。这一发现揭示了中国的碳中和与清洁空气政策不仅能在本地产生“减排-增光伏”的正反馈，还能通过大气遥相关效应对全球其他地区产生额外的光伏增益，从而有望在未来几十年<b>加速全球碳中和</b>的进程。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Ethanol and Methanol in South Korea and China: Evidence for Large Anthropogenic Emissions Missing from Current Inventories</section>
+            <section class="paper-authors">Ellie Beaudry, Daniel J. Jacob, Kelvin H. Bates, Shixian Zhai, Laura H. Yang, Drew C. Pendergrass, Nadia Colombi, Isobel J. Simpson, Armin Wisthaler, James R. Hopkins, Ke Li, Hong Liao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.4c00210" target="_blank">https://doi.org/10.1021/acsestair.4c00210</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">挥发性有机物</span>
+                        <span class="topic-tag">排放清单</span>
+                        <span class="topic-tag">空气质量模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.4c00210" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究基于2015年至2017年间在<b>韩国</b>和<b>中国</b>开展的多次大型<b>大气观测试验</b>（<b>KORUS-AQ, MAPS-Seoul, APHH-Beijing</b>）的数据，揭示了这些地区城市空气中存在远超预期的<b>乙醇</b>和<b>甲醇</b>浓度。<b>数据</b>显示，观测到的乙醇中位浓度为2-4 ppb，甲醇中位浓度为12-18 ppb。研究<b>方法</b>是，将这些实测浓度与使用当前<b>排放清单</b>的<b>GEOS-Chem全球化学传输模型</b>的模拟结果进行比较。结果发现，现有清单无法解释观测到的高浓度。研究推断，这些高浓度的来源可能是当前清单中缺失的大量<b>人为排放</b>，特别是来自<b>挥发性化学产品（VCPs）</b>的排放。通过拟合观测浓度，研究估计韩国和中国的人均VCP排放量可能分别比美国高出2.4倍和1.5倍。观测到的乙醇与甲醇之间的<b>强相关性</b>暗示，与美国不同（美国甲醇使用受限），亚洲地区的VCPs排放中可能包含大量的甲醇。将这些推断出的额外排放纳入GEOS-Chem模型后，模拟结果显示韩国和中国的<b>地表臭氧</b>浓度将因此<b>增加1-3 ppb</b>。此外，KORUS-AQ飞机观测数据还揭示了<b>对流层中层</b>存在高达3.2 ppb的甲醇背景浓度，这可能源于陆地<b>生物排放</b>，但目前的GEOS-Chem模型未能再现这一现象。<b>结论</b>强调了当前排放清单在估算乙醇和甲醇等人为源排放方面存在显著低估，这对准确模拟区域空气质量（尤其是臭氧）具有重要影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Improved seamless mapping of surface O<sub>3</sub> concentrations using an integrated deep learning framework</section>
+            <section class="paper-authors">Tongwen Li, Jingan Wu, Yuan Wang, Yuenong Su</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01007-x" target="_blank">https://doi.org/10.1038/s41612-025-01007-x</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">深度学习</span>
+                        <span class="topic-tag">地表臭氧</span>
+                        <span class="topic-tag">空间制图</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01007-x" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究致力于开发并应用一种<b>集成深度学习框架</b>，以生成更优的、空间上<b>无缝连续</b>的<b>地表臭氧（O3）浓度分布图</b>。当前，准确、高分辨率地掌握地表臭氧的时空分布对于空气质量管理和健康影响评估至关重要，但往往受限于地面监测站点的稀疏性。<b>数据</b>方面，该深度学习模型很可能融合了<b>多种来源的数据</b>，包括<b>地面O3监测站点</b>的实测数据、<b>卫星遥感观测数据</b>（如臭氧前体物NO2或对流层臭氧柱浓度）、<b>气象数据</b>（如温度、湿度、风场、太阳辐射等）、<b>化学传输模型（CTM）</b>的模拟结果、以及可能的土地利用和排放清单数据。<b>方法</b>上，研究采用了“<b>集成深度学习框架</b>”，这可能意味着一个结合了多种神经网络结构（如卷积神经网络CNN处理空间特征，长短期记忆网络LSTM处理时间序列）的复杂模型，旨在有效融合异构数据并捕捉复杂的非线性关系。目标是实现“<b>无缝制图</b>”，即生成空间上完整、无间断的O3浓度场，填补监测站点之间的空白区域。研究声称实现了“改进”，意味着其结果在<b>准确性</b>、<b>分辨率</b>或<b>空间覆盖度</b>上优于现有方法（如传统插值、统计模型或单一CTM输出）。<b>结论</b>（推测）是，所提出的集成深度学习框架显著提升了地表O3浓度制图的性能，能够更准确、更全面地反映O3的复杂时空分布。这种无缝地图产品对于<b>空气质量评估</b>、<b>人群暴露研究</b>以及制定有效的<b>污染控制策略</b>具有重要价值，并展示了深度学习在处理复杂环境数据融合与预测问题上的强大潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Formation of highly absorptive secondary brown carbon through nighttime multiphase chemistry of biomass burning emissions</section>
+            <section class="paper-authors">Ye Kuang, Biao Luo, Shan Huang, Junwen Liu, Weiwei Hu, Yuwen Peng, Duohong Chen, Dingli Yue, Wanyun Xu, Bin Yuan, Min Shao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-3737-2025" target="_blank">https://doi.org/10.5194/acp-25-3737-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">生物质燃烧</span>
+                        <span class="topic-tag">二次棕碳</span>
+                        <span class="topic-tag">夜间化学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-3737-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究聚焦于<b>生物质燃烧排放物（BBE）</b>在夜间大气化学过程中的演变，特别探讨了强吸收性<b>二次棕色碳（secondary brown carbon, BrC）</b>的快速形成机制。研究基于在中国<b>珠江三角洲地区</b>秋季（生物质燃烧羽流盛行时期）进行的<b>实地观测</b>。数据包括对夜间形成的<b>二次有机气溶胶（Night-OA）</b>的光学特性（强吸收性、光谱依赖性）以及相关的<b>大气成分浓度</b>（如NO2, O3, NO, 硝酸盐）和<b>相对湿度</b>的测量。研究方法主要是分析观测数据，揭示Night-OA形成与夜间BBE强度、<b>氧化剂（NO2, O3）</b>可用性之间的关系。研究发现，夜间活跃的<b>NO3自由基化学</b>（表现为O3快速消耗和NO2减少）是重要的前置过程，但Night-OA最快速的形成发生在硝酸盐生成停止且相对湿度达到峰值时。这表明，除了气相反应，<b>气溶胶液相化学</b>过程，特别是BBE前体物与稀释羽流中<b>预先存在的吸湿性背景气溶胶</b>以及<b>气溶胶水</b>的相互作用，可能协同促进了Night-OA的快速生成。形成的二次BrC与一次BBE有机气溶胶的光谱特性显著不同。结论强调，夜间<b>NO3自由基化学</b>和<b>气溶胶水</b>在BBE老化和二次BrC形成中扮演关键角色，这对理解生物质燃烧对<b>气候</b>和<b>区域空气质量</b>的影响具有重要意义，尤其是在湿润地区以及与富含水分的火积云相互作用的情景下。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Estimating hourly ground-level aerosols using Geostationary Environment Monitoring Spectrometer aerosol optical depth: a machine learning approach</section>
+            <section class="paper-authors">Sungmin O, Ji Won Yoon, Seon Ki Park</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-1471-2025" target="_blank">https://doi.org/10.5194/amt-18-1471-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">机器学习</span>
+                        <span class="topic-tag">颗粒物浓度</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-1471-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究旨在评估首颗对地静止轨道环境监测光谱仪（<b>GEMS</b>）提供的<b>气溶胶光学厚度（AOD）</b>数据在估算<b>小时尺度</b>地面<b>颗粒物（PM10 和 PM2.5）</b>浓度方面的潜力。研究区域聚焦于<b>韩国</b>。<b>数据</b>方面，研究使用了GEMS卫星发射后头两年的<b>小时级AOD产品</b>，结合了地面空气质量监测站的<b>PM10和PM2.5实测浓度数据</b>以及相应的<b>气象变量</b>（如温度、湿度、风速等）。部分分析还引入了地面监测的<b>一氧化碳（CO）</b>和<b>二氧化氮（NO2）</b>浓度数据。<b>方法</b>上，研究采用了<b>机器学习</b>技术，具体训练了<b>随机森林（Random Forest）</b>和<b>XGBoost</b>两种模型。这些模型以GEMS AOD和气象变量作为输入特征，来预测地面PM浓度。模型的性能通过与地面实测数据的对比进行评估（如相关性、偏差）。研究还测试了将本地 CO 和 NO2 数据加入模型输入对性能的提升效果，并探索了利用邻近站点数据来估算<b>无地面监测站点</b>区域PM浓度的可行性。<b>结论</b>表明，基于GEMS AOD和气象数据的机器学习模型能够较好地捕捉地面PM浓度的<b>时空变化特征</b>，与实测值呈现<b>强相关性</b>，但在极高和极低浓度时存在一定偏差（低值高估，高值低估）。引入本地<b>CO和NO2数据</b>能显著<b>提升模型性能</b>，提高相关性并减少误差。研究证实了利用邻近站点数据估算无站点区域PM浓度的可行性。该成果为未来GEMS AOD反演算法的改进提供了评估参考，并为数据用户提供了初步的应用指导。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The effects of aerosol on the growth of hydrometeors in deep convective clouds</section>
+            <section class="paper-authors">Xinyi Lin, Qian Chen, Zeyong Zou, Ying He, Chunsong Lu, Zhiliang Shu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108088" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108088</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶-云相互作用</span>
+                        <span class="topic-tag">深对流云</span>
+                        <span class="topic-tag">水凝物增长</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108088" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用带有详细<b>谱分档微物理方案</b>的<b>天气研究和预报（WRF）模型</b>，深入探究了<b>气溶胶</b>如何影响<b>深对流云</b>中<b>水凝物</b>（云滴、冰晶、冰雹等）的增长过程。<b>数据</b>主要来自WRF模型的<b>数值模拟</b>结果，模拟了“清洁”和“污染”（高气溶胶浓度）两种不同背景条件下的对流云发展。为了验证模型性能，研究将模拟结果与多种<b>观测数据</b>进行了对比，包括<b>卫星观测</b>的<b>云顶亮温（CTT）</b>、<b>云雷达探测</b>的<b>水凝物垂直运动速度廓线</b>以及<b>地面气象站</b>记录的<b>降水率</b>。<b>方法</b>包括运行WRF模型模拟对流云生命周期，分析不同气溶胶条件下云内微物理过程的差异（如云滴活化、冰相过程、碰并增长、水凝物输送与沉降等），并与观测数据进行对比评估。<b>结论</b>表明，在高气溶胶（污染）条件下，生成的云滴<b>尺寸更小但数量更多</b>。这些小云滴具有<b>更强的随气流运动能力</b>，能被输送到更高的高度（污染条件下达10公里，清洁条件下约7公里），从而促进了高空的<b>冰晶核化</b>以及冰晶对过冷云水的收集效率。此外，污染条件下约8公里高度的冰晶移动速度较慢，这有利于过冷水滴在冰粒子上的<b>冻结增长（Riming）</b>，促进<b>冰雹的形成</b>。污染条件下，大量小液滴被有效向上输送到<b>对流核心区</b>，进一步为冰雹增长提供了充足的<b>过冷水</b>供应，导致模拟的冰雹生成率提高了数个量级，近地面冰雹的有效末端速度也略有增加。这种气溶胶诱导的冰雹增长效应在<b>对流核心区</b>比非核心区更强。最终，增强的冰雹沉降及其在强下沉气流中的融化，导致了污染情景下对流后期<b>地面降水量的增加</b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A corresponding relationship between formaldehyde and missing •OH reactivity extrapolated in chamber studies using a mixture of nine VOCs and NO<sub>x</sub></section>
+            <section class="paper-authors">Jiaru Li, Kosuke Miyatake, Yu Morino, Kei Sato, Yasuhiro Sadanaga, Yoshihiro Nakashima, Yosuke Sakamoto, Yoshizumi Kajii</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121190" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121190</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">OH自由基反应性</span>
+                        <span class="topic-tag">甲醛</span>
+                        <span class="topic-tag">烟雾箱模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121190" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究旨在探究大气中<b>甲醛（HCHO）</b>浓度与<b>缺失OH反应性（kmissing'）</b>之间的定量关系。缺失OH反应性是指总OH反应性（ktotal'，直接测量OH自由基衰减速率得到）与已知物种计算的OH反应性（kcalc'）之间的差值，通常代表了未测量或未知的挥发性有机物（VOCs）及其氧化产物的贡献。<b>数据</b>来源于在<b>烟雾箱</b>中进行的、使用多种<b>VOCs</b>和<b>氮氧化物（NOx）</b>混合物的<b>控制实验</b>，实验中测量了<b>ktotal'</b>和包括<b>HCHO</b>在内的多种痕量物种浓度。研究还结合了日本包括<b>筑波（Tsukaba）</b>在内的多个<b>外场观测</b>项目的数据。<b>方法</b>上，研究使用<b>主化学机制模型（MCM）</b>对烟雾箱实验进行模拟，验证了模型对初始阶段化学过程的再现能力。通过分析烟雾箱实验和外场观测数据中kmissing'与HCHO浓度的关系，研究建立了一个经验性的<b>对应关系因子</b>。随后，利用此因子和2017年筑波外场实测的HCHO浓度来<b>预测kmissing'</b>，并与实测的ktotal'与kcalc'之差进行比较。此外，研究还利用模型结果比较了不同的<b>臭氧生成机制敏感性指标</b>（如 [HCHO]/[NO2]）。<b>结论</b>是，MCM模型能较好地模拟含VOCs混合物的烟雾箱实验初期的动力学化学过程。基于烟雾箱和日本多个外场的数据，发现kmissing'与[HCHO]之间存在一个相对稳定的关系因子，约为<b>1.5 s⁻¹ ppbv⁻¹</b>，这可能反映了<b>含氧VOCs</b>对kmissing'的重要贡献。利用该因子基于HCHO浓度预测kmissing'在筑波外场得到了较好的验证。因此，研究建议，在缺乏ktotal'直接测量的情况下，<b>HCHO浓度可以作为kmissing'的一个有效替代指标</b>，用于验证大气化学模型的表现。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurement report: Optical and structural properties of atmospheric water-soluble organic carbon in China – insights from multi-site spectroscopic measurements</section>
+            <section class="paper-authors">Haibiao Chen, Caiqing Yan, Liubin Huang, Lin Du, Yang Yue, Xinfeng Wang, Qingcai Chen, Mingjie Xie, Junwen Liu, Fengwen Wang, Shuhong Fang, Qiaoyun Yang, Hongya Niu, Mei Zheng, Yan Wu, Likun Xue</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-3647-2025" target="_blank">https://doi.org/10.5194/acp-25-3647-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">水溶性有机碳</span>
+                        <span class="topic-tag">光学特性</span>
+                        <span class="topic-tag">棕色碳</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-3647-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究旨在深入理解中国不同区域<b>水溶性有机碳（WSOC）</b>中<b>棕色碳（BrC）</b>光学与结构性质的<b>空间异质性</b>及其影响因素。研究基于在中国<b>多个地点</b>（涵盖西北、西南、华北、华东及区域代表站）采集的大气颗粒物样本，并采用统一的分析方法。使用的<b>数据</b>包括样品的<b>水溶性有机碳提取物</b>，并对其进行了<b>紫外-可见光吸收光谱</b>、<b>三维荧光光谱（EEMs）</b>以及<b>傅里叶变换红外光谱（FTIR）</b>的测量。研究还结合了<b>相对湿度（RH）</b>等气象数据。<b>方法</b>上，研究计算了关键光学参数，如365nm处的<b>光吸收系数（Abs365）</b>和<b>质量吸收效率（MAE365）</b>。利用<b>正矩阵因子分解（PMF）</b>模型解析光吸收光谱以识别吸光因子；通过<b>平行因子分析（PARAFAC）</b>解析荧光光谱以鉴定<b>荧光基团</b>；通过FTIR分析确定<b>官能团</b>组成。多元线性回归被用于建立荧光基团与光吸收的定量关系。<b>结论</b>表明，中国WSOC的光学和结构性质存在显著的空间差异，北方和内陆地区的吸光性通常更强。<b>芳香族化合物</b>（通过FTIR和PMF识别）是WSOC中主要的<b>光吸收物质</b>，并对荧光基团有显著影响。PARAFAC识别出的荧光基团（特别是<b>高氧化态的类腐殖质，HULIS</b>）能解释大部分站点WSOC光吸收的62%-93%。<b>燃烧源排放</b>和<b>大气化学过程</b>对部分站点的WSOC光吸收有重要贡献。此外，<b>相对湿度</b>也影响MAE365，在RH<60%时，MAE365随RH升高而降低。该研究增进了对中国WSOC/BrC时空变化特征及驱动因素的认识。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Downdrafts of Biomass Burning to Houston Enhanced by Local Convective Activity</section>
+            <section class="paper-authors">Rebecca J. Sheesley, Mackenzie T. S. Ramirez, Jeewan Poudel, Travis Griggs, Manisha Mehra, Sujan Shrestha, Yang Li, Lucas Senkbeil, James Flynn</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.4c00232" target="_blank">https://doi.org/10.1021/acsestair.4c00232</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">生物质燃烧</span>
+                        <span class="topic-tag">对流活动</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.4c00232" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究调查了2023年6月创纪录的<b>加拿大野火</b>产生的<b>生物质燃烧（BB）烟雾</b>如何影响美国<b>休斯顿</b>地区的地面<b>空气质量</b>，并特别关注了<b>局地对流活动</b>在烟雾沉降过程中的作用。<b>数据</b>来源于布设在休斯顿周边<b>城市、乡村和沿海</b>地区的多个空气质量监测站点，涵盖了2023年6月4日至9日的一次显著BB事件。监测的指标包括<b>一氧化碳（CO）</b>、<b>气溶胶吸收</b>（用于计算吸收Ångström指数AAE）、<b>PM2.5</b>、<b>二氧化氮（NO2）</b>和<b>臭氧（O3）</b>。<b>方法</b>主要是对多站点时间序列数据的分析，对比BB事件期间与当月平均水平的污染物浓度差异，识别BB示踪物（如CO、高AAE）与PM2.5、NO2升高的同步性，并考察烟雾峰值、对流活动时间以及后续臭氧生成的关系。<b>结论</b>发现，高空传输的野火烟雾层在6月6日至8日的午后，受到休斯顿市区<b>对流活动</b>的影响，被显著地输送到<b>地面</b>。相比乡村和沿海站点，<b>城市站点</b>在夜间经历了更强的烟雾侵袭，表现为更高的CO（事件期夜均384 ppbv vs. 月夜均172 ppbv）和AAE（事件期夜均1.28 vs. 月夜均1.03）。<b>PM2.5和NO2浓度</b>的升高与BB示踪物的出现时间一致。在受BB影响后的晴朗天气条件下，下风向站点观测到了<b>高浓度臭氧</b>（6月9日峰值超过100 ppbv）。该研究强调了理解<b>对流活动</b>在将高空BB烟羽向下输送至地面的作用，对于评估野火烟雾远距离传输对城市居民健康影响至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Seasonal variations in whole–ecosystem BVOC emissions and ozone fluxes from a tropical rubber tree plantation in China</section>
+            <section class="paper-authors">Jianhui Bai, Zhixiang Wu, Chuan Yang, Alex Guenther</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121182" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121182</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">生物源挥发性有机物</span>
+                        <span class="topic-tag">臭氧通量</span>
+                        <span class="topic-tag">生态系统观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121182" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究对中国某<b>热带橡胶树人工林</b>生态系统的<b>生物源挥发性有机化合物（BVOC）排放</b>和<b>臭氧（O3）通量</b>进行了长期的<b>季节性变化观测</b>。研究时间为2018年8月至2019年6月。<b>数据</b>通过架设在林冠上方的<b>通量塔</b>获取，利用<b>梯度法（GRA）</b>测量了整个生态系统的BVOC（包括<b>异戊二烯</b>和四种<b>单萜烯</b>：α-蒎烯、莰烯、β-蒎烯、柠檬烯）和O3的<b>垂直通量</b>，同时监测了不同高度的<b>浓度</b>以及关键<b>环境因子</b>（光合有效辐射PAR、气温T、水汽、散射辐射与总辐射比S/Q）。研究还记录了<b>烟雾羽流</b>事件的影响。<b>方法</b>包括部署梯度测量系统进行连续观测，分析通量和浓度的<b>日变化</b>和<b>季节变化</b>规律，并进行其与环境驱动因子（PAR, T, 水汽, S/Q）的<b>相关性分析</b>，评估烟雾等特殊事件的影响。<b>结论</b>显示，该橡胶林生态系统排放的BVOC以<b>单萜烯类（占86.7%）</b>为主，其中柠檬烯、莰烯、β-蒎烯和α-蒎烯贡献显著，而<b>异戊二烯（占13.3%）</b>贡献相对较小。BVOC排放表现出明显的<b>日变化</b>（午后达峰值，滞后于PAR峰值）和<b>季节性波动</b>。<b>O3通量</b>始终为<b>负值</b>（表现为<b>沉降</b>），在<b>午间达到峰值</b>，并在<b>旱季</b>观测到最高沉降速率。BVOC和O3的浓度梯度验证了通量方向。BVOC排放和O3通量均与<b>PAR、气温、水汽</b>等环境条件密切相关，且受到<b>烟雾羽流</b>的影响。这些结果为理解热带生态系统的BVOC-O3相互作用提供了宝贵数据，并可为中国及其他地区的臭氧污染控制策略提供科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Tracking regional CH<sub>4</sub> emissions through collocated air pollution measurement: a pilot application and robustness analysis in China</section>
+            <section class="paper-authors">Yifan Li, Bo Zheng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01011-1" target="_blank">https://doi.org/10.1038/s41612-025-01011-1</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放</span>
+                        <span class="topic-tag">协同观测</span>
+                        <span class="topic-tag">区域追踪</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01011-1" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究提出并评估了一种通过利用<b>协同定位</b>的常规<b>空气污染物测量</b>数据来追踪区域<b>甲烷（CH4）排放</b>的方法。研究背景是中国作为重要的甲烷排放国，对区域排放进行有效追踪的需求日益增长。<b>数据</b>方面，研究可能利用了中国境内监测站点测量的<b>甲烷浓度数据</b>，以及与其<b>共同排放</b>或具有相关性的其他<b>空气污染物</b>（如一氧化碳CO、特定挥发性有机物VOCs等）的浓度数据。<b>方法</b>的核心可能是基于<b>源解析</b>技术或利用不同排放源的<b>污染物排放比率</b>。通过分析甲烷与其他具有更清晰来源特征或已知排放比率的污染物之间的关系，来反推或追踪区域尺度上甲烷排放的变化。该研究在中国的一个特定区域进行了<b>试点应用</b>，以检验方法的实际效果，并进行了<b>稳健性分析</b>，评估该方法在面对各种不确定性（如排放比率变化、大气传输误差）时的可靠性和表现。<b>结论</b>（推测）可能表明，利用协同空气污染观测数据追踪区域甲烷排放在中国是<b>可行</b>的，试点应用可能提供了关于研究区域甲烷来源或动态变化的具体见解。稳健性分析可能明确了该方法的优势、局限性以及最佳应用条件。总体而言，研究强调了这种方法在改进区域甲烷排放监测和核算方面的潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Detecting air pollution episodes and exploring their impacts using low-cost sensor data and simultaneous community symptom and odor reports</section>
+            <section class="paper-authors">Caroline Frischmon, Jennifer Crosslin, Leah Burks, Barbara Weckesser, Michael Hannigan, Katharine Duderstadt</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/adc28a" target="_blank">https://doi.org/10.1088/1748-9326/adc28a</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">低成本传感器</span>
+                        <span class="topic-tag">社区健康</span>
+                        <span class="topic-tag">工业污染</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/adc28a" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究是一项基于社区参与的探索性研究，旨在评估密西西比州帕斯卡古拉市<b>工业园区</b>附近<b>Cherokee Forest社区</b>所受的<b>工业污染</b>影响。研究团队结合了社区组织者和学术研究人员，采用了创新的研究方法。数据方面，研究利用了<b>低成本传感器</b>获取的<b>挥发性有机物（VOCs）</b>、<b>氨</b>、<b>胺类</b>和<b>含硫气味</b>的信号数据，并结合了<b>社区居民</b>同步报告的<b>症状和气味信息</b>以及<b>风向数据</b>。此外，研究还对部分<b>居民儿童</b>进行了<b>生物标志物检测</b>，分析了他们<b>脚趾甲中的金属含量</b>。方法上，研究采用了一种基于导数的<b>污染事件检测算法</b>来处理未经校准的传感器信号，识别出社区内频繁且强烈的<b>污染事件</b>。通过分析风向数据，确认这些事件的来源指向邻近的工业园区。结果显示，检测到的污染事件与社区报告的症状和气味增加存在明显<b>相关性</b>。更重要的是，脚趾甲采样分析揭示了部分儿童体内<b>镍</b>（一种该社区关注的工业污染物）<b>水平升高</b>。该研究不仅证实了工业污染对社区的实际影响，还展示了一种将<b>低成本传感器技术</b>与<b>社区报告</b>相结合的可推广方法，有效支持了当地社区组织（Cherokee Concerned Citizens）的环保倡导和与监管机构的沟通工作。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
