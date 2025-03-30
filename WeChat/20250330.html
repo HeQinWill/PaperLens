@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/03/30</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Spatial-and-local-aware deep learning approach for Ground-Level NO<sub>2</sub> estimation in England with multisource data from satellite-based observations and chemical transport models</section>
+            <section class="paper-authors">Siying Wang, Shuangyin Zhang, Dawei Wang, Weifeng Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">International Journal of Applied Earth Observation and Geoinformation</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.jag.2025.104506" target="_blank">https://doi.org/10.1016/j.jag.2025.104506</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">深度学习</span>
+                        <span class="topic-tag">NO2估算</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.jag.2025.104506" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">高分辨率的近地面<b>二氧化氮（NO2）</b>数据对于监测空气污染动态至关重要。基于卫星的机器学习模型常用于估算NO2浓度，但将先进的深度学习技术应用于特定环境问题仍具挑战。本研究采用两阶段<b>深度学习</b>方法，估算了2019年至2021年英格兰地区1公里空间分辨率的<b>地面NO2浓度</b>。第一阶段，研究使用深度神经网络（DNN）对<b>TROPOMI卫星</b>观测的NO2柱浓度数据进行<b>插补</b>，实现了1公里分辨率下的连续全覆盖（原始有效数据覆盖率仅34.12%）。第二阶段，研究开发了一种高效的<b>空间局部感知深度学习网络（SLNet）</b>，用于NO2制图。该网络整合了插补后的TROPOMI NO2数据、气象数据、<b>化学传输模型（CTM）</b>模拟结果以及其他辅助预测因子。为了解决传统卷积神经网络（CNN）的平移不变性问题，SLNet模型结合了一个<b>局部通道</b>来识别模型的空间异质性。交叉验证结果表明，SLNet模型在估算地面NO2方面优于其他先进方法，2019、2020和2021年的预测<b>R2值</b>分别达到0.914、0.919和0.887，在城市区域表现尤佳。此外，<b>SHAP</b>（Shapley Additive Explanations）方法揭示了卫星和CTM的NO2、降水、绿地和道路密度等特征通过空间和局部通道对估算结果有显著贡献。生成的NO2地图与地面观测结果高度一致，并准确捕捉了空间变异性。本研究通过应用适应性强的深度学习技术推进了NO2浓度估算，并加深了对空气污染动态的理解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Using AOD and UVAI to Reduce the Uncertainties in Wildfire Emission and Air Quality Modeling</section>
+            <section class="paper-authors">Yunyao Li, Daniel Tong, Yeseul Jeon, Benjamin Seiyon Lee, Jaewoo Park, Shobha Kondragunta, Xiaoyang Zhang, Naphat Siripun, Stephanie Song, Charu Mehta, Jenny Zhao Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD041816" target="_blank">https://doi.org/10.1029/2024JD041816</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">野火排放</span>
+                        <span class="topic-tag">空气质量模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD041816" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">野火是大气气溶胶的主要自然来源，严重影响空气质量和人类健康，但由于<b>野火排放估算</b>的不确定性，准确预测其空气质量影响仍然具有挑战性。为了提高<b>空气质量预报模型</b>中使用的火灾排放的准确性，本研究开发了一种新方法，利用<b>卫星气溶胶光学厚度（AOD）</b>观测和空气质量模拟来计算动态<b>排放比例因子</b>。研究特别利用了<b>TROPOMI</b>卫星的<b>UV气溶胶指数（UVAI）</b>数据，通过回归模型和人工智能模型两种方法，来填补浓烟条件下AOD数据的空白。该比例因子方法应用于NOAA的全球生物质燃烧排放产品（GBBEC）。结果显示，排放比例因子在不同火点之间存在显著差异，强调了点特异性比例因子的必要性。平均而言，火灾初期比例因子小于1.0（表明排放被高估），但在火灾持续7天后超过1.0（表明排放被低估）。研究还发现比例因子与<b>火点辐射功率（FRP）</b>呈反比关系，低强度火灾（FRP < 5 MW）排放被低估，而高强度火灾（FRP > 500 MW）排放则被显著高估。改进后的火灾排放被应用于2020年美国特大火灾事件的空气质量模型，结果表明，使用排放比例因子显著降低了模型偏差，提高了<b>PM2.5</b>超标预测的相关性和命中率，证明了该方法在改进野火事件期间空气质量预报方面的潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Tracking NO<sub>2</sub> and CO pollution hotspots at provincial scale in China with TROPOMI observations and image segmentation method</section>
+            <section class="paper-authors">Mingyu Zeng, Minghui Tao, Rong Li, Pengfei Ma, Lijuan Zhang, Jun Wang, Lunche Wang, Yi Wang, Haijun Huang, Liangfu Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121176" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121176</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">污染源识别</span>
+                        <span class="topic-tag">TROPOMI</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121176" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content"><b>卫星遥感</b>对短寿命气态污染物如<b>二氧化氮（NO2）</b>和<b>一氧化碳（CO）</b>的测量为推断其全球排放源分布提供了前所未有的机会。然而，人为排放量级的巨大差异阻碍了利用卫星观测识别污染源。本研究利用<b>过采样</b>的<b>TROPOMI卫星</b>浓度数据，结合<b>图像分割</b>方法，在中国<b>省级尺度</b>上识别了NO2和CO的<b>污染热点</b>。研究还确定了各省份与污染热点相关的主要<b>排放部门</b>。基于NO2污染热点，可以识别出主要的排放源，如港口、机场、工业区和城市区域。在大多数省份的热点中，钢铁厂、焦化厂和发电厂被确定为主要的NOx排放源。CO污染热点与钢铁厂密切相关，在某些省份还受到焦化厂、化工业和有色金属冶炼的额外贡献。识别出的污染热点及其对应浓度与中国多尺度排放清单（MEIC）呈现出较强的相关性（对于NO2，在陆地面积较小的省份R2为0.937，其他省份为0.654；对于CO，R2分别为0.849和0.659）。该研究结果可为排放清单提供关于NOx和CO排放源空间位置的<b>观测约束</b>，这也是首次应用图像分割方法识别过采样的CO污染热点。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Volcanic aerosols lend causality to the indicated substantial susceptibility of clouds to aerosol over global oceans</section>
+            <section class="paper-authors">Xin Wang, Feiyue Mao, Daniel Rosenfeld, Yannian Zhu, Zengxin Pan, Yang Cao, Lin Zang, Xin Lu, Wei Gong</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-00974-5" target="_blank">https://doi.org/10.1038/s41612-025-00974-5</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶-云相互作用</span>
+                        <span class="topic-tag">火山气溶胶</span>
+                        <span class="topic-tag">因果关系</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-00974-5" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">大气中气溶胶与云之间的显著关联表明，如果这种关系是<b>因果性</b>的，那么气溶胶通过影响云产生的辐射强迫（即冷却效应）可能非常大。然而，另一种解释是<b>气溶胶与气象条件</b>的<b>协同变化</b>。本研究旨在探究气溶胶是否是气溶胶-云协同变化的主要驱动因素，即云特性是否真实地对气溶胶存在易感性。研究利用受<b>火山气溶胶</b>影响的区域作为“自然实验”，假设在这些区域，气溶胶与气象条件的协同变化会最小化，从而若非因果关系，气溶胶-云协同变化也应减弱。研究假说认为，火山气溶胶在相似气象条件下会减少气溶胶-气象协同变率，进而削弱气溶胶-云协同变率。然而，通过分析全球海洋的火山影响区和非影响区（可能依赖<b>卫星观测</b>数据），研究发现<b>气溶胶-云协同变化</b>的模式在两类区域中表现出一致性。这一结果虽然不能最终证明气溶胶与云特性之间存在明确的因果联系，但它显著<b>降低了气象协同变率</b>是这种关联主要原因的可能性，从而间接支持了云对气溶胶存在<b>显著易感性</b>的观点。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Dominant Role of NO2 Oxidation in SO2 Conversion to Sulfate Revealed by Synchronous Measurements of Gas and Particle Sulfur Isotopes in Haze Episodes</section>
+            <section class="paper-authors">Xinxin Feng, Yingjun Chen, Zeyu Liu, Hongxing Jiang, Yanli Feng, Tian Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.4c00239" target="_blank">https://doi.org/10.1021/acsestair.4c00239</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">硫同位素</span>
+                        <span class="topic-tag">硫酸盐形成</span>
+                        <span class="topic-tag">大气化学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.4c00239" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了大气中二氧化硫（SO2）氧化生成硫酸盐（SO42-）的关键化学途径，这一过程在霾污染形成中扮演重要角色，但具体机制仍存争议。研究创新性地采用了同步测量<b>气相SO2</b>和<b>颗粒相SO42-</b>中的<b>硫同位素</b>（δ34S）的方法，以精确计算SO2转化为SO42-过程中的同位素分馏系数（α34Sg→p）。研究结果发现，这种新方法得到的α34Sg→p值（-3.7‰ 至 +9.9‰）与以往仅基于颗粒相δ34S估算的值（α34Sg→p-estimated，-6.4‰ 至 +1.4‰）存在显著差异。基于新方法（α34Sg→p）的分析表明，<b>NO2氧化</b>是硫酸盐形成的最主要途径，贡献率达到48-56%；而传统方法（α34Sg→p-estimated）则指向<b>过渡金属离子（TMI）催化的O2氧化</b>途径占主导（54-80%）。研究进一步证明，新方法得到的结果与实际大气中氧化剂浓度变化趋势更一致，而传统方法高估了TMI催化途径的贡献（约38-47%）。这是首次利用气粒同步硫同位素测量证明NO2氧化在硫酸盐形成中的主导地位，为利用硫同位素示踪<b>大气化学</b>过程提供了新视角。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Chemical Evolution of Biomass Burning Aerosols across Wildfire Plumes in the Western U.S.: From Near-Source to Regional Scales</section>
+            <section class="paper-authors">Ryan Farley, Shan Zhou, Sonya Collier, Wenqing Jiang, Timothy B. Onasch, John E. Shilling, Lawrence Kleinman, Arthur J. Sedlacek III, Qi Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00002" target="_blank">https://doi.org/10.1021/acsestair.5c00002</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">生物质燃烧</span>
+                        <span class="topic-tag">气溶胶老化</span>
+                        <span class="topic-tag">大气化学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00002" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究聚焦于美国西部野火产生的<b>生物质燃烧有机气溶胶（BBOA）</b>在大气中的<b>化学演变</b>过程及其对气溶胶理化性质的影响。研究利用了2013年和2019年夏季部署在美国能源部G-1飞机和巴彻勒山天文台的<b>气溶胶质谱仪</b>数据，捕捉了从近源（<30分钟）到传输数天的不同<b>大气老化</b>阶段野火烟羽中亚微米颗粒物（PM1）浓度和化学组分的动态变化。研究发现，随着烟羽老化，有机气溶胶（OA）的<b>氧化程度</b>增加，同时伴随着酚类<b>二次有机气溶胶（SOA）</b>、羧酸和硫酸钾等二次气溶胶组分的生成。烟羽演化的早期阶段以半挥发性组分的蒸发以及醇和过氧化物官能团的形成为特征，而长时间老化则产生更多氧化性物质，如羧酸和羰基化合物。OA相对于CO的归一化超额混合比（NEMR）显示出蒸发、SOA形成和氧化损失之间复杂的相互作用。通过<b>正矩阵因子分解（PMF）</b>，研究识别了代表不同大气处理阶段的BBOA类型，并评估了原生BBOA和二次BBOA的贡献。这些发现揭示了控制野火烟羽中BBOA特性演变的复杂机制，为改进BBOA的大气模型模拟和评估野火排放的环境与气候影响提供了关键见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Heatwaves Suppress Isoprene Emission Optima in Subtropical Eucalyptus: Implications for Biogenic VOC Modeling Under Extreme Thermal Events</section>
+            <section class="paper-authors">Jianqiang Zeng, Yanli Zhang, Weihua Pang, Haofan Ran, Hao Guo, Yuting Lu, Wei Song, Xinming Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL114767" target="_blank">https://doi.org/10.1029/2025GL114767</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">异戊二烯排放</span>
+                        <span class="topic-tag">热浪影响</span>
+                        <span class="topic-tag">生物源VOC</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL114767" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究通过受控实验测量了一种亚热带桉树的<b>异戊二烯排放</b>对温度的响应，旨在探究<b>极端热浪</b>对这种<b>生物源挥发性有机化合物（VOC）</b>排放<b>温度敏感性</b>的影响。异戊二烯是重要的<b>大气成分</b>，影响空气质量。研究发现，在非热浪期间，桉树的异戊二烯排放遵循已知的温度依赖模式，存在一个明确的<b>最适排放温度（Topt）</b>。然而，在热浪期间，植物生理过程受到限制，导致Topt出人意料地降低。现有的考虑了基于长期平均温度的<b>驯化效应</b>的<b>模型</b>未能捕捉到这种Topt的下降，反而预测了更高的Topt。值得注意的是，使用<b>未考虑驯化效应</b>的默认模型曲线进行模拟，却能准确地复制在非热浪和热浪条件下观测到的异戊二烯排放量。这些发现强调了极端高温可能抑制热带地区的异戊二烯排放，并指出在未来气候变化背景下，需要重新审视异戊二烯与温度的关系，这对改进<b>空气质量模型</b>至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Persistent influence of dust on aerosol properties in summer over the northeast Tibetan Plateau explored by surface and tethered balloon-borne observations</section>
+            <section class="paper-authors">Liang Ran, Zhaoze Deng, Yunfei Wu, Zhixuan Bai, Wanyun Xu, Xuelian Xu, Shengcang Wang, Ping Tian, Mengyu Huang, Xiangao Xia, Jianchun Bian</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121194" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121194</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">青藏高原</span>
+                        <span class="topic-tag">气溶胶特性</span>
+                        <span class="topic-tag">沙尘影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121194" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content"><b>青藏高原</b>的气溶胶特性对该地区及下游区域的天气和气候具有重要影响。以往基于遥感的研究已证明<b>沙尘</b>对该区域气溶胶特性的影响，但关于沙尘如何具体影响气溶胶特性以及沙尘事件的演变过程，尤其是在时间和垂直维度上的精细化认知仍然缺乏。本研究利用<b>地面原位观测</b>和<b>系留气球</b>搭载仪器的观测，调查了夏季青藏高原东北部的气溶胶微物理和光学特性。结合<b>MERRA-2再分析资料</b>和<b>HYSPLIT后向轨迹模型</b>分析，探讨了沙尘事件。研究发现，即使在没有明显沙尘事件期间，观测点的<b>PM1/PM10比值</b>和<b>散射Ångström指数</b>在大部分时间也相当低，这清晰地表明地表<b>气溶胶特性持续受到沙尘的影响</b>。自由对流层中的颗粒物质量粒径分布也明确揭示了沙尘的印记。对单个沙尘事件的分析表明，沙尘颗粒物可能来源于<b>本地</b>，也可能从高原北部的沙漠<b>长距离传输</b>而来。这项研究有助于提升我们对沙尘影响气溶胶特性、观测到的沙尘颗粒物可能来源以及该区域沙尘事件演变过程的理解。未来值得投入努力，结合多种观测和模型模拟，研究受沙尘影响的气溶胶特性对具有气候重要性的大气过程的潜在影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">High Spatiotemporal Resolution Inventory Finely Depicts the Rebound Characteristics of Greenhouse Gas Emissions from Vehicles in Beijing after the COVID-19 Epidemic</section>
+            <section class="paper-authors">Yangmingkai Li, Qianru Zhang, Maodian Liu, Mengqi Yang, Xingrui Cai, Jingsong Ye, Wenzhe Guo, Hehao Qin, Qirui Zhong, Bin Wang, Guofeng Shen, Junfeng Liu, Shu Tao, Xuejun Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.estlett.5c00065" target="_blank">https://doi.org/10.1021/acs.estlett.5c00065</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">温室气体排放</span>
+                        <span class="topic-tag">交通排放清单</span>
+                        <span class="topic-tag">疫情影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.estlett.5c00065" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究旨在精确描绘中国北京市在COVID-19疫情管控放松后，道路<b>车辆温室气体</b>（GHG，包括CO2, CH4, N2O）排放的反弹特征。研究团队利用详尽的交通观测数据和<b>机器学习模型</b>，构建了2022年和2023年逐小时、分路段的<b>交通排放清单</b>。分析显示，随着疫情管控措施的放宽，2023年北京的车辆活动显著增加，尤其是在高速公路和周末，导致CO2、CH4和N2O排放量相比2022年分别增加了21%、22%和24%。研究发现，超过三分之二的排放增长集中发生在2022年严格封锁结束后的两个短暂时期，凸显了人类活动恢复对排放的显著影响。此外，2023年的<b>车辆结构更新</b>对缓解排放反弹起到了轻微作用，分别使CO2、CH4和N2O总排放量减少了8.4%、6.8%和5.1%。本研究不仅精确定量了疫情后的排放<b>反弹效应</b>，识别了其驱动因素，还提供了一个可用于评估地方性减排政策效果的高<b>时空分辨率</b>分析框架。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Spectral characteristics of water-soluble Brown carbon and it's radiative impacts on the atmosphere of Dhaka, Bangladesh</section>
+            <section class="paper-authors">Md Al-amin Hossen, Shatabdi Roy, Samiha Nahian, Shahid Uz Zaman, Abu Selim, Abdus Salam</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121185" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121185</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">棕色碳(BrC)</span>
+                        <span class="topic-tag">光吸收特性</span>
+                        <span class="topic-tag">辐射强迫</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121185" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content"><b>棕色碳（BrC）</b>是大气有机碳中普遍存在的部分，它能吸收太阳光，对地球的<b>辐射平衡</b>产生重要影响。本研究检测了2023年7月至2024年1月期间，孟加拉国首都<b>达卡</b>南部（DS）和北部（DN）两个站点的水溶性BrC的光谱特性及其辐射效应。研究使用大流量采样器在石英滤膜上采集颗粒物样本，通过<b>紫外-可见分光光度计</b>测定了<b>吸收系数（babs-λ）</b>、<b>质量吸收效率（MAE）</b>、<b>吸收盎格斯特朗指数（AAE）</b>和吸收折射指数（Κabs-λ）等光谱特性，并使用<b>荧光分光光度计</b>分析了不同pH下的荧光发射光谱。利用<b>碳黑仪</b>测定了BrC和黑碳（BC）的浓度。达卡市BrC和BC的平均浓度分别为18.63±3.84 μg m-3和17.93±3.82 μg m-3。AAE值范围在3.20–4.01（DN）和3.27–4.53（DS），表明这些地点存在强<b>光吸收性</b>的BrC。BrC的<b>辐射强迫效率</b>在DN为4.43±1.02 W g-1，在DS为3.93±0.74 W g-1。荧光激发-发射光谱证实了BrC结构中存在含多官能团的<b>多共轭环</b>。光吸收特性和荧光发射光谱随pH值变化而变化：当pH从2增加到8时，由于质子化/去质子化作用，AAE值降低而MAEBrC-365增加。本研究强调了BrC对<b>空气质量</b>和地球辐射平衡的显著影响，突出了其强光吸收特性以及随环境因素变化的特点。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Assessing Cloud Fraction in the Canadian Regional Climate Model Over North America Using Satellite Data and a Satellite Simulator Package</section>
+            <section class="paper-authors">K. Veilleux, A. Di Luca, J. M. Thériault, V. Poitras, P. A. Vaillancourt, M. Cholette, F. Roberge</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042453" target="_blank">https://doi.org/10.1029/2024JD042453</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">云模拟评估</span>
+                        <span class="topic-tag">卫星数据</span>
+                        <span class="topic-tag">气候模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042453" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">云对地球气候系统至关重要，影响辐射平衡并导致气候预测的不确定性。本研究旨在评估第六版<b>加拿大区域气候模型（CRCM6-GEM5）</b>在北美地区模拟<b>云量</b>的表现。研究使用了2014年和2015年的<b>CALIPSO卫星激光雷达</b>反演数据，并结合了第二版云反馈模式比较计划观测模拟器包（<b>COSP2</b>）进行对比评估。评估内容包括模型模拟的云的水平和垂直分布，以及四种云类型（总云量、高云、中云、低云）的特征，分别使用了模型直接输出和经过COSP2模拟器处理后的结果。研究还对北美特定区域进行了季节性分析。结果表明，使用COSP2对于模型输出与<b>卫星数据</b>的比较至关重要，因为它可以解释变量定义和主动遥感仪器（如CALIOP激光雷达）信号衰减带来的差异。CRCM6-GEM5总体上能较好地再现云的空间和垂直分布以及季节模式，尤其是在冬季对高云和低云的模拟效果较好。然而，模型在模拟足够多的中层云方面存在一定困难。云量的模拟表现在冬季系统性地优于夏季。总体而言，CRCM6-GEM5在整个北美区域对四种云类型的模拟表现良好，COSP2确认有助于减少变量定义差异带来的偏差。这些结果有助于更好地理解CRCM6-GEM5的云模拟能力以及COSP2在高分辨率模型中的应用。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
