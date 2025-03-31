@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/03/31</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Insights into surface ozone variability in India (1980–2014) through CMIP6 model analysis</section>
+            <section class="paper-authors">Arshitha Anand K A, Dilip Ganguly, Sushovan Ghosh, Vijay Kumar Soni, Sagnik Dey</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121180" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121180</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">地表臭氧</span>
+                        <span class="topic-tag">CMIP6模型</span>
+                        <span class="topic-tag">卫星数据验证</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121180" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>耦合模式比较计划第六阶段 (CMIP6)</b> 的多个气候模型输出，分析了<b>1980年至2014年印度地区地表臭氧 (O3)</b> 的长期时空变化特征。为了评估模型的可靠性，研究将模型结果与<b>大气红外探测仪 (AIRS) 卫星</b>反演的地表O3数据进行了比较。结果显示，印度地表O3存在明显的<b>北高南低的梯度分布</b>，这与卫星观测一致。大多数模型模拟出印度全国范围内地表O3呈<b>上升趋势</b>，但一个值得注意的新发现是在<b>印度恒河平原 (IGP) 中部</b>区域识别出了<b>负趋势</b>。对O3前体物（VOCs 和 NOx）的分析表明，印度前体物排放普遍呈显著正趋势，IGP地区是排放热点。通过分析O3与其前体物的空间相关性，研究揭示了印度O3生成的复杂化学机制：全国大部分地区处于<b>VOC限制</b>状态，而在IGP地区则主要受<b>NOx限制</b>，这解释了为何在NOx排放增加的情况下，该地区O3浓度反而下降。研究确定<b>CESM2-WACCM-FV2</b>是研究印度地表O3最可靠的CMIP6模型。该工作强调了CMIP6模型和<b>卫星观测数据</b>在理解地面监测数据稀疏地区的<b>空气质量</b>变化规律方面的重要价值，为印度制定O3及其前体物减排政策提供了科学见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Modeling the Black and Brown Carbon Absorption and Their Radiative Impact: The June 2023 Intense Canadian Boreal Wildfires Case Study</section>
+            <section class="paper-authors">Paolo Tuccella, Ludovico Di Antonio, Andrea Di Muzio, Valentina Colaiuda, Raffaele Lidori, Laurent Menut, Giovanni Pitari, Edoardo Raparelli</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042674" target="_blank">https://doi.org/10.1029/2024JD042674</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳棕碳模拟</span>
+                        <span class="topic-tag">气溶胶辐射效应</span>
+                        <span class="topic-tag">野火排放影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042674" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究聚焦于<b>2023年6月加拿大 boreal 森林大火</b>期间释放的<b>黑碳 (BC)</b> 和<b>棕碳 (BrC)</b> 气溶胶的吸收特性及其<b>直接辐射效应 (DRE)</b>。研究采用了增强版的<b>CHIMERE化学传输模型</b>，该模型更新了BC吸收增强的处理方法和考虑了氧化过程中“褐变”与“漂白”效应的BrC老化方案。模型模拟范围覆盖北美至东欧，包括北极地区。通过与地面<b>AERONET</b>观测数据和<b>卫星遥感数据</b>进行对比验证，结果表明增强模型能准确再现气溶胶光学厚度 (AOD) 的时空分布，特别是在模拟<b>吸收性气溶胶光学厚度 (AAOD)</b> 方面相较于基准模型有显著改进，尤其是在受野火排放影响的区域及其跨洋传输至欧洲的过程中。对于2023年6月，模型结果显示，由于采用了更先进的BC和BrC吸收处理方案，归因于加拿大野火的区域平均全天空DRE从基准模型的-2.1 W/m² 变为 -1.9 W/m²，相当于产生了<b>+0.2 W/m² (+10%) 的额外增温效应</b>。这凸显了精确模拟气溶胶吸收特性对区域气候预测的重要性，并警示传统模型可能<b>高估了生物质燃烧气溶胶的冷却效应</b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Characterizing optical properties of HULIS versus WSOC in cloud water of Eastern China - Insights into secondary formation in cloud processes</section>
+            <section class="paper-authors">Xinghui Liu, Huiting Mao, Xiaoling Nie, Jiebo Zhen, Ping Du, Tao Li, Xinfeng Wang, Likun Xue, Yan Wang, Jianmin Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108091" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108091</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">云水化学</span>
+                        <span class="topic-tag">有机气溶胶光学特性</span>
+                        <span class="topic-tag">类腐殖质</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108091" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究旨在表征中国东部地区<b>云水中类腐殖质 (HULIS)</b> 与<b>水溶性有机碳 (WSOC)</b> 的光学特性差异，并探讨云过程中的二次生成机制。研究团队于2021年夏季在<b>泰山</b>采集了云水样品，定量分析了其中HULIS和WSOC的浓度。结果显示，HULIS平均浓度为3.14 ± 2.14 mgC L⁻¹，约占WSOC (平均9.42 ± 7.50 mgC L⁻¹) 的<b>38 ± 15 wt%</b>。利用<b>紫外-可见吸收光谱 (UV-Vis)</b> 和<b>三维荧光光谱 (EEM) 结合平行因子分析 (PARAFAC)</b>，研究比较了二者的光学特性。发现HULIS具有更高的<b>质量吸收效率 (MAE365: 0.72 vs 0.54 m² g⁻¹)</b> 和更强的吸光波长依赖性 (<b>吸收埃指数AAE300–400: 3.79 vs 3.58</b>)，以及更高的腐殖化程度。EEM-PARAFAC识别出三种荧光组分：低氧化HULIS (LO-HULIS)、高氧化HULIS (HO-HULIS) 和类蛋白物质 (PRLIS)。HULIS的光吸收主要由HO-HULIS贡献。研究推测云水环境可能促进HULIS发色团的<b>漂白或降解</b>。此外，通过分析WSOC中各组分比例关系，发现随着PRLIS含量的降低，LO-HULIS与PRLIS的比值呈上升趋势，暗示<b>PRLIS的光解可能是云水中LO-HULIS二次生成</b>的重要途径。该研究增进了对云水中HULIS演化过程的理解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Sea Spray Generation Function for Large Droplets Based on Sea Salt Aerosol Flux Observation</section>
+            <section class="paper-authors">Xueling Cheng, Jiangbo Jin, Peng Fan, Run Guo, Yubin Ma, Jian Huang, Shouyin Zheng, Jiatian Chen, Hengchi Lei, Qingcun Zeng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043359" target="_blank">https://doi.org/10.1029/2025JD043359</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海盐气溶胶</span>
+                        <span class="topic-tag">海气相互作用</span>
+                        <span class="topic-tag">气溶胶产生函数</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043359" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究致力于改进对<b>海洋飞沫产生函数</b>的理解，特别是针对<b>粒径大于20微米的大尺寸液滴</b>。海洋飞沫是仅次于沙尘的第二大天然气溶胶来源，对气候变化、空气污染及台风等灾害性天气有重要影响。当前模型普遍低估了大尺寸液滴的贡献。研究团队利用<b>自主研发的液滴谱仪</b>，在<b>海-气边界层</b>进行了多次现场观测实验，成功获取了粒径范围从<b>25微米到1.6毫米</b>的大液滴浓度及其<b>垂向通量 (上升速度)</b> 数据。基于这些实测数据分析发现，大尺寸液滴产生的<b>海盐气溶胶 (SSA) 通量</b>远高于现有常用海浪飞沫产生函数的估算值。据此，研究提出了一个<b>新的适用于大尺寸液滴的海浪飞沫产生函数</b>，旨在为海洋模型和气候模型提供更准确的<b>SSA通量</b>计算依据，以更好地评估海盐气溶胶的环境与气候效应。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Heterogeneous reactions of toluene/NO<sub>2</sub>/NH<sub>3</sub> on α-Fe<sub>2</sub>O<sub>3</sub>/α-Al<sub>2</sub>O<sub>3</sub> particles: The effects of pollutant content and temperature changes on the formation of N-containing organic compounds (NOCs)</section>
+            <section class="paper-authors">Sijie Wen, Xiang He, Aiyilaiti Kudesi, Shuangxi Wang, Xin Liu, Mingsong Dong, Xiaolong Yu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121195" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121195</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">非均相反应</span>
+                        <span class="topic-tag">含氮有机物</span>
+                        <span class="topic-tag">大气化学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121195" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究探讨了<b>甲苯、二氧化氮 (NO2) 和氨气 (NH3)</b> 在<b>α-Fe2O3/α-Al2O3颗粒</b>（模拟矿物粉尘）表面发生的<b>非均相反应</b>，重点关注污染物初始含量和环境温度变化对<b>含氮有机化合物 (NOCs)</b>，特别是有机硝酸酯 (R-ONO2)，形成过程的影响。实验采用<b>漫反射红外傅里叶变换光谱 (DRIFTS)</b> 技术进行原位监测。结果显示，在α-Fe2O3存在下（无论是否混合α-Al2O3），均能检测到代表<b>硝酸苄酯</b>等R-ONO2生成的特征峰 (1295 cm⁻¹)。α-Al2O3的加入（最佳质量比 α-Fe2O3:α-Al2O3 = 3:1）能促进颗粒表面的R-ONO2生成。研究确定了生成NOCs的最佳污染物浓度比例为甲苯:NO2:NH3 = 2.5:2.5:1，表明NO2和甲苯是关键前体物。光谱动力学分析表明，<b>低温条件</b>（从298 K降至253 K）有利于R-ONO2的生成，反应速率从(1.59 ± 0.04) × 10¹⁸ ions g⁻¹ s⁻¹ 增加到 (2.38 ± 0.02) × 10¹⁸ ions g⁻¹ s⁻¹，证实该非均相反应是一个<b>放热过程</b>。这些发现有助于理解真实大气复合污染条件下颗粒物表面NOCs的形成机制。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
