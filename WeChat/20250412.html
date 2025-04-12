@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/04/12</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Integrating Simulations and Observations: A Foundation Model for Estimating the Aerosol Mixing State Index</section>
+            <section class="paper-authors">Fei Jiang, Zhonghua Zheng, Hugh Coe, Robert M. Healy, Laurent Poulain, Valérie Gros, Hao Zhang, Weijun Li, Dantong Liu, Matthew West, David Topping, Nicole Riemer</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.4c00329" target="_blank">https://doi.org/10.1021/acsestair.4c00329</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶混合状态</span>
+                        <span class="topic-tag">基础模型</span>
+                        <span class="topic-tag">模拟与观测融合</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.4c00329" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究旨在解决<b>气溶胶混合状态</b>估算中<b>观测数据</b>时空不连续和成本高昂的难题。当前，准确预测气溶胶混合状态对于理解其气候和健康影响至关重要，但依赖观测面临限制，而<b>粒子解析模型</b>虽可模拟，却受限于精确输入数据（如<b>排放清单</b>）的缺乏。本研究提出了一种创新框架：首先，将气溶胶模拟的仿真视为通用预训练任务；其次，将真实世界混合状态的估算视为下游微调任务。研究团队开发了一个<b>基础模型</b>，该模型首先在大量<b>粒子解析模拟</b>数据上进行预训练，然后利用有限的<b>实地观测数据</b>进行微调。模型评估结果显示，经过微调的基础模型在性能上一致且显著地优于多个基线模型，并在不同数据集上展现出更高的<b>稳定性和鲁棒性</b>。通过排列特征重要性和敏感性分析，研究确定了<b>气溶胶物种浓度</b>是影响该基础模型预测性能的最关键输入因子。这项工作证明了结合模拟预训练与有限观测微调的策略是克服观测数据限制的有效途径，为提升对<b>大气成分</b>和<b>空气质量监测</b>的理解提供了新方法。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Large-scale diurnal responses of solar-induced chlorophyll fluorescence (SIF) to varying heat and water stresses: Implications for monitoring SIF variations from satellite observations</section>
+            <section class="paper-authors">Dayang Zhao, Zhaoying Zhang, Yongguang Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.114748" target="_blank">https://doi.org/10.1016/j.rse.2025.114748</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">太阳诱导叶绿素荧光</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">植被胁迫监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.114748" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究聚焦于利用<b>卫星观测</b>数据理解<b>太阳诱导叶绿素荧光 (SIF)</b> 对植被<b>热胁迫</b>和<b>水分胁迫</b>的<b>日变化响应</b>。尽管SIF被认为是监测植被胁迫的有效指标，但其日内动态变化及其对胁迫的响应机制尚不完全清楚，这限制了基于固定时间卫星观测（如极轨卫星）推算日均值（SIFdaily）的准确性。研究利用了<b>OCO-3卫星</b>于2019至2022年夏季在中国大陆获取的观测数据，采用SIF与近红外植被反射率之比（NIRvR）作为<b>荧光效率 (Φf)</b> 的近似值，并应用<b>XGBoost机器学习算法</b>模拟了每小时的SIF和Φf。通过分析不同时段SIF和Φf异常值与环境胁迫（日气温和土壤湿度异常）的关系，研究发现：SIF和Φf对胁迫的响应程度显著依赖于<b>一天中的具体时间</b>和<b>植被类型</b>。在高胁迫条件下，早晨和下午的SIF下降幅度小于中午，而早晨的Φf增加通常强于中午。这种日变化差异在森林中比草地更显著，并随胁迫程度加剧。研究结论强调，利用早晨或中午的单一时点卫星观测推算SIFdaily会引入偏差，早晨观测易<b>高估</b>而中午观测易<b>低估</b>日变化，尤其在胁迫加剧时。因此，获取并分析<b>日间多时相SIF观测</b>对于深入理解植被胁迫响应和改进全球<b>植被胁迫监测</b>至关重要。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
