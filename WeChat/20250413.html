@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/04/13</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Deep transfer learning method for seasonal TROPOMI XCH4 albedo correction</section>
+            <section class="paper-authors">Alexander C. Bradley, Barbara Dix, Fergus Mackenzie, J. Pepijn Veefkind, Joost A. de Gouw</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-1675-2025" target="_blank">https://doi.org/10.5194/amt-18-1675-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷反演</span>
+                        <span class="topic-tag">TROPOMI卫星</span>
+                        <span class="topic-tag">深度学习校正</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-1675-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究提出了一种新的<b>深度迁移学习</b>方法，用于季节性地校正<b>TROPOMI卫星</b>观测的<b>甲烷（XCH4）</b>数据中由地表反射率（反照率）引起的偏差。由于地表反射率在许多地区（尤其是农业区）随季节变化，现有的校正方法未能充分考虑反射率与甲烷校正值之间随时间变化的关系。该研究以农业和油气开采并存的丹佛-朱尔斯堡盆地为案例区，成功应用了该技术。研究团队构建了12个<b>月度机器学习模型</b>，生成了具有季节分辨率的地表反照率校正因子。研究发现，土地覆盖类型对校正至关重要，特别是在夏季，耐旱作物覆盖区域的校正值比水密集型作物区域大约5-6 ppb。此外，不同土地覆盖类型的校正值在季节尺度上变化显著，例如耐旱作物区的夏季校正值比冬季可高出10 ppb。这项校正工作有助于更准确地确定甲烷排放量，因为它消除了农业和其他季节性因素对反照率校正的影响，并可能有助于区分季节性较强的农业甲烷排放和相对稳定的油气排放。这项研究对于利用卫星遥感数据（如TROPOMI）监测大气甲烷浓度具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Tomographic reconstruction algorithms for retrieving two-dimensional ice cloud microphysical parameters using along-track (sub)millimeter-wave radiometer observations</section>
+            <section class="paper-authors">Yuli Liu, Ian Stuart Adams</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-1659-2025" target="_blank">https://doi.org/10.5194/amt-18-1659-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰云反演</span>
+                        <span class="topic-tag">层析成像算法</span>
+                        <span class="topic-tag">亚毫米波遥感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-1659-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文介绍了在<b>层析重建算法</b>方面的最新进展，该算法利用多角度（亚）毫米波亮温数据来重建<b>冰云</b>的二维空间分布。研究指出，与仅使用天底观测的反演相比，层析技术能提供高空间分辨率的冰云内部结构细节，并显著提高反演精度和对小冰云粒子的探测灵敏度。研究中开发了两种类型的层析重建算法来反演二维<b>冰水含量（IWC）</b>廓线：一维（1D）层析算法逐波束进行反演，然后整合结果构建二维云剖面；二维（2D）层析算法则直接利用多角度扫描亮温观测来约束二维云微物理属性，通过迭代优化使模拟亮温与观测值之间的差异最小化。这两种算法均基于贝叶斯蒙特卡洛积分（MCI）和最优估计方法（OEM）的混合。通过<b>模拟实验</b>评估了两种算法的性能，结果表明两种方法均能稳定收敛，且<b>2D层析算法</b>表现更优。实验结果强调了使用<b>多角度观测</b>约束二维云结构的显著优势，包括校正系统偏差、减少误差传递以及提高对小冰粒的探测能力。这项工作为利用<b>（亚）毫米波辐射计</b>进行云参数遥感反演提供了新的技术途径。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Climatology, trend and correlations of aerosol, cloud and meteorology over the climatologically important monsoon and adjacent northern regions of Pakistan</section>
+            <section class="paper-authors">Kashif Anwar, Syed Shakeel Ahmad Shah, Abdulhaleem H. Labban, Khan Alam</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108136" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108136</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶-云相互作用</span>
+                        <span class="topic-tag">气候趋势分析</span>
+                        <span class="topic-tag">遥感与再分析数据</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108136" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用2009年至2019年长达11年的多源数据，包括<b>MERRA-2</b>（气溶胶光学厚度AOD、Angstrom指数AE）、<b>CLARA-A3</b>（云特性，如云滴有效半径CER、云光学厚度COT、云滴数浓度CDNC、云几何厚度CGT、液态水路径LWP）以及<b>ERA-5</b>（气象变量），分析了巴基斯坦关键的季风核心区（R1）和邻近的北部高海拔区（R2）的<b>气溶胶</b>、<b>云</b>和<b>气象要素</b>的气候学特征、变化趋势及其相互关系。研究发现，两个区域的AE均呈下降趋势（R1为-5%，R2为-10%），可能与森林砍伐、升温和降水格局变化有关。R1区的AOD和气溶胶指数（AI）呈显著增加趋势（分别为12.4%和3.2%），可能由快速城市化、工业化和生物质燃烧驱动；而R2区的AOD和AI则呈下降趋势（分别为-7.0%和-14.14%），可能与中国的人为排放控制政策有关。大部分云参数（CDNC, CER, CGT, COT, LWP）和气象变量（如混合比、位势高度、对流有效位能、风速、露点温度、气温）在两个区域均呈正趋势。相关性分析显示，两区域均存在正的AOD-CDNC关系和负的AOD-CER关系，但<b>AI与云特性</b>（COT, CGT, LWP）的相关性在R1区呈负相关，而在R2区则表现为弱相关或正相关，这种差异归因于两区域不同的云状和气象条件。该研究结果为理解区域<b>气溶胶-云-气象相互作用</b>、季风变率和未来气候预测提供了重要见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurement report: Aircraft observations of aerosol and microphysical quantities of stratocumulus in autumn over Guangxi Province, China – daylight variation, vertical distribution, and aerosol–cloud interactions</section>
+            <section class="paper-authors">Sihan Liu, Honglei Wang, Delong Zhao, Wei Zhou, Yuanmou Du, Zhengguo Zhang, Peng Cheng, Tianliang Zhao, Yue Ke, Zihao Wu, Mengyu Huang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-4151-2025" target="_blank">https://doi.org/10.5194/acp-25-4151-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">层积云微物理</span>
+                        <span class="topic-tag">气溶胶-云相互作用</span>
+                        <span class="topic-tag">飞机观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-4151-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用<b>飞机观测</b>数据，分析了2020年秋季中国广西地区<b>层积云</b>的微物理特性及其与气溶胶的相互作用。研究基于2020年10月10日至11月3日期间的九次穿云飞行观测数据，描述了该地区层积云微物理量垂直廓线的日变化特征和形成机制。研究发现，<b>气溶胶数浓度（Na）</b>和<b>云滴浓度（Nc）</b>在1500米以下随高度增加而逐渐降低，在1500至3300米之间则变化不大。行星边界层顶部的逆温层阻碍了云滴粒径的增长。广西地区层积云低层主要由小云滴（有效直径Ed < 15 µm）组成，中高层则以大云滴（Ed > 20 µm）为主。云微物理量的垂直分布存在明显的日变化：午后至傍晚（14:00-20:00 BJT），边界层气溶胶向上输送，导致低层Nc减少，中高层小云滴增多；上午至中午（10:00-13:00 BJT），自由大气气溶胶输入边界层，增加了边界层顶部附近云层低层的小云滴数量。云微物理特性也受气团来源（陆地 vs 海洋）和边界层高度的影响，陆地气团或边界层内气溶胶影响下Na和Nc较高，云滴谱呈单峰；海洋气团或边界层以上影响下则较低，呈双峰。研究证实该地区层积云与气溶胶的关系符合<b>Twomey效应</b>，Ed与Na在不同液态水含量下均呈负相关，计算得到的气溶胶第一间接效应（FIE）范围为-0.07至-0.58。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Comparison of NO<sub>2</sub> diffusion tube measurement methods and related uncertainties</section>
+            <section class="paper-authors">David Medland, Gabriel Garcia, Tom Gardiner, Nicholas A. Martin, Valerio Ferracci, Ashley Wilkins, David Fryer, Tom Holmes, Pete Edwards, Sebastian Diez, David Butterfield</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121219" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121219</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">NO2监测</span>
+                        <span class="topic-tag">扩散管测量</span>
+                        <span class="topic-tag">不确定性分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121219" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究对比了不同的<b>二氧化氮（NO2）扩散管</b>测量方法及其相关的不确定性，特别关注了英国地方当局广泛使用的传统Palmes扩散管（PDT）和带有防风滤膜的改进型扩散管（UUNN型）。研究旨在评估这两种扩散管在有无额外遮蔽物情况下的性能。通过与<b>参考测量</b>进行同步对比，并利用统计分析和<b>不确定性模型</b>进行评估。研究发现，传统的PDT易受<b>风速</b>影响而产生偏差，使用遮蔽物可以改善其多次测量的重复性和准确性。相比之下，UUNN型扩散管本身就比PDT更准确、重复性更好，额外使用遮蔽物对其测量结果没有明显改善。不确定性模型分析表明，PDT的不确定性主要来源于风速影响，并识别了不同时间尺度下的关键不确定性来源。研究结论指出，无遮蔽的改进型UUNN扩散管性能优于传统的PDT，而PDT在有遮蔽时性能有所提升。这项工作为空气质量监测网络选择和使用NO2扩散管提供了依据，并强调了评估和理解测量<b>不确定性</b>的重要性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
