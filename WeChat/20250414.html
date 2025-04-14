@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/04/14</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Optimizing Ozone Control Strategies for Chinese Megacity Clusters Under the Influence of Stratospheric Intrusion</section>
+            <section class="paper-authors">Kaihui Zhao, Wen Chen, Puyu Lian, Danni Xu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043112" target="_blank">https://doi.org/10.1029/2024JD043112</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧污染</span>
+                        <span class="topic-tag">平流层入侵</span>
+                        <span class="topic-tag">减排策略</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043112" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究探讨了<b>平流层入侵 (SI)</b> 对中国主要城市群<b>臭氧 (O3) 污染</b>的影响，并旨在优化相应的控制策略。SI作为O3的自然来源，给制定有效的减排措施带来了挑战。研究利用了本地化的综合<b>空气质量模型</b>和<b>全球大气群落气候模型 (WACCM)</b>，结合了 2020-2023 年春季的相关数据，分析了京津冀、珠三角、长三角、汾渭平原和成渝等区域。研究发现，SI对地表O3的贡献存在明显的<b>季节性</b>和<b>空间差异</b>，高纬度地区春季影响更大。随着SI贡献的增加，仅控制VOC可能不再是最优策略。例如，在京津冀和珠三角地区，当SI对O3的贡献分别超过13.57 ppb和8.39 ppb的阈值时，最优减排路径从“仅控制VOC”转变为“仅控制NOx”。而在长三角、汾渭平原和成渝地区，“仅控制VOC”仍然是最佳路径。该研究为决策者制定更有效的、考虑SI影响的<b>O3减排策略</b>提供了科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Improving Fengyun-3D satellite atmospheric precipitable water vapor products through machine learning-based post-processing correction</section>
+            <section class="paper-authors">Mengnan Li, Leiku Yang, Weiqian Ji, Muhammad Bilal, Xin Pei, Xueke Zheng, Yizhe Fan, Xiaofeng Lu, Xiaoqian Cheng, Weibing Du</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108133" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108133</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">大气水汽</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108133" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究致力于通过<b>机器学习</b>方法改进中国风云三号D (FY-3D) 气象卫星搭载的<b>中分辨率光谱成像仪-II (MERSI-II)</b> 的<b>大气可降水汽 (PWV)</b> 产品的精度。现有的卫星反演PWV产品因传感器性能、算法假设等限制存在误差。研究首先利用2019年5月至2020年5月的全球AERONET地基观测数据，对MERSI-II的四种业务PWV产品进行了质量评估和<b>偏差分析</b>，发现产品存在不同程度的系统性低估。进一步分析表明，产品偏差受到太阳天顶角、观测天顶角、太阳方位角、观测方位角、数字高程模型 (DEM) 和归一化植被指数 (NDVI) 等多种因素的影响。基于偏差分析结果，研究选取了影响因子，并采用<b>极端梯度提升 (XGBoost) 模型</b>对MERSI-II PWV产品进行<b>后处理校正</b>。校正结果显示，产品的平均偏差接近于零，且受所选参数的影响极小。例如，三通道加权产品的相关系数提高到0.975，76%的匹配点落在预期误差范围内。这项研究有效地减少了MERSI-II PWV产品的系统偏差，提升了<b>卫星遥感</b>水汽产品的质量。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Using EnKF Data Assimilation to Improve Predictions of Volcanic Ash Dispersion</section>
+            <section class="paper-authors">Zefeng Weng, Lin Zhu, Jun Li, Yiran Zhang, Xuyan Liu, Wu Su, Hongfu Sun, Xinyu Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042215" target="_blank">https://doi.org/10.1029/2024JD042215</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火山灰扩散</span>
+                        <span class="topic-tag">数据同化</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042215" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究旨在提高<b>火山灰扩散</b>预测的准确性。目前依赖物理模型和卫星观测各有局限性。研究提出了一种基于<b>集合卡尔曼滤波 (EnKF)</b> 的<b>数据同化</b>方法，将<b>HYSPLIT</b>扩散模型与<b>卫星观测数据</b>相结合，利用各自优势。研究以2010年冰岛<b>Eyjafjallajökull</b>火山喷发事件作为案例进行评估。使用的数据包括 HYSPLIT 模型输出和卫星反演的火山灰信息。通过EnKF方法，将卫星观测数据持续地融入模型预测中。结果表明，经过数据同化优化的预测在火山灰云的<b>空间分布</b>、<b>质量负载</b>和<b>云顶高度</b>等方面的准确性得到了显著提升，在某些时刻甚至优于相应的卫星反演结果。该方法有效解决了模型初始场精度不足的问题，并通过持续同化观测数据来优化预测，证明了数据同化在改进火山灰预报中的潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Ambient Measurements of Daytime Decay Rates of Levoglucosan, Mannosan, and Galactosan</section>
+            <section class="paper-authors">Qiongqiong Wang, Shan Wang, Hanzhe Chen, Zijing Zhang, Huan Yu, Man Nin Chan, Jian Zhen Yu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042423" target="_blank">https://doi.org/10.1029/2024JD042423</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">生物质燃烧</span>
+                        <span class="topic-tag">左旋葡聚糖</span>
+                        <span class="topic-tag">大气降解</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042423" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究聚焦于评估<b>生物质燃烧 (BB)</b> 气溶胶的特定分子标记物——<b>左旋葡聚糖</b>及其同分异构体（甘露聚糖和半乳聚糖）在大气中的稳定性。以往的研究多依赖实验室或模型模拟，缺乏实际大气环境的数据。本研究利用在香港郊区站点连续4个月、每两小时一次的<b>实地测量数据</b>，分析了这三种糖类的浓度变化。通过使用生物质燃烧产生的钾离子浓度进行归一化处理，研究人员观察到在白天（08:00至16:00），这三种糖类的浓度呈现出明显的、一致的<b>指数衰减模式</b>。研究首次基于实际环境测量数据计算了它们的<b>日间衰减速率常数</b>。结果显示，甘露聚糖和半乳聚糖的衰减速率分别比左旋葡聚糖高34%和40%。在平均温度22±5°C、相对湿度55±14%的条件下，估算的左旋葡聚糖<b>大气寿命</b>为13±7小时（范围3-46小时）。这项工作提供了宝贵的动力学数据，有助于改进评估BB气溶胶对区域和全球空气质量与气候影响的模型预测。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Deducing atmospheric conditions that contribute to elevated pollution events in the Salton Sea Air Basin</section>
+            <section class="paper-authors">Heather C. Lieb, Ian C. Faloona</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121191" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121191</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">污染源解析</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121191" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究旨在探究导致<b>萨尔顿海空气盆地 (SSAB)</b> 频繁出现<b>臭氧 (O3)</b>、<b>PM2.5</b> 和 <b>PM10</b> 浓度超标的大气条件和污染来源。SSAB长期难以达到美国国家环境空气质量标准 (NAAQS)。研究分析了该地区污染物的<b>季节性、日变化模式</b>以及长期趋势，并结合了气象数据和位于美墨边境城市Calexico的化学组分监测网络 (CSN) 数据。研究方法包括统计分析和基于CSN数据的<b>非负矩阵分解 (NMF) 源解析</b>。结果显示，O3超标主要受区域<b>农业土壤NOx排放</b>控制，并可能受到<b>平流层臭氧输送</b>的影响，而非仅仅是受管制的NOx排放。冬季PM2.5超标的主要来源是<b>生物质燃烧</b>、<b>农业土壤排放</b>和<b>风吹尘</b>，同时也受到二次生成和机械过程的影响。春秋季的PM10超标则主要与<b>强风</b>导致的地表<b>沙尘再悬浮</b>有关。研究强调了SSAB空气污染问题的复杂性，指出尽管人口稀少，该地区仍面临加州最严重的空气污染影响，亟需制定有针对性的局地化空气质量管理策略。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A review on atmospheric aerosols and dusts in different tropical forest ecosystems and policy recommendations toward climate resilience</section>
+            <section class="paper-authors">Arika Bridhikitti, Weerachon Sawangproh, Tomoki Nakayama</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121215" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121215</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热带森林</span>
+                        <span class="topic-tag">大气气溶胶</span>
+                        <span class="topic-tag">气候韧性</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121215" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">这是一篇关于<b>热带森林生态系统</b>中<b>大气气溶胶</b>和<b>粉尘</b>研究的综述性论文。文章旨在综合近年来关于气溶胶科学与热带森林相互作用及其在空气质量和气候调节中作用的研究成果。气溶胶深刻影响天气模式和空气质量，对维持热带森林功能至关重要。论文回顾了气溶胶的来源，包括本地排放（如森林火灾、<b>生物源挥发性有机化合物 BVOCs</b>）和<b>长距离输送</b>（如非洲沙尘）。重点讨论了BVOCs（异戊二烯、单萜、倍半萜等）在热带森林中对臭氧和<b>二次有机气溶胶 (SOA)</b> 形成的作用，以及生物质燃烧、人为排放和土地利用变化（如森林转为种植园）如何改变BVOC氧化和SOA特性。此外，文章还探讨了红树林的硫化氢排放、原生生物气溶胶颗粒以及来自亚马逊、东南亚等地的土壤粉尘和矿物气溶胶的影响，特别是非洲烟尘跨大西洋输送对土壤肥力和空气质量的影响。最后，论文提出了加强可持续森林管理以提高热带生态系统<b>气候韧性</b>的政策建议和未来的研究方向。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
