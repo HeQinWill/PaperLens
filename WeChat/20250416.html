@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/04/16</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Enhancing global aerosol retrieval from satellite data via deep learning with mutual information estimation</section>
+            <section class="paper-authors">Xiaohu Sun, Yong Xue, Lin Sun</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">International Journal of Applied Earth Observation and Geoinformation</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.jag.2025.104534" target="_blank">https://doi.org/10.1016/j.jag.2025.104534</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">深度学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.jag.2025.104534" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究提出了一种创新的<b>深度学习</b>框架——气溶胶域自适应网络（<b>Aerosol domain-Adaptive Network, AAdaN</b>），旨在利用<b>卫星数据</b>增强全球<b>气溶胶光学厚度（AOD）</b>的反演能力。该框架的一个关键创新在于考虑并处理了<b>空间协变量偏移</b>问题，即模型在训练数据分布与实际应用场景（不同地理区域、地表类型）数据分布之间存在的差异。AAdaN利用一个神经网络来估计<b>互信息</b>，并通过一个<b>迁移损失项</b>来对齐这种空间协变量偏移，从而提高模型在未知或数据稀疏区域的<b>泛化能力</b>。研究使用独立的土地覆盖类型数据评估了模型在未知场景下的反演潜力，并证明了其令人满意的效果。交叉验证结果（包括基于样本和基于站点的评估）显示，AAdaN反演的AOD与地基观测数据具有很强的一致性。特别是基于站点的十折交叉验证表明，模型达到了良好的精度指标（皮尔逊相关系数0.766，均方根误差0.118），约76.05%的反演结果满足预期误差标准[±(0.05 + 20%)]。此外，AAdaN在各种地表和大气条件下均能实现稳定、高精度的气溶胶反演，并能生成<b>空间连续</b>的AOD分布图。该研究显著提升了卫星AOD反演的空间泛化能力，为未来的模型开发提供了宝贵的见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Local and transboundary contributions to NOy loadings across East Asia using CMAQ-ISAM and a GEMS-informed emission inventory during the winter–spring transition</section>
+            <section class="paper-authors">Jincheol Park, Yunsoo Choi, Sagun Kayastha</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-4291-2025" target="_blank">https://doi.org/10.5194/acp-25-4291-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氮氧化物</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">跨界传输</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-4291-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>卫星数据</b>（GEMS 对流层 NO2 柱浓度）优化的<b>化学传输模型</b>（CMAQ）及其<b>源解析方法</b>（ISAM），调查了2022年冬春过渡期间<b>东亚地区</b>NOx排放对活性氮物质（NOy）负荷的本地和跨界贡献。通过<b>贝叶斯反演</b>，结合GEMS数据对先验NOx排放清单进行调整，使得韩国和中国的排放量分别增加了50%和33%，显著减少了模型对地表NO2浓度的低估。研究分析了东亚五个区域的NOy浓度来源，发现在冬春过渡期间，各区域<b>本地排放</b>的贡献从1月的32%-43%下降到5月的23%-30%，而<b>跨界传输</b>的贡献则从1月的16%-33%增加到5月的27%-37%。华北地区始终是东亚NOy的重要贡献者（超过10%）。华东和华中地区相互贡献显著（9%-12%）。华中地区的跨界输入持续超过本地贡献，表明其易受传输影响。韩国的贡献度从1月较低水平（1%-4%）增至5月的6%-7%。这些变化主要受<b>天气形势</b>驱动：冬季强劲的西北风将污染物输送至东南方向，而春季风力减弱导致更复杂的多向传输，使污染物在区域内更广泛地扩散。研究强调了跨界污染对东亚空气质量的重要影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Source‐Specific Mass Absorption Efficiencies of Char‐EC and Soot‐EC Improve Accuracy in Black Carbon Radiative Effect Estimation</section>
+            <section class="paper-authors">Huikun Liu, Qiyuan Wang, Jie Tian, Jin Wang, Ruixia Tian, Yong Zhang, Qian Zhang, Yonggang Xue, Hongmei Xu, Weikang Ran, Hui Su, Yongming Han, Junji Cao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043079" target="_blank">https://doi.org/10.1029/2024JD043079</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳</span>
+                        <span class="topic-tag">吸收效率</span>
+                        <span class="topic-tag">辐射效应</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043079" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究聚焦于<b>元素碳（EC）</b>，特别是其两种形态——<b>焦炭型EC（char-EC）</b>和<b>煤烟型EC（soot-EC）</b>——的<b>质量吸收效率（MAE）</b>及其对<b>黑碳（BC）辐射效应</b>估算准确性的影响。由于测量方法的限制，这两种形态EC的MAE差异研究不足，限制了对EC气候影响的准确评估。该研究基于观测数据，采用<b>组合模拟方法</b>推导了char-EC和soot-EC的MAE，并揭示了关键差异。结果显示，通常soot-EC的MAE高于char-EC，但<b>生物质燃烧</b>来源的情况例外。相对湿度等<b>气象因素</b>对两者的MAE影响也不同。排放源和老化过程的差异导致了char-EC和soot-EC质量浓度及其MAE随时间的变化。研究强调，在估算BC的辐射效应时，若忽略char-EC和soot-EC之间的这些差异，可能导致估算结果出现从-9.1%到+18.7%的偏差。因此，精确评估EC辐射效应必须考虑char-EC和soot-EC的区分。研究还暗示，由于不同排放源的char/soot排放比例及其MAE存在差异，优化管理不同黑碳排放源将在不同程度上缓解全球变暖。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Homogenized daily sunshine duration  over China from 1961 to 2022</section>
+            <section class="paper-authors">Yanyi He, Kaicun Wang, Kun Yang, Chunlüe Zhou, Changkun Shao, Changjian Yin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-1595-2025" target="_blank">https://doi.org/10.5194/essd-17-1595-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">日照时数</span>
+                        <span class="topic-tag">数据均一化</span>
+                        <span class="topic-tag">气候变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-1595-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究旨在解决中国<b>日照时数</b>（SSD）观测数据在<b>数据可用性</b>和<b>均一性</b>方面存在的关键问题。研究团队收集了中国1961年至2022年超过2200个站点的原始日照时数观测数据，并开发了一套<b>均一化处理方案</b>，生成了一个均一化的逐日SSD数据集。研究特别关注并首次系统性地修正了因2019年观测仪器从手动记录更新为自动记录（精度从0.1小时提高到1分钟）导致的零日照值频率（day0）突降问题，涉及378个站点。在此基础上，研究进一步检测和调整了1961-2022年间日均SSD序列中由站点迁移、仪器更换等因素引起的方差和均值不连续性（约60%站点存在断点）。结果表明，与原始数据相比，<b>均一化后的SSD序列</b>在视觉上更连续，并且能更准确地反映中国的<b>“变暗”与“变亮”</b>现象。例如，1961-1990年间的“变暗”趋势减弱，而2013年《大气污染防治行动计划》实施后的趋势逆转（尤其在污染严重地区）在均一化数据中体现得更明显。此外，均一化后的SSD与<b>云量</b>和<b>气溶胶光学厚度</b>的相关性也得到加强。该均一化数据集已公开共享，对于气候变化、太阳能资源评估和农业管理等研究至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Multi-color photonic integrated circuits based on homogeneous integration of quantum cascade lasers</section>
+            <section class="paper-authors">Dominik Burghart, Kevin Zhang, Wolfhard Oberhausen, Anna Köninger, Gerhard Boehm, Mikhail A. Belkin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-025-58905-0" target="_blank">https://doi.org/10.1038/s41467-025-58905-0</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">量子级联激光器</span>
+                        <span class="topic-tag">光子集成电路</span>
+                        <span class="topic-tag">中红外光谱</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-025-58905-0" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究报道了首个基于InP材料的<b>中红外（Mid-IR）光子集成电路（PIC）</b>，该电路在同一块InP晶体上通过<b>同质单片集成</b>技术，成功集成了两种不同的<b>量子级联激光器（QCL）</b>有源区和<b>波分复用器</b>，实现了<b>多波长发射</b>。具体方法是，在生长激光器有源区之前，在整个InP衬底上外延沉积了一层无源的InGaAs波导层，该波导层用于光学耦合不同激光器的发射光，并将它们复用到单一的输出波导中。这项工作中展示的方法能够制造出覆盖整个<b>3-15 µm</b>中红外光谱范围的单片光子集成电路。这种集成化的多波长中红外光源在诸多领域具有广泛的应用前景，例如气体传感、光谱分析、环境监测（如<b>大气成分分析</b>）、医疗诊断和红外对抗等。这项工作代表了中红外集成光子学领域的一项重要技术突破。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Atmospheric Reactive Nitrogen Deposition to the Global Ocean During the 2010s: Interannual Variation and Source Attribution</section>
+            <section class="paper-authors">Shaofei Liu, Yuanhong Zhao, Yizhen Lin, Jingxu Wang, Qiong Li, Youfan Chen, Lin Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042789" target="_blank">https://doi.org/10.1029/2024JD042789</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氮沉降</span>
+                        <span class="topic-tag">全球海洋</span>
+                        <span class="topic-tag">GEOS-Chem模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042789" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>GEOS-Chem模型</b>评估了2010年至2019年间<b>全球海洋</b>的<b>大气活性氮（Nr）沉降</b>情况，量化了关键人为源（燃料燃烧、农业活动、交通运输等）和自然源的贡献，并探讨了排放变化和气象因素对沉降<b>年际变化（IAV）</b>的影响。研究发现，全球海洋年均氮沉降量为40.7 Tg N yr-1，其中78%沉降在开阔大洋。还原态氮（NHx）和氧化态氮（NOy）的贡献大致相等，主要通过湿沉降（62%）发生。来源方面，<b>自然源</b>贡献39%，<b>燃料燃烧</b>（包括航运和航空，占11%）贡献33%，<b>农业活动</b>贡献22%。不同海域的主要贡献源不同：北半球中高纬度和沿海生态区以交通运输和农业为主，信风带和南半球生态区则以自然源为主。时间趋势上，北半球中高纬度地区的NOy沉降（干湿）呈下降趋势，但在热带地区增加；NHx的干湿沉降则呈现相反的变化趋势。除热带地区的NHx沉降外，人为排放在驱动海洋氮沉降的年际变化中占主导地位（超过60%）。特别是燃烧源的人为排放变化不仅通过NOx影响NOy沉降，还通过二次无机气溶胶的非线性化学过程导致NHx干湿沉降的相反趋势。研究强调了控制海洋氮沉降需要采取针对NOx、NH3和SO2等多种污染物的综合管理策略，并加强国际航运和航空排放监管。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Simulation of ozone pollution events in Sichuan Basin under the alternating effects of continental high pressure and subtropical high pressure circulation</section>
+            <section class="paper-authors">Chuanyang Wang, Xiaoling Zhang, Jingyi Wang, Jie Pan, Jinhui Gao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108121" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108121</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧污染</span>
+                        <span class="topic-tag">WRF-Chem模型</span>
+                        <span class="topic-tag">TROPOMI卫星数据</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108121" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">位于中国西南部的<b>四川盆地（SCB）</b>因其特殊地形、复杂气象条件和排放源，常面临严重的<b>臭氧（O3）污染</b>问题，近年来的极端高温天气进一步加剧了O3前体物的排放和污染。本研究利用<b>WRF-Chem模型</b>，并结合<b>TROPOMI卫星数据</b>修正的排放信息以及MEGAN模型的初始数据，对2022年7月四川盆地一次O3污染事件的形成机制和传输过程进行了模拟研究，旨在量化高温天气下的O3污染。结果表明，污染期间，四川盆地受到北方大陆高压东移和西太平洋副热带高压西伸引发的环流变化交替影响。<b>高压系统</b>的持续控制导致了极端高温，加速了盆地内O3的生成。东南方向的大陆高压和西北方向的副热带高压在盆地内辐合，形成了“之”字形环流，阻碍了O3向盆地外传输。<b>整合过程速率（IPR）分析</b>结果显示，水平平流的负贡献加速了盆地中部城市O3向周边城市的输出，导致污染在盆地内迅速扩散，并在盆地高空积累；而盆地南部的化学生成则对O3浓度起主要的<b>正贡献</b>作用。研究揭示了特定天气系统配置下四川盆地O3污染的复杂动力和化学过程。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Long‐Term Measurements of CO2, CH4, and Isotopic Ratios of CO2 in the Western Pacific: Trends, Variations, and Implications</section>
+            <section class="paper-authors">Chang‐Feng Ou‐Yang, Jia‐Lin Wang, Chia‐Ching Lin, Chia‐Yang Chiu, Wen‐Tzu Liu, Xin Lan, Don Neff, John B. Miller, Sylvia Englund Michel, Bruce H. Vaughn, Yu‐Chen Chiu, Jhih‐Yuan Yu, Chun‐Chu Cheng, Russell C. Schnell, James W. C. White, Neng‐Huei Lin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042255" target="_blank">https://doi.org/10.1029/2024JD042255</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">温室气体</span>
+                        <span class="topic-tag">背景站观测</span>
+                        <span class="topic-tag">同位素分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042255" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究基于在西太平洋两个<b>背景大气监测站</b>——代表自由对流层的台湾<b>鹿林山站（LLN）</b>（自2006年8月起）和代表海平面的南海<b>东沙岛站（DSI）</b>（自2010年3月起）——进行的长期观测，分析了<b>二氧化碳（CO2）</b>和<b>甲烷（CH4）</b>浓度及其<b>CO2同位素比率（δ13C-CO2, δ18O-CO2）</b>的时间变化趋势、变异特征及其影响因素。数据显示，在2019年3月之前的监测期内，LLN、DSI和Mauna Loa站的CO2、CH4和δ13C-CO2的平均增长率相似，而δ18O-CO2则无明显趋势。LLN和DSI的季节性模式反映了不同区域来源的影响。在LLN站，白天的光合作用降低了CO2浓度，而午后由于上坡谷风带来的影响，CH4浓度升高；研究还观测到LLN站午后CH4的日振幅增大，年增长率高达9.2 ppb yr-1，可能与上坡风增强有关。通过结合夜间测量的<b>后向轨迹分析</b>，发现春季期间，<b>东南亚生物质燃烧</b>使LLN站的CO2增加了1.5 ppm（+0.4%），CH4增加了15.4 ppb（+0.8%）。<b>浓度权重轨迹（CWT）</b>分析识别出潜在源区位于西风带经过的中国南方和泰国等地，而来自东南亚南部的影响因与南海空气混合而减弱。这项研究为理解西太平洋地区温室气体背景浓度变化及其驱动机制提供了重要数据和见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">On the Fate of VOCs During the Spring 2020 COVID‐19 Lockdowns in Europe: A Study Based on the AirBase Data</section>
+            <section class="paper-authors">Alexandre Caseiro, Pedro Salvador, Erika von Schneidemesser</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042845" target="_blank">https://doi.org/10.1029/2024JD042845</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">挥发性有机物</span>
+                        <span class="topic-tag">新冠封锁</span>
+                        <span class="topic-tag">来源分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042845" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用欧洲环境署（EEA）的<b>AirBase</b>数据库，分析了2020年春季欧洲因COVID-19疫情实施<b>封锁措施</b>期间，<b>挥发性有机化合物（VOCs）</b>浓度的变化情况。封锁导致的人类活动减少为大气科学家提供了一个独特的“真实世界实验室”。虽然封锁对一次污染物（如NO2）的影响已被广泛研究，但对二次污染物（如O3和二次有机气溶胶）及其前体物VOCs的影响研究较少。研究分析了多种VOCs（苯、甲苯、二甲苯、三甲苯、乙苯、非环状烯烃、正构烷烃）的浓度数据，并根据人类活动水平（站点类型：交通站、城市站）和<b>气象条件</b>（如天气流型）进行了子集分析。结果显示，在交通站和城市站，<b>苯</b>，尤其是<b>甲苯</b>的浓度显著降低。二甲苯、三甲苯和乙苯浓度也有所下降，但在慢流天气条件下降低幅度较小。非环状烯烃浓度无明显变化或略有增加，而<b>正构烷烃浓度增加</b>。通过计算诊断比率（甲苯/苯，苯/甲苯/乙苯），研究探讨了VOCs<b>来源</b>的相对重要性变化，发现存在从<b>交通源</b>向<b>生物质/生物燃料/煤炭燃烧</b>转变的趋势，并暗示<b>家用溶剂</b>的使用可能增加。这项研究为理解特殊社会活动变化下城市VOCs的复杂行为提供了重要信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Using Prototypical Oil and Gas Sites to Model Methane Emissions in Colorado’s Denver-Julesburg Basin Using a Mechanistic Emission Estimation Tool</section>
+            <section class="paper-authors">Winrose Mollel, Daniel Zimmerle, Arthur Santos, Anna Hodshire</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.4c00168" target="_blank">https://doi.org/10.1021/acsestair.4c00168</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放</span>
+                        <span class="topic-tag">油气行业</span>
+                        <span class="topic-tag">排放模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.4c00168" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究使用一种名为<b>MAES（Mechanistic Air Emissions Simulator）</b>的排放估算工具，对美国科罗拉多州丹佛-朱尔斯堡（DJ）盆地的三种典型油气生产井场（旧式、当前、未来无罐式）的<b>甲烷（CH4）排放</b>进行了模拟评估。传统的“自下而上”（BU）方法通常使用活动数据乘以排放因子来估算排放，而MAES模型结合了两种方法：一是基于流体在设备中流动和设备状态的<b>机理模型</b>，提供面向过程的详细排放模拟；二是传统的基于活动数据和排放因子分布的统计方法。研究旨在探讨<b>生产通量变化</b>和<b>设备故障条件</b>（如排污阀卡住）对甲烷排放量和<b>乙烷/甲烷比率</b>的影响，这是传统BU方法难以充分考虑的。模拟结果显示，通量增加会导致旧式井场的甲烷排放升高，但在未来的无罐式设施中则不然。更重要的是，模拟故障条件（如卡住的排污阀）不仅显著增加了甲烷排放率，还导致乙烷/甲烷比率发生巨大变化（根据设施配置不同可变化2.15倍），这对区分油气来源的“自上而下”（TD）测量分析具有重要意义。研究结论强调，在排放估算中必须考虑设施运行的可变性，以提高<b>排放清单</b>的准确性，并指导有效的<b>减排策略</b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Revealing the spatiotemporal response of air quality and public attention: a case study of Shandong province, China</section>
+            <section class="paper-authors">Yong Sun, Chuyan Gai, Huimeng Wang, Jingyu Liu, Yaohui Liu, Jiantao Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/adca4b" target="_blank">https://doi.org/10.1088/1748-9326/adca4b</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">公众关注度</span>
+                        <span class="topic-tag">时空分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/adca4b" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了<b>中国山东省</b>2014年至2021年间<b>空气质量</b>与<b>公众关注度</b>之间的时空响应关系。研究利用<b>百度指数</b>数据量化公众关注度，并结合空气质量监测数据（AQI, PM2.5, PM10, CO, SO2, NO2, O3）和人口统计数据，构建了人均空气质量关注度（PAAQ）指数。采用的方法包括<b>季节性时间序列分析</b>、<b>空间分析</b>（如空间聚类）和<b>空间滞后模型</b>。研究发现，随着空气质量的持续改善，公众关注度呈下降趋势，尤其是在2020年之后。PAAQ及多数污染物月变化呈“U”型（冬高夏低），O3则相反。空气污染在空间上呈现聚集性，鲁中、鲁西北、鲁南污染较重，山东半岛相对较好。中部和南部工业城市的PAAQ较高，与冬季严重污染有关；发达地区的PAAQ更显著且具前瞻性，随空气质量改善而快速下降。第二产业比重、城镇人口比例、人均互联网用户数和AQI对PAAQ有正向放大作用。结论指出，PAAQ指数可作为衡量公众对空气质量管理反馈的量化工具，有助于政府识别干预重点，优化污染控制策略。该研究通过分析关键词和时空维度，揭示了公众对空气污染响应和关切的区域差异。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Combining machine learning to explore the influence of VOCs and meteorological factors on ozone concentration: A case study of a chemical park in Shenyang, China</section>
+            <section class="paper-authors">Qi Jiang, Nan Wang, Zhenling Jin, Xuebin Sun, Jiayin Wang, Ru Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108113" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108113</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧污染</span>
+                        <span class="topic-tag">挥发性有机物</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108113" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究以中国沈阳一个<b>化工园区</b>为例，探讨了<b>挥发性有机化合物（VOCs）</b>和<b>气象因素</b>对近地面<b>臭氧（O3）浓度</b>的影响。研究利用2019年该园区的连续在线监测数据，分析了VOCs、常规污染物和气象条件（温度、湿度等）的变化特征，并初步判断了它们对O3的表观效应。结果显示，月平均O3浓度呈现“M”型变化，峰值出现在夏季，谷值在冬季，这受到光化学反应和气象因素的共同影响。VOCs中的烷烃、炔烃和芳香烃日均浓度表现出明显的周期性，峰值出现在5:00-7:00和19:00-20:00，谷值在14:00-15:00；其月均浓度则呈现与O3相反的季节趋势（秋冬高，春夏低）。研究采用了<b>机器学习</b>技术，特别是<b>极端梯度提升（XGBoost）</b>模型，来模拟关键影响因素与O3浓度之间的关系。结果表明，优化后的XGBoost模型取得了最高的<b>相关系数</b>和最佳的预测性能。通过<b>特征重要性</b>方法，识别出了与O3浓度关联最强的关键因素（如温度、湿度及特定VOCs组分）。最后，利用优化后的模型检验了在不同温湿度条件下O3浓度的变化情况。该研究为制定有效的<b>污染控制策略</b>和指导环境管理决策提供了重要见解。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
