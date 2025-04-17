@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/04/17</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Harmonized Landsat and Sentinel-2 version 2.0 surface reflectance dataset</section>
+            <section class="paper-authors">Junchang Ju, Qiang Zhou, Brian Freitag, David P. Roy, Hankui K. Zhang, Madhu Sridhar, John Mandel, Saeed Arab, Gail Schmidt, Christopher J. Crawford, Ferran Gascon, Peter A. Strobl, Jeffrey G. Masek, Christopher S.R. Neigh</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.114723" target="_blank">https://doi.org/10.1016/j.rse.2025.114723</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星数据融合</span>
+                        <span class="topic-tag">地表反射率</span>
+                        <span class="topic-tag">大气校正</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.114723" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文详细介绍了<b>Harmonized Landsat and Sentinel-2 (HLS)</b>项目的<b>Version 2.0地表反射率数据集</b>。该数据集旨在通过一系列处理步骤，整合来自美国<b>Landsat 8/9</b> OLI传感器和欧洲<b>Sentinel-2A/B</b> MSI传感器的观测数据，生成时空一致的全球（南极洲除外）30米分辨率地表反射率产品，时间覆盖自2013年4月起。关键的处理步骤包括<b>大气校正</b>（将星上表观反射率转换为地表反射率）、<b>云与云阴影掩膜</b>、视角效应的<b>双向反射分布函数（BRDF）归一化</b>、以及传感器间光谱<b>波段差异调整</b>（以OLI为参考）。相较于早期版本，V2.0在几乎所有算法上都有改进。通过对全球分布的545对同日Landsat/Sentinel-2影像（2021-2022年）的评估，结果显示，经过完整的协调化处理后，两个传感器在红光、近红外（NIR）和短波红外（SWIR）波段的地表反射率差异被有效减小到<b>约4%</b>以内。尽管蓝光和绿光波段的校正仍具挑战性，但总体上，数据集在计算常用<b>植被指数</b>时表现出良好的一致性（差异<4.5%）。HLS V2.0显著提高了观测频率（2022年全球陆地中位数达66次无云观测），为大规模<b>陆地监测</b>提供了高质量、高频率的基础数据，并已在多个<b>云计算环境</b>中可用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Predictions of failed satellite retrieval of air quality  using machine learning</section>
+            <section class="paper-authors">Edward Malina, Jure Brence, Jennifer Adams, Jovan Tanevski, Sašo Džeroski, Valentin Kantchev, Kevin W. Bowman</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-1689-2025" target="_blank">https://doi.org/10.5194/amt-18-1689-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">机器学习</span>
+                        <span class="topic-tag">卫星遥感反演</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-1689-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究提出了一种利用<b>机器学习（ML）</b>技术预测<b>卫星遥感反演</b>空气质量数据失败的方法，旨在提高数据处理效率，节省计算资源。研究基于<b>卫星输入的辐射数据</b>，在进行复杂的痕量气体（如<b>臭氧</b>）反演计算之前，预测哪些测量可能导致低质量或失败的反演结果。该方法被应用于处理来自多个卫星传感器（<b>Suomi NPP CrIS</b>、<b>AIRS</b>和<b>OMI</b>）的观测数据，并结合<b>MUSES反演算法</b>进行了测试。结果表明，该ML工具能够高效地识别反演失败的案例：对于CrIS数据，能识别80%的臭氧反演失败，代价是20%的误报；对于AIRS-OMI联合反演，能识别98%的失败，误报率仅为2%。该工具对每个光谱的处理时间小于0.1秒，证明其具有很高的运算效率。结论认为，这种方法可以广泛应用于其他地球观测卫星，有效减少当前和未来仪器的数据处理负担，优化<b>空气质量</b>监测数据的生产流程。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Evaluation of reanalysis 3-D aerosol products against CALIPSO measurements over the Tibetan Plateau</section>
+            <section class="paper-authors">Min Zhang, Hongru Yan, Yunfei Miao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108126" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108126</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">再分析数据评估</span>
+                        <span class="topic-tag">沙尘气溶胶</span>
+                        <span class="topic-tag">CALIPSO卫星</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108126" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究系统评估了两种主流的<b>三维气溶胶再分析数据集</b>——<b>MERRA-2</b>和<b>CAMS</b>——在<b>青藏高原（TP）</b>地区的表现，以<b>CALIPSO</b>星载激光雷达（2007-2011年）的观测数据作为基准。评估内容包括气溶胶类型的识别、<b>沙尘气溶胶光学厚度（DAOD）</b>的时空分布特征以及沙尘气溶胶的<b>三维垂直分布</b>。研究发现，两种再分析资料都能准确识别出沙尘是青藏高原区域的主要气溶胶类型。在捕捉单个气溶胶事件方面，MERRA-2表现更优。对于月平均DAOD，MERRA-2和CAMS与CALIPSO的相关系数分别为0.78和0.90，绝对偏差分别为0.06和0.05，均能较好地反映DAOD的年际变化（春季峰值，冬季谷值）。但在空间分布上，两者均存在偏差：MERRA-2在TP西北部和印度河-恒河平原南部高估DAOD，其他区域低估；CAMS在塔克拉玛干沙漠、柴达木盆地和塔尔沙漠高估，其他区域低估。在垂直分布上，与CALIPSO相比，MERRA-2和CAMS均倾向于<b>低估近地表的沙尘浓度</b>，尤其CAMS在春夏季的低估更为显著。总体而言，MERRA-2在模拟沙尘的垂直结构和输送方面与CALIPSO观测更为一致。该评估为在青藏高原地区使用这两种再分析气溶胶数据提供了重要的精度参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Intrinsic Link between Optical Properties and Toxicity of Extractable Organic Matter in Combustion Particles: Mediated by Polycyclic Aromatic Compounds</section>
+            <section class="paper-authors">Chuxin Yao, Jiao Tang, Guangcai Zhong, Huimin Ma, Yangzhi Mo, Xiaofei Geng, Xin Yi, Qianyu Zhang, Jun Li, Shizhen Zhao, Gan Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environment & Health</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/envhealth.4c00267" target="_blank">https://doi.org/10.1021/envhealth.4c00267</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">燃烧颗粒物</span>
+                        <span class="topic-tag">光学性质</span>
+                        <span class="topic-tag">毒性效应</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/envhealth.4c00267" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了<b>燃烧源颗粒物</b>中<b>可提取有机物（EOM）</b>的<b>光学性质</b>（光吸收、荧光）与<b>生物毒性</b>之间的内在联系。研究采集了包括生物质燃烧、煤炭燃烧和机动车尾气在内的11种来源的燃烧颗粒物样本。实验发现，烟煤燃烧颗粒物的EOM同时表现出最强的<b>光吸收</b>、<b>荧光特性</b>和<b>毒性</b>。通过结合激发-发射矩阵（EEM）光谱和平行因子分析（PARAFAC），解析出EOM中4种主要的荧光团组分。利用傅里叶变换离子回旋共振质谱（<b>FT-ICR MS</b>）技术，进一步识别了约800种分子，其中<b>芳香族化合物</b>占主导（84% ± 4.6%），且其丰度与EOM的光吸收、荧光特性及毒性均呈显著正相关（p < 0.05）。这表明芳香族化合物是连接燃烧颗粒物EOM光学性质和毒性的关键内在因素。此外，采用苯多羧酸（<b>BPCAs</b>）方法量化了EOM中稠环芳烃的缩合程度，发现芳香环的高度缩合与光吸收和荧光特性密切相关，但EOM的毒性可能更多地取决于芳香族化合物分子结构中的<b>“湾区”或“峡湾区”</b>。这些发现为理解燃烧源气溶胶的光学、环境和健康效应提供了重要见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Optical and particulate properties of dust aerosols in El Paso, Texas</section>
+            <section class="paper-authors">German Rodriguez Ortiz, Manisha Mehra, Mackenzie Ramirez, Sujan Shrestha, Sascha Usenko, James Flynn, Rebecca J. Sheesley, Thomas E. Gill</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108127" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108127</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">沙尘气溶胶</span>
+                        <span class="topic-tag">光学特性</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108127" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用位于美国德克萨斯州埃尔帕索市（El Paso）城市站点的<b>原位、实时、高时间分辨率（5分钟）</b>测量数据，详细分析了<b>沙尘气溶胶</b>的<b>光学特性</b>（吸收、散射、后向散射系数、埃斯特朗指数AAE和SAE、单次散射反照率SSA）和<b>颗粒物特性</b>（<b>PM10</b>、<b>PM2.5</b>浓度）。研究时段为2021年4月至6月，共识别出27次沙尘事件（15次天气尺度，12次中尺度）。结合HYSPLIT和STILT后向轨迹分析，发现许多沙尘源自西-西南方向的奇瓦瓦沙漠。结果表明，中尺度沙尘事件的PM10和PM2.5浓度（均值191和41 μg/m³）高于天气尺度事件，且远高于非沙尘背景时段（28和8.7 μg/m³）。非沙尘时段较低的SAE值表明沙尘是当地气溶胶的持续性组分。沙尘事件期间的平均吸收埃斯特朗指数（<b>AAE</b>）约为1.15-1.19，低于文献报道的“纯”沙尘值（通常>2），这表明沙尘气溶胶与城市来源的<b>黑碳</b>气溶胶发生了混合。SSA均值为0.94，证实了该区域沙尘的强散射特性。<b>高时间分辨率</b>数据揭示了复杂气溶胶事件的演变过程（如棕碳事件后接沙尘、一日内多次沙尘、烟花影响、来自白沙国家公园的低吸收性石膏粉尘输送等），强调了其在捕捉和量化传统低分辨率（小时或日均）<b>空气质量监测</b>数据中易被忽略的高强度、短持续时间事件的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Process-based modeling of solar-induced chlorophyll fluorescence with VISIT-SIF version 1.0</section>
+            <section class="paper-authors">Tatsuya Miyauchi, Makoto Saito, Hibiki M. Noda, Akihiko Ito, Tomomichi Kato, Tsuneo Matsunaga</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-2329-2025" target="_blank">https://doi.org/10.5194/gmd-18-2329-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">太阳诱导叶绿素荧光 (SIF)</span>
+                        <span class="topic-tag">生物地球化学模型</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-2329-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文介绍了一个新的<b>生物地球化学过程模型</b>——<b>VISIT-SIF 1.0版本</b>，该模型基于VISIT模型开发，专门用于模拟卫星观测到的<b>太阳诱导叶绿素荧光（SIF）</b>。SIF是监测植被<b>光合作用</b>活动的有效指标。该模型以小时步长和约0.31°的空间分辨率运行，并创新性地通过<b>参数化辐射传输过程（RTM）</b>和几何关系，解决了直接耦合复杂RTM带来的巨大计算量问题，使其能高效处理包括非星下点观测在内的大量卫星数据。研究使用<b>GOSAT卫星</b>在2009年至2015年间的<b>SIF反演数据</b>对模型进行了验证。结果显示，模型模拟的全球平均SIF值（0.51 ± 0.39 mW m−2 sr−1 nm−1）与GOSAT观测值（0.46 ± 0.42 mW m−2 sr−1 nm−1）具有良好的一致性（RMSE为0.29），并且能较好地再现亚大陆尺度的季节变化。然而，模型在干旱和半干旱地区对干季末期<b>水分胁迫</b>的敏感性低于GOSAT观测，表明在这些区域对SIF变率和生物物理过程的理解仍需深化。该模型为利用卫星SIF数据改进对<b>陆地生态系统动态</b>和<b>碳循环</b>的理解提供了工具。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Monoterpene oxidation pathways initiated by acyl peroxy radical addition</section>
+            <section class="paper-authors">Dominika Pasik, Thomas Golin Almeida, Emelda Ahongshangbam, Siddharth Iyer, Nanna Myllys</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-4313-2025" target="_blank">https://doi.org/10.5194/acp-25-4313-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气化学</span>
+                        <span class="topic-tag">单萜烯氧化</span>
+                        <span class="topic-tag">二次有机气溶胶</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-4313-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用<b>量子化学方法</b>，深入探讨了<b>酰基过氧自由基（APRs）</b>与七种不同<b>单萜烯</b>（包括β-蒎烯、莰烯、桧烯、柠檬烯、α-蒎烯和α-杜松烯等）的<b>氧化反应机理</b>。研究详细分析了多种后续反应路径，如<b>加成反应、烷基自由基重排、H-转移和β-断裂反应</b>。计算结果显示，加成反应释放的能量足以打开烷基自由基中的次级环结构，这在桧烯和α-杜松烯中尤为显著。大多数烷基自由基会经历O2加成，形成过氧自由基，进而生成烷氧基自由基并发生β-断裂。对于β-蒎烯、莰烯和桧烯，β-断裂重排产生的自由基能继续<b>传播氧化链</b>；而对于柠檬烯、α-蒎烯和α-杜松烯，则倾向于生成<b>终止氧化链</b>的闭壳产物。研究强调了<b>立体化学</b>在控制反应中的重要性。结论指出，若单萜烯与APRs的反应在大气条件下具有竞争力，其氧化将产生更多<b>高氧化态、高分子量</b>的化合物，可能显著增加<b>二次有机气溶胶（SOA）</b>的生成量，这对理解大气成分演变和改进气候模型具有重要意义，并指出了APRs作为大气氧化剂的潜在重要性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
