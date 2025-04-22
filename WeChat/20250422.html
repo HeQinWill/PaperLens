@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/04/22</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Radiative cooling in New York/New Jersey metropolitan areas by wildfire particulate matter emitted from the Canadian wildfires of 2023</section>
+            <section class="paper-authors">Georgios A. Kelesidis, Constantinos Moularas, Hooman Parhizkar, Leonardo Calderon, Irini Tsiodra, Nikolaos Mihalopoulos, Ilias Kavouras, Marios-Bruno Korras-Carraca, Nikolaos Hatzianastassiou, Panos G. Georgopoulos, José G. Cedeño Laurent, Philip Demokritou</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-025-02214-3" target="_blank">https://doi.org/10.1038/s43247-025-02214-3</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">野火颗粒物</span>
+                        <span class="topic-tag">辐射强迫</span>
+                        <span class="topic-tag">气温影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-025-02214-3" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究聚焦于2023年加拿大野火事件中，<b>野火颗粒物</b> (wildfire particulate matter) 对纽约/新泽西 (NY/NJ) 都会区大气环境的具体影响。研究团队利用<b>实时</b>和<b>时间积分</b>的仪器测量技术，对飘散至该区域的野火颗粒物进行了详细的<b>理化特性</b>表征，特别是分析了其<b>光学特性</b>。结合大气<b>传输模型</b>的模拟结果与实时的<b>颗粒物监测数据</b>，研究发现野火颗粒物的输入导致了NY/NJ地区地面<b>气温下降了约3°C</b>。基于测得的光学特性数据，研究计算得出野火颗粒物产生的<b>辐射强迫</b> (radiative forcing) 达到了显著的 <b>-352.4 W/m²</b>。这一强烈的<b>负辐射强迫</b>，即<b>辐射冷却效应</b>，为观测到的地面降温现象提供了重要的物理解释。研究进一步指出，在人口稠密的大都市区，这种由野火烟尘引起的负辐射强迫可能会抑制大气的<b>自然通风</b>能力，导致包括野火颗粒物在内的各类空气污染物<b>滞留时间延长</b>，从而加剧对<b>公共健康</b>构成的风险。因此，本研究不仅量化了特定野火事件对大都市气温的直接影响，也强调了深入理解野火颗粒物<b>辐射效应</b>对于评估其在人口密集区的<b>气候</b>、<b>空气质量</b>及<b>公共健康</b>综合影响的重要性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
