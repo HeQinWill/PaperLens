@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/04/26</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Daily Global Methane Super‐Emitter Detection and Source Identification With Sub‐Daily Tracking</section>
+            <section class="paper-authors">Tobias A. de Jong, Joannes D. Maasakkers, Itziar Irakulis‐Loitxate, Cynthia A. Randles, Paul Tol, Ilse Aben</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024GL111824" target="_blank">https://doi.org/10.1029/2024GL111824</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷超排源</span>
+                        <span class="topic-tag">VIIRS</span>
+                        <span class="topic-tag">TROPOMI</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024GL111824" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用搭载在多颗卫星上的<b>可见光红外成像辐射仪套件（VIIRS）</b>仪器，以<b>750米</b>的空间分辨率反演大气<b>甲烷</b>浓度的增强，旨在实现对全球<b>甲烷超级排放源</b>的<b>每日检测</b>和<b>源识别</b>，并利用亚日覆盖能力进行追踪。研究特别强调了轨道上三颗VIIRS仪器的独特优势，它们提供了<b>亚日级别</b>的覆盖，增强了对甲烷超级排放事件的追踪能力。关键在于，Suomi-NPP卫星上的VIIRS与Sentinel-5 Precursor卫星上的<b>TROPOMI</b>仪器过境时间仅相差几分钟，这使得TROPOMI能够首先探测到甲烷超级排放体，随后VIIRS能够<b>直接将其归因到具体排放源</b>。这种协同观测展示了开发首个能够实现每日、全球、可操作监测的卫星系统的所需组件。研究还利用这种协同观测对VIIRS的甲烷增强反演结果与TROPOMI进行了交叉验证。此外，研究展示了VIIRS和Sentinel-3等提供的每日多次过境观测如何为理解排放的时间动态（特别是<b>瞬时排放</b>）提供独特视角。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Towards gridded nighttime aerosol optical thickness retrievals using VIIRS day–night band observations over regions with artificial light sources</section>
+            <section class="paper-authors">Jianglong Zhang, Jeffrey S. Reid, Blake T. Sorenson, Steven D. Miller, Miguel O. Román, Zhuosen Wang, Robert J. D. Spurr, Shawn Jaker, Thomas F. Eck, Juli I. Rubin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-1787-2025" target="_blank">https://doi.org/10.5194/amt-18-1787-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">夜间气溶胶光学厚度</span>
+                        <span class="topic-tag">VIIRS DNB</span>
+                        <span class="topic-tag">人工光源遥感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-1787-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探索了利用可见光红外成像辐射仪套件（VIIRS）的<b>日夜波段（DNB）</b>观测数据，开发一种生成网格化<b>夜间气溶胶光学厚度（AOT）</b>数据集的可行性。该方法基于对大气层顶观测到的、经衰减的<b>夜间人工灯光（ALAN）</b>进行<b>空间求导</b>。研究选取了美国、中东和印度次大陆地区2017年的数据进行分析。同时，研究评估了使用NASA标准的“黑大理石”（Black Marble）夜间灯光产品（VNP46）来估算地表人工光排放空间导数（这是反演过程的关键边界条件之一）的潜力。研究还探讨了夜间气溶胶反演对观测条件及不同地表光排放空间导数估算方法的敏感性。将VIIRS夜间AOT与AERONET的夜间和白天数据进行比较，发现均方根误差（RMSE）分别约为0.15和0.18，相关系数分别约为0.8和0.6，表明所提出的<b>网格化夜间AOT反演</b>具有合理的技能水平，可用于潜在的数据同化、空气质量研究以及重大事件的气候研究。研究证实了利用人工光源构建<b>大范围、长时间序列的网格化夜间AOT数据</b>用于监测夜间气溶胶事件的可行性，为未来利用JPSS系列卫星上的VIIRS仪器进行区域乃至全球夜间AOT反演奠定了基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Observing the Diurnal Variation of Atmospheric Ozone From the Geostationary Interferometric Infrared Sounder (GIIRS) Over East Asia</section>
+            <section class="paper-authors">Shangyi Liu, Jiancong Hua, Huidong Wang, Shan Han, Lu Lee, Chengli Qi, Feng Lu, Yangcheng Luo, Xiaoyi Zhao, Zhengqiang Li, Sang‐Woo Kim, Chang Keun Song, Yugo Kanaya, Arno Keppens, Jean‐Christopher Lambert, Cathy Clerbaux, Zhao‐Cheng Zeng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042292" target="_blank">https://doi.org/10.1029/2024JD042292</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧日变化</span>
+                        <span class="topic-tag">对地静止卫星</span>
+                        <span class="topic-tag">红外探测仪</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042292" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究首次展示了利用中国2021年发射的<b>风云四号B卫星（FY-4B）</b>上搭载的<b>地球静止轨道干涉式红外探测仪（GIIRS）</b>反演得到的<b>总臭氧柱（TOC）</b>及其时空分布，特别关注了<b>东亚地区</b>从<b>日变化</b>到季节尺度的TOC变化。研究使用了代表不同季节（3月、6月、9月、12月）的光谱数据进行反演。结果显示，信号自由度（DOFS）通常在0.8-1.4之间，GIIRS的垂直探测灵敏度峰值位于<b>对流层上层/平流层下层（UTLS）</b>区域，该区域臭氧变率最大。通过与IASI卫星反演结果、OMI卫星测量、ECMWF Reanalysis v5（ERA5）模拟数据以及地基Pandora臭氧观测数据进行对比，结果显示出良好的<b>一致性</b>。在不同纬度和时间尺度上，GIIRS、Pandora和ERA5的TOC对比结果证明了FY-4B/GIIRS在捕捉臭氧时空（尤其是纬度）变化方面的能力，特别是在中高纬度地区。这项工作表明FY-4B/GIIRS具备良好能力追踪东亚地区臭氧从日变化到季节变化的动态，将有助于理解区域乃至全球的臭氧变化。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Mitigation of satellite OCO-2 CO2 biases in the vicinity of clouds with 3D calculations using the Education and Research 3D Radiative Transfer Toolbox (EaR3T)</section>
+            <section class="paper-authors">Yu-Wen Chen, K. Sebastian Schmidt, Hong Chen, Steven T. Massie, Susan S. Kulawik, Hironobu Iwabuchi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-1859-2025" target="_blank">https://doi.org/10.5194/amt-18-1859-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二氧化碳反演</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">辐射传输模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-1859-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究致力于解决<b>卫星OCO-2</b>在反演柱平均二氧化碳干空气混合比（<b>XCO2</b>）时，因观测视场<b>附近云层</b>引起的光谱畸变而导致的<b>偏差问题</b>。这些偏差限制了达到全球碳源汇评估所需的精度。研究采用了一种基于物理的<b>三维（3D）辐射传输（RT）模型管道</b>（使用EaR3T工具箱），通过整合协同观测的云图像和再分析数据，显式计算云在像元尺度上引起的辐射扰动。为提高计算效率，研究采用了扰动光谱依赖性的简化近似。计算出的扰动随后被用于在<b>辐射层面</b>“撤销”云邻近效应，之后便可直接应用标准的<b>一维（1D）OCO-2反演算法</b>。研究通过两个陆地案例，证明了该方法能够有效减少云附近的XCO2异常。同时，研究还分析了XCO2偏差与云距离、地表反射率等关键场景参数的关系，并探讨了将其参数化以便在业务框架中绕过复杂3D-RT计算的可能性。该方法为提高<b>CO2卫星观测精度</b>提供了新途径。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Wet Deposition of Black Carbon: Insights From a Comparative Study of Char/Soot in PM10 and Rainwater</section>
+            <section class="paper-authors">Xiaocong Peng, Yuzhen Fu, Guohua Zhang, Wei Sun, Jinting Huang, Ziyong Guo, Juying Lin, Jianzhong Song, Xinming Wang, Ping'an Peng, Xinhui Bi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043095" target="_blank">https://doi.org/10.1029/2024JD043095</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳湿沉降</span>
+                        <span class="topic-tag">炭黑与烟尘</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043095" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究探讨了<b>黑碳（BC）</b>的<b>湿清除</b>过程，强调了区分大气BC中物理化学性质差异显著的<b>炭黑（char）</b>和<b>烟尘（soot）</b>亚组的重要性，因为它们对大气寿命和辐射强迫的评估至关重要。研究首次对在中国广州市收集了一年多的<b>PM10</b>和<b>雨水</b>样品中的炭黑/烟尘进行了对比研究。结果发现，PM10中的平均炭黑/烟尘比（约2.5）明显高于雨水中的比值（约0.8），这对应于<b>烟尘具有更高的湿清除效率</b>。通过对单次降水事件的序列雨水采样，研究进一步区分了<b>云内清除</b>和<b>云下清除</b>的贡献，发现云内清除是导致炭黑和烟尘湿清除行为差异的主要原因。炭黑和烟尘这种显著不同的湿清除行为对BC的大气行为具有重要影响，未来的模型应考虑这种差异，以准确评估其大气寿命和气候影响。该研究为理解BC在大气中的归宿提供了关键见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Aerosol inhibition on photochemical surface ozone formation under future climate and air quality scenarios</section>
+            <section class="paper-authors">G. S. Gopikrishnan, D. M. Westervelt, J. Kuttippurath</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01048-2" target="_blank">https://doi.org/10.1038/s41612-025-01048-2</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶-臭氧相互作用</span>
+                        <span class="topic-tag">光化学模型</span>
+                        <span class="topic-tag">未来情景模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01048-2" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究探讨了在未来共享社会经济路径（SSP）<b>气候和空气质量情景</b>下，<b>气溶胶</b>对光化学<b>地表臭氧</b>形成的<b>抑制作用</b>。研究利用<b>GEOS-Chem模型</b>，分析了不同气溶胶非均相吸收系数（0, 0.1, 0.2, 0.4）对全球不同区域光化学臭氧水平的影响。气溶胶通过调节<b>光解速率</b>和<b>自由基汇</b>来显著影响对流层氧化和臭氧形成。结果表明，较低的吸收系数会导致HO2等自由基物种浓度增加，并缩小目前处于“气溶胶抑制区域”（AIR）的地区（如印度和东亚）的范围，导致地表臭氧显著增加（40-50%），尤其是在较冷的月份。对<b>2046年的预测</b>显示，由于更严格的<b>排放控制</b>，全球AIR范围将缩小。到<b>2096年</b>，AIR范围进一步减小，东南亚等地区将转变为NOx限制条件，尽管在重气溶胶污染区域，气溶胶对HO2的吸收仍会使地表臭氧水平升高10-15%。该研究揭示了未来气溶胶变化对地表臭氧浓度的复杂影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A Comparative Study of Cloud Properties Between Northern and Southern High Latitudes Based on ARM Observations and EAMv2 Simulations</section>
+            <section class="paper-authors">N. Desai, M. Diao, Y. Shi, X. Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD041588" target="_blank">https://doi.org/10.1029/2024JD041588</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">云特性</span>
+                        <span class="topic-tag">高纬度地区</span>
+                        <span class="topic-tag">模型评估</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD041588" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究对比分析了地球<b>南北半球高纬度地区</b>的<b>云特性</b>差异。研究使用了美国能源部大气辐射测量（ARM）计划在北极和南大洋/南极洲进行的两次现场实验中获取的<b>地面和船载遥感观测数据</b>。通过比较低云、中云、高云和深对流云的宏观物理特性，发现与南大洋和南极地区相比，<b>北极地区</b>各类云的<b>云顶高度和厚度值普遍更高</b>，这可能与北大西洋较高的海表温度有关。对于低云，北极地区的<b>冰相出现频率</b>也低于南半球高纬度地区。对于中高云和深对流云，云相态随温度的分布表现出较小的地理差异。随后，研究将观测结果与能源部E3SM（Energy Exascale Earth System Model）<b>气候模型</b>的模拟结果进行了比较，以评估模型对这些云特性的表征能力。结果表明，模型能够较好地模拟云底和云顶高度，并再现了两个半球云宏观物理性质的差异，但<b>显著低估了所有云类型的冰相频率</b>。这种模型中的云相态偏差与<b>相对湿度</b>的正偏差和<b>气溶胶数浓度</b>的负偏差密切相关，表明相对湿度和气溶胶在模型中对云相态分配起着重要作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Constraining aerosol–cloud adjustments by uniting surface observations with a perturbed parameter ensemble</section>
+            <section class="paper-authors">August Mikkelsen, Daniel T. McCoy, Trude Eidhammer, Andrew Gettelman, Ci Song, Hamish Gordon, Isabel L. McCoy</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-4547-2025" target="_blank">https://doi.org/10.5194/acp-25-4547-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶-云相互作用</span>
+                        <span class="topic-tag">液态水路径</span>
+                        <span class="topic-tag">数值模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-4547-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">这项研究旨在解决<b>气溶胶</b>增加是导致液态云质量增加还是减少这一长期悬而未决的问题。通过结合东大西洋（ENA）大气观测站的<b>地表观测数据</b>（降水P、云滴数浓度Nd、液态水路径LWP）与<b>大气模型CAM6</b>的扰动参数集合（PPE）输出，研究人员得以追踪因果关系，并解释观测到的协变性。研究发现，观测结果与气溶胶导致液态云增加的响应一致。利用ENA的观测数据，可以将PPE先验估计的LWP气溶胶-云调整范围<b>缩小15%</b>，得出的全球调整值为<b>正值</b>（历史上表现为冷却效应），范围在<b>2.1至6.9 g m⁻²</b>之间。此外，研究指出，观测到的Nd和LWP之间的协变性主要由<b>聚并清除</b>过程主导，而这种观测到的协变性与气溶胶-云调整的关联性不强。该方法通过结合模型和观测，为约束气溶胶-云相互作用（ACI）中的<b>调整项不确定性</b>提供了一种有效途径，这对准确评估ERFaci（有效辐射强迫）至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Compact dual-wavelength depolarization lidar for aerosol characterization over the subtropical North Atlantic</section>
+            <section class="paper-authors">Yenny González, María F. Sánchez-Barrero, Ioana Popovici, África Barreto, Stephane Victori, Ellsworth J. Welton, Rosa D. García, Pablo G. Sicilia, Fernando A. Almansa, Carlos Torres, Philippe Goloub</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-1885-2025" target="_blank">https://doi.org/10.5194/amt-18-1885-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">激光雷达</span>
+                        <span class="topic-tag">气溶胶光学特性</span>
+                        <span class="topic-tag">气溶胶类型识别</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-1885-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用一台紧凑型双波长（532 nm和808 nm）偏振弹性<b>激光雷达</b>（CIMEL CE376），对亚热带北大西洋上空不同类型<b>气溶胶的光学特性</b>进行了全面表征。研究时间跨度为2021年8月至2023年8月，观测对象包括<b>撒哈拉沙尘</b>、<b>火山气溶胶</b>以及<b>新鲜和老化的野火烟羽</b>。研究采用了一种改进的双波长<b>Klett反演方法</b>，从CE376激光雷达测量数据中推导出气溶胶后向散射和消光系数，评估了气溶胶的垂直分布和时间演变。通过与MPLNET的MPL-4B激光雷达进行比对实验，验证了CE376系统在描绘垂直气溶胶结构方面的能力，指出了重叠函数和偏振定标误差是差异的主要来源。研究发现，结合两个通道可以获得粒子线性退偏振比（δP）、消光Ångström指数（EAE）和衰减颜色比（ACR）等信息，有效区分不同气溶胶类型：如新鲜沙尘具有低EAE、高ACR和高δP；而火山硫酸盐和老化野火气溶胶则具有低δP和高EAE。结果证实了CE376微型激光雷达适用于大气气溶胶时空分布的<b>连续监测和表征</b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Characterizing urban planetary boundary layer dynamics using 3-year Doppler wind lidar measurements in a western Yangtze River Delta city, China</section>
+            <section class="paper-authors">Tianwen Wei, Mengya Wang, Kenan Wu, Jinlong Yuan, Haiyun Xia, Simone Lolli</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-1841-2025" target="_blank">https://doi.org/10.5194/amt-18-1841-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">边界层动力学</span>
+                        <span class="topic-tag">多普勒激光雷达</span>
+                        <span class="topic-tag">城市大气环境</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-1841-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用在中国合肥市连续三年（2019年6月至2022年6月）获取的<b>多普勒风廓线激光雷达</b>数据，深入探讨了该城市<b>行星边界层（PBL）</b>的动力学特征。研究分析了包括<b>风廓线</b>、切变强度、湍流混合、<b>低空急流（LLJs）</b>和<b>混合层高度（MLH）</b>等关键参数的季节和日变化规律。结果显示，各季节高空（3km以上）盛行西风，风速增长迅速；白天的强风区（>8 m/s）垂直范围通常比夜间深，冬季尤为明显。合肥的LLJs主要在日落时形成，次日中午前消散，除7月外，高度通常在0.5-0.6 km。<b>LLJ出现频率</b>春季最高（31.7%），夏季次之（24.7%），夏季LLJ强度最大，可延伸至1.5 km。急流下方的强风切变显著增强了夜间近地面的湍流和切变强度。季节平均的<b>MLH</b>在午后14-15时达到峰值，春夏季约为1.2 km。<b>云层覆盖</b>在夜间使MLH升高约100米（温室效应），但在午后峰值时则使其降低约200米。该研究为理解基于激光雷达的PBL动力学提供了见解，并强调了其对制定低空经济活动相关地方标准的意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Major European institutes join race to save US science data</section>
+            <section class="paper-authors">Jeff Tollefson</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/d41586-025-01309-3" target="_blank">https://doi.org/10.1038/d41586-025-01309-3</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">科学数据保存</span>
+                        <span class="topic-tag">气候数据</span>
+                        <span class="topic-tag">环境政策</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/d41586-025-01309-3" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">这篇报道关注的是在美国唐纳德·特朗普政府<b>削减预算</b>的背景下，欧洲的主要研究机构为<b>保护美国科学数据</b>所做的努力。文章指出，由于预算削减，关于<b>气候变化</b>和其他科学主题的关键数据集面临<b>消失的风险</b>。这些数据集是进行气候研究、环境监测和政策制定的基础。欧洲机构的介入旨在备份和存档这些可能丢失的数据，以确保科学研究的连续性和数据的可获取性。虽然文章本身不涉及具体的大气遥感技术或研究方法，但它强调了由这些技术（包括卫星观测、空气质量监测网络等）产生的<b>环境和气候数据</b>的极端重要性以及确保其长期保存的紧迫性。这反映了科学界对政治因素可能威胁基础科学数据完整性的担忧。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
