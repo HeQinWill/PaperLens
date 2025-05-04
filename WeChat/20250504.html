@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/05/04</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A dynamic critical relative humidity based on temperature in cloud parameterization to improve low cloud in an AGCM</section>
+            <section class="paper-authors">Minghao Wang, Lanning Wang, Qizhong Wu, Huaqiong Cheng, Xiaoting Sun, Yaqi Wang, Qingquan Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108183" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108183</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">云参数化</span>
+                        <span class="topic-tag">低云模拟</span>
+                        <span class="topic-tag">卫星遥感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108183" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究旨在改善大气环流模型（AGCMs）中<b>低云模拟</b>的难题，特别是对气候系统至关重要的低云。研究基于<b>CloudSat/CALIPSO卫星数据</b>的诊断分析，提出了一种改进的<b>临界相对湿度（RHc）</b>计算方法，即随温度变化的动态RHc四阶拟合公式（决定系数R²=0.9659）。该方法被应用于主流大气模型CAM6中，并与原有的<b>云参数化</b>方案进行了对比。结果显示，新的动态RHc方案显著改善了模型性能：有效减少了中低纬度海洋上空低云模拟的负偏差，使低云覆盖率增加了约20%；改变了云量的垂直分布，显著增加了700 hPa以下的云量，减少了400 hPa以上的云量；低云量的增加伴随着<b>液态水路径（LWP）</b>的增加，有助于减少亚热带地区的<b>短波云辐射强迫（SWCF）</b>偏差；云量分数的变化也对降水模拟产生了积极影响。此外，在1°和2°分辨率下的模拟结果表明，该改进方法对模型分辨率不敏感。这项工作为改进AGCM中的云物理过程参数化提供了新的思路和依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Data Assimilation of Ceilometer Aerosol Extinction Coefficient Profile Contributes to Predictions of the Three‐Dimensional Structures of Aerosols in East China</section>
+            <section class="paper-authors">Lina Gao, Lipeng Jiang, Wei Sun, Peng Yan, Bing Qi, Chengli Ji, Fa Tao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042408" target="_blank">https://doi.org/10.1029/2024JD042408</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">数据同化</span>
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">空气质量预测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042408" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究聚焦于利用<b>数据同化</b>技术改进中国华东地区<b>气溶胶</b>三维结构的<b>空气质量预测</b>。研究团队于2020年12月，将杭州市的<b>地基激光雷达（Ceilometer）</b>观测的<b>气溶胶消光系数（AExtC）廓线</b>数据，通过WRFDA-Chem模型系统进行同化。同化后的分析场被用作WRF-Chem模型的化学初始条件，以进行气溶胶预报。研究使用杭州的激光雷达AExtC廓线和华东地区的地面<b>PM2.5</b>观测数据对同化分析场和预报结果进行验证。结果表明，数据同化显著提高了模型性能，对激光雷达AExtC和地面PM2.5的均方根误差（RMSE）改进效果可持续至少18个预报时次，平均RMSE分别降低了13%和8%。研究还比较了激光雷达廓线数据同化与地面PM2.5数据同化对预测三维气溶胶结构的贡献。发现在杭州及其周边地区，激光雷达数据同化的贡献与PM2.5数据同化相当（RMSE分别降低8%和10%），而在远离同化站点的区域，激光雷达数据同化的表现更优。此外，在预测AExtC垂直廓线方面，地面PM2.5同化的效果不如激光雷达数据同化。最后，联合同化激光雷达和PM2.5数据能够获得最佳的三维气溶胶结构预测结果。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
