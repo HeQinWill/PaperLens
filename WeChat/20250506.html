@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/05/06</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A Robust Method for Calculating Carbon Dioxide Emissions From Cities and Power Stations Using OCO‐2 and S5P/TROPOMI Observations</section>
+            <section class="paper-authors">Janne Hakkarainen, Iolanda Ialongo, Tomohiro Oda, David Crisp</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043358" target="_blank">https://doi.org/10.1029/2025JD043358</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二氧化碳排放</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">排放估算</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043358" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究提出了一种利用<b>卫星观测</b>数据计算点源（如发电站）和城市<b>二氧化碳 (CO2) 排放</b>的新方法。该方法基于横截面通量法，并结合了来自<b>OCO-2</b>卫星的CO2观测和来自<b>S5P/TROPOMI</b>卫星的二氧化氮 (NO2) 观测数据（自2018年5月起）。核心创新在于利用NO2数据作为代理：通过线性回归估算羽流横截面附近的CO2浓度增强，然后用高斯函数拟合基于NO2估算的CO2增强数据，从而约束CO2通量计算。该方法在南非Matimba和Medupi电站以及马德里、拉斯维加斯、巴格达等城市进行了测试，得出了相应的CO2排放估算值（例如Matimba为49±17 Mt/yr）。结果表明该方法稳健可靠，尤其适用于NO2数据有助于约束拟合的复杂情况。与传统仅使用CO2数据的方法相比，这种代理方法能够分析更多场景（53个场景中额外评估了17个），并将单个排放估算的平均误差从约30%-40%降低到22%-25%。该方法有望识别报告排放量中的差异（如漏报或低报），并可应用于未来的CO2/NO2联合观测卫星任务。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Improving Planetary Boundary Layer Height Estimation From Airborne Lidar Instruments</section>
+            <section class="paper-authors">J. A. Christopoulos, P. E. Saide, R. Ferrare, B. Collister, R. A. Barton‐Grimley, A. J. Scarino, J. Collins, J. W. Hair, A. Nehrir</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042538" target="_blank">https://doi.org/10.1029/2024JD042538</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">边界层高度</span>
+                        <span class="topic-tag">机载激光雷达</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042538" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究旨在改进利用<b>机载激光雷达 (Airborne Lidar)</b> 数据估算<b>行星边界层高度 (PBLH)</b> 的方法。PBLH对对流层中的污染物分布、对流和云形成等过程至关重要。传统方法如Haar小波协方差变换 (WCT) 主要依赖气溶胶后向散射梯度估算混合层高度 (MLH)，但在识别浅稳定边界层、区分PBL与残留层以及低气溶胶浓度情况下存在困难。研究利用NASA近期机载野外观测 Lidar 数据，评估了WCT方法的性能，并探索了<b>机器学习 (ML)</b> 方法。研究人员将 Lidar 信息与热力学廓线推导的PBLH进行训练，发现在海洋环境下线性模型表现良好（平均偏差改善71米），而在陆地环境下集成树方法更优（偏差、误差显著减小，相关性提高0.3）。ML方法在“未见”数据上也表现出良好性能，证明了其在自动化PBLH预测中的潜力，有助于评估模型和深化对<b>PBL-气溶胶相互作用</b>的理解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Saturation in Forcing Efficiency and Temperature Response of Large Volcanic Eruptions</section>
+            <section class="paper-authors">Eirik Rolland Enger, Rune Graversen, Audun Theodorsen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD041098" target="_blank">https://doi.org/10.1029/2024JD041098</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火山气溶胶</span>
+                        <span class="topic-tag">气候效应</span>
+                        <span class="topic-tag">辐射强迫</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD041098" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用CESM2气候模型（包含WACCM6大气模型）的集合模拟（包括耦合海洋和固定海温设置），探究了从皮纳图博火山级别到超级火山爆发等不同规模火山喷发对气候的影响。研究重点分析了不同SO2注入量对平流层<b>火山气溶胶</b>光学厚度 (SAOD)、有效<b>辐射强迫 (ERF)</b> 和全球平均地表温度 (GMST) 异常的影响。研究发现，在火山爆发后的第一年，所有SO2注入水平下，气溶胶的强迫效率（ERF/SAOD）均存在显著的时间依赖性下降。此外，研究揭示即使是最大的火山喷发（包括之前的超级火山模拟），其峰值ERF异常也存在上限，约为-65 W/m²。进一步分析表明，峰值GMST与ERF之间存在紧密的线性关系，这有效地将GMST异常的上限限制在约-10 K。这一<b>气候效应</b>的饱和现象与其他使用不同气候模型的研究结果一致，表明火山喷发对气候的冷却效应存在一个极限。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Determination of dust storm height using weak beam photons from ICESat-2 and relating with vertical wind profile</section>
+            <section class="paper-authors">Giribabu Dandabathula, Subham Roy, Omkar Ghatage, Apurba Kumar Bera, Sushil Kumar Srivastav</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121276" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121276</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">沙尘气溶胶</span>
+                        <span class="topic-tag">ICESat-2</span>
+                        <span class="topic-tag">激光雷达</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121276" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了利用NASA <b>ICESat-2</b>卫星的<b>激光雷达 (LiDAR)</b> 数据，特别是其弱光束光子数据，来确定活跃沙尘暴事件中<b>沙尘气溶胶</b>的垂直结构和高度。研究认为，由于沙尘气溶胶对激光的衰减作用，ICESat-2的弱光束比强光束更适合用于有效探测悬浮气溶胶的垂直剖面，有望替代已退役的CALIPSO卫星进行此类研究。通过将ICESat-2弱光束衰减光子反演的沙尘气溶胶高度与CALIPSO/CALIOP传感器的532纳米总衰减后向散射数据进行比较，验证了两种传感器结果具有良好的一致性。此外，研究结合了ECMWF Reanalysis v5 (ERA5) 再分析数据的垂直风廓线，分析了十个活跃沙尘暴案例。结果证实，在活跃沙尘暴的沙尘层内，风速产生的抬升力通常大于5 m/s，而在沙尘气溶胶垂直结构上方的风速拖曳力则大于层内的抬升力，揭示了沙尘抬升和输送的动力学特征。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Inter‐Model Variability of Tropical Total Ice Water Path Simulated by the Convection Permitting DYAMOND Models</section>
+            <section class="paper-authors">Karol Ćorko, Ulrike Burkhardt, Florian Ewald, Martin Köhler</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD041954" target="_blank">https://doi.org/10.1029/2024JD041954</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">总冰水路径</span>
+                        <span class="topic-tag">气候模型</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD041954" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究聚焦于热带地区<b>总冰水路径 (TIWP)</b> 的模拟，特别是卷云对辐射的重要影响。研究使用了DYAMOND项目的高分辨率（低于5公里）全球非静力<b>气候模型</b>，这些模型无需参数化深对流，预期能更好地模拟云特性。研究比较了多个DYAMOND模型在北半球夏季模拟的TIWP的模式间变率，并与一个较低分辨率的数值天气预报模型进行了对比，同时利用<b>卫星观测</b>数据和ERA5再分析数据进行了评估。研究区分了导致月均和日均TIWP模式间差异的动力学原因和与云对对流强迫响应相关的因素。结果发现，模式间云响应的差异是TIWP变率的主要原因，特别是TIWP与总液水路径之比（受对流卷入卷出影响）以及模式的微物理方案。对流动力学的差异也影响云量，一些模式通过增加强上升气流区的TIWP概率来补偿弱上升区的低TIWP。此外，参数化对流的模型倾向于在海表温度较高的区域模拟出更高比例的热带TIWP。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Differences Among Thermal, Dynamic, and Material Boundary Layers Over Complex Terrain</section>
+            <section class="paper-authors">Yulong Tan, Jinyuan Xin, Xiang Qin, Yongjing Ma, Jianzhong Xu, Yuming Du, Chunlin Shang, Liyuan Zhao, Yongli Tian, Qingyun Fan, Xingjun Zhou, Yuanzhe Ren, Peng Wang, Feng Hao, Ninglu Yin, Xinbing Ren, Kecheng Peng, Danjie Jia, Xiaole Pan, Jie Li, Zifa Wang, Asim Qayyum Butt</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043043" target="_blank">https://doi.org/10.1029/2024JD043043</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">行星边界层</span>
+                        <span class="topic-tag">地基遥感</span>
+                        <span class="topic-tag">复杂地形</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043043" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用<b>地基遥感</b>仪器（包括基于包裹法、理查森数Ri和光消光系数的探测），在中国乌海市（一个包含沙漠、湖泊和黄河的河谷出口处的<b>复杂地形</b>区）夏季同步探测和比较了热力、动力和物质三种类型的<b>行星边界层 (PBL)</b> 及其时空结构。研究发现这三种PBL存在显著差异和日变化不一致性。白天对流边界层 (CBL) 高度可达3500米，夜间稳定边界层 (SBL) 顶部可达1500米。地表层、混合层、残留层、夹卷层和逆温层的深度与日温变化密切相关。高时空分辨率观测显示CBL和SBL高度存在数百米的显著变率。动力PBL在夜间波动于1000米左右，白天升至约1500米。物质PBL（反映大气物质分布）白天趋势与热力PBL相似（1500-3500米），夜间因地形风影响与动力PBL变化相似。研究强调了区分不同类型PBL的重要性以及高分辨率观测在PBL研究中的必要性，这对理解大气扩散和<b>空气质量</b>至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Late Winter Ozone and PM 2.5 NAAQS Exceedance in the Northern Colorado Front Range in Relation to Oil and Natural Gas Emissions</section>
+            <section class="paper-authors">D. Caputi, D. Helmig, L. S. Darby, G. Greenberg, J. Hueber, S. Simoncic, J. Ortega</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD041862" target="_blank">https://doi.org/10.1029/2024JD041862</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧污染</span>
+                        <span class="topic-tag">油气排放</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD041862" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究分析了美国科罗拉多州北部前沿地区 (NCFR) 在2021年3月19-20日发生的一次冬末<b>臭氧</b>（8小时平均达82 ppb）和<b>PM2.5</b>（24小时平均达77 μg m−3）浓度超标事件。NCFR地区人口密集且<b>油气 (O&NG)</b> 开采活动频繁。研究结合了现场化学和气象测量数据进行分析。结果表明，臭氧前体物（NOx和VOCs）的积累可能归因于O&NG排放，并在稳定的边界层条件下以及有利于污染物再循环的丹佛气旋（一种中尺度天气特征）作用下加剧。同时发生的PM2.5污染事件则可能与动物饲养场排放以及包括O&NG在内的多种NOx来源有关。研究强调了在人口密集的城乡地区，油气产业扩张可能导致冬季<b>空气质量</b>标准超标以及累积健康风险的担忧。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Deriving Non‐Methane Hydrocarbon Emissions and Improving Source Apportionment by the Boundary Layer Mass Balance Technique</section>
+            <section class="paper-authors">Jiale Fan, Ziwei Mo, Bin Yuan, Shan Huang, Min Shao, Jipeng Qi, Baolin Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD041721" target="_blank">https://doi.org/10.1029/2024JD041721</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">非甲烷烃排放</span>
+                        <span class="topic-tag">源解析</span>
+                        <span class="topic-tag">边界层质量平衡</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD041721" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究应用<b>边界层质量平衡 (MB)</b> 方法（也称箱式模型），基于2018年9月至11月在中国珠江三角洲 (PRD) 核心城区的地面和塔基测量数据，计算了<b>非甲烷烃 (NMHCs)</b> 的排放通量。MB方法估算出的主要物种（如丙烷、甲苯、正丁烷等）与混合层梯度技术的估算结果具有合理的一致性。物理扩散项解释了大多数物种排放通量变化的80%以上，而化学损失项对高活性物种（如异戊二烯）的贡献接近60%。白天排放通量高于夜间，反映了日常活动规律。基于通量的正定矩阵分解 (FLU-PMF) 和传统的基于浓度的源解析均表明，机动车排放和油气蒸发是NMHCs的主要来源。通过考虑化学损失和大气稀释，FLU-PMF将更高的贡献归因于生物源排放，并降低了燃料燃烧的贡献。MB估算的NMHCs排放通量高于测量点附近的排放清单 (EI) 网格值，表明EI可能因缺少居民逸散排放信息而低估了排放通量，同时可能高估了工业贡献。该研究为改进VOCs排放控制和城市地区<b>源解析</b>提供了有用信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Gas-phase observations of accretion products from stabilized Criegee intermediates in terpene ozonolysis with two dicarboxylic acids</section>
+            <section class="paper-authors">Yuanyuan Luo, Lauri Franzon, Jiangyi Zhang, Nina Sarnela, Neil M. Donahue, Theo Kurtén, Mikael Ehn</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-4655-2025" target="_blank">https://doi.org/10.5194/acp-25-4655-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">Criegee中间体</span>
+                        <span class="topic-tag">萜烯臭氧化</span>
+                        <span class="topic-tag">气溶胶形成</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-4655-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究通过<b>气相观测</b>实验，探讨了三种常见萜烯（α-蒎烯、β-蒎烯和β-石竹烯）臭氧化产生的稳定化<b>Criegee中间体 (sCIs)</b> 与丙二酸和草酸这两种二羧酸反应形成加成产物的过程。实验直接在气相中检测反应产物。研究发现，这些反应能够有效地生成预期的加成产物，但产率会因具体的萜烯和酸而异。这是首次直接在气相中观测到几种不同萜烯来源的sCIs与羧酸形成的特定加合物。这些加成产物分子较大，具有形成<b>气溶胶</b>的潜力。该研究结果增进了我们对这些反应在大气化学中重要性的理解，特别是在大气气溶胶形成方面，进而可能影响空气质量和气候。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Spatial Representativeness of Air Quality Monitoring Networks in China From 2013 to 2022: Implications for Exposure Assessment</section>
+            <section class="paper-authors">Heming Bai, Wenkang Gao, Dasa Gu, Muhammad Jawad Hussain, Shuai Wang, Fanhua Kong, Yang Cao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043027" target="_blank">https://doi.org/10.1029/2024JD043027</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">空间代表性</span>
+                        <span class="topic-tag">暴露评估</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043027" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究评估了2013年至2022年间中国国家控制<b>空气质量监测</b>网络的<b>空间代表性 (SR)</b> 及其对<b>暴露评估</b>的影响。研究使用了中国高分辨率空气污染物 (CHAP) 数据集（1公里日均浓度），分析了PM2.5、PM10和O3的站点SR。随着站点数量从2013年的460个增加到2022年的1590个，站点的总SR面积显著增加（PM2.5增89%，PM10增149%，O3增2190%）。站点数量是主要驱动因素，但其影响在不同阶段有所不同，例如2020-2022年站点增加反而导致PM2.5和PM10的总SR面积略有下降。研究发现，在国家和城市层面，将SR应用于污染暴露评估并未比官方使用的站点算术平均法提高准确性，这与SR覆盖不佳有关（超过85%的城市中，半数以上人口未被SR区域覆盖）。尽管如此，研究证明了SR在城市级空气质量达标评估中的应用价值。研究强调了评估和理解监测网络SR对于准确评估空气质量和健康风险的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">High-resolution air quality maps for Bucharest using a mixed-effects modeling framework</section>
+            <section class="paper-authors">Camelia Talianu, Jeni Vasilescu, Doina Nicolae, Alexandru Ilie, Andrei Dandocsi, Anca Nemuc, Livio Belegante</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-4639-2025" target="_blank">https://doi.org/10.5194/acp-25-4639-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量制图</span>
+                        <span class="topic-tag">移动测量</span>
+                        <span class="topic-tag">土地利用回归</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-4639-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究针对罗马尼亚首都布加勒斯特，利用<b>移动测量</b>数据（在2022年5-7月和2023年1-2月两个密集观测期收集）和<b>土地利用回归 (LUR)</b> 模型，结合混合效应方法，生成了近地面PM10、NO2和超细颗粒物 (UFP) 的高分辨率（季节性）<b>空气质量地图</b>。该方法考虑了多种土地利用和交通预测变量。通过与移动观测数据的交叉验证以及与固定参考站点标准测量的对比验证，结果显示该组合方法对所有污染物均表现良好（R2>0.65），尤其是在寒冷季节性能更优。研究发现，暖季PM10浓度图显示多个来源，其中交通是最重要的来源；冷季PM10来源分布更均匀。NO2地图则突显了城市主干道（尤其是环路）的影响，且暖季梯度更大。该研究证明了此方法在高分辨率城市空气质量制图方面的潜力。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
