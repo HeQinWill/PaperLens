@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/05/08</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A long-term high-resolution air quality reanalysis  with a public-facing air quality dashboard over  the Contiguous United States (CONUS)</section>
+            <section class="paper-authors">Rajesh Kumar, Piyush Bhardwaj, Cenlin He, Jennifer Boehnert, Forrest Lacey, Stefano Alessandrini, Kevin Sampson, Matthew Casali, Scott Swerdlin, Olga Wilhelmi, Gabriele G. Pfister, Benjamin Gaubert, Helen Worden</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-1807-2025" target="_blank">https://doi.org/10.5194/essd-17-1807-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量再分析</span>
+                        <span class="topic-tag">卫星数据同化</span>
+                        <span class="topic-tag">空气质量仪表盘</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-1807-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究介绍了一个覆盖美国本土 (CONUS) 的长期、高分辨率<b>空气质量再分析数据集</b>。该数据集时间跨度为14年（2005年1月1日至2018年12月31日），空间分辨率为12公里，时间分辨率为逐小时。它是通过在<b>空气质量模型 (CMAQ)</b> 中同化卫星观测的<b>气溶胶光学厚度 (AOD)</b>（来源于MODIS）和<b>一氧化碳 (CO)</b>（来源于MOPITT）数据而生成的。研究所用的气象场由WRF模型模拟，并用于离线驱动CMAQ模型及生成依赖气象的人为源排放清单。研究团队对气象模拟结果以及空气质量模拟结果（地表PM2.5和臭氧）与多平台观测数据进行了全面评估，以建立该数据集的可信度并表征其不确定性。结果显示，该数据集能够很好地捕捉CONUS地区小时、季节及年际的气象变率。模拟的地表臭氧和PM2.5浓度与美国环保局 (EPA) 定义的不同区域的观测数据之间的相关系数分别为0.77–0.91和0.49–0.79。此外，研究还开发了一个<b>ArcGIS空气质量仪表盘</b>和一个基于Python的Streamlit应用程序，以便利益相关者能够轻松地可视化和解读县级空气质量指标和趋势，并下载相关数据。该数据集旨在填补CONUS空气质量监测网络的空白，并帮助管理者理解县级空气质量的长期变化。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Tracking air pollution and CO<sub>2</sub> emissions in 13,189 urban areas worldwide using large geospatial datasets</section>
+            <section class="paper-authors">Soo-Yeon Kim, Gaige Hunter Kerr, Aaron van Donkelaar, Randall V. Martin, J. Jason West, Susan C. Anenberg</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-025-02270-9" target="_blank">https://doi.org/10.1038/s43247-025-02270-9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">城市空气污染</span>
+                        <span class="topic-tag">二氧化碳排放</span>
+                        <span class="topic-tag">地理空间数据</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-025-02270-9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用大型<b>地理空间空气污染数据集</b>，对全球13,189个<b>城市地区</b>在2005年至2019年期间的<b>空气污染</b>状况和<b>化石燃料二氧化碳 (CO₂) 排放</b>进行了系统追踪与分析。研究人员计算了这些城市地区人均细颗粒物 (PM₂.₅)、二氧化氮 (NO₂)、臭氧 (O₃) 的浓度以及化石燃料CO₂的排放量，并分析了这些污染物变化趋势之间的相关性。全球层面上，研究发现<b>臭氧浓度显著增加了6%</b>，而细颗粒物浓度基本持平 (+0%)，二氧化氮浓度略有下降 (-1%)，化石燃料CO₂排放量则有小幅非显著性增加 (+4%)。此外，超过50%的城市地区在所有污染物对之间均显示出正相关关系，尽管具体结果因全球区域而异。例如，拥有强有力减排政策的高收入国家，所有污染物的浓度均有所下降；而经济快速增长的地区，污染物浓度则总体呈现上升趋势。这项研究通过对<b>大气成分</b>的全球尺度分析，揭示了不同区域城市环境举措的影响，为制定协同减少空气污染和CO₂排放的策略提供了有价值的见解，是<b>空气质量监测</b>领域的一项重要成果。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Mitigating Aerosol Emissions Can Effectively Offset Climate Warming Impacts on Snowmelt</section>
+            <section class="paper-authors">Yuxuan Xing, Shirui Yan, Yang Chen, Yongxiang Lin, Yaliang Hou, Yue Zhou, Dongyou Wu, Cenlin He, Daizhou Zhang, Xin Wang, Meng Gao, Meng Liu, Yanbiao Liu, Zijie Zhang, Hong-bin Xie, Minghui Yang, Ying Li, Wei Pu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c00213" target="_blank">https://doi.org/10.1021/acs.est.5c00213</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳减排</span>
+                        <span class="topic-tag">积雪消融</span>
+                        <span class="topic-tag">气候变暖抵消</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c00213" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了中国东北地区人为<b>黑碳 (BC)</b> 气溶胶排放对<b>积雪消融</b>的显著影响，并评估了减排措施相对于气候变暖的潜在抵消效应。东北地区因大量人为BC排放，成为全球积雪污染最严重的区域之一。BC颗粒沉降后使雪面变暗，加速积雪融化，进而影响春季水资源供应。通过在中国东北地区进行的广泛实地测量，研究发现雪中BC (BCS) 浓度极高，平均达到1100 ± 810 ng g⁻¹，是全球平均水平的17倍。这种高水平的BCS对加速积雪融化速率 (ASR) 的贡献高达72% (0.82 cm d⁻¹)，超过了气候变暖的影响 (28%, 0.32 cm d⁻¹)。更重要的是，基于观测约束的<b>CMIP6模型</b>在SSP245情景下的预测表明，到2080-2100年，BCS浓度将减少82%。这一降幅预计能抵消未来气候变暖导致的ASR预计增量的40%，从而使2080-2100年的总ASR增速减缓至比2000-2020年高71%。相比之下，北半球其他地区的抵消效应 (3.6%–15%) 则不那么显著，这突显了在中国东北地区实施<b>清洁空气政策</b>对于减缓积雪加速融化的独特有效性，也强调了分析<b>大气成分</b>变化对区域气候影响的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Aerosol composition retrieval from a combination of three different spaceborne instruments: information content analysis</section>
+            <section class="paper-authors">Ulrike Stöffelmair, Thomas Popp, Marco Vountas, Hartmut Bösch</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-2005-2025" target="_blank">https://doi.org/10.5194/amt-18-2005-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶成分反演</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">多传感器协同</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-2005-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究聚焦于从<b>卫星遥感</b>测量数据中反演<b>气溶胶光学厚度 (AOD)</b> 及其<b>化学成分</b>的信息含量。研究采用了最优估计反演算法，并整合了来自三种不同星载仪器的数据：搭载于Sentinel-3A和Sentinel-3B上的<b>海洋和陆地表面温度辐射计 (SLSTR)</b>，以及搭载于MetOp-A、MetOp-B和MetOp-C上的<b>红外大气探测干涉仪 (IASI)</b> 和<b>全球臭氧监测实验-2 (GOME-2)</b>。这些数据在处理前被平均到共同的40×80 km²的网格上，时间上在60分钟的窗口内对齐，并进行了云掩膜。为了分析仪器组合的信息含量、识别可反演的参数，并初步开发适用于AOD和气溶胶成分的统一反演算法，研究团队进行了一项模拟研究。该模拟研究利用<b>SCIATRAN辐射传输模型</b>以及MERRA-2再分析数据中的AOD和不同气溶胶成分的质量混合比来实现。研究结果表明，根据AOD值和下垫面类型的不同，该仪器组合能够为确定气溶胶成分提供6到15个自由度。这些成果将用于开发一种<b>协同多传感器反演算法</b>，旨在无云大气条件下，跨多种地表类型实现对AOD及其组分的精确反演，对提升<b>大气成分分析</b>能力具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Highlighting the Impact of Anthropogenic OCS Emissions on the Stratospheric Sulfur Budget With In Situ Observations</section>
+            <section class="paper-authors">Colin Gurganus, Andrew Rollins, Eleanor Waxman, Laura L. Pan, Warren P. Smith, Rei Ueyama, Wuhu Feng, Martyn P. Chipperfield, Elliot L. Atlas, Joshua P. Schwarz, Samantha DeLone, Troy Thornberry</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042588" target="_blank">https://doi.org/10.1029/2024JD042588</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">羰基硫(OCS)</span>
+                        <span class="topic-tag">平流层硫预算</span>
+                        <span class="topic-tag">人为排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042588" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用2022年亚洲夏季风化学与气候影响项目 (ACCLIP) 期间获得的<b>原位观测数据</b>，强调了人为排放的<b>羰基硫 (OCS)</b> 对<b>平流层硫预算</b>的重要影响。OCS是大气中一种重要的硫物种，在（非火山爆发时期）中平流层硫酸盐气溶胶的形成中起主导作用。研究发现在亚洲夏季风反气旋 (ASM) 东缘的<b>对流层上层和低层平流层 (UTLS)</b>，受对流影响的气团中OCS浓度显著升高（超过750 ppt）。通过将这些新获取的亚洲UTLS测量结果与长期<b>卫星观测</b>数据和区域测量数据进行比较，研究者旨在更全面地理解OCS的趋势及其通过ASM的传输机制。轨迹分析表明，中国北方是富含OCS的气团通过深对流抬升进入高空的主要源区，并揭示了OCS在UTLS被ASM卷入的过程，这有助于评估全球模型对OCS平流层影响的预测准确性。ACCLIP数据集为一个人为排放显著的关键区域内有限的、具有垂直分辨率的OCS数据提供了宝贵的原位验证，从而增强了我们对全球硫预算以及<b>大气成分</b>的理解，对<b>空气质量监测</b>亦有间接意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Field Observation of Important Nonactivation Scavenging of Black Carbon by Clouds</section>
+            <section class="paper-authors">Shuo Ding, Dantong Liu, Shitong Zhao, Yangzhou Wu, Siyuan Li, Baiwan Pan, Xiaomi Teng, Weijun Li, Weiqi Xu, Yi Zhang, Yele Sun, Yunfei Wu, Xiaole Pan, Xiaocong Peng, Guohua Zhang, Xinhui Bi, Ping Tian, Lanzhong Liu, Zifa Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c00199" target="_blank">https://doi.org/10.1021/acs.est.5c00199</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳清除</span>
+                        <span class="topic-tag">云内过程</span>
+                        <span class="topic-tag">非活化清除</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c00199" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究通过实地观测揭示了云对<b>黑碳 (BC)</b> 气溶胶的一种重要的<b>非活化清除机制</b>，挑战了传统认知中BC主要通过云凝结核 (CCN) 活化被湿清除的观点。研究人员使用地面<b>逆流虚拟撞击器 (CFVI)</b> 对地形云下游的云残留物中含黑碳 (BCc) 颗粒的混合态进行了颗粒分辨测量。结果发现，有相当一部分（30-90%）的BCc颗粒可以在不满足传统Köhler理论定义的CCN活化条件的情况下，通过<b>碰撞/聚并过程</b>进入云中。这种非CCN BCc在云中总BCc中所占的比例随着云滴尺寸的增大而增加；例如，当云滴有效直径从约7.6微米增加到15.8微米时，非CCN BCc在云中BCc的占比从40%上升到80%。研究指出，液滴与BCc之间的碰撞/聚并过程对较大的液滴更为有效，显微图像也观察到一个液滴可以捕获多个BC核心。较大的液滴对应于较低的环境水汽过饱和度，在这种条件下，通过碰撞/聚并方式清除云中BCc的机制可能比CCN活化更为重要。这项原位测量首次区分并量化了云中通过活化和非活化过程捕获的BCc，为评估大气BC的<b>湿清除</b>和老化过程提供了关键见解，对改进<b>空气质量</b>模型具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A comprehensive global modeling assessment of nitrate heterogeneous formation on desert dust</section>
+            <section class="paper-authors">Rubén Soussé Villa, Oriol Jorba, María Gonçalves Ageitos, Dene Bowdalo, Marc Guevara, Carlos Pérez García-Pando</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-4719-2025" target="_blank">https://doi.org/10.5194/acp-25-4719-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">硝酸盐形成</span>
+                        <span class="topic-tag">沙漠尘埃</span>
+                        <span class="topic-tag">大气化学模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-4719-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文对全球模型中<b>沙漠尘埃</b>上<b>硝酸盐</b>非均相形成过程进行了全面评估。目前，由于不同模型采用的方法和存在的 inaccuracies，对这一过程的预测差异很大。研究者将不同复杂程度的尘埃非均相化学过程整合到<b>MONARCH模型</b>中，重点评估了几个关键过程的敏感性：气体物种在尘埃上的<b>凝结途径</b>（不可逆与可逆）；硝酸盐表征对物种负荷、寿命及粒径分布的影响；以及<b>碱度</b>的作用。通过年度全球模拟，研究比较了颗粒物和气体物种的表面浓度与观测数据，并评估了其全球预算和空间分布。研究发现，模型结果高度依赖于所采用的方法学，特别是可逆与不可逆气体凝结方式。颗粒态硝酸盐的负荷范围从0.66 Tg到1.93 Tg，与观测数据的相关性在0.66到0.91之间。相比之下，颗粒态铵的负荷变异性较小（0.19至0.31 Tg）。研究结论指出，当模型中同时考虑<b>尘埃（以及海盐）的碱度</b>，并采用<b>可逆凝结</b>方式时，能与观测结果达到最佳吻合，并显示出一致的气体和颗粒分配。相反，不可逆吸收反应会高估粗颗粒硝酸盐的形成。这些发现为改进模型中尘埃上硝酸盐非均相形成的整合提供了指导，有助于更准确地估计<b>气溶胶辐射效应</b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Widespread surface ozone reduction triggered by dust storm disturbance on ozone production and destruction chemistry</section>
+            <section class="paper-authors">Yunjiang Zhang, Nan Li, Keqin Tang, Ming Wang, Haiwei Li, Ke Li, Bo Zheng, Qiang Zhang, Meng Gao, Jie Fang, Haoran Zhang, Shijie Cui, Junfeng Wang, Mindong Chen, Hong Liao, Xinlei Ge, Didier Hauglustaine, Yves Balkanski, Philippe Ciais, Guibin Jiang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.adr4297" target="_blank">https://doi.org/10.1126/sciadv.adr4297</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">地表臭氧</span>
+                        <span class="topic-tag">沙尘暴影响</span>
+                        <span class="topic-tag">光化学过程</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.adr4297" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究通过综合实地测量数据和模型模拟方法，量化了中国地区自然<b>沙尘暴</b>事件期间<b>地表臭氧 (O₃)</b> 浓度的变化及其驱动机制。臭氧是全球范围内一种关键的空气污染物。研究结果显示，在2016年至2023年期间观测的12次沙尘暴事件中，与沙尘暴发生前的背景水平相比，地表平均臭氧浓度出现了显著的降低，降幅在2.0至12.2 ppbv之间。研究进一步揭示，沙尘颗粒与<b>臭氧生成及破坏相关的光化学过程</b>之间的化学相互作用，在解释观测到的臭氧减少现象中扮演了至关重要的角色，贡献了约13%至35%的臭氧浓度下降。此外，强烈的气象扰动（如风速增大、混合层高度变化等）也通过影响臭氧的输送和形成过程，对臭氧浓度变化产生影响。在沙尘与化学过程的相互作用中，沙尘颗粒对臭氧本身、活性氮物种 (NOy) 以及氢过氧自由基 (HO₂) 的非均相吸收或异相反应，被认为是抑制臭氧生成、导致其浓度降低的主要途径。这项研究强调了严重沙尘污染与<b>大气光化学</b>之间复杂相互作用的重要性，为深入理解区域<b>空气质量</b>变化提供了新的视角。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Compound Extreme Events Associated With Extreme Dust Events in the Gobi Desert Shift From Extreme Dust‐Extreme Cold Events to Extreme Hot‐Extreme Dust Events</section>
+            <section class="paper-authors">Qingzhe Zhu, Yuzhi Liu, Rui Jia, Na Xiao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043325" target="_blank">https://doi.org/10.1029/2025JD043325</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">复合极端事件</span>
+                        <span class="topic-tag">极端沙尘</span>
+                        <span class="topic-tag">戈壁沙漠</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043325" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究揭示了在全球气候变化背景下，<b>戈壁沙漠 (GD)</b> 地区与<b>极端沙尘事件 (EDEs)</b> 相关联的<b>复合极端事件</b>类型发生了转变。研究分析了2000年至2023年春季的数据，发现戈壁沙漠地区在EDEs发生前气温偏高，而在EDEs期间气温偏低。相应地，EDEs之前常伴有<b>极端高温事件 (EHEs)</b>，EDEs期间则常伴有<b>极端低温事件 (ECEs)</b>。对比2000-2011年和2012-2023年两个时期，后者与EDEs相关的EHEs频率增加了100%，而与EDEs相关的ECEs频率则降低了75%。这一变化表明，与EDEs相关的复合极端事件正从“极端沙尘-极端低温” (EDE-ECEs) 的组合模式向“极端高温-极端沙尘” (EHE-EDEs) 的组合模式转变。研究进一步探讨了驱动因素，认为在EDEs发生前，增强的<b>北极涛动</b>通过加强东亚地区的异常高压系统，导致EHEs增多；而在EDEs期间，减弱的<b>欧亚遥相关</b>则导致ECEs减少。这两者共同驱动了复合极端事件类型的转变。这项研究揭示了气候变化背景下复合极端天气事件的新特征，并强调EHE-EDEs的增多将对戈壁沙漠本已脆弱的生态系统构成更大风险，因此控制全球变暖，特别是在干旱和半干旱地区，是必要且紧迫的。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Perspectives on Convective Rainfall From Passive and Active Microwave Sensors</section>
+            <section class="paper-authors">Yulan Hong, Veljko Petkovic</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043005" target="_blank">https://doi.org/10.1029/2024JD043005</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">对流降水</span>
+                        <span class="topic-tag">微波遥感</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043005" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究旨在提供关于星载<b>主动微波传感器 (如KuPR)</b> 和<b>被动微波传感器 (如GMI)</b> 以及地面雷达网络 (GV-MRMS) 对<b>对流降水</b>观测一致性的见解。理解降水类型对于水文模拟、大尺度环流模拟和恶劣天气预警至关重要。在美国本土 (CONUS) 进行的研究结果表明，对于风暴高度超过10公里且在冰相感知通道（高频通道）表现为低亮温的深对流系统，这三种观测产品在对流降水的探测方面表现出很强的一致性。相反，对于风暴顶低于5公里的浅层、破碎性降水系统，它们之间的一致性较差；与GV-MRMS相比，GMI和KuPR更倾向于将这类浅层破碎性降水归类为对流性降水。从全球范围来看，在中纬度地区，GMI识别出的由KuPR探测到的对流降水不足20%，但在热带地区则显示出更好的一致性。通过计算2014-2023年期间GMI和KuPR对流降水的线性趋势，发现在冷雨（水凝物柱中存在冰相）情况下趋势一致（GMI为-0.022 mm day⁻¹ decade⁻¹，KuPR为-0.019 mm day⁻¹ decade⁻¹），但在暖雨（无冰相存在）情况下趋势不一致（KuPR为-0.010 mm day⁻¹ decade⁻¹，GMI为0.002 mm day⁻¹ decade⁻¹）。这些观测到的变化趋势与已知反映大气对流偏好的环境条件成功地联系起来，为用户提供了有价值的参考信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Differences and similarities in Indian monsoon response to aerosols and to land-use/land-cover change</section>
+            <section class="paper-authors">R Puri, A Giannini</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/adcc43" target="_blank">https://doi.org/10.1088/1748-9326/adcc43</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">印度夏季风</span>
+                        <span class="topic-tag">气溶胶影响</span>
+                        <span class="topic-tag">土地利用变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/adcc43" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文分析了<b>气溶胶</b>和<b>土地利用/土地覆盖变化 (LULCC)</b> 对印度夏季风的不同及相似影响。研究主要利用<b>模型模拟</b>数据，旨在通过比较和对比，揭示在气溶胶存在时与LULCC相关的过程如何影响印度次大陆的<b>能量收支</b>和<b>水循环</b>。研究发现，尽管两种外部强迫（气溶胶和LULCC）对地表能量收支（表现为地表温度）产生相反的响应——气溶胶使大陆<b>冷却</b>，而LULCC使其<b>变暖</b>——但它们对水循环的响应却非常相似，即都会导致<b>降水量减少</b>。因此，在气溶胶情况下，由陆地和海洋在日照峰值时的热惯性差异所建立的温度对比被削弱，而在LULCC情况下则被加强。这些结果支持了近几十年来热带气候动力学中出现的观点，即仅凭陆海温差不足以解释季风降雨的变化。研究进一步发现，将湿度视为与温度同等的能量表达，即考虑<b>湿静力能</b>的对比，对于解释结果至关重要。在所分析的模拟中，气溶胶或LULCC的存在都会一致地降低陆地上的湿静力能，削弱陆地与海洋之间的对比，从而导致降水减少，证实了季风对外部强迫的敏感性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Atmospheric Emission of Per- and Polyfluoroalkyl Substances (PFAS) from a Fluoropolymer Manufacturing Facility: Focus on Emerging PFAS and the Potential Contribution of Condensable PFAS on their Atmospheric Partitioning</section>
+            <section class="paper-authors">Xiaotong Li, Wei Li, Zhanyun Wang, Xianfeng Wang, Yaqi Cai, Yali Shi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c03486" target="_blank">https://doi.org/10.1021/acs.est.5c03486</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PFAS排放</span>
+                        <span class="topic-tag">大气环境监测</span>
+                        <span class="topic-tag">新兴污染物</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c03486" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究聚焦于<b>氟聚合物生产设施 (FMF)</b> 向大气排放的<b>全氟和多氟烷基物质 (PFAS)</b>，特别是<b>新兴PFAS</b>的种类、浓度及其在大气中的相态分配。研究人员在中国一家大型FMF内外，对气体、颗粒物和粉尘样品进行了可疑物筛选分析。结果初步鉴定出74种新兴PFAS（置信度达到3级或更高），其中32种是首次在环境中被报道。半定量分析显示，以全氟烷基醚羧酸 (PFECAs) 和氯代全氟烷基醚羧酸 (Cl-PFECAs) 为主的新兴PFAS，其浓度占新兴PFAS与传统PFAS总和的21%至95% (平均为46%)。尽管大气中PFAS的总浓度在距FMF 5公里范围内迅速下降超过95%，但PM2.5中的短链PFAS（特别是C4和C5全氟烷基羧酸）表现出更远的传输能力，其浓度在5公里内分别仅下降66%和79%。研究还发现，具有离子末端基团的新兴PFAS主要分布在<b>颗粒相</b>，而与醇类相关的PFAS则主要存在于<b>气相</b>。FMF内部气相中PFAS的比例远高于外部，这可能归因于气态PFAS在排放后不久迅速凝结到细颗粒物上。这项研究为理解新兴PFAS的<b>大气行为</b>、<b>来源特征</b>及<b>空气质量监测</b>提供了重要数据支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Top-of-atmosphere radiometric reference model for stable land sites with relaxed temporal stability requirements and its application to GF6/WFI radiometric calibration and validation</section>
+            <section class="paper-authors">Lingling Ma, Yongguang Zhao, Wan Li, Ruoxi Yang, Renfei Wang, Ning Wang, Qijin Han, Xin Lu, Fang Huang, Jianghong Zhao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.114796" target="_blank">https://doi.org/10.1016/j.rse.2025.114796</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">TOA反射率模型</span>
+                        <span class="topic-tag">卫星辐射定标</span>
+                        <span class="topic-tag">稳定陆地目标</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.114796" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究开发了一种基于稳定陆地表面目标（如伪不变定标场，PICSs）时间特性的<b>大气层顶 (TOA) 反射率参考模型</b>，旨在不依赖地面同步测量即可监测<b>卫星可见光成像仪</b>的在轨辐射稳定性。该模型综合考虑了观测天顶角、太阳天顶角以及<b>大气参数</b>（如气溶胶、水汽）的变化对TOA反射率的影响。为了更精确地表征地表与大气之间的多次散射贡献，研究引入了散射角，并应用一个周期为365天的正弦函数来模拟季节性的大气变化。一个显著特点是，该模型并不严格依赖PICSs的长期时间稳定性，因为它主要致力于表征角度和大气变化的影响，而非场地本身的固有稳定性。通过基于计量学原理的全面不确定性分析，表明该模型预测TOA反射率的平均不确定度优于4%。此外，模型化TOA反射率与<b>Sentinel-2 A/B MSI</b>和<b>Landsat-8/OLI</b>传感器的长期观测数据保持了良好的辐射一致性，在177次匹配观测中，观测值与模型值之间的相对差异大多在3%以内。该模型进一步成功应用于国产<b>GF6/WFI传感器</b>的辐射定标与验证，并使用Sentinel-2/MSI和Terra/MODIS观测的TOA反射率作为参考进行交叉验证，结果显示采用新模型定标后的TOA反射率与参考值的一致性优于使用官方定标系数的结果。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Morphology and Mineral Composition of Dust Particles Generated by Sandblasting From the Tengger Desert and the Ulan Buh Desert</section>
+            <section class="paper-authors">Long Zhang, Tafeng Hu, Feng Wu, Junji Cao, Tomoko Kojima, Daizhou Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043388" target="_blank">https://doi.org/10.1029/2025JD043388</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">沙尘颗粒</span>
+                        <span class="topic-tag">矿物组成</span>
+                        <span class="topic-tag">沙源地特征</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043388" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究详细分析了来自亚洲主要沙尘源区——中国<b>腾格里沙漠 (TGD)</b> 和<b>乌兰布和沙漠 (UBD)</b>——通过模拟风沙活动（实验室喷砂）产生的沙尘颗粒的<b>形态学特征</b>和<b>矿物组成</b>。研究人员对从这两个沙漠主要地表类型（戈壁土壤和沙丘）采集的样品所产生的超过六万个单个沙尘颗粒进行了细致的分析。结果显示，TGD的颗粒物通常比UBD的颗粒物更小、更圆且表面更光滑。在粒径分布上，TGD的戈壁土壤和沙丘颗粒的数浓度峰值分别出现在0.5微米和0.5-0.6微米处，而UBD的相应峰值则分别为0.7微米和0.6微米。所有来源颗粒的长宽比相似，约为1.3，但圆度有所不同：TGD颗粒的平均圆度为0.55（戈壁土壤）和0.50（沙丘），而UBD颗粒则为0.40-0.45（戈壁土壤）和0.45（沙丘）。矿物分析表明，两个沙漠产生的颗粒均富含粘土矿物、石英和其他硅酸盐颗粒。具体而言，TGD颗粒含有更多的高岭石和石英，而UBD颗粒则含有更高的绿泥石和其他硅酸盐。值得注意的是，在UBD戈壁颗粒中分别检测到3.13%的石膏和3.63%的岩盐，表明部分颗粒富含盐分；而TGD颗粒中这两种盐类则很少被检测到。与塔克拉玛干沙漠数据的比较揭示了它们在形态、矿物组成和盐含量方面的独特性。这些结果为亚洲沙尘颗粒提供了详尽的<b>沙源地特征</b>，有助于在实地研究和数值模拟中更好地表征新生沙尘颗粒，以深入研究其在大气化学和辐射传输中的变异性与作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurement report: Size-resolved particle effective density measured by an AAC-SMPS and implications for chemical composition</section>
+            <section class="paper-authors">Yao Song, Jing Wei, Wenlong Zhao, Jinmei Ding, Xiangyu Pei, Fei Zhang, Zhengning Xu, Ruifang Shi, Ya Wei, Lu Zhang, Lingling Jin, Zhibin Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-4755-2025" target="_blank">https://doi.org/10.5194/acp-25-4755-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶有效密度</span>
+                        <span class="topic-tag">化学成分</span>
+                        <span class="topic-tag">粒径分辨</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-4755-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究报告了在中国杭州市利用<b>串联气动气溶胶分类器 (AAC)</b> 和<b>扫描迁移率粒径谱仪 (SMPS)</b> 系统，对气溶胶粒子进行的为期一个月的<b>粒径分辨有效密度 (ρeff)</b> 观测结果。有效密度与颗粒物的老化过程密切相关，可作为化学成分的示踪剂。研究结果表明，颗粒物的ρeff值呈现单峰分布，平均值范围在1.47至1.63 g cm⁻³之间，并且随着粒径的增大而增加。对于较小颗粒 (空气动力学等效直径 dae < 350 nm)，其ρeff的日变化更为显著，通常表现为白天密度较低，夜间密度较高。在不同的污染条件下，由于颗粒物<b>化学成分</b>的差异，ρeff与粒径之间的关系也有所不同。通过SHAP (SHapley Additive exPlanations) 值分析发现，ρeff与直径小于350 nm的颗粒物的整体化学成分之间存在良好关系，而与较大颗粒物的关系较弱。鉴于确定颗粒物粒径分辨的化学成分仍具挑战性，本研究提出了一种新方法，即可以根据测得的ρeff以及二次无机气溶胶 (SIAs)、有机气溶胶 (OAs) 和黑碳 (BC) 的固定材料密度，来推断颗粒物的<b>粒径分辨化学成分</b>。这项工作为深入理解气溶胶物理化学特性及其对<b>空气质量</b>的影响提供了重要数据和方法论。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Trends in the seasonal amplitude of atmospheric methane</section>
+            <section class="paper-authors">Gang Liu, Lu Shen, Philippe Ciais, Xin Lin, Didier Hauglustaine, Xin Lan, Alexander J. Turner, Yi Xi, Yu Zhu, Shushi Peng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41586-025-08900-8" target="_blank">https://doi.org/10.1038/s41586-025-08900-8</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气甲烷</span>
+                        <span class="topic-tag">季节振幅</span>
+                        <span class="topic-tag">排放与汇</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41586-025-08900-8" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了<b>大气甲烷 (CH₄)</b> 浓度<b>季节性振幅</b>的变化趋势及其背后的驱动机制。通过<b>模型模拟</b>分析，研究结果表明，观测到的大气甲烷季节性振幅的变化趋势可以归因于两个主要因素的综合影响：一是甲烷<b>排放量</b>的变化，这包括自然源和人为源的排放波动；二是大气中甲烷的主要化学汇——即甲烷与<b>羟基自由基 (OH)</b> 发生反应而被清除的过程——其效率的变化。这意味着，无论是排放源的变动还是大气氧化能力的改变，都会显著影响大气中甲烷浓度的季节性波动特征。这项研究为深入理解甲烷的全球生物地球化学循环、其对气候系统的反馈作用以及评估减排策略的有效性提供了重要的科学依据。尽管研究未直接使用遥感数据，但其结论对于解读通过卫星等手段监测到的甲烷浓度变化及其与<b>大气成分</b>和<b>空气质量</b>（间接通过气候影响）的关系具有指导意义。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
