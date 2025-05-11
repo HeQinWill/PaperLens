@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/05/11</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Earth's Energy Imbalance More Than Doubled in Recent Decades</section>
+            <section class="paper-authors">Thorsten Mauritsen, Yoko Tsushima, Benoit Meyssignac, Norman G. Loeb, Maria Hakuba, Peter Pilewskie, Jason Cole, Kentaroh Suzuki, Thomas P. Ackerman, Richard P. Allan, Timothy Andrews, Frida A.‐M. Bender, Jonah Bloch‐Johnson, Alejandro Bodas‐Salcedo, Anca Brookshaw, Paulo Ceppi, Nicolas Clerbaux, Andrew E. Dessler, Aaron Donohoe, Jean‐Louis Dufresne, Veronika Eyring, Kirsten L. Findell, Andrew Gettelman, Jake J. Gristey, Ed Hawkins, Patrick Heimbach, Helene T. Hewitt, Nadir Jeevanjee, Colin Jones, Sarah M. Kang, Seiji Kato, Jennifer E. Kay, Stephen A. Klein, Reto Knutti, Ryan Kramer, June‐Yi Lee, Daniel T. McCoy, Brian Medeiros, Linda Megner, Angshuman Modak, Tomoo Ogura, Matthew D. Palmer, David Paynter, Johannes Quaas, Veerabhadran Ramanathan, Mark Ringer, Karina von Schuckmann, Steven Sherwood, Bjorn Stevens, Ivy Tan, George Tselioudis, Rowan Sutton, Aiko Voigt, Masahiro Watanabe, Mark J. Webb, Martin Wild, Mark D. Zelinka</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">AGU Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024AV001636" target="_blank">https://doi.org/10.1029/2024AV001636</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">地球能量失衡</span>
+                        <span class="topic-tag">全球变暖</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024AV001636" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文指出，由于人为温室气体排放，地球接收的太阳辐射与地球反射和自身发出的辐射之间的微妙平衡被打破，导致<b>地球能量失衡</b>。这种失衡使得能量在<b>大气、海洋和陆地</b>中累积，并加速<b>冰冻圈融化</b>，进而引发全球气温上升、海平面上涨以及更频繁的极端天气事件。研究强调，尽管<b>地球能量失衡</b>在调节气候系统中的基础性作用已为人所知两个多世纪，但我们对其的观测能力正随着<b>卫星的退役</b>而迅速恶化。论文的核心观点是，近几十年来，<b>地球的能量失衡已经增加了一倍以上</b>。虽然摘要未详述具体的数据来源和分析方法，但暗示了其结论是基于对现有气候数据的分析，并强调了<b>卫星观测</b>在监测这一关键气候指标中的不可或缺性以及当前面临的挑战。该研究警示我们，在全球变暖的背景下，维持和加强对地球能量平衡的持续观测至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">First estimation and evaluation of hourly biomass burning emissions in north American high latitudes</section>
+            <section class="paper-authors">Fangjun Li, Xiaoyang Zhang, Shobha Kondragunta</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.114814" target="_blank">https://doi.org/10.1016/j.rse.2025.114814</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">生物质燃烧排放</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">空气质量模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.114814" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究首次针对北美高纬度地区的野火，开发了一种新颖的火灾排放算法，以估算<b>每小时的生物质燃烧排放量</b>。研究利用了来自NOAA GOES-R系列卫星上的<b>高级基线成像仪 (ABI)</b> 的高时间分辨率（10分钟，2公里）火灾辐射功率 (FRP) 数据，以及极地轨道卫星上的<b>可见红外成像辐射仪套件 (VIIRS)</b> 的高空间分辨率（375米，每日多次）FRP数据。方法上，首先通过考虑地表高程校正了ABI主动火灾数据的视差问题；随后，将ABI和VIIRS的FRP分别聚合到3公里网格，并利用VIIRS FRP校准ABI FRP以修正大视角下的低估；接着，融合校准后的ABI FRP和VIIRS FRP，并借助FRP日变化气候学数据重建了<b>FRP的日循环</b>；最终，基于重建的FRP日循环估算了2021年和2022年十一种物质的每小时排放量。结果显示，2021年和2022年PM2.5总排放量分别约为0.54 Tg和0.4 Tg，其中超过86%来自夏季北方森林火灾。排放量呈现明显的<b>日变化模式</b>，通常在当地时间下午2-3点达到峰值。通过与<b>TROPOMI</b>观测的29个新鲜烟羽中的一氧化碳 (CO) 和二氧化氮 (NO2) 进行对比评估，小时ABI-VIIRS CO估算值与TROPOMI CO估算值显著相关 (R²=0.94)，差异约为17.5%。该算法已集成到近实时的RAVE产品中，有望改善<b>空气质量预报</b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Recent Lower Stratospheric Ozone Trends in CCMI‐2022 Models: Role of Natural Variability and Transport</section>
+            <section class="paper-authors">Samuel Benito‐Barca, Marta Abalos, Natalia Calvo, Hella Garny, Thomas Birner, Nathan Luke Abraham, Hideharu Akiyoshi, Fraser Dennison, Patrick Jöckel, Bèatrice Josse, James Keeble, Doug Kinnison, Marion Marchand, Olaf Morgenstern, David Plummer, Eugene Rozanov, Sarah Strode, Timofei Sukhodolov, Shingo Watanabe, Yousuke Yamashita</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042412" target="_blank">https://doi.org/10.1029/2024JD042412</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">平流层臭氧</span>
+                        <span class="topic-tag">化学气候模型</span>
+                        <span class="topic-tag">大气输运</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042412" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>化学气候模型倡议2022 (CCMI-2022)</b> 的两种模拟（REF-D1使用观测海温，REF-D2使用模拟海洋），重新审视了1998年至2018年间<b>平流层下层臭氧</b>（南北纬60度之间）的近期趋势。尽管《蒙特利尔议定书》减少了消耗臭氧层物质，但该区域臭氧仍持续下降。先前研究表明，化学气候模型能再现热带平流层下层臭氧因上升流增强而减少的趋势，却未能捕捉到北半球中纬度地区的臭氧下降。本研究发现，观测到的中纬度负趋势在模型趋势范围内，尤其是在考虑了观测边界条件的模拟中。然而，模拟的中纬度臭氧趋势存在很大离散性。多元线性回归分析表明，趋势的离散性并非由对外部强迫（太阳周期、全球变暖、臭氧消耗物质）或主要变率模式（厄尔尼诺-南方涛动、准两年振荡）的线性响应差异造成，而是归因于<b>内部大气变率</b>。此外，不同模型内部成员间趋势的一致性差异暗示了模型在表述<b>臭氧输运</b>内部变率方面存在根本差异。研究证实，年际时间尺度上的臭氧-输运联系在模型间存在显著差异，且<b>臭氧趋势与输运趋势</b>紧密耦合。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Comprehensive Fuel and Emissions Measurements Highlight Uncertainties in Smoke Production Using Predictive Modeling Tools</section>
+            <section class="paper-authors">Afsara Tasnia, Guadalupe Lara, Daniel Foster, Deep Sengupta, James D. A. Butler, Thomas W. Kirchstetter, Robert York, Nathan M. Kreisberg, Allen H. Goldstein, John J. Battles, Kelley C. Barsanti</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.4c00142" target="_blank">https://doi.org/10.1021/acsestair.4c00142</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">野火烟雾排放</span>
+                        <span class="topic-tag">预测模型不确定性</span>
+                        <span class="topic-tag">燃料负荷</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.4c00142" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究评估了<b>一阶火灾效应模型 (FOFEM)</b> 在预测美国加州北部布洛杰特森林研究站 (BFRS) 一系列规定燃烧中<b>燃料消耗</b>和<b>烟雾排放</b>时的不确定性。研究对比了模型模拟结果与一套全面的实地燃料和排放测量数据，重点分析了模型输入参数（如燃料的组成、负荷量、湿度）和<b>排放因子 (EFs)</b> 的参数不确定性，以及消耗模型的结构不确定性对预测<b>烟雾排放</b>（包括一氧化碳CO、二氧化碳CO2、PM2.5及非甲烷有机化合物NMOCs）的影响。结果表明，基于土地覆盖图的<b>燃料负荷量</b>具有最高的不确定性，导致预测烟雾排放的敏感性最大，显著低估了气体和颗粒物排放（CO和CO2低估高达约80%，PM2.5低估高达约85%）。研究强调，提高预测准确性的关键在于获取更精确的燃料负荷数据，特别是<b>腐殖质层 (duff)</b> 和<b>粗木质残体 (coarse wood)</b> 的数据，这两者是气体（约50-70%）和颗粒物（约65%）排放的主要来源。此外，对于特定的<b>非甲烷有机化合物 (NMOCs)</b>，其排放量预测还对<b>排放因子 (EFs)</b> 的不确定性敏感，说明准确预测NMOCs需要准确的燃料消耗数据和代表性的EFs。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
