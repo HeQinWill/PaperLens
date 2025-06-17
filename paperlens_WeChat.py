@@ -33,7 +33,7 @@ def analyze_paper(info_json: str) -> Tuple[bool, str]:
         }
 
     model = genai.GenerativeModel(
-            model_name="gemini-2.5-pro-exp-03-25",
+            model_name="gemini-2.0-flash",
             generation_config=generation_config,
             system_instruction="You are an expert in literature analysis, skilled in qualitative research methods, literature retrieval, and critical thinking. You excel at interpreting complex texts, identifying key ideas and methodologies, and conducting comprehensive literature reviews to identify research trends and gaps.",
             )
