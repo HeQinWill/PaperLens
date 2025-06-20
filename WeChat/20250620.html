@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/06/20</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Daytime-like nighttime aerosol optical depth detection for geostationary environment monitoring spectrometer</section>
+            <section class="paper-authors">Yerin Kim, Jeong-Eun Park, Goo Kim, Sungwook Hong</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108290" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108290</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">深度学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108290" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《地球静止环境监测光谱仪的类白天夜间气溶胶光学厚度探测》。该研究提出了一种创新的方法，利用地球静止环境监测光谱仪（<b>GEMS</b>）的白天观测数据，结合深度学习的<b>数据到数据（D2D）</b>转换技术，模拟<b>夜间气溶胶光学厚度（AOD）</b>。该模型使用GEMS和先进气象成像仪（<b>AMI</b>）的数据，通过训练D2D模型，实现了在GEMS观测不可用时，利用AMI数据估算AOD。通过与<b>CALIPSO</b>和<b>AERONET</b>数据的验证，证明了该模型生成的夜间AOD数据的准确性。这项研究为东亚地区提供了一种连续监测AOD的方法，有助于大气和环境预报。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Assessing the ability to quantify the decrease in NOx anthropogenic emissions in 2019 compared to 2005 using OMI and TROPOMI satellite observations</section>
+            <section class="paper-authors">Audrey Fortems-Cheiney, Grégoire Broquet, Elise Potier, Antoine Berchet, Isabelle Pison, Adrien Martinez, Robin Plauchu, Rimal Abeed, Aurélien Sicsik-Paré, Gaelle Dufour, Adriana Coman, Dilek Savas, Guillaume Siour, Henk Eskes, Hugo A. C. Denier van der Gon, Stijn N. C. Dellaert</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-6047-2025" target="_blank">https://doi.org/10.5194/acp-25-6047-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">NOx排放</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-6047-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《评估使用OMI和TROPOMI卫星观测数据量化2019年与2005年相比NOx人为排放量减少的能力》。该研究评估了<b>OMI</b>和<b>TROPOMI</b>卫星观测数据在欧洲区域和国家尺度上，量化2019年相比2005年人为<b>氮氧化物（NOx）</b>排放量减少的潜力。研究首先评估了OMI和TROPOMI数据检索结果之间的一致性，并探讨了潜在不一致性对反演的影响。研究使用Community Inversion Framework耦合CHIMERE化学传输模型，并同化OMI和TROPOMI的卫星NO2柱浓度数据，对2019年欧洲年度和季节性排放量进行了估算。OMI和TROPOMI反演均显示，与2005年相比，2019年欧洲NOx人为排放预算有所减少。然而，两种卫星数据的减排幅度不同。TROPOMI反演与独立的TNO-GHGco-v3清单在2019年的年度预算上具有一致性。研究结果表明，需要更多的观测约束来提高欧洲排放估算的准确性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Impact of Model Horizontal Resolution on Aerosol Modeling Over East Asia Using Variable‐Resolution CESM2</section>
+            <section class="paper-authors">Weiyi Wang, Xiaohong Liu, Guangxing Lin, Zheng Lu, Chenglai Wu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043518" target="_blank">https://doi.org/10.1029/2025JD043518</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶建模</span>
+                        <span class="topic-tag">模型分辨率</span>
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043518" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《模型水平分辨率对使用可变分辨率CESM2进行东亚气溶胶建模的影响》。该研究探讨了<b>模型水平分辨率</b>对东亚地区<b>气溶胶模拟</b>的影响。通过使用不同分辨率的<b>地球系统模型（CESM2）</b>，研究分析了分辨率对气溶胶的形成、传输、沉降以及光学特性的影响。研究结果表明，提高模型分辨率可以更准确地模拟城市地区和复杂地形的气溶胶浓度，并改善<b>气溶胶光学厚度（AOD）</b>的模拟结果，使其与卫星观测数据更为接近。此外，高分辨率模型还显示出更强的气溶胶直接辐射效应，从而影响区域气候。该研究强调，在进行区域气候模拟时，需要充分考虑模型分辨率对气溶胶模拟的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Contrasting char-EC and soot-EC in sources, atmospheric processing, and light-absorbing capabilities: Insights from high-resolution stable carbon isotope analysis</section>
+            <section class="paper-authors">Mingyuan Yu, Yu-Chi Lin, Feng Xie, Fang Cao, Yan-Lin Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108275" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108275</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">元素碳</span>
+                        <span class="topic-tag">光吸收</span>
+                        <span class="topic-tag">辐射强迫</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108275" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《来源、大气过程和光吸收能力中炭黑-EC和烟炱-EC的对比：来自高分辨率稳定碳同位素分析的见解》。研究通过<b>高分辨率稳定碳同位素分析</b>，对比了不同来源、大气过程和<b>光吸收能力</b>下的<b>炭黑（char-EC）</b>和<b>烟炱（soot-EC）</b>。研究发现，炭黑的光吸收能力比烟炱更强，尤其是在化石燃料排放中。案例研究表明，较低的RC/S可能表明化石燃料的贡献增加，和/或来自长距离传输的相当大的比例。研究还发现，忽略炭黑和烟炱的差异可能导致对元素碳直接<b>辐射强迫</b>的低估，这进一步限制了对区域空气污染和气候影响的准确评估。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Numerical case study of the aerosol–cloud interactions in warm boundary layer clouds over the eastern North Atlantic with an interactive chemistry module</section>
+            <section class="paper-authors">Hsiang-He Lee, Xue Zheng, Shaoyue Qiu, Yuan Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-6069-2025" target="_blank">https://doi.org/10.5194/acp-25-6069-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶-云相互作用</span>
+                        <span class="topic-tag">WRF-Chem模型</span>
+                        <span class="topic-tag">云凝结核（CCN）</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-6069-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《利用交互化学模块对东北大西洋暖边界层云中气溶胶-云相互作用的数值案例研究》。论文探讨了<b>气溶胶-云相互作用</b>如何影响东北大西洋上空暖边界层层积云。研究使用高分辨率天气模型（WRF-Chem）模拟，揭示了云系统边缘的<b>非降水云</b>容易蒸发，导致<b>气溶胶干燥效应</b>，使气溶胶返回累积模式以便未来活化。该模型考虑了气溶胶化学成分的时空变化，这些成分与云凝结核（CCN）的形成有关。研究表明，引入更多气溶胶会显著增加环境中的CCN数量，从而在不同程度上提高液态水路径（LWP）值。尤其是在降水云中，LWP对CCN的变化非常敏感。研究强调，这种动态行为在以往的气溶胶预设模拟中往往没有得到充分体现。因此，研究结果表明，在模拟气溶胶与云的相互作用时，需要更精细地考虑气溶胶的动态过程。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The impact of biomass burning emissions in Southeast Asia on black carbon aerosols in southern China</section>
+            <section class="paper-authors">Luhang Liu, Yu-Hao Mao, Hong Liao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121352" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121352</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳气溶胶</span>
+                        <span class="topic-tag">生物质燃烧</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121352" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《东南亚生物质燃烧排放对华南地区黑碳气溶胶的影响》。研究量化了东南亚生物质燃烧排放(<b>BBSEA</b>)对华南(<b>SC</b>)两个省会城市（广东广州(<b>GZ</b>)和云南昆明(<b>KM</b>)）2014和2019年3-4月地表和高空<b>黑碳(BC)浓度</b>的贡献。通过使用<b>GEOS-Chem</b>全球化学传输模型及其伴随模型进行模拟研究。对2014年SC三次严重污染事件，BBSEA对GZ日平均BC浓度的贡献在地表为0.08–0.19 μg m−3(2 %–5 %)，在700 hPa为0.20–0.78 μg m−3(59 %–73 %)。KM对应的贡献分别为0.27–0.54 μg m−3(15 %–33 %)和0.25–0.45 μg m−3(28 %–45 %)。BBSEA到GZ(KM)地表的传输时间约为3-6天(1-5天)。与2014年3月23日相比，2019年3月27日，BBSEA对地表BC浓度的相对贡献在GZ增加了10%，在KM增加了14%。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Elucidating the Impact of Wildfire Molecular Tracers on Nitrous Acid (HONO) Production from Aqueous Nitrate Photochemistry</section>
+            <section class="paper-authors">Karla Rojas García, Alicia M. Krueger, Abril D. Montaño Medina, Aida G. Velasco Ortiz, Juan G. Navea, Vicki H. Grassian</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00052" target="_blank">https://doi.org/10.1021/acsestair.5c00052</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">亚硝酸（HONO）</span>
+                        <span class="topic-tag">野火烟雾</span>
+                        <span class="topic-tag">硝酸盐光化学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00052" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《阐明野火分子示踪剂对硝酸水溶液光化学反应中亚硝酸(HONO)产生的影响》。该研究探讨了野火排放的有机化合物对<b>亚硝酸（HONO）</b>生成的影响。研究发现，野火排放的特定有机物，如<b>左旋葡聚糖（LG）</b>、<b>丁香酸（SA）</b>和<b>香草酸（VA）</b>，会显著提高<b>硝酸盐光化学反应</b>中HONO的产量。研究使用<b>非相干宽带腔增强吸收光谱（IBCEAS）</b>量化HONO产量，并使用高分辨率质谱分析液相产物。研究结果表明，这些有机化合物通过影响硝酸盐的光化学反应过程，显著增加了HONO的生成。研究有助于理解生物质燃烧事件中HONO的形成机制，从而改进空气质量模型和大气成分分析。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impact of Smoke Aerosol Loading on Lightning Characteristics of Pyrocumulonimbus Compared With Other High‐Based Thunderstorms</section>
+            <section class="paper-authors">Elena Dworak, David A. Peterson, Pablo E. Saide, Laura Thapa, Jacob Bortnik</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042285" target="_blank">https://doi.org/10.1029/2024JD042285</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶负载</span>
+                        <span class="topic-tag">闪电特征</span>
+                        <span class="topic-tag">火积云雷暴</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042285" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《与其它高空雷暴相比，烟雾气溶胶负载对火积云雷暴闪电特征的影响》。该研究探讨了<b>烟雾气溶胶</b>负载对<b>火积云雷暴</b>闪电特征的影响，并将其与其他高空雷暴进行了比较。研究使用了<b>地面闪电探测数据</b>、<b>卫星反演</b>、气象和<b>大气成分再分析</b>以及观测到的热力学廓线等多种数据来源。研究分析了不同类型雷暴的闪电活动特征，特别是<b>云间闪电与云地闪电的比率</b>，以及正极性云地闪电的比例，并探讨了烟雾对这些特征的影响。研究结果有助于识别火源性闪电的特征，并改进对闪电引发火灾的预测，从而加深对火积云活动及其相关影响的理解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Role of Antarctic ozone in shaping East Asian summer precipitation variability</section>
+            <section class="paper-authors">Lingaona Zhu, Zhiwei Wu, Bin Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01116-7" target="_blank">https://doi.org/10.1038/s41612-025-01116-7</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">南极臭氧</span>
+                        <span class="topic-tag">大气环流</span>
+                        <span class="topic-tag">夏季降水</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01116-7" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《南极臭氧在塑造东亚夏季降水变化中的作用》。虽然以往的研究大多集中在南极臭氧对南半球气候的影响，但本研究表明，9-10月的<b>南极臭氧异常</b>解释了大约12%的东亚夏季降水年际变化。与南极臭氧指数相关的降水异常表现为中国中部长江和黄河之间的降雨增加，以及华南地区的降雨减少。分析表明，9-10月期间的<b>南极臭氧正异常</b>与随后北半球冬季的<b>南极涛动（SAM）负位相</b>有关。由此产生的SAM相关环流异常对<b>印度洋西南部海面温度异常（SSTA）</b>产生重大影响，特别是在马达加斯加附近。由于海洋的热惯性，这些SSTA持续到随后的北半球春季，改变了经向环流，并导致15°N附近出现异常下沉，进而导致印度支那半岛上空<b>皮肤温度异常（SKTA）</b>升高。数值实验进一步证实了印度洋西南部SSTA在驱动这种响应中的作用。陆地记忆和陆地-大气正反馈将这些SKTA维持到北半球夏季。因此，SKTA引起的印度支那半岛上空的加热增强了西南季风，并加强了中国中部上空的降水。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
