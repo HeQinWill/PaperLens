@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/06/23</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Thermodynamically constrained retrieval algorithm to estimate subpixel fire properties</section>
+            <section class="paper-authors">Chenchong Zhang, Yuan Wang, Jun Wang, Amber Soja, Emily Gargulinski, David Peterson, Olga Kalashnikova, Bin Zhao, Yafang Cheng, Fangjun Li, Rajan Chakrabarty</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.114871" target="_blank">https://doi.org/10.1016/j.rse.2025.114871</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火灾亚像元属性估算</span>
+                        <span class="topic-tag">热力学约束反演算法</span>
+                        <span class="topic-tag">火灾辐射功率</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.114871" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为“热力学约束反演算法估算亚像元火灾属性”，旨在解决利用卫星遥感估算火灾排放污染物时，对**火灾面积**和**燃烧阶段**（阴燃和火焰燃烧）的亚像元尺度信息的需求。传统方法忽略了热传递现象，导致火灾面积和排放估算不准确。该研究提出了一种新的方法，使用**半经验传热算法**解析每个火灾像元内的**有效温度变化**，利用地球静止卫星的观测数据作为输入。该算法通过精细空间分辨率的星载和机载观测数据进行了验证，研究区域为2019年美国西部的野火。研究结果表明，通过该传热方法获得的**火灾辐射功率（FRP）**与机载测量结果具有更强的线性相关性。此外，通过分析温度变化曲线，可以进一步反演火灾像元内不同燃烧条件下的火灾面积。研究发现，在所研究的威廉姆斯·弗拉茨火灾中，**阴燃**占总活跃火灾面积的50%以上。这项研究对于提高火灾排放估算的精度，以及理解火灾对大气环境的影响具有重要意义，特别是对于提高**空气质量监测**和**大气成分分析**的准确性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
