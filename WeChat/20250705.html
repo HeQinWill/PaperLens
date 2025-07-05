@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/07/05</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Estimating daily NO<sub>x</sub> and CO<sub>2</sub> emissions in typical megacities of east China using TROPOMI NO<sub>2</sub> observations</section>
+            <section class="paper-authors">Yizhen Jia, Minghui Tao, Hongming Zhang, Pengfei Ma, Bin Zhao, Rong Li, Dejia Yin, Lijuan Zhang, Haijun Huang, Lunche Wang, Yi Wang, Liangfu Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121377" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121377</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">NOx排放</span>
+                        <span class="topic-tag">CO2排放</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121377" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“利用TROPOMI NO2观测估算华东典型特大城市每日NOx和CO2排放量”。该研究论文利用<b>TROPOMI卫星</b>的<b>NO2观测数据</b>，结合改进的叠加柱模型，估算了中国典型特大城市（北京、郑州、武汉、上海）的<b>每日NOx和CO2排放量</b>。研究结果与自下而上的排放清单吻合较好，并能清晰地捕捉到COVID-19封锁期间NOx和CO2排放量的突然下降。研究还揭示了由于不同行业的减排，NOx和CO2的主要排放源发生了转变。研究强调了对主要来源进行定期人为排放量估算的必要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">On the potential of principal component analysis for the reconstruction of full-spectrum SIF emission and emulated airborne-to-satellite upscaling</section>
+            <section class="paper-authors">Miguel Morata, Bastian Siegmann, José Luis García-Soria, Juan Pablo Rivera-Caicedo, Jochem Verrelst</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.114865" target="_blank">https://doi.org/10.1016/j.rse.2025.114865</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">高光谱遥感</span>
+                        <span class="topic-tag">太阳诱导叶绿素荧光</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.114865" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“论主成分分析在重建全光谱SIF发射和模拟空基卫星尺度转换中的潜力”。论文探讨了利用<b>主成分分析</b>（PCA）方法，从O2A和O2B波段重建<b>全光谱太阳诱导叶绿素荧光</b>（SIF）的可能性，并模拟了从机载到卫星的全光谱SIF尺度转换。研究使用SCOPE模型进行模拟，并利用HyPlant机载数据进行验证。结果表明，该方法可以有效地重建全光谱SIF，并可用于生成FLEX兼容的SIF数据集，为FLEX的任务准备和验证活动提供支持。研究结果对于利用遥感数据监测植被健康和气候变化具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Star photometry with all-sky cameras to retrieve aerosol optical depth at nighttime</section>
+            <section class="paper-authors">Roberto Román, Daniel González-Fernández, Juan Carlos Antuña-Sánchez, Celia Herrero del Barrio, Sara Herrero-Anta, África Barreto, Victoria E. Cachorro, Lionel Doppler, Ramiro González, Christoph Ritter, David Mateos, Natalia Kouremeti, Gustavo Copes, Abel Calle, María José Granados-Muñoz, Carlos Toledano, Ángel M. de Frutos</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-2847-2025" target="_blank">https://doi.org/10.5194/amt-18-2847-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">全天空相机</span>
+                        <span class="topic-tag">星光光度测量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-2847-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“使用全天空相机进行星光光度测量以反演夜间气溶胶光学厚度”。论文提出了一种使用<b>全天空相机</b>进行<b>星光光度测量</b>的创新技术，以反演<b>夜间气溶胶光学厚度</b>（AOD）。该方法通过与月球光度计的测量结果进行对比验证，显示出较强的相关性。研究人员在九个不同地点配置并部署了八个全天空相机，以捕捉夜间不同曝光时间的原始图像。研究结果表明，该方法反演的AOD值与参考值具有良好的一致性，能够提供整个夜晚的AOD覆盖，无需月亮的存在。该研究对于扩展夜间AOD的测量范围具有重要意义，因为全天空相机比恒星和月球光度计更简单且成本更低。该研究结果可用于研究和监测夜间AOD的演变，并可补充现有日间太阳光度计的测量数据，从而更全面地了解大气气溶胶的特性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Tracking Ethane From Space Over a Large US Oil and Gas Region</section>
+            <section class="paper-authors">Colby B. Francoeur, Daven K. Henze, Jian He, Scot M. Miller, Jeff Peischl, Brian C. McDonald</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL115286" target="_blank">https://doi.org/10.1029/2025GL115286</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">乙烷</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">油气排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL115286" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“追踪美国大型油气区上空的乙烷”。论文利用<b>卫星遥感技术</b>，特别是<b>交叉轨道红外探测器</b>（CrIS），来监测美国Permian盆地上空的<b>乙烷</b>（C2H6）排放情况。研究发现，该地区乙烷的吸收量在2014年至2020年期间呈上升趋势，表明单位天然气产量排放的挥发性有机化合物有所减少。研究强调了乙烷作为示踪剂在区分甲烷和其他挥发性有机化合物来源方面的作用。该研究结果对于监测油气行业的排放和评估其对大气环境的影响具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Twenty Years of High Spatiotemporal Resolution Estimates of Daily PM2.5 in West Africa Using Satellite Data, Surface Monitors, and Machine Learning</section>
+            <section class="paper-authors">Daniel M. Westervelt, Joe Adabouk Amooli, Abhishek Anand</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.4c00366" target="_blank">https://doi.org/10.1021/acsestair.4c00366</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">卫星数据</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.4c00366" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“利用卫星数据、地面监测和机器学习估算西非地区二十年的高时空分辨率日PM2.5”。论文利用<b>卫星数据</b>、<b>地面监测数据</b>和<b>机器学习算法</b>，估算了<b>西非地区</b>2005年至2024年间每日<b>PM2.5</b>的浓度，空间分辨率达到1平方公里。研究使用了多种机器学习模型，其中XGBoost表现最佳。研究结果揭示了该地区严重的空气质量问题，并强调了空气质量恶化的趋势。该数据集为西非地区的空气质量管理、公共卫生和环境正义提供了有价值的数据支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Quantifying transboundary transport flux of CO over the Tibetan Plateau: variabilities and drivers</section>
+            <section class="paper-authors">Zhenda Sun, Hao Yin, Zhongfeng Pan, Chongyang Li, Xiao Lu, Ke Liu, Youwen Sun, Cheng Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-6823-2025" target="_blank">https://doi.org/10.5194/acp-25-6823-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">一氧化碳</span>
+                        <span class="topic-tag">跨界输送</span>
+                        <span class="topic-tag">青藏高原</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-6823-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“量化青藏高原CO跨界输送通量：变异性与驱动因素”。论文主要关注利用<b>遥感技术</b>监测<b>青藏高原</b>上空<b>一氧化碳</b>(CO)的<b>跨界传输通量</b>及其变化和驱动因素。论文使用了TROPOMI卫星传感器的数据，结合ERA5和GEOS-CF数据产品，计算了CO的通量，并分析了其季节性变化和来源。研究结果表明，近年来青藏高原的外部CO输入增加，可能与南亚地区CO浓度的快速上升有关。论文还分析了CO通量的季节性特征，发现高水平的CO通量出现在晚秋至冬季，低水平出现在夏季。该研究对于理解青藏高原地区的大气环境变化和污染物传输具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impact of the East Asian Stratospheric Intrusion on Lower Tropospheric Ozone in the Yangtze River Delta</section>
+            <section class="paper-authors">Jinpeng Lu, Xin Huang, Xueyu Zhou, Lijie Yang, Sijia Lou, Zilin Wang, Jiawei Xu, Aijun Ding</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042349" target="_blank">https://doi.org/10.1029/2024JD042349</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">对流层臭氧</span>
+                        <span class="topic-tag">平流层入侵</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042349" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“东亚平流层入侵对长江三角洲低层对流层臭氧的影响”。该研究论文探讨了2023年5月发生在<b>长江三角洲地区</b>的一次强烈的<b>平流层入侵事件</b>对近地面<b>臭氧污染</b>的影响。研究结合气象再分析数据、地面观测和区域气象化学耦合模型，定量分析了平流层入侵对长三角地区地面臭氧的贡献。研究发现，长三角地区的严重臭氧污染不能完全归因于光化学反应，平流层富臭氧气团的入侵是重要原因之一。研究结果强调了平流层入侵对地面臭氧污染的影响，为理解区域空气质量变化提供了新的视角。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Model Intercomparisons of MEGAN and BEIS: Synergistic Impacts of Biogenic VOCs and Soil NO Emissions on Summer Ozone and Secondary Organic Aerosol Formation in China</section>
+            <section class="paper-authors">Chao Gao, Xuelei Zhang, Ling Huang, Hu Yang, Hongmei Zhao, Shichun Zhang, Aijun Xiu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00038" target="_blank">https://doi.org/10.1021/acsestair.5c00038</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧</span>
+                        <span class="topic-tag">生物源VOCs</span>
+                        <span class="topic-tag">土壤NOx</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00038" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“MEGAN和BEIS模型互比：生物源VOCs和土壤NO排放对中国夏季臭氧和二次有机气溶胶形成的协同影响”。论文探讨了<b>生物源挥发性有机化合物</b>（BVOCs）和<b>土壤氮氧化物</b>（NOx）排放对中国夏季<b>臭氧</b>和<b>二次有机气溶胶</b>（SOA）形成的影响。论文通过模型对比（MEGAN和BEIS）以及与空气质量模型（CMAQ）的结合，评估了不同排放源对臭氧的贡献，并强调了生物源排放对空气质量管理的重要性。研究结果表明，联合排放导致中国臭氧和SOA分别增加10.11%–28.40%和15.03%–62%，区域差异显著。研究强调了在空气质量模型中纳入详细的生物源排放的重要性，以准确捕捉中国的臭氧动态。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Relationship between latent and radiative heating fields of tropical cloud systems using synergistic satellite observations</section>
+            <section class="paper-authors">Xiaoting Chen, Claudia J. Stubenrauch, Giulio Mandorli</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-6857-2025" target="_blank">https://doi.org/10.5194/acp-25-6857-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">辐射加热</span>
+                        <span class="topic-tag">潜热</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-6857-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“利用协同卫星观测研究热带云系统的潜热和辐射加热场关系”。论文主要探讨了<b>热带云系统</b>中<b>潜热</b>和<b>辐射加热场</b>之间的关系，使用了协同<b>卫星观测</b>数据。研究利用机器学习技术结合卫星观测，对中尺度对流系统（MCSs）的潜热（LH）和辐射加热（Qrad）进行了详细研究。论文使用了TRMM和CIRS等卫星数据，分析了云的辐射效应（ACRE）与潜热释放之间的关系，以及对流组织如何影响辐射效应。研究发现，对流组织可以增强中尺度对流系统的辐射效应，并且云的高度是影响云辐射效应的主要因素。论文还分析了成熟中尺度对流系统的潜热剖面，发现更大的、更有组织的中尺度对流系统比小的中尺度对流系统具有更大的层云降水贡献。该研究对于理解热带云系统的能量传输和辐射效应具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Aerosol Water Content Drives Changes in Hydroxymethanesulfonate in Beijing Winter from 2015 to 2021</section>
+            <section class="paper-authors">Yunzhi Xu, Tao Ma, Haoqi Wang, Shaojie Song, Qipeng Qu, Shuxiao Wang, Jingkun Jiang, Xiaolin Duan, Xin Li, Guiqian Tang, Lidan Zhu, Qinqin Zhang, Yongliang Ma, Takashi Kimoto, Tao Huang, Taicheng An, Fengkui Duan, Kebin He</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c01170" target="_blank">https://doi.org/10.1021/acs.est.5c01170</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶含水量</span>
+                        <span class="topic-tag">羟基甲磺酸盐</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c01170" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“2015年至2021年北京冬季气溶胶含水量驱动羟基甲磺酸盐变化”。论文主要关注北京冬季气溶胶中<b>羟基甲磺酸盐</b>（HMS）的变化及其影响因素。研究发现，在清洁空气行动的背景下，HMS的浓度变化与PM2.5、有机物和硫酸盐的变化趋势并不完全一致。研究强调了<b>气溶胶含水量</b>对HMS形成的重要影响，并指出不利的气象条件可能会抵消污染物减排对二次气溶胶形成的影响。研究结果对于理解清洁空气行动对二次气溶胶形成的影响具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A global classification dataset of daytime and nighttime marine low-cloud mesoscale morphology based on deep-learning methods</section>
+            <section class="paper-authors">Yuanyuan Wu, Jihu Liu, Yannian Zhu, Yu Zhang, Yang Cao, Kang-En Huang, Boyang Zheng, Yichuan Wang, Yanyun Li, Quan Wang, Chen Zhou, Yuan Liang, Jianning Sun, Minghuai Wang, Daniel Rosenfeld</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-3243-2025" target="_blank">https://doi.org/10.5194/essd-17-3243-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋低云</span>
+                        <span class="topic-tag">中尺度形态</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-3243-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“基于深度学习方法建立全球海面低云中尺度形态的日夜分类数据集”。论文主要研究了基于<b>深度学习方法</b>，利用<b>MODIS卫星数据</b>建立的<b>全球海洋低云</b>中尺度形态分类数据集。研究重点在于分析白天和夜晚不同云形态的分布、季节性变化以及云的特性。研究结果表明，闭合中尺度蜂窝对流云（MCC）在夜间出现的频率显著增加，而抑制积云（Cu）的频率显著降低。有组织的MCC云和层状云表现出明显的季节性变化。该数据集可以为进一步研究云与气候过程的相互作用提供重要基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">CLUBB Reduces Low‐Cloud Dependency on Shallow Convective Mixing in the Community Atmosphere Model: Insight From Stable Water Isotopes</section>
+            <section class="paper-authors">Michelle Frazer, Adriana Bailey, Jesse Nusbaumer, Jun Hu, Kyle Niezgoda, Sylvia Dee</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042053" target="_blank">https://doi.org/10.1029/2024JD042053</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">低云</span>
+                        <span class="topic-tag">浅对流混合</span>
+                        <span class="topic-tag">气候反馈</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042053" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“CLUBB 减少了共同体大气模型中低云对浅对流混合的依赖性：来自稳定水同位素的见解”。该研究论文探讨了通用环流模型（GCMs）中<b>浅对流混合</b>对<b>低云气候反馈</b>的影响，并着重分析了CAM模型中CLUBB方案对云-混合关系的影响。论文利用<b>水汽同位素比率</b>来表征浅对流混合的强度，并将其与卫星观测进行比较。研究发现，CLUBB方案通过模拟垂直速度分布的偏度，产生更孤立但更强的湿上升气流，从而降低了格点平均低云量，同时保持了边界层和自由对流层之间有效的水文连通性。研究结果对于改进气候模型和理解云的物理过程具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Oxidation Flow Reactor and Its Application in Secondary Organic Aerosol Formation in Laboratory Studies</section>
+            <section class="paper-authors">Xueqi Ma, Kun Li, Shan Zhang, Zhaomin Yang, Li Xu, Narcisse Tsona Tchinda, Lin Du</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00047" target="_blank">https://doi.org/10.1021/acsestair.5c00047</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二次有机气溶胶</span>
+                        <span class="topic-tag">氧化流动反应器</span>
+                        <span class="topic-tag">大气氧化机制</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00047" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“氧化流动反应器及其在实验室研究二次有机气溶胶形成中的应用”。该论文主要研究了<b>氧化流动反应器</b>（OFR）在模拟<b>二次有机气溶胶</b>（SOA）形成中的应用。论文综述了不同结构的 OFR，并比较了它们在研究生物和人为有机气体前体物形成 SOA 方面的进展。研究表明，OFR 对于理解 SOA 的形成机制和量化不同前体物对大气颗粒物形成的贡献至关重要。研究强调，由于对流层中 SOA 形成机制的复杂性，未来需要在 OFR 的设计以及复合系统下的大气氧化机制方面进行进一步研究。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Analysis of High‐Ozone Episodes Using a Chemical Metric Based on the Reactivities of Organic Precursors</section>
+            <section class="paper-authors">Duy‐Hieu Nguyen, Hsin‐Cheng Hsieh, Sheng‐Po Chen, Chang‐Feng Ou‐Yang, Chih‐Chung Chang, Wen‐Tzu Liu, Chieh‐Heng Wang, Jia‐Lin Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043921" target="_blank">https://doi.org/10.1029/2025JD043921</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧</span>
+                        <span class="topic-tag">光化学过程</span>
+                        <span class="topic-tag">空气质量老化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043921" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“基于有机前体物反应性的化学指标分析高臭氧事件”。该研究通过分析台湾北部城市<b>高臭氧事件</b>，探讨了本地<b>光化学过程</b>和亚洲大陆远距离输送污染的影响。研究利用<b>挥发性有机化合物</b>的比例，建立了一个光化学指标，用于评估区域空气质量的老化程度。研究发现，夏季的极端臭氧事件主要由本地光化学活动驱动，而春秋季则受到远距离输送的影响，导致臭氧基线升高。研究结果对于理解空气质量老化和臭氧形成具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Concentration changes of atmospheric F-gases and analysis of their potential sources at Zhongshan Station, Antarctica, 2021</section>
+            <section class="paper-authors">Ruiqi Nan, Biao Tian, Xingfeng Ling, Weijun Sun, Yixi Zhao, Dongqi Zhang, Chuanjin Li, Xin Wang, Jie Tang, Bo Yao, Minghu Ding</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2025-282" target="_blank">https://doi.org/10.5194/essd-2025-282</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氟化温室气体</span>
+                        <span class="topic-tag">大气成分</span>
+                        <span class="topic-tag">来源解析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2025-282" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“南极中山站2021年大气中氟化温室气体浓度变化及潜在来源分析”。论文主要关注<b>南极中山站</b>大气中11种<b>氟化温室气体</b>（F-gases）的浓度变化，并分析其潜在来源。研究使用了HYSPLIT模型进行后向轨迹和聚类分析，以及PMF模型进行源解析。研究结果表明，2021年中山站大部分氟化温室气体浓度显著增加，且高于其他两个南极站。来源分析表明，工业过程、制冷、灭火和电子产品是南极大气中氟化温室气体的主要贡献者。研究提供的数据集对于未来利用遥感数据验证和校准大气模型具有重要意义。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
