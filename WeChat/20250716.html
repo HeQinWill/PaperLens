@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/07/16</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A new generation aerosol optical depth dataset based on AVHRR data over China from 1981 to 2000</section>
+            <section class="paper-authors">Yahui Che, Jie Guang, Yong Xue, Gerrit de Leeuw, Lu She, Linlu Mei, Xingwei He, Ling Sun, Zhengqiang Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.114899" target="_blank">https://doi.org/10.1016/j.rse.2025.114899</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">AVHRR</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.114899" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《1981年至2000年中国地区基于AVHRR数据的新一代气溶胶光学厚度数据集》(A new generation aerosol optical depth dataset based on AVHRR data over China from 1981 to 2000) 提出了一种新的基于<b>AVHRR数据</b>的<b>气溶胶光学厚度（AOD）</b>反演算法，并利用该算法生成了1981年至2000年中国地区的AOD数据集。该研究通过改进地表反射率估计方法和动态NDVI搜索窗口，提高了AOD反演的准确性，尤其是在高AOD值区域。该数据集与地面观测数据和AVHRR Deep Blue AOD数据集进行了对比验证，结果表明该算法具有较好的可靠性。实验结果表明，59% 的 AOD 反演结果在 ±(0.05 + 0.25τAERONET) 的 EE 范围内，与 CMA BEM AOD（时间上）和 AVHRR DB（空间上）数据集具有良好的一致性，并具有利用现有数据集构建更长 AOD 气候数据记录的潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A new method to retrieve relative humidity profiles from a synergy of Raman lidar, microwave radiometer, and satellite</section>
+            <section class="paper-authors">Chengli Ji, Qiankai Jin, Feilong Li, Yuyang Liu, Zhicheng Wang, Jiajia Mao, Xiaoyu Ren, Yan Xiang, Wanlin Jian, Zhenyi Chen, Peitao Zhao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-3179-2025" target="_blank">https://doi.org/10.5194/amt-18-3179-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">相对湿度</span>
+                        <span class="topic-tag">拉曼激光雷达</span>
+                        <span class="topic-tag">卫星数据</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-3179-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《一种结合拉曼激光雷达、微波辐射计和卫星数据的新方法用于反演相对湿度廓线》(A new method to retrieve relative humidity profiles from a synergy of Raman lidar, microwave radiometer, and satellite) 提出了一种新的算法，通过结合<b>拉曼激光雷达</b>、<b>微波辐射计</b>和<b>卫星数据</b>，来获取<b>相对湿度（RH）</b>的垂直廓线。研究在中国47个站点进行了验证，结果表明该方法与探空气球测量结果具有良好的相关性。该方法集成了多种遥感技术，包括地基和星载遥感数据。论文还分析了三个代表性站点的季节性特征，揭示了地理位置和高度对相对湿度垂直分布的影响。此外，研究还利用相对湿度的高度-时间演变来区分冰雹和强降水。这项研究对大气湿度垂直分布的精确测量具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A High-Resolution Satellite Survey of Methane Emissions from 60 North American Municipal Solid Waste Landfills</section>
+            <section class="paper-authors">Max J. Krause, Eben D. Thoma, Ami Bryant, Halley Brantley, Megan MacDonald, Roger Green, Susan Thorneloe</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c01409" target="_blank">https://doi.org/10.1021/acs.est.5c01409</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">垃圾填埋场</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c01409" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《北美60个城市固体废物填埋场甲烷排放的高分辨率卫星调查》(A High-Resolution Satellite Survey of Methane Emissions from 60 North American Municipal Solid Waste Landfills) 利用高分辨率卫星遥感技术，特别是<b>短波红外传感器</b>，对北美城市<b>固体废物垃圾填埋场甲烷排放</b>进行了调查。通过卫星观测，评估了垃圾填埋场的甲烷排放量，并将其与气体收集系统的数据进行比较，以评估<b>气体收集效率</b>。研究使用了九颗高分辨率（30米像素）卫星，进行了多次测量活动，覆盖了60个活跃的城市固体废物填埋场。研究报告了在2021年至2024年期间，从697个站点观测中获得的457个独立羽流和247个未检测到的观测结果。测量结果表明，实际收集效率与温室气体清单中的模型数据存在差异。这项研究为甲烷排放监测和温室气体清单编制提供了有价值的信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Air Quality Impacts of the January 2025 Los Angeles Wildfires: Insights from Public Data Sources</section>
+            <section class="paper-authors">Claire Schollaert, Rachel Connolly, Lara Cushing, Michael Jerrett, Tianjia Liu, Miriam Marlier</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.estlett.5c00486" target="_blank">https://doi.org/10.1021/acs.estlett.5c00486</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">卫星传感器</span>
+                        <span class="topic-tag">野火</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.estlett.5c00486" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《2025年1月洛杉矶野火对空气质量的影响：来自公共数据来源的见解》(Air Quality Impacts of the January 2025 Los Angeles Wildfires: Insights from Public Data Sources) 分析了2025年1月<b>洛杉矶野火</b>对空气质量的影响。它利用了多种公开数据来源，包括地面监测站（PM2.5和NO2）、<b>低成本传感器（PurpleAir）</b>、<b>卫星传感器（TEMPO和TROPOMI）</b>以及烟雾羽流数据（HMS），来评估野火期间的空气质量状况。研究人员评估了监管监测站、PurpleAir低成本传感器以及TEMPO和TROPOMI卫星传感器的数据。研究结果强调了整合多种数据来源以改善公共健康信息传播的重要性，并突出了不同数据源在空间、时间分辨率上的差异。这项研究为野火事件期间的空气质量评估和公共健康管理提供了有价值的参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impact of post-monsoon crop residue burning on PM2.5 over northern India: optimizing emissions using a high-density in situ surface observation network</section>
+            <section class="paper-authors">Mizuo Kajino, Kentaro Ishijima, Joseph Ching, Kazuyo Yamaji, Rio Ishikawa, Tomoki Kajikawa, Tanbir Singh, Tomoki Nakayama, Yutaka Matsumi, Koyo Kojima, Taisei Machida, Takashi Maki, Prabir K. Patra, Sachiko Hayashida</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-7137-2025" target="_blank">https://doi.org/10.5194/acp-25-7137-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">作物残茬燃烧</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-7137-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《后季风时期作物残留燃烧对印度北部PM2.5的影响：利用高密度原位表面观测网络优化排放》 (Impact of post-monsoon crop residue burning on PM2.5 over northern India: optimizing emissions using a high-density in situ surface observation network) 探讨了印度北部季风后<b>作物残茬燃烧</b>对PM2.5浓度的影响。研究人员结合区域气象化学模型（NHM(WRF)-Chem）和高密度地面观测网络（CUPI-G），对2022年11月1日至15日的作物残茬燃烧排放量进行了优化。研究发现，旁遮普邦的CUPI-G数据对于优化作物残茬燃烧排放至关重要。优化后的排放清单（OFEv1.0）表明，之前的卫星火灾观测数据严重低估了PM2.5的排放量，有时甚至因云层或浓烟遮蔽而完全无法观测。研究结果表明，作物残茬燃烧对旁遮普-哈里亚纳-德里地区PM2.5的平均贡献为30%-34%，在污染物从旁遮普邦输送到哈里亚纳邦和德里地区的羽流事件期间，这一比例上升到50%-56%。该研究强调了<b>高密度地面观测网络</b>在优化排放清单和评估空气污染影响方面的重要性，同时也揭示了卫星观测的局限性。研究还分析了昼夜排放量的差异，表明<b>日变化</b>可能因日而异。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Near-Real-Time Emission Characterization for Major Industrial Sectors Using Multisatellite and Base-Year Emission Inventories</section>
+            <section class="paper-authors">Jiashu Ye, Huilin Liu, Tong Wu, Weiwen Chen, Zhijiong Huang, Manni Zhu, Yuanqian Xu, Zhuangmin Zhong, Duohong Chen, Junyu Zheng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.estlett.5c00462" target="_blank">https://doi.org/10.1021/acs.estlett.5c00462</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">工业排放</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">排放清单</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.estlett.5c00462" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《利用多卫星和基准年排放清单对主要工业部门进行近实时排放特征分析》(Near-Real-Time Emission Characterization for Major Industrial Sectors Using Multisatellite and Base-Year Emission Inventories) 主要关注使用<b>多卫星观测</b>和<b>基准年排放清单</b>，对主要工业部门的<b>近实时排放特征</b>进行分析。它利用卫星观测的火灾辐射功率（FRP）数据，结合排放清单，来识别工业排放源并估算排放量，特别是二氧化硫（SO2）和氮氧化物（NOx）的排放。研究人员开发了火灾辐射能量（FRE）与排放响应模型，将卫星衍生的FRE与已识别源的排放数据联系起来。结果表明，该方法可以有效识别高排放工业部门，例如水泥、陶瓷和钢铁行业，扩展了可检测源的范围，同时减少了对连续排放监测系统（CEMS）数据的依赖。这项研究提供了一个新的框架，支持工业排放的及时更新和改进的污染控制策略。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Seasonal CO2 Cycle at the Martian Poles Revealed by Sounding Radar</section>
+            <section class="paper-authors">Erica R. Jawin, Bruce A. Campbell, Cyril Grima</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL116047" target="_blank">https://doi.org/10.1029/2025GL116047</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二氧化碳</span>
+                        <span class="topic-tag">火星两极</span>
+                        <span class="topic-tag">雷达探测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL116047" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《探测雷达揭示火星两极季节性CO2循环》(Seasonal CO2 Cycle at the Martian Poles Revealed by Sounding Radar) 利用<b>雷达探测数据</b>，首次对<b>火星两极</b>的<b>季节性二氧化碳</b>霜冻循环进行了全面的观测和记录。论文分析了SHARAD雷达16年的数据，揭示了火星极地地区二氧化碳霜冻的沉积和消融过程，以及雷达信号强度随昼夜变化的规律。论文报告了 SHAllow RADar (SHARAD) 数据中极地季节性变化的首次可靠测量，基于对 16 年数据集的校准。在每个极点，雷达表面回波功率每年变化约 3-4 dB（功率增加 2-2.5 倍），具有明显的时域信号，其中功率在夜间降低，在白天增加，尽管存在空间异质性。该研究代表了使用雷达探空仪数据对火星两极的完整季节性 CO2 霜循环的首次记录。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A new versatile dropsonde for atmospheric soundings – the KITsonde</section>
+            <section class="paper-authors">Christoph Kottmeier, Andreas Wieser, Ulrich Corsmeier, Norbert Kalthoff, Philipp Gasch, Bastian Kirsch, Dörthe Ebert, Zbigniew Ulanowski, Dieter Schell, Harald Franke, Florian Schmidmer, Johannes Frielingsdorf, Thomas Feuerle, Rudolf Hankers</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-3161-2025" target="_blank">https://doi.org/10.5194/amt-18-3161-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">探空仪</span>
+                        <span class="topic-tag">大气探测</span>
+                        <span class="topic-tag">气象要素</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-3161-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《用于大气探测的新型多功能投掷式探空仪 – KITsonde》(A new versatile dropsonde for atmospheric soundings – the KITsonde) 介绍了一种新型的适用于研究飞机的<b>投掷式探空仪</b>系统（KITsonde）。该系统可以同时投掷最多四个探空仪，并能同时传输多达30个探空仪的数据。KITsonde能够高分辨率地测量温度、湿度、气压和风等<b>气象要素</b>，并且可以集成测量放射性和粒子的传感器。通过多次实验验证了该系统的可靠性和数据质量。文章描述了该探空仪的设计特点，包括模块化设计、标准的Graw DFM-17无线电探空仪的传感器元件以及可选的卫星通信模块。它可以通过标准投掷式探空仪分配器从涡轮螺旋桨飞机和喷气式飞机上投放。文中还提及在阿根廷、德国等地的实际应用，例如在撒哈拉沙尘事件中使用该探空仪进行粒子测量，以及测量放射性。KITsonde系统的开发为研究大气过程提供了一种强大的工具。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Interpreting Measurements of the Global Diurnal Variation of Fine Particulate Matter Using the GEOS-Chem Model</section>
+            <section class="paper-authors">Yanshun Li, Randall V. Martin, Yuanjian Zhang, Dandan Zhang, Aaron van Donkelaar, Haihui Zhu, Jun Meng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00068" target="_blank">https://doi.org/10.1021/acsestair.5c00068</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">GEOS-Chem模型</span>
+                        <span class="topic-tag">日变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00068" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《使用GEOS-Chem模型解释全球细颗粒物日变化测量》(Interpreting Measurements of the Global Diurnal Variation of Fine Particulate Matter Using the GEOS-Chem Model) 利用<b>GEOS-Chem全球模型</b>，结合<b>全球分布的PM2.5日变化</b>测量数据，来解释细颗粒物（PM2.5）的日变化规律。研究通过调整人为排放、改进湿沉降过程、修正边界层混合系数等方法，优化模型以减少模拟偏差。结果表明，早晨PM2.5的峰值很可能是由于日出后气溶胶亚网格垂直梯度与熏蒸的变化所驱动，浓度降低到傍晚是由边界层混合以及半挥发性气溶胶向气相的热力学分配所驱动，傍晚浓度增加是由增强的二次化学生产和持续的主要人为排放驱动，整夜持续高浓度是由排放、化学生产以及边界层混合和沉降之间的平衡驱动。这项研究为理解全球PM2.5日变化规律提供了新的见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Learning to Simulate Aerosol Dynamics with Graph Neural Networks</section>
+            <section class="paper-authors">Fabiana Ferracina, Payton Beeler, Mahantesh Halappanavar, Bala Krishnamoorthy, Marco Minutoli, Laura Fierce</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.4c00261" target="_blank">https://doi.org/10.1021/acsestair.4c00261</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶动力学</span>
+                        <span class="topic-tag">图神经网络</span>
+                        <span class="topic-tag">化学动态</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.4c00261" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文《用图神经网络学习模拟气溶胶动力学》(Learning to Simulate Aerosol Dynamics with Graph Neural Networks) 介绍了一种名为<b>GLAD</b>的基于<b>图神经网络</b>的模型，用于加速气溶胶动力学模拟。该模型旨在替代计算成本高昂的粒子解析模型，通过学习气溶胶粒子的化学动态过程，实现对<b>气溶胶演变</b>的快速预测。GLAD通过将每个粒子表示为图中的一个节点，并利用图神经网络学习化学动态过程。实验结果表明，该框架能够准确学习化学动态，并在不同场景中进行泛化，实现高效的训练和预测时间。该模型的结果在硫酸凝结到由硫酸盐、黑碳、有机碳和水组成的颗粒物上的简单气溶胶系统中进行了验证。这项研究为快速模拟气溶胶动力学提供了一种有前景的方法。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Retrieval of bulk hygroscopicity from PurpleAir PM2.5 sensor measurements</section>
+            <section class="paper-authors">Jillian Psotka, Emily Tracey, Robert J. Sica</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-3135-2025" target="_blank">https://doi.org/10.5194/amt-18-3135-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">气溶胶吸湿性</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-3135-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《从PurpleAir PM2.5传感器测量中检索整体吸湿性》(Retrieval of bulk hygroscopicity from PurpleAir PM2.5 sensor measurements) 探讨了利用低成本的<b>PurpleAir传感器</b>进行空气质量监测的方法。论文提出了一种新的校正方法，该方法不仅可以校正PurpleAir传感器PM2.5的测量值，还可以估计<b>气溶胶的吸湿增长特性</b>。研究人员利用最优估计方法（OEM），将PurpleAir传感器的测量结果与安大略省空气质量监测站的校准数据进行对比，显著提高了PurpleAir传感器数据的准确性。此外，该方法还能够估算季节性的整体吸湿性值，这些值与先前研究中确定的空气颗粒物的整体吸湿性范围一致。这项研究表明，利用大量<b>低成本传感器网络</b>可以获得新的气溶胶产品，为空气质量监测提供了一种经济有效的解决方案。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Machine-learning-assisted inference of the particle charge fraction and the ion-induced nucleation rates during new particle formation events</section>
+            <section class="paper-authors">Pan Wang, Yue Zhao, Jiandong Wang, Veli-Matti Kerminen, Jingkun Jiang, Chenxi Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-7431-2025" target="_blank">https://doi.org/10.5194/acp-25-7431-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">新粒子形成</span>
+                        <span class="topic-tag">离子诱导成核</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-7431-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《机器学习辅助推断新粒子形成事件中的粒子带电比例和离子诱导成核率》 (Machine-learning-assisted inference of the particle charge fraction and the ion-induced nucleation rates during new particle formation events) 主要关注大气中<b>新粒子形成</b>过程中粒子带电状态的演变。研究人员开发了一个数值模型，用于模拟新粒子的带电动力学，并利用<b>残差神经网络</b>构建了两个回归模型。第一个模型（ResFWD）用于预测已知离子诱导成核率（FIIN）情况下，增长粒子的带电状态；第二个模型（ResBWD）反向运行，用于根据特定尺寸粒子的带电比例来估计FIIN。研究结果表明，粒子增长速率和离子浓度对粒子带电状态有显著影响，在高带电粒子浓度下，离子-离子复合变得重要。通过与基准模拟的良好一致性验证了该方法的潜力，并揭示了ResFWD和基准模拟对输入参数噪声具有相似的敏感性。本研究为评估大气研究中的<b>离子诱导成核</b>提供了一种新方法，并深入了解了大气新粒子的带电动力学。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A Framework for Optimizing Continuous Methane Monitoring System Configuration for Minimal Blind Time: Application and Insights from over 100 Operational Oil and Gas Facilities</section>
+            <section class="paper-authors">Noah Metzger, Ali Lashgari, Umair Esmail, David Ball, Nathan Eichenlaub</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.4c00280" target="_blank">https://doi.org/10.1021/acsestair.4c00280</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷监测</span>
+                        <span class="topic-tag">连续监测系统</span>
+                        <span class="topic-tag">传感器网络</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.4c00280" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《优化连续甲烷监测系统配置以实现最小盲区时间：来自100多个运行中的油气设施的应用和见解》(A Framework for Optimizing Continuous Methane Monitoring System Configuration for Minimal Blind Time: Application and Insights from over 100 Operational Oil and Gas Facilities) 关注的是使用<b>固定点传感器</b>对<b>甲烷</b>进行<b>连续监测</b>的系统。它提出了一个优化监测系统配置的框架，旨在最小化监测盲区时间，即系统无法满足每12小时量化排放的监管要求的时间段。该研究通过在124个油气生产设施的应用，评估了不同传感器网络密度对监测性能的影响。文章介绍了用于优化 CMS 配置的模块化框架，包括传感器密度（传感器数量）和接近最佳位置。实验结果表明，当放置在接近最佳布置中时，3传感器网络可以实现小于10％的盲区时间和大约82分钟的平均检测时间。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Improving the quantification of peak concentrations for air quality sensors via data weighting</section>
+            <section class="paper-authors">Caroline Frischmon, Jonathan Silberstein, Annamarie Guth, Erick Mattson, Jack Porter, Michael Hannigan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-3147-2025" target="_blank">https://doi.org/10.5194/amt-18-3147-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量传感器</span>
+                        <span class="topic-tag">峰值浓度</span>
+                        <span class="topic-tag">数据加权</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-3147-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《通过数据加权改进空气质量传感器峰值浓度的量化》(Improving the quantification of peak concentrations for air quality sensors via data weighting) 关注于使用<b>数据加权</b>方法来提高空气质量传感器对<b>峰值浓度</b>的量化精度。传统校准模型通常低估峰值浓度，这在排放事件检测等应用中是一个主要问题。本文通过增加数据权重，特别是针对间歇性、瞬态事件产生的数据，评估了数据加权对总挥发性有机化合物 (VOCs)、一氧化碳 (CO) 和甲烷 (CH4) 三种不同污染物的影响。研究人员使用了 sigmoid 和分段加权函数，并探讨了基本模型选择（多线性回归、MLR 与随机森林、RF 模型）的影响。结果表明，与未加权的数据相比，当使用数据加权时，所有三个数据集的<b>污染物峰值</b>的误差和偏差都显著降低。然而，数据加权也可能在基线污染物浓度下产生更大的误差。研究强调了调整输入加权函数以更好地预测峰值浓度数据的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A new set of indicators for model evaluation  complementing FAIRMODE's modelling quality objective (MQO)</section>
+            <section class="paper-authors">Alexander de Meij, Cornelis Cuvelier, Philippe Thunis, Enrico Pisoni</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-4231-2025" target="_blank">https://doi.org/10.5194/gmd-18-4231-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量模型</span>
+                        <span class="topic-tag">模型评估</span>
+                        <span class="topic-tag">CAMS</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-4231-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《一套用于模型评估的新指标，补充 FAIRMODE 的建模质量目标 (MQO)》(A new set of indicators for model evaluation complementing FAIRMODE's modelling quality objective (MQO)) 评估了用于评估空气质量模型的指标。该研究使用了<b>哥白尼大气监测服务（CAMS）</b>的模型数据，并将其与观测数据进行比较，以评估模型在计算NO2、PM2.5、PM10和O3等关键空气污染物浓度方面的表现。研究结果揭示了模型在特定污染物和情景下的局限性，并建议重新评估某些指标的严格性。这项研究开发了一套<b>模型质量</b>和<b>模型性能</b>指标，评估了CAMS模型在计算关键空气污染物浓度方面的表现。通过对比模型输出与观测数据，揭示了模型在交通站点NO2浓度模拟的困难，以及PM2.5、PM10和O3模拟中存在的偏差和季节性梯度问题。研究结果为改进空气质量模型提供了有价值的参考。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
