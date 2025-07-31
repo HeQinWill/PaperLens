@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/07/31</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Satellite remote sensing capturing intense ozone production over marginal seas in East Asia: evident influence on air quality in coastal cities</section>
+            <section class="paper-authors">Jin Ye, Qihou Hu, Qin Gao, Ran Zhao, Wenjing Su, Chengxin Zhang, Xiaohan Wang, Ziwei Li, Cheng Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121448" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121448</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>卫星遥感</b></span>
+                        <span class="topic-tag"><b>臭氧产生</b></span>
+                        <span class="topic-tag"><b>空气质量</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121448" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">论文《<p><b>卫星遥感捕捉到东亚边缘海域强烈的臭氧产生：对沿海城市空气质量的明显影响</b></p>》指出，在东亚地区，渤海湾是低层对流层臭氧的重要中心。海洋大气显示出比陆地更高的臭氧产生率。陆地和海洋之间的气团交换在沿海地区大气污染物的迁移和转化中起着至关重要的作用。卫星捕捉到陆地和海洋之间臭氧污染的相互作用过程。本研究首次基于卫星观测，捕捉到陆地和海洋大气之间O3及其前体物的交换过程：陆基前体物被输送到海洋，在适宜的条件下形成 O3，然后被输送回陆地。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Considering sectoral warming and cooling emissions and their lifetimes can improve climate change mitigation policies</section>
+            <section class="paper-authors">B. Buma, I. Ocko, B. Walkowiak, Y. Xu, M. Lackner, S. S. Sartzetakis, A. Alpert, S. Dhungel</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01131-8" target="_blank">https://doi.org/10.1038/s41612-025-01131-8</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>气候变化</b></span>
+                        <span class="topic-tag"><b>温室气体</b></span>
+                        <span class="topic-tag"><b>冷却排放</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01131-8" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文《<p><b>考虑部门变暖和冷却排放及其生命周期可以改善气候变化减缓政策</b></p>》认为需要考虑部门增温和降温排放及其生命周期可以改善气候变化减缓政策。人为温室气体排放通常是增温/降温和短寿命/长寿命物种的混合物。研究评估了自 1750 年以来七个经济部门排放的 33 种物种及其对当今变暖的影响。然后，评估了当今的部门排放如何影响未来的温度。结论是，成功限制近期和长期变暖需要考虑这种相互作用，并加快气候雄心，以抵消冷却剂的任何下降。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Black carbon emissions generally underestimated in the global south as revealed by globally distributed measurements</section>
+            <section class="paper-authors">Yuxuan Ren, Christopher R. Oxford, Dandan Zhang, Xuan Liu, Haihui Zhu, Ann M. Dillner, Warren H. White, Rajan K. Chakrabarty, Sina Hasheminassab, David J. Diner, Emmie J. Le Roy, Joshin Kumar, Valerie Viteri, Keyao Song, Clement Akoshile, Omar Amador-Muñoz, Araya Asfaw, Rachel Ying-Wen Chang, Diana Francis, Paterne Gahungu, Rebecca M. Garland, Michel Grutter, Jhoon Kim, Kristy Langerman, Pei-Chen Lee, Puji Lestari, Olga L. Mayol-Bracero, Mogesh Naidoo, Narendra Nelli, Norm O’Neill, Sang Seo Park, Abdus Salam, Bighnaraj Sarangi, Yoav Schechner, Robyn Schofield, Sachchida N. Tripathi, Eli Windwer, Ming-Tsang Wu, Qiang Zhang, Yinon Rudich, Michael Brauer, Randall V. Martin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-025-62468-5" target="_blank">https://doi.org/10.1038/s41467-025-62468-5</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>黑碳排放</b></span>
+                        <span class="topic-tag"><b>SPARTAN</b></span>
+                        <span class="topic-tag"><b>全球南方</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-025-62468-5" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究《<p><b>全球南方地区的黑碳排放普遍被低估，这由全球分布的测量结果揭示</b></p>》使用来自地面颗粒物网络 (SPARTAN) 和补充测量网络的全球分布的黑碳质量测量结果，评估了当前的黑碳排放清单。我们使用全球化学传输模型 (GEOS-Chem) 的高性能配置 (GCHP) 进行高分辨率模拟，以将黑碳排放量与环境浓度相关联，以便与测量结果进行比较。这些发现促使人们重新关注对来自中低收入国家的黑碳排放进行描述这项具有挑战性的任务。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Bridging the Gap Between Total Peroxyl Radical Observations and Models by Measuring OH Reactivity to Improve Estimates of Ozone Production: A Case Study From the 24th Winter Olympics Games</section>
+            <section class="paper-authors">Nana Wei, Weixiong Zhao, Tiantian Zhang, Jianshu Wang, Chong Zhang, Yi Chen, Xuena Yu, Weili Lin, Chunxiang Ye, Christa Fittschen, Weijun Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043138" target="_blank">https://doi.org/10.1029/2024JD043138</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>臭氧生成</b></span>
+                        <span class="topic-tag"><b>自由基</b></span>
+                        <span class="topic-tag"><b>化学反应</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043138" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《<p><b>通过测量OH反应性来弥合总过氧自由基观测与模型之间的差距，以改进臭氧生产的估计：来自第24届冬季奥林匹克运动会的案例研究</b></p>》探讨了<b>总羟基反应性（k′OH）</b>和<b>总过氧自由基（RO2*）</b>对<b>臭氧生成</b>的影响。通过在北京冬奥会期间的观测数据，发现现有大气模型低估了k′OH和RO2*的浓度，导致臭氧生成过程不明确。通过引入未知<b>挥发性有机化合物（VOCs）</b>的氧化化学反应，将k′OH约束到实测值，有效缩小了模型和实测RO2*之间的差距。考虑实测k′OH和RO2*后，臭氧生成潜力增加。结论指出同时测量k′OH和RO2*能更准确地控制臭氧。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Mechanisms of high-temperature ozone suppression in Eastern China: a meteorological perspective</section>
+            <section class="paper-authors">Nan Li, Jianping Liang, Wanwan Liu, Chengkai Gu, Jiandong Li, Yang Xu, Keqin Tang, Hong Liao, Jianlin Hu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/adf1ba" target="_blank">https://doi.org/10.1088/1748-9326/adf1ba</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>臭氧抑制</b></span>
+                        <span class="topic-tag"><b>气象因素</b></span>
+                        <span class="topic-tag"><b>区域差异</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/adf1ba" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《<p><b>气象视角下中国东部高温臭氧抑制机制</b></p>》探讨了中国东部地区在<b>高温</b>条件下<b>臭氧（O3）抑制</b>的机制。研究发现，长江三角洲（YRD）和珠江三角洲（PRD）地区<b>臭氧</b>受到显著抑制，而京津冀（BTH）地区则较少。通过<b>统计分析</b>和<b>机器学习方法</b>，确定了<b>辐射</b>、<b>相对湿度（RH）</b>和<b>行星边界层高度（PBLH）</b>是关键的气象驱动因素。机制分析表明，<b>RH</b>是区域差异的主要因素，而<b>PBLH</b>通过扩散和输送过程调节<b>O3</b>浓度。研究强调，YRD和PRD地区在高温日出现抑制性气象条件（高RH和低PBLH）的频率远高于BTH地区。论文结论指出，该研究为理解区域差异以及制定针对性的臭氧污染控制策略具有重要意义，并为应对气候变暖和热浪日益频繁的背景下，区域性臭氧污染控制策略提供了重要的科学支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">pyVPRM: a next-generation vegetation photosynthesis  and respiration model for the post-MODIS era</section>
+            <section class="paper-authors">Theo Glauch, Julia Marshall, Christoph Gerbig, Santiago Botía, Michał Gałkowski, Sanam N. Vardag, André Butz</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-4713-2025" target="_blank">https://doi.org/10.5194/gmd-18-4713-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>碳交换</b></span>
+                        <span class="topic-tag"><b>卫星数据</b></span>
+                        <span class="topic-tag"><b>生态模型</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-4713-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文《<p><b>pyVPRM：后MODIS时代的下一代植被光合作用和呼吸模型</b></p>》介绍了一种名为<b>pyVPRM</b>的新一代<b>植被光合作用和呼吸模型</b>，用于估算<b>大气与生物圈之间的碳交换</b>。该模型利用包括<b>MODIS</b>、<b>Sentinel-2</b>和<b>VIIRS</b>在内的多种<b>卫星数据</b>以及<b>气象变量</b>，对<b>总初级生产力</b>和<b>呼吸作用</b>进行建模，从而计算<b>净生态系统交换</b>。该模型可用于<b>大气传输建模</b>和<b>生物圈碳预算研究</b>。该工具使用来自 Sentinel-2、MODIS 和 VIIRS 的卫星数据，以及来自哥白尼动态土地覆盖集合 3 和 ESA WorldCover 的全球高分辨率土地覆盖分类图。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Significant Contributions of Regional Transport to Sulfate Aerosols During Haze Events in Northern China Plain: Constrained by Sulfur Isotopic Compositions</section>
+            <section class="paper-authors">Yu‐Chi Lin, Mei‐Yi Fan, Mingyuan Yu, Abudurexiati Abulimiti, Feng Xie, Rongshuang Xu, Yan‐Lin Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043716" target="_blank">https://doi.org/10.1029/2025JD043716</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>硫酸盐气溶胶</b></span>
+                        <span class="topic-tag"><b>区域传输</b></span>
+                        <span class="topic-tag"><b>雾霾事件</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043716" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《<p><b>华北平原雾霾事件期间区域传输对硫酸盐气溶胶的显着贡献：受硫同位素组成的约束</b></p>》主要探讨了<b>华北平原雾霾事件</b>中<b>区域传输</b>对<b>硫酸盐气溶胶</b>的贡献。通过测量<b>硫酸盐的硫同位素比率</b>，区分了本地排放和区域传输的硫酸盐。研究结果表明，区域传输，特别是来自高二氧化硫排放区域的<b>煤炭燃烧</b>，对雾霾事件中的<b>硫酸盐浓度</b>有显著影响。发现表明，从当地和区域煤炭燃烧中严格控制 SO2 排放以及从钢铁行业控制 TMI 排放对于减少华北平原城市中的硫酸盐浓度至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Radiative Fluxes Over the Himalayan Region: Evaluating the Parameterization Schemes and Exploring the Potential of the XGBoost Machine Learning Tool for Downward Longwave Radiation</section>
+            <section class="paper-authors">Mayank Kumar Chauhan, Narendra Singh, Jaydeep Singh, Akanksha Rajput, Hemwati Nandan, K. Rajeev, N. V. P. Kiran Kumar</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043115" target="_blank">https://doi.org/10.1029/2024JD043115</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>辐射通量</b></span>
+                        <span class="topic-tag"><b>长波辐射</b></span>
+                        <span class="topic-tag"><b>机器学习</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043115" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《<p><b>喜马拉雅地区辐射通量：评估参数化方案并探索 XGBoost 机器学习工具对向下长波辐射的潜力</b></p>》主要关注<b>喜马拉雅地区</b>的<b>辐射通量</b>，特别是<b>向下长波辐射</b>。论文通过分析不同天气条件（晴朗、多云、下雨）下的<b>短波和长波辐射分量</b>，评估了多种<b>参数化方案</b>的性能。此外，论文还探索了使用 <b>XGBoost 机器学习算法</b>预测向下长波辐射的潜力，并表明该算法在复杂地形下优于传统方案。研究结果强调了机器学习方法在复杂地形中辐射通量模拟中的潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Influence of nitrogen oxides and volatile organic compounds emission changes on tropospheric ozone variability, trends and radiative effect</section>
+            <section class="paper-authors">Suvarna Fadnavis, Yasin Elshorbany, Jerald Ziemke, Brice Barret, Alexandru Rap, P. R. Satheesh Chandran, Richard J. Pope, Vijay Sagar, Domenico Taraborrelli, Eric Le Flochmoen, Juan Cuesta, Catherine Wespes, Folkert Boersma, Isolde Glissenaar, Isabelle De Smedt, Michel Van Roozendael, Hervé Petetin, Isidora Anglou</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8229-2025" target="_blank">https://doi.org/10.5194/acp-25-8229-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>流层臭氧</b></span>
+                        <span class="topic-tag"><b>氮氧化物</b></span>
+                        <span class="topic-tag"><b>辐射效应</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8229-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《<p><b>氮氧化物和挥发性有机化合物排放变化对流层臭氧变异性、趋势和辐射效应的影响</b></p>》探讨了<b>氮氧化物（NOx）</b>和<b>挥发性有机化合物（VOCs）</b>排放变化对<b>流层臭氧</b>变异性、趋势和<b>辐射效应</b>的影响。研究使用<b>卫星观测数据（OMI/MLS）</b>和<b>化学气候模型（ECHAM6–HAMMOZ）</b>评估了1998-2019年期间的变化。结果表明，NOx的排放变化对流层臭氧光化学状态的影响比VOCs更大，且人为排放的NOx对流层臭氧辐射效应的影响也比VOCs显著。研究结论强调了人为排放的<b>NOx</b>在影响<b>流层臭氧</b>和<b>辐射效应</b>中的重要作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Modeling Daily Plume Specific Smoke Concentrations for Health Effects Studies with Estimates of Fire Size, Plume Age, and Fuel Type</section>
+            <section class="paper-authors">Sam D. Faulstich, Matthew J. Strickland, Yan Liu, Marcela Loría-Salazar, Xia Sun, Ash B. Cale, Heather A. Holmes</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00033" target="_blank">https://doi.org/10.1021/acsestair.5c00033</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>烟雾浓度</b></span>
+                        <span class="topic-tag"><b>PM2.5</b></span>
+                        <span class="topic-tag"><b>扩散模型</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00033" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《<p><b>利用火灾规模、烟羽年龄和燃料类型的估算来模拟每日特定烟羽的烟雾浓度，用于健康影响研究</b></p>》旨在<b>模拟每日特定烟羽的烟雾浓度</b>，用于<b>健康影响研究</b>。它结合了<b>火灾规模</b>、<b>烟羽年龄</b>和<b>燃料类型</b>等因素，使用<b>大气扩散模型</b>来模拟烟雾的传播和浓度，并使用<b>贝叶斯时间序列模型</b>来分离地面监测器中烟雾特定的<b>PM2.5</b>部分。该方法可以潜在地与遥感数据结合使用，以提高烟雾浓度估计的准确性。总而言之，这项建模工作为评估烟雾暴露的空间变化和调查火灾属性在健康研究中的作用提供了机会。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Interpretation of mass spectra by a Vocus proton-transfer-reaction mass spectrometer (PTR-MS) at an urban site: insights from gas chromatographic pre-separation</section>
+            <section class="paper-authors">Ying Zhang, Yuwei Wang, Chuang Li, Yueyang Li, Sijia Yin, Megan S. Claflin, Brian M. Lerner, Douglas Worsnop, Lin Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-3547-2025" target="_blank">https://doi.org/10.5194/amt-18-3547-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>挥发性有机物</b></span>
+                        <span class="topic-tag"><b>PTR-MS</b></span>
+                        <span class="topic-tag"><b>城市空气</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-3547-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《<p><b>通过气相色谱预分离法解读城市站点Vocus质子转移反应质谱(PTR-MS)的质谱</b></p>》探讨了使用<b>质子转移反应质谱（PTR-MS）</b>技术在<b>城市环境</b>中对<b>挥发性有机化合物（VOCs）</b>进行定量分析的方法。通过将<b>气相色谱（GC）</b>与<b>PTR-MS</b>结合，研究能够更准确地识别和量化复杂的城市空气中的VOCs种类。研究结果对改进PTR-MS测量中VOCs的识别和定量具有重要意义。对176个个人 PTR 信号进行分类，确定可靠定量和增加不确定性的情况。此外，还建议利用非 MH+ 或非 I 类离子对芳香族化合物进行定量分析。这些发现强调了全面物种识别和可靠的 VOC 定量在 PTR 测量中的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Atmospheric Circulation Impacts on Terrestrial Atmospheric Nitrogen Deposition Under Growing Imbalance of Regional Nitrogen Emissions and Deposition</section>
+            <section class="paper-authors">Qiulan He, Ruowen Yang, Pierre Gentine, Shangfeng Chen, Lei Cai, Weiyu Shi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042988" target="_blank">https://doi.org/10.1029/2024JD042988</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>氮沉降</b></span>
+                        <span class="topic-tag"><b>大气环流</b></span>
+                        <span class="topic-tag"><b>ENSO</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042988" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《<p><b>大气环流对区域氮排放和沉降日益不平衡下的陆地大气氮沉降的影响</b></p>》探讨了<b>大气环流</b>对<b>陆地大气氮沉降</b>的影响，尤其是在区域氮排放和沉降日益不平衡的情况下。研究发现，大气<b>氮沉降</b>的变化与大气环流模式（尤其是<b>ENSO</b>）密切相关，ENSO通过改变全球温度、降水和大气环流，显著影响美国东部、东欧和东亚的氮沉降。这些发现强调了 ENSO 在塑造全球热点地区大气氮沉降中的作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Characterization and Comparison of Simulated Precipitation Efficiency From Global Storm‐Resolving Models Over the Asian Monsoon Region</section>
+            <section class="paper-authors">T. E. Makgoale, S. C. Sullivan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044228" target="_blank">https://doi.org/10.1029/2025JD044228</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>降水效率</b></span>
+                        <span class="topic-tag"><b>模型比较</b></span>
+                        <span class="topic-tag"><b>季风区</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044228" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究《<p><b>全球风暴解析模型模拟的亚洲季风区降水效率的特征与比较</b></p>》评估了<b>全球风暴解析模型</b>对<b>亚洲季风区热带降水</b>产生的模拟效果。它将模拟的<b>降水强度</b>与全球降水测量综合多卫星检索的观测结果进行比较，并将<b>云水路径</b>与ERA5再分析数据进行比较。该研究还考察了<b>降水效率指标</b>，并使用<b>冰水路径</b>和<b>液态水路径</b>对其进行相位划分，以了解哪些相驱动了降水效率的行为。使用显式深对流不足以产生一致的降水效率，并且云微物理学和亚日降水现象（如中尺度对流系统）会导致模型间降水效率的持续变化。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Shortwave radiative impacts of the Asian Tropopause Aerosol Layer (ATAL) using balloon-borne in situ measurements at three distinct locations in India</section>
+            <section class="paper-authors">Vadassery Neelamana Santhosh, Bomidi Lakshmi Madhavan, Sivan Thankamani Akhil Raj, Madineni Venkat Ratnam, Jean-Paul Vernier, Frank Gunther Wienhold</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8255-2025" target="_blank">https://doi.org/10.5194/acp-25-8255-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>气溶胶层</b></span>
+                        <span class="topic-tag"><b>辐射影响</b></span>
+                        <span class="topic-tag"><b>气球测量</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8255-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《<p><b>亚洲对流层顶气溶胶层（ATAL）的短波辐射影响：基于印度三个不同地点的气球原位测量</b></p>》关注<b>亚洲对流层顶气溶胶层（ATAL）</b>对<b>短波辐射</b>的影响，使用2014年至2018年间在印度三个不同地点（Gadanki、Hyderabad和Varanasi）进行的<b>气球测量数据</b>。研究评估了不同<b>气溶胶成分</b>（如<b>硫酸盐</b>、<b>硝酸盐</b>、<b>有机碳</b>和<b>铵盐</b>）对<b>辐射强迫</b>和<b>加热率</b>的影响。结果显示，ATAL的存在导致<b>净增温效应</b>，最高可贡献柱状大气总辐射强迫的3%。研究还发现，气溶胶成分的变化对ATAL的辐射影响非常敏感。结论强调了气溶胶成分在决定ATAL辐射影响中的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Advances in characterization of black carbon  particles and their associated coatings using  the soot-particle aerosol mass spectrometer in Singapore, a complex city environment</section>
+            <section class="paper-authors">Mutian Ma, Laura-Hélèna Rivellini, Yichen Zong, Markus Kraft, Liya E. Yu, Alex King Yin Lee</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8185-2025" target="_blank">https://doi.org/10.5194/acp-25-8185-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>黑碳颗粒</b></span>
+                        <span class="topic-tag"><b>气溶胶成分</b></span>
+                        <span class="topic-tag"><b>来源解析</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8185-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《<p><b>使用烟尘颗粒气溶胶质谱仪在新加坡（一个复杂的城市环境）中对黑碳颗粒及其相关涂层的表征进展</b></p>》研究了<b>新加坡城市环境</b>中<b>黑碳颗粒</b>的<b>排放</b>、<b>大气演变</b>及其来源解析。研究使用了<b>气溶胶质谱仪</b>分析<b>气溶胶</b>的<b>成分</b>，并通过<b>正矩阵分解（PMF）</b>方法识别不同的排放源，例如交通、工业、生物质燃烧等。研究还探讨了<b>二次有机气溶胶</b>的形成过程以及<b>金属</b>和<b>无机气溶胶</b>的影响。研究结论推进了对新加坡复杂城市环境中<b>黑碳</b>排放和大气过程的理解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Optimized dynamic mode decomposition for reconstruction  and forecasting of atmospheric chemistry data</section>
+            <section class="paper-authors">Meghana Velagar, Christoph Keller, J. Nathan Kutz</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-4667-2025" target="_blank">https://doi.org/10.5194/gmd-18-4667-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>大气化学</b></span>
+                        <span class="topic-tag"><b>数据模型</b></span>
+                        <span class="topic-tag"><b>化学预测</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-4667-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文《<p><b>用于重建和预测大气化学数据的优化动态模式分解</b></p>》提出了一种优化的<b>动态模式分解（DMD）</b>算法，用于构建<b>大气化学动力学</b>的<b>降阶模型</b>，并用于<b>预测</b>。该方法通过提取时空模式来表征化学物质的动态变化，并应用于全球化学动力学数据的分析和预测。研究重点关注几种关键<b>化学指标</b>，如<b>一氧化氮</b>、<b>臭氧</b>、<b>二氧化氮</b>、<b>羟基自由基</b>、<b>异戊二烯</b>和<b>一氧化碳</b>。模型可用于处理非平稳数据和动态变化，使其适用于实际大气环境的分析和预测，可用于创建高效的预测工具。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Observation and modeling of atmospheric OH and  HO2∗ radicals at a subtropical rural site and  implications for secondary pollutants</section>
+            <section class="paper-authors">Zhouxing Zou, Tianshu Chen, Qianjie Chen, Weihang Sun, Shichun Han, Zhuoyue Ren, Xinyi Li, Wei Song, Aoqi Ge, Qi Wang, Xiao Tian, Chenglei Pei, Xinming Wang, Yanli Zhang, Tao Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8147-2025" target="_blank">https://doi.org/10.5194/acp-25-8147-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag"><b>OH自由基</b></span>
+                        <span class="topic-tag"><b>HO2自由基</b></span>
+                        <span class="topic-tag"><b>空气质量模型</b></span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8147-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《<p><b>亚热带乡村地区大气OH和HO2自由基的观测与建模及其对二次污染的影响</b></p>》测量了<b>亚热带乡村地区大气中OH和HO2自由基</b>的浓度，并将其与<b>模型结果</b>进行了比较。研究发现，模型在温暖时期高估了OH和HO2的浓度，导致臭氧和硝酸的生成也被高估。研究使用了<b>化学电离质谱仪</b>，研究揭示了对<b>空气质量模型</b>中<b>HOx自由基</b>来源和汇的进一步理解的必要性。此外，高估 HOx 导致对<b>臭氧</b>和<b>硝酸</b>的生成的过高估计，强调了准确的大气氧化能力表征的重要性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
