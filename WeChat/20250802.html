@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/08/02</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Comprehensive Analysis of Bias in TEMPO NO2 Column Densities Through Pandora Observations</section>
+            <section class="paper-authors">Masoud Ghahremanloo, Caroline Nowlan, Gonzalo González Abad, Cecilia Garraffo, Xiong Liu, Huiqun Wang, Barron Henderson, Eric Baumann, Lukas Valin, Jeffrey A. Geddes, Xiaoyi Zhao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044150" target="_blank">https://doi.org/10.1029/2025JD044150</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">NO2柱密度</span>
+                        <span class="topic-tag">卫星数据偏差</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044150" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《通过Pandora观测对TEMPO NO2柱密度的偏差进行综合分析》使用Pandora地面观测数据来分析<b></b>TEMPO</b></b>卫星观测的<b></b>二氧化氮（NO2）柱密度</b></b>偏差。研究评估了TEMPO数据的准确性，并探讨了云量、太阳天顶角以及不同NO2浓度水平对偏差的影响。此外，论文还将TEMPO与<b></b>TROPOMI</b></b>卫星的数据进行了对比验证。研究结果表明，TEMPO数据在一定条件下具有较高的准确性，但在高云量和高太阳天顶角情况下误差较大。该研究为TEMPO数据的质量评估和改进提供了重要参考，有助于提高卫星观测数据的可靠性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Hour by Hour PM2.5 Mapping Using Geostationary Satellites</section>
+            <section class="paper-authors">Seohui Park, Alqamah Sayeed, Junhyeon Seo, Barron H. Henderson, Aaron R. Naeger, Pawan Gupta</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.4c00365" target="_blank">https://doi.org/10.1021/acsestair.4c00365</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">地球静止卫星</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.4c00365" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《使用地球静止卫星逐时绘制PM2.5地图》利用<b></b>地球静止卫星</b></b>获取的<b></b>气溶胶光学厚度（AOD）</b></b>和辐射测量数据，结合高分辨率快速刷新（HRRR）模型提供的气象参数，估算美国本土（CONUS）的地表<b></b>PM2.5</b></b>浓度。研究采用<b></b>深度神经网络（DNN）</b></b>模型，并与其他机器学习模型进行比较。结果表明，包含<b></b>TEMPO</b></b>数据的DNN模型在估算PM2.5浓度方面表现更优，尤其是在高PM2.5浓度的情况下，能够更好地捕捉野火事件中的高浓度PM2.5。该研究为整合多颗地球静止卫星数据与HRRR模型输出，以高时间分辨率估算地表空气质量提供了一个框架。该研究展示了使用地球静止卫星数据进行高时空分辨率空气质量监测的潜力，为未来的空气质量预报和管理提供了新的思路。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Sub-micron aerosol and CCN characteristics in Seoul measured during 2019–2021 and CCN prediction using machine learning</section>
+            <section class="paper-authors">Pyosuk Seo, Minsu Park, Chanwoo Ahn, Jinkyu Hong, Sungsoo Jo, Seong Soo Yum</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121454" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121454</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">云凝结核</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121454" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《2019-2021年首尔亚微米气溶胶和CCN特征测量以及使用机器学习的CCN预测》分析了2019年至2021年<b></b>首尔</b></b>的<b></b>气溶胶数量浓度（NCN）</b></b>和<b></b>云凝结核数量浓度（NCCN）</b></b>的季节性特征。研究发现，与2004-2010年相比，气溶胶和CCN的浓度显著下降，但日变化和季节性模式保持一致。使用<b></b>随机森林回归模型</b></b>进行CCN预测，结果表明不同季节影响CCN形成的关键因素不同：冬季主要是气溶胶浓度，夏季主要是PM10。这项研究强调了东亚城市地区气溶胶和CCN的最新趋势，反映了空气质量的快速变化。机器学习方法的使用为气溶胶与云的相互作用研究提供了新的视角，并可以提高气候模型的预测能力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impact of Raman Scattering on SIF Retrievals From Hyperspectral Satellite Observations</section>
+            <section class="paper-authors">Suniti Sanghavi, Christian Frankenberg, Robert R. Nelson, Christopher W. O’Dell, Robert Rosenberg, Joanna Joiner</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024GL112777" target="_blank">https://doi.org/10.1029/2024GL112777</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">叶绿素荧光</span>
+                        <span class="topic-tag">高光谱卫星</span>
+                        <span class="topic-tag">拉曼散射</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024GL112777" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《拉曼散射对高光谱卫星观测中SIF反演的影响》探讨了<b></b>拉曼散射</b></b>对<b></b>高光谱卫星观测</b></b>中<b></b>太阳诱导叶绿素荧光（SIF）</b></b>反演的影响。研究指出，由于太阳光的非弹性散射会混淆SIF信号，导致SIF估算值偏高，尤其是在植被稀少区域。研究提出了一种基于物理模拟的查找表方法来校正非弹性散射，从而提高SIF反演的准确性。通过高保真辐射传输模拟，研究展示了该信号可能导致人为地高估SIF，特别是在撒哈拉沙漠、格陵兰岛和南极洲等无植被区域。改进后的SIF数据有助于更准确地评估植被活动，生态系统健康和碳循环。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The changing role of dust and open fires PM2.5 on Africa’s air quality and human health</section>
+            <section class="paper-authors">Adwoa Aboagye-Okyere, Daphne Meidan, Douglas S Hamilton, Peter Hess, Olga Kalashnikova, Michael Garay, Natalie M Mahowald</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/adf07e" target="_blank">https://doi.org/10.1088/1748-9326/adf07e</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">大气建模</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/adf07e" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文《沙尘和露天焚烧的PM2.5对非洲空气质量和人类健康变化的影响》研究了非洲地区<b></b>沙尘</b></b>和<b></b>露天焚烧</b></b>产生的<b></b>PM2.5</b></b>对空气质量和人类健康的影响。研究使用地球系统模型模拟了前工业时代、现代和未来不同情景下非洲地区的沙尘和露天焚烧PM2.5浓度。通过综合暴露-反应模型，评估了这些污染物对人类健康的潜在影响，特别是死亡率。研究发现，沙尘和露天焚烧是非洲PM2.5相关死亡的主要因素，其影响程度远超其他因素。研究还表明，自前工业时代以来，沙尘的死亡率增加了400%，露天焚烧的死亡率增加了190%。未来，这两种因素导致的死亡人数预计将进一步增加。该研究强调了关注和控制“自然”气溶胶变化对于改善非洲空气质量的重要性，并为未来的政策制定提供了重要依据。研究揭示了“自然”气溶胶对非洲空气质量的重大影响，并对未来趋势进行了预测，为改善非洲空气质量提供了科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Extending the Monitoring of Perfluoroalkyl Substances in Arctic Air Reveals a High Abundance of Both Short Acids and Neutral Compounds</section>
+            <section class="paper-authors">Alexander Kasperkiewicz, Frank Wania, Fiona Wong, Alexander Vlasenko, Henrik Li, Jared Chisamore, Helena Dryfhout-Clark, Phil Fellin, Hayley Hung</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c05145" target="_blank">https://doi.org/10.1021/acs.est.5c05145</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">全氟/多氟烷基物质</span>
+                        <span class="topic-tag">大气环境监测</span>
+                        <span class="topic-tag">北极空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c05145" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《扩展北极空气中全氟烷基物质的监测揭示了短链酸和中性化合物的高丰度》研究扩展了对<b></b>北极</b></b>地区<b></b>全氟/多氟烷基物质（PFASs）</b></b>的监测，发现短链酸和中性化合物在北极空气中含量较高。研究分析了2014年至2023年间北极地区空气样品，发现<b></b>短链PFASs</b></b>如三氟乙酸（TFA）、全氟丙酸（PFPrA）、全氟丁酸（PFBA）的检出频率高，且浓度较高，同时确认了六氟-2,2-丙二醇（HF2OH）和六氟异丙醇（HFIPA）的存在。研究发现TFA和HF2OH的浓度与温度和融雪期相关，暗示了本地排放或前体释放后降解过程的可能性。此外，研究评估了HFIPA和HF2OH进行<b></b>长距离大气传输</b></b>的潜力，并分析了PFBA、PFOA和PFOS等物质浓度的时间趋势，发现自2019年以来这些物质的浓度再次上升。研究结果对于评估持久性有机污染物在北极地区的分布和环境影响具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Twenty Years of Global Stratospheric Fluorine Inventories From Atmospheric Chemistry Experiment Fourier Transform Spectrometer (ACE‐FTS) Measurements</section>
+            <section class="paper-authors">N. Raymond, P. Bernath, C. Boone, M. Chipperfield</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042298" target="_blank">https://doi.org/10.1029/2024JD042298</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">平流层氟</span>
+                        <span class="topic-tag">大气成分</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042298" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《大气化学实验傅里叶变换光谱仪（ACE-FTS）测量得到的20年全球平流层氟清单》利用大气化学实验<b></b>傅里叶变换光谱仪(ACE-FTS)</b></b>的<b></b>卫星观测数据</b></b>，对2004年至2023年全球<b></b>平流层</b></b>中含氟物质的含量进行了分析。通过对15种含氟物种的浓度进行测量，计算了不同纬度带和高度上的氟含量，并分析了其随时间的变化趋势。研究结果表明，总氟含量在持续增加，并探讨了不同含氟物质对总氟含量的贡献。研究发现，CFCs、HCFCs和HFCs是主要的含氟物质来源，而HF在高海拔地区占主导地位。该研究为理解大气中含氟物质的分布和变化趋势提供了重要数据，有助于评估其对臭氧层和气候的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global quantification of the dispersion effect with POLDER satellite data</section>
+            <section class="paper-authors">Hengqi Wang, Yiran Peng, Antonio Di Noia, Huazhe Shang, Husi Letu, Bastiaan van Diedenhoven, Otto P. Hasekamp, Yangang Liu, Johannes Quaas</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-025-62238-3" target="_blank">https://doi.org/10.1038/s41467-025-62238-3</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶-云相互作用</span>
+                        <span class="topic-tag">偏振卫星数据</span>
+                        <span class="topic-tag">弥散效应</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-025-62238-3" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《利用POLDER卫星数据进行弥散效应的全球量化》利用<b></b>偏振卫星数据</b></b>，量化了全球范围内<b></b>云滴分布变化</b></b>对<b></b>气溶胶-云相互作用</b></b>的影响，并提出了一种参数化方法来提高气候模型的性能。研究重点在于气溶胶如何改变<b></b>云粒子大小分布（PSD）</b></b>，从而影响云的辐射特性，即<b></b>弥散效应（DE）</b></b>。论文通过结合偏振卫星数据对云粒子大小分布进行全球观测，量化了DE对气溶胶-云相互作用的影响，并开发了一种参数化方法，以改进大规模模型中DE的估计。量化和参数化结果对于理解弥散效应对气溶胶气候强迫的影响，并提高气候模型的准确性至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Modelling Arctic lower-tropospheric ozone: processes controlling seasonal variations</section>
+            <section class="paper-authors">Wanmin Gong, Stephen R. Beagley, Kenjiro Toyota, Henrik Skov, Jesper Heile Christensen, Alex Lupu, Diane Pendlebury, Junhua Zhang, Ulas Im, Yugo Kanaya, Alfonso Saiz-Lopez, Roberto Sommariva, Peter Effertz, John W. Halfacre, Nis Jepsen, Rigel Kivi, Theodore K. Koenig, Katrin Müller, Claus Nordstrøm, Irina Petropavlovskikh, Paul B. Shepson, William R. Simpson, Sverre Solberg, Ralf M. Staebler, David W. Tarasick, Roeland Van Malderen, Mika Vestenius</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8355-2025" target="_blank">https://doi.org/10.5194/acp-25-8355-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">对流层臭氧</span>
+                        <span class="topic-tag">化学传输模型</span>
+                        <span class="topic-tag">北极空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8355-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《模拟北极低对流层臭氧：控制季节性变化的过程》主要关注<b></b>北极</b></b>地区<b></b>对流层臭氧</b></b>的模拟，探讨了控制其季节性变化的各种过程。研究使用了两个独立的<b></b>化学传输模型</b></b>（CTMs）DEHM和GEM-MACH，模拟了2015年北极低对流层臭氧，并与地表站点、移动平台和臭氧探空仪的观测数据进行对比，评估模型在模拟北极对流层臭氧方面的能力。研究发现，春季<b></b>臭氧消耗</b></b>事件在驱动北极中部地表臭氧季节性循环中起着关键作用，北方北方森林<b></b>火灾排放</b></b>也会导致北极地区臭氧和NOy浓度的增加，尤其是在较高海拔地区。GEM-MACH模型能够较好地模拟观测到的春季臭氧消耗事件，而DEHM模型模拟的较少。该研究强调了春季臭氧消耗过程在北极臭氧季节性循环中的重要性，并揭示了野火排放对北极地区臭氧的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A True Eddy Accumulation System for Measuring Trace Gas Flux: Practical Implementation and Evaluation Above a Forest</section>
+            <section class="paper-authors">Takuya Saito, Ayaka Sakabe, Satoru Takanashi, Yoshiko Kosugi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044412" target="_blank">https://doi.org/10.1029/2025JD044412</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">痕量气体通量</span>
+                        <span class="topic-tag">涡度累积</span>
+                        <span class="topic-tag">二氧化碳通量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044412" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《一种用于测量痕量气体通量的真涡度累积系统：在森林上方的实际应用和评估》开发并评估了一种用于测量痕量气体通量的<b></b>真涡度累积（TEA）</b></b>系统，并将其应用于日本温带森林上方。该系统通过比较TEA系统和<b></b>涡度协方差（EC）</b></b>系统测量的<b></b>二氧化碳（CO2）通量</b></b>来进行评估。研究结果表明，TEA系统是一种很有前途的痕量气体湍流通量测量替代方法。研究详细介绍了TEA系统的设计和实施，并对其性能进行了验证，为未来的大气痕量气体测量提供了新的技术手段。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">ENSO‐Driven Variability in Ozone Sources and Its Impact on Tropospheric Ozone Radiative Forcing</section>
+            <section class="paper-authors">Arman Pouyaei, Paul Ginoux, Vaishali Naik, Jing Feng, Larry W. Horowitz, Fabien Paulot</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL115898" target="_blank">https://doi.org/10.1029/2025GL115898</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">对流层臭氧</span>
+                        <span class="topic-tag">ENSO</span>
+                        <span class="topic-tag">辐射强迫</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL115898" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《ENSO驱动的臭氧源变化及其对流层臭氧辐射强迫的影响》探讨了<b></b>厄尔尼诺-南方涛动（ENSO）</b></b>驱动的<b></b>臭氧源</b></b>变化及其对流层臭氧辐射强迫的影响。研究使用地球物理流体动力学实验室大气模型分析了2004年至2019年间厄尔尼诺和拉尼娜事件对臭氧的影响，发现除了大气环流变化外，闪电引起的氮氧化物、亚热带平流层入侵和赤道亚洲的生物质燃烧也显著影响热带地区的对流层臭氧辐射强迫。研究结果表明，热带对流层臭氧的辐射效应在拉尼娜季节增加，在厄尔尼诺季节减弱。该研究强调了评估ENSO驱动的对流层臭氧辐射强迫变化对于理解未来气候的重要性，有助于更全面地理解气候变化机制。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Antarctic haze phenomena at Syowa Station, Antarctica: seasonal features and impacts on atmospheric chemistry</section>
+            <section class="paper-authors">Keiichiro Hara, Kano Osato, Masanori Yabuki, Kazuo Osada, Naohiko Hirasawa, Masataka Shiobara, Takashi Yamanouchi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01176-9" target="_blank">https://doi.org/10.1038/s41612-025-01176-9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">南极雾霾</span>
+                        <span class="topic-tag">大气化学</span>
+                        <span class="topic-tag">臭氧损耗</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01176-9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《南极昭和站的南极雾霾现象：季节性特征和对大气化学的影响》主要探讨了<b></b>南极昭和站</b></b>观测到的<b></b>南极雾霾现象</b></b>，分析了雾霾事件的<b></b>季节性特征</b></b>、持续时间和水平尺度。研究发现雾霾主要出现在5月至10月，并在8月达到高峰，与强风和海冰范围有关。此外，研究还识别出<b></b>Aerosol enhanced layers (AELs)</b></b>，并发现雾霾期间<b></b>地表臭氧（O3）</b></b>出现损耗。研究结果表明，南极雾霾现象对南极对流层的大气氧化能力和云过程有重要影响。该研究为理解南极地区的大气过程和气候变化提供了重要信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Phase Distribution, Deposition, and Precipitation Scavenging of Atmospheric Semivolatile Organic Compounds under Steady-State Partitioning Theory</section>
+            <section class="paper-authors">Pu-Fei Yang, Wan-Li Ma, Zi-Feng Zhang, Li-Yan Liu, Hang Xiao, Kaj Mantzius Hansen, Hong-Liang Jia, Li Li, Peng-Tuan Hu, Roland Kallenborn, Yi-Fan Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.4c13693" target="_blank">https://doi.org/10.1021/acs.est.4c13693</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气成分</span>
+                        <span class="topic-tag">半挥发性有机化合物</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.4c13693" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《稳态分配理论下大气中半挥发性有机化合物的相态分布、沉降和降水清除》探讨了大气中<b></b>半挥发性有机化合物（SVOCs）</b></b>的<b></b>相态分布</b></b>、<b></b>沉降</b></b>和<b></b>降水清除</b></b>过程。研究建立了一种新的稳态理论来描述SVOCs在气体和降水之间的分配，并将其应用于预测SVOCs的相态分布、沉降贡献和清除效率。研究结果表明，与传统的平衡理论相比，稳态理论在与监测数据对比时表现更好，尤其是在解决平衡理论高估某些SVOCs清除率的问题上。建模结果显示，在稳态理论下，所有SVOCs在其相态分布和沉降贡献方面都有上限，大多数SVOCs主要存在于气相中，且气态干湿沉降贡献显著。该研究为理解SVOCs在大气中的行为和全球命运提供了重要见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Spectroscopic and chemical compositional analysis of the atmospheric aerosols in urban and rural tropical environment of southern India</section>
+            <section class="paper-authors">R. Mohandoss, Chaithanya D. Jain, B.L. Madhavan, M. Venkat Ratnam</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121431" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121431</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气气溶胶</span>
+                        <span class="topic-tag">化学成分</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121431" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《印度南部城市和乡村热带环境中大气气溶胶的光谱和化学成分分析》通过光谱学和化学成分分析，详细描述了印度南部城市和乡村地区<b></b>大气气溶胶</b></b>的特征。该研究分析了不同空气动力学尺寸范围内的颗粒物样本，识别出有机化合物和无机物，发现城市地区的<b></b>气溶胶</b></b>碳含量较高，而乡村地区的<b></b>气溶胶</b></b>氧含量较高。扫描电子显微镜显示颗粒形状不规则且聚集。研究结果为理解热带地区城市和乡村地区的气溶胶组成和行为提供了重要见解，对空气质量管理和气候建模具有重要意义。该研究为南亚地区的大气气溶胶研究提供了宝贵的基础数据。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
