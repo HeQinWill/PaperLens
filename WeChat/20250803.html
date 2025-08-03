@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/08/03</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Improving aerosol forecasting through visibility data assimilation in WRF-chem: Methodology and evaluation</section>
+            <section class="paper-authors">Shuang Mei, Wei You, Wei Zhong, Zengliang Zang, Jianping Guo, Xiaoping Cheng, Lina Gao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108383" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108383</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶预报</span>
+                        <span class="topic-tag">能见度同化</span>
+                        <span class="topic-tag">WRF-Chem模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108383" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“通过WRF-Chem中能见度数据同化改进气溶胶预报：方法与评估”。该研究开发了一个与<b>WRF-Chem</b>模型集成的<b>能见度</b>观测<b>同化</b>模块，旨在通过同化能见度数据来提高空气质量模型中气溶胶初始条件的准确性，从而提高污染预报的精度。研究利用先进的多尺度三维变分同化（<b>MS-3DVAR</b>）技术，并采用WRF-Chem MOSAIC气溶胶物种浓度作为控制变量。为了全面评估所开发的能见度同化算法，研究进行了三次数值实验，重点关注2021年3月发生在华北地区的沙尘事件的预报精度。评估表明，同化能见度数据能够显著改善模型中气溶胶的初始场和沙尘过程的预报。该研究通过数据同化方法，将高密度的地面<b>能见度数据</b>融合到气象化学模型中，提升了<b>沙尘暴预报</b>的准确性，弥补了<b>卫星观测</b>的时空局限性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Inverse Modeling of SO2 Point Source Emissions in the Middle East</section>
+            <section class="paper-authors">A. Ukhov, A. Stohl, G. Stenchikov, I. Hoteit</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043334" target="_blank">https://doi.org/10.1029/2025JD043334</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">SO2排放</span>
+                        <span class="topic-tag">逆向建模</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043334" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“中东地区SO2点源排放的逆向建模”。该研究采用<b>逆向建模</b>方法，结合臭氧测绘剖面套件（<b>OMPS</b>）的<b>SO2</b>柱浓度观测数据和拉格朗日粒子扩散模型<b>FLEXPART-WRF</b>，优化了中东地区134个点源的SO2排放量。研究使用了WRF-Chem模型来模拟SO2的汇（干沉降、氧化），并将WRF-Chem的代码移植到FLEXPART-WRF中。通过对比逆向建模前后的SO2柱浓度与OMPS观测数据，验证了该方法的有效性。研究发现，传统的数据驱动排放量化方法（如高斯羽流拟合法）无法去除高密度强点源区域的“背景”柱浓度，导致高估排放量。该研究提出的方法避免了这一缺陷。改进后的OMI-HTAP数据集将应用于中东地区的空气质量建模。这项研究主要集中于使用卫星数据和大气模型来精细化<b>SO2排放清单</b>，从而提升<b>空气质量监测</b>和预测的准确性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Retrieval of Total Precipitable Water Under All‐Weather Conditions From Himawari‐8/AHI Observations Using the Generative Diffusion Model</section>
+            <section class="paper-authors">Haixia Xiao, Feng Zhang, Renhe Zhang, Feng Lu, Miao Cai, Lingxiao Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL117075" target="_blank">https://doi.org/10.1029/2025GL117075</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">总可降水量反演</span>
+                        <span class="topic-tag">葵花-8号卫星</span>
+                        <span class="topic-tag">生成扩散模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL117075" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“利用生成扩散模型从葵花-8号/AHI观测反演全天候条件下的总可降水量”。论文提出了一种新的基于深度学习的总可降水量（<b>TPW</b>）反演模型<b>TPWDiff-CB</b>，该模型利用葵花-8号卫星搭载的先进高光谱成像仪（<b>AHI</b>）的热红外观测数据，能够有效估计全天候条件下的TPW。研究结果表明，TPWDiff-CB模型与无线电探空仪TPW数据相比，相关系数（<b>R</b>）达到0.98，均方根误差为4.51毫米，在晴空和多云条件下均表现出近乎相同的精度。该模型在学习TPW分布和进行时空反演方面表现出强大的能力，优于传统的机器学习模型。该研究强调了TPWDiff-CB的高精度及其在天气和气候研究中的应用潜力。此研究重点在于使用新型的<b>生成扩散模型</b>来提升<b>卫星观测</b>在水汽反演方面的能力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Variability of submicron ice-nucleating particles at urban and rural sites in Japan related to aerosol chemical components</section>
+            <section class="paper-authors">Ayumi Iwata, Samuel Gray Murray Horwitz, Kazuki Kurihara, Atsushi Matsuki, Tomoaki Okuda</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108386" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108386</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰核颗粒</span>
+                        <span class="topic-tag">气溶胶化学成分</span>
+                        <span class="topic-tag">城乡大气</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108386" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“日本城乡地区亚微米冰核颗粒的变异性与气溶胶化学成分的关系”。该研究调查了日本城市（横滨）和乡村（能登）地区在沙尘和非沙尘期间冰核颗粒（<b>INP</b>）浓度、热敏感性、颗粒化学成分和气象参数。研究发现，虽然没有一个关键因素能够始终解释INP浓度，但在不同地点和季节，INP浓度与矿物粉尘、热敏感生物颗粒以及来自煤炭和废物燃烧的含铅颗粒等因素存在较强的关联。沙尘期间，两个站点的INP浓度与矿物指标相关；非沙尘期间，矿物指标无法解释INP水平。城市地区INP的热处理失活表明生物INP与矿物颗粒之间存在密切关联。研究结果强调了量化连接因区域和时间而异的环境因素与INP浓度变化以表征气溶胶-云相互作用的复杂性。虽然亚微米INP仅占地表总INP的一小部分，但有助于INP浓度变化的颗粒类型仍然支持先前的定性研究结果。研究通过分析气溶胶的<b>化学成分</b>，从而了解云的形成过程，着重关注<b>冰核颗粒</b>在不同环境条件下的特性，揭示<b>城乡大气成分</b>的差异。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
