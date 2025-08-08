@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/08/08</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">TanSat-2: a new satellite for mapping solar-induced chlorophyll fluorescence at both red and far-red bands with high spatiotemporal resolution</section>
+            <section class="paper-authors">Dianrun Zhao, Shanshan Du, Chu Zou, Longfei Tian, Meng Fan, Yulu Du, Liangyun Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-3647-2025" target="_blank">https://doi.org/10.5194/amt-18-3647-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">叶绿素荧光</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">碳循环</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-3647-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《TanSat-2：一颗用于绘制红色和远红色波段太阳诱导叶绿素荧光的高时空分辨率新卫星》。该研究论文主要关注<b>TanSat-2卫星</b>，这颗卫星旨在监测全球<b>碳循环</b>，通过高分辨率的<b>双波段太阳诱导叶绿素荧光（SIF）观测</b>来实现。根据目前的计划，TanSat-2计划于2026年发射。该卫星将具有2900公里的宽幅，在7000公里的轨道高度上具有2公里的高空间分辨率，并具有接近每日的全球覆盖。论文通过模拟实验评估了TanSat-2在检索叶绿素荧光方面的能力，结果表明该卫星有望提供高时空分辨率的红色和远红色波段的可靠荧光数据。模拟结果显示，TanSat-2在740和685 nm处的SIF反演的均方根误差（RMSE）分别为0.24和0.19 mW m−2 sr−1 nm−1。总体而言，TanSat-2有望提供宝贵的数据资源，以实现全球范围内高时空分辨率的红色和远红色波段可靠的SIF反演。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Estimating 1-km PM<sub>2.5</sub> concentration in Beijing-Tianjin-Hebei region based on a lightweight spatiotemporal algorithm: STLWPNet</section>
+            <section class="paper-authors">Qiaolin Zeng, Mingzheng Li, Meng Fan, Jinhua Tao, Liangfu Chen, Ying Zhang, Hao Zhu, Yuanyuan Zhu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121470" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121470</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5浓度</span>
+                        <span class="topic-tag">京津冀地区</span>
+                        <span class="topic-tag">时空模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121470" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《基于轻量级时空算法 STLWPNet 估算京津冀地区 1 公里 PM2.5 浓度》。PM2.5污染一直备受关注。由于监测站数量有限，获得全面覆盖的 PM2.5 仍然很困难。具有广泛空间覆盖和连续分布的卫星数据集为估计全面覆盖的污染物浓度提供了潜在的解决方案。基于深度学习的两阶段框架是使用多源卫星数据和时空变量构建的，用于估算京津冀地区 (BTH) 的每日 PM2.5 浓度。首先，提出了一种基于线性残差网络的 AOD 插补模型。与其他方法相比，它实现了最佳水平（R2 = 0.941，RMSE = 0.047）。其次，构建了一个具有时间和空间模块的时空轻量级并行网络 (STLWPNet) 来估计每日 PM2.5 浓度。时空模块首先使用傅里叶注意力和频率注意力来处理频域信号，并引入了一种新颖的二阶残差算法和序列分解，用于深度挖掘时间信息。同时，在空间模块中创新性地提出了轻量级 2D 卷积层的概念，该层可以处理空间信息并解决传统方法计算量大的缺点。最后，该模型在基于样本的 10-CV 中表现出出色的性能（R2 = 0.917，RMSE = 11.476 μg/m3）。这项研究不仅促进了估计技术的进步，而且为京津冀地区空气污染的防治提供了更准确的决策依据，具有重要的学术和社会价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Remote sensing estimates of time-resolved HONO and NO2 emission rates and lifetimes in wildfires</section>
+            <section class="paper-authors">Carley D. Fredrickson, Scott J. Janz, Lok N. Lamsal, Ursula A. Jongebloed, Joshua L. Laughner, Joel A. Thornton</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-3669-2025" target="_blank">https://doi.org/10.5194/amt-18-3669-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">遥感技术</span>
+                        <span class="topic-tag">野火排放</span>
+                        <span class="topic-tag">氮氧化物</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-3669-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《野火中时间分辨HONO和NO2排放速率和寿命的遥感估算》。该研究论文主要关注利用<b>遥感技术</b>估算野火中氮氧化物（<b>HONO</b>和<b>NO2</b>）的排放速率和生命周期。研究使用了NASA ER-2飞机上的仪器进行高分辨率遥感测量，并结合了数值模型来评估不同排放速率和生命周期组合的有效性。通过将指数修正高斯函数拟合到线密度，估计了谢里丹火灾中HONO和NO2的排放速率和寿命。结果表明，该方法能够有效地估算野火排放，并可应用于解释来自地球静止卫星（如TEMPO和GEMS）的时间分辨遥感测量数据。研究发现，该方法得到的排放量低于自上而下的生物质燃烧排放清单，但高于自下而上的清单。总体而言，该研究旨在提高利用计算机模型预测野火下游空气污染的能力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Speciated and spectral aerosol direct radiative forcing over the northern Indian Ocean during the south Asian outflow in the winter 2018 ICARB experiment</section>
+            <section class="paper-authors">Mukunda M. Gogoi, Vijayakumar S. Nair, Chakradhar Rao Tandule, Prashant Hegde, Sobhan Kumar Kompalli, S. Suresh Babu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121457" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121457</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶强迫</span>
+                        <span class="topic-tag">光学深度</span>
+                        <span class="topic-tag">人为气溶胶</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121457" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《2018 年 ICARB 实验冬季南亚外流期间印度洋北部上空的特定光谱气溶胶直接辐射强迫》。本研究考察了2018 年北半球冬季期间，南亚外流在印度洋北部上空的光学和化学特征，这是气溶胶、气体和辐射预算综合运动（ICARB）实验的一部分。我们的观测显示，人为气溶胶对赤道印度洋柱状气溶胶光学深度（AOD）有显着影响，人为AOD约占复合气溶胶负荷的46%。水溶性人为离子（WSAI）成为印度洋北部大部分海洋区域柱状AOD的主要贡献者，这归因于与其他主要物种（如有机碳（OC）和黑碳（BC））相比，其高比例距离。特定气溶胶辐射强迫评估表明，BC是沿海地区表面强迫的主要贡献者，而WSAI（其次是BC和OC）在远洋地区占主导地位。总体而言，主要来自WSAI、OC和BC的人为强迫在阿拉伯海东南部和赤道印度洋大部分航行区域的大气顶部（72%）和表面（89%）占总强迫的很大一部分，而大气加热主要归因于BC（84%），其最高大气吸收效率为13.38。我们的研究结果强调了来自南亚外流的人为气溶胶在塑造赤道印度洋上空的光学和辐射特性方面的重要作用，并强调需要进一步研究，以了解其更广泛的气候和环境影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Unveiling Aerosol Impacts on Deep Convective Clouds: Scientific Concept, Modeling, Observational Analysis, and Future Direction</section>
+            <section class="paper-authors">Jiwen Fan, Yuwei Zhang, Zhanqing Li, Hongru Yan, Thara Prabhakaran, Daniel Rosenfeld, Alexander Khain</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD041931" target="_blank">https://doi.org/10.1029/2024JD041931</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">对流云</span>
+                        <span class="topic-tag">大气建模</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD041931" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《揭示气溶胶对深对流云的影响：科学概念、建模、观测分析和未来方向》。气溶胶是重要的环境因素，可以通过充当云凝结核来影响深对流云 (DCC)。由于 DCC 动力学和微物理学以及气溶胶尺寸分布和成分的复杂性，了解气溶胶-DCC 相互作用一直是一项艰巨的挑战。最近，文献中提出的通过增强冷凝和冰相关过程中的潜热来进行对流增强的机制，因其在质量和数量上的意义而备受争议。这些争论中出现的一个突出问题是，迫切需要阐明在研究气溶胶对深对流的影响方面的基本知识和方法。本文介绍了我们对研究和理解这些增强机制以及这些机制可能重要的气溶胶和气象条件的关键方面的看法，这些看法基于新的发现。例如，冷凝增强在引入大量超细颗粒的清洁条件下最显着，而冷冻诱导的增强在添加大量相对大尺寸颗粒的清洁条件下可能显着。我们对使用建模和观测方法研究气溶胶对对流的影响的方法提出了实用的建议。我们注意到，通过增强潜热来增强环流和气象而引起的反馈可能是气溶胶影响的重要组成部分，但非常复杂，并且随不同的对流风暴类型而变化。这是研究气溶胶-DCC 相互作用的重要未来方向。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Quantifying biases in TROPESS AIRS, CrIS, and joint AIRS+OMI tropospheric ozone products using ozonesondes</section>
+            <section class="paper-authors">Elyse A. Pennington, Gregory B. Osterman, Vivienne H. Payne, Kazuyuki Miyazaki, Kevin W. Bowman, Jessica L. Neu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8533-2025" target="_blank">https://doi.org/10.5194/acp-25-8533-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">对流层臭氧</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">偏差量化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8533-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《利用臭氧探空仪量化TROPESS AIRS、CrIS和联合AIRS+OMI对流层臭氧产品的偏差》。该研究关注利用<b>卫星遥感技术</b>监测<b>对流层臭氧</b>，这是一种重要的空气污染物和温室气体。论文通过比较NASA的TROPESS项目（包括AIRS、CrIS和AIRS+OMI联合产品）的<b>卫星数据</b>与<b>臭氧探空仪数据</b>，量化了卫星产品在测量对流层臭氧时的偏差。研究发现，这些卫星产品在全球范围内具有较低的测量偏差，因此可以用于检测全球对流层臭氧的变化趋势。此外，论文还评估了区域趋势中的偏差，并强调了卫星数据在未来大气成分变化研究中的应用价值。该研究结果表明，TROPESS CrIS、AIRS和联合AIRS+OMI的全球对流层臭氧卫星-探空偏差的演变小于对流层臭氧评估报告第一阶段报告的全球对流层臭氧趋势的幅度。总体而言，该研究为利用卫星数据量化大气成分变化提供了重要依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Atmospheric Evolution of Brown Carbon from Wildfires in North America</section>
+            <section class="paper-authors">Jhao-Hong Chen, Uma Puttu, Han N. Huynh, Adam T. Ahern, Katherine Ball, Kelvin H. Bates, Charles A. Brock, Teresa Campos, Matthew M. Coggon, John D. Crounse, Joost de Gouw, Joshua P. DiGangi, Glenn S. Diskin, Georgios I. Gkatzelis, Hannah S. Halliday, Lu Hu, Abigail R. Koss, Yanshun Li, Ming Lyu, Georgia Michailoudi, Shane M. Murphy, John B. Nowak, Brett B. Palm, Jeff Peischl, Wade Permar, Anne E. Perring, Rudra P. Pokhrel, Nell B. Schafer, Joshua P. Schwarz, Kanako Sekimoto, Vanessa Selimovic, Chelsea E. Stockwell, Amy P. Sullivan, Joel A. Thornton, Nicholas L. Wagner, Siyuan Wang, Carsten Warneke, Paul O. Wennberg, Linghan Zeng, Robert J. Yokelson, Rodney J. Weber, Lu Xu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c09020" target="_blank">https://doi.org/10.1021/acs.est.5c09020</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">棕色碳</span>
+                        <span class="topic-tag">野火排放</span>
+                        <span class="topic-tag">大气演化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c09020" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《北美野火中棕色碳的大气演化》。该研究论文探讨了北美野火产生的<b>棕色碳</b>（BrC）在大气中的演变过程。研究综合了实验室和飞机观测数据，利用乙腈和氰化氢等惰性示踪剂参数化BrC的排放比率，并分析了自由对流层中BrC吸收随羟基自由基（OH）暴露的变化。结果表明，BrC的光化学反应速率相对较慢，导致其在排放后最初几小时内衰减不明显，但经过充分的光氧化后，仍有少量BrC残留。该研究提供的数据可用于估算烟羽演化的初始条件。总的来说，这项研究的结果提高了我们对BrC变异性和光化学过程的理解，并为模拟其对气候的影响提供了关键约束。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurements of the Emission Rates of Nitrogen Oxides and Greenhouse Gases From the Prudhoe Bay Oil Field</section>
+            <section class="paper-authors">K. D. Hajny, R. Kaeser, T. K. Starn, B. H. Stirm, N. Brockway, P. K. Peterson, K. Bigge, W. R. Simpson, K. A. Pratt, J. D. Fuentes, S. M. Lance, P. B. Shepson</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD041963" target="_blank">https://doi.org/10.1029/2024JD041963</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">排放率测量</span>
+                        <span class="topic-tag">氮氧化物</span>
+                        <span class="topic-tag">温室气体</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD041963" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《普拉德霍湾油田氮氧化物和温室气体排放率的测量》。油气产区是温室气体和反应性污染物（如氮氧化物 (NOx) 和挥发性有机化合物）的重要来源。研究还表明，报告给美国环境保护署 (EPA) 温室气体报告计划 (GHGRP) 的甲烷 (CH4) 排放量通常被低估。2022 年，北极占全球油气产量的 5.5%，但据估计蕴藏着大量尚未发现的资源。排放的 NOx 和挥发性有机化合物会影响北极大气层的组成和化学性质。阿拉斯加的普拉德霍湾油田是美国最大的 10 个油田之一，并已获准进行重大开发扩张。但是，最近只有一项研究报告了其温室气体排放量的测量结果。我们使用机载质量平衡方法和排放比率估算了 2022 年春季普拉德霍湾油田的二氧化碳 (CO2)、CH4 和 NOx 排放率。我们还讨论了每产生能量的排放量，并显示出随着时间的推移而增加，其值高于油气产区全国平均水平，尽管在不确定性范围内。我们的估计值低于国家排放清单 (NEI) 中报告的 NOx 排放量估计值，正如在其他油气研究中看到的那样，但在 GHGRP 中报告的温室气体的不确定性范围内。这项工作提供了在进一步扩大采掘活动之前排放量的宝贵快照。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Quantifying the impacts of meteorology, biomass burning, long-range transport, and local sources on long-term hourly PM<sub>2.5</sub> measurements</section>
+            <section class="paper-authors">Amir Wagle, Benjamin de Foy</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108380" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108380</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5浓度</span>
+                        <span class="topic-tag">长距离输送</span>
+                        <span class="topic-tag">大气建模</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108380" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《量化气象、生物质燃烧、远距离输送和当地来源对长期小时 PM2.5 测量的影响》。可解释的机器学习工具增强了对细颗粒物（PM2.5）浓度的小时变化进行建模和分析的能力。这些工具可以区分多种因素对 PM2.5 水平的影响，并探索它们与 PM2.5 的非线性关系。本研究分析了尼泊尔加德满都两个测量点 2017 年至 2023 年的小时 PM2.5 浓度。我们使用广义加性模型 (GAM) 来量化森林火灾、远距离输送、当地排放和气象条件对 PM2.5 水平的影响。GAM 模拟显示，季节性温度分量是主要驱动因素，解释了模型方差的 36%，表明季节性对 PM2.5 浓度有强烈影响。我们使用小时反向轨迹，结合来自 NCAR 的火灾清单 (FINN)，来估计生物质燃烧的影响，该影响约占 Phora Durbar 站点平均 50 μg/m3 PM2.5 的 8 μg/m3，主要来自尼泊尔的森林地区。我们使用轨迹聚类浓度影响 (TCCI) 来确定远距离输送的影响，并观察到西北气团将 PM2.5 浓度提高高达 4 μg/m3，而东南气团将浓度降低高达 4 μg/m3。昼夜变化和边界层高度显着影响 PM2.5 水平，分别解释了模型方差的 7% 和 6%，代表了当地排放的影响。总的来说，GAM 框架有效地量化了气象、森林火灾、远距离输送和当地排放对 PM2.5 浓度的贡献，强调了解决这些因素以改善空气质量的必要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A High-Resolution Inventory of Anthropogenic Methane Emissions in New York State</section>
+            <section class="paper-authors">Matthew L. Loman, Lee T. Murray, Eric M. Leibensperger, Joannes D. Maasakkers</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c07245" target="_blank">https://doi.org/10.1021/acs.est.5c07245</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放</span>
+                        <span class="topic-tag">人为源</span>
+                        <span class="topic-tag">排放清单</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c07245" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《纽约州人为甲烷排放的高分辨率清单》。该研究论文主要关注<b>纽约州人为甲烷排放的详细清单</b>。为了便于模拟区域甲烷排放，我们提供了纽约州2020年空间分解人为甲烷排放清单，水平分辨率为100米，时间分辨率为每月。论文比较了纽约州环境保护部（NYSDEC）和纽约州能源研究与开发管理局（NYSERDA）的州级清单中报告的82个来源类别的排放量。总的来说，这项工作与包括纽约市城市地区清单在内的现有网格清单相比具有优势。然而，NYSDEC和NYSERDA报告估计的人为甲烷排放总量比美国环保署清单和全球大气研究排放数据库第8版的2020年纽约州总量分别高出38%和170%。尽管一些主要的人为甲烷来源仍然不确定，但这项工作为地方尺度的分析和建模奠定了基础，这将是纽约州和其他次国家实体实现其减排目标所必需的。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Microphysical properties of refractory black carbon aerosols for different air masses at a central European background site</section>
+            <section class="paper-authors">Yifan Yang, Thomas Müller, Laurent Poulain, Samira Atabakhsh, Bruna A. Holanda, Jens Voigtländer, Shubhi Arora, Mira L. Pöhlker</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8637-2025" target="_blank">https://doi.org/10.5194/acp-25-8637-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳气溶胶</span>
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8637-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《中欧背景站点不同气团中难熔黑碳气溶胶的微物理性质》。该研究关注<b>黑碳气溶胶</b>的<b>微物理性质</b>，通过在德国Melpitz背景站点的观测，研究了夏季和冬季不同气团中<b>黑碳</b>的粒径、混合状态和挥发性。研究使用了单颗粒烟尘光度计 coupled with a thermodenuder。研究结果表明，夏季<b>光化学过程</b>和冬季<b>居民供暖排放</b>对黑碳的特性有显著影响。在夏季，来自西北方向长距离传输的气团中，黑碳的质量中值直径最小；而在冬季，受东风影响的气团中，黑碳的浓度最高，质量中值直径最大。研究还发现，夏季白天厚涂层黑碳的比例增加，表明光化学过程对黑碳的混合状态有重要影响。冬季，冷气团中厚涂层黑碳的比例高于暖气团，表明居民供暖排放对混合状态的贡献。这些研究结果对于提高气溶胶光学模拟的准确性具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Assessing the Shifts in Atmospheric Per- and Polyfluoroalkyl Substances (PFAS) Levels in the Great Lakes and Implications for the Environmental Transport and Fate</section>
+            <section class="paper-authors">Wen-Long Li, Hayley Hung, Alexander Kasperkiewicz, Chubashini Shunthirasingham, Jared Chisamore, Milena Rabu, Richard Park, Chun-Yan Huo, Patrick Lee, Helena Dryfhout-Clark</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00121" target="_blank">https://doi.org/10.1021/acsestair.5c00121</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">全氟烷基物质</span>
+                        <span class="topic-tag">大气质量</span>
+                        <span class="topic-tag">环境运输</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00121" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《评估大湖区大气中全氟烷基物质 (PFAS) 水平的变化及其对环境迁移和归趋的影响》。这项研究首次对大湖区大气中全氟和多氟烷基物质 (PFAS) 进行了多年调查。∑PFAS 的水平范围很广，从 2.9 到 280 pg/m3。与乡村站点相比，受城市影响的站点中 PFAS 浓度更高，表明两个采样地点之间存在空间变异性。尽管没有一致的季节性模式，但全氟辛酸 (PFOA) 和中性 PFAS (nPFAS) 的浓度往往在夏季月份更高。这种模式似乎受到空气回溯轨迹的季节性变化和采样点以南的潜在影响的影响。该研究阐明了 COVID-19 大流行期间大气 PFAS 动态的潜在变化。使用带有概率方法的修改模型，我们调查了安大略湖中 PFOA 和全氟辛烷磺酸 (PFOS) 的传输和归趋。从空气到水估计的 PFOA 和 PFOS 负荷分别为 9.5 ± 3.6 和 17 ± 6.6 kg/y，接近湿沉降的值（分别为 10 ± 3.9 和 31 ± 12 kg/y），但远低于流入量和所有其他来源。PFOA 和 PFOS 的主要输出途径是水流出。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Hemispheric differences in ozone across the stratosphere–troposphere exchange region</section>
+            <section class="paper-authors">Rodrigo J. Seguel, Charlie Opazo, Yann Cohen, Owen R. Cooper, Laura Gallardo, Björn-Martin Sinnhuber, Florian Obersteiner, Andreas Zahn, Peter Hoor, Susanne Rohs, Andreas Marsing</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8553-2025" target="_blank">https://doi.org/10.5194/acp-25-8553-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧</span>
+                        <span class="topic-tag">大气成分</span>
+                        <span class="topic-tag">半球差异</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8553-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《平流层-对流层交换区域臭氧的半球差异》。该研究探讨了南北半球平流层-对流层交换区（UTLS）<b>臭氧</b>的差异。研究使用了来自IAGOS商业飞机、长期臭氧探空仪记录以及HALO研究飞机的原位测量数据。研究结果表明，在北半球（NH）UTLS中，具有平流层来源的气团的<b>臭氧</b>丰度高于南半球（SH）。在高臭氧消耗年份，南半球臭氧中值仅为北半球的54%，而在低消耗年份，南半球臭氧中值达到北半球的57%。值得注意的是，突然平流层变暖（SSW）事件增加了南半球UTLS的臭氧，而在北半球的增加较小。研究还使用了哥白尼大气监测服务（CAMS）的再分析数据，增强了空间覆盖范围。总体而言，该研究揭示了<b>半球间臭氧差异</b>，并强调了平流层过程对对流层上部臭氧的影响，这对了解全球大气化学和气候变化至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Ozone dry deposition through plant stomata: multi-model com]parison with flux observations and  the role of water stress as part of AQMEII4 Activity 2</section>
+            <section class="paper-authors">Anam M. Khan, Olivia E. Clifton, Jesse O. Bash, Sam Bland, Nathan Booth, Philip Cheung, Lisa Emberson, Johannes Flemming, Erick Fredj, Stefano Galmarini, Laurens Ganzeveld, Orestis Gazetas, Ignacio Goded, Christian Hogrefe, Christopher D. Holmes, László Horváth, Vincent Huijnen, Qian Li, Paul A. Makar, Ivan Mammarella, Giovanni Manca, J. William Munger, Juan L. Pérez-Camanyo, Jonathan Pleim, Limei Ran, Roberto San Jose, Donna Schwede, Sam J. Silva, Ralf Staebler, Shihan Sun, Amos P. K. Tai, Eran Tas, Timo Vesala, Tamás Weidinger, Zhiyong Wu, Leiming Zhang, Paul C. Stoy</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8613-2025" target="_blank">https://doi.org/10.5194/acp-25-8613-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧干沉降</span>
+                        <span class="topic-tag">大气化学模型</span>
+                        <span class="topic-tag">水分胁迫</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8613-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《臭氧通过植物气孔的干沉降：多模型与通量观测的比较以及水分胁迫的作用，作为AQMEII4活动2的一部分》。该研究主要关注通过植物气孔吸收对流层<b>臭氧</b>的干沉降过程，并使用<b>大气化学模型</b>进行模拟，然后将模拟结果与实际<b>通量观测</b>数据进行比较。研究者在六个地点评估了大气化学模型模拟臭氧干沉降中气孔吸收部分的效果。模型配置为单点模型，并使用通量塔收集的数据进行驱动。研究重点在于评估模型在不同地点的臭氧干沉降模拟效果，并探讨<b>水分胁迫</b>对植物气孔吸收臭氧的影响。研究结果表明，在生长季节的某些时段，模型与基于观测的估计值在所有地点都较为一致，但一些模型高估了季节性干燥地点旱季夏季的气孔吸收部分。研究还发现，模型中的水分胁迫效应在温带-北方过渡森林中过于强烈。该研究表明，准确表示水分胁迫对气孔吸收臭氧的影响仍然面临挑战，特别是在观测到的生态系统特有的植物-资源相互作用引起的干燥加剧的情况下。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Remote sensing measurements during PaCE 2022 campaign</section>
+            <section class="paper-authors">Simo Tukiainen, Tuomas Siipola, Niko Leskinen, Ewan O'Connor</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-3797-2025" target="_blank">https://doi.org/10.5194/essd-17-3797-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">地面遥感</span>
+                        <span class="topic-tag">云特性</span>
+                        <span class="topic-tag">大气廓线</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-3797-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《PaCE 2022活动期间的遥感测量》。该研究论文介绍了2022年Pallas Cloud Experiment (PaCE)期间在芬兰Kenttärova进行的<b>地面遥感测量</b>。研究使用了包括<b>云高仪</b>、<b>多普勒云雷达</b>和<b>多普勒风廓线雷达</b>在内的多种遥感仪器，获取了大气垂直廓线数据。通过结合来自这些仪器的数据和数值天气预报模型，使用Cloudnet方法检索了云的微物理和宏观物理性质，如冰水含量和冰有效半径。这些数据经过<b>Cloudnet方法</b>处理，结果发现这些测量数据为验证PaCE原位测量提供了机会。该数据集可通过ACTRIS Cloudnet数据门户获取。总体而言，该研究为云和气溶胶相互作用的研究提供了宝贵的数据集。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Atmospheric fate of organosulfates through gas-phase and aqueous-phase reactions with hydroxyl radicals: implications for inorganic sulfate formation</section>
+            <section class="paper-authors">Narcisse Tsona Tchinda, Xiaofan Lv, Stanley Numbonui Tasheh, Julius Numbonui Ghogomu, Lin Du</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8575-2025" target="_blank">https://doi.org/10.5194/acp-25-8575-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有机硫酸盐</span>
+                        <span class="topic-tag">羟基自由基</span>
+                        <span class="topic-tag">大气反应</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8575-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《通过与羟基自由基的气相和液相反应，有机硫酸盐的大气归宿：对无机硫酸盐形成的影响》。该研究论文探讨了<b>有机硫酸盐</b>在大气中的转化过程，重点研究了它们与<b>羟基自由基</b>的反应，以及这些反应如何影响<b>无机硫酸盐</b>的形成。研究使用基于密度泛函理论的量子化学计算来探索一些常见的有机硫酸盐（特别是甲基硫酸盐和乙醇酸硫酸盐）与羟基自由基在气相和液相中的反应。研究结果表明，这些反应始于羟基自由基从甲基硫酸盐的CH3-以及乙醇酸硫酸盐的-CH2-和-COOH中夺取氢，然后生成的自由基通过自分解、与O2相互作用以及可能与O3相互作用进一步反应。研究还发现，除了O2作为有机硫酸盐分解的主要氧化剂外，O3可能是这一过程中的补充氧化剂。研究还确定了甲基硫酸盐和乙醇酸硫酸盐气相反应的速率常数。总体而言，该研究阐明了由羟基自由基引发的有机硫酸盐转化机制，并强调了化学取代的潜在作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Seasonal effects in the application of the MOment MAtching (MOMA) remote calibration tool to outdoor PM2.5 air sensors</section>
+            <section class="paper-authors">Lena Francesca Weissert, Geoff Stephen Henshaw, Andrea Lee Clements, Rachelle Monique Duvall, Carry Croghan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-3635-2025" target="_blank">https://doi.org/10.5194/amt-18-3635-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">远程校准</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-3635-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《MOment MAtching (MOMA)远程校准工具在室外PM2.5空气传感器应用中的季节性影响》。该研究评估了一种名为<b>MOment MAtching (MOMA)</b>的<b>远程校准工具</b>，用于校准PurpleAir PM2.5传感器，尤其是在不同PM来源的情况下，并将其与美国环保署(EPA)的校正方法进行了比较。研究使用了亚利桑那州凤凰城20个PurpleAir传感器网络在2019年7月至2021年4月的数据。研究结果表明，MOMA能够提高<b>PurpleAir PM2.5传感器</b>数据的准确性，与EPA的校正效果相当。此外，MOMA还能区分冬季烧木材、野火和夏季沙尘暴等PM来源。虽然MOMA依赖于附近的参考站点，但它能提供关于潜在PM来源的宝贵见解。结果还表明，在烟雾条件下，MOMA比EPA校正因子更能准确估计日平均浓度。总体而言，MOMA提供了一种有价值的校准方法，能够提高低成本PM2.5传感器网络数据的可靠性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
