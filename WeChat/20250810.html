@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/08/10</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Downscaling aerosol optical depth by fusing satellite retrieval and model simulation using artificial intelligence technology</section>
+            <section class="paper-authors">Lin Sun, Xiangshuo Zhang, Yulong Fan, Zhihui Wang, Xiaohu Sun</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108411" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108411</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">卫星反演</span>
+                        <span class="topic-tag">人工智能</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108411" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“利用人工智能技术融合卫星反演和模型模拟来降尺度气溶胶光学厚度”。本研究提出了一种新颖的两阶段混合算法，结合了**卫星观测数据（MODIS）**和**模型模拟（MERRA-2）**，利用**人工智能技术**生成中国地区高分辨率（1公里）的**气溶胶光学厚度（AOD）**地图。该方法旨在克服现有AOD产品在空间覆盖和分辨率方面的局限性，通过深度学习模型Downscale-UNet，提高了AOD估算的准确性和空间连续性。第一阶段使用集成机器学习模型校准MERRA-2 AOD，第二阶段采用增强的Downscale-UNet模型，结合CBAM和DSC模块来提高空间特征提取和计算效率。验证结果表明，与传统的UNet相比，该模型性能提高了约5%，确定系数（R2）高达0.93。该研究成果可用于**空气质量监测**、**流行病学研究**和**气候建模**等应用，并提供了公开可用的数据集和模型。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Warn-on-Forecast System for Smoke (WoFS-Smoke) with vertical velocity adjustment</section>
+            <section class="paper-authors">Fangjiao Ma, Thomas Jones</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121471" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121471</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">烟雾预报</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">火积云</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121471" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“具有垂直速度调整的烟雾预警预报系统（WoFS-Smoke）”。本文介绍了一个名为**WoFS-Smoke**的**烟雾预报系统**，用于短时（0-6小时）预测野火产生的烟雾。该系统利用GOES卫星的**火灾辐射功率（FRP）数据**来估算烟雾排放，并通过改进的算法将烟柱抬升模型中的垂直速度反馈到WRF模型中，从而更准确地预测烟雾的垂直结构和**火积云**的形成。WoFS-Smoke通过将Freitas羽流模型估算的垂直速度剖面整合回WoFS-Smoke，解决了这一局限性。通过应用于加利福尼亚州、新墨西哥州和德克萨斯州的三个野火事件，证明了其改进的能力。该系统旨在提高对快速演变野火产生的烟雾的短期预报能力，特别是空气质量监测、卫星观测和大气成分分析，尤其是烟雾气溶胶的传输和预测。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Using a Machine Learning Approach for Isolating Aerosol Effects on Cloud Droplet Number Concentration in Marine Stratocumulus Clouds</section>
+            <section class="paper-authors">Muhammed Irfan, Antti Lipponen, Thomas Kühn, Sami Romakkaniemi, Silvia M. Calderón, Eemeli Holopainen, Annele Virtanen, Antti Arola, Harri Kokkola</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043926" target="_blank">https://doi.org/10.1029/2025JD043926</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶影响</span>
+                        <span class="topic-tag">云滴数量浓度</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043926" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“使用机器学习方法分离气溶胶对海洋层积云中云滴数量浓度的影响”。论文主要探讨了**气溶胶**对**云滴数量浓度（CDNC）**的影响，特别是在**海洋层积云**中。研究结合了**卫星观测数据**和**全球气候模型**，并采用**机器学习方法**来更准确地估计云滴对气溶胶扰动的敏感性，重点是**CCN-CDNC斜率**。研究特别关注了大气动力学和云微物理等因素对CDNC的影响，并使用Elastic Net回归来分离CCN浓度变化对CDNC的独立影响，从而改进了对气溶胶-云相互作用的理解。研究结果有助于提高对气溶胶辐射强迫的评估能力，这对于气候变化研究至关重要。这项研究表明，云滴数量浓度不仅受云凝结核的影响，还受到大气动力学和云微物理过程的显著影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">In-situ baseline calibration approach for enhanced data quality of large-scale air sensor monitoring networks</section>
+            <section class="paper-authors">Han Mei, Peng Wei, Ya Wang, Meisam Ahmadi Ghadikolaei, Nirmal Kumar Gali, Zhi Ning</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01184-9" target="_blank">https://doi.org/10.1038/s41612-025-01184-9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">现场校准</span>
+                        <span class="topic-tag">传感器网络</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01184-9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“用于增强大规模空气传感器监测网络数据质量的现场基线校准方法”。本文提出了一种用于大规模空气质量监测传感器网络的**现场基线校准方法（b-SBS）**。该方法旨在解决传统校准方法在大型网络中应用时面临的可扩展性问题，通过分析**电化学传感器**的物理特性和统计校准系数，实现远程校准，无需直接共址。通过对**NO2**、**NO**、**CO**和**O3**传感器的初步现场测试和上海大规模网络的应用，表明该方法可以显著提高数据质量，降低运营成本，并确保传感器在长期部署中的准确测量。研究结果表明，与原始测量相比，应用 b-SBS 校准方法后，R2 中值提高了 45.8%，RMSE 降低了 52.6%。该研究对于提升空气质量监测网络的性能具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A Novel Combinatorial Approach of Volatile Organic Compound Tracers, Low-Cost Sensors, and Source-Receptor Modeling for Spatial Identification and Quantification of Natural and Anthropogenic Sources of Criteria Air Pollutants: Case Study from the Indo-Gangetic Plain</section>
+            <section class="paper-authors">Raj Singh, Baerbel Sinha, Vinayak Sinha</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.estlett.5c00473" target="_blank">https://doi.org/10.1021/acs.estlett.5c00473</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气污染源识别</span>
+                        <span class="topic-tag">低成本传感器</span>
+                        <span class="topic-tag">VOC示踪剂</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.estlett.5c00473" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“挥发性有机化合物示踪剂、低成本传感器和源-受体模型相结合的新方法，用于空间识别和量化自然和人为来源的关键空气污染物：来自印度-恒河平原的案例研究”。研究重点在于**识别**和**量化空气污染源**，并提出了一种结合挥发性有机化合物（VOCs）示踪剂、低成本传感器网络和源-受体模型的新方法，以确定自然和人为来源对空气质量的影响。以印度莫哈里为例，利用COVID-19封锁期间的数据，分析了交通、工业和废物燃烧等活动对**PM2.5**、**PM10**和**SO2**等污染物的影响。研究发现，最强的PM和SO2来源位于城市外围和腹地，强调了清洁空气行动计划需要从城市非达标区域转向整体流域方法。该研究揭示了封锁期间交通活动显著减少，VOC排放和NO排放大幅下降，工业活动和电力需求下降，SO2排放减少，以及开放式废物燃烧的减少，对空气质量的改善做出了重要贡献。研究结果强调了采用整体流域方法对于有效改善空气质量的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">High CCN activation of south Asian outflow observed at the water vapor channel of the southeastern Tibetan plateau</section>
+            <section class="paper-authors">Jianzhong Xu, Xinghua Zhang, Yanqing An, Lixiang Zhai, Miao Zhong, Shugui Hou</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121453" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121453</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">CCN活性</span>
+                        <span class="topic-tag">南亚流出</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121453" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“在青藏高原东南部的蒸汽通道观测到的南亚流出物的高CCN活性”。本研究关注青藏高原东南部的**气溶胶**物理化学性质和**云凝结核（CCN）活性**，研究区域为雅鲁藏布大峡谷，是南亚水汽进入青藏高原内部的关键通道。重点研究了与南亚流出相关的气溶胶特性。研究发现，亚微米气溶胶主要由有机气溶胶主导，且在研究期间观察到高CCN活性比率。在气溶胶高浓度时期，有机气溶胶的贡献增加，而硫酸盐的贡献减少。研究结果表明，南亚气流携带的气溶胶可能通过**气溶胶-云相互作用**引发降水。研究结果加深了我们对南亚流出物的传输和演化过程及其对季风前区域水循环影响的理解。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
