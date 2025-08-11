@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/08/11</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Decade-long variability of winter aerosols in East Asia and their associations with climatic factors</section>
+            <section class="paper-authors">Yeomin Jeong, Na-Mi Lee, Wonbae Jeon, Jung-Woo Yoo, Maeng-Ki Kim, Suryun Ham, Cheol-Hee Kim</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108415" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108415</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">气候因素</span>
+                        <span class="topic-tag">东亚地区</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108415" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《<b>东亚冬季气溶胶的十年变化及其与气候因素的关联</b>》，研究着重分析了2000年至2022年间<b>东亚</b>地区冬季<b>气溶胶光学厚度（AOD）</b>的长期变化趋势，并深入探讨了气候因素对其产生的影响。研究采用了来自<b>全球大气研究排放数据库（EDGAR）</b>的排放数据以及<b>西太平洋振荡（WPO）</b>、<b>东亚急流指数（EAJSI）</b>、<b>西伯利亚高压指数（SHI）</b>和<b>北极海冰指数（ASI）</b>等气候指标，利用<b>经验正交函数（EOF）分析</b>方法，揭示了AOD的季节内和年际变率。研究结果表明，尽管<b>NOₓ</b>和<b>SO₂</b>排放量的减少对AOD的长期下降做出了显著贡献，但气候因素的作用不可忽视。具体来说，<b>WPO</b>主要影响早冬（12月至1月）的AOD变率，而与<b>东亚西风模（EAWMI）</b>相关的气候指数在晚冬（2月）的影响更为显著。此外，早冬北极海冰的快速减少也加剧了<b>SHI</b>和<b>EAJSI</b>，导致晚冬AOD的下降。研究强调了气候因素在影响东亚冬季AOD方面日益增长的重要性，并指出近年来这种影响更加明显。这些发现对于理解和预测东亚地区的空气质量具有重要意义，并强调了气候变化与空气污染之间的复杂关系。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
