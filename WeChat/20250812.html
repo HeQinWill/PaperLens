@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/08/12</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Aerosol single-scattering albedo derived by  merging OMI/POLDER satellite products and  AERONET ground observations</section>
+            <section class="paper-authors">Yueming Dong, Jing Li, Zhenyu Zhang, Chongzhao Zhang, Qiurui Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-3873-2025" target="_blank">https://doi.org/10.5194/essd-17-3873-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶反照率</span>
+                        <span class="topic-tag">数据融合</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-3873-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《通过融合OMI/POLDER卫星产品和AERONET地面观测数据导出的气溶胶单次散射反照率》。该研究旨在构建更准确的全球<b>气溶胶单次散射反照率（SSA）</b>数据集。研究采用<b>集合卡尔曼滤波（EnKF）数据协同技术</b>，将<b>臭氧监测仪（OMI）</b>和<b>地球反射偏振与方向性测量仪（POLDER）</b>的卫星数据与<b>气溶胶机器人网络（AERONET）</b>的地面观测数据相结合，构建了两个融合的月平均SSA数据集：Merged-OMI和Merged-POLDER。结果表明，融合后的数据集与原始卫星产品相比，准确性显著提高。通过<b>独立AERONET观测</b>进行交叉验证显示，Merged-OMI数据集的相关系数平均提高了64%，均方根误差降低了11%，平均绝对偏差降低了10%。研究证实了EnKF技术在将地面站信息扩展到更大区域的有效性。该研究生成的两个融合数据集可为评估<b>气溶胶辐射强迫</b>和改进<b>气候模型</b>提供更准确的SSA估计，对推动全球气溶胶研究具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Hourly surface nitrogen dioxide retrieval from GEMS tropospheric vertical column densities: benefit of using time-contiguous input features for machine learning models</section>
+            <section class="paper-authors">Janek Gödeke, Andreas Richter, Kezia Lange, Peter Maaß, Hyunkee Hong, Hanlim Lee, Junsung Park</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-3747-2025" target="_blank">https://doi.org/10.5194/amt-18-3747-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二氧化氮</span>
+                        <span class="topic-tag">GEMS卫星</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-3747-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《利用GEMS对流层垂直柱密度进行逐小时地表二氧化氮反演：使用时间连续输入特征对<b>机器学习模型</b>的益处》。该研究利用韩国<b>地球静止环境监测光谱仪（GEMS）</b>提供的<b>二氧化氮（NO2）</b>数据，结合气象数据，旨在预测韩国地表的逐小时NO2浓度。GEMS能够提供<b>小时级数据</b>，相比其他卫星的每日过境数据，时间分辨率更高。研究重点在于，通过<b>机器学习模型</b>（随机森林和线性回归模型），将过去几个小时的观测数据作为额外的输入特征，从而提高地表NO2浓度预测的准确性。研究结果表明，使用<b>时间连续输入</b>可以显著提升模型的性能，例如皮尔逊相关系数和均方误差等指标均得到改善。通过<b>空间交叉验证</b>，研究还评估了模型在未训练区域的泛化能力，并分析了<b>对流层NO2垂直柱浓度</b>对模型性能的影响。这项研究对于提升基于卫星观测的地表空气质量监测能力具有重要价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impacts of wildfire smoke aerosols on near-surface ozone photochemistry</section>
+            <section class="paper-authors">Jiaqi Shen, Ronald C. Cohen, Glenn M. Wolfe, Xiaomeng Jin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8701-2025" target="_blank">https://doi.org/10.5194/acp-25-8701-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧光化学</span>
+                        <span class="topic-tag">野火气溶胶</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8701-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《野火烟雾气溶胶对近地面<b>臭氧光化学</b>的影响》。该研究探讨了野火产生的<b>烟雾气溶胶</b>对近地面臭氧生成产生的化学和辐射效应，重点关注<b>气溶胶浓度</b>和氮氧化物（NOx）水平作为主要影响因素。研究发现，尽管气溶胶通常通过<b>非均相化学</b>和辐射途径抑制臭氧生成，但对于大多数火灾而言，前体物排放驱动的臭氧增强效应超过了气溶胶抑制效应。研究利用0-D箱模型（F0AM）和3-D化学传输模型（GEOS-Chem）相结合的方法，评估了气溶胶的两种效应的相对重要性，发现<b>非均相化学效应</b>通常在火灾远场超过辐射效应，而在极大型火灾源附近，辐射效应占主导地位，导致臭氧生成受到抑制。此外，研究还表明，地表PM2.5与对流层NO2柱浓度的比值可以作为识别<b>气溶胶主导区域</b>的指标，从而可以通过卫星观测评估气溶胶对臭氧形成的影响。这项研究对于理解野火烟雾对大气化学的影响以及提高空气质量预测的准确性具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The ELK global emission inventory for the transport sectors</section>
+            <section class="paper-authors">Mattia Righi, Simone Ehrenberger, Sabine Brinkop, Johannes Hendricks, Jens Hellekes, Paweł Banyś, Isheeka Dasgupta, Patrick Draheim, Annika Fitz, Manuel Löber, Thomas Pregger, Yvonne Scholz, Angelika Schulz, Birgit Suhr, Nina Thomsen, Christian Martin Weder, Peter Berster, Maximilian Clococeanu, Marc Gelhausen, Alexander Lau, Florian Linke, Sigrun Matthes, Zarah Lea Zengerling</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2025-454" target="_blank">https://doi.org/10.5194/essd-2025-454</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">全球排放清单</span>
+                        <span class="topic-tag">交通运输</span>
+                        <span class="topic-tag">大气模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2025-454" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《ELK全球运输部门排放清单》。该论文介绍了一个名为ELK的<b>全球运输部门排放清单</b>，涵盖陆地运输、航运和航空等领域，以及能源部门（炼油厂）相关的排放。该清单采用<b>自下而上的方法</b>，详细解析了不同子部门的排放情况，考虑了特定于运输的参数和排放物种，并量化了能源部门与运输相关的排放。ELK清单提供了对现有数据集的多项重大改进，比如更清晰地解析子部门级别的排放量，考察了传输过程中一些特定的数量和排放种类，以及量化了能源部门和交通运输部门相关的排放量。排放数据由定量的<b>不确定性评分</b>补充，该评分基于对活动数据到排放因子的整个建模链条的详细专家判断分析。通过与其他全球清单进行比较来<b>验证数据</b>的准确性，解释了偏差，并在可能情况下，根据潜在排放模型的不同假设和特征来解释偏差。该数据集在开源许可下发布，以鼓励大气建模社区使用。该研究对于使用<b>大气模型</b>进行空气质量监测、评估<b>气候变化</b>影响以及进行大气成分分析至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Assessing modifications to the Abdul-Razzak and Ghan aerosol activation parameterization (version ARG2000) to improve simulated aerosol–cloud radiative effects in the UK Met Office Unified Model (UM version 13.0)</section>
+            <section class="paper-authors">Pratapaditya Ghosh, Katherine J. Evans, Daniel P. Grosvenor, Hyun-Gyu Kang, Salil Mahajan, Min Xu, Wei Zhang, Hamish Gordon</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-4899-2025" target="_blank">https://doi.org/10.5194/gmd-18-4899-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶活化</span>
+                        <span class="topic-tag">云辐射效应</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-4899-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《评估对Abdul-Razzak和Ghan气溶胶活化参数化（ARG2000版本）的修改，以改善英国气象局统一模型（UM 13.0版本）中模拟的气溶胶-云辐射效应》。该研究关注<b>气候模型</b>中<b>气溶胶活化参数化方案</b>的改进，特别是Abdul-Razzak和Ghan (ARG)方案。研究结果表明，对ARG方程中的三个常量参数进行调整，可以改善参数化方案在小模式宽度下的性能，并提高其在污染条件下模拟活化的能力。修改减轻了<b>模拟全球液滴数量浓度</b>的平均偏差，从而导致更多反射的<b>太阳辐射</b>和净冷却效应。与云团模型相比，对于英国气象局统一模型 (UM) 中使用的 1.4 的累积模式宽度，修改将<b>气溶胶活化</b>部分的平均偏差从 -6.6 % 降至 +1.2 %。研究将改进应用于UM，并将<b>模拟全球云滴浓度</b>与<b>卫星观测</b>结果进行了比较。模拟的<b>云辐射效应</b>变化为 −1.43 W m−2 (6 %)，工业时期<b>气溶胶间接辐射强迫</b>变化为 −0.10 W m−2 (10 %)。这与大气环境遥感技术密切相关，因为它利用卫星观测来验证和改进气候模型中关于气溶胶和云的模拟。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Identification and characterization of foehn events in Beijing and their impact on air pollution episodes</section>
+            <section class="paper-authors">Ju Li, Jingjiang Zhang, Mengxin Bai, Jie Su, Qingchun Li, Xingcan Jia</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-8683-2025" target="_blank">https://doi.org/10.5194/acp-25-8683-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">焚风事件</span>
+                        <span class="topic-tag">空气污染</span>
+                        <span class="topic-tag">气象数据</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-8683-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《北京<b>焚风</b>事件的识别与特征及其对<b>空气污染</b>事件的影响》。研究使用2015年至2020年的<b>气象站数据</b>，识别并分析了北京地区的焚风事件。结果表明，北京平均每年发生56.5天的焚风，主要集中在冬季。焚风会导致<b>气温显著升高</b>，并且与空气污染水平密切相关。强焚风往往能降低污染物浓度，而弱焚风则可能导致污染物浓度升高。研究提出了一种基于<b>自动气象站数据</b>识别焚风事件的方法，综合考虑了高空风向、地形、气象变化和焚风传播等因素。分析发现，焚风高发区呈现从西北山区到东南平原的带状分布。焚风引起的<b>小时气温升高</b>可超过11°C，高峰期为夜间至清晨。约67%的污染事件伴随焚风发生，焚风持续时间与污染事件持续时间呈负相关。研究进一步指出，焚风通过<b>直接和间接效应</b>影响污染物浓度。直接效应与强西北气压梯度相关，能迅速降低污染物浓度；间接效应与弱气压梯度相关，改变边界层结构，导致焚风结束后污染物浓度迅速升高。这项研究对于理解焚风现象的演变、其对全球变暖背景下气温升高的贡献，以及焚风事件与高影响天气现象之间的关系具有重要意义，并为城市规划和环境管理提供了有价值的见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Oxic Methane Photoproduction in Global Great Lakes</section>
+            <section class="paper-authors">Jikang You, Chongsen Duan, Fei Liu, Weijia Wang, Yongwu Wang, Guoqiang Zhao, Yunlin Zhang, Huacheng Xu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c04964" target="_blank">https://doi.org/10.1021/acs.est.5c04964</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷</span>
+                        <span class="topic-tag">遥感</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c04964" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《全球大湖中的好氧甲烷光合作用》。该研究主要探讨了全球湖泊中<b>好氧甲烷光合作用</b>的潜力及其对甲烷扩散通量的贡献。该研究通过<b>遥感技术</b>和光化学模型估算了湖泊中甲烷的产生量，并分析了不同地区湖泊<b>甲烷光合作用</b>的时空分布模式。2011-2020年，中国湖泊好氧甲烷光合作用潜力在2.21e-7至5.97e-6 mol (CH4) m–2 day–1范围内。与东部地区的浅水富营养湖泊相比，中国西部，特别是<b>青藏高原</b>的深层贫营养湖泊，显示出更高的甲烷光合作用潜力。研究估算内陆湖泊的好氧甲烷光合作用过程在全球范围内占甲烷扩散通量的0.1-22%，全球湖泊的总好氧甲烷光合作用预算估计为每年0.0104 Tg CH4。这项研究强调了<b>好氧甲烷光合作用</b>过程在水生生态系统中的重要作用，并为全球<b>甲烷循环</b>的复杂难题贡献了宝贵的一块。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
