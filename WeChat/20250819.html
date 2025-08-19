@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/08/19</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Physics‐Based Spatial Oversampling of TROPOMI NO2 Observations to US Neighborhoods Reveals the Disparities of Air Pollution</section>
+            <section class="paper-authors">Xiaomeng Jin, Zaina Merchant, Kang Sun</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">GeoHealth</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GH001423" target="_blank">https://doi.org/10.1029/2025GH001423</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气污染差异</span>
+                        <span class="topic-tag">卫星数据过采样</span>
+                        <span class="topic-tag">NO2遥感监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GH001423" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">题为“Physics‐Based Spatial Oversampling of TROPOMI NO2 Observations to US Neighborhoods Reveals the Disparities of Air Pollution”的研究，提出了一种基于物理原理的空间过采样方法，用于将<b>TROPOMI</b>卫星的<b>NO2</b>观测数据直接应用于美国社区（街区组），以此揭示空气污染的差异。该方法考虑了每个卫星像素的敏感度分布，即卫星仪器对观测中心附近的街区比边缘更敏感。研究表明，直接对行政区域进行卫星观测的空间过采样比常用的网格化方法更准确、计算效率更高，并且对于较短的时间窗口更有优势。通过将新开发的NO2数据集与人口统计数据相结合，研究发现了美国各地普遍存在的种族/民族和收入相关的NO2污染差异。在污染最严重的日子里，NO2污染差异更为明显，这表明弱势社区面临更大的急性健康影响。该研究旨在提供一种分辨率自适应、社区级别的NO2数据集，以便公众更容易获取和利用卫星观测数据，从而促进相关行动。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Enhanced Quantification of Global Carbon Emitters Using Collocated OCO‐3 CO2 and NO2 Observations From Twin Polar‐Orbiting Satellites</section>
+            <section class="paper-authors">Tianyi Xu, Chengxin Zhang, Cheng Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL116877" target="_blank">https://doi.org/10.1029/2025GL116877</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">碳排放估算</span>
+                        <span class="topic-tag">卫星协同观测</span>
+                        <span class="topic-tag">大气成分监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL116877" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">题为“Enhanced Quantification of Global Carbon Emitters Using Collocated OCO‐3 CO2 and NO2 Observations From Twin Polar‐Orbiting Satellites” 的研究利用了双极地轨道卫星（<b>GaoFen‐5B</b>和<b>DaQi‐1</b>）的二氧化氮（<b>NO2</b>）观测数据，结合<b>OCO‐3</b>的二氧化碳（<b>CO2</b>）测量结果，以更精确地估算全球化石燃料二氧化碳（<b>FFCO2</b>）的排放量。相较于之前使用极地轨道卫星（例如，<b>Tropospheric Monitoring Instrument</b>）约束CO2估算的方法，该方法检测到的每日排放案例增加了40%，不确定性降低了高达12%，这主要归功于时间差异的减少和观测频率的增加。研究涵盖了全球69个排放案例，主要集中在东亚、欧洲、中东和北美。大约45%的估算排放量低于自下而上的清单值，这可能反映了当地排放控制措施的影响。该研究强调了卫星监测在FFCO2排放方面的重要性，以及未来具备高分辨率协同NO2/CO2测量任务的价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Evaluation of the operational MODIS cloud mask product for detecting cirrus clouds</section>
+            <section class="paper-authors">Żaneta Nguyen Huu, Andrzej Z. Kotarba, Agnieszka Wypych</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-3897-2025" target="_blank">https://doi.org/10.5194/amt-18-3897-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卷云检测</span>
+                        <span class="topic-tag">MODIS云掩膜</span>
+                        <span class="topic-tag">卫星数据验证</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-3897-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“Evaluation of the operational MODIS cloud mask product for detecting cirrus clouds”，主要评估了<b>MODIS</b>云掩膜产品在检测<b>卷云</b>方面的有效性。研究人员利用<b>CALIOP</b>数据作为参考，对比分析了MODIS云掩膜算法中使用的六种卷云和高云检测方法，以及结合所有测试的综合方法（ATC）。此外，还采用了国际卫星云气候计划（<b>ISCCP</b>）中基于MODIS反演的云顶属性的分类方法进行比较。研究结果表明，综合所有测试的方法（<b>ATC</b>）在白天表现出最高的准确性，总体准确率达到72.98%，但在夜间的准确性显著下降，仅为59.50%。因此，研究结论是，经过改进的MODIS云掩膜（ATC）在白天相对适用于创建高层云掩膜，但在夜间则无法可靠地报告卷云的存在。这项研究对于利用卫星遥感数据进行气候研究和大气环境监测具有重要意义，特别是在理解云的辐射效应方面。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
