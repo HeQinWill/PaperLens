@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/08/21</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A multi-year global methane data set obtained by merging observations from TROPOMI and IASI</section>
+            <section class="paper-authors">Kanwal Shahzadi, Matthias Schneider, Nga Ying Lo, Frank Hase, Jörg Meyer, Ugur Cayoglu, Tobias Borsdorff, Mari C. Martinez-Velarte</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2025-407" target="_blank">https://doi.org/10.5194/essd-2025-407</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2025-407" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究《结合TROPOMI和IASI观测获得多年全球甲烷数据集》主要关于利用 **卫星遥感** 技术监测大气中的 **甲烷** 浓度。它结合了 **TROPOMI** 和 **IASI** 两种卫星仪器的数据，创建了一个全球性的甲烷数据集，时间范围从2018年1月到2021年6月。该数据集不仅提供了总柱浓度和高层大气的部分柱浓度，还提供了 **对流层** 部分柱浓度的信息，这对于量化近地面 **甲烷** 排放至关重要。研究通过对两种卫星数据的整合分析，能够更有效地检测对流层中的甲烷，从而更好地了解人为排放的影响。研究成果为全球温室气体监测和气候变化研究提供了重要的数据支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">AGCPP: All-day Global Cloud Physical Properties dataset with 0.07° resolution retrieved from geostationary satellite imagers covering the period from 2000 to 2022</section>
+            <section class="paper-authors">Lingxiao Zhao, Feng Zhang, Jingwei Li, Feng Lu, Zhijun Zhao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2025-425" target="_blank">https://doi.org/10.5194/essd-2025-425</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">云物理属性</span>
+                        <span class="topic-tag">静止卫星</span>
+                        <span class="topic-tag">气候变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2025-425" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">《AGCPP：利用静止卫星成像仪获取的2000年至2022年全球全天云物理特性数据集，分辨率为0.07°》介绍了一个名为 **AGCPP** 的全球 **云物理属性** 数据集。该数据集利用 **静止卫星** 数据，结合极地轨道卫星的 **MODIS** 数据进行训练和验证，提供了2000年至2022年期间全球范围内云的物理属性信息，包括 **云相态** 、 **云顶高度** 、 **云光学厚度** 和 **云有效半径** 等。该数据集旨在解决现有云观测数据在时间和空间上的不一致性问题，为 **气候变化** 、天气模式和极端事件的研究提供可靠的数据基础。AGCPP数据集的构建，为更全面、更准确地研究云在气候系统中的作用提供了可能，也为气候模型的改进提供了重要的数据支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Climate forcing due to future ozone changes: an intercomparison of metrics and methods</section>
+            <section class="paper-authors">William J. Collins, Fiona M. O'Connor, Rachael E. Byrom, Øivind Hodnebrog, Patrick Jöckel, Mariano Mertens, Gunnar Myhre, Matthias Nützel, Dirk Olivié, Ragnhild Bieltvedt Skeie, Laura Stecher, Larry W. Horowitz, Vaishali Naik, Gregory Faluvegi, Ulas Im, Lee T. Murray, Drew Shindell, Kostas Tsigaridis, Nathan Luke Abraham, James Keeble</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-9031-2025" target="_blank">https://doi.org/10.5194/acp-25-9031-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧</span>
+                        <span class="topic-tag">辐射强迫</span>
+                        <span class="topic-tag">气候模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-9031-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《未来臭氧变化引起的气候强迫：指标和方法的相互比较》探讨了未来 **臭氧** 变化对 **气候** 的影响，尤其关注了臭氧消耗物质减少和空气质量污染物增加所带来的气候强迫效应。研究使用了多个 **气候模型** ，评估了不同 **辐射强迫** 指标（瞬时辐射强迫、平流层温度调整辐射强迫和有效辐射强迫），并区分了 **臭氧** 前体物和 **臭氧消耗物质** 的影响。研究结果表明，在 **SSP3-7.0** 情景下，臭氧增加会导致辐射强迫增加，使得臭氧成为2050年之前未来变暖的第二大贡献者。此外，研究还发现臭氧变化会影响云量、水汽和反照率，从而对辐射强迫产生调整。该研究强调了有效辐射强迫（ERF）在诊断平流层臭氧变化气候效应方面的重要性。该研究为理解未来气候变化提供了重要参考，强调了臭氧变化在气候系统中的关键作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Informing City-Scale Air Pollution Episodes Using Hourly Time-Scale Measurements of PM2.5 Molecular and Elemental Tracers at an Air Quality Research Supersite in Hong Kong</section>
+            <section class="paper-authors">Shan Wang, Qiongqiong Wang, Hanzhe Chen, Yuk Ying Cheng, Zijing Zhang, Jinjian Li, Kezheng Liao, Xin Feng, Penggang Zheng, Zhe Wang, Dasa Gu, Jian Zhen Yu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00170" target="_blank">https://doi.org/10.1021/acsestair.5c00170</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">来源解析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00170" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《利用香港空气质量研究超级站的小时时间尺度PM2.5分子和元素示踪剂测量，了解城市范围内的空气污染事件》。研究探讨了利用香港 **空气质量** 研究超级站的 **PM2.5** 分子和元素示踪剂的小时时间尺度测量，来了解城市范围内的空气污染事件。研究通过结合常规监测站的数据，识别出多个城市范围内的 **雾霾** 事件，并利用超级站的详细化学成分测量进行PM2.5 **来源识别** 和解析。研究结果表明，超级站的详细化学特征分析和来源解析可以为城市范围内的雾霾事件提供定量的来源信息，从而支持制定更有针对性的空气污染控制策略。这项研究强调了空气质量超级站的重要性，也为其他城市提供了借鉴。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Assessing the global contribution of marine aerosols,  terrestrial bioaerosols, and desert dust  to ice-nucleating particle concentrations</section>
+            <section class="paper-authors">Marios Chatziparaschos, Stelios Myriokefalitakis, Nikos Kalivitis, Nikos Daskalakis, Athanasios Nenes, María Gonçalves Ageitos, Montserrat Costa-Surós, Carlos Pérez García-Pando, Mihalis Vrekoussis, Maria Kanakidou</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-9085-2025" target="_blank">https://doi.org/10.5194/acp-25-9085-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰核粒子</span>
+                        <span class="topic-tag">矿物粉尘</span>
+                        <span class="topic-tag">气溶胶</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-9085-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《评估海洋气溶胶、陆地生物气溶胶和沙漠尘埃对冰核粒子浓度的全球贡献》。该研究探讨了 **矿物粉尘** 、 **海洋气溶胶** 和 **陆地生物气溶胶** 对大气中 **冰核粒子** 浓度的全球贡献，这些 **冰核粒子** 对大气冰的形成至关重要，并影响气候变化。研究引入了最新的实验室参数化方法，构建全球化学传输模型，模拟三种气溶胶对 **混合相云** 中 **冰核** 的影响。研究结果揭示了矿物粉尘、海洋气溶胶和陆地生物气溶胶对冰核粒子浓度的贡献具有明显的季节性和地域性差异。生物气溶胶是高温下冰核粒子的主要来源，而矿物粉尘则在较低温度下影响全球冰核粒子数量。该研究强调，需要考虑粉尘、海洋气溶胶和陆地生物气溶胶作为不同的冰核粒子，才能在气候模型中模拟冰核的形成，有利于提高对气候变化的理解和预测能力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">High-resolution anthropogenic emission inventory for China (2015–2024): Spatiotemporal changes and environmental application</section>
+            <section class="paper-authors">Dongpu Li, Hongli Liu, Guo Duan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121495" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121495</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">人为排放</span>
+                        <span class="topic-tag">排放清单</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121495" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究《中国高分辨率人为排放清单（2015-2024）：时空变化与环境应用》主要关注中国 **人为源排放清单** 的时空变化及其环境应用。它通过比较不同 **排放清单** （CCES, MEIC, EDGAR）来分析中国主要空气污染物（如 **二氧化硫** 、 **氮氧化物** 、 **颗粒物** 等）的排放特征和变化趋势。研究还利用CCES驱动的模拟来评估其在模拟气溶胶及其气态前体物方面的性能。研究结果表明，在过去的十年中，中国主要大气污染物的排放量显著下降。CCES能够捕捉到中国排放量的主要时空模式，并为分析排放量的变化提供有价值的见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Change in convection and thunderstorm occurrences over the Indian subcontinent during the COVID-19 pandemic</section>
+            <section class="paper-authors">Rakesh Ghosh, Pavan R Vaidya, Manoj A Domkawale, Sunil D Pawar, V Gopalakrishnan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/adf863" target="_blank">https://doi.org/10.1088/1748-9326/adf863</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">雷暴闪电密度</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/adf863" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《COVID-19疫情期间印度次大陆对流和雷暴发生频率的变化》。论文探讨了 **COVID-19** 封锁期间排放减少对印度次大陆 **雷暴** 发生频率和 **闪电密度** 的影响，本质上是一次大型的自然实验。研究发现，人为 **气溶胶** 排放的显著减少导致 **气溶胶光学厚度** 降低，进而改变了区域云-气溶胶相互作用和辐射效应。研究结果表明，气溶胶的减少与闪电频率和雷暴天数的增加有关，暗示在相对清洁的大气条件下，更有利于对流天气的形成。然而，值得注意的是，疫情期间每次雷暴的闪电频率有所降低，这表明虽然雷暴的数量有所增加，但每次雷暴的带电量相对较低。这项研究揭示了 **气溶胶** 浓度变化与对流风暴响应之间的复杂关系，并对未来排放情景下的大气带电趋势具有重要意义。该研究通过分析疫情期间的大气数据，阐明了人类活动对天气模式的潜在影响，也突出了气溶胶在雷暴形成和闪电活动中的双重作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Seasonal variations in PM2.5 levels in Hong Kong induced by eastern and western tropical cyclones</section>
+            <section class="paper-authors">Shuqing Zeng, Jung-Eun Chu, Hung Ming Cheung, Kanghyun Baek, Han-Kyoung Kim, Jun-Hyeok Son</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121497" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121497</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">热带气旋</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121497" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《东西部热带气旋引起的香港PM2.5水平的季节性变化》。研究探讨了 **香港** **PM2.5** 浓度受 **热带气旋** 影响的季节性变化。研究发现，夏季（JJA）热带气旋的影响比秋季（SON）更显著。位于香港东部的热带气旋会增加PM2.5浓度，而位于西部的热带气旋则会降低PM2.5浓度。此外，研究还分析了不同位置的热带气旋对 **气溶胶** 光学性质的影响。这项研究深入分析了热带气旋对香港空气质量的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Heavy metal imprints in Antarctic snow from research and tourism</section>
+            <section class="paper-authors">Raúl R. Cordero, Sarah Feron, Avni Malhotra, Alessandro Damiani, Minghu Ding, Francisco Fernandoy, Juan A. Alfonso, Belkis Garcia, Juan M. Carrera, Pedro Llanillo, Paul Wachter, Jaime Pizarro, Elise Roumeas, Edgardo Sepúlveda, Jose Jorquera, Chenghao Wang, Jorge Carrasco, Zutao Ouyang, Pedro Oyola, Maarten Loonen, Anne Beaulieu, Jacob Dana, Alia L. Khan, Gino Casassa, Choong-Min Kang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Sustainability</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41893-025-01616-7" target="_blank">https://doi.org/10.1038/s41893-025-01616-7</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">重金属</span>
+                        <span class="topic-tag">气溶胶沉降</span>
+                        <span class="topic-tag">环境监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41893-025-01616-7" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《南极雪中来自研究和旅游业的重金属印记》。该研究分析了 **南极洲** 雪地中的 **重金属** 印记，这些重金属主要来源于旅游和科研活动导致的人为排放。通过对南极半岛的雪样进行分析，研究人员识别出了气溶胶沉降的地球化学特征，并发现重金属污染与主要科研站和海洋旅游交通集中区域相关。研究结果揭示了人类活动对南极这一原始环境的影响。研究强调了在南极地区加强环境监测和实施可持续管理策略的必要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Unraveling secondary organic aerosol formation from isoprene and toluene mixture</section>
+            <section class="paper-authors">Shijie Han, Zijun Li, Yik Sze Lau, Yang Xiao, Branka Miljevic, Johanna Horchler, Jiangyong Li, Wan-Ping Hu, Hao Wang, Boguang Wang, Zoran Ristovski</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01189-4" target="_blank">https://doi.org/10.1038/s41612-025-01189-4</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二次有机气溶胶</span>
+                        <span class="topic-tag">异戊二烯</span>
+                        <span class="topic-tag">甲苯</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01189-4" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《揭示异戊二烯和甲苯混合物形成二次有机气溶胶的过程》。该研究探讨了 **异戊二烯** 和 **甲苯** 混合物形成 **二次有机气溶胶** 的过程，这两种物质分别代表了生物源和人为源的挥发性有机物。研究发现，当这两种物质共存并发生氧化反应时，形成的二次有机气溶胶产量低于线性叠加的预测值。通过分析颗粒物的质谱，发现异戊二烯和甲苯的氧化中间产物之间会形成交叉产物，并且这些交叉产物的形成会抑制特定颗粒物的产生。这项研究强调了生物源和人为源挥发性有机物之间复杂的相互作用，以及由此产生的非线性二次有机气溶胶形成过程。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
