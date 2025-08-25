@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/08/25</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A more precise retrieval of sun-induced chlorophyll fluorescence from satellite data using artificial neural networks</section>
+            <section class="paper-authors">Dong Li, Jing M. Chen, Gregory Duveiller, Christian Frankenberg, Philipp Köhler, Kang Yu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.114987" target="_blank">https://doi.org/10.1016/j.rse.2025.114987</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">太阳诱导叶绿素荧光</span>
+                        <span class="topic-tag">人工神经网络</span>
+                        <span class="topic-tag">卫星遥感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.114987" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“利用人工智能神经网络从卫星数据中更精确地反演太阳诱导叶绿素荧光”。该研究针对现有基于**奇异值分解 (SVD)** 的数据驱动方法在反演**太阳诱导叶绿素荧光 (SIF)** 时噪声较高的问题，提出了一种基于**人工神经网络 (ANN)** 的更精确的反演方法。该方法使用空间聚合的SIF作为响应变量，743–758 nm光谱区域的辐射作为解释变量来训练ANN。研究首先通过SCOPE和MODTRAN模型模拟验证了该方法的可行性，然后使用OCO-2/3 SIF和TROPOMI辐射数据进行训练，并利用OCO-2 SIF和机载SIF测量进行了验证。结果表明，该ANN模型能够以较高的精度反演SIF (R2=0.85, RMSE=0.217 mW∙m−2∙nm−1∙sr−1)。研究将该方法应用于生成2018年至2024年的全球TROPOMI SIF产品，并发现基于ANN的SIF反演噪声约为基于SVD的TROPOMI SIF噪声的一半。研究还证明了基于ANN的SIF在解释SIF季节性模式和估算**总初级生产力 (GPP)** 方面的优势。这项研究为SIF反演提供了一种新思路，生成的基于ANN的SIF产品将有助于更好地观测全球碳循环。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Time series analysis and prediction of PM2.5 pollution concentration in Igdir province with deep learning models</section>
+            <section class="paper-authors">Muhammed Kaya, İhsan Ömür Bucak</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121491" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121491</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5预测</span>
+                        <span class="topic-tag">深度学习</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121491" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“基于深度学习模型对Igdir省PM2.5污染浓度的时间序列分析和预测”。 该研究针对**空气污染**问题，特别是在工业化和城市化 intensse的地区。聚焦于土耳其东部的Igdir省，该地区因其地理结构和气象特征而经常受到**空气污染**的影响。本研究旨在使用深度学习模型预测PM2.5水平。研究整合了来自国家监测网络、气象服务和**NASA POWER** 的数据。 预处理包括插值、离群值校正和最小-最大归一化。 作者测试了 **LSTM、GRU、Bi-LSTM、Bi-GRU、CNN-LSTM 和 CNN-GRU** 等不同深度学习架构在 8、24 和 72 小时窗口上的表现。结果表明，GRU 模型在短期（8 小时）预测中表现最佳，MAE=9.93，R2=0.944。 LSTM 模型在 24 小时窗口中达到了最佳预测性能，MAE=9.65，R2=0.949，而对于 72 小时窗口，BiLSTM 模型的性能优于其他模型。 在预测峰值方面，CNN-LSTM 模型表现突出，在 8 小时窗口中实现了 RMSE=28.16、R2=0.792 和 MAE=22.45。 这些发现突出了深度学习在 **空气污染预测** 和决策支持方面的功效。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
