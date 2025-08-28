@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/08/28</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global 20-year time series of XCO<math xmlns:mml="http://www.w3.org/1998/Math/MathML" altimg="si113.svg" display="inline" id="d1e1646" class="math"><msub><mrow></mrow><mrow><mn>2</mn></mrow></msub></math> concentrations derived from satellite observations and interpolations to analyze XCO<math xmlns:mml="http://www.w3.org/1998/Math/MathML" altimg="si113.svg" display="inline" id="d1e1654" class="math"><msub><mrow></mrow><mrow><mn>2</mn></mrow></msub></math> anomalies caused by wildfires</section>
+            <section class="paper-authors">Wolfgang M. Wefers, Dominik Schmidt, Lukas W. Lehnert, Maximilian Reuter, Michael Buchwitz, Claudia Kammann, Kai Velten</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108408" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108408</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">XCO2浓度</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">野火排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108408" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“从卫星观测和插值获得的全球20年XCO<sub>2</sub>浓度时间序列分析了由野火引起的XCO<sub>2</sub>异常”。本研究关注利用<b>卫星观测数据反演全球二氧化碳柱浓度（XCO<sub>2</sub>）</b>，并构建了2003年至2022年的长时间序列数据集。该数据集通过整合多个卫星（包括<b>ENVISAT，GOSAT，OCO-2</b>等）的数据，并采用<b>时空插值算法</b>填补数据空白，从而生成高分辨率的全球XCO<sub>2</sub>分布图。通过针对28个TCCON站点的验证，平均绝对误差（MAE）为0.76ppm，与NOAA的CarbonTracker模型（MAE = 0.71ppm）相当。验证了该数据集的准确性，并展示了其在识别<b>野火等极端事件</b>引起的<b>XCO<sub>2</sub>异常</b>方面的应用，例如2018年北美大火和热带北非的重复性火灾活动。该数据集在气候研究、排放监测以及以高时空分辨率检测极端事件引起的CO2扰动方面具有宝贵的替代方案。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">100 m PM<sub>2.5</sub> mapping from SDGSAT-1 TOA reflectance: Model development and -evaluation</section>
+            <section class="paper-authors">Kaixu Bai, Zhe Zheng, Songyun Qiu, Ke Li, Liuqing Shao, Chaoshun Liu, Ni-Bin Chang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.114977" target="_blank">https://doi.org/10.1016/j.rse.2025.114977</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">SDGSAT-1卫星</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.114977" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“基于SDGSAT-1 TOA反射率的100米PM2.5mapping：模型开发和评估”。本研究关注利用<b>可持续发展目标卫星SDGSAT-1</b>的数据进行<b>细分辨率（100米）的PM2.5浓度估算</b>。论文提出了一种新的<b>深度学习框架LAD-GAT</b>，该框架结合了地理特征、气象因素、<b>大气顶部反射率（TOA）</b>以及<b>地表反射率（SR）</b>来构建<b>高维场景属性图</b>。通过<b>土地-大气解耦（LAD）模块</b>分离<b>潜在的气溶胶信号</b>和<b>地表贡献</b>，并使用<b>图注意力网络（GAT）</b>来模拟<b>PM2.5观测值</b>与<b>输入图结构</b>之间的<b>非线性关系</b>。实验结果表明，<b>SDGSAT-1</b>在<b>PM2.5估算</b>方面的<b>性能</b>与<b>Sentinel-2</b>相当，并且结合<b>地表反射率信息</b>可以提高<b>PM2.5建模的准确性</b>。通过合并每日SR，与仅使用TOA反射率相比，精度提高了8.68％，并且优于多日复合材料7.27％，这突出了在精细尺度PM2.5制图中考虑SR动态的益处。这项研究为利用卫星数据进行精细尺度的空气质量监测提供了新的方法，可以更好地支持SDG 11.6.2监测和有针对性的空气质量干预。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A machine-learning-based marine atmosphere boundary layer (MABL) moisture profile retrieval product from GNSS-RO deep refraction signals</section>
+            <section class="paper-authors">Jie Gong, Dong L. Wu, Michelle Badalov, Manisha Ganeshan, Minghua Zheng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4025-2025" target="_blank">https://doi.org/10.5194/amt-18-4025-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋大气边界层</span>
+                        <span class="topic-tag">GNSS-RO</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4025-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“基于机器学习的GNSS-RO深折射信号海洋大气边界层（MABL）湿度廓线反演产品”。本研究提出了一种新的方法，利用<b>全球导航卫星系统（GNSS）</b>的<b>信号噪声比（SNR）</b>，通过<b>机器学习技术</b>反演<b>海洋大气边界层（MABL）</b>的<b>比湿廓线</b>。研究使用<b>卷积神经网络（CNN）</b>模型，并利用<b>COSMIC-1、Metop-A和Metop-B卫星的SNR观测数据</b>进行训练。该方法优于<b>ERA-5再分析数据</b>和现有的二级反演产品，尤其是在<b>深层热带地区之外的区域</b>。研究还分析了利用该方法构建的MABL气候学和日循环特征，并与再分析数据进行了比较，揭示了ERA-5在某些区域可能存在的系统性偏差。这项工作为更准确地研究<b>海洋与大气之间的能量交换</b>提供一种有力的工具</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Enhancing 5-day particulate matter (PM10) forecasts in Morocco using U-net: A deep learning approach</section>
+            <section class="paper-authors">Anass Houdou, Kenza Khomsi, Luca Delle Monache, Weiming Hu, Saber Boutayeb, Lahcen Belyamani, Fayez Abdulla, Imad el Badisy, Wael K. Al-Delaimy, Mohamed Khalis</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108439" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108439</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM10预测</span>
+                        <span class="topic-tag">U-Net模型</span>
+                        <span class="topic-tag">空气质量预测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108439" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“使用U-net增强摩洛哥5天颗粒物（PM10）预测：一种深度学习方法”。本研究关注于利用<b>深度学习方法（U-Net）</b>改进<b>摩洛哥地区未来五天的PM10</b>（粒径小于10微米的颗粒物）预测。它通过对<b>哥白尼大气监测服务（CAMS）的预测输出进行后处理</b>，显著提高了预测的准确性，尤其是在<b>高PM10值</b>的情况下。修改了U-Net架构，以预测与输入不同的分辨率的输出，从而无需插值并保留了关键的空间细节。U-Net在捕捉颗粒物污染方面具有潜力，并支持准确的<b>早期预警系统</b>，以减轻PM10污染对健康和环境的影响。通过改进平均绝对误差（MAE），均方根误差（RMSE），确定系数（R2），一致性指数（IOA）和偏差等指标，结果表明优于两个基线-CAMS预测和模拟集合模型（AnEn）-尤其是在<b>沙尘暴易发地区</b>，在2023年中期CAMS预测升级之前的一段时间内。这项研究证明了U-Net在操作预测中的潜力，支持准确的早期预警，以减轻PM10污染对健康和环境的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Direct radiative forcing of light-absorbing carbonaceous aerosol and the influencing factors over China</section>
+            <section class="paper-authors">Shuangqin Yang, Yusi Liu, Li Chen, Nan Cao, Jing Wang, Shuang Gao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-9335-2025" target="_blank">https://doi.org/10.5194/acp-25-9335-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">光吸收性气溶胶</span>
+                        <span class="topic-tag">直接辐射强迫</span>
+                        <span class="topic-tag">气候变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-9335-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“中国境内光吸收性碳质气溶胶的直接辐射强迫及其影响因素”。本研究使用<b>GEOS-Chem模型</b>，结合中国的排放清单，模拟<b>光吸收性碳质气溶胶（LACs）</b>对气候变化的影响，特别是<b>黑碳（BC）</b>和<b>棕碳（BrC）</b>。研究分离了<b>一次棕碳（Pri-BrC）</b>和<b>二次棕碳（Sec-BrC）</b>，并将它们建模为独立示踪剂。研究结果表明，<b>黑碳</b>在大气顶部具有<b>增温效应</b>，而<b>一次棕碳</b>和<b>二次棕碳</b>则具有<b>冷却效应</b>。大气中，它们共同导致大气<b>升温</b>，且不同地区由于<b>气溶胶浓度</b>、<b>光学厚度</b>、<b>地表反照率</b>和<b>臭氧浓度</b>的差异，升温效应有所不同。研究加深了我们对光吸收性碳质气溶胶气候影响的理解，对于空气质量管理和气候变化研究具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Synergy of active and passive airborne observations for heating rate calculation during the AEROCLO-sA field campaign in Namibia</section>
+            <section class="paper-authors">Mégane Ventura, Fabien Waquet, Isabelle Chiapello, Gérard Brogniez, Frédéric Parol, Frédérique Auriol, Rodrigue Loisil, Cyril Delegove, Luc Blarel, Oleg Dubovik, Marc Mallet, Cyrille Flamant, Paola Formenti</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4005-2025" target="_blank">https://doi.org/10.5194/amt-18-4005-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">生物质燃烧气溶胶</span>
+                        <span class="topic-tag">加热率计算</span>
+                        <span class="topic-tag">辐射传输</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4005-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“在纳米比亚AEROCLO-sA外场试验期间，主动和被动机载观测协同计算加热率”。本研究结合<b>偏振计（OSIRIS）</b>和<b>激光雷达数据</b>，开发了一种创新方法，用于量化<b>生物质燃烧气溶胶</b>对<b>云</b>和<b>气候</b>的影响，特别是在<b>非洲南部地区</b>。该方法利用<b>辐射传输模型</b>、<b>气象数据</b>以及<b>气溶胶光学厚度</b>等参数，评估了<b>气溶胶</b>对<b>区域辐射平衡的影响</b>，计算了气溶胶的加热率。研究结果表明，气溶胶对<b>云层上方的加热率</b>有显著影响。通过<b>机载螺旋下降过程中获得的辐照度测量</b>验证该方法。讨论了将该方法推广到全球尺度，并应用于现有和未来的<b>星载被动和主动传感器</b>的可能性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Shoreline wave breaking strongly enhances the coastal sea spray aerosol population: Climate and air quality implications</section>
+            <section class="paper-authors">Shengqian Zhou, Matthew Salter, Timothy Bertram, Eduardo Brito Azevedo, Francisco Reis, Jian Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.adw0343" target="_blank">https://doi.org/10.1126/sciadv.adw0343</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海浪气溶胶</span>
+                        <span class="topic-tag">海岸线波浪破碎</span>
+                        <span class="topic-tag">气候影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.adw0343" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“海岸线波浪破碎强烈增强了沿海海浪气溶胶的种群：气候和空气质量的影响”。本研究探讨了<b>海岸线波浪破碎对海岸海雾气溶胶（SSA）产生的影响</b>，以及这种影响如何影响<b>气候和空气质量</b>。研究表明，<b>近岸强烈的SSA产生</b>会显著增加下风向的<b>云凝结核（CCN）和气溶胶质量浓度</b>。因此可能高估了SSA对气候的影响，并且无法准确评估其对<b>沿海社区环境</b>的影响。近岸海浪SSA产量可能主要由与局部风解耦的涌浪控制，涌浪会在海岸线附近导致更多的破碎。结果表明，根据沿海测量值推断到公海的结果可能会大大高估SSA的浓度及其对CCN的贡献，并因此高估SSA对云和气候的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Disentangling the chemistry and transport impacts of the quasi-biennial oscillation on stratospheric ozone</section>
+            <section class="paper-authors">Jinbo Xie, Qi Tang, Michael Prather, Jadwiga Richter, Shixuan Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-9315-2025" target="_blank">https://doi.org/10.5194/acp-25-9315-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">平流层臭氧</span>
+                        <span class="topic-tag">气候模型</span>
+                        <span class="topic-tag">大气环流</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-9315-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“解缠准两年振荡对平流层臭氧的化学和传输影响”。本研究旨在区分<b>准两年振荡（QBO）</b>对<b>平流层臭氧</b>的<b>化学</b>和<b>传输</b>影响，克服气候模型模拟QBO的局限性。研究采用了一种新的<b>臭氧诊断工具</b>，并应用于美国能源部E3SMv2模型，该模型经过调整以适应再分析数据，从而产生合理的风和臭氧模式。研究结果表明，平流层不同高度的<b>臭氧扰动</b>受不同因素控制：上层平流层主要受<b>温度变化</b>影响，6至20 hPa之间受<b>NOy变化</b>影响，而下层平流层则主要受<b>环流变化</b>影响。这项研究对于诊断不同模型在QBO-臭氧响应上的差异，并提高臭氧预测的可靠性具有重要意义。此外，该研究强调了理解和准确模拟平流层臭氧变化对于评估气候变化和保护臭氧层的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Photosensitized Decay of Levoglucosan in Biomass Burning Aerosol Particles</section>
+            <section class="paper-authors">Zhancong Liang, Liyuan Zhou, Chak K. Chan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c04050" target="_blank">https://doi.org/10.1021/acs.est.5c04050</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">左旋葡聚糖</span>
+                        <span class="topic-tag">光敏衰减</span>
+                        <span class="topic-tag">生物质燃烧</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c04050" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“生物质燃烧气溶胶颗粒中左旋葡聚糖的光敏衰变”。本研究探讨了<b>生物质燃烧气溶胶</b>中<b>左旋葡聚糖的光敏衰减机制</b>。研究发现，在<b>低相对湿度</b>下，<b>激发态的三重态有机物</b>通过<b>氢转移反应</b>驱动<b>左旋葡聚糖的降解</b>，这种<b>光敏反应</b>在<b>粘性颗粒中仍然有效</b>，并且对<b>左旋葡聚糖的衰减贡献显著</b>。与依赖于氧化剂从气相传输的•OH氧化不同，3BBOA*氧化在低相对湿度下的粘性颗粒中仍然有效，约占LEVO衰减的50%，将其化学寿命缩短了一半至约1.8天。这表明，在气溶胶颗粒内部产生氧化剂的过程，如<b>光敏反应</b>，对于理解<b>左旋葡聚糖的大气归宿</b>至关重要。此发现强调了在颗粒中产生氧化剂的工艺（例如光敏化）的重要性，并增进了我们对LEVO大气命运的理解，从而有助于进行BB追踪。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">New insights into the polar ozone and water vapor, radiative effects, and their connection to the tides in the mesosphere–lower thermosphere during major sudden stratospheric warming events</section>
+            <section class="paper-authors">Guochun Shi, Hanli Liu, Masaki Tsutsumi, Njål Gulbrandsen, Alexander Kozlovsky, Dimitry Pokhotelov, Mark Lester, Christoph Jacobi, Kun Wu, Gunter Stober</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-9403-2025" target="_blank">https://doi.org/10.5194/acp-25-9403-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">平流层增温</span>
+                        <span class="topic-tag">大气潮汐</span>
+                        <span class="topic-tag">辐射效应</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-9403-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“关于极地臭氧和水汽、辐射效应及其与中层-低热层潮汐在大突发平流层增温事件期间的联系的新见解”。本研究利用<b>极地气象雷达数据</b>和<b>WACCM-X(SD)模型</b>，探讨了<b>极地地区中层和低热层中臭氧、水汽以及辐射效应对潮汐的影响</b>，尤其是在<b>突发性平流层增温（SSW）</b>事件期间。研究分析了<b>日潮（DT）</b>、<b>半日潮（SDT）</b>和<b>三日潮（TDT）</b>的振幅变化，并结合<b>痕量气体</b>的变化，研究了这些因素如何影响极地地区的<b>潮汐动力学</b>。研究发现，潮汐响应在SSW事件期间表现出明显的特征。SDT的立即响应很可能受到<b>动力效应</b>和<b>臭氧的辐射效应</b>驱动，而水汽在平流层和中层作为<b>动力示踪剂</b>，对潮汐变化的影响微乎其微。该研究首次全面分析了极地地区中层潮汐的变率在突发性平流层增温事件期间，检查并联系了痕量气体和辐射效应对调节潮汐动力学的显著作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Generalized local fractions – a method for the calculation of sensitivities to emissions from multiple sources for chemically active species, illustrated using the EMEP MSC-W model (rv5.5)</section>
+            <section class="paper-authors">Peter Wind, Willem van Caspel</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-5397-2025" target="_blank">https://doi.org/10.5194/gmd-18-5397-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">排放源解析</span>
+                        <span class="topic-tag">化学输送模型</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-5397-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“广义局部分数——一种用于计算化学活性物质对多源排放敏感性的方法，以EMEP MSC-W模型(rv5.5)为例”。本研究介绍了一种数值方法，用于评估<b>空气污染的来源</b>，特别是<b>化学活性空气污染物</b>对<b>排放源的敏感性</b>。通过扩展<b>Local Fraction方法</b>，并结合<b>化学传输模型</b>，该方法能够同时追踪数百个排放源的贡献，并考虑了<b>非线性化学转化</b>。该方法生成一系列地图，显示例如欧洲各国在地图上任何一点的相对贡献。 该方法能够严谨地考虑非线性化学转化, 并在<b>欧洲监测与评估计划（EMEP）</b>的气象合成中心 - 西部（MSC-W）化学输运模型中验证其实现。虽然结果与直接的“蛮力”方法相同，但当考虑大量情景时，该方法在计算上更有效率。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurement report: Investigation of optical properties of carbonaceous aerosols from the combustion of different fuels by an atmospheric simulation chamber</section>
+            <section class="paper-authors">Silvia G. Danelli, Lorenzo Caponi, Marco Brunoldi, Matilde De Camillis, Dario Massabò, Federico Mazzei, Tommaso Isolabella, Annalisa Pascarella, Paolo Prati, Matteo Santostefano, Francesca Tarchino, Virginia Vernocchi, Paolo Brotto</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-9387-2025" target="_blank">https://doi.org/10.5194/acp-25-9387-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">碳质气溶胶</span>
+                        <span class="topic-tag">光学性质</span>
+                        <span class="topic-tag">燃烧排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-9387-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“测量报告：大气模拟舱对不同燃料燃烧产生的碳质气溶胶光学性质的研究”。本研究通过<b>大气模拟舱</b>，研究了不同燃料燃烧产生的<b>碳质气溶胶的光学特性</b>，重点是<b>质量吸收系数（MAC）</b>的变化。研究评估了不同的<b>碳质气溶胶采样和分析方法</b>，并侧重于<b>工作场所环境</b>。实验采用<b>烟灰发生器</b>（丙烷燃料）和<b>商业柴油发动机</b>（普通柴油和加氢处理植物油燃料）进行燃烧实验，并测量了<b>粒径分布</b>、<b>元素碳（EC）浓度</b>和<b>有机碳（OC）浓度</b>。研究结果表明，不同燃料燃烧产生的碳质气溶胶的光学性质存在差异，柴油燃烧产生更多<b>光吸收性颗粒</b>。理解气溶胶光学性质的变异性对于提高空气质量监测的准确性至关重要。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
