@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/09/05</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A Database of Backscattering Mueller Matrices of Ice Crystals of Cirrus Clouds for Lidar Applications</section>
+            <section class="paper-authors">Alexander Konoshonkin, Natalia Kustova, Zhenzhu Wang, Xuanhao Zhu, Dong Liu, Viktor Shishko, Dmitry Timofeev, Ilia Tkachev, Kirill Salnikov, Yingjian Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL117090" target="_blank">https://doi.org/10.1029/2025GL117090</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">激光雷达</span>
+                        <span class="topic-tag">卷云冰晶</span>
+                        <span class="topic-tag">后向散射</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL117090" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“激光雷达应用中卷云冰晶后向散射 Mueller 矩阵数据库”。该论文介绍了一个<b>冰晶后向散射 Mueller 矩阵数据库</b>，该数据库包含了卷云中所有典型冰晶形状的光散射矩阵计算结果（不包括粒子聚集体），假设粒子是随机排列的。该数据库的独特之处在于，它提供了从 0.1 到 10,000 微米的所有粒子尺寸范围，以及三种最常用的激光雷达波长（0.355、0.532 和 1.064 微米）的解决方案。这个数据库对于开发使用地面和星载<b>激光雷达</b>解释<b>卷云</b>激光探测数据的算法至关重要。该数据库以简单的文本格式开放获取，方便广大科学家使用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Satellite based study on the role of Cloud Condensation Nuclei (CCN) and atmospheric thermodynamics in warm cloud evolution</section>
+            <section class="paper-authors">Subin Jose, Sijo Joseph, N.B. Lakshmi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108452" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108452</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">云凝结核</span>
+                        <span class="topic-tag">暖云演变</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108452" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“基于卫星研究的云凝结核（CCN）和大气热力学在暖云演变中的作用”。该研究利用<b>卫星观测数据</b>，特别是 Suomi NPP 卫星上的 <b>VIIRS</b> 传感器数据，研究了<b>云凝结核（CCN）</b>浓度和<b>大气热力学</b>条件对<b>暖云</b>演变的影响。该研究分析了不同污染和热力学条件下，云顶温度和云滴有效半径之间的关系，揭示了污染条件下扩散增长占主导地位，以及不稳定条件下气溶胶限制和上升气流限制之间的转变。结果表明，CCN 浓度与云滴增长之间存在非线性关系，这些观测结果有助于改进气候模型中气溶胶-云相互作用（ACI）的参数化，从而减少气溶胶有效辐射强迫的估计不确定性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Notable Radiative Effects of Brown Carbon in China Haze</section>
+            <section class="paper-authors">Luyao Wang, Lei Zhang, Gehui Wang, Xingqin An, Can Wu, Yubao Chen, Yuning Xie, Shaojun Lv, Fanglin Wang, Li Li, Yanting Lu, Huizheng Che, Xiaoye Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL118037" target="_blank">https://doi.org/10.1029/2025GL118037</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">棕色碳</span>
+                        <span class="topic-tag">辐射效应</span>
+                        <span class="topic-tag">WRF-Chem模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL118037" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“中国雾霾中棕色碳的显著辐射效应”。该研究关注的是中国雾霾中<b>棕色碳（BrC）</b>的<b>辐射效应</b>。通过建立一个基于观测数据的<b>BrC参数化方案</b>，并将其应用于<b>WRF-Chem</b>模型，研究模拟了2019年1月一次雾霾事件中BrC的分布和辐射效应。模拟显示，BrC浓度在北京-天津-河北地区和中国中部地区较高，范围从2.20到69.38 μg/m3。研究结果表明，BrC显著降低了地表短波辐射，增加了大气短波辐射，对地表冷却、气压异常和近地表湿度产生影响。因此，该研究强调了BrC在中国雾霾多发地区辐射影响的重要性，对当地气候和大气动力学具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Significant response of methane in the upper troposphere to subseasonal variability in the Asian monsoon anticyclone</section>
+            <section class="paper-authors">Sihong Zhu, Mengchu Tao, Zhaonan Cai, Yi Liu, Liang Feng, Pubu Sangmu, Zhongshui Yu, Junji Cao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-9843-2025" target="_blank">https://doi.org/10.5194/acp-25-9843-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">流层甲烷</span>
+                        <span class="topic-tag">季风反气旋</span>
+                        <span class="topic-tag">GEOS-Chem模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-9843-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“亚洲季风反气旋中亚季节变化对流层上层甲烷的显著响应”。该研究关注亚洲<b>季风反气旋</b>（AMA）对流层上层<b>甲烷</b>的影响。通过使用<b>GEOS-Chem</b>化学传输模型，探讨季风动力系统和区域排放对流层上层甲烷增强的综合作用。研究结果表明，亚洲季风反气旋的<b>东-西振荡</b>与流层上层甲烷的空间分布密切相关，并且大规模环流对流层上层甲烷异常的影响比区域地表排放的影响大1-2倍。当AMA中心位于80°E附近时，垂直输送极大地增强了甲烷异常，其环流效应比排放效应大1-2倍。该研究强调了季风动力学和地表排放之间复杂的相互作用，从而决定了流层上层甲烷的含量。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Unveiling the dual role of rainfall in governing ambient aerosol particles:From washout-dominated scavenging to production dynamics</section>
+            <section class="paper-authors">Shu Chen, Mengyu Liu, Songjian Zou, Honghao Xu, Fang Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121513" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121513</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶颗粒</span>
+                        <span class="topic-tag">湿清除</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121513" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“揭示降雨在控制环境气溶胶颗粒中的双重作用：从以冲刷为主的清除到产生动态”。该研究探讨了<b>降雨</b>对大气<b>气溶胶</b>颗粒的双重作用，既可以作为清除机制（<b>湿清除</b>），也可以通过触发成核等过程增加气溶胶浓度。基于亚热带近海地区的实地观测，研究发现，在清洁的空气条件下，降雨反而会增加气溶胶浓度，而在污染较重的情况下，降雨则能有效清除气溶胶。此外，研究还确定了一个尺寸依赖性的清除阈值，约为100纳米，小于该尺寸的颗粒物倾向于增加，而大于该尺寸的颗粒物则倾向于被清除。这项研究对于改进空气质量预报和优化气溶胶-云-降水相互作用的模型模拟具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Unveiling Atmospheric HO2 Chemistry under Varying NO Conditions during the KORUS-AQ Campaign</section>
+            <section class="paper-authors">Kiyeon Kim, Kyung Man Han, Taehoo Choi, Gangwoong Lee</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00153" target="_blank">https://doi.org/10.1021/acsestair.5c00153</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">HO2自由基</span>
+                        <span class="topic-tag">空气质量模型</span>
+                        <span class="topic-tag">KORUS-AQ实验</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00153" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“揭示KORUS-AQ活动期间不同NO条件下大气HO2化学的双重作用”。本研究关注大气中的<b>HO2自由基</b>化学，以及它在不同<b>NO</b>条件下对<b>臭氧</b>和<b>颗粒物</b>形成的影响。研究使用了空气质量模型（<b>CMAQ</b>）和<b>KORUS-AQ</b>野外实验的观测数据，对韩国地区的空气质量进行了模拟和分析。研究重点探讨了模型中HO2水平与NO分布之间的关系，并尝试通过引入HO2气溶胶吸收等机制来改进模型，从而更准确地模拟HO2自由基，并提升对大气化学过程的理解。结果表明，HO2气溶胶吸收会降低主要大气物种的浓度，但在低NO区域，硝酸盐浓度会增加。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Divergent impacts of climate interventions on China’s north-south water divide</section>
+            <section class="paper-authors">Xiao Zhang, Yuanchao Fan, Jerry Tjiputra, Helene Muri, Qiao Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-025-02708-0" target="_blank">https://doi.org/10.1038/s43247-025-02708-0</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气候干预</span>
+                        <span class="topic-tag">气溶胶注入</span>
+                        <span class="topic-tag">水资源影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-025-02708-0" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“气候干预对中国南北方水资源分歧的不同影响”。这篇研究论文探讨了不同的<b>气候干预措施</b>对中国南北方水资源分布的影响。研究发现，赤道<b>平流层气溶胶注入</b>可能通过改变温度梯度和大气环流，缓解中国北方干旱和南方洪涝的局面，增加北方降水和径流，减少南方降水和径流。研究使用了挪威地球系统模型以及火山数据，支持了这一机制。而<b>海洋云增亮</b>可能会加剧南方洪涝风险，<b>卷云变薄</b>和适度的减排可能会加剧北方干旱。研究揭示了不同气候干预措施的区域水文气候影响，突出了其全球干预效果和区域水安全之间的潜在协同作用和权衡。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Monitoring and modeling seasonally  varying anthropogenic and biogenic CO2  over a large tropical metropolitan area</section>
+            <section class="paper-authors">Rafaela Cruz Alves Alberti, Thomas Lauvaux, Angel Liduvino Vara-Vela, Ricard Segura Barrero, Christoffer Karoff, Maria de Fátima Andrade, Márcia Talita Amorim Marques, Noelia Rojas Benavente, Osvaldo Machado Rodrigues Cabral, Humberto Ribeiro da Rocha, Rita Yuri Ynoue</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-9803-2025" target="_blank">https://doi.org/10.5194/acp-25-9803-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气CO2</span>
+                        <span class="topic-tag">WRF-Chem模型</span>
+                        <span class="topic-tag">生物源排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-9803-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“监测和模拟季节性变化的人为和生物源CO2在一个大型热带都市区”。该研究利用<b>WRF-Chem</b>模型，结合地面观测站<b>METROCLIMA</b>网络的数据以及<b>OCO-2</b>卫星的<b>XCO2</b>数据，对圣保罗大都市区（MASP）的<b>CO2</b>动态变化进行了分析。研究的主要目标是评估人为源和生物源对该地区CO2浓度的影响，并重点通过优化<b>VPRM</b>模型来提高生物源排放的模拟精度。研究结果显示，模型在城市地区CO2浓度模拟方面存在低估偏差，并强调了综合排放建模和改进生物源排放表征的重要性。冬季CO2浓度较高，主要受大气稳定性和植被吸收减少的影响，而夏季CO2浓度较低，主要是由于混合增加和农业生产力提高。总体而言，该研究强调了热带地区高分辨率建模中综合排放建模的必要性，并改进了生物源排放、人为排放和边界条件的表征。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Lewy body dementia promotion by air pollutants</section>
+            <section class="paper-authors">Xiaodi Zhang, Haiqing Liu, Xiao Wu, Longgang Jia, Kundlik Gadhave, Lena Wang, Kevin Zhang, Hanyu Li, Rong Chen, Ramhari Kumbhar, Ning Wang, Chantelle E. Terrillion, Bong Gu Kang, Bin Bai, Minhan Park, Ma. Cristine Faye Denna, Shu Zhang, Wenqiang Zheng, Denghui Ye, Xiaoli Rong, Liu Yang, Lili Niu, Han Seok Ko, Weiyi Peng, Lingtao Jin, Mingyao Ying, Liana S. Rosenthal, David W. Nauen, Alex Pantelyat, Mahima Kaur, Kezia Irene, Liuhua Shi, Rahel Feleke, Sonia García-Ruiz, Mina Ryten, Valina L. Dawson, Francesca Dominici, Rodney J. Weber, Xuan Zhang, Pengfei Liu, Ted M. Dawson, Shizhong Han, Xiaobo Mao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/science.adu4132" target="_blank">https://doi.org/10.1126/science.adu4132</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气污染</span>
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">路易体痴呆</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/science.adu4132" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“空气污染物促进路易体痴呆”。该研究探讨了<b>空气污染</b>，特别是<b>细颗粒物（PM2.5）</b>暴露与<b>路易体痴呆（LBD）</b>风险之间的关系。通过对美国5650万人的队列研究，发现PM2.5暴露会增加LBD风险。机制上，发现PM2.5暴露会导致野生型小鼠脑萎缩。PM2.5暴露产生了一种高致病性的αSyn菌株，即PM2.5诱导的预制纤维（PM-PFF），具有增强的蛋白酶K抗性和神经毒性。转录组分析显示，暴露于PM2.5的小鼠与LBD患者之间存在共同的反应，强调了PM2.5在LBD中的作用，并强调需要采取干预措施来减少空气污染及其相关的神经系统疾病负担。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Minor Components in Natural Inorganic Aerosols Dominate Surface Composition: A Contrast Between Surface and Bulk</section>
+            <section class="paper-authors">Xiangrui Kong, Nicolas Fauré, Calle Preger, Axel C. Eriksson, Jenny Rissler, Jan B. C. Pettersson</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.estlett.5c00398" target="_blank">https://doi.org/10.1021/acs.estlett.5c00398</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶表面</span>
+                        <span class="topic-tag">无机气溶胶</span>
+                        <span class="topic-tag">XPS分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.estlett.5c00398" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为“天然无机气溶胶中的微量成分主导表面组成：表面与整体的对比”。该研究关注天然<b>无机气溶胶</b>的<b>表面成分</b>，特别是缺乏有机表面活性剂的气溶胶。研究通过<b>X射线光电子能谱（XPS）</b>分析了青藏高原柴达木盆地盐湖卤水产生的盐气溶胶。研究发现，气溶胶表面富集了<b>镁离子和硫酸根</b>等微量离子，而钠离子和氯离子等主要成分则减少。通过简化的双层模型表明，亚纳米表面层显著改变了表面特性。这种表面成分与整体成分的差异可能会影响气溶胶的反应活性和云激活潜力。研究强调需要进一步研究表面组成在<b>大气气溶胶</b>过程中的作用。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
