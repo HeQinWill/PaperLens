@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/09/10</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Satellite observations indicate a declining trend of methane emissions from heavy oil production in Canada</section>
+            <section class="paper-authors">Zhenyu Xing, Chris Hugenholtz, Thomas E. Barchyn, Coleman Vollrath</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.estlett.5c00426" target="_blank">https://doi.org/10.1021/acs.estlett.5c00426</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">稠油生产</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.estlett.5c00426" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“卫星观测表明加拿大稠油生产的甲烷排放呈下降趋势”。论文利用<b>TROPOMI卫星观测</b>数据和质量平衡模型，估算了加拿大艾伯塔省和萨斯喀彻温省一个重要的稠油生产区域（CHOPS）在2019年至2023年期间的<b>甲烷排放</b>率。研究发现，该区域的甲烷排放量远高于行业报告的数据，但呈现显著的<b>下降趋势</b>，在研究期间甲烷排放量减少了71±34%。研究结果表明，在2019年至2023年期间，甲烷排放强度降低了63±31%，降至0.69±0.25 gCH4/MJ。论文探讨了可能的减排驱动因素，包括监管措施、燃烧器的使用以及产量下降。这项研究结果表明利用卫星遥感技术可以有效监测重点区域甲烷排放的变化，为评价减排措施的效果提供参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Effects of enhancing nitrogen use efficiency in cropland and livestock systems on agricultural ammonia emissions and particulate matter air quality in China</section>
+            <section class="paper-authors">Biao Luo, Lei Liu, David H. Y. Yung, Tiangang Yuan, Jingwei Zhang, Leo T. H. Ng, Amos P. K. Tai</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-10089-2025" target="_blank">https://doi.org/10.5194/acp-25-10089-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氨排放</span>
+                        <span class="topic-tag">氮利用效率</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-10089-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“提高农田和畜牧系统氮利用效率对中国农业氨排放和颗粒物空气质量的影响”。论文重点关注中国<b>农业</b>中普遍存在的<b>氮利用效率低下</b>问题，以及由此导致的<b>氨排放</b>对<b>PM2.5</b>污染的贡献。研究人员结合自下而上的排放模型和氮质量流量模型，评估了中国省级尺度上不同作物和畜牧类型的氮利用效率。他们构建了网格化的氨排放输入，并驱动化学传输模型，综合评估了四种提高氮管理情景对空气质量的影响。研究结果表明，中国2017年农业氨排放总量为11.2 Tg NH3，其中化肥使用和畜禽粪便分别占46.2%和53.8%。通过实施不同的减排情景，农业氨排放量可有效减少11.6%-39.3%，从而使人口加权PM2.5年均浓度降低1.3-4.1 µg m−3。这项研究为决策者制定有关农业氨排放及其对公众健康影响的政策提供了科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Greenhouse gas measurement campaign of the Earth Summit Mission-2022: ground-based in situ and FTIR observations and contribution to satellite validation in the Qomolangma region</section>
+            <section class="paper-authors">Minqiang Zhou, Yilong Wang, Minzheng Duan, Xiangjun Tian, Jinzhi Ding, Jianrong Bi, Yaoming Ma, Weiqiang Ma, Zhenhua Xi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4311-2025" target="_blank">https://doi.org/10.5194/amt-18-4311-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">温室气体</span>
+                        <span class="topic-tag">卫星验证</span>
+                        <span class="topic-tag">珠穆朗玛峰</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4311-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“地球峰会任务-2022温室气体测量活动：珠穆朗玛峰地区的地基原位和FTIR观测以及对卫星验证的贡献”。论文介绍了在<b>珠穆朗玛峰</b>地区进行的<b>温室气体</b>测量活动，包括地基傅里叶变换红外光谱仪（<b>FTIR</b>）和原位测量。为了支持第二次青藏高原科学考察计划，在珠穆朗玛峰站进行了综合温室气体测量活动，作为2022年地球峰会任务的一部分。研究测量了CO2、CH4、CO和N2O等温室气体的柱平均摩尔分数，并将其与地表原位测量和卫星（<b>TROPOMI</b>和<b>OCO-2</b>）数据进行比较，用于卫星数据的验证。结果表明，OCO-2卫星在青藏高原地区的CO2测量存在较大的不确定性，需要进一步评估。此外，研究还发现该地区的空气质量受到南亚地区大气传输的影响。这项研究为青藏高原地区的温室气体监测和卫星数据验证提供了重要参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurement report: Aerosol and cloud nuclei properties along the Central and Northern Great Barrier Reef – impact of continental emissions</section>
+            <section class="paper-authors">E. Johanna Horchler, Joel Alroe, Luke Harrison, Luke Cravigan, Daniel P. Harrison, Zoran D. Ristovski</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-10075-2025" target="_blank">https://doi.org/10.5194/acp-25-10075-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">云凝结核</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-10075-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“中央和北部大堡礁沿线的气溶胶和云凝结核特性——大陆排放的影响”。论文探讨了澳大利亚<b>大堡礁</b>地区<b>气溶胶</b>和<b>云凝结核</b>的特性，以及来自大陆排放物对其的影响。研究发现，来自内陆的气溶胶会增加该地区的气溶胶数量和形成云的能力，进而影响海面温度。研究通过研究航行考察期间的气溶胶物理和云凝结核特性趋势发现，当气团在到达研究船之前经过大陆时，颗粒物浓度和云凝结核浓度通常较高，尽管吸湿性参数较低。研究表明，有机物在该地区云凝结核浓度中起着重要作用。研究结果对于利用遥感数据进行空气质量评估、气候模型验证以及开发新型气候干预策略具有重要意义。这项研究首次报道了夏季大堡礁上空气溶胶和云凝结核的观测结果，为了解该地区的气候特征提供了基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">ICESat‐2 Lidar Estimates of Clear‐Sky Precipitation Over the East Antarctic Plateau</section>
+            <section class="paper-authors">Stephen P. Palm, Yuekui Yang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044120" target="_blank">https://doi.org/10.1029/2025JD044120</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">激光雷达</span>
+                        <span class="topic-tag">晴空降水</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044120" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“ICESat-2激光雷达对南极东部高原晴空降水的估算”。论文利用<b>ICESat-2</b>卫星上的<b>激光雷达</b>数据，对<b>南极东部高原</b>的<b>晴空降水</b>（CSP）进行了估算。研究通过分析激光雷达的后向散射剖面来识别晴空降水，并估算降水量。研究结果表明，ICESat-2能够有效地探测和量化晴空降水，为研究南极降水和评估南极表面质量平衡提供了新的视角和有价值的数据集。研究结果揭示了高原高频率的晴空降水（高达 80%）。这项研究利用卫星遥感技术对南极降水进行了量化，从而间接反映了大气成分和状态。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The contribution of fires to PM2.5 and population exposure in the Asia Pacific region</section>
+            <section class="paper-authors">Hua Lu, Min Xie, Nan Wang, Bojun Liu, Jinyue Jiang, Bingliang Zhuang, Ying Zhang, Meixuan Wu, Jianfeng Yang, Kunqin Lv, Danyang Ma</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-10141-2025" target="_blank">https://doi.org/10.5194/acp-25-10141-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">火灾排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-10141-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“火灾对亚太地区PM2.5和人口暴露的贡献”。论文主要探讨了<b>亚太地区</b>火灾对<b>PM2.5</b>的贡献以及对人口的影响。研究通过观测数据分离出火灾相关的PM2.5，并发现其比例近年来有所增加。研究表明，火灾相关的PM2.5对亚太地区贫困人口的影响尤为严重。通过分析2014年至2021年的监测数据，研究发现虽然总PM2.5呈现下降趋势，但火灾相关的PM2.5在东南亚和东北亚却出现反弹。研究还预测，在未来的气候变化下，火灾相关的PM2.5可能会持续上升。研究评估了火灾相关的PM2.5暴露导致的过早死亡人数，并指出在较贫困地区，火灾相关的PM2.5暴露对人口健康的影响更为显著。这项研究强调了减少火灾相关空气污染及其健康影响的必要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Identifying key parameters that affect sensitivity of flow tube chemical ionization mass spectrometers</section>
+            <section class="paper-authors">Sneha Aggarwal, Priyanka Bansal, Yuwei Wang, Spiro Jorga, Gabrielle Macgregor, Urs Rohner, Thomas Bannan, Matthew Salter, Paul Zieger, Claudia Mohr, Felipe Lopez-Hilfiker</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4227-2025" target="_blank">https://doi.org/10.5194/amt-18-4227-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">痕量气体</span>
+                        <span class="topic-tag">质谱仪</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4227-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“影响流动管化学电离质谱仪灵敏度的关键参数识别”。论文关注<b>化学电离质谱仪</b>在<b>痕量气体分析</b>中的应用，特别是在大气科学领域。为了解决不同仪器和操作条件下仪器性能难以比较的问题，研究系统地识别了影响流动管化学电离质谱仪灵敏度的关键参数。通过控制这些参数，可以显著减少仪器和操作员之间的灵敏度变化。研究表明，在给定的反应器几何形状下，各种试剂离子化学反应的最大灵敏度是一个常数。这项研究可以提高不同研究之间数据的可比性，从而提高大气成分监测和空气质量评估的准确性。研究结果有助于扩展电压扫描方法在更广泛的试剂离子化学中的应用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Observationally constrained analysis on the distribution of fine- and coarse-mode nitrate in global models</section>
+            <section class="paper-authors">Mingxuan Wu, Hailong Wang, Zheng Lu, Xiaohong Liu, Huisheng Bian, David D. Cohen, Yan Feng, Mian Chin, Didier A. Hauglustaine, Vlassis A. Karydis, Marianne T. Lund, Gunnar Myhre, Andrea Pozzer, Michael Schulz, Ragnhild B. Skeie, Alexandra P. Tsimpidi, Svetlana G. Tsyro, Shaocheng Xie</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-10049-2025" target="_blank">https://doi.org/10.5194/acp-25-10049-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">硝酸盐气溶胶</span>
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">大气模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-10049-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“全球模型中细模态和粗模态硝酸盐分布的观测约束分析”。论文的核心是评估全球模型在模拟<b>硝酸盐气溶胶</b>质量大小分布方面的表现，着重考察了<b>细模态</b>和<b>粗模态</b>硝酸盐的分布情况。研究者利用长期地面观测和多次飞机观测活动的数据，对能量百亿亿次地球系统模型（E3SMv2）、社区地球系统模型（CESM2）以及AeroCom III期模型的模拟结果进行了评估。评估指标包括硝酸盐气溶胶的空间分布、质量大小分布以及气相和气溶胶相之间的分配。研究发现，大多数模型低估了地表细模态硝酸盐的质量分数，尤其是在PM2.5/PM10比率方面。此外，模型对硝酸盐与总无机硝酸盐的摩尔比也存在低估。研究强调了气体-气溶胶分配参数化以及沙尘和海盐模拟在正确模拟硝酸盐质量大小分布中的重要性。这项研究揭示了模型模拟硝酸盐气溶胶分布的不足，并为改进模型参数化提供了方向。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Dark, Photolysis, and Oxidation Reaction Mechanism of Gaseous Dicarbonyls Based on PTR-TOF-MS</section>
+            <section class="paper-authors">Xiaoyao Ma, Lican Wang, Xiaoyan Chen, Jiangyao Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00276" target="_blank">https://doi.org/10.1021/acsestair.5c00276</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二羰基化合物</span>
+                        <span class="topic-tag">光解</span>
+                        <span class="topic-tag">氧化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00276" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“基于PTR-TOF-MS的气态二羰基化合物的暗反应、光解和氧化反应机理”。论文主要探讨了<b>二羰基化合物</b>在大气中的反应机理，包括<b>暗反应</b>、<b>光解反应</b>和<b>氧化反应</b>。通过质子转移反应飞行时间质谱法（<b>PTR-TOF-MS</b>）研究了甲基乙二醛（MG）和丁二酮（BD）的反应过程，并检测到多种气态产物。研究结果表明，二羰基化合物通过生成酰基自由基，进而形成单羰基化合物，并进一步聚合形成高分子量低聚物。这项研究为理解大气中二羰基化合物的转化过程提供了直接证据，并对大气环境研究具有重要意义。这项研究揭示了二羰基化合物在大气颗粒物形成中的重要作用，并为深入理解大气化学过程提供了重要信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The role of fuel and environmental conditions on the amount and composition of primary, fresh, and aged aerosol emissions originating from diesel- and gasoline-operated auxiliary heaters of passenger cars</section>
+            <section class="paper-authors">Henri Oikarinen, Anni Hartikainen, Pauli Simonen, Miska Olin, Ukko-Ville Mäkinen, Petteri Marjanen, Laura Salo, Ville Silvonen, Sampsa Martikainen, Jussi Hoivala, Mika Ihalainen, Pasi Miettinen, Pasi Yli-Pirilä, Olli Sippula, Santtu Mikkonen, Panu Karjalainen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4271-2025" target="_blank">https://doi.org/10.5194/amt-18-4271-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">颗粒物排放</span>
+                        <span class="topic-tag">辅助加热器</span>
+                        <span class="topic-tag">二次气溶胶</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4271-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“燃料和环境条件对乘用车柴油和汽油辅助加热器产生的原始、新鲜和老化气溶胶排放量和组成的影响”。论文主要关注车辆<b>辅助加热器</b>产生的<b>颗粒物</b>和<b>气体排放</b>，以及这些排放物在大气中的<b>老化过程</b>和<b>二次气溶胶的形成</b>。研究测量了乘用车柴油和汽油辅助加热器的气体和颗粒排放，包括二次排放。通过环境舱和氧化流动反应器模拟了大气老化过程，发现光化学老化气溶胶中的颗粒质量比新鲜排放物颗粒质量高1到3个数量级。研究结果表明，有必要对大气老化的气溶胶进行表征，特别是对二次有机气溶胶（SOA）的形成进行研究。这项研究对于理解城市空气质量和大气成分具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Covariability of dynamics and composition in the Asian monsoon tropopause layer from satellite observations and reanalysis products</section>
+            <section class="paper-authors">Shenglong Zhang, Jiao Chen, Jonathon S. Wright, Sean M. Davis, Jie Gao, Paul Konopka, Ninghui Li, Mengqian Lu, Susann Tegtmeier, Xiaolu Yan, Guang J. Zhang, Nuanliang Zhu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-10109-2025" target="_blank">https://doi.org/10.5194/acp-25-10109-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">亚洲季风</span>
+                        <span class="topic-tag">水汽变化</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-10109-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“卫星观测和再分析产品揭示的亚洲季风对流层顶动力学和成分的协变性”。论文利用<b>卫星观测</b>和<b>再分析数据</b>，研究亚洲夏季风对流层顶附近的水汽变化。研究分析了对流层顶（147-68 hPa）上方去季节性水汽变化的三个主要模式。第一种模式描述了区域尺度的干湿异常，这种异常在年际尺度上于低层平流层达到峰值。第二种模式的特征是水汽异常环绕在反气旋的北部，而在东南部则存在较弱的相反异常。第三种模式的特征是东西方向的水平偶极子。研究结果表明，虽然线性趋势上存在差异，但观测和再分析数据在描述水汽变化方面的一致性表明，再分析数据在捕捉对流层顶附近水汽控制过程方面越来越有效。研究关注水汽进入平流层的影响，这对于理解气候变化具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Expanded Regulatory Significance of Saharan Dust Plumes in the United States</section>
+            <section class="paper-authors">Paul Miller, Kimberly Hamilton-Wims, Ken Holmes, Doug Melancon, Jason Meyers, Tegan Treadaway</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c02205" target="_blank">https://doi.org/10.1021/acs.est.5c02205</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">撒哈拉沙尘</span>
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">空气质量标准</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c02205" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“撒哈拉沙尘羽在美国的扩展监管意义”。论文探讨了2022年6月发生的<b>撒哈拉沙尘暴</b>对美国<b>PM2.5</b>空气质量的影响，特别是在美国国家环境空气质量标准（NAAQS）收紧的背景下。研究通过分析地面监测数据，发现沙尘暴显著提高了美国中部地区的PM2.5浓度，甚至导致一些墨西哥湾沿岸地区的年平均PM2.5浓度超标，并影响了2023年的PM2.5设计值（DVs）。研究结果表明，似乎罕见的大气现象在更严格的空气质量政策下，对空气质量监管具有越来越重要的意义。这项研究强调了在空气质量管理中考虑自然事件影响的重要性，特别是在实施更严格的空气质量标准时。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Contribution of Ephemeral Lakes to Global Dust Cycle and Direct Radiative Effect</section>
+            <section class="paper-authors">Qianqian Song, Paul Ginoux</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL116689" target="_blank">https://doi.org/10.1029/2025GL116689</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">沙尘循环</span>
+                        <span class="topic-tag">辐射效应</span>
+                        <span class="topic-tag">短暂性湖泊</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL116689" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“短暂性湖泊对全球沙尘循环和直接辐射效应的贡献”。论文探讨了<b>短暂性湖泊</b>在全球<b>沙尘循环</b>和<b>直接辐射效应</b>中的作用。研究表明，短暂性湖泊对南半球的沙尘排放贡献巨大，可能达到52%。研究还研究了湖泊沙尘的矿物学特征及其对辐射冷却的影响。结果表明，短暂性湖泊在南半球的沙尘预算中占主导地位，强调需要将它们纳入气候模型，以更好地表示沙尘-辐射相互作用和海洋生物地球化学反馈。这些发现强调了短暂性湖泊在南半球沙尘预算中的主导作用，并强调需要将它们纳入气候模型，以更好地表示沙尘-辐射相互作用和海洋生物地球化学反馈。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The impact of differences in retrieval algorithms between processing centers on GNSS radio occultation refractivity retrievals in the planetary boundary layer</section>
+            <section class="paper-authors">Sara Vannah, Stephen S. Leroy, Chi O. Ao, E. Robert Kursinski, Kevin J. Nelson, Kuo-Nung Wang, Feiqin Xie</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4293-2025" target="_blank">https://doi.org/10.5194/amt-18-4293-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">GNSS掩星</span>
+                        <span class="topic-tag">反演算法</span>
+                        <span class="topic-tag">行星边界层</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4293-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“处理中心之间反演算法差异对行星边界层GNSS无线电掩星折射率反演的影响”。 论文探讨了不同处理中心使用的<b>GNSS无线电掩星</b>（GNSS RO）<b>反演算法</b>对<b>行星边界层</b>（PBL）<b>折射率反演</b>的影响。论文比较了三个主要处理中心（NASA JPL、ROM SAF和UCAR）的折射率反演结果。使用来自FORMOSAT-3/COSMIC-1 GNSS RO任务的共享掩星基础，研究发现JPL在折射率梯度最大的区域存在明显的折射率低估，而在极地地区存在微弱的高估。研究结果表明，GNSS RO在行星边界层的性能高度依赖于反演算法，并且不同处理中心之间存在显著差异。研究指出了可能导致这些偏差的潜在原因，包括截断方案、无线电全息滤波选择和质量控制，并提出了值得进一步研究的发现。这项研究对于改进大气廓线和成分的反演算法具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Are Clouds a Neglected Reservoir of Pesticides?</section>
+            <section class="paper-authors">Angelica Bianco, Pauline Nibert, Yi Wu, Jean-Luc Baray, Marcello Brigante, Gilles Mailhot, Laurent Deguillaume, Davide Vione, Damien J. E. Cabanes, Marie Méjean, Pascale Besse-Hoggan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c03787" target="_blank">https://doi.org/10.1021/acs.est.5c03787</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">农药污染</span>
+                        <span class="topic-tag">大气传输</span>
+                        <span class="topic-tag">云水分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c03787" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“云是被忽视的农药储存库吗？”论文探讨了<b>云</b>作为<b>农药</b>储存库的可能性，分析了云水中农药的浓度，并评估了农药通过<b>大气远距离传输</b>的影响。研究在法国多姆山天文台的云水中检测到32种农药，浓度范围在亚微克/升至微克/升之间。研究发现，由于区域到长距离的传输，法国目前农业禁止使用的农药也大量存在于云中。云中农药总浓度经常超过欧洲饮用水限制，因此降雨中频繁检测到农药可能取决于它们在云中的存在以及大气冲刷。这项研究结果对于利用遥感技术监测大气中农药污染和验证相关模型的准确性具有参考价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Relative Rate Coefficients for the Reactions of HO2 Radicals with Hydroxy-Substituted Alkyl Peroxy Radicals, and for Reactions of OH Radicals with Hydroxy Hydroperoxides</section>
+            <section class="paper-authors">Geoffrey S. Tyndall, John D. Crounse, Theo Kurtén, Henrik G. Kjaergaard, Paul O. Wennberg</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00158" target="_blank">https://doi.org/10.1021/acsestair.5c00158</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">HO2自由基</span>
+                        <span class="topic-tag">OH自由基</span>
+                        <span class="topic-tag">反应速率系数</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00158" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“HO2自由基与羟基取代烷基过氧自由基的反应以及OH自由基与羟基氢过氧化物反应的相对速率系数”。论文主要探讨了<b>HO2自由基</b>与羟基取代的<b>烷基过氧自由基</b>，以及<b>OH自由基</b>与<b>羟基氢过氧化物</b>的反应速率系数。通过测量反应产物，相对于与NO的反应的速率系数，测量了氢过氧自由基（HO2）与来自许多1-烯烃和异戊二烯的烷基过氧自由基反应的速率系数。量子化学计算证实了较大的反应速率系数，这些系数受到过渡态中隧穿的影响。进一步的实验测量了羟基自由基与有机羟基氢过氧化物的速率系数。该研究结果对于理解大气中的关键化学过程具有重要意义。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
