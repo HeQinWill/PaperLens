@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/09/17</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Retrieval of black carbon aerosol surface concentration using integrated MODIS and AERONET data</section>
+            <section class="paper-authors">Xingxing Jiang, Yong Xue, Mariarosaria Calvello, Shuhui Wu, Pei Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4559-2025" target="_blank">https://doi.org/10.5194/amt-18-4559-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳气溶胶</span>
+                        <span class="topic-tag">MODIS</span>
+                        <span class="topic-tag">AERONET</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4559-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文提出了一种新的<b>黑碳气溶胶（BC）</b>表面浓度反演算法，该算法结合了<b>MODIS</b>和<b>AERONET</b>数据。该研究利用AERONET数据确定季节性背景气溶胶模型，计算内部混合气溶胶的复折射率，并结合6SV2.1建立查找表，以实现BC组分和柱浓度的最佳估计。然后，使用MERRA-2生成的转换系数将柱浓度转换为表面浓度。最后，通过与实地Aethalometer测量结果的验证，证明了该算法的有效性，其性能优于MERRA-2 BC数据。验证结果表明，该算法在研究区域内具有优越的性能。该研究旨在精确量化BC的空间分布，从而改善区域空气质量并减轻人类活动驱动的气候变化影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">REtrieval Method for optical and physical Aerosol  Properties in the stratosphere (REMAPv1)</section>
+            <section class="paper-authors">Andrin Jörimann, Timofei Sukhodolov, Beiping Luo, Gabriel Chiodo, Graham Mann, Thomas Peter</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-6023-2025" target="_blank">https://doi.org/10.5194/gmd-18-6023-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">平流层气溶胶</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">气候模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-6023-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文描述了一种名为<b>REMAPv1</b>的反演方法，用于从卫星观测的<b>气溶胶消光</b>数据中反演<b>平流层气溶胶</b>的物理和光学特性，例如气溶胶的数量、大小和光学效应。这些反演结果可以用于<b>气候模型</b>，以更准确地模拟气溶胶对气候的影响。论文验证了该方法在火山爆发后气溶胶观测中的有效性，并讨论了其在气候模型比对项目中的应用。 REMAP使用气球观测结果（在皮纳图博火山和洪阿汤加-洪阿哈阿帕伊（HTHH）火山爆发后）以及40年的激光雷达测量结果进行了验证。代码可以拟合纯水硫酸气溶胶的单峰对数正态尺寸分布，用于来自观测或模型数据集的气溶胶消光系数。结果表明，REMAP能够生成实际的有效半径和火山爆发后的表面积密度，并且通常在测量不确定性范围内与激光雷达后向散射时间序列相匹配。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Stratospheric Injection Lifetimes</section>
+            <section class="paper-authors">M. R. Schoeberl, M. Toohey, Y. Wang, R. Ueyama</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043928" target="_blank">https://doi.org/10.1029/2025JD043928</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">平流层气溶胶</span>
+                        <span class="topic-tag">水汽</span>
+                        <span class="topic-tag">火山爆发</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043928" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《平流层注入寿命》探讨了<b>火山爆发</b>和<b>火积云（pyroCbs）</b>向平流层注入物质的寿命问题。论文通过模拟追踪轨迹包来计算注入物质的滞后时间和衰减时间，并以2022年汤加火山爆发的<b>水汽</b>羽流为例进行了模拟。研究结果与<b>微波临边探测仪</b>（Microwave Limb Sounder）的观测结果吻合较好。此外，论文还分析了高度、纬度以及极地平流层云形成等因素对注入物质寿命的影响，并讨论了气溶胶重力沉降的作用。计算结果还与旨在改变平流层反照率的地球工程计划相关，其中设想了持续的平流层气溶胶浓度。研究发现，注入物质的寿命随高度增加而增加，随纬度降低而减少。如果极地平流层云的形成是一个损失过程，则寿命会缩短。气溶胶的重力沉降也会缩短寿命，尤其对于半径>0.5微米的气溶胶应包括在内。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Influence of atmospheric waves and deep convection on water vapour in the equatorial lower stratosphere seen from long-duration balloon measurements</section>
+            <section class="paper-authors">Sullivan Carbone, Emmanuel D. Riviere, Mélanie Ghysels, Jérémie Burgalat, Georges Durry, Nadir Amarouche, Aurélien Podglajen, Albert Hertzog</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-10603-2025" target="_blank">https://doi.org/10.5194/acp-25-10603-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">水汽</span>
+                        <span class="topic-tag">大气波</span>
+                        <span class="topic-tag">深对流</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-10603-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《大气波和深对流对赤道低层平流层水汽的影响：基于长时程气球测量》探讨了<b>大气波</b>和<b>深对流</b>对赤道低层平流层<b>水汽</b>的影响，通过长时程气球测量获取数据。论文重点关注<b>热带对流层顶层（TTL）</b>的水汽变化，因为它是大气物质进入平流层的关键区域，对平流层化学和气候有重要影响。研究使用了Strateole 2项目的气球搭载光谱仪进行原位测量，并结合ERA5再分析数据，分析了大气波和深对流事件对水汽异常的调节作用。结果表明，大气波在TTL中的水汽变化中起着重要作用，而深对流系统也会影响水汽的垂直分布。长时程气球测量对于揭示TTL上部的水汽超射特征非常重要。该研究强调了长时程气球测量在突出水汽在TTL中的超射特征方面的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Optimal spatio-temporal interpolation of aerosol optical depth over China using fixed rank kriging</section>
+            <section class="paper-authors">Yu Kong, Bai Liu, Dazhi Yang, Disong Fu, Hongrong Shi, Yun Chen, Guoming Yang, Yong Chen, Jiaqi Chen, Yanbo Shen, Xiang’ao Xia</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108462" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108462</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">AOD</span>
+                        <span class="topic-tag">时空插值</span>
+                        <span class="topic-tag">克里金法</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108462" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文主要关注利用<b>固定秩克里金法</b>（FRK）对中国地区<b>气溶胶光学厚度（AOD）</b>数据进行时空插值，以填补卫星观测数据中的缺失值。在月度数据集上，使用AERONET观测作为地面真理，发现FRK AOD优于几个基准，包括反距离加权插值，DeepKriging和MERRA-2再分析。在每日数据集上，FRK已显示能够有效地处理大规模数据，而其他选择常常由于计算上的不可行性而失败。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Aerial estimates of methane and  carbon dioxide emission rates using a  mass balance approach in New York State</section>
+            <section class="paper-authors">Alexandra M. Catena, Mackenzie L. Smith, Lee T. Murray, Eric M. Leibensperger, Jie Zhang, Margaret J. Schwab, James J. Schwab</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-4555-2025" target="_blank">https://doi.org/10.5194/essd-17-4555-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放</span>
+                        <span class="topic-tag">二氧化碳排放</span>
+                        <span class="topic-tag">航空观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-4555-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《纽约州使用质量平衡方法估算甲烷和二氧化碳排放率的航空估算》利用<b>航空观测</b>，通过<b>质量平衡法</b>估算了纽约州多个行业的<b>甲烷</b>和<b>二氧化碳</b>排放率。研究发现，<b>垃圾填埋场</b>是主要的甲烷排放源，而<b>燃烧设施</b>的二氧化碳排放量最高。研究结果还表明，环保署的自报清单通常低估了垃圾填埋场的甲烷排放量。该研究的结果显示，10个被观测到的垃圾填埋场的甲烷排放量平均被低估了2倍。与清单进行比较表明，5个垃圾填埋场的观测甲烷排放估算值明显高于清单值，4个垃圾填埋场的清单值在观测的不确定性范围内，1个垃圾填埋场的观测排放估算值明显低于报告的清单估算值。纽约州可以利用这些信息来为纽约州的温室气体清单提供信息，并改进排放估算方法，以更好地描述实际排放量。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Dust pollution substantially weakens the impact of ammonia emission reduction on  particulate nitrate formation</section>
+            <section class="paper-authors">Hanrui Lang, Yunjiang Zhang, Sheng Zhong, Yongcai Rao, Minfeng Zhou, Jian Qiu, Jingyi Li, Diwen Liu, Florian Couvidat, Olivier Favez, Didier Hauglustaine, Xinlei Ge</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-10587-2025" target="_blank">https://doi.org/10.5194/acp-25-10587-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">沙尘污染</span>
+                        <span class="topic-tag">颗粒物硝酸盐</span>
+                        <span class="topic-tag">氨排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-10587-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《沙尘污染显著削弱氨排放减少对颗粒物硝酸盐形成的影响》探讨了<b>沙尘污染</b>如何影响<b>颗粒物硝酸盐</b>的形成，以及沙尘污染如何削弱<b>氨排放</b>控制对颗粒物硝酸盐形成的影响。研究结合了在中国东部三个城市进行的现场观测和气溶胶热力学模型，以及<b>机器学习</b>方法，评估了沙尘对<b>气溶胶pH</b>值的影响及其对硝酸盐形成的影响。结果表明，沙尘会影响气溶胶的pH值，从而影响硝酸盐在气相和颗粒相之间的分配。模拟结果表明，虽然减少氨排放通常能有效降低硝酸盐水平，但在受沙尘影响的环境中，这种效果会显著降低。沙尘颗粒起缓冲作用，降低了硝酸盐形成对氨排放减少的敏感性。研究强调在制定颗粒物硝酸盐控制策略时，需要同时考虑人为排放和沙尘源，从而更好地管理城市空气质量。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Comparison of GOES‐17 Atmospheric Motion Vectors With AR Recon Dropsonde Data and Assessment of Wind Fields in the Global Forecast System During Atmospheric River Events</section>
+            <section class="paper-authors">Minghua Zheng, F. Martin Ralph, Xingren Wu, Bin Guan, Duane Waliser, Iliana Genkova, Luca Delle Monache, Vijay Tallapragada, Zhenhai Zhang, David Santek, Zhenglong Li, Scot Rafkin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043267" target="_blank">https://doi.org/10.1029/2024JD043267</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气运动矢量</span>
+                        <span class="topic-tag">GOES-17</span>
+                        <span class="topic-tag">大气河流</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043267" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文主要探讨了利用<b>GOES-17</b>卫星获取的大气运动矢量（AMVs）数据，并将其与大气河流侦察（AR Recon）投放的探空仪数据进行比较，以评估全球预报系统（GFS）在发生<b>大气河流</b>事件期间的<b>风场</b>。研究重点在于GOES-17 AMVs数据的质量评估和在GFS模型中的应用，特别是在缺乏传统观测数据的海洋区域。与探空仪的比较显示出-0.7 m s-1的小矢量风速偏差。 AMV的不确定性估计为5-6 m s-1。对比搭配的GFS模型背景风场显示出较小的偏差。资料同化减少了均方根差异，但业务AMV中的小偏差需要进一步关注，因为它们是GFS中海洋区域的主要风数据源。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Sources and Optical Properties of Marine Organic Aerosols Under the Influence of Marine Emissions, Asian Dust, and Anthropogenic Pollutants</section>
+            <section class="paper-authors">Yiwen Zhang, Yujue Wang, Shubin Li, Yizhe Yi, Yuqi Guo, Chao Yu, Yue Jiang, Yuanzhe Ni, Wei Hu, Jialei Zhu, Jianhua Qi, Jinhui Shi, Xiaohong Yao, Huiwang Gao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043472" target="_blank">https://doi.org/10.1029/2025JD043472</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋有机气溶胶</span>
+                        <span class="topic-tag">光学性质</span>
+                        <span class="topic-tag">亚洲沙尘</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043472" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文主要探讨了黄渤海地区<b>海洋有机气溶胶</b>（OA）的来源和光学性质，包括水溶性和非水溶性有机物的成分，以及它们对<b>光吸收</b>的影响。研究重点关注了不同季节（秋季、春季、夏季）中，来自<b>亚洲沙尘</b>、人为污染物和海洋排放等不同来源对海洋OA的影响，并量化了它们对OA质量浓度、光吸收和荧光强度的贡献。人为二次形成贡献了秋季水溶性OA的质量浓度和Abs300的61％和82％。 亚洲粉尘导致春季黄海和渤海地区OA和<b>棕色碳</b>（BrC）光吸收的明显升高，分别贡献了水不溶性OA质量和Abs300的70％和66％。该研究强调了不同季节海洋OA的来源和棕碳（BrC）的光吸收存在显著差异，并强调了它们在边缘海地区相对于黑碳在太阳辐射吸收中的重要作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Strong intermodel differences and biases in CMIP6 simulations of PM2.5, aerosol optical depth, and precipitation over Africa</section>
+            <section class="paper-authors">Catherine A. Toolan, Joe Adabouk Amooli, Laura J. Wilcox, Bjørn H. Samset, Andrew G. Turner, Daniel M. Westervelt</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-10523-2025" target="_blank">https://doi.org/10.5194/acp-25-10523-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">气候模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-10523-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《非洲PM2.5、气溶胶光学厚度和降水CMIP6模拟的强模式间差异和偏差》评估了CMIP6模型在模拟非洲<b>PM2.5</b>、<b>气溶胶光学厚度（AOD）</b>和<b>降水</b>方面的表现。研究通过将模型数据与1981-2023年间的观测数据进行对比，发现模型在捕捉PM2.5浓度季节性变化方面表现较好，但在模拟非尘埃气溶胶分布和东非降水模式方面存在困难。论文强调了模型间在非洲空气质量和气候模拟方面的差异，并指出改进模型对于提高气候预测的可靠性至关重要。模型在捕捉PM2.5浓度季节性变化方面表现较好，但在模拟非尘埃气溶胶分布和东非降水模式方面存在困难。评估结果显示，虽然模型能较好地捕捉PM2.5浓度的季节性变化，但在浓度量级上存在显著的模式间差异。尘埃AOD在季节性空间分布上表现较好，但非尘埃AOD的季节性空间模式代表性较差。降水模拟在东非和西非季风区域的量级和年度进展上表现较好，但在模拟东非季风方面表现较差。该研究强调了在非洲空气质量和气候模拟方面存在显著的模式间差异，并指出解决撒哈拉以南非洲地区的模型性能和偏差是提高气候预测信心的关键所在。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Spatial Patterns of Total and Water‐Soluble Trace Metals in Various Marine Total Suspended Particulate Over the Northwest Pacific Ocean</section>
+            <section class="paper-authors">Yu‐Xiao Li, Li Luo, Shih‐Chieh Hsu, XiaoHong Yao, Hui‐Wang Gao, Shuh‐Ji Kao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043475" target="_blank">https://doi.org/10.1029/2025JD043475</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">痕量金属</span>
+                        <span class="topic-tag">大气沉降</span>
+                        <span class="topic-tag">总悬浮颗粒物</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043475" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文主要关注西北太平洋地区海洋<b>总悬浮颗粒物</b>中<b>总痕量金属</b>和<b>水溶性痕量金属</b>的空间分布。通过分析不同来源的痕量金属特征，识别了海洋总悬浮颗粒物中痕量金属的四个排放源（地壳矿物、船舶尾气、化石燃料燃烧和海洋排放）。研究还探讨了气溶胶源、气溶胶pH值、老化过程和沙尘负荷对不同类型总悬浮颗粒物中痕量金属溶解度的影响。痕量金属在东海的干沉降通量高于西北太平洋。西北太平洋中水溶性铁估计的氮固定（N2固定）通量的大气沉降与原位观测相当，表明大气铁可能是支持西北太平洋开放海洋中新的初级生产的重要微量营养素。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The influence of ammonia emission inventories on size-resolved global atmospheric aerosol  composition and acidity</section>
+            <section class="paper-authors">Xurong Wang, Alexandra P. Tsimpidi, Zhenqi Luo, Benedikt Steil, Andrea Pozzer, Jos Lelieveld, Vlassis A. Karydis</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-10559-2025" target="_blank">https://doi.org/10.5194/acp-25-10559-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氨排放</span>
+                        <span class="topic-tag">气溶胶组成</span>
+                        <span class="topic-tag">气溶胶酸度</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-10559-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《氨排放清单对粒径分辨的全球大气气溶胶组成和酸度的影响》探讨了<b>氨排放</b>对全球<b>大气气溶胶组成</b>和<b>酸度</b>的影响，重点关注了不同排放清单对气溶胶中硫酸盐、硝酸盐和铵盐的影响，尤其是在细颗粒物粒径范围内。研究使用了大气化学气候模型EMAC，分析了氨在缓冲气溶胶酸度中的作用，以及区域化学环境对气溶胶响应的影响。该研究结果表明，在细颗粒物范围内，硫酸盐-硝酸盐-铵盐气溶胶对氨排放变化的敏感性最高。区域响应因二次无机气溶胶的局部化学环境而异。在“富氨”地区，氨的丰富度部分抵消了减少氨排放的影响。研究还发现，氨在人口稠密地区具有缓冲效应，将气溶胶酸度维持在适中水平，减轻了剧烈的pH值变化。这些结果突显了氨在塑造气溶胶酸度方面的关键作用，并强调了针对粒径的具体方法来管理颗粒物的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Emission rates and composition of particulate matter from a large waste fire in Stockholm, Sweden</section>
+            <section class="paper-authors">Sarah S. Steimer, Max Elmgren, Alexander Håland, Christer Johansson, Tomas Mikoviny, Michael Norman, Felix Piel, Ioannis Sadiktsis, Daniel Schlesinger, Sanna Silvergren, Armin Wisthaler, Karine Elihn</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121529" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121529</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM10</span>
+                        <span class="topic-tag">重金属</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121529" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文主要关注大型<b>垃圾火灾</b>对<b>空气质量</b>的影响，特别是<b>PM10</b>的排放、重金属的富集以及多环芳烃（PAHs）的含量。我们的结果表明，垃圾焚烧，在燃烧时，可能贡献了多达5倍的道路交通造成的PM10平均排放量。与火灾后收集的颗粒相比，受垃圾火灾影响的颗粒富含几种潜在的有毒金属和准金属，包括砷、铜、镉，尤其是铅。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Assessment of aerosol optical depth forecast for day-ahead  clear-sky direct irradiance</section>
+            <section class="paper-authors">Xinyuan Hou, Kyriakoula Papachristopoulou, Stelios Kazadzis</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4543-2025" target="_blank">https://doi.org/10.5194/amt-18-4543-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">辐射预测</span>
+                        <span class="topic-tag">晴空辐射</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4543-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《晴空直接辐射日预测的气溶胶光学厚度评估》评估了<b>气溶胶光学厚度（AOD）</b>的预测对<b>晴空直接辐射</b>的影响。它比较了不同的AOD预测方法，包括基于地面观测（AERONET）的持续性方法和哥白尼大气监测服务（CAMS）的预测，并分析了这些方法对预测<b>直接法向辐照度（DNI）</b>的影响。研究发现，虽然没有一种方法能够准确地预测DNI在5%以内，但在大多数站点，DNI的偏差在20%以内，尤其是在城市工业气溶胶站点。研究结果表明，CAMS预测在更多站点上表现优于AERONET持续性方法，尤其是在许多城市工业气溶胶站点。AERONET持续性预测在沙尘气溶胶站点上AOD的误差较低。该研究得出结论，目前所讨论的AOD预测方法均无法可靠地实现直接法向辐照度（每日总和）的日预测精度低于5%偏差，但大多数站点可以期望DNI预测的阈值为20% DNI偏差。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Effects of ammonium sulfate on the hygroscopic properties and phase transition of aerosols with organic surrogates related to biomass burning and atmospheric oxidation</section>
+            <section class="paper-authors">Xin Wang, Yukun Chen, Fang Wang, Yongwei Lu, Zilong Huang, Wei Wang, Yueshe Wang, Jianjun Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108464" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108464</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">吸湿性</span>
+                        <span class="topic-tag">生物质燃烧</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108464" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了生物质燃烧和大气氧化相关的有机物与<b>硫酸铵</b>混合后，气溶胶的<b>吸湿特性</b>。结果表明，通过增加左旋葡聚糖含量，不完全封装转变为核壳结构。实验结果表明，具有可调节质量比的三组分气溶胶表明，吸湿性能和潮解相对湿度（DRH）随（NH4）2SO4含量显着增加。减少后会减少颗粒的吸湿性。从整体来看，本研究为了解（NH4）2SO4对调节与生物质燃烧和大气氧化相关的典型有机替代物的吸湿特性的影响提供了见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Nationwide Study of the Association between Temperature Variability and Sleep Apnea, and the Modifying Role of Air Pollution, in a Moderate-to-Severe Risk OSA Population</section>
+            <section class="paper-authors">Anni Li, Hao Wang, Qingli Zhang, Xinlei Zhu, Chang Xu, Su Shi, Haidong Kan, Yutao Guo, Renjie Chen, Xia Meng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environment & Health</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/envhealth.5c00045" target="_blank">https://doi.org/10.1021/envhealth.5c00045</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气污染</span>
+                        <span class="topic-tag">气温变化</span>
+                        <span class="topic-tag">睡眠呼吸暂停</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/envhealth.5c00045" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了<b>气温变化</b>（TV）与<b>阻塞性睡眠呼吸暂停</b>（OSA）严重程度之间的关联，以及<b>空气污染</b>在其中的调节作用。研究发现，气温变化越大，OSA病情恶化的风险越高，呼吸暂停低通气指数（AHI）增加，血氧饱和度（SpO2）降低。此外，空气污染与气温变化之间存在协同作用，共同加剧OSA的严重程度。研究采用了病例时间序列统计方法来评估TV与OSA恶化风险、呼吸暂停低通气指数（AHI）和平均氧饱和度（SpO2）之间的关联。研究结果表明，TV和空气污染对OSA严重程度存在显着的协同作用。这项研究强调了TV可能会加剧OSA的严重程度，而空气污染可以与TV协同作用以影响OSA的严重程度。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
