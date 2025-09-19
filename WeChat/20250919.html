@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/09/19</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global warming amplifies wildfire health burden and reshapes inequality</section>
+            <section class="paper-authors">Junri Zhao, Bo Zheng, Philippe Ciais, Yang Chen, Thomas Gasser, Josep G. Canadell, Longyi Zhang, Qiang Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41586-025-09612-9" target="_blank">https://doi.org/10.1038/s41586-025-09612-9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">野火排放</span>
+                        <span class="topic-tag">健康负担</span>
+                        <span class="topic-tag">气候变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41586-025-09612-9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“全球变暖加剧野火健康负担并重塑不平等”，探讨了<b>全球变暖</b>如何加剧<b><野火></b>，从而影响空气质量和人类健康。研究利用<b><机器学习模型></b>预测了未来野火的燃烧面积和排放物，并量化了由野火引起的PM2.5造成的过早死亡和辐射强迫。研究结果表明，未来野火排放的碳排放量将增加，导致与野火相关的过早死亡人数大幅上升，特别是在非洲。此外，野火气溶胶还会减少北极地区的冷却效应。这项研究突出了气候变化背景下野火对全球健康和环境的严重影响。研究主要关注<b>PM2.5</b>和<b><气溶胶></b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Wildfire smoke exposure and mortality burden in the US under climate change</section>
+            <section class="paper-authors">Minghao Qiu, Jessica Li, Carlos F. Gould, Renzhi Jing, Makoto Kelp, Marissa L. Childs, Jeff Wen, Yuanyu Xie, Meiyun Lin, Mathew V. Kiang, Sam Heft-Neal, Noah S. Diffenbaugh, Marshall Burke</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41586-025-09611-w" target="_blank">https://doi.org/10.1038/s41586-025-09611-w</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">野火烟雾</span>
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">死亡率</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41586-025-09611-w" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“气候变化下美国野火烟雾暴露与死亡率负担”，量化了气候变化背景下<b><野火烟雾></b>细颗粒物 (PM2.5) 造成的美国死亡率负担。研究建立了一系列<b><统计和机器学习模型></b>，将气候与野火烟雾 PM2.5 联系起来，并利用美国所有记录死亡的数据来经验估计烟雾 PM2.5 的死亡率关系。研究预测，在高升温情景下，到 2050 年，烟雾 PM2.5 可能导致每年 71,420 例超额死亡。 <b><PM2.5></b> 对死亡率的影响可持续长达三年。因此，这项研究与<b><大气环境></b>质量监测和健康具有密切相关性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Real-time organic aerosol characterization via Orbitrap mass spectrometry in urban and agricultural environments</section>
+            <section class="paper-authors">Julia David, Luca D'Angelo, Mario Simon, Alexander L. Vogel</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4573-2025" target="_blank">https://doi.org/10.5194/amt-18-4573-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有机气溶胶</span>
+                        <span class="topic-tag">质谱分析</span>
+                        <span class="topic-tag">实时监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4573-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“通过Orbitrap质谱法对城市和农业环境中的有机气溶胶进行实时表征”，展示了利用高分辨率 <b>Orbitrap 质谱仪</b>对大气有机气溶胶（OA）进行实时、原位测量的能力。研究在德国法兰克福城市背景站和意大利波河谷的农业地区部署了 <b>APCI-Orbitrap-MS</b>，实现了高时间（1 秒）和质量分辨率的在线测量。该质谱仪能够检测和识别各种有机化合物，包括生物源、人为污染物和生物质燃烧的示踪物。研究结果表明，APCI-Orbitrap-MS 与气溶胶化学成分监测仪（ACSM）的有机气溶胶质量浓度具有良好的一致性。在农业地区，研究识别了光化学老化的生物标记物 MBTCA 和夜间化学反应的有机硝酸盐。此外，研究还检测到频繁发生的生物质燃烧事件。通过<b>实验室实验</b>，进一步验证了 APCI-Orbitrap-MS 能够实时检测生物源、生物质燃烧示踪物以及人为污染物。该研究突出了高分辨率质谱在复杂化学环境中的应用潜力，能够分子水平地检测和识别气溶胶的组成。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Evaluating NOx fate and organic nitrate chemistry from α-pinene oxidation using stable oxygen and nitrogen isotopes</section>
+            <section class="paper-authors">Wendell W. Walters, Masayuki Takeuchi, Danielle E. Blum, Gamze Eris, David Tanner, Weiqi Xu, Jean Rivera-Rios, Fobang Liu, Tianchang Xu, Greg Huey, Justin B. Min, Rodney Weber, Nga L. Ng, Meredith G. Hastings</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-10707-2025" target="_blank">https://doi.org/10.5194/acp-25-10707-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有机硝酸盐</span>
+                        <span class="topic-tag">同位素示踪</span>
+                        <span class="topic-tag">大气氧化过程</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-10707-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“使用稳定氧和氮同位素评估α-蒎烯氧化过程中氮氧化物的命运和有机硝酸盐的化学”，研究了植物释放的化学物质与污染物在大气中的相互作用。通过结合**<实验室实验>**和**<化学模型>**, 研究追踪了独特的化学指纹，了解了氮化合物如何转化形成空气中的颗粒物。研究采用稳定氧同位素（Δ17O, δ18O）和氮同位素（δ15N）测量技术，探讨了 NOy 物种的同位素特征，从而追踪有机硝酸盐（RONO2）的化学归宿。通过控制氧化剂和光化学条件下的 α-蒎烯氧化实验，研究揭示了 NOy 物种间氧同位素的线性关系，支持了双端元混合模型。氮同位素分馏揭示了 HNO3 和颗粒硝酸盐（pNO3）的不同形成路径和同位素效应。模型模拟结果与实验观测值基本吻合，验证了该研究方法的有效性。研究强调了 Δ17O 和 δ15N 在解析硝酸盐形成机制中的作用，并指出了未来实验工作应关注 HNO3 路径，以完善同位素质量平衡假设和氮同位素分馏。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impact of Sensible Heating and Water Vapor Emission on Pyro‐Convective Plume Characteristics</section>
+            <section class="paper-authors">Jason Müller, Fabian Senf, Ina Tegen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043552" target="_blank">https://doi.org/10.1029/2025JD043552</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火积云</span>
+                        <span class="topic-tag">感热潜热</span>
+                        <span class="topic-tag">野火羽流</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043552" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“感热加热和水汽排放对火积对流羽流特征的影响”，探讨了<b><野火羽流></b>转变为<b><火积云></b>(pyroCb)的过程以及感热和潜热释放对火积云特征的影响。通过使用区域高分辨率大气模型，模拟了澳大利亚新年夜的极端火积云事件，并分析了<b><感热通量></b>和<b><潜热通量></b>对羽流高度、含水量和温度异常的敏感性。研究结果表明，当感热通量超过一定阈值时，火积云会突然形成，羽流顶部高度主要受感热和潜热通量总和的控制。该研究强调了准确估算火灾释放的热量和水分对于预测火积云发展的重要性。总的来说，这项研究提升了对于火积云形成的理解和预测能力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Sensitivity analysis of WRF-CMAQ model in predicting PM<sub>2.5</sub> and O<sub>3</sub> concentration in Peninsular Malaysia: 2019 transboundary burning smoke case study</section>
+            <section class="paper-authors">Nur Nazmi Liyana Mohd Napi, Maggie Chel Gee Ooi, Mohd Talib Latif, Liew Juneng, Mohd Shahrul Mohd Nadzir, Wee Cheah, Andy Chan, Li Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121496" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121496</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">WRF-CMAQ</span>
+                        <span class="topic-tag">PM2.5和O3</span>
+                        <span class="topic-tag">跨境烟雾</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121496" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“WRF-CMAQ 模型在预测马来西亚半岛 PM2.5 和 O3 浓度中的敏感性分析：2019 年跨境燃烧烟雾案例研究”，旨在评估数值化学天气预报模型 (WRF-CMAQ) 在重现 2019 年跨境烟雾事件期间空气质量的能力。研究通过调整模型设置，包括天气同化和来自 NCAR (FINN) 的火灾清单的燃烧排放量来提高预测精度。结果表明，WRF-CMAQa 在预测地面 <b><PM2.5></b> 方面表现更好。然而，在跨境烟雾事件期间的昼夜预测仍然较弱。对于 <b><O3></b> 浓度，所有模拟的模型性能协议都很低。总之，对天气和化学预测模型，特别是 WRF-CMAQ 的敏感性研究，可以帮助改善跨境烟雾事件再次发生期间 PMY 的空气质量预测系统。该研究强调提高<b><预测系统></b>在空气质量检测方面的改进。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Modeling support for an extensive Δ14CO2 flask sample monitoring campaign over Europe to constrain fossil CO2 emissions</section>
+            <section class="paper-authors">Carlos Gómez-Ortiz, Guillaume Monteil, Ute Karstens, Marko Scholze</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-10747-2025" target="_blank">https://doi.org/10.5194/acp-25-10747-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">化石CO2排放</span>
+                        <span class="topic-tag">大气反演模拟</span>
+                        <span class="topic-tag">采样策略优化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-10747-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“模拟支持欧洲广泛的Δ14CO2瓶采样监测活动以约束化石CO2排放”，探讨了利用大气测量反演来估算欧洲化石燃料 CO2 排放的方法。研究核心是通过**<Δ14CO2></b> 的密集采样来提高排放估算的准确性。研究者设计了一系列**<模拟实验>**，评估了不同采样策略的价值，包括采样频率和基于样本化石 CO2 与核活动影响的选择标准。研究发现，增加采样频率，尤其是在化石燃料活动高峰期（如冬季），可以显著提高排放估算的准确性。此外，根据化石 CO2 含量和避免核活动污染来选择样本，有助于降低不确定性和偏差。该研究强调了优化采样策略的重要性，不仅要增加采样频率，还要精心选择样本，以提高欧洲化石燃料排放估算的可靠性。研究结果表明，在评估人为排放源贡献时，<b>采样密度和选取的策略</b>都至关重要，选取避免核污染的高化石燃料二氧化碳样本能够优化反演结果。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Health risk assessment of atmospheric fine particulate matter in China</section>
+            <section class="paper-authors">Ziyue Wan, Yuxia Ma, Fengliu Feng, Zongrui Liu, Yuhan Zhao, Yufen Xia</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121550" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121550</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">健康风险</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121550" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“中国大气细颗粒物健康风险评估”，关注中国<b><大气细颗粒物></b> (PM2.5) 的健康风险评估。研究分析了 2017 年至 2023 年间 PM2.5 浓度的时空变化特征，并评估了短期暴露于 PM2.5 所致的健康负担。研究利用基于流行病学的健康风险评估模型，结合中国高分辨率 PM2.5 数据集、人口分布数据和死亡率数据进行分析。结果表明，中国 PM2.5 水平显著下降，但不同地区健康风险存在空间差异，<b>华南和华东地区最高</b>。该研究对理解和减轻中国大气污染的健康影响具有重要意义。结论是<b><PM2.5水平></b>显著下降，但仍需关注地区差异性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">JLH Mark2 – An Improved Opto-Mechanical Approach to Open-Path in situ Water Vapor Measurement in the Upper Troposphere/Lower Stratosphere</section>
+            <section class="paper-authors">Robert L. Herman, Robert F. Troy, Kim M. Aaron, Isabelle Sanders, Kevin Schwarm, Joshua Eric Klobas, Aaron Swanson, Andrew Carpenter, Scott Ozog, Keith Chin, Lance E. Christensen, Dejian Fu, Robert F. Jarnot, Robert A. Stachnik, Ramabhadran Vasudev</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4593-2025" target="_blank">https://doi.org/10.5194/amt-18-4593-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">水汽测量</span>
+                        <span class="topic-tag">机载传感器</span>
+                        <span class="topic-tag">光学稳定性</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4593-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为“JLH Mark2 – 一种改进的光机方法，用于在上对流层/下平流层进行原位水汽测量”，介绍了机载大气水汽传感器<b>JPL激光湿度计（JLH）Mark2</b> 的新型光机设计。该设计旨在最大程度地提高仪器在飞行过程中经历的各种温度下的光学稳定性，从而提高水汽测量的精度和性能。该研究详细描述了仪器光机结构的重新设计，新的数据检索算法和更新的数据分析程序。通过<b>实验室和外场实验</b>，验证了重新设计的仪器的性能提升。关键的改进显著提升了性能，这已通过NASA的SEAC4RS外场任务和Northrop Grumman Systems Corporation Flying Test Bed（FTB）的后续科学飞行得到证明。研究的重点是提高机载原位测量的准确性和精确性。文中强调了对光学稳定性的改进以及新数据检索算法和分析程序的重要性。总之，该研究提供了一个改进的机载水汽传感器，它通过改进的<b><光机设计和数据处理></b>，提高了测量的准确性和稳定性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
