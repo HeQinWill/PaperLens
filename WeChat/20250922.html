@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/09/22</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Monitoring the Pulse of America's Natural Resources From the Orbiting Carbon Observatory Missions</section>
+            <section class="paper-authors">Mark Svoboda, Oz Kira, Ying Sun, William K. Smith, Troy Magney, Jeffrey D. Wood, Nicholas C. Parazoo</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">AGU Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025AV002063" target="_blank">https://doi.org/10.1029/2025AV002063</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">太阳诱导叶绿素荧光</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">自然资源监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025AV002063" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">这篇题为“通过轨道碳观测卫星任务监测美国自然资源的脉搏”的文章，讨论了美国宇航局（NASA）的<b>OCO-2</b>和<b>OCO-3</b>轨道碳观测卫星任务对监测地球自然资源的重要性。尽管这些卫星最初并非设计用于观测太阳诱导叶绿素荧光（<b>SIF</b>），但其观测数据为从太空检测光合作用和监测地球健康状况提供了新的机会。文章强调了这些卫星数据在<b>作物产量预测</b>、<b>干旱预警</b>以及<b>森林和牧场管理</b>方面的应用，并指出继续保持这些卫星的运行对于美国的农业、国家利益和全球粮食安全至关重要。研究利用卫星观测进行<b>大气成分分析</b>（如叶绿素荧光）和环境监测。通过高光谱和空间分辨率的数据，这些卫星能够提供有价值的信息，用于管理与极端天气事件相关的风险。文章呼吁继续资助这些任务，以支持可持续的资源管理和应对气候变化。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
