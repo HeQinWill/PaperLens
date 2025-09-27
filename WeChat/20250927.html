@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/09/27</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">TEMPO Aerosol Optical Depth and Aerosol Layer Height Retrieval Algorithm</section>
+            <section class="paper-authors">Hai Zhang, Shobha Kondragunta, Pubu Ciren</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044082" target="_blank">https://doi.org/10.1029/2025JD044082</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶反演</span>
+                        <span class="topic-tag">TEMPO卫星</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044082" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《TEMPO气溶胶光学厚度和气溶胶层高度反演算法》(<cite>TEMPO Aerosol Optical Depth and Aerosol Layer Height Retrieval Algorithm</cite>)，开发了一种用于<b>TEMPO</b>（对流层排放：污染监测）卫星的反演算法，用于获取<b>气溶胶光学厚度</b>（AOD）和<b>气溶胶层高度</b>（ALH）。该算法基于现有的极轨卫星算法改进而来，并针对TEMPO的特性进行了软校正。通过与地基观测数据和激光雷达数据进行对比验证，结果表明该算法能够有效反演AOD和ALH，对于监测空气质量和预测细颗粒物浓度具有重要意义。同时反演AOD和ALH对于估计细颗粒物的表面浓度以监测和预测空气质量至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">CHN-CH4: a gridded (0.1° × 0.1°) anthropogenic methane emission inventory of China from 1990 to 2020</section>
+            <section class="paper-authors">Fengxiang Guo, Fan Dai, Peng Gong, Yuyu Zhou</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-4799-2025" target="_blank">https://doi.org/10.5194/essd-17-4799-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放</span>
+                        <span class="topic-tag">排放清单</span>
+                        <span class="topic-tag">遥感数据</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-4799-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《CHN-CH4：1990年至2020年中国人为甲烷排放的格点清单（0.1°×0.1°）》(<cite>CHN-CH4: a gridded (0.1° × 0.1°) anthropogenic methane emission inventory of China from 1990 to 2020</cite>)，重点关注中国人为<b>甲烷排放</b>的清单构建。研究利用<b>卫星数据</b>、国家统计数据和气候指南，创建了一个高分辨率（0.1°×0.1°）的中国<b>甲烷排放地图</b>（CHN-CH4），时间跨度从1990年到2020年。研究旨在提高甲烷排放追踪的准确性，为全球气候模型提供信息，并加强科学与政策之间的合作，以应对气候变化。结果表明，中国在过去三十年里排放了约1157 Tg的甲烷，并在2010年代达到峰值，其中山西省的排放量最高。该清单通过提供可靠和详细的排放信息，有助于加速全球减少甲烷排放的努力，并支持中国的气候政策。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Combining LIDAR, all-sky camera, and ECMWF-ERA5 reanalysis to investigate contrail formation and evolution over Clermont-Ferrand, France on June 2, 2023</section>
+            <section class="paper-authors">Sidy Diarra, Jean-Luc Baray, Nadège Montoux, Patrick Fréville, Frédéric Peyrin, Philippe Cacault, William Boucher, Philippe Keckhut</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108500" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108500</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">飞机尾迹</span>
+                        <span class="topic-tag">激光雷达</span>
+                        <span class="topic-tag">大气分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108500" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《结合激光雷达，全天空相机和ECMWF-ERA5再分析来研究2023年6月2日在法国克莱蒙费朗上空的飞机尾迹形成和演变》(<cite>Combining LIDAR, all-sky camera, and ECMWF-ERA5 reanalysis to investigate contrail formation and evolution over Clermont-Ferrand, France on June 2, 2023</cite>)，结合了地基<b>激光雷达</b>（LIDAR）、<b>全天空相机</b>图像、ADS-B飞机追踪数据以及<b>ECMWF-ERA5</b>再分析数据，分析了2023年6月2日法国克莱蒙费朗上空的<b>飞机尾迹</b>的形成和演变。论文重点关注了不同类型尾迹（持续性尾迹和非持续性尾迹）的形成条件，包括温度、湿度等，并利用激光雷达估算了尾迹的光学特性。研究结果揭示了冰过饱和条件和温度对持续性尾迹形成的关键影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Adaptation of the CIMEL-318T to shipborne use: 3 years of automated AERONET-compatible aerosol measurements on board the research vessel Marion Dufresne</section>
+            <section class="paper-authors">Benjamin Torres, Luc Blarel, Philippe Goloub, Gaël Dubois, Maria Fernanda Sanchez-Barrero, Ioana Elisabeta Popovici, Fabrice Maupin, Elena Lind, Alexander Smirnov, Ilya Slutsker, Julien Chimot, Ramiro González, Michaël Sicard, Jean Marc Metzger, Pierre Tulet</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4809-2025" target="_blank">https://doi.org/10.5194/amt-18-4809-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶观测</span>
+                        <span class="topic-tag">船载AERONET</span>
+                        <span class="topic-tag">光学厚度</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4809-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《将CIMEL-318T改装到船载使用：在“马里昂·杜弗雷斯”号研究船上进行三年AERONET兼容的自动气溶胶测量》(<cite>Adaptation of the CIMEL-318T to shipborne use: 3 years of automated AERONET-compatible aerosol measurements on board the research vessel Marion Dufresne</cite>)，探讨了将CIMEL-318T光度计改装到研究船上，用于在印度洋进行气溶胶监测的可行性。通过三年的自动测量，验证了该系统与<b>AERONET</b>地面站的兼容性，并展示了在移动平台上进行高质量<b>气溶胶观测</b>的可能性。研究结果表明，改装后的<b>CIMEL</b>设备可以提供可靠的<b>气溶胶光学厚度</b>(AOD)数据，并可用于改进卫星数据，加深对气候变化的研究。此外，论文还分析了生物质燃烧事件中的气溶胶特性，例如<b>单次散射反照率</b>，进一步证明了船载系统在偏远海洋环境中进行综合气溶胶特征分析的潜力。通过与地面AERONET站点的对比，验证了系统的准确性，并展示了其在海洋气溶胶监测方面的应用前景。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Seasonal variation and optical properties of brown carbon and nitroaromatic compounds in PM<sub>2.5</sub> in the urban area of Beijing</section>
+            <section class="paper-authors">Zhongyi Yin, Xingru Li, Fangkun Wu, Yang Yang, Yuhu Zhang, Zhuohui Yang, Xin Gu, Qing Zhao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121566" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121566</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">棕色碳</span>
+                        <span class="topic-tag">硝基化合物</span>
+                        <span class="topic-tag">北京PM2.5</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121566" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《北京城市地区PM2.5中棕色碳和硝基芳香族化合物的季节性变化和光学性质》(<cite>Seasonal variation and optical properties of brown carbon and nitroaromatic compounds in PM2.5 in the urban area of Beijing</cite>)，主要关注北京城市地区<b>PM2.5</b>中<b>棕色碳</b>和<b>硝基芳香族化合物</b>的季节性变化和光学特性。 研究发现，冬季NACs / BrC水平和光吸收最高。 NACs富含具有强烈季节性的细颗粒物。 实验室校准的质量吸收效率（MAE）和吸收埃斯特朗指数（AAE）证实了它们作为甲醇可溶性棕色碳（MSBrC）贡献者的作用。 源解析结果表明，生物质燃烧和二次形成是主要来源。 提供了全面的分子和尺寸分辨数据集，该数据集将NAC浓度，光学性质和源解析联系起来，从而为NACs的大气作用及其对城市空气质量和辐射强迫的影响提供了新的见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Observational ozone datasets over the global  oceans and polar regions (version 2024)</section>
+            <section class="paper-authors">Yugo Kanaya, Roberto Sommariva, Alfonso Saiz-Lopez, Andrea Mazzeo, Theodore K. Koenig, Kaori Kawana, James E. Johnson, Aurélie Colomb, Pierre Tulet, Suzie Molloy, Ian E. Galbally, Rainer Volkamer, Anoop Mahajan, John W. Halfacre, Paul B. Shepson, Julia Schmale, Hélène Angot, Byron Blomquist, Matthew D. Shupe, Detlev Helmig, Junsu Gil, Meehye Lee, Sean C. Coburn, Ivan Ortega, Gao Chen, James Lee, Kenneth C. Aikin, David D. Parrish, John S. Holloway, Thomas B. Ryerson, Ilana B. Pollack, Eric J. Williams, Brian M. Lerner, Andrew J. Weinheimer, Teresa Campos, Frank M. Flocke, J. Ryan Spackman, Ilann Bourgeois, Jeff Peischl, Chelsea R. Thompson, Ralf M. Staebler, Amir A. Aliabadi, Wanmin Gong, Roeland Van Malderen, Anne M. Thompson, Ryan M. Stauffer, Debra E. Kollonige, Juan Carlos Gómez Martin, Masatomo Fujiwara, Katie Read, Matthew Rowlinson, Keiichi Sato, Junichi Kurokawa, Yoko Iwamoto, Fumikazu Taketani, Hisahiro Takashima, Mónica Navarro-Comas, Marios Panagi, Martin G. Schultz</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-4901-2025" target="_blank">https://doi.org/10.5194/essd-17-4901-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">对流层臭氧</span>
+                        <span class="topic-tag">极地观测</span>
+                        <span class="topic-tag">海洋气象</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-4901-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《全球海洋和极地区域的臭氧观测数据集（2024版）》(<cite>Observational ozone datasets over the global oceans and polar regions (version 2024)</cite>)，构建了首个综合性的<b>对流层臭氧</b>观测数据集，覆盖全球<b>海洋</b>和<b>极地地区</b>。该数据集整合了来自船舶、浮标、飞机、<b>臭氧探空仪</b>和地面站的观测数据，时间跨度从1977年到2022年，海拔高度从0到5000米。研究旨在利用这些数据研究这些偏远地区臭氧的时空分布和长期趋势，从而更好地理解臭氧作为全球气候驱动因子和大气氧化能力的调节器的作用。通过分析与陆地隔离超过72小时的气团，研究人员能够提取具有代表性的海洋条件下的数据。研究发现，在低纬度地区，臭氧浓度在白天会降低11%-16%。该数据集还将补充TOAR-II数据库，为全球对流层臭氧评估提供更全面的信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Aerosol effects on Maritime Continent precipitation: Oceanic intensification and land diurnal cycle delay</section>
+            <section class="paper-authors">Kyong-Hwan Seo, Jinho Choi, Seoung Soo Lee, William K. M. Lau, Tomoki Miyakawa, Han-Gyul Jin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01215-5" target="_blank">https://doi.org/10.1038/s41612-025-01215-5</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶效应</span>
+                        <span class="topic-tag">海洋性大陆</span>
+                        <span class="topic-tag">降水循环</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01215-5" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《气溶胶对海洋性大陆降水的影响：海洋强化和陆地日循环延迟》(<cite>Aerosol effects on Maritime Continent precipitation: Oceanic intensification and land diurnal cycle delay</cite>)，探讨了<b>气溶胶</b>对<b>海洋性大陆降水</b>的影响，重点关注海洋降水的增强和陆地日循环延迟现象。研究使用了高分辨率云系统解析模型模拟、卫星观测和再分析数据。结果表明，气溶胶浓度的升高导致海洋降水增加，而陆地降水受到抑制，从而增加了海洋性大陆的海洋与陆地降水比率。 此外，高气溶胶浓度将陆地上空降水日峰值从傍晚延迟到午夜，这是由白天加热减少以及随后夜间潮湿静态能量增加所驱动的。 </section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Simulating Pyrocumulonimbus Clouds Using a Multiscale Wildfire Simulation Framework</section>
+            <section class="paper-authors">Ziming Ke, Qi Tang, Jishi Zhang, Yang Chen, James Randerson, Jianfeng Li, Yunyan Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024GL114025" target="_blank">https://doi.org/10.1029/2024GL114025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火积云</span>
+                        <span class="topic-tag">野火模拟</span>
+                        <span class="topic-tag">平流层影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024GL114025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">这篇研究论文《使用多尺度野火模拟框架模拟火积云》(<cite>Simulating Pyrocumulonimbus Clouds Using a Multiscale Wildfire Simulation Framework</cite>)，主要关注<b>火积云</b>(pyroCb)的模拟。研究使用多尺度野火模拟框架来模拟由极端火灾引起的火积云（pyroCb），这种云可以将<b>烟雾</b>注入到<b>平流层</b>，从而影响全球的辐射平衡和大气成分。研究中提到了使用<b>卫星</b>和<b>地面观测</b>数据来验证模拟结果，并强调了垂直水汽输送的重要性。因此，该研究与空气质量监测、卫星观测以及大气成分分析等领域高度相关。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Quantifying High‐Frequency Turbulence Energy in the Atmosphere and Its Impact on Near‐Surface Diffusion: Parameterization Scheme and Validation in WRF‐Chem</section>
+            <section class="paper-authors">Liu Zhenxin, Zhang Wenxi, Liu Lei, Li Xiaolan, Mao Yuhao, Liao Hong</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043961" target="_blank">https://doi.org/10.1029/2025JD043961</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">湍流能量</span>
+                        <span class="topic-tag">空气污染扩散</span>
+                        <span class="topic-tag">WRF-Chem模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043961" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《量化大气中的高频湍流能量及其对近地表扩散的影响：WRF-Chem中的参数化方案和验证》(<cite>Quantifying High‐Frequency Turbulence Energy in the Atmosphere and Its Impact on Near‐Surface Diffusion: Parameterization Scheme and Validation in WRF‐Chem</cite>)，关注<b>大气湍流</b>对近地面空气污染扩散的影响，特别是高频湍流能量的量化。论文提出了一种参数化方案来校正由于采样频率限制导致的<b>湍流动能</b>低估问题，并将其应用于<b>WRF-Chem</b>模型中。通过模拟重<b>霾</b>事件，验证了该方案能够更准确地预测PM2.5浓度，从而改善空气质量预报。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Isotopic signatures of methane emission from oil and natural gas plants in southwestern China</section>
+            <section class="paper-authors">Dingxi Chen, Yi Liu, Zetong Niu, Ao Wang, Pius Otwil, Yuanyuan Huang, Zhongcong Sun, Xiaobing Pang, Liyang Zhan, Longfei Yu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-11407-2025" target="_blank">https://doi.org/10.5194/acp-25-11407-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放</span>
+                        <span class="topic-tag">同位素示踪</span>
+                        <span class="topic-tag">油气行业</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-11407-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《中国西南地区油气工厂甲烷排放的同位素特征》(<cite>Isotopic signatures of methane emission from oil and natural gas plants in southwestern China</cite>)，通过<cite>无人机采样</cite>和<cite>地面监测</cite>，调查了中国西南地区11个油气生产/加工厂的<cite>甲烷泄漏</cite>情况，并利用<cite>甲烷同位素示踪方法</cite>识别甲烷来源。研究发现，这些油气田的<b>甲烷排放</b>对大气<b>甲烷同位素</b>信号的变化有主要贡献。利用Keeling plot方法确定这些油气田甲烷排放的平均碳13同位素源特征为-25.66‰，比之前全球其他地点发现的要重，表明其主要为<cite>热成因</cite>来源。研究还结合更新后的中国源同位素特征，对全球化石燃料来源的甲烷排放进行了初步评估，结果表明全球化石燃料清单的甲烷排放量被高估了2.86Tg CH4 yr−1，而微生物来源的甲烷排放量被低估。本研究强调了确定油气田甲烷同位素的必要性，为量化全球工业部门的甲烷排放清单提供了一个间接但重要的参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">HONO Emission From Rice Paddies and its Impact on Atmospheric HONO Budget</section>
+            <section class="paper-authors">Min Zhou, Hongli Wang, Guo Li, Chaoyang Xue, Xiaoyong Qian, Fengxia Bao, Jiacheng Zeng, Wenling Liao, Yuhang Wu, Xiang Ding, Saiwei Zhang, Jingyu An, Chenyang Du, Shengrong Lou, Shengao Jing, Dan Dan Huang, Cheng Huang, Qingyan Fu, Yafang Cheng, Hang Su</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043667" target="_blank">https://doi.org/10.1029/2025JD043667</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">HONO排放</span>
+                        <span class="topic-tag">稻田土壤</span>
+                        <span class="topic-tag">大气预算</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043667" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《稻田的HONO排放及其对大气HONO预算的影响》(<cite>HONO Emission From Rice Paddies and its Impact on Atmospheric HONO Budget</cite>)，主要探讨了<b>稻田</b>土壤排放的<b>亚硝酸</b>（HONO）对<b>大气HONO</b>收支的影响。通过在上海进行的实地测量，发现稻田在白天排放HONO，而在夜间吸收HONO。氮肥的使用会显著增加HONO的排放量。研究结果强调了稻田对大气HONO收支的重要影响，尤其是在燃烧源影响有限的地区或时期。 该研究对于深入了解<b>土壤排放</b>对大气环境的影响具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Methane Sources in Cluj‐Napoca, Romania: Insights From Isotopic Analysis</section>
+            <section class="paper-authors">Jacoline van Es, Carina van der Veen, Calin Baciu, Mustafa Hmoudah, Malika Menoud, Stephan Henne, Thomas Röckmann</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043015" target="_blank">https://doi.org/10.1029/2024JD043015</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷来源</span>
+                        <span class="topic-tag">同位素分析</span>
+                        <span class="topic-tag">排放源识别</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043015" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《罗马尼亚克卢日-纳波卡市的甲烷来源：来自同位素分析的见解》(<cite>Methane Sources in Cluj‐Napoca, Romania: Insights From Isotopic Analysis</cite>)，通过对罗马尼亚克卢日-纳波卡市<b>甲烷</b>（CH4）的<b>同位素分析</b>，来识别该地区主要的<b>甲烷排放源</b>。研究测量了甲烷的浓度以及碳13和氘的同位素比率，并结合模型模拟，评估了现有排放清单的准确性。研究结果表明，该城市的主要甲烷来源包括特兰西瓦尼亚的生物成因气体、河流和废水中的生物排放，以及冬季可能存在的燃烧来源。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Implementation of the MOSAIC aerosol module (v1.0) in the Canadian air quality model GEM-MACH (v3.1)</section>
+            <section class="paper-authors">Kirill Semeniuk, Ashu Dastoor, Alex Lupu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-6479-2025" target="_blank">https://doi.org/10.5194/gmd-18-6479-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量模型</span>
+                        <span class="topic-tag">气溶胶模拟</span>
+                        <span class="topic-tag">PM2.5</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-6479-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《在加拿大空气质量模型GEM-MACH (v3.1) 中实施 MOSAIC 气溶胶模块 (v1.0)》(<cite>Implementation of the MOSAIC aerosol module (v1.0) in the Canadian air quality model GEM-MACH (v3.1)</cite>)，主要介绍了在加拿大<b>空气质量模型</b>GEM-MACH中实施<b>MOSAIC气溶胶模块</b>的工作。MOSAIC模块旨在更准确地模拟<b>气溶胶</b>的相互作用和化学过程，特别是关于气溶胶粒径分布和数量浓度。通过对比实验，研究表明MOSAIC模块能够改善模拟的硝酸盐和铵盐分布，并更好地拟合观测数据。与CAM相比，MOSAIC在积累模式质量和数量分布方面表现出变化，这导致REF运行中更多的气溶胶干沉降和相对于CAM大约15％的表面PM2.5硫酸盐低偏差。 MOSAIC EMR运行中基本上消除了这种偏差，从而与北美域CAM相比，更好地拟合了聚集的城市和农村站点。通过对AERONET体积尺寸分布反演产品的比较，MOSAIC在积累模式峰值直径的位置以及积累模式和粗糙模式的分离方面给出了更高的一致性水平。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Source Attribution and Health Burden of PM2.5 in Mainland Thailand</section>
+            <section class="paper-authors">Worapop Thongsame, Daven K. Henze, Mary Barth, Gabriele Pfister, Rajesh Kumar, Ronald Macatangay, Sherin Hassan Bran</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">GeoHealth</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024GH001315" target="_blank">https://doi.org/10.1029/2024GH001315</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">来源解析</span>
+                        <span class="topic-tag">健康影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024GH001315" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《泰国大陆PM2.5的来源归因和健康负担》(<cite>Source Attribution and Health Burden of PM2.5 in Mainland Thailand</cite>)，主要关注泰国<b>PM2.5</b>的<b>来源</b>和<b>健康影响</b>。研究使用WRF-Chem模型和蛮力法对泰国大陆(MT)、泰国北部(NT)和曼谷大都会区(BMR)的PM2.5来源和相关健康风险进行研究。研究结果表明，生物质燃烧是PM2.5的重要来源，特别是在泰国北部地区。该研究对于制定有效的空气质量管理和减缓战略至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Flux Footprints Over a Forested Hill Derived From a Lagrangian Particle Model Coupled Into a Large‐Eddy Simulation Model</section>
+            <section class="paper-authors">Shizuo Fu, Jing M. Chen, Jiawei Zhang, Zhiqiang Cheng, Guofang Miao, Rong Wang, Mengmiao Yang, Hongda Zeng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043591" target="_blank">https://doi.org/10.1029/2025JD043591</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">通量足迹</span>
+                        <span class="topic-tag">大涡模拟</span>
+                        <span class="topic-tag">复杂地形</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043591" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《基于耦合到大涡模拟模型的拉格朗日粒子模型获得的森林山丘上的通量足迹》(<cite>Flux Footprints Over a Forested Hill Derived From a Lagrangian Particle Model Coupled Into a Large‐Eddy Simulation Model</cite>)，主要探讨了复杂地形（理想化的二维森林山丘）上的<b>通量足迹</b>，通过将<b>拉格朗日粒子模型</b>与<b>大涡模拟模型</b>相结合，研究了不同位置（迎风坡、分离点、背风坡）探测器的通量足迹特征。研究结果表明，迎风坡的足迹大于平地，背风坡的足迹向下风方向延伸，与传统观点相反。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Sensitivity of Future Hydroclimate Projections to Topography and Large‐Scale Dust Forcing in the Luquillo Mountains of Eastern Puerto Rico</section>
+            <section class="paper-authors">J. Preece, C. Johnson, T. Mote, P. Miller, M. Williams</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD042953" target="_blank">https://doi.org/10.1029/2024JD042953</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气候预测</span>
+                        <span class="topic-tag">沙尘气溶胶</span>
+                        <span class="topic-tag">水文气候</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD042953" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《未来水文气候预测对东波多黎各卢基约山地形和大范围沙尘强迫的敏感性》(<cite>The Sensitivity of Future Hydroclimate Projections to Topography and Large‐Scale Dust Forcing in the Luquillo Mountains of Eastern Puerto Rico</cite>)探讨了未来气候变化对波多黎各<b>降水</b>的影响，特别关注了<b>地形</b>和<b>撒哈拉沙尘气溶胶</b>的作用。研究使用WRF-Chem模型，通过嵌套方式将全球气候模型的结果降尺度到4公里分辨率，模拟了有沙尘和无沙尘两种情景。结果表明，波多黎各东部的降水预计会减少，沙尘的存在加剧了夏末的干旱。虽然高海拔地区对干旱具有一定的抵抗力，但低海拔地区的干旱信号更为明显。该研究对于评估区域水资源变化和理解气候变化对岛屿生态系统的影响具有重要意义。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
