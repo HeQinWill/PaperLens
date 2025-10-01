@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/10/01</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Investigating the ability of satellite occultation instruments to monitor possible  geoengineering experiments</section>
+            <section class="paper-authors">Anna Lange, Ulrike Niemeier, Alexei Rozanov, Christian von Savigny</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-11673-2025" target="_blank">https://doi.org/10.5194/acp-25-11673-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">平流层气溶胶</span>
+                        <span class="topic-tag">卫星掩星仪器</span>
+                        <span class="topic-tag">地球工程</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-11673-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为“研究卫星掩星仪器监测可能地球工程实验的能力”。研究探讨了利用<B>卫星掩星仪器</B>监测可能的<B>地球工程实验</B>的可行性，重点是观测向平流层持续注入硫磺所形成的气溶胶。论文使用MAECHAM-HAM模型模拟和SCIATRAN辐射传输程序，分析了当前在轨的卫星掩星仪器是否能够探测到由每年1和2 Tg硫排放形成的<B>平流层气溶胶</B>，并考虑了误差估计。研究结果表明，在准稳态阶段，这些排放量所形成的气溶胶是可以被探测到的，但在最初两年的初始阶段的第一个月则不然。该研究对评估地球工程方案的气候影响具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A 1 km Hourly High-Resolution 3D Wind Field Dataset over the Yangtze River Delta Incorporating Dynamical Downscaling, Observational Assimilation, and Land Use Updates</section>
+            <section class="paper-authors">Zhengyan Zhang, Yan-An Liu, Xinjian Ma, Zhenglong Li, Pengbo Xu, Juan Zhang, Min Min, Di Di, Bo Li, Jun Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2025-419" target="_blank">https://doi.org/10.5194/essd-2025-419</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量模型</span>
+                        <span class="topic-tag">天气预报</span>
+                        <span class="topic-tag">风能评估</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2025-419" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为“结合动力降尺度、观测同化和土地利用更新的长江三角洲1公里分辨率逐小时三维风场数据集”。研究开发了一个针对长江三角洲地区的高分辨率（1公里）逐小时<B>三维风场</B>数据集。该数据集通过使用WRF模型对ERA5再分析数据进行动力降尺度，并结合多源观测资料同化和高分辨率土地利用参数化生成。验证结果表明，YRD1km数据集在<B>风能评估</B>、<B>空气质量建模</B>和极端天气预报等方面具有优于ERA5的性能。YRD1km数据集能够捕捉城市和山区等复杂地形下的精细风场特征，对于理解污染物扩散和区域气象过程至关重要。该数据集的开发为区域气象应用提供了坚实的基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Surface and tropospheric ozone over East Asia and Southeast Asia from observations: distributions, trends, and variability</section>
+            <section class="paper-authors">Ke Li, Rong Tan, Wenhao Qiao, Taegyung Lee, Yufen Wang, Danyuting Zhang, Minglong Tang, Wenqing Zhao, Yixuan Gu, Shaojia Fan, Jinqiang Zhang, Xiaopu Lyu, Likun Xue, Jianming Xu, Zhiqiang Ma, Mohd Talib Latif, Teerachai Amnuaylojaroen, Junsu Gil, Mee-Hye Lee, Juseon Bak, Joowan Kim, Hong Liao, Yugo Kanaya, Xiao Lu, Tatsuya Nagashima, Ja-Ho Koo</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-11575-2025" target="_blank">https://doi.org/10.5194/acp-25-11575-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">地表臭氧</span>
+                        <span class="topic-tag">对流层臭氧</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-11575-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为“东亚和东南亚地表和对流层臭氧的观测：分布、趋势和变化”。研究分析了过去二十年（2005-2021年）东亚和东南亚地区<B>地表臭氧</B>和<B>对流层臭氧</B>的观测数据，揭示了这些地区臭氧污染的热点区域和演变趋势。研究结果表明，<B>人为排放</B>是导致高臭氧水平的主要原因，同时气候变化也会加剧臭氧污染。研究发现，韩国和东南亚的地表臭氧增加趋势在过去十年趋于平缓甚至下降，而中国在2013年后臭氧增加趋势加剧。研究还指出，由于东北亚上空平流层入侵导致的高背景臭氧，东亚和东南亚之间的对流层臭氧水平存在差异。本研究对于评估臭氧对公共健康和作物产量的影响，以及制定未来的臭氧控制策略具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Similarities and Differences in Mass Spectral Signatures of Primary Organic Aerosol From Biomass Burning, Cooking, Coal Combustion, and Vehicle Exhaust</section>
+            <section class="paper-authors">Jie Tian, Qiyuan Wang, Li Li, Weikang Ran, Yong Zhang, Yaqing Zhou, Huikun Liu, Miao Gao, Yichen Wang, Haiyan Ni, Chong Wei, Nan Ma, Yongming Han, Junji Cao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044129" target="_blank">https://doi.org/10.1029/2025JD044129</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有机气溶胶</span>
+                        <span class="topic-tag">质谱分析</span>
+                        <span class="topic-tag">源解析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044129" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文主要关注人为源排放的<B>一次有机气溶胶</B>（OA）的质谱特征，包括<B>生物质燃烧</B>、<B>烹饪</B>、<B>煤炭燃烧</B>和<B>车辆尾气</B>。研究通过气溶胶化学成分监测仪（ACSM）分析了这些来源的OA质谱，并提取了特征碎片和诊断比率，用于区分不同的OA来源。研究结果表明，不同人为源的OA质谱存在显著差异，并且对COA和CCOA的亚型进行了更精细的区分。这项研究为基于ACSM的源解析提供了实用的数据集，有助于更准确地识别中国环境空气中的OA来源。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The ATMONSYS water vapor DIAL: advanced measurements of short-term variability in the planetary boundary layer</section>
+            <section class="paper-authors">Johannes Speidel, Hannes Vogelmann, Andreas Behrendt, Diego Lange, Matthias Mauder, Jens Reichardt, Kevin Wolz</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-4923-2025" target="_blank">https://doi.org/10.5194/amt-18-4923-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">水汽</span>
+                        <span class="topic-tag">差分吸收激光雷达</span>
+                        <span class="topic-tag">行星边界层</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-4923-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为“ATMONSYS水汽差分吸收激光雷达：行星边界层中短期变化的高级测量”。该研究介绍了一种新型的<B>差分吸收激光雷达</B>（DIAL）系统，即ATMONSYS，用于高时空分辨率地测量<B>行星边界层</B>中的<B>水汽浓度</B>及其垂直通量。该系统能够测量高达3公里以上高度的水汽，并具有优于5%的统计不确定性。研究展示了该系统在晴朗夏季条件下的测量能力，并验证了其解析湍流的能力。通过与多普勒风激光雷达结合，可以更好地理解湍流行为。此外，该研究还将ATMONSYS DIAL与其他水汽拉曼激光雷达和无线电探空仪进行了交叉比较，结果显示传感器之间总体吻合良好。研究结果表明，该系统在捕捉低层大气短期和小尺度动态方面具有优势，为理解大气边界层的水汽输送过程提供了新的手段。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">An uncertain future for the climate and health impacts of anthropogenic aerosols in Africa</section>
+            <section class="paper-authors">Joe Adabouk Amooli, Marianne T. Lund, Sourangsu Chowdhury, Gunnar Myhre, Ane N. Johansen, Bjørn H. Samset, Daniel M. Westervelt</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-11611-2025" target="_blank">https://doi.org/10.5194/acp-25-11611-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶排放</span>
+                        <span class="topic-tag">空气污染</span>
+                        <span class="topic-tag">化学传输模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-11611-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为“非洲人为气溶胶的不确定未来对气候和健康的影响”。论文分析了非洲<B>人为气溶胶排放</B>对气候和公共健康的影响。通过不同的排放情景，研究评估了未来非洲的<B>空气污染暴露</B>程度，发现区域平均的年人口加权细颗粒物（PM2.5）浓度呈现不同的变化趋势，某些情况下PM2.5浓度显著增加，导致污染相关的死亡人数增加。研究还发现，在大多数情况下，气溶胶会导致撒哈拉以南非洲地区变暖。通过使用化学传输模型，论文量化了气溶胶排放对<B>辐射强迫</B>的影响。研究强调了非洲地区气溶胶排放数据准确性和一致性的重要性，为未来的气候变化评估提供了参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Radiative and climate effects of aerosol scattering in long-wave radiation based on global climate modelling</section>
+            <section class="paper-authors">Thomas Drugé, Pierre Nabat, Martine Michou, Marc Mallet</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-11651-2025" target="_blank">https://doi.org/10.5194/acp-25-11651-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶散射</span>
+                        <span class="topic-tag">长波辐射</span>
+                        <span class="topic-tag">气候模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-11651-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为“基于全球气候模型的气溶胶散射在长波辐射中的辐射和气候效应”。研究重点在于<B>粗气溶胶</B>在<B>长波辐射</B>中的散射对气候的影响。利用ARPEGE-Climat全球气候模型，模拟了考虑长波气溶胶散射与不考虑该过程的气候差异，关注了地表长波辐射、地表最低温度以及大气场的改变。通过与<B>AERONET</B>数据的对比，评估了模型中粗气溶胶光学厚度的准确性。结果表明，忽略长波气溶胶散射会对气候产生显著影响，特别是在沙尘排放区域，导致地表长波辐射增加，最低温度升高。在全球范围内，长波气溶胶散射对地表和大气顶的辐射贡献均为0.4 W m−2。研究强调了在气候模型中纳入长波气溶胶散射的重要性，尤其是在沙尘排放区域，这对于准确预测气候变化至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Response of Mixed‐Phase Cloud Microphysics to Aerosol Perturbations at the Contrasting Sites of Limassol, Cyprus, and Punta Arenas, Chile</section>
+            <section class="paper-authors">Yun He, Patric Seifert, Cristofer Jimenez, Martin Radenz, Albert Ansmann, Johannes Bühl, Rodanthi‐Elisavet Mamouri, Boris Barja González</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043157" target="_blank">https://doi.org/10.1029/2024JD043157</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">冰核粒子</span>
+                        <span class="topic-tag">混合相云</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043157" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文探讨了在塞浦路斯利马索尔和智利蓬塔阿雷纳斯这两个不同地点，<B>混合相云</B>微物理对<B>气溶胶扰动</B>的响应。它利用地面激光雷达和云雷达观测，结合<B>冰核粒子</B>浓度，研究了浅层层状混合相云中冰晶数量浓度。研究重点是气溶胶对云层中冰晶形成的影响，以及现有冰核粒子参数化方案在南半球中纬度地区的适用性问题。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Short‐Term Exposure to Fine Particulate Matter (PM2.5), Cause Specific‐Mortality, and High‐Risk Populations: A Nationwide Time‐Stratified Case‐Crossover Study</section>
+            <section class="paper-authors">Seoyeong Ahn, Jieun Oh, Hyewon Yun, Harin Min, Yejin Kim, Cinoo Kang, Sojin An, Ayoung Kim, Dohoon Kwon, Jinah Park, Whanhee Lee</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">GeoHealth</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024GH001214" target="_blank">https://doi.org/10.1029/2024GH001214</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">死亡率</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024GH001214" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文探讨了短期暴露于<B>细颗粒物</B>（PM2.5）与<B>死亡率</B>之间的关系，并分析了高风险人群。虽然该研究没有直接使用遥感技术，但它使用了机器学习模型来预测PM2.5浓度，这与大气环境遥感技术中的<B>空气质量监测</B>密切相关。遥感数据可以用于训练和验证此类预测模型，从而间接支持该研究。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Molecular insight into aqueous-phase photolysis and photooxidation of water-soluble organic matter emitted from biomass burning and coal combustion</section>
+            <section class="paper-authors">Tao Cao, Cuncun Xu, Hao Chen, Jianzhong Song, Jun Li, Haiyan Song, Bin Jiang, Yin Zhong, Ping'an Peng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-11597-2025" target="_blank">https://doi.org/10.5194/acp-25-11597-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">水溶性有机物</span>
+                        <span class="topic-tag">生物质燃烧</span>
+                        <span class="topic-tag">光化学过程</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-11597-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为“生物质燃烧和煤燃烧产生的水溶性有机物在水相光解和光氧化作用中的分子见解”。研究调查了<B>生物质燃烧</B>和<B>煤燃烧</B>产生的水溶性有机物（WSOM）在水相光化学过程中的演变。通过模拟水解和光氧化过程，研究发现<B>光化学老化</B>会引起WSOM光学和分子性质的明显变化。与直接光解相比，在羟基自由基（•OH）光氧化过程中观察到更明显的变化。研究结果还表明，大气光氧化可能是类黑碳物质的重要来源。研究深入分析了大气成分（特别是WSOM）的光化学转化，并探讨了生物质燃烧和煤燃烧对空气质量的影响。这项工作为更好地理解大气中WSOM的演化和对环境的影响提供了有价值的信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Unexpected High Loading of Active Carbonyls and Terpenoids in Alpine Forest on Tibetan Plateau: Implication of Secondary Organic Aerosols and Ozone Formation</section>
+            <section class="paper-authors">Yonggang Xue, Zhu La, Liqin Wang, Shan He, Long Chen, Long Cui, Kin Fai Ho, Qiyuan Wang, Wenting Dai, Yu Huang, Junji Cao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043466" target="_blank">https://doi.org/10.1029/2025JD043466</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">VOCs</span>
+                        <span class="topic-tag">二次有机气溶胶</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043466" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文探讨了青藏高原高山森林中<B>活性羰基化合物</B>和<B>萜类化合物</B>的高浓度现象，以及它们对<B>二次有机气溶胶</B>（SOA）和臭氧形成的影响。研究表明，这些挥发性有机化合物（VOCs）主要来源于当地的气-地交换，并且对区域气候产生重要影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Emerging drivers of urban aerosol increase global change vulnerability in a US megacity</section>
+            <section class="paper-authors">Emily B. Franklin, Rose K. Rossell, Michael P. Vermeuel, Adam De Groodt, Katelyn Richard, Lindsay D. Yee, Julia Marcantonio, Trey Maddaleno, Cameron Osburn, Rachel E. O’Brien, Roisin Commane, John E. Mak, Allen H. Goldstein, Dylan B. Millet, Delphine K. Farmer</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01202-w" target="_blank">https://doi.org/10.1038/s41612-025-01202-w</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">城市气溶胶</span>
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01202-w" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文探讨了全球变化背景下，美国特大城市纽约市郊区<B>气溶胶污染</B>的新兴驱动因素。通过2023年的测量和机器学习化学分析，揭示了区域<B>野火烟雾</B>、<B>生物源排放</B>、热浪以及新兴的人为排放（如挥发性化学产品）对城市气溶胶的影响，这些因素共同增加了城市气溶胶污染的脆弱性，并对空气质量监测和大气成分分析提出了新的挑战。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Morphological and chemical characteristics of Fe-bearing particles during dust and non-dust periods in spring (2023) in a northern coastal city</section>
+            <section class="paper-authors">Wenhua Wang, Yulong Wang, Jiajia Shao, Mengyang Wang, Pengju Liu, Xiuyan Zhou, Longyi Shao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121573" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121573</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气成分</span>
+                        <span class="topic-tag">含铁颗粒物</span>
+                        <span class="topic-tag">沙尘事件</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121573" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文主要关注春季<B>沙尘</B>和非沙尘期间大气中<B>含铁颗粒物</B>的形态和化学特征。虽然该研究没有直接提及遥感技术，但它对大气成分（特别是含铁颗粒物）的分析，以及对<B>沙尘暴事件</B>影响的评估，与大气环境遥感具有相关性。地面观测数据可以用于验证遥感数据的准确性，并提供更详细的化学和形态信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Earthquakes can drive hydrocarbon seepage along the Cyprus Arc</section>
+            <section class="paper-authors">Romain Jatiault, Chastity Autry Aiken, Frauke Klingelhoefer</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-025-02556-y" target="_blank">https://doi.org/10.1038/s43247-025-02556-y</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">油气渗漏</span>
+                        <span class="topic-tag">温室气体</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-025-02556-y" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文探讨了<B>地震</B>如何驱动塞浦路斯弧沿线的<B>油气渗漏</B>，并利用<B>卫星图像</B>观测到土耳其7.8级地震后，一个新的油气渗漏点被激活，导致油气排放量在六个月内增加了71%。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Factors behind the rare winter Asian sand and dust storm in December 2022</section>
+            <section class="paper-authors">Yukari Hara, Yoshitaka Jin, Atsushi Shimizu, Tomoaki Nishizawa, Keiya Yumimoto</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121544" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121544</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">沙尘暴</span>
+                        <span class="topic-tag">卫星数据</span>
+                        <span class="topic-tag">大气分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121544" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文分析了2022年12月罕见的冬季<B>沙尘暴</B>事件。它利用沙尘预测模型、地面观测、<B>卫星数据</B>和<B>大气再分析数据</B>，揭示了冬季沙尘暴的结构和形成机制。研究发现，这次沙尘暴是由温带气旋引起的强风、源区负雪盖异常以及太平洋年代际涛动等因素共同作用的结果。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Aircraft observations of aerosols during a haze pollution in the North China Plain: Spatial-temporal distribution, vertical distribution and physicochemical characteristics</section>
+            <section class="paper-authors">Yue Chen, Yue Ke, Honglei Wang, Zirui Liu, Mengyu Huang, Dantong Liu, Tianliang Zhao, Deyu Liu, Zihan Wang, Kun Cui, Zihao Wu, Delong Zhao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108493" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108493</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">雾霾</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108493" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文分析了华北平原一次严重的<B>雾霾</B>污染事件中<B>气溶胶</B>的时空分布、垂直分布和演变特征。通过地面和<B>飞机观测</B>数据，研究揭示了PM2.5的累积过程、不同污染阶段的特征以及硝酸盐和硫酸盐在污染形成和维持中的作用。此外，论文还探讨了气溶胶数量浓度随高度的变化以及不同高度的气团来源。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
