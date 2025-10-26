@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/10/26</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Advancing high-resolution hourly PM<sub>2.5</sub> forecasting with a hybrid framework integrating numerical simulation and machine learning</section>
+            <section class="paper-authors">Yuan Liu, Zizheng Li, Pablo E. Saide, Ming Zhang, Qingqing He</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108564" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108564</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108564" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文《结合数值模拟和机器学习的高分辨率小时PM2.5预测进展》提出了一种混合框架，结合<b>数值模拟</b>和<b>机器学习</b>，用于<b>高分辨率</b>的<b>PM2.5</b>小时浓度预测。该模型利用GEOS-CF的预测数据以及其他高分辨率的时空预测因子，生成120小时的、1公里分辨率的PM2.5预测。研究还使用了SMOTE技术来提高模型对高污染事件的预测能力，并整合了<b>卫星衍生的气溶胶光学厚度（AOD）</b>数据以提高空间精度。该研究以中国为例进行了验证，结果表明该混合模型在预测精度和计算成本方面均优于传统的数值模型，适用于资源有限的环境中近实时的高分辨率PM2.5预测。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Machine learning-based downscaling of aerosol size distributions from a global climate model</section>
+            <section class="paper-authors">Antti Vartiainen, Santtu Mikkonen, Ville Leinonen, Tuukka Petäjä, Alfred Wiedensohler, Thomas Kühn, Tuuli Miinalainen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-5763-2025" target="_blank">https://doi.org/10.5194/amt-18-5763-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">气溶胶粒径分布</span>
+                        <span class="topic-tag">机器学习降尺度</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-5763-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《基于机器学习的全球气候模型气溶胶粒径分布降尺度》探讨了使用<b>机器学习</b>技术对<b>全球气候模型</b>输出结果进行<b>降尺度</b>，以提高其预测气溶胶粒径分布，特别是<b>超细颗粒物（UFPs）</b>浓度的准确性。研究使用了欧洲三个测量站（赫尔辛基、莱比锡和梅尔皮茨）2016-2018年的数据，涵盖了成核、艾肯和累积粒子大小范围。研究训练了多种机器学习模型（包括随机森林、XGBoost、神经网络等），并集成了超参数优化和特征选择以改进模型。结果表明，与原始全球模型输出相比，所有粒径的预测精度均得到显著提高，尤其是在累积粒径范围内。虽然成核粒径范围的降尺度仍然具有挑战性，但研究证明了基于机器学习的降尺度在增强空气质量评估方面的可行性。该方法有望支持未来的流行病学研究并为污染物暴露政策提供信息，甚至可以将ML模型动态集成到全球气候模型框架中，从而进一步优化气候预测和健康影响研究。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Vertical profiles and chemical composition of NR-PM<sub>1</sub> in Korea from airborne measurements</section>
+            <section class="paper-authors">Jihee Ban, Taehyun Park, Seokwon Kang, Jinsoo Choi, Taehyoung Lee, Jinsoo Park</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121628" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121628</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">卫星验证</span>
+                        <span class="topic-tag">大气成分分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121628" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《韩国机载测量的NR-PM1垂直剖面和化学成分》探讨了韩国地区大气中<b>非耐火亚微米颗粒物（NR-PM1）</b>的<b>垂直分布</b>和<b>化学成分</b>。研究通过机载测量，在首尔首都圈和黄海上空进行了十次研究飞行，总计35小时。研究揭示了城市地区NR-PM1浓度升高主要与<b>硝酸盐</b>的二次生成有关，而黄海地区的高浓度则归因于<b>远距离输送</b>。研究结果强调了飞机观测在捕捉垂直气溶胶特征和识别污染源方面的有效性，并支持卫星数据（如GEMS）的验证和改进，从而有助于改善韩国的空气质量管理。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Characteristics of atmospheric CH<sub>4</sub>, CO<sub>2</sub> and CO at a suburban coastal site in Hong Kong</section>
+            <section class="paper-authors">Wai Ming Chan, Dasa Gu, Ka Fung Leung, Yuchen Mai, Sin Ka Mak, Xin Li, Xiangyunong Cao, Zhenxing Liang, Tsz Ching Tse, Zijie Xu, Hao Sun, Heming Bai, Gloria Liu, Brent Love, Barbara Barletta, Simone Meinardi, Donald R. Blake</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121630" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121630</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气成分</span>
+                        <span class="topic-tag">CH4, CO2, CO</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121630" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《香港郊区沿海地区大气CH4、CO2和CO的特征》主要探讨了香港郊区沿海地区大气中<b>甲烷（CH4）</b>、<b>二氧化碳（CO2）</b>和<b>一氧化碳（CO）</b>的特征。研究通过自2023年2月起为期一年的监测数据，分析了这些气体浓度的<b>季节性变化</b>，并识别了它们的主要来源区域。研究采用过滤本地影响后的区域数据，利用后向轨迹和潜在源贡献函数分析来确定CH4、CO和CO2的主要来源地。研究发现，这些气体的浓度受到当地源-汇动态和季风模式的影响，并且不同气体之间的相关性有所差异。这些发现对于制定香港及周边地区的碳中和政策具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Particulate matters 2.5 and its organic constituent on seasonal influenza transmission: Insights from Bayesian spatiotemporal modelling in mainland China</section>
+            <section class="paper-authors">Xiaohan Si, Liping Wang, Kerrie Mengersen, Chuchu Ye, Wenbiao Hu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121626" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121626</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">有机物</span>
+                        <span class="topic-tag">时空建模</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121626" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《颗粒物2.5及其有机成分对季节性流感传播的影响：来自中国大陆贝叶斯时空建模的见解》探讨了<b>细颗粒物（PM2.5）</b>及其<b>有机成分</b>对中国大陆<b>季节性流感传播</b>的影响。研究采用<b>贝叶斯时空模型</b>，分析了广州、北京和武汉三个城市PM2.5和有机物与流感传播之间的关系，并考虑了社会经济因素。研究使用了2014-2018年每周流感病例数，以及PM2.5和有机物浓度数据。研究结果表明，PM2.5与流感传播呈正相关，尤其是在北京。时空模型在捕捉环境影响和识别高风险区域方面优于传统回归模型，因此可用于增强流感的早期预警系统。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Optical and radio characterization of continuing current lightning with ASIM, GLM and ELF sensors</section>
+            <section class="paper-authors">P.A. Camino-Faillace, F.J. Gordillo-Vázquez, F.J. Pérez-Invernón, J. Montanyà, J. Młynarczyk, T. Neubert, O. Chanrion, N. Østgaard</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108578" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108578</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">闪电</span>
+                        <span class="topic-tag">持续电流</span>
+                        <span class="topic-tag">遥感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108578" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文《使用ASIM、GLM和ELF传感器对持续电流闪电的光学和无线电特征进行表征》主要关注<b>持续电流闪电（CC lightning）</b>的<b>光学</b>和<b>无线电特征</b>，利用空间（ASIM, GLM）和地面（地网总闪电网络，极低频磁场天线）的仪器，在美国本土系统地识别这种闪电。研究分析了不同波长的光曲线，并根据极低频磁信号的幅度来分类闪电。研究结果表明，持续电流闪电具有独特的光谱特征，并且与<b>空气质量</b>有关，因此可以通过光谱发射来识别这种闪电。虽然主要关注闪电，但由于持续电流闪电与空气质量和森林火灾有关，因此与大气环境遥感技术具有一定的相关性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
