@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/11/01</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Evaluating Weather and Chemical Transport Models at High Latitudes using MAGIC2021 Airborne Measurements</section>
+            <section class="paper-authors">Félix Langot, Cyril Crevoisier, Thomas Lauvaux, Charbel Abdallah, Jérôme Pernin, Xin Lin, Marielle Saunois, Axel Guedj, Thomas Ponthieu, Julien Moyé, Michel Ramonet, Anke Roiger, Klaus-Dirk Gottschaldt, Alina Fiehn</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-5955-2025" target="_blank">https://doi.org/10.5194/amt-18-5955-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放模型评估</span>
+                        <span class="topic-tag">大气传输模型验证</span>
+                        <span class="topic-tag">高纬度地区气候研究</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-5955-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文题为《利用MAGIC2021航空测量评估高纬度地区的气象和化学传输模型》。该研究利用2021年MAGIC2021活动期间在瑞典基律纳附近收集的气象和**甲烷（CH4）**原位测量数据，评估了各种**大气传输模型**和再分析数据集的性能。研究比较了欧洲中期天气预报中心（ECMWF）的ERA5再分析数据和中尺度天气研究和预报（WRF）模型，发现ERA5与观测结果更吻合，而WRF提供了对当地大气动力学的宝贵见解。在全球CH4混合比模拟中，通过调整排放以匹配观测结果的反演优化模型表现最佳，特别是在受到地面测量约束时。WRF耦合化学模型（WRF-Chem）的区域模拟显示，**边界层**中CH4混合比存在偏差，表明湿地模型可能高估了排放量。所有化学传输模型在平流层中都表现出正偏差。更高垂直分辨率的模拟改进了大气上层垂直CH4剖面的表示。尽管观测的时空覆盖范围有限，但研究结果表明，原位垂直剖面数据集对于评估传输和通量模型非常有用，并可用于评估不同生物地球化学模型参数化对CH4通量的影响。简而言之，该研究通过实际测量数据验证了不同模型的预测能力，并指出了现有模型在湿地排放估计方面可能存在的偏差。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
