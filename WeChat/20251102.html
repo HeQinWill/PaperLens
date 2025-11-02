@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/11/02</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Increasing wintertime cloud opacity increases surface longwave radiation at a long-term Arctic observatory</section>
+            <section class="paper-authors">Leah Bertrand, Jennifer E. Kay, Gijs de Boer</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-025-64441-8" target="_blank">https://doi.org/10.1038/s41467-025-64441-8</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">北极云</span>
+                        <span class="topic-tag">长波辐射</span>
+                        <span class="topic-tag">气候变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-025-64441-8" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“冬季云层不透明度增加导致长期北极观测站地表长波辐射增加”。该研究利用在<b>北极研究站长达二十年的地面观测数据</b>，分析了<b>冬季云层变化对地表长波辐射的影响</b>。研究发现，地表接收到的长波辐射正在增加，并且这种增加不能仅用温度和温室气体的直接影响来解释。<b>云辐射效应的增加是由于云层不透明度的增加</b>，而云层不透明度的增加是由纯冰云和混合相云共同驱动的。这项研究表明，云层不透明度的增加导致了冬季阿拉斯加北坡地表净辐射的增加。该研究结果强调了云在北极气候变化中的重要作用，并为气候模型提供了重要的参考数据，有助于提高气候预测的准确性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impact of biotic and environmental stresses and perturbations of Scots pine on new particle formation</section>
+            <section class="paper-authors">Ditte Taipale</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121639" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121639</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">新粒子形成</span>
+                        <span class="topic-tag">VOCs排放</span>
+                        <span class="topic-tag">生物环境胁迫</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121639" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“苏格兰松树的生物和环境胁迫和扰动对新粒子形成的影响”。该研究主要探讨了<b>生物和环境胁迫对苏格兰松树的影响</b>，以及这些影响如何改变<b>挥发性有机化合物（VOCs）的释放</b>，进而影响<b>大气中新粒子的形成</b>。该研究通过模型估算，表明在考虑现实的胁迫频率和强度时，几乎所有研究的植物胁迫都会显着影响大气相关条件下气溶胶粒子的数量和大小。 虽然论文没有直接提及遥感技术，但它关注的VOCs排放、气溶胶粒子数量和大小等因素，与大气成分分析和空气质量监测密切相关。通过地面观测验证模型，可以为未来的卫星观测和大气环境遥感应用提供参考，从而提高气候预测的准确性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
