@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/11/03</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">First global twice-daily ozone profiles from Chinese UV–vis satellites via synergistic spectral calibration and retrieval</section>
+            <section class="paper-authors">Xiaohan Wang, Qihou Hu, Chengxin Zhang, Wenjing Su, Qihua Li, Hongri Hou, Cheng Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.115106" target="_blank">https://doi.org/10.1016/j.rse.2025.115106</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧廓线</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">大气监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.115106" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《基于协同光谱校准和反演的中国紫外-可见卫星首次全球每日两次臭氧廓线》。该研究利用中国< b >高分五号B（GF-5B）</b> </ b >和< b >大气一号（DQ-1）</b> </ b >卫星搭载的< b >环境痕量气体监测仪（EMIs）</b> </ b >，通过协同光谱校准和反演技术，首次获取了全球每日两次的< b >臭氧廓线</b> </ b >数据。研究人员通过校正卫星间的系统反射偏差和仪器退化误差，并评估测量误差，显著提高了臭氧廓线反演的准确性，解决了卫星间的偏差问题。研究结果显示，全球臭氧廓线在100 hPa以下存在显著的日变化，且具有季节性、纬度和地域依赖性。此外，研究还利用臭氧日变化和甲醛/二氧化氮比率（FNR）更准确地识别了臭氧生成的敏感性。该协同方法为未来多卫星联合监测大气环境提供了思路，有助于理解大气化学的日变化，并进一步改进污染控制。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
