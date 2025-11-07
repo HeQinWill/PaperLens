@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/11/07</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A New Classification of In Situ and Anvil Cirrus Clouds Uncovers Their Properties and Interhemispheric Connections</section>
+            <section class="paper-authors">Qingyu Mu, Jinming Ge, Jianping Huang, Xiaoyu Hu, Nan Peng, Yize Li, Meihua Wang, Jie Zhang, Ziyang Xu, Chi Zhang, Bochun Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">AGU Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025AV001919" target="_blank">https://doi.org/10.1029/2025AV001919</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卷云分类</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">半球间联系</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025AV001919" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《原位卷云和砧状卷云的新分类揭示了它们的性质和半球间联系》，主要关注<b>卷云</b>的分类及其对地球能量平衡和<b>大气湿度</b>的影响。它利用CloudSat和CALIPSO卫星的<b>观测数据</b>，通过计算机视觉技术区分对流砧状卷云和原位卷云，揭示了它们的宏观和微观特性差异。研究还发现了一种新的<b>半球间联系</b>，即一个半球的深对流系统会影响另一个半球的原位卷云形成，这与<b>行星尺度波</b>有关。这项研究对于改进气候模型中卷云的表示以及理解全球变暖下对流变化如何影响全球卷云分布具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Elucidating Contributions of Anthropogenic and Soil NOx Emissions Changes to O3 Trends Over China</section>
+            <section class="paper-authors">Tong Sha, Siyu Yang, Qingcai Chen, Jing Wei, Mingchen Ma, Yang Gao, Yufan Zhu, Yan Hu, K. Folkert Boersma, Jun Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044623" target="_blank">https://doi.org/10.1029/2025JD044623</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧趋势</span>
+                        <span class="topic-tag">人为土壤NOx</span>
+                        <span class="topic-tag">模型分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044623" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《阐明人为源和土壤源NOx排放变化对中国O3趋势的贡献》，关注中国地表<b>臭氧(O3)</b>污染问题，特别强调了<b>人为源NOx排放(ANOx)</b>和<b>土壤源NOx排放(SNOx)</b>对O3浓度变化的影响。论文通过结合<b>机器学习模型(XGBoost)</b>和WRF-Chem模型，量化了ANOx和SNOx对O3增长的贡献，并指出SNOx在O3形成中扮演的重要角色，尤其是在长江三角洲地区的农村地区。因此，未来的O3控制策略应考虑SNOx及其区域和季节性差异。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">First Retrieval of Aerosol Vertical Profile With Passive Remote Sensing: Part 1. Development of Algorithm Theoretical Basis</section>
+            <section class="paper-authors">Zhendong Lu, Jun Wang, Xi Chen, Xiaoguang Xu, Meng Zhou, Dejian Fu, Jonathan H. Jiang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044332" target="_blank">https://doi.org/10.1029/2025JD044332</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶廓线反演</span>
+                        <span class="topic-tag">TROPOMI</span>
+                        <span class="topic-tag">算法理论基础</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044332" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《被动遥感气溶胶垂直廓线的首次反演：第一部分算法理论基础》，介绍了一种新的算法，该算法利用TROPOMI（对流层监测仪）在紫外波段、<b>氧气A波段和B波段</b>的<b>高光谱测量数据</b>，反演<b>气溶胶垂直消光廓线</b>。该方法使用CALIOP（Cloud-Aerosol Lidar with Orthogonal Polarization）的15年气溶胶消光廓线记录，通过主成分分析（PCA）提取最重要的几个经验正交函数（EOF），并将气溶胶垂直廓线表示为这些EOF的加权和。因此，反演问题简化为求解这些EOF的权重系数。论文还开发了一个新的PCA模块，用于计算大气顶部（TOA）反射率对EOF权重的雅可比矩阵，并使用合成的TROPOMI测量数据验证了反演算法的自洽性和可行性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Diurnal Cycle and Seasonality of Cirrus Clouds Over the Amazon From a Seven‐Year Ground‐Based Lidar Record</section>
+            <section class="paper-authors">Luan P. Cordeiro, Diego A. Gouveia, Henrique M. J. Barbosa</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044592" target="_blank">https://doi.org/10.1029/2025JD044592</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">激光雷达</span>
+                        <span class="topic-tag">卷云特性</span>
+                        <span class="topic-tag">亚马逊地区</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044592" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《亚马逊地区卷云的昼夜周期和季节性变化——基于七年地面激光雷达记录》，利用七年的<b>地面激光雷达数据</b>，分析了<b>亚马逊</b>地区<b>卷云</b>的<b>昼夜变化</b>和<b>季节性</b>特征。研究重点是卷云的光学特性，包括云光学厚度和激光雷达比，以及卷云的形成机制。研究结果可以用于验证<b>卫星反演数据</b>，提高辐射影响计算的准确性，并阐明热带森林上空的卷云形成过程。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impact of Wildfires on O3 and Air Quality Across the United States for 2019–2024 Using Generalized Additive Models</section>
+            <section class="paper-authors">Haebum Lee, Daniel A. Jaffe</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044088" target="_blank">https://doi.org/10.1029/2025JD044088</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">野火影响</span>
+                        <span class="topic-tag">广义加性模型</span>
+                        <span class="topic-tag">臭氧污染</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044088" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《使用广义加性模型分析2019-2024年美国境内野火对O3和空气质量的影响》，探讨了2019年至2024年美国境内<b>野火</b>对<b>臭氧（O3）</b>和<b>空气质量</b>的影响。研究利用广义加性模型（GAM），结合地面空气质量监测数据（PM2.5和MDA8）、模型数据（MERRA-2和HYSPLIT）以及<b>卫星观测数据（HMS和TROPOMI）</b>，来量化野火烟雾对O3浓度的贡献。研究结果表明，该方法能够有效评估野火对美国各地臭氧水平的影响，并为空气质量管理决策提供支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Distinct aerosol populations and their vertical gradients in central Amazonia revealed by optical properties and cluster analysis</section>
+            <section class="paper-authors">Rafael Valiati, Bruno B. Meller, Marco A. Franco, Luciana V. Rizzo, Luiz A. T. Machado, Sebastian Brill, Bruna A. Holanda, Leslie A. Kremper, Subha S. Raj, Samara Carbone, Cléo Q. Dias-Júnior, Fernando G. Morais, Meinrat O. Andreae, Ulrich Pöschl, Christopher Pöhlker, Paulo Artaxo</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-14923-2025" target="_blank">https://doi.org/10.5194/acp-25-14923-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学特性</span>
+                        <span class="topic-tag">亚马逊气溶胶</span>
+                        <span class="topic-tag">气溶胶垂直分布</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-14923-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《光学特性和聚类分析揭示的亚马逊中部地区独特的气溶胶群及其垂直梯度》，主要通过分析<b>亚马逊</b>中部地区不同高度的<b>气溶胶光学性质</b>和化学成分，识别了该地区常见的不同气溶胶类型，并评估了其<b>垂直梯度</b>特征。研究利用了亚马逊高塔观测站（ATTO）在60米和325米高度的光学测量数据，结合粒子成分和来源信息，运用季节性聚类分析方法，区分了不同来源的气溶胶，例如低生物质燃烧影响期、远距离传输事件（如<b>撒哈拉沙尘</b>）和区域污染事件。研究发现，来自撒哈拉沙尘事件的气溶胶具有最高的实部和虚部折射率，以及较高的无机质量分数，而区域生物质燃烧排放主要以吸收性碳质材料为主。研究结果表明，聚类方法能够区分不同气溶胶类型，并阐明影响亚马逊大气层的各种过程，对于大气环境遥感技术中的空气质量监测和气候变化研究具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Analysis of Aerosols in the Asian Monsoon Anticyclone as Observed by the Atmospheric Chemistry Experiment</section>
+            <section class="paper-authors">M. Lecours, R. Dodangodage, C. D. Boone, P. F. Bernath</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043839" target="_blank">https://doi.org/10.1029/2025JD043839</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">季风气溶胶</span>
+                        <span class="topic-tag">卫星光谱观测</span>
+                        <span class="topic-tag">大气化学实验</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043839" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《大气化学实验观测到的亚洲季风反气旋中气溶胶分析》，分析了<b>亚洲夏季风</b>期间，通过对流输送到上对流层和下平流层的<b>气溶胶</b>。论文利用大气化学实验（ACE）卫星任务提供的高分辨率红外观测数据，识别了亚洲对流层顶气溶胶层（ATAL）中的三种主要气溶胶类型：固态<b>硝酸铵</b>、<b>硫酸盐气溶胶</b>和冰。研究重点是硝酸铵气溶胶的光谱特征，并首次识别了多个光谱带。此外，论文还探讨了在季风区域外观测到的类似硝酸铵的气溶胶，并分析了其光谱差异，表明这些气溶胶可能处于液态或不同的相态。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Thermospheric nitric oxide is modulated by the ratio of atomic to molecular oxygen and thermospheric dynamics during solar minimum</section>
+            <section class="paper-authors">Miriam Sinnhuber, Christina Arras, Stefan Bender, Bernd Funke, Hanli Liu, Daniel R. Marsh, Thomas Reddmann, Eugene Rozanov, Timofei Sukhodolov, Monika E. Szelag, Jan Maik Wissing</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-14719-2025" target="_blank">https://doi.org/10.5194/acp-25-14719-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热层一氧化氮</span>
+                        <span class="topic-tag">大气模型比较</span>
+                        <span class="topic-tag">原子氧猝灭</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-14719-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《太阳活动极小期热层一氧化氮受原子氧与分子氧比率和热层动力学调控》，探讨了太阳活动极小期<b>热层</b>中的<b>一氧化氮</b>（NO）如何受到<b>原子氧与分子氧比例</b>以及<b>热层动力学</b>的影响。研究比较了五个高层大气化学-气候模型对NO浓度的模拟结果，并与<b>卫星观测</b>数据进行对比，发现模型之间存在显著差异。研究重点关注了两个相互作用的过程：<b>原子氧对N(2D)的猝灭作用</b>以及从热层中部到下部的<b>经向输送和混合</b>。这些过程影响NO的生成和损耗，进而影响臭氧层和气候系统。由于论文使用了卫星观测数据来验证模型，并探讨了大气成分（一氧化氮）的分布和影响因素，因此与大气环境遥感技术密切相关。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Atmospheric Turbulence in the Upper Troposphere and Lower Stratosphere From Airborne Observations During the DCOTSS Field Campaign</section>
+            <section class="paper-authors">Soo‐Hyun Kim, Rei Ueyama, Rachel Atlas, Jonathan Dean‐Day, Paul Bui, Jessica B. Smith, Aurélien Podglajen, Cameron R. Homeyer</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044556" target="_blank">https://doi.org/10.1029/2025JD044556</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气湍流</span>
+                        <span class="topic-tag">对流层顶</span>
+                        <span class="topic-tag">原位观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044556" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《DCOTSS野外实验期间空中观测的对流层顶和平流层底部的大气湍流》，利用NASA DCOTSS野外实验获得的高空原位观测数据，研究了<b>对流层顶和平流层底部（UTLS）</b>的<b>湍流</b>现象及其与大气成分的潜在联系。研究发现，强湍流经常发生在对流层顶以上2公里范围内，特别是在水汽含量较高的湿对流羽流中。研究强调了高空原位观测在增进我们对UTLS湍流及其对大气成分影响的理解方面的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Influence of oceanic ventilation and terrestrial transport on the atmospheric volatile chlorinated hydrocarbons over the Western Pacific</section>
+            <section class="paper-authors">Shan-Shan Liu, Jie Ni, Jin-Ming Song, Xu-Xu Gao, Zhen He, Gui-Peng Yang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-14967-2025" target="_blank">https://doi.org/10.5194/acp-25-14967-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">挥发性氯代烃</span>
+                        <span class="topic-tag">海洋大气交换</span>
+                        <span class="topic-tag">区域源汇分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-14967-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《海洋通风和陆地输送对西太平洋大气中挥发性氯代烃的影响》，研究重点是<b>西太平洋</b>地区大气中<b>挥发性氯代烃</b>（VCHCs）的分布和来源。研究结合2019-2020年的观测数据，探讨了<b>海洋通风</b>和<b>陆地输送</b>对VCHCs浓度的影响。研究结果表明，西太平洋既是某些VCHCs的源，又是四氯化碳的汇，强调了该地区在调节大气VCHCs浓度中的关键作用。具体而言，研究发现黑潮-亲潮延伸体中，中尺度涡旋增强初级生产力，导致CHCl3和C2HCl3的海水浓度升高。大气VCHCs浓度从沿海到开放海域递减，陆地气团贡献显著。海气通量估算表明，西太平洋地区是CHCl3和C2HCl3的源，但却是CCl4和CH3CCl3的汇，具有吸收来自中国东部甚至全球四氯化碳排放的潜力。该研究为全球VCHCs的排放和吸收估算提供了重要数据，对于理解大气成分和改进大气模型具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Year‐Long High‐Frequency Observations of 16 Regulated ODS and HFCs in Urban Guangzhou, South China: Implications for Regional Emissions</section>
+            <section class="paper-authors">Xiaoqing Huang, Yanli Zhang, Yi Wang, Chunling Xiao, Haofan Ran, Xinming Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044612" target="_blank">https://doi.org/10.1029/2025JD044612</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">消耗臭氧层物质</span>
+                        <span class="topic-tag">氢氟碳化物</span>
+                        <span class="topic-tag">广州市</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044612" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《中国华南城市广州市对16种受管控的消耗臭氧层物质和氢氟碳化物的长期高频观测：对区域排放的启示》，主要关注对<b>广州市</b>大气中多种受管控的<b>消耗臭氧层物质（ODS）</b>和<b>氢氟碳化物（HFCs）</b>的浓度观测。通过一年的高频监测，研究揭示了这些气体在城市中的排放特征，包括已淘汰物质的下降趋势和未解决的排放源。研究结果表明，城市监测可以有效检测到隐蔽的副产品排放，并为制定有针对性的减排措施提供依据。因此，高频监测是城市空气质量管理的关键。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Instrument uncertainties of network-suitable ground-based microwave radiometers: overview, quantification,  and mitigation strategies</section>
+            <section class="paper-authors">Tobias Böck, Moritz Löffler, Tobias Marke, Bernhard Pospichal, Christine Knist, Ulrich Löhnert</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-6251-2025" target="_blank">https://doi.org/10.5194/amt-18-6251-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">微波辐射计</span>
+                        <span class="topic-tag">仪器不确定性</span>
+                        <span class="topic-tag">大气边界层</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-6251-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《适用于网络的地面微波辐射计的仪器不确定性：概述、量化和缓解策略》，主要探讨了<b>地基微波辐射计</b>在测量大气低层温湿度时的<b>仪器不确定性</b>。论文关注了辐射计的噪声、长期漂移、校准重复性、仪器偏差以及<b>天线罩退化</b>等问题，并量化了这些不确定性对亮温的影响。研究结果旨在提高数据质量，并为欧洲传感器网络改进短期天气预报提供支持。研究建议至少每6个月进行一次校准，并指出，如果降雨后10分钟，天线罩表面的残留水分仍然导致温度偏差超过2 K，则需要更换天线罩。虽然论文没有直接涉及空气质量监测、卫星观测或大气成分分析，但它关注的地面遥感技术和<b>大气温湿度廓线</b>测量对于理解大气环境和改进天气预报至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Enhancement of O3–CO ratios at tropospheric subtropical latitudes: Photochemistry and stratospheric influence</section>
+            <section class="paper-authors">Linda Ort, Andrea Pozzer, Peter Hoor, Florian Obersteiner, Andreas Zahn, Thomas B. Ryerson, Chelsea R. Thompson, Jeff Peischl, Róisín Commane, Bruce Daube, Ilann Bourgeois, Jos Lelieveld, Horst Fischer</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-14987-2025" target="_blank">https://doi.org/10.5194/acp-25-14987-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧-一氧化碳比</span>
+                        <span class="topic-tag">雷电氮氧化物</span>
+                        <span class="topic-tag">亚热带对流层</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-14987-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《对流层亚热带地区O3–CO比率的增强：光化学和<b>平流层</b>影响》，探讨了<b>雷电排放</b>对北半球亚热带地区<b>O3/CO比率</b>的影响。研究结合原位观测和全球环流模型，揭示了通过<b>哈德利环流</b>输送的热带气团对亚热带O3/CO比率的影响，可高达40%。论文强调了<b>光化学反应</b>和雷电排放产生的氮氧化物（NOx）在臭氧生成和一氧化碳减少中的作用，以及这些过程对全球大气成分分布的重要性。通过模型敏感性实验，研究发现排除雷电产生的NOx会导致亚热带O3/CO比率显著降低。研究表明，光化学是决定对流层中富含臭氧和贫含一氧化碳气团的另一个关键因素，与平流层-对流层混合过程并列。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Bias corrections for species- and source-resolved PM<sub>2.5</sub> chemical transport model simulations using a geographically weighted regression</section>
+            <section class="paper-authors">Ksakousti Skyllakou, Carlos S. Hernandez, Pablo Garcia Rivera, Brian Dinkelacker, Julian D. Marshall, C. Arden Pope, Allen L. Robinson, Spyros N. Pandis, Peter J. Adams</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121637" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121637</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5模拟</span>
+                        <span class="topic-tag">偏差校正</span>
+                        <span class="topic-tag">地理加权回归</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121637" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《使用地理加权回归对物种和来源解析的PM2.5化学传输模型模拟进行偏差校正》，关注于利用<b>化学传输模型（CTM）</b>模拟的<b>PM2.5</b>成分和来源的<b>偏差校正</b>，以提高其在环境流行病学、环境正义分析等方面的应用。论文开发了一个新的美国大陆PM2.5物种和来源解析的估计数据集，并使用<b>地理加权回归（GWR）</b>来预测和校正CTM PM2.5浓度预测的偏差。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Mechanistic studies on the formation of aromatic organosulfates through the reaction of atmospheric phenols or aromatic alcohols with SO<sub>3</sub></section>
+            <section class="paper-authors">Wenjing Yue, Guiyin Wang, Zhang Cheng, Zhanbiao Yang, Changlian Xu, Xin Qi, Junzhuo Cai, Xiaoxun Xu, Guochun Lv</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121653" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121653</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有机硫酸盐</span>
+                        <span class="topic-tag">反应机理</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121653" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《通过大气酚类或芳香醇与SO3反应形成芳香族有机硫酸盐的机理研究》，探讨了大气中<b>酚类或芳香醇类物质与三氧化硫（SO3）反应</b>生成<b>有机硫酸盐（OSs）</b>的机制。了解其形成机制有助于改进<b>大气化学模型</b>，从而提高<b>空气质量预测</b>的准确性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Estimate of N2+ ${\mathrm{N}}_{2}^{+}$ Altitude Profile Using Blue Auroral Resonant‐Scattering 427.8 nm Emission Observed With HySCAI During Astronomical Twilight</section>
+            <section class="paper-authors">K. Ida, M. Yoshinuma, Y. Ebihara, K. Shiokawa</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL118375" target="_blank">https://doi.org/10.1029/2025GL118375</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">极光发射</span>
+                        <span class="topic-tag">高光谱成像</span>
+                        <span class="topic-tag">高层大气</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL118375" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《利用HySCAI在天文曙暮期间观测到的蓝色极光共振散射427.8 nm的N2+估算N2+高度剖面》，利用高光谱相机HySCAI在<b>天文晨光</b>期间观测到的蓝色极光<b>共振散射</b>427.8 nm的N2+ ${\mathrm{N}}_{2}^{+}$ 排放，来估计N2+ ${\mathrm{N}}_{2}^{+}$ 的<b>高度剖面</b>。研究结果表明，观测到的共振散射排放峰值高度高于GLOW模型的预测，这支持了N2+ ${\mathrm{N}}_{2}^{+}$ 是由高空存在的N2 ${\mathrm{N}}_{2}$ 和O+ ${\mathrm{O}}^{+}$ 之间的电荷交换产生的观点。该研究为理解<b>高层大气</b>中的离子产生机制提供了重要信息，并且使用了高光谱遥感技术。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
