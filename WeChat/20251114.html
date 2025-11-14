@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/11/14</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">IASI global radiometric uncertainty budget</section>
+            <section class="paper-authors">Dimitrios Kilymis, Yannick Kangah, Laura Le Barbier, Elsa Jacquette, Xavier Lenot, Jérémie Ansart, Mathilde Faillot, Jean-Christophe Calvel, Gilles Codou, Olivier Vandermarcq</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-6513-2025" target="_blank">https://doi.org/10.5194/amt-18-6513-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">辐射定标不确定性</span>
+                        <span class="topic-tag">大气探测干涉仪</span>
+                        <span class="topic-tag">气候研究</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-6513-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“IASI全球辐射定标不确定性预算”，主要关注<b>红外大气探测干涉仪（IASI）</b>的全球辐射定标不确定性预算，该仪器搭载于欧洲气象卫星组织的MetOp卫星上。论文评估了影响辐射定标不确定性的主要因素，如模拟非线性校正、黑体特性、扫描镜反射率和背景辐射不稳定性。研究发现，全球辐射定标不确定性预算低于0.2 K（参考温度为280 K）。该研究为提高IASI数据的准确性和可靠性提供了重要信息，从而有助于更好地利用IASI数据进行<b>气象和气候研究</b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Comprehensive global fire radiative power evaluation by minimizing detection bias with intercomparison and extended triple collocation analysis</section>
+            <section class="paper-authors">Yoojin Kang, Jaese Lee, Jungho Im</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.115136" target="_blank">https://doi.org/10.1016/j.rse.2025.115136</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火灾辐射功率</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">生物质燃烧</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.115136" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“通过最小化探测偏差的综合全球火灾辐射功率评估及扩展的三重配置分析”，主要关注利用<b>卫星遥感技术</b>评估<b>火灾辐射功率（FRP）</b>。论文通过比较MODIS、VIIRS和SLSTR三个卫星传感器的数据，并应用扩展的三重配置分析（ETC），旨在提高FRP评估的准确性和一致性。结果表明，在火灾集群重叠良好的情况下，不同传感器之间具有良好的一致性。ETC分析显示，北方森林的FRP具有较高的一致性，而南非由于火灾动态的高度可变性，仍然存在不确定性。该研究为理解FRP的区域特征提供了重要信息，并为全球范围内的FRP评估提供了可靠的框架，有助于<b>生物质燃烧排放</b>的估算和<b>火灾动态</b>的理解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Quantifying CO emissions from boreal wildfires by assimilating TROPOMI and TCCON observations</section>
+            <section class="paper-authors">Sina Voshtani, Dylan B. A. Jones, Debra Wunch, Drew C. Pendergrass, Paul O. Wennberg, David F. Pollard, Isamu Morino, Hirofumi Ohyama, Nicholas M. Deutscher, Frank Hase, Ralf Sussmann, Damien Weidmann, Rigel Kivi, Omaira García, Yao Té, Jack Chen, Kerry Anderson, Robin Stevens, Shobha Kondragunta, Aihua Zhu, Douglas Worthy, Senen Racki, Kathryn McKain, Maria V. Makarova, Nicholas Jones, Emmanuel Mahieu, Andrea Cadena-Caicedo, Paolo Cristofanelli, Casper Labuschagne, Elena Kozlova, Thomas Seitz, Martin Steinbacher, Reza Mahdi, Isao Murata</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15527-2025" target="_blank">https://doi.org/10.5194/acp-25-15527-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">CO排放</span>
+                        <span class="topic-tag">森林火灾</span>
+                        <span class="topic-tag">卫星遥感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15527-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“通过同化TROPOMI和TCCON观测数据量化北方森林火灾的CO排放”，通过同化<b>TROPOMI</b>和<b>TCCON</b>的观测数据，量化了2023年加拿大北部森林火灾中<b>一氧化碳（CO）的排放量</b>。研究使用了GEOS-Chem模型，并结合了多种生物质燃烧排放清单（如QFED、GBBEPx、GFAS和CFFEPS）进行分析。结果表明，常用的排放清单低估了火灾排放，而结合<b>地基遥感数据</b>可以有效降低排放估算的不确定性。此外，研究还评估了TCCON数据在提高垂直敏感性方面的潜力，并验证了其与地面实测数据的吻合度。总体来说，该研究强调了卫星观测和地基遥感数据在监测和量化大气成分，特别是空气质量方面的重要作用，并为改进生物质燃烧排放清单提供了有价值的参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Urban-rural patterns and driving factors of particulate matter pollution decrease in eastern China</section>
+            <section class="paper-authors">Zhihao Song, Bin Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15487-2025" target="_blank">https://doi.org/10.5194/acp-25-15487-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">颗粒物污染</span>
+                        <span class="topic-tag">城乡差异</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15487-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“中国东部颗粒物污染下降的城乡格局及其驱动因素”，主要关注中国东部地区<b>PM10</b>和<b>PM2.5</b>的污染下降情况，并着重分析了<b>城市</b>和<b>乡村</b>地区PM污染变化的差异。研究采用了包括<b>卫星观测数据</b>在内的多种数据源，结合气象因素，通过机器学习方法来识别影响PM污染变化的关键驱动因素。研究结果表明，城市地区的PM污染下降速度快于乡村地区，且温度和年际变化是主要的驱动因素。此外，研究还强调了城市和乡村地区在PM污染控制策略上需要有所区分。该研究为理解中国东部地区PM污染的变化趋势和驱动机制提供了重要信息，并为制定差异化的空气污染控制策略提供了科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Influences of sea breeze circulation and atmospheric stability on PM<sub>2.5</sub> levels in an inland city of Taiwan</section>
+            <section class="paper-authors">Yueh-Chen Wang, Huynh Duy Tran, Shuenn-Chin Chang, Chih-Wei Chang, Sheng-Hsiang Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121669" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121669</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">海风环流</span>
+                        <span class="topic-tag">大气稳定性</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121669" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“海风环流和大气稳定性对台湾内陆城市PM2.5水平的影响”，探讨了<b>海风环流</b>和<b>大气稳定性</b>对台湾内陆城市<b>PM2.5</b>浓度影响。研究结合长期观测和短期野外实验，利用地基遥感仪器测量<b>气溶胶光学特性</b>。结果表明，海风将沿海污染物输送到内陆，夜间行星边界层下降导致PM2.5浓度升高。大气稳定性，如低风速和逆温，也促进了污染物积累。研究建议未来利用激光雷达和无人机进行垂直剖面观测，以更好地阐明污染物积累机制。该研究强调了气象因素对内陆城市空气质量的重要影响，并为制定有效的空气污染控制策略提供了科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Signatures of aerosol-cloud interactions in GiOcean:  a coupled global reanalysis with  two-moment cloud microphysics</section>
+            <section class="paper-authors">Ci Song, Daniel McCoy, Andrea Molod, Donifan Barahona, Travis Aerenson</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15567-2025" target="_blank">https://doi.org/10.5194/acp-25-15567-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶-云相互作用</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">云微物理</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15567-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“GiOcean中气溶胶-云相互作用的特征：一个耦合的全球再分析与双参数云微物理”，探讨了<b>气溶胶</b>与<b>云</b>相互作用对地球辐射平衡的影响。研究利用GiOcean全球再分析数据，结合<b>卫星观测</b>，评估了气溶胶对云微物理性质的影响，重点分析了云滴数量和液态水路径的变化，以及气溶胶和气象因素在其中的作用。研究发现，GiOcean能捕捉到气溶胶-云-降水相互作用的关键特征，包括气溶胶向云滴的活化、有效降水对云滴的清除，以及高气溶胶排放区域降水的抑制。随机森林分析表明，GiOcean中北半球海洋上空云滴数量和液态水路径的年际变化主要受降水驱动，这与卫星观测结果一致。研究结果表明，GiOcean能够较好地模拟气溶胶与云的相互作用，为理解气候变化提供了有价值的参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Hygroscopicity of isoprene-derived secondary organic aerosol mixture proxies: importance of diffusion and salting-in effects</section>
+            <section class="paper-authors">Nahin Ferdousi-Rokib, N. Cazimir Armstrong, Stephanie Jacoby, Alana J. Dodero, Martin Changman Ahn, Ergine Zephira Remy, Zhenfa Zhang, Avram Gold, Joseph L. Woo, Yue Zhang, Jason D. Surratt, Akua A. Asa-Awuku</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15613-2025" target="_blank">https://doi.org/10.5194/acp-25-15613-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二次有机气溶胶</span>
+                        <span class="topic-tag">气溶胶吸湿性</span>
+                        <span class="topic-tag">云凝结核</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15613-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“异戊二烯衍生的二次有机气溶胶混合物的吸湿性：扩散和盐溶效应的重要性”，探讨了<b>异戊二烯衍生的二次有机气溶胶（SOA）</b>与硫酸铵等盐类混合后，对<b>水汽吸收</b>和<b>云凝结核形成</b>的影响。研究重点关注了2-甲基四醇（2-MT）和2-甲基四醇硫酸盐（2-MTS）等关键成分的物理化学性质，以及它们与硫酸铵混合后的扩散系数和吸湿性变化。通过实验模拟亚饱和和超饱和条件下气溶胶的吸湿行为，并使用κ-Köhler理论进行参数化分析。研究结果表明，这些生物源SOA的非理想热力学性质对<b>气溶胶-云相互作用</b>有重要影响，因此需要在大气环境模型中加以考虑。该研究强调了生物源气溶胶对云形成和气候的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A double-box model for aircraft exhaust plumes based on the MADE3 aerosol microphysics (MADE3 v4.0)</section>
+            <section class="paper-authors">Monica Sharma, Mattia Righi, Johannes Hendricks, Anja Schmidt, Daniel Sauer, Volker Grewe</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-8485-2025" target="_blank">https://doi.org/10.5194/gmd-18-8485-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶微物理</span>
+                        <span class="topic-tag">飞机尾迹</span>
+                        <span class="topic-tag">航空排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-8485-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“基于MADE3气溶胶微物理模型的飞机尾迹双箱模型”，开发了一个<b>双箱模型</b>来模拟<b>飞机尾迹</b>中的<b>气溶胶微物理过程</b>，重点关注航空排放对气溶胶数量浓度和气候的影响。该模型考虑了气溶胶在飞机尾迹中的凝结、凝华和核化等过程。研究结果表明，与瞬时扩散方法相比，该模型估计的航空气溶胶数量浓度较低，这是由于尾迹尺度上更有效的凝结作用。研究还发现，模型对背景条件和初始化参数（如冰晶数量浓度和燃料硫含量）敏感。该研究为改进全球气候模型中航空排放的气溶胶效应提供了有价值的参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Modeling on the drought stress impact on the summertime biogenic isoprene emissions in South Korea</section>
+            <section class="paper-authors">Yong-Cheol Jeong, Yuxuan Wang, Wei Li, Hyeonmin Kim, Rokjin J. Park, Mahmoudreza Momeni</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15507-2025" target="_blank">https://doi.org/10.5194/acp-25-15507-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">异戊二烯排放</span>
+                        <span class="topic-tag">卫星甲醛柱浓度</span>
+                        <span class="topic-tag">干旱胁迫</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15507-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“模拟干旱胁迫对韩国夏季生物源异戊二烯排放的影响”，探讨了<b>干旱胁迫</b>对韩国夏季<b>生物源异戊二烯排放</b>的影响。研究利用<b>卫星甲醛柱浓度</b>（来自OMI）和化学传输模型（GEOS-Chem），结合MEGAN2.1模型，评估和调整模型中异戊二烯的排放量，以提高模型对<b>空气质量</b>的预测能力，特别是对臭氧等二次污染物的预测。研究发现，在干旱条件下，OMI观测到的甲醛柱浓度有所增加，但GEOS-Chem模型模拟的异戊二烯排放量被高估。通过改进模型中的干旱胁迫算法，并应用迭代有限差分质量平衡（IFDMB）方法，异戊二烯排放量估算得到了显著改善。该研究强调了干旱胁迫对异戊二烯排放的影响，并为改进空气质量模型提供了有价值的参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Effects of El Niño-induced climate change on CO<sub>2</sub> concentrations and the carbon cycle in East Asia</section>
+            <section class="paper-authors">Min-Gyung Seo, Hyun Mee Kim, Soon-Il An</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01237-z" target="_blank">https://doi.org/10.1038/s41612-025-01237-z</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二氧化碳浓度</span>
+                        <span class="topic-tag">碳循环</span>
+                        <span class="topic-tag">厄尔尼诺</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01237-z" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“厄尔尼诺引起的<b>气候变化</b>对东亚二氧化碳浓度和碳循环的影响”，探讨了厄尔尼诺现象对东亚地区<b>二氧化碳浓度</b>和<b>碳循环</b>的影响。研究使用<b>地表二氧化碳观测数据</b>以及高分辨率气象和二氧化碳浓度数据，通过数值模拟研究了2009/10和2015/16两次厄尔尼诺事件对东亚地区气象状态和碳循环的影响。研究发现，大气二氧化碳浓度增长率和净生态系统交换通量与厄尔尼诺指数存在显著的正相关关系。温度异常主要导致植被呼吸作用的变化，进而导致厄尔尼诺现象后大气二氧化碳浓度迅速增加。该研究为理解厄尔尼诺现象对东亚地区碳循环的影响提供了重要信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Concentration changes of atmospheric F-gases and analysis of their potential sources at Zhongshan Station, Antarctica, 2021</section>
+            <section class="paper-authors">Ruiqi Nan, Biao Tian, Xinfeng Ling, Weijun Sun, Yixi Zhao, Dongqi Zhang, Chuanjin Li, Xin Wang, Jie Tang, Bo Yao, Minghu Ding</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-6097-2025" target="_blank">https://doi.org/10.5194/essd-17-6097-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氟化温室气体</span>
+                        <span class="topic-tag">大气成分</span>
+                        <span class="topic-tag">来源解析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-6097-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“2021年南极中山站大气中氟化温室气体浓度变化及潜在来源分析”，主要关注南极中山站大气中<b>11种氟化温室气体（F-gases）</b>的浓度变化，并分析其潜在来源。研究使用了HYSPLIT模型进行后向轨迹和聚类分析，以及PMF模型进行源解析。结果表明，2021年中山站大部分F-gases浓度显著增加，且高于南极其他站点。来源分析表明，工业过程、制冷、消防和电子产品是南极大气中F-gas的主要来源。该研究为理解南极地区大气背景状况提供了重要信息，并为未来的大气环境变化监测提供了基准，突出了<b>南极地区</b>作为全球大气研究关键区域的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Local-scale inversion of agricultural ammonia emissions: a case study on Schiermonnikoog, the Netherlands</section>
+            <section class="paper-authors">Simeng Li, Enrico Dammers, Arjo Segers, Jan Willem Erisman</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15593-2025" target="_blank">https://doi.org/10.5194/acp-25-15593-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氨排放</span>
+                        <span class="topic-tag">空气质量模型</span>
+                        <span class="topic-tag">贝叶斯反演</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15593-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为“农业氨排放的局部尺度反演：以荷兰斯希蒙尼克岛为例”，关注<b>农业氨排放</b>的局部尺度反演，并以荷兰斯希蒙尼克岛为例进行了案例研究。论文利用<b>地面测量数据</b>和LOTOS-EUROS<b>空气质量模型</b>，结合高分辨率排放清单，通过贝叶斯反演方法评估了该岛牲畜数量减少后氨排放的变化。研究结果表明，反演方法能够捕捉到氨排放的减少趋势，并提出了改进排放监测网络的建议。研究强调了利用实地测量数据和模型进行氨排放量估算和验证的重要性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
