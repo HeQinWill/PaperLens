@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/11/15</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Aerosol extinction and backscatter Optimal Estimation  retrieval for High Spectral Resolution Lidar</section>
+            <section class="paper-authors">Sharon P. Burton, Johnathan W. Hair, Chris A. Hostetler, Marta A. Fenn, John A. Smith, Richard A. Ferrare</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-6527-2025" target="_blank">https://doi.org/10.5194/amt-18-6527-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶消光</span>
+                        <span class="topic-tag">高光谱激光雷达</span>
+                        <span class="topic-tag">最优估计</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-6527-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《高光谱分辨率激光雷达气溶胶消光和后向散射最优估计反演》。研究重点是利用<b>高光谱分辨率激光雷达（HSRL）</b>技术反演大气<b>气溶胶</b>的<b>消光系数</b>和<b>后向散射系数</b>。传统反演方法在信噪比低的情况下容易放大噪声，因此本研究采用<b>最优估计法</b>，通过引入弱约束来降低噪声影响，同时保持反演精度。研究充分分析了随机误差和系统误差，探讨了不确定性与分辨率之间的权衡。研究结果表明，优化后的算法能够有效降低噪声传播，提高反演结果的可靠性，尤其是在卫星观测等信号较弱的应用场景中。这项研究对于大气环境遥感，特别是利用星载激光雷达进行大气气溶胶观测具有重要意义，可以为空气质量监测和大气成分分析提供更准确的数据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Separation of meteorological and anthropogenic contributions to major ambient pollutants using an integrated explainable machine learning framework: RMT-PAS</section>
+            <section class="paper-authors">Huabing Ke, Sunling Gong, Yaqiang Wang, Lei Zhang, Jingyue Mo, Jiayu Yang, Chao Wang, Chunhong Zhou</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121667" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121667</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">机器学习</span>
+                        <span class="topic-tag">人为排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121667" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《利用集成的可解释机器学习框架分离主要环境污染物中的气象和人为因素：RMT-PAS》。该研究论文开发了一个名为<b>RMT-PAS</b>的系统，该系统基于<b>趋势分解可解释机器学习</b>方法，用于分离和量化<b>气象条件</b>和<b>人为排放</b>对环境<b>PM2.5和O3水平</b>的影响。该系统通过集成XGBoost、LightGBM和CatBoost模型，建立了PM2.5/O3污染水平与多种气象因素以及排放成分之间的非线性响应关系，并实现了较高的预测精度。研究结果表明，人为排放的减少对PM2.5的降低有显著影响，而气象条件对O3的影响则表现出较强的区域异质性。此外，研究还分析了典型污染事件中PM2.5和O3的主要驱动因素。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">All-sky AMSU-A radiance data assimilation using the gain-form of Local Ensemble Transform Kalman filter within MPAS-JEDI-2.1.0: implementation, tuning, and evaluation</section>
+            <section class="paper-authors">Tao Sun, Jonathan J. Guerrette, Zhiquan Liu, Junmei Ban, Byoung-Joo Jung, Ivette Hernandez Banos, Chris Snyder</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-8569-2025" target="_blank">https://doi.org/10.5194/gmd-18-8569-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">全天空辐射</span>
+                        <span class="topic-tag">数据同化</span>
+                        <span class="topic-tag">天气预报</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-8569-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《在MPAS-JEDI-2.1.0中使用局部集合变换卡尔曼滤波增益形式的全天空AMSU-A辐射数据同化：实现、调整和评估》。这篇论文主要研究如何利用<b>卫星观测数据</b>，特别是<b>全天候的微波辐射数据</b>，来改进全球天气预报。论文实现了基于JEDI框架的LGETKF算法，并将其应用于MPAS模型，用于<b>同化AMSU-A卫星的辐射数据</b>。研究发现，同化这些受云和降水影响的卫星数据可以改进<b>湿度</b>、<b>风</b>、<b>云</b>和<b>降水</b>的预报，尤其是在热带地区。虽然在某些区域的温度预报上出现了一些退化，但总体而言，这项研究展示了全天候卫星数据同化在提高天气预报准确性方面的潜力。该研究与大气环境遥感技术密切相关，因为它使用了卫星观测数据来分析和预测大气状态。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Transient ice ring observed during the 15 January 2022 eruption of Hunga volcano</section>
+            <section class="paper-authors">Andrew T. Prata, Roy G. Grainger, Isabelle A. Taylor, Alyn Lambert</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-025-02875-0" target="_blank">https://doi.org/10.1038/s43247-025-02875-0</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">火山爆发</span>
+                        <span class="topic-tag">大气冰环</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-025-02875-0" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《2022年1月15日洪加火山爆发期间观测到的瞬时冰环》。该研究论文通过<b>卫星观测</b>和<b>冰核化模型</b>，分析了2022年汤加火山爆发后大气波产生的<b>瞬时冰环</b>现象。研究表明，<b>火山爆发引发的大气波</b>导致高空大气温度振荡，促使微小<b>冰粒</b>在高空形成环状结构。这与<b>大气环境遥感技术</b>密切相关，因为它利用卫星观测来研究火山爆发对大气成分和结构的影响，特别是冰晶的形成和分布，以及大气波的传播。这有助于我们理解火山爆发等自然事件如何影响大气环境，并为大气成分分析和气候模型提供数据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Automatic optical depth parametrization in radiative transfer model RTTOV v13 via LASSO-induced sparsity</section>
+            <section class="paper-authors">Franklin Vargas Jiménez, Juan Carlos De los Reyes</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-18-8511-2025" target="_blank">https://doi.org/10.5194/gmd-18-8511-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气光学厚度</span>
+                        <span class="topic-tag">辐射传输模型</span>
+                        <span class="topic-tag">LASSO回归</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-18-8511-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《基于LASSO诱导稀疏性的辐射传输模型RTTOV v13中的自动光学厚度参数化》。该研究提出了一种<b>自动参数化大气光学厚度</b>的方法，用于TIROS Operational Vertical Sounder (TOVS) 的<b>辐射传输模型（RTTOV）v13</b> 版本。该方法结合了<b>统计推断</b>和 <b>LASSO 回归</b>，以减少参数并选择相关气体。通过可见光红外成像辐射仪套件（VIIRS）通道的测试表明，该方法在保持精度的同时降低了计算量。该研究与大气环境遥感技术密切相关，因为它专注于提高<b>卫星数据同化</b>中辐射传输模型的效率，这对于<b>空气质量监测</b>、<b>卫星观测</b>和<b>大气成分分析</b>至关重要。通过减少计算成本和自动选择吸收气体，该方法有助于更有效地利用卫星数据进行大气研究。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Fuel sulfur content can modulate contrail ice crystal numbers</section>
+            <section class="paper-authors">Rebecca Dischl, Raphael Märkl, Daniel Sauer, Christiane Voigt, Theresa Harlaß, Monika Scheibe, Valerian Hahn, Stefan Kaufmann, Andreas Marsing, Andreas Dörnbrack, Anke Roiger, Fangqun Yu, Maxime Gauthier, Charles Renard, Peter Swann, Mark Johnson, Denise Ahrens, Reetu Sallinen, Georg Eckel, Patrick Le Clercq</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-025-02951-5" target="_blank">https://doi.org/10.1038/s43247-025-02951-5</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">飞机尾迹</span>
+                        <span class="topic-tag">燃料硫含量</span>
+                        <span class="topic-tag">冰晶数量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-025-02951-5" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《燃料硫含量可以调节飞机尾迹冰晶数量》。该研究论文探讨了<b>航空燃料</b>中的<b>硫含量</b>对<b>飞机尾迹冰晶数量</b>的影响。通过对空客A350-900燃烧不同硫含量燃料的飞行测量，发现低硫燃料会减少<b>挥发性颗粒物</b>和尾迹冰晶的数量。研究表明，较高的燃料硫含量会通过<b>硫酸盐气溶胶</b>的活化增加尾迹冰晶的数量。这项研究与<b>大气环境遥感技术</b>相关，因为它涉及<b>大气成分分析</b>（如挥发性颗粒物、硫酸盐气溶胶）以及航空排放对气候的影响，这些都可以通过<b>卫星观测</b>等遥感技术进行监测和研究。虽然论文没有直接提及特定的遥感技术，但其研究结果对于利用遥感数据评估航空业对大气环境的影响具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">New Li Lidar Observations and Model Simulations: A Window to Anthropogenic Signatures</section>
+            <section class="paper-authors">M. Gerding, R. Wing, W. Feng, J. M. C. Plane, G. Baumgarten</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL118710" target="_blank">https://doi.org/10.1029/2025GL118710</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">锂丰度</span>
+                        <span class="topic-tag">激光雷达</span>
+                        <span class="topic-tag">人为影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL118710" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《新型锂激光雷达观测和模型模拟：通往人为特征的窗口》。该研究论文利用<b>Li激光雷达观测</b>和<b>WACCM模型模拟</b>，研究了德国屈伦斯博恩上空中间层顶区域的<b>锂丰度</b>。论文重点关注由流星烧蚀形成的锂层，并指出<b>空间碎片</b>中锂的相对丰度远高于流星体，使其成为衡量<b>人为因素</b>对高层大气影响的良好指标。研究发现2024年8月至12月期间锂丰度显著增加，并与WACCM模型的模拟结果进行了比较。虽然模型在一定程度上解释了观测结果，但未能完全解释2025年1月/2月观测到的更高锂丰度。这可能与人为因素或未知的自然机制有关。该研究强调了锂观测在监测再入空间碎片对大气成分影响方面的潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Detectable ship tracks account for just 5% of aerosol indirect forcing from ship emissions</section>
+            <section class="paper-authors">Tianle Yuan, Hua Song, Lili F. Boss, Michael S. Diamond</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-025-02825-w" target="_blank">https://doi.org/10.1038/s43247-025-02825-w</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">船舶排放</span>
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">辐射强迫</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-025-02825-w" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《可检测的船舶尾迹仅占船舶排放气溶胶间接辐射强迫的5%》。该研究论文探讨了<b>船舶排放</b>对气候的影响，重点关注<b>船舶尾迹</b>产生的<b>气溶胶间接辐射强迫</b>。研究发现，可见船舶尾迹仅占东南大西洋航运线总辐射强迫的5%。文章结合了自下而上和自上而下的数据分析方法，包括<b>机器学习检测船舶尾迹</b>、空间关系分析以及云调整模型。研究结果表明，大部分船舶排放产生的辐射强迫来自未形成可见船舶尾迹的气溶胶。该研究对于理解气溶胶间接辐射强迫以及海洋云增亮具有重要意义，并暗示了<b>卫星观测</b>和遥感技术在监测和评估船舶排放影响方面的应用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Turbulent Aerosol Fluxes From Airborne Measurements Over the Arctic Ocean</section>
+            <section class="paper-authors">David J. Simon, Jörg Hartmann, Jonas Schaefer, Sebastian Zeppenfeld, Christof Lüpkes, Markus Hartmann, Bruno Wetzel, Bernd Heinold, Zsófia Jurányi, Alexander Schulz, Laura Köhler, Anna‐Marie Jörss, Andreas Herber, Silvia Henning, Mira L. Pöhlker, Gregory C. Roberts, Frank Stratmann</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL117094" target="_blank">https://doi.org/10.1029/2025GL117094</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海盐气溶胶</span>
+                        <span class="topic-tag">气溶胶通量</span>
+                        <span class="topic-tag">机载测量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL117094" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《北冰洋机载测量湍流气溶胶通量》。该研究论文主要关注<b>北冰洋海盐气溶胶</b>的排放和通量，通过<b>机载测量</b>来量化不同粒径的<b>气溶胶通量密度</b>。研究结果表明，现有模型可能低估了北极地区的气溶胶排放量。虽然论文没有直接涉及卫星观测或特定的遥感技术，但它对<b>大气成分分析</b>和<b>空气质量监测</b>具有重要意义，因为气溶胶是影响气候和空气质量的关键因素，并且这些数据可以用于验证和改进大气模型，从而间接支持遥感数据的应用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Decadal changes in the Tropical Tropopause Inversion Layer and its radiative drivers over Gadanki (2006–2024)</section>
+            <section class="paper-authors">K.P. Aathira, M. Pramitha, B.L. Madhavan, M. Venkat Ratnam</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108627" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108627</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">对流层顶反演层</span>
+                        <span class="topic-tag">辐射强迫</span>
+                        <span class="topic-tag">气候变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108627" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《Gadanki地区（2006-2024年）热带对流层顶反演层的年代际变化及其辐射驱动因素》。研究利用2006年至2024年期间在印度Gadanki地区获取的<b>无线电探空仪</b>数据，对<b>热带对流层顶反演层（TIL）</b>的年代际变化及其辐射驱动因素进行了分析。研究考察了<b>对流层顶高度</b>、<b>TIL宽度</b>以及<b>TIL强度</b>的变化趋势。结果表明，对流层顶高度呈正向变化趋势，而TIL宽度和强度则表现为负向变化趋势，这暗示着气候在未来可能会变暖，从而导致TIL变得更窄更弱。此外，研究还分析了<b>臭氧</b>与<b>水蒸气</b>对于UTLS区域加热率的影响，并且发现夏季出现的更强更窄的TIL是源于臭氧在LS中所产生的<b>辐射加热</b>以及水蒸气在UT中所产生的冷却作用。这项研究首次提供了热带地区夏季辐射强迫对TIL形成与维持产生影响的观测证据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Coarse land cover datasets bias Arctic-Boreal wetland methane budgets</section>
+            <section class="paper-authors">Josh Hashemi, Aleksi Räsänen, Tarmo Virtanen, Sari Juutinen, Guido Grosse, Mika Aurela, Annett Bartsch, Laura Chasmer, Scott J. Davidson, Mika Korkiakoski, McKenzie A. Kuhn, Mark J. Lara, Miska Luoto, Pekka Niittynen, David Olefeldt, Oliver Sonnentag, Anna-Maria Virkkala, Carolina Voigt, Claire C. Treat</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-025-02963-1" target="_blank">https://doi.org/10.1038/s43247-025-02963-1</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放</span>
+                        <span class="topic-tag">土地覆盖</span>
+                        <span class="topic-tag">北极湿地</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-025-02963-1" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《粗糙土地覆盖数据集偏倚了北极-北方湿地甲烷预算》。该研究论文探讨了<b>土地覆盖数据集的分辨率</b>对<b>北极和北方湿地甲烷排放预算</b>的影响。虽然它没有直接涉及大气环境遥感技术，但它确实与<b>卫星观测</b>相关，因为<b>土地覆盖地图</b>通常是基于卫星数据生成的。该研究表明，粗糙分辨率的土地覆盖地图会严重影响<b>甲烷排放</b>的估算，导致对湿地是甲烷源还是汇的错误分类。研究强调了使用高分辨率和具有生物地球化学相关性的土地覆盖类型对于可靠地估算甲烷排放的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Land use-induced soil carbon loss in the dry tropics nearly offsets gains in northern lands</section>
+            <section class="paper-authors">Huan Wang, Philippe Ciais, Hui Yang, Pete Smith, Giacomo Grassi, Clemens Schwingshackl, Panos Panagos, Yinon Bar-On, Stephen Sitch, Frédéric Chevallier, Paul I. Palmer, Xiaojun Li, Songbai Hong, Jinfeng Chang, Clément Albergel, Lei Fan, Kai Wang, Laibao Liu, Frédéric Frappart, Jean-Pierre Wigneron</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-025-64929-3" target="_blank">https://doi.org/10.1038/s41467-025-64929-3</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">土壤碳</span>
+                        <span class="topic-tag">土地利用</span>
+                        <span class="topic-tag">大气反演</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-025-64929-3" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《土地利用引起的旱热带地区土壤碳损失几乎抵消了北方地区的增加》。该研究论文主要关注<b>土地利用变化</b>对<b>土壤碳储量</b>的影响，并利用<b>大气反演</b>和<b>卫星遥感数据</b>来估算全球土壤碳和凋落物（SOCL）的变化。虽然其核心并非直接研究大气环境遥感技术，但它使用了大气二氧化碳通量反演和基于卫星的生物量变化图等遥感数据，来推断土壤碳的变化。研究结果表明，干旱热带地区因农业扩张导致的<b>土壤碳损失</b>，几乎抵消了北方地区的土壤碳增加，突出了干旱热带地区恢复农业土壤碳的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Modelling PM<sub>2.5</sub> reduction scenarios for future cardiopulmonary disease reduction</section>
+            <section class="paper-authors">Eartha Weber, Vassilis Daioglou, Laszlo Vreedenburgh, Jonathan Doelman, George Downward, Maria Gabriela Matias de Pinho, Detlef van Vuuren</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Sustainability</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41893-025-01676-9" target="_blank">https://doi.org/10.1038/s41893-025-01676-9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">减排策略</span>
+                        <span class="topic-tag">心肺疾病</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41893-025-01676-9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《PM2.5减排情景建模以降低未来心肺疾病》。该研究论文探讨了通过不同<b>PM2.5减排策略</b>来降低<b>心肺疾病</b>发病率的潜在影响。虽然它没有直接涉及大气环境遥感技术，但它与<b>空气质量监测</b>密切相关，因为PM2.5的浓度数据是评估减排策略有效性的关键。研究中使用的PM2.5数据可能来源于地面监测站，也可能结合了卫星观测数据，以进行更全面的评估。此外，该研究还涉及<b>大气成分分析</b>，特别是PM2.5的来源和组成，以便制定更有效的减排策略。因此，虽然不是直接研究遥感技术，但与遥感在空气质量监测和大气成分分析方面的应用有很强的关联性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Who will fill the climate-data void left by the Trump administration?</section>
+            <section class="paper-authors">Brittany Janis, Cathy Richards</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/d41586-025-03532-4" target="_blank">https://doi.org/10.1038/d41586-025-03532-4</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气候数据</span>
+                        <span class="topic-tag">监测项目</span>
+                        <span class="topic-tag">美国退出</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/d41586-025-03532-4" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《谁来填补特朗普政府留下的气候数据空白？》。该论文主要关注<b>美国政府退出气候监测项目</b>后，全球在<b>气候数据获取</b>方面面临的挑战。虽然没有直接提及大气环境遥感技术，但<b>气候数据监测</b>通常涉及<b>卫星观测</b>、<b>空气质量监测</b>和<b>大气成分分析</b>等遥感技术。因此，该论文与大气环境遥感技术有较强的关联性，因为它探讨了气候数据空缺以及寻找替代方案的需求，这些替代方案很可能包括遥感技术。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
