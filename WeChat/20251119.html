@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/11/19</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global optimal estimation retrievals of  atmospheric carbonyl sulfide over water  from IASI measurement spectra for 2018</section>
+            <section class="paper-authors">Michael P. Cartwright, Jeremy J. Harrison, David P. Moore, Richard J. Pope, Martyn P. Chipperfield, Chris Wilson, Wuhu Feng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15913-2025" target="_blank">https://doi.org/10.5194/acp-25-15913-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">羰基硫</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15913-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《2018年基于IASI测量光谱的全球水体上方大气羰基硫最优估计反演》，利用<B>红外大气探测干涉仪（IASI）</B>的<B>卫星测量数据</B>，反演了2018年全球海洋上空的<B>大气羰基硫（OCS）</B>含量。羰基硫与光合作用有关，因此测量其含量可以帮助我们了解<B>全球碳循环</B>。研究结果与之前的卫星观测、地面测量和模型模拟结果相符。此研究展示了 IASI 仪器探测对流层中 OCS 的能力，并观察到一个合理的季节性周期，表明其受到光合作用的驱动。为理解碳循环过程提供了重要的遥感数据支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Influence of fire-induced heat and moisture release on pyro-convective cloud dynamics during the Australian New Year’s Event: a study using convection-resolving simulations and satellite data</section>
+            <section class="paper-authors">Lisa Janina Muth, Sascha Bierbauer, Corinna Hoose, Bernhard Vogel, Heike Vogel, Gholam Ali Hoshyaripour</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-16027-2025" target="_blank">https://doi.org/10.5194/acp-25-16027-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火积云</span>
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">卫星数据</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-16027-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《火灾引起的热量和湿度释放对澳大利亚新年事件期间火积云动力学的影响：基于对流分辨模拟和卫星数据的研究》，探讨了澳大利亚新年期间森林火灾产生的<B>热量和湿度</B>对<B>火积云</B>动力学的影响。通过高分辨率模拟和<B>卫星数据</B>，研究表明火灾产生的热量和湿度有助于火积云的形成，并将气溶胶输送到大气高层，从而影响大气成分和全球气候。研究使用了<B>全球火灾同化系统（GFAS）</B>的数据，并与观测数据进行了比较，验证了模拟的准确性。这项研究对于理解火灾对大气环境的影响至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Change of chemical compositions of the regional free troposphere in North China during COVID-19: Observational evidence from the Mt. Tai observatory</section>
+            <section class="paper-authors">Yue Sun, Yujiao Zhu, Can Dong, Yingnan Zhang, Yujian Bi, Di Wu, Xiangkun Yin, Hengqing Shen, Tianshu Chen, Hongyong Li, Yuqiang Zhang, Qinyi Li, Wenxing Wang, Likun Xue</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121671" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121671</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">大气成分分析</span>
+                        <span class="topic-tag">二次气溶胶</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121671" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《新冠疫情期间华北地区自由对流层化学成分的变化：来自泰山观测站的观测证据》，分析了<B>COVID-19疫情期间</B>华北地区<B>自由对流层</B>化学成分的变化。通过在泰山观测站的观测数据，发现主要污染物如NO2、SO2和CO的浓度显著下降，而O3和Ox浓度基本保持不变。值得注意的是，PM2.5浓度反而显著增加，这主要归因于水相反应增强导致的二次气溶胶形成增加。该研究结果对于评估疫情期间大气污染控制措施的效果具有重要意义，对于改进空气质量模型和优化大气污染控制策略具有重要参考价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Vertical profiling of Canadian wildfire smoke in the Baltimore-Washington Corridor – interactions with the planetary boundary layer and impact on surface air quality</section>
+            <section class="paper-authors">Nakul N. Karle, Ricardo K. Sakai, Rocio D. Rossi, Adrian Flores, Sen Chiao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-6727-2025" target="_blank">https://doi.org/10.5194/amt-18-6727-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">野火烟雾</span>
+                        <span class="topic-tag">激光测高仪</span>
+                        <span class="topic-tag">地表空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-6727-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《巴尔的摩-华盛顿走廊加拿大野火烟雾的垂直剖面——与行星边界层的相互作用以及对地表空气质量的影响》，主要探讨了2023年<B>加拿大野火烟雾</B>对巴尔的摩-华盛顿走廊（BWC）<B>空气质量</B>的影响。研究利用<B>激光测高仪</B>的线性退偏振比（LDR）剖面来区分野火烟雾和本地城市气溶胶，并结合卫星图像、地面空气质量观测和NOAA HYSPLIT轨迹，分析了多个独立的烟雾事件。结果表明烟雾羽流的垂直分布及其与行星边界层（PBL）的相互作用对地表空气质量有重要影响，并且通过高精度的垂直烟雾观测，为准确预测烟雾对空气质量的影响提供了更全面的数据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A feasibility study to reconstruct atmospheric rivers using space- and ground-based GNSS observations</section>
+            <section class="paper-authors">Endrit Shehaj, Stephen Leroy, Kerri Cahoy, Juliana Chew, Benedikt Soja</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-6659-2025" target="_blank">https://doi.org/10.5194/amt-18-6659-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气河流</span>
+                        <span class="topic-tag">GNSS掩星</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-6659-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《使用空间和地面GNSS观测重建大气河流的可行性研究》，探讨了利用空间和<B>地面全球导航卫星系统（GNSS）</B>观测数据，结合<B>机器学习模型</B>，重建<B>大气河流（ARs）</B>的可行性。研究的重点在于确定需要多少<B>低地球轨道（LEO）无线电掩星卫星</B>才能充分量化大气河流的结构、位置和时间信息。研究发现至少需要36颗卫星才能较好地描述大气河流的形态，而48颗卫星则能更准确地绘制综合柱水汽（IWV）场。为提高大气河流的监测和预测能力奠定基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Assessing the impact of emission-driven aerosol-meteorology feedback on winter PM<sub>2.5</sub> variations in central and East China from 2014 to 2020</section>
+            <section class="paper-authors">Yi Gao, Jing He, Liren Xu, Meigen Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121670" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121670</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">气溶胶反馈</span>
+                        <span class="topic-tag">排放驱动</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121670" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《评估排放驱动的气溶胶-气象反馈对2014年至2020年华中和华东地区冬季PM<sub>2.5</sub>变化的影响》，探讨了2014年至2020年间中国中东部地区冬季PM2.5变化中，<B>排放驱动的气溶胶-气象反馈</B>的影响。研究使用了WRF模型，重点关注了<B>气溶胶辐射相互作用（ARI）</B>和<B>气溶胶云相互作用（ACI）</B>对PM2.5浓度的影响，揭示了排放驱动的气溶胶与气象因素之间的复杂相互作用，有助于更准确地评估排放控制措施对空气质量的影响，对于制定有效的区域空气污染控制策略具有重要参考价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Seasonal isoprene emission estimates over tropical South America inferred from satellite observations of isoprene</section>
+            <section class="paper-authors">Shihan Sun, Paul I. Palmer, Richard Siddans, Brian J. Kerridge, Lucy Ventress, Achim Edtbauer, Akima Ringsdorf, Eva Y. Pfannerstill, Jonathan Williams</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15801-2025" target="_blank">https://doi.org/10.5194/acp-25-15801-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">异戊二烯</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">排放估算</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15801-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《从卫星观测异戊二烯推断的热带南美洲季节性异戊二烯排放估算》，利用<B>卫星观测数据</B>（CrIS和TROPOMI）反演<B>亚马逊地区</B>的<B>异戊二烯排放量</B>，并使用GEOS-Chem模型进行验证。研究结果表明，通过卫星数据反演的异戊二烯排放量与地面观测数据和甲醛柱浓度数据更吻合，有助于更好地理解亚马逊地区的异戊二烯排放情况。研究重点关注异戊二烯的排放估算、卫星数据验证以及模型对比分析，有助于提高对亚马逊地区生物排放的认知，进而为全球气候变化研究提供参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Ten years of measurements (2012–2022) of the atmospheric composition at Saclay/SIRTA Observatory in the Ile de France Region as part of ICOS and ACTRIS</section>
+            <section class="paper-authors">Laura Bouillon, Valérie Gros, Morgan Lopez, Nicolas Bonnaire, Carole Philippon, Camille Yver Kwok, Leslie David, Olivier Perrussel, Olivier Sanchez, Simone Kotthaus, Jean-Eudes Petit, Philippe Ciais, Michel Ramonet</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2025-602" target="_blank">https://doi.org/10.5194/essd-2025-602</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气成分</span>
+                        <span class="topic-tag">城市排放</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2025-602" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《作为 ICOS 和 ACTRIS 的一部分，在法兰西岛地区 Saclay/SIRTA 观测站 10 年（2012-2022 年）的大气成分测量》，介绍了在巴黎郊外的Saclay观测站进行的为期十年的<B>大气成分监测</B>，重点关注温室气体、反应性气体以及碳质气溶胶，并评估了<B>城市排放</B>对大气成分的影响。研究通过比较不同风向下观测站的数据，揭示了与交通相关的污染物排放量显著下降的趋势。该研究通过长期地面观测，为大气污染控制策略的评估提供了参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Estimation of nighttime aerosol optical depths using the ground-based microwave radiometer</section>
+            <section class="paper-authors">Guanyu Liu, Jing Li, Sheng Yue, Lulu Zhang, Chongzhao Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-6705-2025" target="_blank">https://doi.org/10.5194/amt-18-6705-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">微波辐射计</span>
+                        <span class="topic-tag">地面遥感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-6705-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《利用地面微波辐射计估算夜间气溶胶光学厚度》，介绍了一种利用<B>地面微波辐射计</B>反演<B>夜间气溶胶光学厚度（AOD）</B>的新方法。通过训练微波辐射计在K波段和V波段的亮度温度数据，结合太阳光度计的白天光谱AOD测量值和温度廓线，来反演夜间AOD，并验证了该方法的物理基础。这项研究为从地面估计夜间气溶胶载荷提供了一种有效且方便的方法，能够实现全天候气溶胶监测，为环境监测和气候强迫研究提供新的手段。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Intercomparison of global ground-level ozone datasets for health-relevant metrics</section>
+            <section class="paper-authors">Hantao Wang, Kazuyuki Miyazaki, Haitong Zhe Sun, Zhen Qu, Xiang Liu, Antje Inness, Martin Schultz, Sabine Schröder, Marc Serre, J. Jason West</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15969-2025" target="_blank">https://doi.org/10.5194/acp-25-15969-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">地面臭氧</span>
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">健康影响评估</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15969-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《全球地面臭氧数据集的健康相关指标对比》，对比了六个全球<B>地面臭氧</B>数据集，这些数据集使用<B>地统计学</B>、<B>机器学习</B>或<B>化学再分析</B>方法开发。研究发现这些数据集在臭氧浓度和趋势上存在显著差异，并通过与观测数据对比，评估了它们的性能。研究结果显示，大多数数据集高估了臭氧浓度，特别是在较低的观测浓度下。在2016年，所有站点的网格到网格R2范围为0.50到0.75，RMSE为4.25到12.22 ppb。研究结果表明，数据集在全球平均臭氧浓度、多年趋势和区域分布上存在显著差异。该研究强调了提高全球臭氧分布估算准确性的必要性，这对于评估臭氧对健康的影响至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">All-sky direct aerosol radiative effects estimated from integrated A-Train satellite measurements</section>
+            <section class="paper-authors">Meloë S. F. Kacenelenbogen, Ralph Kuehn, Nandana D. Amarasinghe, Kerry G. Meyer, Edward P. Nowottnick, Mark A. Vaughan, Hong Chen, Sebastian Schmidt, Richard A. Ferrare, Johnathan W. Hair, Robert C. Levy, Hongbin Yu, Paquita Zuidema, Robert Holz, Willem Marais</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15875-2025" target="_blank">https://doi.org/10.5194/acp-25-15875-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶辐射效应</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">大气辐射平衡</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15875-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《综合A-Train卫星测量估算的全天候直接气溶胶辐射效应》，主要关注利用A-Train<B>卫星星座</B>的综合观测数据，结合<B>CALIOP和MODIS</B>等传感器的气溶胶和云特性数据，以及MERRA-2全球再分析资料，来估算<B>全天候条件下气溶胶的直接辐射效应（DARE）</B>。研究重点是改进卫星数据计算DARE的方法，以减少气溶胶对太阳辐射影响的不确定性。该论文通过与ORACLES飞机实验的测量结果进行对比，验证了卫星计算DARE的准确性。本研究为气候变化和空气质量评估提供重要信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Modeling of Methyl Hydroperoxide Observations in Urban and Remote Air Over South Korea: Methylperoxy Radical Chemistry and Inference of Atmospheric Methanediol</section>
+            <section class="paper-authors">L. H. Yang, D. J. Jacob, K. H. Bates, H. Lin, H. M. Allen, J.‐F. Müller, S. S. Brown, R. Dang, N. K. Colombi, S. Zhai, R. M. Yantosca, J. F. Brewer, N. L. Ng, J. D. Crounse, P. O. Wennberg, K. Li, H. Liao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL118267" target="_blank">https://doi.org/10.1029/2025GL118267</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">大气成分分析</span>
+                        <span class="topic-tag">甲基氢过氧化物</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL118267" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《韩国城市和偏远地区甲基氢过氧化物观测的建模：甲基过氧自由基化学和大气甲二醇的推断》，探讨了韩国城市和偏远地区<B>甲基氢过氧化物（MHP）</B>的观测建模。通过将甲二醇（MD）化学纳入模型，提高了对甲酸来源的估算，并探讨了不同NO浓度条件下VOC氧化的化学机制。这项研究对深入理解大气氧化过程和更准确地评估有机污染物的转化与归宿具有重要作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Evaluation of cloud height, optical thickness, and phase retrievals from the CHROMA algorithm applied to Sentinel-3 OLCI data</section>
+            <section class="paper-authors">Andrew M. Sayer, Brian Cairns, Kirk D. Knobelspiesse, Luca Lelli, Chamara Rajapakshe, Scott E. Giangrande, Gareth E. Thomas, Damao Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-6681-2025" target="_blank">https://doi.org/10.5194/amt-18-6681-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">云高</span>
+                        <span class="topic-tag">云光学厚度</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-6681-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《评估应用于Sentinel-3 OLCI数据的CHROMA算法对云高、光学厚度和相态的检索》，主要关注利用<B>卫星遥感技术</B>反演<B>云的高度、光学厚度和相态</B>。它评估了应用于<B>Sentinel-3 OLCI</B>数据的<B>CHROMA算法</B>的性能，并将其结果与地面观测数据以及其他卫星数据进行了比较，旨在验证和改进云参数的反演算法，提高了对云的物理和辐射特性的理解，有助于更准确地评估云对气候变化的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Speciated measurement of bicyclic peroxy  radicals via iodide-CIMS and its implication on OH-initiated aromatic oxidation</section>
+            <section class="paper-authors">Yi Liu, Xin Li, Ying Liu, Shuyu He, Yuqing Qiu, Mengdi Song, Jiarong Ye, Shengrong Lou, Sihua Lu, Limin Zeng, Yuanhang Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15819-2025" target="_blank">https://doi.org/10.5194/acp-25-15819-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">大气成分分析</span>
+                        <span class="topic-tag">芳香烃</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15819-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《通过碘化物CIMS对双环过氧自由基进行分类测量及其对OH引发的芳香族氧化反应的影响》，开发了一种定量测量<B>芳香烃分解</B>过程中形成的<B>过氧自由基</B>的方法，并使用<B>碘化物化学电离质谱仪（Vocus AIM）</B>对<B>双环过氧自由基（BPRs）</B>进行定量测量。研究发现，在低氮氧化物条件下，双环途径在OH引发的芳香烃氧化过程中占主导地位，并揭示了现有的化学机制中存在未被考虑的反应途径。该研究对于改进大气化学模型和提高空气质量预测的准确性具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Biomass burning smoke transport and radiative impact over the city of São Paulo: an extreme event case study</section>
+            <section class="paper-authors">Jorge Rosas Santana, Gabriela Lima da Silva, Marcia Akemi Yamasoe, Nilton Èvora do Rosario</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15935-2025" target="_blank">https://doi.org/10.5194/acp-25-15935-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">生物质燃烧烟雾</span>
+                        <span class="topic-tag">卫星数据</span>
+                        <span class="topic-tag">辐射影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15935-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《生物质燃烧烟雾在圣保罗市的输送和辐射影响：一个极端事件案例研究》，探讨了2019年8月19日发生在巴西圣保罗市的一次极端事件，即<B>南美洲野火</B>产生的<B>烟雾与云层</B>混合导致中午时分天空变暗的现象。研究利用<B>卫星数据</B>、<B>地面测量</B>和气团模型追踪了来自巴西、玻利维亚和巴拉圭火灾的烟雾，这些烟雾在两天内被输送到圣保罗。烟雾与云的相互作用使地表辐照度在40分钟内降至零，并使辐射效率提高了7%，突出了对空气质量和<B>辐射平衡</B>的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurement of the ice-nucleating particle concentration using a mobile filter-based sampler on-board of a fixed-wing uncrewed aerial vehicle during the Pallas Cloud Experiment 2022</section>
+            <section class="paper-authors">Alexander Böhmländer, Larissa Lacher, Kristina Höhler, David Brus, Konstantinos-Matthaios Doulgeris, Jessica Girdwood, Thomas Leisner, Ottmar Möhler</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-6157-2025" target="_blank">https://doi.org/10.5194/essd-17-6157-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰核粒子</span>
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">无人机</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-6157-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《在Pallas Cloud Experiment 2022期间使用固定翼无人机上基于移动过滤器的采样器测量冰核颗粒浓度》，主要关注利用<B>无人机</B>搭载的<B>过滤器采样器</B>测量芬兰拉普兰地区不同高度的<B>冰核粒子（INP）浓度</B>。该研究通过原位采样，直接分析大气气溶胶的成冰特性，可以为更好地理解该地区INP的来源、生命周期和分布，以及它们对云相的影响提供重要的原位测量数据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Differences between daytime and nighttime in the impacts of anthropogenic aerosol-radiative-cloud interaction on the summer precipitation over the mid-lower Yangtze River Basin</section>
+            <section class="paper-authors">Zhuohui Wang, Shu Li, Anning Huang, Xinsheng Zhu, Tijian Wang, Bingliang Zhuang, Mengmeng Li, Rongchang Wu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121687" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121687</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">云相互作用</span>
+                        <span class="topic-tag">降水</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121687" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《人为气溶胶-辐射-云相互作用对长江中下游地区夏季降水影响的昼夜差异》，主要探讨了<B>人为气溶胶辐射相互作用（ARI）和气溶胶云相互作用（ACI）</B>对长江中下游地区<B>夏季降水</B>的影响，并着重分析了<B>昼夜差异</B>。研究使用了区域气候模型RegCM5来模拟这些相互作用，并量化了它们对降水的影响程度。该研究为改进气候模型和提高降水预测的准确性提供了依据，对于更好地理解和应对气候变化具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Role of aerosol–cloud–radiation interactions in modulating summertime quasi-biweekly rainfall  intensity over South China</section>
+            <section class="paper-authors">Hongli Chen, Pang-Chi Hsu, Anbao Zhu, Xiaoyan Ma</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15765-2025" target="_blank">https://doi.org/10.5194/acp-25-15765-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">云微物理过程</span>
+                        <span class="topic-tag">降雨强度</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15765-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《气溶胶-云-辐射相互作用在调节中国南方夏季准双周降雨强度的作用》，探讨了气溶胶-云-辐射相互作用对中国南方夏季准双周降雨强度的影响。研究发现，<B>气溶胶</B>主要通过<B>云微物理过程</B>增强降雨变率，辐射效应起次要作用，从而加剧了长时间的强降雨事件。研究使用了<B>观测数据</B>和<B>WRF-Chem模型</B>进行了模拟，并分析气溶胶光学深度等指标。 该研究强调了改进气溶胶-云微物理参数化对于提高华南地区强降雨预测准确性的必要性，并提高了我们对气溶胶-云-降水相互作用的认识。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurement of the ice-nucleating particle concentration with the Portable Ice Nucleation Experiment during the Pallas Cloud Experiment 2022</section>
+            <section class="paper-authors">Alexander Böhmländer, Larissa Lacher, Romy Fösig, Nicole Büttner, Jens Nadolny, David Brus, Konstantinos-Matthaios Doulgeris, Ottmar Möhler</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-6165-2025" target="_blank">https://doi.org/10.5194/essd-17-6165-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰核粒子</span>
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">云特性</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-6165-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《在Pallas Cloud Experiment 2022期间使用便携式冰成核实验测量冰核颗粒浓度》，介绍了在北极地区进行的<B>PINE实验</B>，该实验测量了不同温度下的<B>冰核粒子（INPs）浓度</B>，用于研究<B>气溶胶对云特性的影响</B>，并结合气象数据和粒径分布数据来分析INP的来源和性质。该研究为评估气溶胶和云的相互作用以及提高气候模型的准确性提供了科学依据，并为云微物理过程的研究提供了重要的数据支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Larger than expected organic acid yields from the multi-generation oxidation of petrochemical alkenes</section>
+            <section class="paper-authors">Baocong Zhao, Luxin Ren, Sihao Lin, Yongpeng Ji, Jiaxin Wang, Tao Ma, Yuemeng Ji, Taicheng An</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-16041-2025" target="_blank">https://doi.org/10.5194/acp-25-16041-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有机酸</span>
+                        <span class="topic-tag">烯烃</span>
+                        <span class="topic-tag">大气氧化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-16041-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《来自石化烯烃的多代氧化反应产生的有机酸产量高于预期》，通过量子化学计算和动力学模型模拟，探讨了石化来源<B>烯烃</B>（特别是2-丁烯）的<B>大气氧化</B>过程，以及该过程对<B>有机酸</B>形成的影响。研究发现，在NO存在的情况下，2-丁烯与OH自由基的反应会经过多代氧化过程，产生大量的乙酸。该研究揭示了烯烃氧化是大气中有机酸的重要来源，尤其是在石化区域，因此，为了提升空气质量，加强工业烯烃排放管理十分重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Long-term satellite trends of European lower-tropospheric ozone from 1996–2017</section>
+            <section class="paper-authors">Matilda A. Pimlott, Richard J. Pope, Brian J. Kerridge, Richard Siddans, Barry G. Latter, Wuhu Feng, Martyn P. Chipperfield</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15991-2025" target="_blank">https://doi.org/10.5194/acp-25-15991-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">对流层臭氧</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">大气成分分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15991-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《1996-2017年欧洲对流层低层臭氧的长期卫星趋势》，主要分析了1996年至2017年间欧洲地区<B>对流层低层臭氧</B>的长期变化趋势。研究使用了GOME、SCIAMACHY和OMI等<B>紫外探测器</B>的<B>卫星数据</B>，并与TOMCAT化学传输模型模拟结果和臭氧探空仪测量结果进行了对比。研究发现，卫星记录显示出中度的负趋势，而模型模拟和臭氧探空仪测量则显示趋势不明显。论文还探讨了排放和气象变化对对流层低层臭氧的影响，并分析了平流层臭氧向自由对流层的输送。研究结果表明，1996年至2018年间欧洲对流层低层臭氧趋势相对稳定，排放和气象变化的影响有限。该研究旨在评估欧洲地区对流层低层臭氧的长期变化趋势，并探讨其潜在驱动因素，为空气质量监测和大气成分分析提供参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Surfactants regulate the mixing state of organic-inorganic mixed aerosols undergoing liquid-liquid phase separation</section>
+            <section class="paper-authors">Younuo Fan, Qiong Li, Min Zhou, Jiuyi Sun, Shuaishuai Ma, Tianyou Xu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15857-2025" target="_blank">https://doi.org/10.5194/acp-25-15857-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气气溶胶</span>
+                        <span class="topic-tag">液-液相分离</span>
+                        <span class="topic-tag">表面活性剂</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15857-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《表面活性剂调节经历液-液相分离的有机-无机混合气溶胶的混合状态》，探讨了<B>表面活性剂</B>对<B>有机-无机混合气溶胶液-液相分离</B>的影响，以及由此产生的<B>气溶胶混合状态</B>。研究发现，表面活性剂的存在会改变有机相和无机相的铺展系数，从而导致相分离颗粒的形态发生变化，这些形态变化可以显著地影响气溶胶的性质。该研究与大气环境遥感技术间接相关，因为它提供了改进大气模型和提高遥感数据解释准确性的基础。通过揭示表面活性剂在气溶胶混合状态中所起的作用，该研究有助于更好地理解大气化学和气候过程。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Laboratory characterization of furan, 2(3H)-furanone, 2-furaldehyde, 2,5-dimethylfuran, and maleic anhydride measured by PTR-ToF-MS</section>
+            <section class="paper-authors">Wade Permar, Mercedes Tucker, Lu Hu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-6645-2025" target="_blank">https://doi.org/10.5194/amt-18-6645-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">挥发性有机物</span>
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">生物质燃烧</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-6645-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《通过PTR-ToF-MS测量的呋喃、2(3H)-呋喃酮、2-糠醛、2,5-二甲基呋喃和马来酸酐的实验室表征》，主要关注使用质子转移反应飞行时间质谱（PTR-ToF-MS）技术对大气中五种<B>呋喃类化合物</B>的实验室表征，特别是这些化合物对挥发性有机物的影响。该研究对于理解大气成分、评估生物质燃烧对空气质量的影响具有重要意义，并为大气环境监测提供更精准的测量技术。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Diurnal aging of biomass burning emissions: impacts on secondary organic aerosol formation and oxidative potential</section>
+            <section class="paper-authors">Maria P. Georgopoulou, Kalliopi Florou, Angeliki Matrali, Georgia Starida, Christos Kaltsonoudis, Athanasios Nenes, Spyros N. Pandis</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-15835-2025" target="_blank">https://doi.org/10.5194/acp-25-15835-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">生物质燃烧气溶胶</span>
+                        <span class="topic-tag">二次有机气溶胶</span>
+                        <span class="topic-tag">氧化潜力</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-15835-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《生物质燃烧排放物的日间老化：对二次有机气溶胶形成和氧化潜力的影响》，主要探讨了生物质燃烧排放物在大气中经历<B>昼夜循环老化</B>后，对<B>二次有机气溶胶（SOA）</B>形成和<B>氧化潜力</B>的影响。研究结果表明，生物质燃烧排放物的老化会增加SOA的形成和氧化潜力。虽然该研究没有直接使用遥感技术或卫星观测，但它关注的气溶胶成分、空气质量和大气成分分析等主题与大气环境遥感技术密切相关。通过在实验室大气模拟舱中模拟生物质燃烧排放的老化过程，可以为改进空气质量模型提供数据支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Radon-222 monitoring at German ICOS atmosphere stations</section>
+            <section class="paper-authors">Maksym Gachkivskyi, Ute Karstens, Bernd Fischer, Dagmar Kubistin, Jennifer Müller-Williams, Matthias Lindauer, Ingeborg Levin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-6173-2025" target="_blank">https://doi.org/10.5194/essd-17-6173-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氡-222</span>
+                        <span class="topic-tag">大气示踪剂</span>
+                        <span class="topic-tag">气团区分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-6173-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《德国ICOS大气站的氡-222监测》，主要探讨了利用<B>氡-222（222Rn）</B>作为<B>示踪剂</B>来区分不同来源的气团，并验证<B>大气传输模型</B>，展示一种示踪气体在空气质量研究中的应用方法。论文介绍了在德国ICOS大气监测站使用Heidelberg Radon Monitor (HRM) 测量钋-214 (Po) 的方法，并利用Po的测量值来推断大气中氡-222的活度浓度。该研究为理解大气环境和验证大气传输模型提供了参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Urban ozone trends in Europe and the USA (2000–2021)</section>
+            <section class="paper-authors">Beth S. Nelson, Will S. Drysdale</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-16009-2025" target="_blank">https://doi.org/10.5194/acp-25-16009-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧</span>
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">地表监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-16009-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究题为《欧洲和美国城市臭氧趋势（2000-2021年）》，探讨了2000年至2021年期间欧洲和美国城市地区的<B>臭氧</B>变化趋势。它使用了来自TOAR-II和欧洲环境署数据库的<B>地表监测站数据</B>，分析了臭氧浓度随时间的变化，并识别出不同区域的趋势模式。研究发现，欧洲大多数高臭氧季节的趋势呈下降趋势，但暖季和冷季的低臭氧值呈上升趋势。美国的情况类似，但暖季低臭氧的上升趋势较少。使用分段分位数回归（PQR）分析，在2000-2021年期间对353个时间序列（204个欧洲，149个美国）进行了分析，结果表明，欧洲许多站点的高确定性趋势在第5和第50分位数呈上升趋势，而在第95分位数中，大多数高确定性趋势呈下降趋势。该研究使用地表监测数据来评估大气成分的变化，并识别不同区域的趋势模式。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
