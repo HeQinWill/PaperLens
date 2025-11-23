@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/11/23</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Inversion of hourly NO<sub>x</sub> emissions through air quality monitoring data and deep learning response surface modeling</section>
+            <section class="paper-authors">Ziyi Liu, Yun Zhu, Ji-cheng Jang, Zhaoxin Dong, Jia Xing, Bin Zhao, Jinying Li, Qipeng Wen, Dian Ding, Yujie Qin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121695" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121695</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">氮氧化物排放</span>
+                        <span class="topic-tag">深度学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121695" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《通过空气质量监测数据和深度学习响应面建模反演小时NOx排放》。该研究通过<b>空气质量监测数据</b>和<b>深度学习响应面模型</b>，反演了hourly的<b>氮氧化物（NOx）排放量</b>。研究结果表明，反演后的 NOx 排放量比先验估计值降低了 12.5%，并且改变了<b>大气氧化能力</b>，扩大了白天 <b>VOC 限制区域</b>。此外，研究还评估了<b>红色预警措施</b>在污染事件中对达到空气质量标准的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Synergistic effect of absorbing aerosols on the heat wave intensification over India: A case study of the 2024 extreme event using RegCM5 model</section>
+            <section class="paper-authors">C.S. Neethu, B. Abish, Athira P. Ratnakaran</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121673" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121673</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">吸收性气溶胶</span>
+                        <span class="topic-tag">气候模型</span>
+                        <span class="topic-tag">印度热浪</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121673" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《吸收性气溶胶对印度热浪强化的协同效应：使用RegCM5模型对2024年极端事件的案例研究》。研究使用<b>RegCM5区域气候模型</b>，结合<b>MERRA-2气溶胶光学厚度数据</b>和<b>印度气象部门的观测数据</b>，分析了气溶胶如何通过影响辐射通量，进而加剧<b>地表和大气变暖</b>，最终导致<b>热浪</b>的增强。研究发现，<b>黑碳</b>和<b>沙尘</b>都导致了地表短波辐射增加和向上长波辐射增加，引起地表能量不平衡，从而导致低层大气变暖和湿度降低，抑制了对流，延迟了季风的到来。该研究强调了<b>气溶胶-辐射相互作用</b>在热浪发生和持续中的关键作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Key Role of Nitrogen-containing Oxygenated Organic Molecules (OOMs) in SOA Formation Evidenced by OH/NO3-induced Terpinolene Oxidation</section>
+            <section class="paper-authors">Hongjin Wu, Juan Dang, Xiaomeng Zhang, Weichen Yang, Shuai Tian, Shibo Zhang, Qingzhu Zhang, Wenxing Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-16435-2025" target="_blank">https://doi.org/10.5194/acp-25-16435-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二次有机气溶胶</span>
+                        <span class="topic-tag">含氮有机物</span>
+                        <span class="topic-tag">大气氧化机制</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-16435-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《含氮氧化有机分子(OOMs)在SOA形成中的关键作用由OH/NO3诱导的萜品烯氧化所证实》。该研究探讨了<b>萜品烯</b>（一种与柠檬烯同分异构体）在<b>OH自由基</b>和<b>NO3自由基</b>作用下的<b>氧化机制</b>，重点关注了<b>含氮氧化有机分子（RONO2 OOMs）</b>的形成及其对<b>二次有机气溶胶（SOA）</b>生成的影响。研究通过<b>化学模型</b>模拟了不同大气条件下OOMs的生成过程和产率，发现NO3自由基驱动的氧化反应中，通过键断裂转移自由基中心引发的新一轮自氧化是高产率RONO2 OOMs形成的关键。由于RONO2 OOMs具有较低的有效饱和浓度，更容易进入颗粒相，从而影响大气颗粒物的组成和空气质量。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Sensitivity of Regional WRF‐Chem Air Quality and Weather Simulations to Biomass‐Burning Emission Data Sets: A Case Study of the Impact of Canadian Wildfire on the US</section>
+            <section class="paper-authors">Sicheng Wu, Rajesh Kumar, Peiyuan Li, Rao Kotamarthi, Scott Collis, Shima Shams, Ashish Sharma</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043944" target="_blank">https://doi.org/10.1029/2025JD043944</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">生物质燃烧</span>
+                        <span class="topic-tag">WRF-Chem模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043944" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《区域WRF-Chem空气质量和天气模拟对生物质燃烧排放数据集的敏感性：加拿大野火对美国影响的案例研究》。论文主要关注2023年6月<b>加拿大野火</b>对美国中西部<b>空气质量</b>的影响。论文使用<b>WRF-Chem模型</b>和多个<b>生物质燃烧数据集</b>，分析了气溶胶从加拿大到美国的传输过程，并评估了模型在预测<b>PM2.5</b>、<b>O3</b>、<b>CO</b>和<b>气溶胶天气反馈</b>方面的准确性。研究结果表明，模型显著低估了<b>气溶胶光学厚度（AOD）</b>、PM2.5和O3浓度，导致温度高估。其中，QFED数据集的预测结果相对较好。这项研究强调了改进野火排放估算对于提高空气质量和天气反馈预测的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Conflict-induced ship traffic disruptions constrain cloud sensitivity to stricter marine pollution regulations</section>
+            <section class="paper-authors">Michael S. Diamond, Lili F. Boss</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-16401-2025" target="_blank">https://doi.org/10.5194/acp-25-16401-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">船舶污染</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-16401-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《冲突引发的船舶交通中断限制了更严格的海洋污染法规对云的敏感性》。论文探讨了<b>航运污染</b>对<b>云</b>的影响，并利用2020年开始实施的更严格的船舶污染法规前后船舶交通变化的数据，量化了船舶污染改变云特性的程度。研究使用了<b>氮氧化物</b>等大气成分的<b>卫星观测数据</b>，分析了低硫燃料政策对<b>云滴数量浓度</b>等云微物理特性的影响。该研究利用2023年红海地区的冲突造成的航运线路变化，进一步研究了硫排放法规对云的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Factors controlling short-term variability of light-absorption characteristics at a Mediterranean city impacted by severe residential wood burning emissions</section>
+            <section class="paper-authors">D.G. Kaskaoutis, G. Grivas, R.E.P. Sotiropoulou, I. Stavroulas, A. Bougiatioti, E. Tagaris, N. Mihalopoulos</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121702" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121702</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳棕碳吸收</span>
+                        <span class="topic-tag">气溶胶</span>
+                        <span class="topic-tag">空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121702" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《受严重的居民燃木排放影响的地中海城市光吸收特性短期变化的影响因素》。研究重点在于区分由<b>化石燃料</b>、<b>生物质燃烧</b>和<b>二次气溶胶形成</b>产生的五种吸收成分，并探讨了<b>一次和二次BrC吸收</b>对生物质来源和大气混合的依赖性。该研究通过对比<b>冬季和夏季的BrC吸收特性</b>，揭示了不同来源和大气过程对吸收特性的影响，从而深入理解了城市<b>碳气溶胶</b>的辐射效应。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Satellite Imagery Reveals Near‐Horizon Urban Light Emissions Impacting Ambient Environment</section>
+            <section class="paper-authors">Miroslav Kocifaj, Ladislav Kómar</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD045452" target="_blank">https://doi.org/10.1029/2025JD045452</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星图像</span>
+                        <span class="topic-tag">光污染</span>
+                        <span class="topic-tag">气溶胶</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD045452" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《卫星图像揭示了影响环境的近地平线城市光排放》。论文关注利用<b>卫星图像</b>来分析<b>城市近地平线的光排放</b>对环境的影响。提出了一种新方法，通过分析<b>城市周围的漫射光晕</b>，特别是卫星观测到的城市边界内外的辐射值，来确定城市光向上半球低仰角方向的排放比例。该研究强调了<b>气溶胶光学厚度</b>和城市周围气溶胶分层对该方法的影响，表明了大气成分对光污染传播的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The ice supersaturation biases limiting contrail modelling are structured around extratropical depressions</section>
+            <section class="paper-authors">Oliver G. A. Driver, Marc E. J. Stettler, Edward Gryspeerdt</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-16411-2025" target="_blank">https://doi.org/10.5194/acp-25-16411-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">对流尾迹</span>
+                        <span class="topic-tag">冰超饱和</span>
+                        <span class="topic-tag">温带气旋</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-16411-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《限制对流尾迹建模的冰超饱和偏差围绕温带气旋形成》。论文探讨了<b>对流尾迹</b>（飞机尾气形成的冰云）的建模偏差问题，这些偏差与北大西洋的温带气旋有关。论文指出，气象模型在预测<b>冰超饱和区域（ISSRs）</b>的出现方面存在不足，这限制了对流尾迹的建模。研究重点关注了<b>ERA5再分析数据</b>，揭示了ISSRs的结构受到这些气旋系统的影响，特别是在干侵入和暖输送带区域。论文还评估了模型在不同区域的ISSRs预测性能，并探讨了湿度缩放方法对改善预测的潜力。总的来说，这项研究旨在提高ISSRs的预测能力，从而更好地评估和减轻航空对气候的影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Harmonisation of sixteen tropospheric ozone satellite data records</section>
+            <section class="paper-authors">Arno Keppens, Daan Hubert, José Granville, Oindrila Nath, Jean-Christopher Lambert, Catherine Wespes, Pierre-François Coheur, Cathy Clerbaux, Anne Boynard, Richard Siddans, Barry Latter, Brian Kerridge, Serena Di Pede, Pepijn Veefkind, Juan Cuesta, Gaelle Dufour, Klaus-Peter Heue, Melanie Coldewey-Egbers, Diego Loyola, Andrea Orfanoz-Cheuquelaf, Swathi Maratt Satheesan, Kai-Uwe Eichmann, Alexei Rozanov, Viktoria F. Sofieva, Jerald R. Ziemke, Antje Inness, Roeland Van Malderen, Lars Hoffmann</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-6893-2025" target="_blank">https://doi.org/10.5194/amt-18-6893-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">对流层臭氧</span>
+                        <span class="topic-tag">卫星数据</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-6893-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《协调十六项对流层臭氧卫星数据记录》。该论文主要关注利用<b>卫星数据记录</b>协调和评估<b>对流层臭氧</b>。论文探讨了不同卫星传感器测量数据之间的差异，并提出了四种<b>协调方法</b>，旨在减少这些差异，从而提高对流层臭氧空间分布、季节性变化和长期变化的评估准确性。研究结果表明，尽管协调工作可以减少产品间差异，但<b>测量不确定性</b>仍然是对流层臭氧卫星观测评估的主要挑战。研究使用了来自十六个不同卫星臭氧产品的观测数据，并与地面臭氧探空仪数据进行对比验证。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Underestimation of atmospheric oxidized mercury at a mountaintop site by the GEOS-Chem chemical transport model</section>
+            <section class="paper-authors">Tyler R. Elgiar, Loknath Dhar, Lynne Gratz, A. Gannet Hallar, Rainer Volkamer, Seth N. Lyman</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-16387-2025" target="_blank">https://doi.org/10.5194/acp-25-16387-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气氧化汞</span>
+                        <span class="topic-tag">GEOS-Chem模型</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-16387-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《GEOS-Chem化学传输模型对山顶站点大气氧化汞的低估》。该研究对比了经验证的大气汞测量数据与GEOS-Chem光化学传输模型的输出结果。研究发现，即使在模型中增强了氧化速率的情况下，该模型仍无法准确重现观测到的大气氧化汞浓度。研究人员在美国科罗拉多州的一个<b>山顶站点</b>收集了测量数据，并使用<b>双通道大气氧化汞测量系统</b>对大气中的氧化汞化合物进行精确定量。结果表明，GEOS-Chem模型不仅<b>低估了净汞氧化</b>，还<b>高估了氧化汞的沉降</b>。该研究强调了模型在模拟大气汞行为方面的局限性，并指出了未来研究需要改进的方向。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Ship‐Based Lidar Evaluation of Southern Ocean Low Clouds in the Storm‐Resolving General Circulation Model ICON and the ERA5 and MERRA‐2 Reanalyses</section>
+            <section class="paper-authors">Peter Kuma, Frida A.‐M. Bender, Adrian J. McDonald, Simon P. Alexander, Greg M. McFarquhar, John J. Cassano, Graeme E. Plank, Sean Hartery, Simon Parsons, Sally Garrett, Alex J. Schuddeboom, Anna Possner</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2024JD043145" target="_blank">https://doi.org/10.1029/2024JD043145</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">南大洋低云</span>
+                        <span class="topic-tag">激光雷达</span>
+                        <span class="topic-tag">气候模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2024JD043145" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《基于船舶的激光雷达评估风暴解析通用环流模型ICON以及ERA5和MERRA‐2再分析中的南大洋低云》。该研究主要关注<b>南大洋低云</b>的模拟和评估，使用了包括<b>地基激光雷达</b>在内的多种观测数据，以及<b>ERA5</b>和<b>MERRA-2再分析资料</b>以及<b>ICON气候模型</b>。该研究评估了这些模型和再分析资料对云的模拟能力，并揭示了它们在模拟南大洋低云方面存在的偏差。云对辐射平衡有重要影响，因此这项研究间接与大气环境相关，特别是通过评估云对短波辐射的影响。此外，论文中使用了地基激光雷达模拟器。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The MATS satellite: limb image data processing and calibration</section>
+            <section class="paper-authors">Linda Megner, Jörg Gumbel, Ole Martin Christensen, Björn Linder, Donal P. Murtagh, Nickolay Ivchenko, Lukas Krasauskas, Jonas Hedin, Joachim Dillner, Gabriel Giono, Georgi Olentsenko, Louis Kern, Joakim Möller, Ida-Sofia Skyman, Jacek Stegman</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-6869-2025" target="_blank">https://doi.org/10.5194/amt-18-6869-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气重力波</span>
+                        <span class="topic-tag">临边成像</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-6869-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文题为《MATS卫星：临边图像数据处理与校准》介绍了<b>MATS卫星</b>的任务和数据处理流程。MATS卫星通过<b>临边成像技术</b>观测<b>大气重力波</b>、<b>气辉</b>和<b>夜光云</b>，旨在研究大气层不同高度之间的动量传输。论文伴随Level 1b数据集的公开发布，详细描述了图像处理、仪器校准以及数据的不确定性。该研究对于理解大气动力学和组成提供了基础数据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Lightning Characteristics of Atmospheric Rivers Over the Americas Observed by GOES‐16</section>
+            <section class="paper-authors">Bin Guan, Duane E. Waliser, F. Martin Ralph, Minghua Zheng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL118477" target="_blank">https://doi.org/10.1029/2025GL118477</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">闪电</span>
+                        <span class="topic-tag">大气河流</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL118477" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《GOES‐16观测到的美洲大气河流的闪电特征》。该研究利用<b>GOES-16卫星</b>的观测数据，分析了<b>美洲地区大气河流</b>对<b>闪电活动</b>的影响，重点关注了闪电的季节性和地理变化。研究使用来自MERRA-2再分析资料的大气河流数据库，通过<b>卫星观测数据</b>来理解大气过程。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Mesopause‐Region Gravity Wave Activity Due To Tropical Convection as Observed by AWE</section>
+            <section class="paper-authors">Jeffrey M. Forbes, Xiaoli Zhang, Jiarong Zhang, Stephen D. Eckermann, Yucheng Zhao, Pierre‐Dominique Pautet, Jun Ma, Ludger Scherliess, Michael J. Taylor</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL116924" target="_blank">https://doi.org/10.1029/2025GL116924</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">重力波</span>
+                        <span class="topic-tag">热带对流</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL116924" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《AWE观测到的由热带对流引起的中间层顶区域重力波活动》。研究主要探讨了由<b>热带对流</b>产生的<b>重力波</b>在<b>中间层顶区域</b>的活动。研究利用<b>大气波实验（AWE）</b>测量的<b>OH Q线发射</b>的方差来捕捉重力波活动，并使用<b>全球降水测量（GPM）</b>任务的<b>降水率</b>来识别对流活动区域。研究发现，重力波主要向东传播，并且其活动受到中间层风的影响。这项研究有助于我们理解对流层和空间天气之间的动态联系，并深入了解进入电离层-热层系统的重力波谱的变异性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
