@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/12/01</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Altitude Profile and Isotopic Composition for N2 From Pioneer Venus Mass Spectra</section>
+            <section class="paper-authors">R. Mogul, S. S. Limaye, M. J. Way</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL118909" target="_blank">https://doi.org/10.1029/2025GL118909</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气成分</span>
+                        <span class="topic-tag">氮同位素</span>
+                        <span class="topic-tag">行星大气</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL118909" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">题为“<b>先锋金星质谱仪N2高度剖面和同位素组成</b>”的研究论文，通过重新分析<b>先锋金星探测器</b>大型中性质量谱仪（LNMS）的数据，获得了迄今为止金星大气中N2的最高分辨率<b>高度剖面</b>和<b>同位素组成</b>。研究发现，N2在金星云层和云下大气（约59-15公里）中混合不均匀，但在深层低层大气（DLA，<15公里）中混合均匀。研究还提取了云层中N2的15N/14N比率，计算出δ15N值为-204 ± 35‰，并基于此提出了关于金星大气性质的推论，例如N2在>15公里处混合不良，<15公里处大气不稳定，以及云δ15N值介于太阳风和地球大气之间。研究使用了<b>质谱分析</b>方法，对金星大气成分进行了精确测量，虽然该研究主要关注金星大气，但其研究方法和研究对象与地球大气环境遥感技术，如<b>空气质量监测</b>和<b>大气成分分析</b>，具有一定的关联性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
