@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2025/12/03</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Closing the gap: an algorithmic approach to reconciling in-situ and remotely sensed aerosol properties</section>
+            <section class="paper-authors">Joseph S. Schlosser, Sanja Dmitrovic, Ryan Bennett, Brian Cairns, Gao Chen, Glenn S. Diskin, Richard A. Ferrare, Johnathan W. Hair, Michael A. Jones, Jeffrey S. Reid, Taylor J. Shingler, Michael A. Shook, Armin Sorooshian, Kenneth L. Thornhill, Luke D. Ziemba, Snorre Stamnes</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-7187-2025" target="_blank">https://doi.org/10.5194/amt-18-7187-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶属性</span>
+                        <span class="topic-tag">遥感反演</span>
+                        <span class="topic-tag">原位测量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-7187-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《缩小差距：一种协调原位和遥感气溶胶特性的算法方法》。本文介绍了一种方法，称为“原位气溶胶检索算法”(ISARA)，旨在通过将干燥的原位气溶胶光学和微物理特性转换为环境空气中的加湿等效物，从而实现原位气溶胶数据和<b>遥感数据</b>之间的闭合。我们将 ISARA 应用于 NASA 气溶胶云气象学相互作用在西大西洋实验 (ACTIVATE) 野外活动期间收集的气溶胶测量数据，以测试其生成在原位和<b>遥感平台</b>上物理一致的气溶胶特性的能力。总体而言，我们的结果表明，该研究可以支持各种野外活动和气溶胶状态下气溶胶数据集的系统且物理一致的闭合。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Machine learning-based retrieval of aerosol size and hygroscopicity using horizontal scanning LiDAR and PM data</section>
+            <section class="paper-authors">Juseon Shin, Juhyeon Sim, Matthias Tesche, Jihyun Yoon, Dukhyeon Kim, Youngmin Noh</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01276-6" target="_blank">https://doi.org/10.1038/s41612-025-01276-6</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶尺寸</span>
+                        <span class="topic-tag">气溶胶吸湿性</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01276-6" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《基于机器学习的使用水平扫描 LiDAR 和 PM 数据反演气溶胶尺寸和吸湿性》。这项研究整合了<b>原位 PM</b> 和<b>激光雷达数据</b>，以解决干质量浓度和湿光学测量之间的差异。使用机器学习反演（XGBoost，R2 = 0.98），从 PM 数据中检索了干态尺寸分布。应用米氏理论推导出干消光系数，而基于激光雷达的湿消光系数产生了<b>吸湿增长</b>。气溶胶类型使用随机森林进行分类（准确率为 83.4%），表明在这种沿海城市地区以粗糙的吸湿性气溶胶为主。这种方法表明，改进的气溶胶表征算法考虑了尺寸和吸湿性，支持了先进的空气质量和气候建模研究。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Ice Cloud Imager: retrieval of frozen water mass profiles</section>
+            <section class="paper-authors">Eleanor May, Patrick Eriksson</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-7243-2025" target="_blank">https://doi.org/10.5194/amt-18-7243-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰云</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">大气冰</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-7243-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《冰云成像仪：冰冻水团剖面的反演》。这项研究表明，ICI 观测对 10−2 和 1 g m−3 范围内的 IWC 敏感，并且性能在 3 到 14 公里的高度之间最强。我们的结果还表明，ICI 观测对高达 600 µm 的平均质量直径值敏感，尽管观察到成功反演高达 800 µm。总体而言，研究结果表明，由于同时存在微波和亚毫米波通道，ICI 可以填补这一空白，其中亚毫米波长对云冰具有特别高的敏感性。此外，ICI 观测的相对较宽的扫描带导致比<b>雷达和激光雷达产品</b>更高的空间和时间覆盖率。ICI 将提供的全球和长期数据集因此可以作为对基于 CloudSat 或 EarthCARE 的检索的宝贵补充。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Strong aerosol indirect radiative effect from dynamic-driven diurnal variations of cloud water adjustments</section>
+            <section class="paper-authors">Jiayi Li, Yang Wang, Jiming Li, Weiyuan Zhang, Lijie Zhang, Yuan Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-17455-2025" target="_blank">https://doi.org/10.5194/acp-25-17455-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶云相互作用</span>
+                        <span class="topic-tag">云水路径</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-17455-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《云水调整的动态驱动日变化产生的强气溶胶间接辐射效应》。气候预测的关键挑战之一是<b>云水</b>对气溶胶响应的不确定性，尤其是来自不清晰的日间微物理-动力学机制。<b>静止卫星</b>显示，忽略日变化会导致低估（高达 89 %）气溶胶扰动引起的云反照率变化所致的冷却效应。结果为气溶胶-云相互作用提供了新的见解，证实这是一个重要但经常被忽视的不确定性来源。本文利用 Himawari-8 卫星的观测数据，研究了澳大利亚西部和东海两个不同区域云的 LWP 调整。该研究着重强调了气溶胶-云相互作用日变化在减少气候预测不确定性中的关键作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A helicopter-based mass balance approach for quantifying methane emissions from industrial activities, applied for coal mine ventilation shafts in Poland</section>
+            <section class="paper-authors">Eric Förster, Heidi Huntrieser, Michael Lichtenstern, Falk Pätzold, Lutz Bretschneider, Andreas Schlerf, Sven Bollmann, Astrid Lampert, Jarosław Nęcki, Paweł Jagoda, Justyna Swolkień, Dominika Pasternak, Robert A. Field, Anke Roiger</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-7153-2025" target="_blank">https://doi.org/10.5194/amt-18-7153-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放</span>
+                        <span class="topic-tag">质量平衡方法</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-7153-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《基于直升机的质量平衡方法，用于量化工业活动中的甲烷排放，应用于波兰煤矿通风井》。为了准确量化<b>煤矿活动</b>中的<b>甲烷（CH4）排放</b>，本研究介绍了一种基于直升机的质量平衡方法，该方法利用 HELiPOD 平台。与传统的科研飞机相比，使用外部吊索负载配置无需航空认证，便于进行修改，并使当地直升机公司能够进行飞行。我们的方法充当独立的排放验证工具，弥合了地面、无人机、近场和远场机载测量之间的差距，并支持识别 CH4 减排机会。通过受控释放实验证明，使用 HELiPOD 可以检测到低至 20 kg h-1 的排放率。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">High-purity nitrous acid (HONO) generation and quantification using broadband cavity-enhanced  absorption spectroscopy (BBCEAS)</section>
+            <section class="paper-authors">Alexis P. Harper, Callum E. Flowerday, Zachary Giauque, Kaitlyn Brewster, Ryan Thalman, Jaron C. Hansen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-7221-2025" target="_blank">https://doi.org/10.5194/amt-18-7221-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">亚硝酸</span>
+                        <span class="topic-tag">大气成分分析</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-7221-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《使用宽带腔增强吸收光谱法 (BBCEAS) 生成和量化高纯度亚硝酸 (HONO)》。准确量化 HONO 对于<b>建模大气化学</b>至关重要，但由于环境浓度低、带入口的仪器中严重的壁损失以及共生二氧化氮 (NO2) 的干扰而通常具有挑战性。实验室生成方法经常难以产生高纯度和可用数量的 HONO。本研究介绍了一种简单、可扩展的方法，用于通过多起泡器系统中盐酸 (HCl) 和亚硝酸钠 (NaNO2) 的反应来生成相对于 NO2 的高纯度 HONO。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurement report: Size-resolved and seasonal variations in aerosol hygroscopicity dominated by organic formation and aging: insights from a year-long observation in Nanjing</section>
+            <section class="paper-authors">Junhui Zhang, Yuying Wang, Jialu Xu, Xiaofan Zuo, Chunsong Lu, Bin Zhu, Yuanjian Yang, Xing Yan, Yele Sun</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-17413-2025" target="_blank">https://doi.org/10.5194/acp-25-17413-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶吸湿性</span>
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">气候建模</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-17413-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《测量报告：以有机物的形成和老化为主导的气溶胶吸湿性的尺寸分辨和季节性变化：来自南京的为期一年的观测的见解》。研究对南京进行了为期一年的研究，以了解微小的<b>空气传播颗粒</b>如何吸收水分，这会影响空气质量和气候。我们发现，颗粒吸水率因季节和尺寸而异，由于有机物含量较高，夏季的吸水率较低。本地污染主要影响较小的颗粒，而较大的颗粒则受<b>气团传输</b>的影响。这些发现有助于改进<b>气候模型</b>，并支持快速发展城市中更好的空气污染控制。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Laser-Induced Fluorescence coupled with Machine Learning as an effective approach for real-time identification of bacteria in bioaerosols</section>
+            <section class="paper-authors">Alejandro Fontal, Sílvia Borràs, Lídia Cañas, Sofya Pozdniakova, Xavier Rodó</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-7297-2025" target="_blank">https://doi.org/10.5194/amt-18-7297-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">生物气溶胶</span>
+                        <span class="topic-tag">激光诱导荧光</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-7297-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《激光诱导荧光结合机器学习作为实时识别生物气溶胶中细菌的有效方法》。通过使用随机森林分类器，我们能够：(a) 检测细菌颗粒（96.74 % 的类平衡准确率），以及 (b) 区分不同物种（验证集中不同物种的 69.24 % 类平衡准确率）。这种创新方法为快速、精确地监测<b>空气传播的微生物群落</b>开辟了新的可能性，为生态研究和<b>公共卫生监测</b>提供了有价值的工具。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Optimizing CCN predictions through inferred modal aerosol composition – a boreal forest case study</section>
+            <section class="paper-authors">Rahul Ranjan, Maura Dewey, Liine Heikkinen, Lauri R. Ahonen, Krista Luoma, Paul Bowen, Tuukka Petäjä, Annica M. L. Ekman, Daniel G. Partridge, Ilona Riipinen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-17275-2025" target="_blank">https://doi.org/10.5194/acp-25-17275-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">云凝结核</span>
+                        <span class="topic-tag">气溶胶化学成分</span>
+                        <span class="topic-tag">反演建模</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-17275-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《通过推断模态气溶胶成分优化 CCN 预测——以北方森林案例研究》。研究使用博雷亚尔森林站点的多年云凝结核 (CCN) 测量值来反向推断<b>尺寸分辨气溶胶化学成分</b>。研究发现，无机物在亚微米气溶胶种群的较大端（累积模式）中更丰富，而有机物通常在较小端（艾肯模式）中占主导地位。本文应用 κ-Köhler 理论来评估用于 CCN 预测的气溶胶化学成分的不同表示形式，并表明通过优化尺寸分辨成分可以大大减轻使用气溶胶化学成分监测器 (ACSM) 或恒定 κ= 0.18 的体积化学成分的前向闭合的过度预测。研究<b>结果</b>表明，长期 CCN 测量具有推断亚微米气溶胶化学成分的潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Development and use of a lightweight sampling system for height-selective UAV-based measurements of organic aerosol particles</section>
+            <section class="paper-authors">Christine Borchers, Lasse Moormann, Bastien Geil, Niklas Karbach, David Wasserzier, Thorsten Hoffmann</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-7231-2025" target="_blank">https://doi.org/10.5194/amt-18-7231-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有机气溶胶</span>
+                        <span class="topic-tag">无人机</span>
+                        <span class="topic-tag">大气成分</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-7231-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《用于高度选择性基于无人机的有机气溶胶颗粒测量的轻型采样系统的开发和使用》。有机气溶胶 (OA) 从各种<b>自然和人为来源</b>进入大气。为了深入了解 OA 的来源和汇以及分散、混合和老化过程的意义，有机气溶胶浓度的<b>垂直剖面</b>特别有帮助。因此，本研究的目的是展示一种适用于在无人驾驶飞行器 (UAV) 上使用的气溶胶颗粒采样器。该采样器由一个三维打印的<b>过滤器支架</b>组成，该支架连接到一个轻型高性能泵，该泵可以在长达 30 分钟的时间内产生高达 103 slpm 的流速。这里提出的系统提供了一种相对简单且经济高效的方式，用于在不同高度和不同位置对 OA 进行采样，从而获得有机气溶胶成分的垂直浓度剖面。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Urban and socioeconomic disparities in PM2.5 exposure across 340 Latin American cities</section>
+            <section class="paper-authors">Edson J Ascencio, Antony Barja, Jose Montes-Alvis, Josiah L Kephart, Nelson Gouveia, Daniel A Rodriguez, Tarik Benmarhnia, Ana V Diez Roux, Usama Bilal, J Jaime Miranda, Gabriel Carrasco-Escobar</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae20a4" target="_blank">https://doi.org/10.1088/1748-9326/ae20a4</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">社会经济差异</span>
+                        <span class="topic-tag">卫星数据</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae20a4" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《拉丁美洲340个城市PM2.5暴露的城市和社会经济差异》。研究<b>背景</b>是细颗粒物（PM2.5）是全球主要健康风险因素。尽管拉丁美洲城市的PM2.5水平是全球最高的，但对该区域邻里级别的PM2.5暴露和社会经济差异的研究有限。该研究利用“拉丁美洲城市健康研究”数据集，对拉丁美洲八个国家的340个城市中53041个街区的横断面生态学数据进行了分析。利用<b>卫星数据</b>获取年度PM2.5浓度，并将其与社会经济和城市特征联系起来。采用多层次模型分析了邻里PM2.5水平与邻里和社会层面特征之间的关系。研究<b>结果</b>表明，邻里PM2.5浓度的中位数为18.49 µg m−3，所有居民都生活在PM2.5浓度超过世界卫生组织指导值的街区。邻里PM2.5水平与邻里教育程度、交叉路口密度和城市建成年代呈正相关，而与邻里人口密度、绿化程度和距市中心距离呈负相关。研究<b>结论</b>强调了城市内部PM2.5暴露的异质性，并提出了相应的空气污染缓解策略。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Monitoring CO2 in diverse European cities: highlighting needs and challenges through characterisation</section>
+            <section class="paper-authors">Ida Storm, Ute Karstens, Claudio D'Onofrio, Alex Vermeulen, Samuel Hammer, Ingrid Super, Theo Glauch, Wouter Peters</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-17-6681-2025" target="_blank">https://doi.org/10.5194/essd-17-6681-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">CO2排放监测</span>
+                        <span class="topic-tag">城市CO2监测</span>
+                        <span class="topic-tag">气候行动计划</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-17-6681-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《监测不同欧洲城市的 CO2：通过表征突出需求和挑战》。为开发监测 CO2 排放的欧洲联合能力，我们创建了框架“CO2 监测挑战城市地图集 v1.0”(CMC-CITYMAP)。根据我们的分析，尤其是慕尼黑，应该比<b>巴黎</b>更容易监控。单独检查挑战发现，相对于其他城市，最显着的挑战是苏黎世和巴黎的“建模挑战” (c)。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Evaluation of the dust-dominated total AOD extracted from the PMAp satellite Climate Data Record</section>
+            <section class="paper-authors">Anu-Maija Sundström, Marie Doutriaux-Boucher, Soheila Jafariserajehlou, Dominika Leskow-Czyzewska, Simone Mantovani, Noemi Fazzini, Bertrand Fougnie, Federico Fierli</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-18-7267-2025" target="_blank">https://doi.org/10.5194/amt-18-7267-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶光学深度</span>
+                        <span class="topic-tag">沙尘气溶胶</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-18-7267-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《评估从 PMAp 卫星气候数据记录中提取的以沙尘为主的总 AOD》。我们针对 AErosol RObotic NETwork (AERONET) 观测值对 PMAp 沙尘主导的总 AOD 进行了验证。我们的结果表明，PMAp 沙尘主导的 AOD 的发生和分类与 AERONET 指标非常吻合。对于 PMAp 沙尘主导的总 AOD，观察到与 AERONET 的中等到强的相关性 (0.45–0.8)，而平均偏差表现出相对较高的可变性。研究表明，PMAp CDR 具有<b>监测全球沙尘气溶胶模式</b>的潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Technical note: Apportionment of Southeast Asian biomass burning and urban influence via in situ  trace gas enhancement ratios</section>
+            <section class="paper-authors">Joshua P. DiGangi, Glenn S. Diskin, Subin Yoon, Sergio L. Alvarez, James H. Flynn, Claire E. Robinson, Michael A. Shook, K. Lee Thornhill, Edward L. Winstead, Luke D. Ziemba, Maria Obiminda L. Cambaliza, James B. Simpas, Miguel Ricardo A. Hilario, Armin Sorooshian</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-17387-2025" target="_blank">https://doi.org/10.5194/acp-25-17387-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">生物质燃烧</span>
+                        <span class="topic-tag">城市排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-17387-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《技术说明：通过原位痕量气体增强比率分配东南亚生物质燃烧和城市影响》。火灾和城市排放是东南亚<b>空气污染</b>的主要来源。2019 年在菲律宾附近的一次飞机飞行活动期间，甲烷和一氧化碳气体的相对增加被用来分离来自火灾与城市来源的污染排放。将结果与<b>大气传输模型</b>进行比较，以确定来源的区域来源，并研究每种来源对不良空气质量的相关污染指标之间的关系。这项技术代表了一种简单但功能强大的方法，用于分离化学复杂环境中的排放影响，从而可以使用常用仪器完成的常规测量来识别和表征排放源。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Radiative forcing due to shifting southern African fire regimes</section>
+            <section class="paper-authors">Tom Eames, Nick Schutgens, Eleftherios Ioannidis, Ivar R. van der Velde, Max J. van Gerrevink, Roland Vernooij, Guido R. van der Werf</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-25-17429-2025" target="_blank">https://doi.org/10.5194/acp-25-17429-2025</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">辐射强迫</span>
+                        <span class="topic-tag">温室气体</span>
+                        <span class="topic-tag">地表反照率</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-25-17429-2025" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究论文题为《南部非洲火灾制度转变引起的辐射强迫》。作为一种景观管理工具，规定性燃烧被用于南部非洲<b>稀树草原</b>。通过故意改变该区域火灾的时间，可以改变火灾季节的气候效应（<b>辐射强迫</b>）。我们表明，通过在旱季早期燃烧，可以实现较小的气候冷却效果，类似于全球商业航空排放量减少 10 % 的效果。在实施用于减缓气候变化的目标之前，必须考虑当地影响。在本研究中，我们检查了（故意）改变 CH4 和 N2O 之外的火灾制度的气候影响，包括气溶胶和其他短寿命物种、CO2 以及<b>地表反照率</b>的变化。我们发现，一般来说，在一个火灾季节中，较早地转移燃烧会导致全球负气候强迫（冷却）大约 −0.001 至 −0.002 W m−2（长期）或 −0.006（短期）W m−2，相比之下，如果仅考虑 CH4 和 N2O，则小于 −0.0005 W m−2。相反，在长期内，稍后转移燃烧的强迫可以忽略不计。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
