@@ -56,6 +56,78 @@ def analyze_paper(info_json: str) -> Tuple[bool, str]:
 
 
 
+# 引入 OpenAI SDK 并配置 SiliconFlow
+from openai import OpenAI
+
+API_KEY = os.getenv('SILICONFLOW_API_KEY')
+
+client = OpenAI(
+    api_key=API_KEY,
+    base_url="https://api.siliconflow.cn/v1"
+)
+
+
+
+def analyze_paper_openai(info_json: str) -> List[Dict]:
+    """
+    使用类openai接口的模型批量分析论文
+    """
+    
+    # 构建系统指令
+    system_instruction = (
+        "You are an expert in literature analysis, skilled in qualitative research methods, "
+        "literature retrieval, and critical thinking. You excel at interpreting complex texts, "
+        "identifying key ideas and methodologies, and conducting comprehensive literature reviews."
+    )
+
+    # 构建用户提示词，强调 JSON 列表格式
+    prompt = f"""
+    You will be provided with a JSON string containing a list of research papers. 
+    Analyze the information of each research paper (title, abstract, topic_words, explanation) and generate the following for EACH paper:
+
+    1. **Tags**: Exactly 3 most important topic-tags in Chinese.
+    2. **Summary**: A Chinese summary of around 250 words introducing the paper, focusing on data, method, and conclusions. You can bold keywords using HTML tags <b></b>.
+    3. **Score**: A rating from 0 to 100 (100 being highest) considering novelty, writing, journal impact, and author popularity.
+
+    Input Data:
+    {info_json}
+
+    **CRITICAL OUTPUT FORMAT REQUIREMENTS**:
+    - You must return a valid JSON **List** (Array) of Objects.
+    - The order of the output list must strictly match the order of the input list.
+    - The format for each object in the list must be: {{"summary": "...", "tags": ["tag1", "tag2", "tag3"], "score": 85.5}}
+    - Do not output any markdown formatting (like ```json), just the raw JSON string.
+    """
+
+    try:
+        response = client.chat.completions.create(
+            model="deepseek-ai/DeepSeek-R1-0528-Qwen3-8B", 
+            messages=[
+                {'role': 'system', 'content': system_instruction},
+                {'role': 'user', 'content': prompt}
+            ],
+            temperature=0.6, # 稍微降低温度以提高 JSON 格式的稳定性
+            stream=False     # 数据处理不需要流式
+        )
+        
+        content = response.choices[0].message.content
+        
+        # 清洗逻辑：防止模型输出 Markdown 代码块
+        content = content.replace("```json", "").replace("```", "").strip()
+        
+        return json.loads(content)
+
+    except json.JSONDecodeError as e:
+        print(f"JSON 解析失败: {e}")
+        print("模型返回原始内容:", content[:500] + "...") # 打印前500字符用于调试
+        # 如果解析失败，返回空列表或者根据业务逻辑处理，这里返回空列表避免 crash
+        return []
+    except Exception as e:
+        print(f"API 调用发生错误: {e}")
+        return []
+
+
+
 # Get the current year and month
 current_date = datetime.now().strftime("%Y%m%d")
 
@@ -93,7 +165,7 @@ DFS = []
 for i in range(len(info)//BS +1):
     print(i, i*BS, i*BS+BS)
     info_json = info[i*BS:i*BS+BS].to_json(orient='records', force_ascii=False)
-    response = analyze_paper(info_json)
+    response = analyze_paper_openai(info_json)
     DFS.append(pd.DataFrame(response))
 
 tmp = pd.concat(DFS, ignore_index=True)

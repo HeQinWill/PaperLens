@@ -21,6 +21,13 @@ import google.generativeai as genai
 KEY_GENAI = os.getenv('KEY_GENAI')
 genai.configure(api_key=KEY_GENAI, transport='rest')
 
+from openai import OpenAI
+API_KEY = os.getenv('SILICONFLOW_API_KEY')
+client = OpenAI(
+    api_key=API_KEY,
+    base_url="https://api.siliconflow.cn/v1"
+)
+
 def load_rss_feeds():
     with open('rss_feeds.yaml', 'r') as file:
         feeds = yaml.safe_load(file)
@@ -338,6 +345,81 @@ def analyze_relevance(title: str, abstract: str) -> Tuple[bool, str]:
     # print(response.text)
     return json.loads(response.text)
 
+def analyze_relevance_openai(title: str, abstract: str) -> Dict:
+    """
+    Analyze the relevance of a paper to atmospheric environmental remote sensing.
+    
+    Returns:
+        Dict: {"is_relevant": bool, "topic_words": list[str], "explanation": str}
+    """
+    
+    # 组合输入文本
+    input_text = f"Title: {title}\nAbstract: {abstract}"
+
+    # 系统提示词：设定专家人设
+    system_instruction = (
+        "You are an expert in literature analysis, skilled in qualitative research methods, "
+        "literature retrieval, and critical thinking. You excel at interpreting complex texts."
+    )
+
+    # 用户提示词：明确任务目标和 JSON 格式
+    # 明确要求 "True"/"False" 对应的 JSON bool 值，以及去除 Markdown 格式
+    prompt = f"""
+    Analyze the provided Title and Abstract. Determine if the paper is **strongly related** to atmospheric environmental remote sensing technology (e.g., air quality monitoring, satellite observations, atmospheric composition analysis, aerosol retrieval).
+    
+    **Input:**
+    {input_text}
+
+    **Task:**
+    1. **is_relevant**: Return `true` if related, `false` otherwise.
+    2. **topic_words**: List 3-5 specific English keywords (e.g., specific pollutant, satellite sensor name, algorithm type).
+    3. **explanation**: A brief explanation in **Chinese** (中文) describing why it is relevant or not.
+
+    **Output Format:**
+    Return ONLY a valid JSON object matching this schema, without any markdown code blocks:
+    {{
+        "is_relevant": bool, 
+        "topic_words": ["word1", "word2"], 
+        "explanation": "中文解释..."
+    }}
+    """
+
+    try:
+        response = client.chat.completions.create(
+            model="deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+            messages=[
+                {'role': 'system', 'content': system_instruction},
+                {'role': 'user', 'content': prompt}
+            ],
+            temperature=0.6, 
+            max_tokens=512,
+            stream=False
+        )
+        
+        content = response.choices[0].message.content
+        
+        # === 清洗逻辑 ===
+        # Qwen/DeepSeek 等模型常会返回 ```json ... ```，需要剥离
+        content = content.replace("```json", "").replace("```", "").strip()
+        
+        result = json.loads(content)
+        
+        # 容错处理：确保 is_relevant 是布尔值
+        if isinstance(result.get('is_relevant'), str):
+            if result['is_relevant'].lower() == 'true':
+                result['is_relevant'] = True
+            else:
+                result['is_relevant'] = False
+                
+        return result
+
+    except json.JSONDecodeError:
+        print(f"JSON Parsing Error for paper: {title[:30]}...")
+        # 发生解析错误时，默认设为不相关，避免程序中断
+        return {"is_relevant": False, "topic_words": [], "explanation": "Error in JSON parsing"}
+    except Exception as e:
+        print(f"API Request Error: {e}")
+        return {"is_relevant": False, "topic_words": [], "explanation": "API Request Failed"}
 
 #%% Main function to process RSS feeds and generate a report
 # Create a directory for storing CSV files if it doesn't exist
@@ -365,10 +447,10 @@ for feed_url, source in RSS_FEEDS.items():
                     full_entry = parse_entry(source, entry, doi_only=False)
                 else:
                     full_entry = parsed_entry
-                analysis = analyze_relevance(full_entry['title'], full_entry['abstract'])
+                analysis = analyze_relevance_openai(full_entry['title'], full_entry['abstract'])
                 full_entry.update(analysis)  # combine the analysis into the full entry
                 relevant_entries.append(full_entry)
-                time.sleep(1.42)
+                time.sleep(10.42)
             else:
                 print(f"Skipping entry with DOI {parsed_entry['doi']} as it already exists.")
         except Exception as e:
