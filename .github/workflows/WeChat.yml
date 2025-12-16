@@ -28,7 +28,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
@@ -42,6 +42,7 @@ jobs:
       - name: Run Python script
         env:
           KEY_GENAI: ${{ secrets.KEY_GENAI }}  # set up your GENAI token from gemini
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}  # set up your SiliconFlow API key
         run: |
           python paperlens_WeChat.py  # Replace this with the actual path to your script
 
