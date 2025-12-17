@@ -386,7 +386,7 @@ def analyze_relevance_openai(title: str, abstract: str) -> Dict:
 
     try:
         response = client.chat.completions.create(
-            model="deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+            model="THUDM/GLM-4-9B-0414",
             messages=[
                 {'role': 'system', 'content': system_instruction},
                 {'role': 'user', 'content': prompt}
