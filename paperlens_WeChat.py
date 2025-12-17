@@ -33,7 +33,7 @@ def analyze_paper(info_json: str) -> Tuple[bool, str]:
         }
 
     model = genai.GenerativeModel(
-            model_name="gemini-2.0-flash",
+            model_name="gemini-flash-latest",
             generation_config=generation_config,
             system_instruction="You are an expert in literature analysis, skilled in qualitative research methods, literature retrieval, and critical thinking. You excel at interpreting complex texts, identifying key ideas and methodologies, and conducting comprehensive literature reviews to identify research trends and gaps.",
             )
@@ -165,7 +165,7 @@ DFS = []
 for i in range(len(info)//BS +1):
     print(i, i*BS, i*BS+BS)
     info_json = info[i*BS:i*BS+BS].to_json(orient='records', force_ascii=False)
-    response = analyze_paper_openai(info_json)
+    response = analyze_paper(info_json)
     DFS.append(pd.DataFrame(response))
 
 tmp = pd.concat(DFS, ignore_index=True)

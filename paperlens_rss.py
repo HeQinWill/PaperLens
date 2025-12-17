@@ -327,7 +327,7 @@ def analyze_relevance(title: str, abstract: str) -> Tuple[bool, str]:
         }
 
     model = genai.GenerativeModel(
-            model_name="gemini-2.0-flash",
+            model_name="gemini-flash-lite-latest",
             generation_config=generation_config,
             system_instruction="You are an expert in literature analysis, skilled in qualitative research methods, literature retrieval, and critical thinking. You excel at interpreting complex texts, identifying key ideas and methodologies, and conducting comprehensive literature reviews to identify research trends and gaps.",
             )
@@ -386,7 +386,7 @@ def analyze_relevance_openai(title: str, abstract: str) -> Dict:
 
     try:
         response = client.chat.completions.create(
-            model="THUDM/GLM-4-9B-0414",
+            model="THUDM/GLM-Z1-9B-0414",
             messages=[
                 {'role': 'system', 'content': system_instruction},
                 {'role': 'user', 'content': prompt}
