@@ -450,7 +450,7 @@ for feed_url, source in RSS_FEEDS.items():
                 analysis = analyze_relevance_openai(full_entry['title'], full_entry['abstract'])
                 full_entry.update(analysis)  # combine the analysis into the full entry
                 relevant_entries.append(full_entry)
-                time.sleep(10.42)
+                time.sleep(1.42)
             else:
                 print(f"Skipping entry with DOI {parsed_entry['doi']} as it already exists.")
         except Exception as e:
