@@ -18,6 +18,18 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    # GitHub 会在运行步骤之前，自动拉取并启动flaresolverr容器
+    services:
+      flaresolverr:
+        image: ghcr.io/flaresolverr/flaresolverr:latest
+        ports:
+          - 8191:8191 # 将容器的 8191 映射到虚拟机的 8191
+        options: >-
+          --health-cmd "wget --no-verbose --tries=1 --spider http://localhost:8191/health || exit 1"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
