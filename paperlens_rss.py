@@ -28,6 +28,8 @@ client = OpenAI(
     base_url="https://api.siliconflow.cn/v1"
 )
 
+WEBHOOK = os.getenv('WEBHOOK_WPS')
+
 def load_rss_feeds():
     with open('rss_feeds.yaml', 'r') as file:
         feeds = yaml.safe_load(file)
@@ -447,10 +449,19 @@ for feed_url, source in RSS_FEEDS.items():
                     full_entry = parse_entry(source, entry, doi_only=False)
                 else:
                     full_entry = parsed_entry
+                
+                if WEBHOOK:
+                    try:
+                        # timeout 是必须的，防止卡死主线程
+                        requests.post(WEBHOOK, json=full_entry, timeout=5)
+                    except Exception as webhook_err:
+                        # 推送失败仅打印日志，不应该中断数据收集
+                        print(f"Warning: Webhook failed for {parsed_entry['doi']}: {webhook_err}")
+                
                 analysis = analyze_relevance_openai(full_entry['title'], full_entry['abstract'])
                 full_entry.update(analysis)  # combine the analysis into the full entry
                 relevant_entries.append(full_entry)
-                time.sleep(1.42)
+                time.sleep(0.42)
             else:
                 print(f"Skipping entry with DOI {parsed_entry['doi']} as it already exists.")
         except Exception as e:
