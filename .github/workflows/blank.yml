@@ -24,11 +24,6 @@ jobs:
         image: ghcr.io/flaresolverr/flaresolverr:latest
         ports:
           - 8191:8191 # 将容器的 8191 映射到虚拟机的 8191
-        options: >-
-          --health-cmd "wget --no-verbose --tries=1 --spider http://localhost:8191/health || exit 1"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -48,11 +43,6 @@ jobs:
         run: |
           # sudo apt-get update
           sudo apt-get install -y libnss3 nss-plugin-pem ca-certificates wget tar
-      
-      - name: Download and extract curl-impersonate
-        run: |
-          wget https://github.com/lwthiker/curl-impersonate/releases/download/v0.6.1/curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz
-          tar -zxvf curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz
           
       - name: Run Python script
         env:
