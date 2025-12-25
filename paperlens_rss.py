@@ -41,7 +41,7 @@ def load_rss_feeds():
 RSS_FEEDS = load_rss_feeds()
 print(len(RSS_FEEDS), 'feeds has been loaded')
 
-def fetch_html_via_flaresolverr(url: str, timeout: int = 60000) -> str:
+def fetch_html_via_flaresolverr(url: str, timeout: int = 120000) -> str:
     """Unified function to fetch HTML content using FlareSolverr."""
     FLARESOLVERR_URL = "http://localhost:8191/v1"
     headers = {"Content-Type": "application/json"}
@@ -366,7 +366,7 @@ def analyze_relevance_openai(title: str, abstract: str) -> Dict:
 
     try:
         response = client.chat.completions.create(
-            model="THUDM/GLM-Z1-9B-0414",
+            model="THUDM/GLM-4-9B-0414",
             messages=[
                 {'role': 'system', 'content': system_instruction},
                 {'role': 'user', 'content': prompt}
