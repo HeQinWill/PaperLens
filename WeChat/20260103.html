@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/01/03</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Underestimation of particulate dry nitrogen deposition in China</section>
+            <section class="paper-authors">Qianru Zhang, Yuhang Wang, Maodian Liu, Young-Hee Ryu, Mingxu Liu, Huoqing Li, Si-Yi Wei, Junfeng Liu, Shu Tao, Xuejun Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Geoscience</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41561-025-01873-3" target="_blank">https://doi.org/10.1038/s41561-025-01873-3</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氮沉降</span>
+                        <span class="topic-tag">大气化学模型</span>
+                        <span class="topic-tag">空气污染</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41561-025-01873-3" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对中国大气氮沉降评估的不确定性，本研究整合了<b>观测约束的粒径分布</b>与干沉降机制，重新评估了全国范围内的颗粒态氮干沉降。研究揭示，当前主流<b>大气化学模型</b>严重低估了颗粒态氮气溶胶的粒径，导致干沉降速率预测偏差巨大。修正后的结果显示，中国颗粒态氮干沉降被低估了2-5倍，而<b>地球系统模型</b>对铵盐的低估率在31%-98%之间。通过将修正参数集成至<b>社区土地模型（CLM）</b>，研究证明氮沉降对中国陆地生态系统净生产力的贡献被低估了9%-13%。这一发现重新定义了中国在全球氮循环和碳汇评估中的地位。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global urban vegetation exhibits divergent thermal effects: From cooling to warming as aridity increases</section>
+            <section class="paper-authors">Zhengfei Guo, Manuel Esperon-Rodriguez, Edouard Davin, Heng Huang, Bin Chen, Mohamad Hejazi, Jin Wu, Jian Wang, Yunfeng Ge, Guangqin Song, Yingyi Zhao, Kuishuang Feng, Chen Lin, Peng Gong, Yuyu Zhou</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.aea9165" target="_blank">https://doi.org/10.1126/sciadv.aea9165</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">城市热岛</span>
+                        <span class="topic-tag">植被调节</span>
+                        <span class="topic-tag">蒸腾作用</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.aea9165" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>高分辨率卫星和气候数据</b>，对全球761个特大城市的植被温度调节效应进行了评估。研究发现了一个反直觉的“悖论”：随着干旱度增加，植被的降温效果减弱；在降水量低于1000毫米的城市中，22%的植被实际上产生了<b>净升温效应</b>。这是由于低反照率导致的吸热超过了有限的<b>蒸腾冷却</b>。在极端高温下，由于气压差过大导致气孔关闭，25%城市的树木失去降温功能。结论指出，气候适应性绿化必须考虑灌溉和高反照率表面，盲目绿化反而可能加剧<b>城市热岛</b>，该发现对城市生态规划具有颠覆性影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Boosting solar efficiency: the unforeseen benefit of China’s clean air action plan</section>
+            <section class="paper-authors">Xuanying Ji, Zhou Liu, Jiangshan Mu, Zizhen Han, Zhuyi Wang, Yujiao Zhu, Kun Li, Qinyi Li, Drew Shindell, Yuqiang Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2e16" target="_blank">https://doi.org/10.1088/1748-9326/ae2e16</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">太阳能光伏</span>
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">大气污染</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2e16" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">中国的清洁空气行动计划（CAA）带来了意想不到的能源收益。本研究采用<b>PVLIB-Python模型</b>量化了2013至2020年间空气质量改善对全国<b>光伏发电效率</b>的影响。结果显示，由于气溶胶减少导致太阳辐射增加，全国光伏年发电量额外增加了41.3 TWh，其中山东、河南等省份收益最为显著。此外，结合<b>CMIP6多模型模拟</b>，研究预测在可持续发展情景下，到2050年空气质量的进一步改善将使光伏发电潜力再提升37.4-52.6 TWh。该研究有力论证了<b>减污降碳</b>的协同效应，为加速能源转型提供了重要的经济和环境动力支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Satellite observations reveal a significant poleward expansion of the multiyear sea ice replenishment in the heart region of Arctic Ocean</section>
+            <section class="paper-authors">Haibo Bi, Lejiang Yu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2b88" target="_blank">https://doi.org/10.1088/1748-9326/ae2b88</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">北极海冰</span>
+                        <span class="topic-tag">大气环流</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2b88" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用2000至2023年的<b>卫星观测数据</b>，揭示了北极核心区域（北纬80度以北）<b>多年海冰（MYI）补充区</b>明显的向极地扩张现象。研究指出，这种位移主要受大规模<b>大气环流模式</b>驱动，即西伯利亚侧的高压与北美侧的低压耦合。受此影响，北极中心的海冰厚度显著下降，且经由<b>弗拉姆海峡</b>的海冰体积通量大幅减少。此外，研究发现夏季消融与冬季冻结对海冰补充的影响关联增强，表明北极海冰对变暖的<b>韧性显著降低</b>，超出了以往的研究预期。该结论对于预测北极无冰化的临界点具有重要参考价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Multi-ignition fire complexes drive extreme fire years and impacts</section>
+            <section class="paper-authors">Rebecca C. Scholten, Tirtha Banerjee, Yang Chen, Andrea Delgado, Ajinkya Desai, Ziming Ke, Tianjia Liu, Douglas C. Morton, David A. Peterson, Qi Tang, Sander Veraverbeke, Jishi Zhang, James T. Randerson</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.adx6477" target="_blank">https://doi.org/10.1126/sciadv.adx6477</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星火灾追踪</span>
+                        <span class="topic-tag">极端火灾</span>
+                        <span class="topic-tag">大气反馈</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.adx6477" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用2012-2023年高频<b>卫星衍生火灾追踪数据</b>，揭示了多个起火点合并形成的<b>“复合火灾（Fire Complexes）”</b>是推动过火面积剧增的关键。数据显示，此类火灾占加州过火面积的31%，北极-寒带地区的59%。复合火灾不仅扩散更快、持续时间更长，还更容易产生强烈的<b>大气反馈效应</b>，如引发<b>火灾积雨云（pyrocumulonimbus）</b>。这类火灾极大挑战了现有的消防能力。研究强调，在野火预测和风险评估中必须考虑火灾合并动态，以更好地应对未来极端火灾年份对大气环境和生态系统的冲击。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Assessing groundwater sustainability across high mountain Asia using remote sensing</section>
+            <section class="paper-authors">Kai Liu, Xueke Li, Yong Bo, Shudong Wang, Guangsheng Zhou</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2e1b" target="_blank">https://doi.org/10.1088/1748-9326/ae2e1b</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">遥感观测</span>
+                        <span class="topic-tag">地下水储量</span>
+                        <span class="topic-tag">人工智能</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2e1b" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究整合了<b>遥感技术</b>、地球系统建模与<b>Transformer深度学习框架</b>，评估了亚洲高山区（HMA）地下水储量（GWS）的演化。分析2003-2020年的卫星数据发现，该地区69%的区域GWS呈下降趋势，年均损失达24.2 Gt。归因分析显示，47%的波动由直接气候驱动，38%由人类活动引起。预测表明，虽然<b>冰冻圈消融</b>在2060年代前能起到暂时的补给缓冲作用，但随着气温持续升高，这种效应将消失并导致地下水枯竭加速。该研究展示了<b>可解释人工智能</b>与遥感结合在区域水安全评估中的强大潜力，为气候韧性水管理提供了数据支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">High-resolution mountain topography can inform global snow vulnerability estimates</section>
+            <section class="paper-authors">Adrienne M Marshall, John T Abatzoglou, Arielle Koshkin, Alan Rhoades</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2d73" target="_blank">https://doi.org/10.1088/1748-9326/ae2d73</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">数字高程模型</span>
+                        <span class="topic-tag">积雪脆弱性</span>
+                        <span class="topic-tag">全球变暖</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2d73" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用7.5弧秒（约250米）的高分辨率<b>数字高程模型（DEM）</b>结合<b>ERA-5历史冻结层高度</b>，对全球山脉的<b>积雪接收区（SRA）</b>及其对变暖的敏感性进行了首个高分辨率评估。结果显示，1982-2020年间全球29%的山区SRA已出现萎缩。在升温1.5°C的情景下，SRA将进一步缩减9.5%；若升温达4°C，缩减面积将呈非线性剧增。研究指出，传统的粗分辨率模型往往会误判SRA的流失速率，尤其是在温暖、低海拔山区。这项工作识别了全球积雪流失的<b>脆弱热点区域</b>，为全球尺度的水资源管理和气候适应策略提供了精细化的空间参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Halving global ammonia emissions with cost-effective measures</section>
+            <section class="paper-authors">Xiuming Zhang, Yi Sun, Yujing Gao, Chen Wang, Xia Liang, Shu Kee Lam, Shaohui Zhang, Wilfried Winiwarter, Hans J. M. van Grinsven, Mark A. Sutton, Deli Chen, Baojing Gu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Sustainability</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41893-025-01723-5" target="_blank">https://doi.org/10.1038/s41893-025-01723-5</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氨排放</span>
+                        <span class="topic-tag">空气质量</span>
+                        <span class="topic-tag">减排策略</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41893-025-01723-5" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">人为<b>氨（NH3）排放</b>严重危害人体健康与生态系统。本研究采用<b>多模型框架</b>评估了全球185个国家的32项减排措施。结果表明，通过实施技术与行为政策组合，到2050年全球氨排放可减少60%，平均减排成本仅为每公斤7.4美元。总实施成本虽达2740亿美元，但其带来的环境、健康收益预计高达7220亿美元，<b>收益远超成本</b>。研究特别指出，中国和印度的减排行动将产生全球最大的净收益。该成果强调了将氨控制纳入<b>粮食安全</b>与空气质量政策的迫切性，为全球可持续氮管理提供了重要路线图。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Bridging the thermal gap: Generating 10 m, 3-day land surface temperature via Landsat–Sentinel-2 fusion</section>
+            <section class="paper-authors">Yuan Qi, Bo Huang, Min Zhao, Xiaolu Jiang, Wenfei Mao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.115227" target="_blank">https://doi.org/10.1016/j.rse.2025.115227</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">地表温度</span>
+                        <span class="topic-tag">时空融合</span>
+                        <span class="topic-tag">遥感监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.115227" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对卫星地表温度（LST）监测的时空分辨率冲突，本研究提出了一种名为<b>fHiSTR-LST</b>的新型融合框架。该框架结合了<b>Landsat-8/9</b>的温感能力与<b>Sentinel-2</b>的高空间分辨率，利用<b>深度学习</b>和空间光谱融合技术，生成了空间分辨率10米、时间分辨率约3天的LST产品。全球八个区域的验证显示，该模型表现出极高的鲁棒性（RMSE为1.17K），且在地面真实数据验证中显著优于现有算法。应用案例证明，该产品能精确识别细微的<b>城市热岛模式</b>并追踪植被物候变化，填补了高频精细地温遥感监测的空白。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A Unified Theory for the Global Thunderstorm Distribution and Land–Sea Contrast</section>
+            <section class="paper-authors">John M. Peters, Daniel R. Chavas, Chun‐Yian Su, Elisa M. Murillo, Gretchen L. Mullendore</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL120252" target="_blank">https://doi.org/10.1029/2025GL120252</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">雷暴分布</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">垂直对流</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL120252" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究基于<b>全球降水测量（GPM）卫星观测</b>，评估了<b>夹卷有效对流可用能（ECAPE）</b>作为雷暴预测指标的效力。ECAPE通过考虑垂直风切变和抬升凝结高度（LCL）修正了传统指标，在捕捉全球强雷暴分布模式方面表现卓越。研究揭示了<b>陆海雷暴强度差异</b>的物理本质：陆地上较大的能量与较高的LCL高度共同促成了宽广的上升气流，使其免受干空气夹卷的削弱。该理论统一了对全球对流分布规律的认识，为改进<b>气候模式</b>中雷暴的参数化表达提供了坚实的卫星遥感证据，对预测极端天气事件具有重要学术贡献。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Uncertainty in Antarctic precipitation projections under global warming</section>
+            <section class="paper-authors">Kai Man, Yujie Miao, Yonghao Wang, Yusi Feng, Xichen Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2ca9" target="_blank">https://doi.org/10.1088/1748-9326/ae2ca9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">南极降水</span>
+                        <span class="topic-tag">气候模式</span>
+                        <span class="topic-tag">大气遥相关</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2ca9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">南极冰盖是海平面上升的关键驱动力，但其降水预测存在巨大不确定性。本研究利用<b>CMIP6气候模拟数据</b>，深入探讨了降水投影不确定性的来源。研究发现，降水投影的偏差远大于地表温度，且与全球及南极地表温度的预测高度耦合。<b>大气环流</b>，特别是南太平洋-南美（PSA）模式，在区域性降水不确定性中起主导作用。进一步分析表明，热带海表温度通过<b>大气遥相关</b>影响南极降水模式。研究强调，必须改进气候模型中对极地物理过程的刻画，以降低不确定性，从而更准确地预测南极冰盖对未来<b>海平面上升</b>的贡献。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Indoor and Outdoor Volatile Organic Compound Levels during and after the 2025 Los Angeles Wildfires</section>
+            <section class="paper-authors">Yuan Yao, Diane Garcia-Gonzales, Jing Li, Muchuan Niu, Qiyue Nie, Michael Jerrett, Yifang Zhu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.estlett.5c00919" target="_blank">https://doi.org/10.1021/acs.estlett.5c00919</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">挥发性有机物</span>
+                        <span class="topic-tag">野火污染</span>
+                        <span class="topic-tag">空气质量监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.estlett.5c00919" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对2025年1月洛杉矶野火，本研究通过对受灾区22户家庭进行分阶段<b>室内外空气采样</b>，评估了<b>挥发性有机化合物（VOCs）</b>的暴露风险。结果显示，活跃燃烧期室外苯浓度显著达峰，但关键发现在于火灾后期，室内外m,p-二甲苯和四氯化碳的比值显著升高，特别是在过火区域内的无人居住房屋中，表明<b>受损建筑材料</b>会持续释放有害气体。该研究揭示了野火对室内空气质量的<b>长期残留影响</b>，强调了在灾后恢复过程中进行持续环境监测的紧迫性，对于优化野火暴露背景下的公共卫生保护策略具有重要现实意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Increasing glacial lake outburst flood hazard on the eastern Tibetan Plateau and implications for the Sichuan–Tibet Railway</section>
+            <section class="paper-authors">Bingshu Xu, Linfeng Fan, Guoxiong Zheng, Wolfgang Schwanghart, Chunmiao Zheng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2e19" target="_blank">https://doi.org/10.1088/1748-9326/ae2e19</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰川湖溃决洪水</span>
+                        <span class="topic-tag">灾害评估</span>
+                        <span class="topic-tag">概率建模</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2e19" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对东藏地区冰川湖泊溃决洪水（GLOF）对<b>川藏铁路</b>等基础设施的威胁，本研究开发了一套<b>概率建模框架</b>，量化了超过11,000个冰川湖泊在不同重现期（10-500年）下的洪峰流量。研究预测，在RCP8.5情景下，到2100年GLOF的洪峰流量将显著增加，部分高风险河段（如雅鲁藏布江、怒江流域）的流量将超过2500立方米/秒。研究明确指出了铁路跨越点的高风险区域，强调在<b>气候变化</b>背景下，必须将极端洪水灾害整合进重大工程设计中。此研究利用高精度地理数据和洪水模拟，为青藏高原的基础设施<b>安全保障</b>提供了关键参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Simulated Earth system response to acid downwelling as a form of ocean alkalinity enhancement</section>
+            <section class="paper-authors">E Tiwary, M Jürchott, A Oschlies</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2105" target="_blank">https://doi.org/10.1088/1748-9326/ae2105</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋碱度增强</span>
+                        <span class="topic-tag">碳捕获与封存</span>
+                        <span class="topic-tag">地球系统模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2105" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>中等复杂地球系统模型</b>，探讨了<b>酸下沉（AD）</b>作为一种大规模海洋碳去除（mCDR）手段的有效性与反馈机制。研究在RCP 4.5路径下模拟了不同深度和强度的酸液注入，发现在本千年结束前，连续AD的最大<b>移除潜力</b>可达320 Pg C。然而，研究揭示了一个关键风险：存储在深海的酸液会通过<b>南大洋环流</b>重新浮出水面，引发区域性二氧化碳外逸。此外，注入暖表层水会引起<b>海洋内部升温</b>，产生反馈效应并加速酸液重现。研究强调，在评估AD潜力时，必须综合考虑<b>大规模海洋环流</b>、时间尺度和未来排放情景，这为海洋地球工程的风险评估提供了重要科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">When Winds Collide With Precipitation: Dominance of Anthropogenic Forcing in Escalating Compound Extremes Over Southeast Asia</section>
+            <section class="paper-authors">Yifei Jiang, Fei Ge, Quanliang Chen, Klaus Fraedrich, Qichang Tan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL119882" target="_blank">https://doi.org/10.1029/2025GL119882</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">复合极端事件</span>
+                        <span class="topic-tag">气候变化</span>
+                        <span class="topic-tag">人为强迫</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL119882" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>CMIP6气候模式</b>，调查了东南亚地区复合风雨极端事件（CWPEs）的未来演变及其驱动因素。模拟结果显示，在SSP5-8.5情景下，本世纪末CWPEs的频率将增加62.2%，强度增加25.5%。通过<b>归因分析</b>，研究发现降水变化是主导因素（贡献率达55%-86%）。此外，研究量化了<b>人为强迫</b>在风险增加中的占比，发现约37.3%的高风险事件增量可归因于人类活动。该成果强调了东南亚对气候变暖的高度敏感性，为区域防灾减灾及<b>气候适应策略</b>的制定提供了科学支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measuring impacts of California agri-environmental programs using field-scale satellite data</section>
+            <section class="paper-authors">Corisa A Wong, Wyatt S Abramson Sklarin, Meagan S Mauter, David B Lobell</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2ca6" target="_blank">https://doi.org/10.1088/1748-9326/ae2ca6</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星遥感监测</span>
+                        <span class="topic-tag">归一化植被指数</span>
+                        <span class="topic-tag">农业耗水</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2ca6" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>地块级卫星数据</b>，对加州投入逾2亿美元的农业环境补助项目进行了事后评估。分析涵盖了2014至2022年间的近600个种植杏仁、葡萄和核桃的农田。采用两种<b>因果推断方法</b>，研究发现：同时升级灌溉系统并安装监测传感器的农田，其<b>耗水量（ET）</b>和<b>绿度（NDVI）</b>分别下降了3.5%和4.2%；然而，仅安装传感器的农田反而导致了4.1%的耗水增加。此外，施用堆肥和覆盖作物虽能小幅提升植被绿度，但对节水效果不明显。研究指出，部分干预措施的实际效果与其减少耗水、维持产量的政策目标相悖，凸显了利用<b>高分辨率遥感</b>进行政策验证的必要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Obvious and obscure actors are planting trees in rural Africa</section>
+            <section class="paper-authors">Niwaeli E Kimambo, Madeleine Gallop, Danqing (Helena) Gu, Volker C Radeloff, Emmanuel Sangalali, Lisa Naughton-Treves</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2d75" target="_blank">https://doi.org/10.1088/1748-9326/ae2d75</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">遥感技术</span>
+                        <span class="topic-tag">植被覆盖</span>
+                        <span class="topic-tag">土地利用</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2d75" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究针对撒哈拉以南非洲大规模植树运动，利用<b>遥感技术</b>与田野调查相结合，对坦桑尼亚南部的造林主体进行了归属分析。研究不仅关注林场和小农户，还首次量化了“不在场”的<b>城市投资者</b>对林地的贡献。通过建立<b>空间数据库</b>并利用<b>卫星观测</b>进行验证，研究发现单纯依靠林场和小农户数据仅能解释38%的遥感植被覆盖变化，而加入不在场投资者模型后解释度提升至54%。研究强调，许多小块林地实则由城市资本持有，这可能影响扶贫政策的公平性。结论呼吁将<b>遥感监测</b>与实地评估进行三角互证，以提高造林行动的透明度和效力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Lessons From Uganda's Earth Observation‐Based Disaster Risk Financing Program</section>
+            <section class="paper-authors">Catherine Nakalembe</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">AGU Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025AV002224" target="_blank">https://doi.org/10.1029/2025AV002224</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">地球观测</span>
+                        <span class="topic-tag">指数保险</span>
+                        <span class="topic-tag">气候韧性</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025AV002224" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究回顾并总结了乌干达2016-2020年间实施的<b>地球观测（EO）灾害风险融资计划</b>。该计划利用<b>MODIS植被指数</b>作为触发器，为超过45万受旱灾影响的人口提供了价值1400万美元的支持，并实现了显著的经济投资回报。研究指出，该项目的成功在于将<b>卫星监测数据</b>与政府财务决策透明挂钩，而非单纯追求技术精度。主要的阻碍已从技术瓶颈转向制度与财务壁垒。论文为全球如何利用<b>遥感大数据</b>构建应对极端气候事件的经济韧性提供了宝贵的实践经验，证明了数据驱动的防灾融资机制在国家层面的可行性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Optimal sensor placement in low-cost PM2.5 sensor networks using value of information and multimodal data fusion</section>
+            <section class="paper-authors">Byeongseong Choi, Michelle A Hummel</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2b89" target="_blank">https://doi.org/10.1088/1748-9326/ae2b89</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5监测</span>
+                        <span class="topic-tag">传感器网络</span>
+                        <span class="topic-tag">多模态数据融合</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2b89" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对低成本<b>PM2.5传感器网络</b>的布局优化问题，本研究提出了一种结合<b>随机平流扩散（SAD）模型</b>与<b>信息价值（VoI）</b>的量化框架。研究以德克萨斯州沿海弯曲地区为案例，对比了综合权重、脆弱性权重及无权重三种策略。通过<b>多模态数据融合</b>，在10个传感器的情景下，综合策略对人口密集区的覆盖率比其他方案高出22%-88%，而脆弱性策略有效减少了19%的潜在社会风险覆盖盲区。虽然各策略间的预测准确性差异微小，但该框架通过量化<b>收益与成本</b>的权衡，为政策制定者在资源受限下平衡环境正义与监测效率提供了科学工具。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Building material stock drives embodied carbon emissions and risks future climate goals in China</section>
+            <section class="paper-authors">Chaoqun Zhang, Lin Yang, Dominik Wiedenhofer, Jianping Guo, Ziyue Chen, Shaoying Li, Zhen Wang, Mei-po Kwan, Yuyu Zhou, Lu Lin, Liqiang Zhang, Manchun Li, Qiqi Zhu, Bailang Yu, Bin Chen, Xing Yan, Xiaoqi Wang, Bingbo Gao, Ying Liang, Jianqiang Hu, Yuheng Fu, Qiancheng Lv, Jing Yang, Yanzhao Wang, Qianqian Wang, Qiao Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Climate Change</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41558-025-02527-3" target="_blank">https://doi.org/10.1038/s41558-025-02527-3</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">隐含碳排放</span>
+                        <span class="topic-tag">建筑存量</span>
+                        <span class="topic-tag">城市化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41558-025-02527-3" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用中国高分辨率多年数据集，构建了2000-2019年<b>建筑材料存量</b>的时间序列数据库。研究发现，中国持有全球15%的建筑存量，其隐含碳排放占全国总排放的19%。尽管2016年后增长放缓，但未来的<b>城市化进程</b>预计仍将消耗国家1.5°C碳预算的12.5%。研究强调了城市干预的必要性，建议通过低碳材料生产与区域需求匹配、加强建筑拆除后的材料回收利用来降低<b>碳足迹</b>。该研究为建筑行业在碳中和背景下的转型路径提供了定量化支持，对制定城市减排策略具有重要参考价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Stabilized perovskite ink for scalable coating enables high-efficiency perovskite modules</section>
+            <section class="paper-authors">Yangyang Liu, Junke Wang, Tianxiao Liu, Lingyuan Wang, Yuhan Zhou, Yaoyao Zhang, Yunjie Dou, Xiaoyu Shi, He Yan, Akash Dasgupta, Henry J. Snaith, Shangshang Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.aec0915" target="_blank">https://doi.org/10.1126/sciadv.aec0915</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">钙钛矿电池</span>
+                        <span class="topic-tag">光伏效率</span>
+                        <span class="topic-tag">稳定性</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.aec0915" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content"><b>钙钛矿油墨</b>的稳定性是制备高效光电器件的关键。本研究揭示了当前钙钛矿油墨因溶剂强配位作用导致的团聚与沉淀问题。通过调节前驱体盐与溶剂间的<b>配位平衡</b>，开发出一种长寿命的稳定油墨。该技术优化了薄膜结晶过程，使刮涂制备的钙钛矿模块在环境空气下实现了23.5%的<b>光电转换效率</b>。在ISOS-L-2标准协议下，器件运行1700小时后仍保持99%的初始效率。尽管偏向材料学，但其在<b>高性能光电探测器</b>领域的应用潜力，为提升未来大气遥感载荷的灵敏度奠定了材料基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Afforestation reduces fire occurrence in Colombia’s tropical savannas</section>
+            <section class="paper-authors">Dolors Armenteras, Arnold Garcia-Samaca, Walter Garcia-Suabita, Federico Mosquera-Guerra, Liliana M Dávalos</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2ca7" target="_blank">https://doi.org/10.1088/1748-9326/ae2ca7</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">植树造林</span>
+                        <span class="topic-tag">火灾动态</span>
+                        <span class="topic-tag">土地利用变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2ca7" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">研究探讨了哥伦比亚奥里诺科地区大规模<b>商业林场扩张</b>对热带稀树草原<b>火灾机制</b>的影响。研究者利用<b>分层模型</b>分析了44个林场和52个草原站点周边不同缓冲区的年度过火面积趋势。结果表明，林场扩张显著减少了火灾发生：种植面积每增加一个数量级，过火面积减少15%，且林场区域火灾每年减少2%。这主要归因于林木替换了高易燃性的草原植被，且伴随更强的<b>林分郁闭度</b>及人工管理干预。该研究为评估土地利用转型如何与火灾状态相互作用提供了空间显性证据，对南美洲的<b>气候适应政策</b>具有重要的指导价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Contrasting pathways of spring black carbon pollution in Northeastern Sichuan basin: Biomass burning transport versus local fossil fuel accumulation</section>
+            <section class="paper-authors">Pei Tang, Shiyong Shao, Jie Zhan, Liangping Zhou, Zhiyuan Hu, Yuan Mu, Liwen Ye</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121765" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121765</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳气溶胶</span>
+                        <span class="topic-tag">空气质量监测</span>
+                        <span class="topic-tag">污染溯源</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121765" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究在四川盆地东北部的梁平区进行了春季<b>黑碳（BC）气溶胶</b>的实地观测。利用<b>AE33型多波段黑碳仪</b>，研究分析了气溶胶的光学特性，发现370nm波段非黑碳成分占比达31.7%。通过对比两次典型的污染事件，研究揭示了不同的污染路径：3月事件由<b>远距离生物质燃烧输送</b>驱动，而5月事件受<b>局地化石燃料排放</b>主导。利用<b>权重轨迹分析（CWT）</b>与风向回归分析，研究进一步明确了不同污染源的空间分布特征。该工作为四川盆地细颗粒物治理提供了精细化的气溶胶指纹依据，具有较强的区域环境治理指导意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Uncovering Nitro Compounds in Water: Photolysis-Based Analytical Methods and Insights into Their Formation during Ozonation</section>
+            <section class="paper-authors">Nguyen Cong-Hau, Pham Thi Thai Ha Nguyen, Hyunjin Kim, Taekeun Son, Valentin Rougé, Yunho Lee</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c10552" target="_blank">https://doi.org/10.1021/acs.est.5c10552</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">硝基化合物</span>
+                        <span class="topic-tag">臭氧氧化</span>
+                        <span class="topic-tag">水处理</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c10552" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究针对水处理过程中产生的潜在有毒<b>硝基化合物</b>，开发了两种创新的分析方法：用于总量检测的<b>批次UV254光解比色法</b>，以及用于个体化合物检测的<b>液相色谱-柱后光解法（LC-PCUV）</b>。这些方法以光解产生的亚硝酸盐作为代理指标。研究首次通过臭氧氧化实验证实，天然有机物中超过20%的含胺基团可转化为硝基。在废水废液中检测到显著浓度的硝基产物，并发现臭氧处理会进一步增加其含量。尽管偏向水分析，但其揭示的含氮有机物转化路径，对于理解大气中<b>氮循环</b>及相关污染物的生成机制具有跨学科的借鉴意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A softness zwitterionic micelles efficiently deliver inhaled nintedanib by enhancing airway mucus penetration</section>
+            <section class="paper-authors">Binghua Wang, Peibo Fan, Fanqi Guo, Zhihui Song, Zhenzhong Zhang, Xiang Lu, Jinjin Shi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.ady1030" target="_blank">https://doi.org/10.1126/sciadv.ady1030</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">吸入疗法</span>
+                        <span class="topic-tag">气道粘液</span>
+                        <span class="topic-tag">药物递送</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.ady1030" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对特发性肺纤维化（IPF）的吸入治疗，本研究探讨了<b>两性离子胶束</b>如何克服气道粘液屏障。研究人员构建了一系列具有不同柔性的<b>DSPE-Azo-PCB胶束库</b>，并发现通过调节组分比例可使胶束的变形能力提升1至40倍。实验证明，高柔性胶束在<b>气道粘液渗透</b>能力上具有显著优势，使药物在肺组织中的累积量增加了近四倍。这种机制有效降低了药物刺激性并延长了留存时间。虽然侧重医药开发，但其对<b>细颗粒物</b>在呼吸道中行为规律的解析，为评估环境气溶胶对人体健康的深度影响提供了科学的模型参考。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
