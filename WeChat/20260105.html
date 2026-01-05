@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/01/05</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Comparing the performance of different hyperspectral satellite imaging spectroscopy in mapping methane point-source emissions</section>
+            <section class="paper-authors">Fei Li, Keer Lin, Yingqi Yan, Shengxi Bai, Qidan Huang, Chenxi Feng, Shiwei Sun, Shaohua Zhao, Wei Zhou, Chunyan Zhou, Jun Lin, Xinwei Zhang, Yongguang Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.115224" target="_blank">https://doi.org/10.1016/j.rse.2025.115224</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">高光谱遥感</span>
+                        <span class="topic-tag">甲烷监测</span>
+                        <span class="topic-tag">卫星性能评估</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.115224" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文系统评估了六种<b>星载高光谱成像仪</b>在监测<b>甲烷点源排放</b>方面的性能。研究对比了EMIT、EnMAP、GF5系列、PRISMA和ZY1-02E卫星。结果表明，<b>EMIT</b>展现出最优的甲烷反演精度（σ = 18 ppb），其次是GF5-02和EnMAP。优异的性能源于更细的<b>光谱采样距离（SSD）</b>、更高的信噪比（SNR）以及更稳定的中心波长偏移。相比之下，PRISMA和ZY1-02E由于波长漂移较大和信噪比较低，灵敏度受限。通过对石油天然气基础设施、煤矿和垃圾填埋场的案例研究，展示了卫星在不同复杂背景下的探测潜力。该研究为未来高光谱遥感任务的设计提供了定量依据，强调高信噪比和稳定的光谱定标是提升全球甲烷排放监测能力的关键，对<b>空气质量监测</b>和减缓气候变化具有重要价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Space-based assessment of NO<sub>x</sub> emissions from global oil and gas fields: Bridging the gap in current emission inventories</section>
+            <section class="paper-authors">Piyushkumar N. Patel, Ritesh Gautam, Mark Omara</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Remote Sensing of Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.rse.2025.115229" target="_blank">https://doi.org/10.1016/j.rse.2025.115229</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氮氧化物</span>
+                        <span class="topic-tag">卫星监测</span>
+                        <span class="topic-tag">排放清单校准</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.rse.2025.115229" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>TROPOMI</b>二氧化氮观测数据和<b>VIIRS</b>天然气火炬监测数据，通过<b>通量散度法</b>量化了全球44个主要油气盆地的年度<b>氮氧化物（NOx）</b>排放。作为对流层臭氧和二次气溶胶的重要前体物，油气开采排放的NOx在现有清单中存在巨大争议。本研究采用的自上而下分析揭示，传统底向上的排放清单（如EDGAR和CAMS）显著低估了油气部门的NOx排放，低估程度达61%至92%。研究发现卫星导出的NOx排放与油气生产规模高度相关（r=0.98），并利用NOx与甲烷（CH4）的比例区分了燃烧源与逃逸排放。该高分辨率空间排放图不仅填补了全球清单的空白，还为国际气候框架下的排放透明度要求提供了科学验证工具，对于改善<b>全球空气质量</b>具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">CCAV-10m: An Annual Spatiotemporal China's Coastal Wetland Vegetation Dataset Integrating Sentinel-1/2 Observations via Deep Learning</section>
+            <section class="paper-authors">Yuying Li, Lina Yuan, Ting Liu, Zijiang Song, Shuang Yang, Zilong Zhu, Min Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2025-741" target="_blank">https://doi.org/10.5194/essd-2025-741</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">深度学习</span>
+                        <span class="topic-tag">滨海湿地</span>
+                        <span class="topic-tag">遥感植被监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2025-741" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文发布了<b>CCAV-10m</b>数据集，这是首个公开的、分辨率为10米的中国年度物种级<b>滨海湿地植被</b>数据集（2016-2023年）。研究针对滨海湿地复杂的生态环境，开发了一种新型的<b>物候引导分类网络（P_SVCN）</b>，该网络通过融合<b>Sentinel-1/2</b>卫星遥感影像与大量实地观测数据（4,668个样本），实现了高精度的植被分类。验证结果显示，该分类系统的总体精度达到0.916，Kappa系数为0.898。时空分析表明，翅碱蓬是主要的植被类型，而互花米草的覆盖面积已接近其他多种原生植被的总和。该研究填补了滨海湿地数据集在空间细节和时间一致性上的空白，为<b>外来入侵物种监测</b>、湿地恢复和精准管理提供了关键支持，展示了深度学习在光学与合成孔径雷达（SAR）数据融合中的强大潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Advancing Finely Resolved Adjoint Analysis of Global Premature Mortality From Ambient Exposure to Fine Particulate Matter</section>
+            <section class="paper-authors">Zhiyu Zheng, Huizhong Shen, Yilin Chen, Peng Guo, Zhanxiang Wang, Lianming Zheng, Qiming Liu, Tiancheng Luan, Haitong Zhe Sun, Shu Tao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD043629" target="_blank">https://doi.org/10.1029/2025JD043629</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">伴随模型</span>
+                        <span class="topic-tag">健康风险评估</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD043629" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文探讨了模型分辨率对<b>空气质量相关健康风险评估</b>的影响，特别是针对细颗粒物（PM2.5）暴露导致的早逝评估。传统<b>化学传输模型伴随分析</b>受限于计算资源，通常采用粗分辨率，这可能导致评估偏差。研究者通过<b>GEOS-Chem Adjoint模型</b>，对比了从4°×5°到0.25°×0.3125°等不同分辨率下的模拟结果。研究发现，将分辨率提高至2°×2.5°时，全球PM2.5相关早逝估算值增加了8.0%，且在局部地区差异巨大。为解决分辨率敏感性带来的计算瓶颈，研究开发了一种<b>过程驱动的混合方法</b>，在细分辨率下动态模拟逆向输送和对流过程，而在粗分辨率下模拟化学和清除过程。该方法使均方根误差降低了40%以上，准确再现了高分辨率下的伴随敏感性，为精准评估<b>大气环境健康影响</b>提供了新路径。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Seasonal variability and sources of brown carbon in Wuhan: Insights from Bayesian modeling and organic tracers-based source apportionment</section>
+            <section class="paper-authors">Zongjun Li, Qiongqiong Wang, Yongyi Zhao, Zhongliang Huang, Kezheng Liao, Huan Yu, Shaofei Kong, Nan Chen, Bo Zhu, Xiao He, Mingjie Xie, Jian Zhen Yu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108736" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108736</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">棕色碳</span>
+                        <span class="topic-tag">气溶胶光学</span>
+                        <span class="topic-tag">来源解析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108736" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>贝叶斯推理（BI）模型</b>和有机示踪剂技术，对武汉市夏季和冬季的<b>棕色碳（BrC）</b>来源及其季节性变率进行了深入分析。研究通过在线监测多波长光吸收数据和总碳（TC）数据，结合离线滤膜样本分析，准确确定了BrC的质量浓度和光学特性。结果发现，BrC在两个季节的质量占比相当（约42%），但在12月表现出显著更高的吸光能力。<b>来源解析</b>识别出9个影响源，其中<b>二次有机气溶胶（SOA）</b>是夏季BrC质量的主要贡献者，而冬季则以<b>生物质燃烧</b>为主。在吸光度方面，冬季生物质燃烧贡献最为突出，而燃煤虽然在质量占比上较低，但在两季对吸光均有不容忽视的影响。研究结论指出，针对不同季节采取差异化的减排措施，对改善区域空气质量及减缓气候效应具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Emissions of Volatile Chemical Products (VCPs) in China: An Updated High‐Resolution Mass‐Balance‐Based Inventory</section>
+            <section class="paper-authors">Yibo Huangfu, Yuanting Zhang, Bin Yuan, Sihang Wang, Yang Yang, Jin Li, Ziwei Mo, Jipeng Qi, Ming Chang, Weiwei Hu, Xuemei Wang, Min Shao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044698" target="_blank">https://doi.org/10.1029/2025JD044698</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">挥发性有机化合物</span>
+                        <span class="topic-tag">排放清单</span>
+                        <span class="topic-tag">大气化学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044698" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文针对中国<b>挥发性化学产品（VCPs）</b>的排放，建立了一个更新的高分辨率质量平衡排放清单。VCPs已成为中国有机化合物排放的重要来源，直接影响臭氧和<b>二次有机气溶胶（SOA）</b>的形成。研究利用<b>质量平衡法（MB）</b>，整合了最新的排放估计方法、本地化源剖面及空间分配方案。结果显示，2022年中国VCP排放量达13.88 Tg，主要贡献源为涂料和粘合剂。含氧挥发性有机物（OVOCs）和芳香烃占总排放量及臭氧生成潜势（OFP）的70%以上。研究还发现中国VCP排放特征与美国不同，表现出更高的芳香烃占比。空间分析显示，工业排放主要分布在郊区，而生活排放集中在城市核心区。该高分辨率格点清单可直接应用于<b>化学传输模型</b>，为评估大气污染治理及环境政策制定提供科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Satellite Observation of Gravity Waves Excited by Tropical Cyclones Based on Multiple Low‐Light Satellites of Series</section>
+            <section class="paper-authors">Shensen Hu, Beimin Xiao, Weihua Ai, Yuan Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD045095" target="_blank">https://doi.org/10.1029/2025JD045095</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">重力波</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">低光成像</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD045095" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">热带气旋（TC）是产生<b>重力波</b>的重要源头，但受限于观测技术，其在中间层高度的特性一直难以捉摸。本研究利用<b>Suomi NPP</b>、JPSS-1和JPSS-2等多颗极轨卫星搭载的<b>低光成像仪（DNB）</b>，实现了对热带气旋激发的中间层重力波的增强观测。针对单星观测时间间隔长且存在位置偏差的问题，研究首次提出并应用了<b>视差校正模型</b>，解决了中间层高度引起的位置误差，消除了条纹重叠现象。以热带气旋‘布拉万’和‘山陀儿’为例，校正后的重力波波长及中心位置表现出高度一致性。此外，研究还首次基于多星联合观测报告了远洋地区中间层重力波的<b>水平相速度</b>。该研究展示了多卫星联合观测在捕捉大气波动传播过程中的巨大潜力，为深入理解大气层耦合提供了新视角。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Enhancing wind forecasts through assimilation of maximum wind observations in WRF-3DVar: A comparison with conventional AWS data for a severe squall line</section>
+            <section class="paper-authors">Dongmei Xu, Ruonan Zhao, Wei Sun, Jinzhong Min, Zhixin He, Feifei Shen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2025.108733" target="_blank">https://doi.org/10.1016/j.atmosres.2025.108733</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">风场预报</span>
+                        <span class="topic-tag">数据同化</span>
+                        <span class="topic-tag">强对流天气</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2025.108733" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究旨在通过在<b>WRF-3DVar</b>系统中同化<b>最大风速（MAW）</b>观测数据来提升强对流天气下的风场预报水平。针对2024年5月北京一次严重飑线事件，研究对比了同化传统10分钟平均风（CAW）与MAW的效果。敏感性实验和全区域同化评估表明，虽然CAW有助于局部近地面风场的改善，但MAW同化能产生更广、更强的风场增量，且影响延伸至垂直方向的多个层级。研究发现，MAW能够更准确地重建三维风场结构，并显著增强对<b>冷池强度</b>和空间足迹的刻画。此外，同化MAW后的模型在<b>阵风锋</b>动力学及地表风场的时间演变上表现出更好的鲁棒性。该成果证明了MAW数据在对流尺度同化系统中的优越性，为短时预报及临近天气分析提供了更高效的数据同化框架。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Bedrock topography and ice thickness distribution of three major Patagonian outlet glaciers unveiled by helicopter-borne ground penetrating radar</section>
+            <section class="paper-authors">Moritz Koch, Jorge Berkhoff, Norbert Blindow, David Farías-Barahona, Pedro Skvarca, Johannes J. Fürst, Matthias Braun</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2025-678" target="_blank">https://doi.org/10.5194/essd-2025-678</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">直升机载雷达</span>
+                        <span class="topic-tag">冰川厚度</span>
+                        <span class="topic-tag">巴塔哥尼亚冰原</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2025-678" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文研究了<b>巴塔哥尼亚冰原</b>三大冰川（Viedma、Upsala和Perito Moreno）的冰厚分布及基岩地形。由于气候变化导致这些冰川以不同速度退缩，掌握冰下地形对于理解其响应机制至关重要。研究采用<b>直升机载地面穿透雷达（GPR）</b>技术，利用25 MHz屏蔽宽带天线在2022年及2024年进行了两次大规模测量，共获取232公里航迹上的11.6万余个<b>冰厚</b>测量点。研究结果首次揭示了这些冰川下游区域复杂的亚冰川地形，在Upsala冰川探测到的最大深度达800米。通过将实测数据集成到<b>冰厚重建模型</b>中，生成了100米分辨率的冰厚分布图。计算显示，2000年这三大冰川的总体积约为831.14立方千米。该数据集已公开，为未来研究冰川退缩驱动机制及对气候变化的敏感性提供了坚实的数据基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">How Much of the Interannual Variability in Western North Pacific Tropical Cyclone Activity Is Driven by Sea Surface Temperature? Evidence From CMIP6 HighResMIP Simulations</section>
+            <section class="paper-authors">Guolong Miao, Chao Wang, Liguang Wu, Jian Cao, Haikun Zhao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044812" target="_blank">https://doi.org/10.1029/2025JD044812</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热带气旋</span>
+                        <span class="topic-tag">海表温度</span>
+                        <span class="topic-tag">年际变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044812" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文探讨了<b>西太平洋热带气旋（WNP TC）</b>活动的年际变化受<b>海表温度（SST）</b>驱动的程度。研究利用了来自CMIP6 <b>HighResMIP</b>项目的五个高分辨率大气模型，通过观测SST强制运行。模拟结果成功再现了WNP TC的空间分布和季节演变。在年际尺度上，多模型平均值对TC生成频率、路径频率及功率耗散指数的变率解释度分别约为30%–40%，这表明SST强制力是TC变率的重要驱动力，但并非唯一。研究进一步量化了动态生成潜势指数（DGPI）在控制时空分布中的作用，并指出跨盆地SST异常（如太平洋经向模式、印度洋和北大西洋）是调控大规模环境条件的关键。结论强调，由于超过一半的年际变率无法由SST解释，仅依靠SST进行<b>季节性预测</b>存在局限性，需要探索其他大气内部驱动因素。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Plant uptake and air-soil exchange of PAHs on university campuses: A tale of species differences, mechanisms and seasonal variation</section>
+            <section class="paper-authors">Fengwen Wang, Hongtao Si, Decai Liu, Jiayan Yu, Neil L. Rose, Hai Guo</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121766" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121766</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">多环芳烃</span>
+                        <span class="topic-tag">空气-土壤交换</span>
+                        <span class="topic-tag">城市生态</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121766" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文研究了<b>多环芳烃（PAHs）</b>在大学校园环境中的空气、土壤与植物之间的输送机制及季节性动态。PAHs因其持久性和致癌性而受到关注。研究发现，校园空气中16种优控PAHs的年均浓度为40 ng/m3，土壤累积量高达1000 ng/g。通过对校园内多种植物叶片的分析，发现其PAHs累积能力差异达5倍，这受叶片蜡质含量、比叶面积和气孔密度影响。应用<b>McLachlan框架</b>和<b>Mackay逸度模型</b>分析发现，在春、秋、冬三季，气相与植物间的<b>动态平衡</b>主导了吸收过程，而夏季则以大气干湿沉降为主。低环PAHs倾向于从土壤向大气挥发，而高环PAHs则表现为净沉降。该研究强调了在评估城市绿地环境暴露风险时，需综合考虑空间异质性、植物物种特异性及季节变化因素。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Isoprene emissions in monocots from Okinawa Island, Japan, and parameterization of the G93 formula</section>
+            <section class="paper-authors">Hirosuke Oku, Masashi Inafuku, Shigeki Oogai, Ishmael Mutanda</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121771" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121771</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">异戊二烯排放</span>
+                        <span class="topic-tag">植物排放</span>
+                        <span class="topic-tag">G93算法</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121771" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文调查了日本冲绳岛10种单子叶植物的<b>异戊二烯（Isoprene）</b>排放，这种物质是生物源挥发性有机化合物的重要组成。研究发现其中8种植物具有排放特性，且有6种为首次报道。通过在叶片尺度上改变光照（PPFD）和温度，研究评估了排放通量的响应，并利用迭代优化法改进了<b>G93算法</b>的参数。实验采用“乒乓法”分别优化升温阶段和降温阶段。结果显示，单子叶植物在经历持续高温后的排放模式具有独特性，传统的G93算法难以准确模拟，而<b>分阶段参数优化</b>显著提高了预测精度。大翅草（Arundo donax）被鉴定为最强的单子叶排放源。本研究填补了单子叶植物异戊二烯排放观测的空白，完善了生物源排放清单，为改进<b>区域空气质量模型</b>提供了关键的基础数据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A Fast Analytical Model for the Complete Radial Structure of Tropical Cyclone Low‐Level Wind Field</section>
+            <section class="paper-authors">Dandan Tao, Robert G. Nystrom, Daniel R. Chavas, Arthur Avenas</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL118320" target="_blank">https://doi.org/10.1029/2025GL118320</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热带气旋</span>
+                        <span class="topic-tag">风场建模</span>
+                        <span class="topic-tag">大气动力学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL118320" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究旨在建立一个快速且解析的<b>热带气旋（TC）低层风场</b>径向结构模型。热带气旋的风场通常可分为对流旺盛的内核心区、间歇对流的过渡区及对流较弱的外围区，不同区域具有不同的物理特性。研究者通过整合前人提出的<b>内核心区风场模型（T23）</b>和<b>外围风场模型（E04）</b>，并引入改进的<b>Rankine涡旋</b>作为过渡模型，构建了涵盖全径向范围的新型分析模型。该模型无需复杂的统计拟合，即可准确捕捉内核心区的风速变化及大半径下的外围风场特征。通过与模拟数据和观测数据的对比，证明了该模型在再现完整风场结构方面的有效性。这一成果为理解热带气旋的动力结构提供了简洁的数学工具，在防灾减灾及风场评估中具有潜在的应用价值。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
