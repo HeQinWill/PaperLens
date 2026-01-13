@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/01/13</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Federated earth-observation models for collaborative farm-scale soil mapping</section>
+            <section class="paper-authors">Giannis Gallios, José A.M. Demattê, Nikolaos Tsakiridis, Matheus Carraco Cardoso, Anastasia Kritharoula, Nikolaos Tziolas</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">International Journal of Applied Earth Observation and Geoinformation</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.jag.2025.105067" target="_blank">https://doi.org/10.1016/j.jag.2025.105067</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">联邦学习</span>
+                        <span class="topic-tag">土壤有机碳</span>
+                        <span class="topic-tag">Sentinel-2</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.jag.2025.105067" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文提出了一种<b>联邦学习（FL）</b>框架，旨在利用<b>Sentinel-2卫星影像</b>在保护隐私的前提下实现农场尺度的土壤映射。研究采用在一维卷积神经网络上进行大陆级预训练，随后在巴西50个农场进行联邦微调。方法仅在云端交换加密的权重更新，确保本地实验室数据不出农场。结果显示，该方法相比集中式模型，将粘土和<b>土壤有机碳（SOC）</b>的预测均方根误差（RMSE）分别降低了42%和31%，尤其在样本量极少的农场表现稳健。该研究为解决跨农场数据主权问题及高精度土壤属性遥感监测提供了可扩展的技术方案。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Quantifying agricultural N2O and CH4 emissions in the  Netherlands using an airborne eddy covariance system</section>
+            <section class="paper-authors">Paul Waldmann, Max Eckl, Leon Knez, Klaus-Dirk Gottschaldt, Alina Fiehn, Christian Mallaun, Michał Gałkowski, Christoph Kiemle, Ronald Hutjes, Thomas Röckmann, Huilin Chen, Anke Roiger</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-185-2026" target="_blank">https://doi.org/10.5194/amt-19-185-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">机载涡度相关</span>
+                        <span class="topic-tag">农业温室气体</span>
+                        <span class="topic-tag">排放验证</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-185-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究首次成功应用<b>机载涡度相关（EC）系统</b>对荷兰农业区的<b>N2O和CH4排放</b>进行了高分辨率量化。实验利用搭载于Cessna Caravan飞机的<b>量子级联激光光谱仪</b>（10 Hz采样）和METPOD气象测量套件，在2023年初夏对弗里斯兰省进行了监测。研究识别出了降雨后的N2O排放热点，峰值通量达0.34 µg m⁻² s⁻¹。通过与EDGAR v8.0等排放清单对比发现，现有清单显著低估了生长期内的N2O排放，且缺乏准确的年循环描述。该方法结合了区域覆盖优势与高空间分辨率，为独立验证非CO2温室气体排放提供了关键技术支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Validation of satellite formaldehyde products constrained by aircraft observations over the United States during fire seasons</section>
+            <section class="paper-authors">Shuai Sun, Yuzhong Zhang, Song Liu, Lei Shu, Isabelle De Smedt, Lu Hu, Wade Permar, Dirk Richter, Alan Fried, Lei Zhu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2025.121767" target="_blank">https://doi.org/10.1016/j.atmosenv.2025.121767</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲醛反演</span>
+                        <span class="topic-tag">卫星产品验证</span>
+                        <span class="topic-tag">火灾排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2025.121767" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究针对火灾季节期间的<b>卫星甲醛（HCHO）产品</b>进行了深度验证。利用FIREX-AQ和WE-CAN两次大型航空观测任务获取的烟羽数据，结合<b>GEOS-Chem化学传输模型</b>，对OMI、TROPOMI及OMPS等五个卫星产品进行了对比。研究发现，所有卫星产品在火灾期间普遍存在11.0%至56.7%的<b>低偏差</b>，其中OMPS-SAO (N20) 表现相对最优。不确定性分析表明，误差主要源于垂直剖面形状（AMF）、斜柱浓度拟合以及气溶胶/云的散射处理。研究建议未来应优先改进火灾场景下的气溶胶校正，以提升卫星反演空气质量指标的准确性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Abrupt trend change in global mean sea level and its components in the early 2010s</section>
+            <section class="paper-authors">Lancelot Leclercq, Julius Oelsmann, Anny Cazenave, Marcello Passaro, Svetlana Jevrejeva, Sarah Connors, Jean-François Legeais, Florence Birol, Rodrigo Abarca-del-Rio</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-025-03149-5" target="_blank">https://doi.org/10.1038/s43247-025-03149-5</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海平面上升</span>
+                        <span class="topic-tag">卫星高度计</span>
+                        <span class="topic-tag">趋势突变</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-025-03149-5" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文报告了2010年代初期<b>全球平均海平面（GMSL）</b>及其热膨胀与质量分量的显著趋势转变。通过对<b>卫星高度计</b>数据及多种趋势检测方法的分析，研究发现GMSL的上升速率从1993-2011年间的2.9 mm/yr突增至2012-2024年间的4.1 mm/yr。其中，质量分量的变化主要由<b>陆地储水量</b>变化驱动，冰盖融化亦有贡献。研究指出，这种十年尺度的突变主要受<b>内部气候变率</b>驱动，但不排除辐射迫强增加的潜在影响。该发现揭示了全球气候系统在现代观测期的不稳定性，对海平面上升预测具有重要修正价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Photoacclimation contributes to Arctic primary production under sea ice and around the subsurface chlorophyll maximum</section>
+            <section class="paper-authors">Yoshio Masuda, Maki Noguchi Aita, Sherwood Lan Smith, Amane Fujiwara, Eiji Watanabe, Hiroshi Sumata, Hideyuki Nakano, Yasuhiro Yamanaka</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03181-z" target="_blank">https://doi.org/10.1038/s43247-026-03181-z</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">北极初级生产力</span>
+                        <span class="topic-tag">光驯化</span>
+                        <span class="topic-tag">海冰遥感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03181-z" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文研究了北极海冰下及次表层叶绿素最大值（SCM）区域的<b>光驯化机制</b>对初级生产力的贡献。研究将基于资源分配优化的光驯化理论整合进<b>全球生态系统模型</b>中，发现由于浮游植物在弱光环境下增加了单位碳量的叶绿素含量，使得冰下植物生长速率能与开阔水域媲美。模拟显示，约一半的北极初级生产力发生在卫星难以观测的<b>高浓度海冰区</b>（覆盖率>10%）。研究结论指出，初级生产力的分布与植物碳生物量的相关性强于叶绿素浓度，这一机械框架提升了预测北极环境变迁下生产力波动的能力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Estimation of CO2 fluxes in the cities of Zurich and Paris using the ICON-ART CTDAS inverse modelling framework</section>
+            <section class="paper-authors">Nikolai Ponomarev, Michael Steiner, Erik Koene, Pascal Rubli, Stuart Grange, Lionel Constantin, Michel Ramonet, Leslie David, Arash Hamzehloo, Lukas Emmenegger, Dominik Brunner</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-547-2026" target="_blank">https://doi.org/10.5194/acp-26-547-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">城市碳反演</span>
+                        <span class="topic-tag">ICON-ART模型</span>
+                        <span class="topic-tag">温室气体监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-547-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用<b>ICON-ART大气传输模型</b>，针对苏黎世和巴黎两个地形和规模迥异的城市，进行了为期一年的<b>CO2通量反演</b>估算。数据来源包括苏黎世密集的屋顶传感器网络和巴黎的高塔观测网络。研究采用<b>集成平方根滤波器</b>优化了网格化的化石源和生物源通量。结论显示，苏黎世的人为排放量约为1012.3 kt/yr，比先验数据减少了30%，尤其在暖冬期间减幅明显；而巴黎的排放量为3580.0 kt/yr，比先验高出7%。研究强调了城市地形、观测网络布局和模型分辨率对城市尺度碳排放监测的重要性，证明了中尺度模型在验证城市气候行动计划中的潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">In Situ Observations of Ice Crystal Chain Aggregates in Winter Storms</section>
+            <section class="paper-authors">Christian M. Nairy, David J. Delene, Joseph A. Finlon, John E. Yorks, Emma Järvinen, Martin Schnaiter, Matthew L. Walker McLinden, Andrew J. Heymsfield, Andrew G. Detwiler, Lynn A. McMurdie</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL118365" target="_blank">https://doi.org/10.1029/2025GL118365</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰晶聚合</span>
+                        <span class="topic-tag">原位观测</span>
+                        <span class="topic-tag">云微物理</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL118365" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文报道了在弱电场冬季风暴中发现<b>冰晶链聚合物</b>的原位观测结果。研究基于NASA <b>IMPACTS场实验</b>，在2020至2023年间利用P-3研究飞机的云探测器进行了多次飞行采样。通过<b>高分辨率云粒子成像仪（CPI）</b>捕捉到的图像显示，这类线性连接的单体冰晶结构在-38°C至+2.5°C的大气环境中广泛存在，占总飞行时间的10%左右。以往观点认为此类结构仅在强电场对流云中形成，但本研究在弱电场环境下也观测到了伴有升华特征的链状聚合物。这一发现挑战了传统的冰晶聚合理论，提示存在除电场增强以外的其他形成路径。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Satellite assessment of rooftop greenness dynamics and equity in Hong Kong</section>
+            <section class="paper-authors">Jing Ling, Shan Wei, Genyun Sun, Liqun Sun, Xiaojun Yang, Hongsheng Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">International Journal of Applied Earth Observation and Geoinformation</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.jag.2026.105096" target="_blank">https://doi.org/10.1016/j.jag.2026.105096</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">屋顶绿化</span>
+                        <span class="topic-tag">环境公平</span>
+                        <span class="topic-tag">卫星遥感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.jag.2026.105096" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究开发了一个基于<b>高分辨率卫星影像</b>的建筑级评估框架，用于分析香港<b>屋顶绿化</b>的动态变化与社会公平性。通过2018-2024年的<b>NDVI时间序列</b>，研究定义了“屋顶绿化不平等指数（RGII）”。结论显示，全市绿化覆盖率增长了22.1%，且不平等程度在452个社区中普遍下降。然而，分配公平性仍受社会经济因素影响：公屋系统的绿化增长（38.9%）远超私人住宅（21.1%），而租金负担重、单身住户多的社区改善较慢。研究展示了遥感技术在支持城市公平绿化策略制定和脆弱社区识别方面的强大功能。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Constraining a Radiative Transfer Model with Satellite Retrievals: Contrasts between cirrus formed via homogeneous and heterogeneous freezing and their implications for cirrus cloud thinning</section>
+            <section class="paper-authors">Ehsan Erfani, David L. Mitchell</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-523-2026" target="_blank">https://doi.org/10.5194/acp-26-523-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卷云云层变薄</span>
+                        <span class="topic-tag">辐射传输模型</span>
+                        <span class="topic-tag">CALIPSO卫星</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-523-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文研究了<b>卷云云层变薄（CCT）</b>这一气候干预手段对地球辐射平衡的影响。研究人员利用<b>CALIPSO卫星</b>检索到的卷云微物理剖面数据，结合<b>辐射传输模型（RTM）</b>，量化了同质和异质冰核形成的卷云在对流层顶、地表及大气内部的辐射效应。研究涵盖了北极、南极及中纬度等不同区域。研究定义了辐射效应的上下限：下限假设云层完全向异质冰核转变，上限则考虑了大气动力学对同质冻结的持续驱动。结果表明，CCT的瞬时地表效应在-0.5至+0.6 W/m²之间，TOA效应在-0.9至+1.1 W/m²之间，显示该手段可能导致<b>冷却或升温</b>的双重可能性。该发现为改进气候模型中卷云的处理提供了重要参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Weakening mountain vegetation aspect asymmetry due to altered energy conditions</section>
+            <section class="paper-authors">Qing Tian, Feng Tian</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Climate Change</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41558-025-02542-4" target="_blank">https://doi.org/10.1038/s41558-025-02542-4</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">植被坡向差异</span>
+                        <span class="topic-tag">山地生态学</span>
+                        <span class="topic-tag">气候变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41558-025-02542-4" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究量化了2003至2024年间北半球山地<b>植被密度坡向不对称性</b>的长时序变化。利用卫星遥感植被数据，研究发现极向坡（阴坡）与赤道向坡（阳坡）之间的植被密度差异正在减弱。这种削弱趋势归因于<b>水热条件</b>的改变，特别是太阳辐射和温度波动的驱动。分析表明，随着气候变暖，水分对植被生长的控制作用在部分区域有所下降。该研究揭示了地形微气候在调节大尺度气候变化影响中的复杂角色，对于理解气候变化下山地生态系统的<b>生态稳定性</b>和物种分布具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Between-plant interactions in Scots pine are not impaired by air pollutants</section>
+            <section class="paper-authors">Tihomir Simin, James M. W. Ryalls, Oliver E. I. Welling, Robbie D. Girling, Neil J. Mullinger, James D. Blande</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-025-03175-3" target="_blank">https://doi.org/10.1038/s43247-025-03175-3</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">植物间通讯</span>
+                        <span class="topic-tag">空气污染</span>
+                        <span class="topic-tag">挥发性有机物</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-025-03175-3" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">研究调查了臭氧（O3）和氮氧化物（NOX）等大气污染物对<b>欧洲赤松</b>个体间防御相互作用的影响。利用新型<b>自由空气柴油与臭氧加浓（FADOE）平台</b>，研究人员模拟了受损植物释放的挥发性有机化合物（HIPVs）如何诱导邻近植物产生防御反应。数据表明，尽管空气污染导致受体植物的光合作用下降、气孔导度改变及VOC排放谱变化，但植物间的“报警”机制并未被切断：受体植物仍能有效产生预警反应，使其皮部损伤减少了49%。结论证实了即使在受污染的空气环境下，植物间的化学生态通讯依然具有较强的韧性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Marine darkwave as an event-based framework to assess unusual periods of reduced underwater light availability</section>
+            <section class="paper-authors">François Thoral, Matthew H. Pinkerton, Shinae Montie, Mads S. Thomsen, Christopher N. Battershill, Karen Filbee-Dexter, Mark Gall, Robert J. Miller, Shane Orchard, Daniel C. Reed, Leigh W. Tait, Spencer D. S. Virgin, Thomas Wernberg, John Zeldis, David R. Schiel</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-025-03023-4" target="_blank">https://doi.org/10.1038/s43247-025-03023-4</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋暗波</span>
+                        <span class="topic-tag">水下辐照度</span>
+                        <span class="topic-tag">生态极端事件</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-025-03023-4" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文提出了“<b>海洋暗波</b>”这一新概念框架，用于定义和量化水下光照短时剧烈减少的极端事件。研究人员将该框架应用于加州和新西兰长达10-16年的<b>原位辐照度数据</b>，以及跨越20年的<b>卫星衍生海床辐照度数据</b>。结果显示，海洋暗波持续时间可达64天，导致高达100%的光照损失，累积亏缺显著。通过卫星遥感分析，研究识别了数十个具有空间变异性的海床暗波事件。这一框架为评估极端天气或水质变化对海洋生态系统（如海藻森林、珊瑚礁）的光学影响提供了标准化的评价体系，具有从局部到全球尺度的可推广性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Glacial Lake Observatory (GLO): Annual dataset of glacial lakes in Nepal and transboundary catchments (2017–2024)</section>
+            <section class="paper-authors">Lauren D. Rawlins, C. Scott Watson, Rakesh Bhambri, Nitesh Khadka, Mohan B. Chand</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2025-751" target="_blank">https://doi.org/10.5194/essd-2025-751</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰川湖监测</span>
+                        <span class="topic-tag">深度学习</span>
+                        <span class="topic-tag">Sentinel卫星</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2025-751" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该论文介绍了<b>冰川湖观测站（GLO）</b>的基础数据集，聚焦于尼泊尔及跨界流域的冰川湖演变。研究人员利用<b>深度学习模型</b>自动提取了2017至2024年间<b>Sentinel-1和Sentinel-2</b>卫星影像中的水体，并将其分类为冰川补给型和非补给型。在八年间监测到数千个湖泊，发现冰川湖数量和总面积持续增长，其中库西盆地的扩张最为剧烈，涵盖了约61%的监测湖泊。验证显示，Sentinel-2在捕捉小微型湖泊方面具有更高精度（F1分数0.80-0.92）。该数据集为监测冰川湖溃决洪水（GLOF）风险及理解湖泊-冰川反馈机制提供了长效支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Associations between the thermal spring timing variability and atmospheric teleconnection patterns over the past six decades in Finland</section>
+            <section class="paper-authors">Sadegh Kaboli, Ville Kankare, Ali Torabi Haghighi, Cintia Bertacchi Uvo, Elina Kasvi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Research</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosres.2026.108752" target="_blank">https://doi.org/10.1016/j.atmosres.2026.108752</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热春季</span>
+                        <span class="topic-tag">大气遥相关</span>
+                        <span class="topic-tag">物候变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosres.2026.108752" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文探讨了芬兰过去60年间<b>热春季</b>的时空演变规律及其与大尺度<b>大气遥相关模式</b>的联系。研究基于1961-2023年高分辨率（1km）日均温数据，采用<b>EOF分解</b>等统计方法。结论显示，芬兰春季开始日期每十年提前2-6天，且持续时间在北部和沿海显著延长。分析发现，春季提前与<b>北极涛动（AO）</b>正相位强相关，而生长期开始时间的延迟则与东大西洋-西俄罗斯（EAWR）模式有关。研究阐明了地理特征如何调节气候变暖对物候的影响，为高纬度地区生态系统和水文循环的预测提供了气候学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Improving Low-Cost Optical PM Sensor Accuracy in Humid Conditions via Aerosol Liquid Water Estimation Using U.S. EPA CSN Data</section>
+            <section class="paper-authors">Yuhang Guo, Alexandra Catena, Margaret J. Schwab, Amanda Teora, Oliver V. Rattigan, Violet Harder, Yasaman Hassanzadeh, James J. Schwab, Jie Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00225" target="_blank">https://doi.org/10.1021/acsestair.5c00225</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">低成本传感器</span>
+                        <span class="topic-tag">气溶胶质态水</span>
+                        <span class="topic-tag">湿度校正</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00225" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对<b>低成本光学传感器</b>在高湿度环境下测量PM2.5准确性下降的问题，本文开发了一套利用<b>气溶胶质态水（ALW）</b>估算的校正框架。研究利用美国环保署（EPA）的<b>化学组分网络（CSN）数据</b>，结合<b>米氏散射理论</b>，提出了两步校正法：首先通过光学标定处理气溶胶粒径分布和折射率的变化，随后定量分离出高湿度下的水分质量。实验结果显示，校正后的PM2.5数据与标准参考仪器高度一致。该方法不仅提升了低成本传感器在潮湿地区的适用性，还为研究二次气溶胶形成中的水相化学提供了新见解，并为缺乏组分数据的地区提供了实用替代方案。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impact of Wildland Fire Smoke PM2.5 on Birth Weight in California</section>
+            <section class="paper-authors">Xing Gao, Sally Picciotto, Dana E. Goin, Fred Lurmann, Nathan Pavlovic, Tracey J. Woodruff, Rachel Morello-Frosch, Amy M. Padula</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c05040" target="_blank">https://doi.org/10.1021/acs.est.5c05040</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">野火烟雾</span>
+                        <span class="topic-tag">新生儿健康</span>
+                        <span class="topic-tag">PM2.5影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c05040" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文分析了2007至2018年间加利福尼亚州野火烟雾中的<b>PM2.5暴露</b>与新生儿出生体重之间的关联。研究通过偏差校正的<b>社区多尺度空气质量模型（CMAQ）</b>评估孕期暴露水平，并结合了超过450万份单胎足月分娩记录。统计采用逻辑和线性回归模型。研究发现，孕期野火PM2.5每增加1 μg/m³，与大于胎龄儿（LGA）概率增加及平均出生体重上升相关，同时微弱降低了低出生体重风险。这种关联在西班牙裔及其他种族群体中尤为显著，但在美洲印第安人和阿拉斯加原住民中呈现相反趋势。结果揭示了野火污染对胎儿发育的复杂影响及其在不同族群间的<b>环境不平等性</b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Closing the carbon mismatch</section>
+            <section class="paper-authors">Xujia Jiang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Geoscience</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41561-025-01906-x" target="_blank">https://doi.org/10.1038/s41561-025-01906-x</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">碳失配</span>
+                        <span class="topic-tag">碳核查</span>
+                        <span class="topic-tag">大气监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41561-025-01906-x" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该短评文章探讨了“<b>碳失配</b>”问题，即自上而下的大气观测推算的碳通量与自下而上的清单统计数据之间的差异。文章强调了在全球气候治理背景下，弥补这一缺口对于准确评估各国减排成效的关键意义。通过综述目前的<b>大气监测技术</b>和全球碳计划的数据整合手段，作者指出需要更严密的<b>遥感观测网络</b>和同化系统来降低碳预算的不确定性。虽然内容简短，但指出了当前碳循环研究中亟待解决的核心挑战，呼吁加强多尺度监测数据的融合以实现碳中和目标的透明化核算。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
