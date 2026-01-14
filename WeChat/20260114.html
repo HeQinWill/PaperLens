@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/01/14</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global transport of stratospheric aerosol produced by Ruang eruption from EarthCARE ATLID, limb-viewing satellites and ground-based lidar observations</section>
+            <section class="paper-authors">Sergey Khaykin, Michaël Sicard, Thierry Leblanc, Tetsu Sakai, Nickolay Balugin, Gwenaël Berthet, Stëphane Chevrier, Fernando Chouza, Artem Feofilov, Dominique Gantois, Sophie Godin-Beekmann, Arezki Haddouche, Yoshitaka Jin, Isamu Morino, Nicolas Kadygrov, Thomas Lecas, Ben Liley, Richard Querel, Ghasssan Taha, Vladimir Yushkov</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-607-2026" target="_blank">https://doi.org/10.5194/acp-26-607-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火山气溶胶</span>
+                        <span class="topic-tag">EarthCARE卫星</span>
+                        <span class="topic-tag">平流层传输</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-607-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用欧空局新发射的<b>EarthCARE卫星</b>及其搭载的<b>ATLID激光雷达</b>，结合多颗边缘扫描卫星（OMPS-LP、SAGE III）及地面激光雷达观测，追踪了2024年4月印尼<b>Ruang火山喷发</b>产生的平流层气溶胶全球传输过程。结果显示，Ruang火山喷出的硫化物柱高度达25公里，导致热带平流层气溶胶含量在随后数月内翻倍。由于喷发时间处于南半球秋季，气溶胶迅速向南极方向传输，并预计将增强2025年极地平流层云的发生率。研究验证了ATLID在平流层气溶胶精细垂直结构分辨方面的卓越性能，证明了其在评估火山活动对气候、云层及臭氧层长效影响方面的关键价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Use of stable nitrogen isotopes in atmospheric aerosol research</section>
+            <section class="paper-authors">Jingqi Bai, Libin Wu, Qingzi Zhao, Ke Xin, Wei Hu, Junjun Deng, Pingqing Fu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.121793" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.121793</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气水汽</span>
+                        <span class="topic-tag">盘古气象大模型</span>
+                        <span class="topic-tag">神经网络校正</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.121793" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究基于<b>盘古气象大模型（Pangu-Weather）</b>开发了一种实现1公里分辨率<b>可降水量（PWV）</b>和<b>天顶总延迟（ZTD）</b>高精度预报的新方法。针对现有方法在时空分辨率和实时性上的瓶颈，研究利用盘古系统输出的7天预报参数作为初始场，并结合<b>GNSS观测数据</b>，构建了基于<b>多层感知机（MLP）</b>的校正模型。该模型成功消除了原始产品在1000 hPa与地面高度间的系统偏差。在2023年“杜苏芮”台风案例分析中，MLP-PWV精准描绘了强降水前的空间水汽集聚特征。结论证明，该系统能提供时空连续、高精度的对流层参数预报，为精确定位、气象监测及灾害预警提供了强大的数据支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">New insights from the bias-corrected simulations of CMIP6 in Northern Hemisphere’s snow drought</section>
+            <section class="paper-authors">Yong Hu, Xuhai Yang, Zican He, Fei Zhang, Boliang Dong, Yuanfang Chai</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03187-7" target="_blank">https://doi.org/10.1038/s43247-026-03187-7</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二氧化碳</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03187-7" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究生成了2016–2020年全球每日<b>0.1°高分辨率无缝XCO2数据集</b>。针对单一卫星观测覆盖有限的问题，研究采用<b>堆叠机器学习方法</b>，融合了卫星遥感数据与多种环境因子。经验证，该数据集表现优异，均方根误差（RMSE）仅为0.9697 ppm，与地基观测（TCCON）高度一致。依托高频次的每日分辨率，研究成功捕捉了Fort McMurray和Blue Cut Fire两次典型<b>野火事件</b>期间二氧化碳浓度的精细空间变化。该数据集不仅能刻画全球及省域尺度的时空趋势，也为研究碳源汇动态和评估极端天气/灾害的碳排放影响提供了高质量的无缝化数据支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Quantitative Assessment of Particulate Matter Biodistribution Using 14C-Nanotracing and Accelerator Mass Spectrometry</section>
+            <section class="paper-authors">Seongeun Song, Gwan-Ho Lee, Min-Seok Oh, Sungsu Lim, Yun Kyung Kim, Youngsoo Kim, Byung-Yong Yu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c11834" target="_blank">https://doi.org/10.1021/acs.est.5c11834</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">颗粒物暴露</span>
+                        <span class="topic-tag">放射性示踪</span>
+                        <span class="topic-tag">环境健康</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c11834" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文开发了一种基于<b>14C纳米追踪</b>与<b>加速器质谱（AMS）</b>的定量评估平台，用于精确测定吸入<b>颗粒物（PM）</b>在器官层面的生物分布。通过热解14C-正己烷生成标记的黑炭颗粒物，并模拟急性与亚慢性暴露情景。AMS分析显示，极低浓度的碳质PM不仅在肺部积累，还会通过全身转运进入肝、肾，甚至跨越血脑屏障进入<b>脑组织</b>，其灵敏度达到了亚皮克量级。实验发现亚慢性暴露会导致大脑中的PM负荷增加3-6倍。该研究建立了一个将PM吸入暴露与系统性负担联系起来的定量框架，为毒理动力学模型提供了关键实验数据，也为科学制定空气质量标准提供了健康证据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global near real-time 500 m 10 d FPAR dataset from MODIS and VIIRS for operational agricultural monitoring and crop yield forecasting</section>
+            <section class="paper-authors">Lorenzo Seguini, Anja Klisch, Michele Meroni, Anton Vrieling, Giacinto Manfron, Clement Atzberger, Felix Rembold</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-18-309-2026" target="_blank">https://doi.org/10.5194/essd-18-309-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">植被遥感</span>
+                        <span class="topic-tag">FPAR数据集</span>
+                        <span class="topic-tag">农业监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-18-309-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究发布了一个持续更新的全球<b>500米分辨率、10天步长</b>的<b>光合有效辐射吸收比例（FPAR）</b>数据集，专门针对农业监测优化。数据融合了<b>MODIS（Collection 6.1）</b>和<b>VIIRS（Collection 2）</b>，确保了从2000年至今及未来的时间序列连续性。方法上采用改进的<b>Whittaker平滑算法</b>进行近实时（NRT）滤波，有效处理了云覆盖造成的观测缺失，并通过均值差异校正实现了跨传感器的一致性。该数据集能够通过六次迭代不断提升近期数据点的质量，最终在90天后形成固化产品。作为农业预警和产量预测的核心数据，其在空间分辨率和近实时获取性能上均达到了业务化应用的需求。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Projected changes in atmospheric pathways of Western North American heatwaves simulated from high-resolution coupled model simulations</section>
+            <section class="paper-authors">Mingyu Park, Nathaniel C. Johnson</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01319-y" target="_blank">https://doi.org/10.1038/s41612-025-01319-y</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火山喷发</span>
+                        <span class="topic-tag">平流层气溶胶</span>
+                        <span class="topic-tag">冬季增温</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01319-y" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了1783年<b>拉基（Laki）火山喷发</b>如何通过持久的<b>平流层气溶胶</b>引发北欧亚地区的冬季增温。通过气候模型模拟并结合历史温度重建数据，研究发现高纬度喷发若能产生跨越夏冬的持久平流层烟羽，即使在寒冷季节也能触发类似热带大喷发的“增温响应”。这种气溶胶诱导的平流层变暖增强了南北温度梯度，加强了<b>极地涡旋</b>，并导致垂直能量再分配向有利于地表增温的方向移动。研究成功解释了模型与观测间的差异，强调了平流层-对流层耦合在塑造火山喷发后大规模环流模式中的关键作用。这一结论对于评估未来大型火山活动的区域气候影响具有重要参考意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Emissions of hazardous chemicals from baby crawling and yoga mats: Implications for indoor air quality mediated by placement orientation</section>
+            <section class="paper-authors">Chun-Yan Chen, Yun Hong, Chen-Chou Wu, Lian-Jun Bao, Eddy Y. Zeng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.121791" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.121791</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">稳定氮同位素</span>
+                        <span class="topic-tag">气溶胶来源</span>
+                        <span class="topic-tag">大气化学研究</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.121791" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文系统综述了<b>稳定氮同位素</b>在大气含氮气溶胶研究中的应用。稳定氮同位素分析已成为追踪铵盐、硝酸盐及<b>有机氮气溶胶</b>来源与转化路径的关键工具。文章总结了主流测量技术与分析框架，重点讨论了利用<b>贝叶斯同位素混合模型</b>进行源解析的方法。δ15N能有效区分化石燃料燃烧、农业排放和生物质燃烧等来源，而δ18O则在揭示硝酸盐和亚硝酸（HONO）形成路径方面具有独特优势。综述最后指出了同位素分馏过程复杂性及有机氮分析面临的挑战，并建议未来应建立更完备的同位素特征数据库，结合多方法手段以深化对全球氮循环和环境影响的理解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">OasisMap30: A 30 m annual land cover dataset of China's oases from 1987 to 2024</section>
+            <section class="paper-authors">Peng Chen, Qiang Tang, Yanxu Liu, Yuchuan Luo, Linhai Cheng, Yijia Wang, Wenxuan Xu, Shuai Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2025-818" target="_blank">https://doi.org/10.5194/essd-2025-818</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">土地利用</span>
+                        <span class="topic-tag">绿洲变化</span>
+                        <span class="topic-tag">遥感制图</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2025-818" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究开发了名为<b>OasisMap30</b>的中国绿洲30米分辨率年度土地覆盖数据集，时间跨度为1987–2024年。该数据集利用<b>Landsat卫星影像</b>、机器学习、<b>LandTrendr时间分段算法</b>和主成分分析，在Google Earth Engine平台上构建。精度验证显示总体准确率超过90%，在不透水面、耕地和地表水分类方面与专题产品高度一致。数据揭示，38年间中国绿洲面积扩张了45.87%（约775万公顷），主要驱动力是耕地扩张和草地修复。OasisMap30为研究干旱区景观动态、社会生态响应及可持续发展提供了高质量的基础数据，解决了绿洲研究长期缺乏高时空分辨率专用数据的难题。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Persistent stratospheric cold-season aerosols from the 1783 Laki eruption produced winter warming over Northern Eurasia</section>
+            <section class="paper-authors">Linshan Yang, Chaochao Gao, Fei Liu, Alan Robock, Weiyi Sun, Deliang Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03197-5" target="_blank">https://doi.org/10.1038/s43247-026-03197-5</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气温日较差</span>
+                        <span class="topic-tag">气候预测</span>
+                        <span class="topic-tag">云量反馈</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03197-5" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文揭示了历史<b>气温日较差（DTR）</b>趋势与未来气候投影之间的内在联系。针对多模式模拟在预测DTR变化中的巨大不确定性，研究提出了一种基于历史波动约束未来预估的框架。分析发现，DTR的变化主要受<b>温室气体排放</b>驱动，而非内部变率：温室气体通过减少<b>云量</b>，增强日间短波辐射并减少夜间长波辐射，从而延缓DTR的下降。该约束框架能将IPCC AR6参考区域的模型不确定性降低15-68%。尽管该关系在极地冬季会因辐射减弱而失效，但在全球大部分地区表现稳健。结论为区域气候政策制定提供了更精准的极端温度变化预测依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Building a mine-level database of methane emission factors for China’s underground coal</section>
+            <section class="paper-authors">Ziqi Wu, Yanwei Wang, Fei Teng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae3190" target="_blank">https://doi.org/10.1088/1748-9326/ae3190</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷排放</span>
+                        <span class="topic-tag">煤矿开采</span>
+                        <span class="topic-tag">排放因子数据库</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae3190" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究构建了2011–2023年中国<b>地下煤矿甲烷（CH4）</b>排放因子（EFs）的矿井级数据库。通过整合国家煤矿瓦斯评估、省级披露及多源数据，并利用<b>随机森林多重插补框架</b>填补了部分缺失的地质和运营预测因子。数据库揭示了显著的时空异质性：尽管全国产能基本稳定，但小矿井数量减少了92%；全国产量加权排放因子从2011年的5.39 kg/t下降到2020年的4.24 kg/t，随后因高排放省份增产及深部开采在2023年回升至4.78 kg/t。研究指出了南北差异和炼焦煤省份的高排放特征，并发现高瓦斯矿井的选择性不披露可能导致估算偏差。该成果为针对性的<b>甲烷减排</b>和国家自主贡献（NDC）政策设计提供了高透明度的科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Divergent drivers of aerosol acidity: evidence for shifting regulatory regimes in a coastal region</section>
+            <section class="paper-authors">Jinghao Zhai, Yujie Zhang, Baohua Cai, Yaling Zeng, Jingyi Zhang, Jianhuai Ye, Chen Wang, Tzung-May Fu, Lei Zhu, Huizhong Shen, Xin Yang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-623-2026" target="_blank">https://doi.org/10.5194/acp-26-623-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶酸度</span>
+                        <span class="topic-tag">极端天气</span>
+                        <span class="topic-tag">大气化学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-623-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究结合现场观测与<b>ISORROPIA热力学模拟</b>，探讨了沿海大城市（深圳）在不同气象制度下<b>气溶胶酸度（pH）</b>的调节机制。通过对典型时期与台风时期的对比分析，发现：在非台风期间，气溶胶pH主要受<b>铵盐/氨气对</b>的缓冲控制，且pH波动主要由相对湿度驱动，符合多相缓冲理论；但在<b>台风期间</b>，来源于海盐的非挥发性阳离子取代氨气成为主导因素，导致传统缓冲理论失效。模拟结果证实，在极端天气干扰下，气溶胶成分对pH的控制力超过了气象条件。这一发现为完善沿海地区化学传输模型提供了现场证据，强调了在极端天气背景下考虑成分-气象相互作用的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global Coastline Plastic Emissions into the Oceans</section>
+            <section class="paper-authors">Yishi Han, Yahui Zhang, Xuewei Liu, Yuxin Liu, Wenchao Ma, Zongguo Wen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c15230" target="_blank">https://doi.org/10.1021/acs.est.5c15230</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">塑料污染</span>
+                        <span class="topic-tag">机器学习</span>
+                        <span class="topic-tag">污染源量化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c15230" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究开发了一个基于机器学习的框架，用于量化全球海岸线向海洋排放的<b>塑料污染</b>。研究整合了来自3468个站点的25,892个数据点，考虑了社会经济因素、废弃物部门及<b>海岸地貌</b>、潮汐特征等38项特征。研究提出了<b>海岸塑料污染指数（CPPI）</b>，将污染严重程度划分为四个等级。模型估算2019年全球海岸塑料排放量在15.32至59.18 Kt之间，人均排放2.17至8.38克。管理不善的废弃物、包装及PET/PP材质塑料是排放主导。通过无监督学习聚类发现，同类国家在CPPI分布上具有高度一致性。该研究为国家及国际治理塑料污染提供了稳健的科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Urban vegetation semantics in CityGML: Key stakeholder survey findings and vegetation ADE development</section>
+            <section class="paper-authors">Laura Mrosla, Dessislava Petrova-Antonova, Simeon Malinov, Henna Fabritius</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">International Journal of Applied Earth Observation and Geoinformation</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.jag.2025.105043" target="_blank">https://doi.org/10.1016/j.jag.2025.105043</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">遥感变化检测</span>
+                        <span class="topic-tag">灾害监测</span>
+                        <span class="topic-tag">少样本学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.jag.2025.105043" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究针对灾害响应中光学与<b>合成孔径雷达（SAR）</b>影像标注样本稀缺的挑战，提出了<b>DSTCD双阶段训练框架</b>。由于灾害发生的随机性，公共数据集与现实场景存在显著分布差异，传统方法在极少样本（少于20对）下表现不佳。DSTCD框架首先在异质影像配准任务上预训练，随后通过<b>任务引导特征转移模块</b>将结构和语义特征迁移至变化检测任务。在城市扩张和水域监测四个公测集上的结果显示，其平均F1分数比当前最优方法提升了约7%至13%。实测案例证明了该方法在地震、洪水等数据稀缺灾害监测场景中的强大泛化能力和鲁棒性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Origins of Subsurface Methane Leaking from Nonproducing Oil and Gas Wells in Canada</section>
+            <section class="paper-authors">Gianni V. R. Micucci and Mary Kang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c07132" target="_blank">https://doi.org/10.1021/acs.est.5c07132</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">甲烷泄漏</span>
+                        <span class="topic-tag">油气井监测</span>
+                        <span class="topic-tag">同位素分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c07132" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究调查了加拿大大量<b>非生产性油气井</b>释放的地下<b>甲烷（CH4）</b>的来源及其驱动因素。通过对401口非生产井收集的样品应用地球化学分析框架，确定了100口井中112个样品的甲烷成因。研究发现，<b>热成因甲烷</b>的存在是高排放井的重要指标，其平均排放强度比微生物来源高出500倍。令人惊讶的是，约23%的采样井排放的是微生物成因甲烷，这一比例是此前估计的三倍，且对应的排放率中值高出1000倍。结论指出，半数采样井呈现热成因与微生物成因的混合特征，该框架为未来油气井完整性评估及甲烷减排策略的精准制定提供了关键信息。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The interdecadal variations of cross-month correlation feature of the NWPSH</section>
+            <section class="paper-authors">Shuai Li, Jie Yang, Fred Kucharski, ZhiQiang Gong, Ziyu Huang, Guolin Feng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-025-01308-1" target="_blank">https://doi.org/10.1038/s41612-025-01308-1</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热浪</span>
+                        <span class="topic-tag">罗斯贝波</span>
+                        <span class="topic-tag">高分辨率模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-025-01308-1" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用30个成员的<b>高分辨率耦合模型</b>大样本模拟，探讨了北美西部（WNA）<b>夏季热浪</b>的驱动路径及其未来变化。分析确定了WNA热浪的三大核心驱动特征：1）源自北太平洋西部的<b>罗斯贝波（Rossby wave）</b>波列；2）向阿拉斯加湾输送的极向水分（有时通过大气河形式）；3）WNA下游脊的放大。虽然21世纪后期的投影仍保留这些特征，但水分输送将更偏北，且高压脊发展更广。值得注意的是，在使用移除均温升高的异常定义下，未来WNA热浪频次预计会下降。研究证实了案例研究中发现的波动力学和湿过程机理具有广泛适用性，为理解极端热浪演变提供了动力学支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Atmospheric forcing uncertainty contributes to divergent estimates of China’s terrestrial carbon dynamics</section>
+            <section class="paper-authors">Yue Cheng, Peng Luo, Hao Yang, Mingwang Li, Honglin Li, Yu Huang, Ming Ni, Wenwen Xie, Chuan Luo, Zhigang Hu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2af8" target="_blank">https://doi.org/10.1088/1748-9326/ae2af8</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">陆地碳循环</span>
+                        <span class="topic-tag">大气强迫</span>
+                        <span class="topic-tag">CLM5.0模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2af8" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了<b>大气强迫不确定性</b>对中国陆地碳动态评估的影响。研究利用<b>CLM5.0模型</b>，由CRUNCEP、GSWP3和CMFD三种气象数据集驱动，模拟了1979–2014年中国碳预算，并结合<b>FLUXNET站点</b>观测进行验证。结果显示，强迫数据的选择显著改变了碳通量的量级与趋势，导致中国陆地生态系统在不同情境下表现为弱碳汇或净碳源。在模拟<b>总初级生产力（GPP）</b>方面，GSWP3表现最佳，而CMFD在高原寒旱区具有优势。通过<b>Shapley添加解释（SHAP）</b>分析发现，水分相关变量（降水与湿度）是驱动GPP年际变化的主导因素。研究强调了单强迫模拟在地球系统建模中的局限性，指出了提升气象输入质量对实现碳中和目标的必要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Compound Drought and Temperature Events Intensify Wheat Yield Loss in Australia</section>
+            <section class="paper-authors">Siyi Li, Bin Wang, De Li Liu, Chao Chen, Puyu Feng, Alfredo Huete, Qiang Yu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth's Future</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2023EF004124" target="_blank">https://doi.org/10.1029/2023EF004124</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">复合极端事件</span>
+                        <span class="topic-tag">小麦产量</span>
+                        <span class="topic-tag">气候风险</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2023EF004124" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>生物物理-统计模拟方法（APSIM）</b>，量化了干旱、高温、霜冻及<b>复合干旱-极端温度（DET）</b>事件对澳大利亚小麦产量的影响。研究基于1990–2021年的气象与产量数据，首先在生殖生长期构建极端事件指数，随后通过多元线性回归分析其贡献。结果发现，加入复合DET事件后，对产量变化的解释力从48%提升至54%，部分地区甚至高达86%。在极低产年份，DET事件的相对重要性超过了单项极端事件的总和，贡献率达52%。结论强调，气候风险管理必须纳入复合极端事件的影响，以更有效地减轻粮食生产损失，应对气候变化下的农业安全挑战。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global perspectives on nitrate aerosol dynamics: a comprehensive sensitivity analysis</section>
+            <section class="paper-authors">Alexandros Milousis, Susanne M. C. Scholz, Hendrik Fuchs, Alexandra P. Tsimpidi, Vlassis A. Karydis</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-571-2026" target="_blank">https://doi.org/10.5194/acp-26-571-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">硝酸盐气溶胶</span>
+                        <span class="topic-tag">空气质量模拟</span>
+                        <span class="topic-tag">EMAC模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-571-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用<b>EMAC全球化学气候模型</b>和ISORROPIA II热力学模块，对<b>硝酸盐气溶胶</b>的动力学过程进行了综合敏感性分析。针对目前全球模型在模拟硝酸盐方面存在的挑战，研究系统评估了网格分辨率、排放清单、化学动力学（如N2O5水解吸收）及湿清除过程的影响。通过与欧、美、东亚等多地<b>PM2.5和PM1</b>观测值对比，发现模型普遍高估东亚PM2.5硝酸盐，而低估城市下风向的PM1硝酸盐。提高空间分辨率并结合更新后的HTAPv3排放清单能有效改善低浓度期的模拟性能，但季节性和昼夜偏差依然存在。结论指出，硝酸盐模拟的复杂性要求在化学机理和气溶胶粒径分布描述上进行更深层次的优化。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Hydrometeor partitioning ratios for dual-frequency space-borne and polarimetric ground-based radar observations</section>
+            <section class="paper-authors">Velibor Pejcic, Kamil Mroz, Kai Mühlbauer, Silke Trömel</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-211-2026" target="_blank">https://doi.org/10.5194/amt-19-211-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">雷达遥感</span>
+                        <span class="topic-tag">降水粒子分类</span>
+                        <span class="topic-tag">双频雷达</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-211-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究聚焦于估算雷达分辨率单元内各种<b>水成物类型（HPRs）</b>的比例。研究利用<b>GPM核心卫星</b>的双频空间雷达（SR）与NEXRAD地面极化雷达（GR）的匹配数据，开发并优化了<b>HMCP分类算法</b>。研究目标包括评估HPR反演准确性、探索利用空间雷达双频特征估算比例的可能性以及提升地面极化雷达的分类精度。结果显示，基于极化特征的GR反演性能优于单纯基于双频特征的SR反演。算法能较好识别大部分降水粒子，但在分辨雪粒子（易被低估）、冰雹/霰（易被高估）及大雨滴方面仍存在局限。结论为提升空间雷达对云和降水微物理结构的解析能力提供了重要技术参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Historical diurnal temperature range trends constrain future climate projections</section>
+            <section class="paper-authors">Anqi Liu, Daokai Xue, Ben Yang, Danqing Huang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03185-9" target="_blank">https://doi.org/10.1038/s43247-026-03185-9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">雪干旱</span>
+                        <span class="topic-tag">CMIP6模型</span>
+                        <span class="topic-tag">偏差校正</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03185-9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>CDF变换偏差校正方法</b>对29个CMIP6模型的输出进行了精细化处理，评估了北半球<b>雪干旱</b>的未来特征。通过计算<b>雪水当量指数（SWEI）</b>，研究发现：在高排放情景（SSP585）下，北半球雪干旱模式将发生根本性结构转变，虽然轻度干旱频率趋稳，但极端干旱的频次、持续时间和严重程度将剧增，且持续时间增幅达54.5%。空间上，欧洲、西亚和北美中部被确定为风险热点区。结论指出，雪干旱的加剧与排放水平直接相关，强调了快速减排对维持全球水资源稳定和生态系统平衡的重要性。该研究展示了偏差校正技术在提升大尺度气候遥感模拟准确性方面的价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Urban heat mitigation under realistic roof and land area constraints</section>
+            <section class="paper-authors">Harsh G Kamath, Tzu-Shun Lin, Naveen Sudharsan, Kwun Yip Fung, Andrea Zonato, Manmeet Singh, Cenlin He, Zong-Liang Yang, Marc Coudert, Dev Niyogi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae32a7" target="_blank">https://doi.org/10.1088/1748-9326/ae32a7</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">城市热岛效应</span>
+                        <span class="topic-tag">降温策略</span>
+                        <span class="topic-tag">WRF模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae32a7" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用改进的<b>WRF模式</b>（耦合建筑效应参数化模块），评估了在现实屋顶和土地面积限制下城市降温策略的实际潜力。以德克萨斯州奥斯汀为例，研究模拟了<b>冷屋顶、绿屋顶、太阳能光伏</b>以及城市花园和行道树在2020年最热月份的降温效果。结果表明，当考虑现实中的非坡面屋顶可用面积时，屋顶降温策略对全市平均气温（T2M）和<b>通用热气候指数（UTCI）</b>的影响微乎其微。相比之下，行道树在局部区域显示出显著降低UTCI的潜力。结论强调，城市规划应更关注局部（如街区尺度）的降温效应，而非过度追求全市范围的温差减少，现实的物理约束是制定有效城市热减灾方案的关键。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Author Correction: Droplet surface spontaneous oxidation as a dominant formation pathway of organosulfates in the marine atmosphere</section>
+            <section class="paper-authors">Lin Du, Yaru Song, Jianlong Li, Yibei Wan, Huan Yu, Xueqi Ma, Zhaomin Yang, Jie Hu, Kuanyun Hu, Xuxu Gao, Qinyi Li, Christian George, Maofa Ge, Kun Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-026-68380-w" target="_blank">https://doi.org/10.1038/s41467-026-68380-w</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">西北太平洋副热带高压</span>
+                        <span class="topic-tag">跨月相关性</span>
+                        <span class="topic-tag">季内振荡</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-026-68380-w" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了<b>西北太平洋副热带高压（NWPSH）</b>跨月相关性的年代际变化。分析发现，在1979–2005年间，NWPSH在6月与8月间呈现显著的正相关，但在2006–2024年间这种相关性大幅减弱。研究通过<b>海表温度（SST）</b>和<b>北半球夏季季内振荡（BSISO）</b>解释了这一现象。前期强相关是由印度洋SST正异常与长周期BSISO共同驱动的。然而2005年后，BSISO周期显著缩短（归因于海洋大陆和热带西印度洋变暖导致的环流增强），且影响各月NWPSH的关键SST区域出现不一致，导致跨月相关性减弱。结论指出了全球变暖背景下热带-副热带相互作用复杂性的增强及其对短期气候预测的挑战。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global daily seamless XCO<sub>2</sub> Mapping (2016–2020): Spatio-temporal trends and variations during wildfire events</section>
+            <section class="paper-authors">Jie Li, Ziyi Zhang, Tongwen Li, Qiangqiang Yuan, Liangpei Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">International Journal of Applied Earth Observation and Geoinformation</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.jag.2026.105092" target="_blank">https://doi.org/10.1016/j.jag.2026.105092</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">城市植被</span>
+                        <span class="topic-tag">CityGML标准</span>
+                        <span class="topic-tag">数字孪生</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.jag.2026.105092" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对<b>数字孪生城市</b>中植被语义表达不足的问题，本研究开发了<b>CityGML 3.0 Vegetation ADE v1.1</b>扩展模型。通过国际利益相关者调查，研究确立了城市植被在生态、管理及公共行政领域的实践需求。该ADE引入了丰富的语义属性和要素类型，能够精细化描述单株植物及植被覆盖的结构（冠层、干、根）及动态属性。模型集成了<b>Dynamizer模块</b>以支持植被生长和管理的动态数据更新。调查反馈显示，该模型在实用性和跨学科应用方面得到了广泛认可。该成果为构建具备语义深度的绿色基础设施数字化平台提供了统一的标准框架，提升了城市环境监测和自适应管理的能力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Exploring the capability of surface-observed spectral irradiance  for remote sensing of precipitable water vapor amount under  all-sky conditions</section>
+            <section class="paper-authors">Pradeep Khatri, Tamio Takamura, Hitoshi Irie</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-231-2026" target="_blank">https://doi.org/10.5194/amt-19-231-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">可降水量</span>
+                        <span class="topic-tag">光谱辐照度</span>
+                        <span class="topic-tag">深度学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-231-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文探讨了利用地表观测的<b>光谱辐照度</b>在全天候条件下反演<b>可降水量（PWV）</b>的能力。研究利用MS-700分光辐射计测量水汽吸收带（如929.0–997.3 nm）的全局、直接和散射辐射数据，作为输入驱动<b>深度神经网络（DNN）</b>模型，并以微波辐射计数据作为基准进行训练和验证。结果表明，同时融合三种辐射数据的模型精度最高，能精准捕捉PWV的季节波动。值得注意的是，仅使用获取难度较低的<b>总辐照度（Global Irradiance）</b>也能获得可靠结果。相比之下，传统的晴空直接辐射反演在全天候下的泛化能力较弱。结论证明了光谱辐射监测在构建高频次、连续水汽监测网方面的巨大潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A new efficiency metric for the spatial evaluation and inter-comparison of climate and geoscientific model output</section>
+            <section class="paper-authors">Andreas Karpasitis, Panos Hadjinicolaou, George Zittis</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-19-345-2026" target="_blank">https://doi.org/10.5194/gmd-19-345-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">模型评估</span>
+                        <span class="topic-tag">空间效率指标</span>
+                        <span class="topic-tag">气候模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-19-345-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究提出了一种新型的空间效率评估指标——<b>修正空间效率（MSPAEF）</b>，旨在更严谨地评估气候和地球科学模型对观测空间模式（如降水、温度、<b>大气污染物</b>分布）的再现能力。MSPAEF旨在解决现有指标（如SPAEF、WSPAEF等）在特定合成情境下表现不直观或失效的问题。通过对多种模拟场景和<b>CMIP6全球模型</b>输出的系统对比，证明MSPAEF能更稳健地捕捉空间相关性、偏差和标准差比率。在实际应用中，利用MSPAEF对全球模型在降水和温度方面的表现进行排名，结果显示其比同类指标更符合物理直觉。该指标为环境模型评估和多模型间的一致性对比提供了更优的工具。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Few-Shot change detection in optical and SAR remote sensing images for disaster response</section>
+            <section class="paper-authors">Di Wang, Guorui Ma, Xiao Wang, Ronghao Yang, Yongxian Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">International Journal of Applied Earth Observation and Geoinformation</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.jag.2026.105100" target="_blank">https://doi.org/10.1016/j.jag.2026.105100</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">室内空气质量</span>
+                        <span class="topic-tag">化学物质排放</span>
+                        <span class="topic-tag">放置方向影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.jag.2026.105100" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究探讨了婴儿爬行垫和瑜伽垫中<b>挥发性化学物质</b>排放对<b>室内空气质量</b>的影响，特别是垫子<b>放置方向</b>的调节作用。实验对比了甲酰胺、邻苯二甲酸酯等有害物质在垂直与水平放置下的排放特征。结果显示，对于挥发性较强的物质（logKoa < 8.5），垂直放置时的质量排放量是水平放置的1.1–3.3倍。垂直放置带来的甲酰胺增量甚至超过了升温10°C引起的影响。此外，表面防水层能显著抑制排放。研究结论指出，卷起垂直存放的瑜伽垫尽管暴露面积减小，其释放浓度仍可能等同或高于使用时的水平。这一发现为室内空气污染评估和改善家居环境提供了新的物理视角。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Revisiting chloroform emissions from the pulp and paper sector: a brief communication</section>
+            <section class="paper-authors">Andrea Mazzeo, Ryan Hossaini</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae2e17" target="_blank">https://doi.org/10.1088/1748-9326/ae2e17</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氯仿排放</span>
+                        <span class="topic-tag">造纸工业</span>
+                        <span class="topic-tag">排放因子</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae2e17" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文重新评估了全球<b>造纸工业（PP）</b>的<b>氯仿（CHCl3）</b>排放情况。针对目前全球预算仍沿用35年前排放因子（EFs）的问题，研究分析了美国、加拿大和日本的污染物排放登记数据，并结合造纸厂数量及漂白木浆产量，推导了最新的EFs。研究发现，由于行业逐渐转向<b>无元素氯（ECF）</b>漂白技术，EFs自2000年代初以来呈现明显下降趋势。在2000–2020期间，PP行业的全球年均氯仿排放量估计为3 Gg，远低于以往的估算。结论指出，继续使用陈旧的排放因子会导致对现今大气成分的错误解读，呼吁更新各地区的排放评估模型，以更准确地约束这一重要的对臭氧层有潜在威胁的极短寿命物质。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Data-Driven Framework for Determining Site-Specific Attenuation Factors of Arsenic in the Vadose Zone</section>
+            <section class="paper-authors">Tho Huu Huynh Tran, Jaeshik Chung, Man Jae Kwon, Sang Hyun Kim, Seunghak Lee</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.5c09358" target="_blank">https://doi.org/10.1021/acs.est.5c09358</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">砷污染</span>
+                        <span class="topic-tag">包气带</span>
+                        <span class="topic-tag">机器学习</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.5c09358" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对地下水受<b>砷（As）</b>污染的风险，该研究提出了一个数据驱动框架，用于确定<b>包气带</b>中砷的站点特异性<b>衰减因子（AF）</b>。传统监管框架通常保守假设AF为1（即无衰减），而本研究将机器学习回归模型与<b>水分移动-静止（MIM）</b>溶质运移模型集成，利用易获取的土壤属性估算运移参数。通过模拟受干湿循环驱动的砷阻滞与再活化过程，对韩国21个站点进行了评估。结果显示所有站点的AF值均大于1，且在3.56–24.38之间显著波动，证明了包气带强大的缓冲能力。该可扩展框架为替代复杂的反应输运模型提供了实用手段，使砷污染风险评估更具场地针对性和可靠性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Towards high resolution, validated and open global wind power assessments</section>
+            <section class="paper-authors">E. U. Peña-Sánchez, P. Dunkel, C. Winkler, H. Heinrichs, F. Prinz, J. M. Weinand, R. Maier, S. Dickler, S. Chen, K. Gruber, T. Klütz, J. Linßen, D. Stolten</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-026-68337-z" target="_blank">https://doi.org/10.1038/s41467-026-68337-z</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有机硫酸盐</span>
+                        <span class="topic-tag">大气氧化</span>
+                        <span class="topic-tag">海洋大气</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-026-68337-z" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本条目为《液滴表面自发氧化是海洋大气中有机硫酸盐的主要形成路径》一文的作者更正说明。原研究揭示了<b>海洋大气</b>中<b>有机硫酸盐（Organosulfates）</b>的一种全新形成机理，即液滴表面的自发氧化过程，而非传统认为的单纯光化学反应。更正内容通常涉及图表标注、作者贡献信息或补充数据的微调。尽管是更正声明，但其涉及的原始科学发现对于理解<b>大气氧化性</b>、二次气溶胶形成以及全球硫循环具有极高的价值，尤其是在遥感技术监测大气成分变化和气溶胶前体物转化的机制解释方面提供了重要的理论支撑。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
