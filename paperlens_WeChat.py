@@ -33,7 +33,7 @@ def analyze_paper(info_json: str) -> Tuple[bool, str]:
         }
 
     model = genai.GenerativeModel(
-            model_name="gemini-3-flash-preview",
+            model_name="gemini-flash-latest",
             generation_config=generation_config,
             system_instruction="You are an expert in literature analysis, skilled in qualitative research methods, literature retrieval, and critical thinking. You excel at interpreting complex texts, identifying key ideas and methodologies, and conducting comprehensive literature reviews to identify research trends and gaps.",
             )
@@ -160,7 +160,7 @@ print(len(relevant_true))
 # Send the information to GPT
 info = relevant_true[['title', 'abstract', 'topic_words', 'explanation','authors']]
 
-BS = 64  # Batch size
+BS = 96  # Batch size
 DFS = []
 for i in range(len(info)//BS +1):
     print(i, i*BS, i*BS+BS)
