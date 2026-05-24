@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/05/24</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Artificial Flooding Leads to Thicker and Brighter Arctic Sea Ice</section>
+            <section class="paper-authors">Edward Blanchard‐Wrigglesworth, Andrea Ceccolini, Andrew Smith, Andrew Woods, Cían Sherwin, Konrad Borowski, Pascal Martin‐Daguet, Simon Woods, Tom Clipston, Tommaso Di Gioacchino, Molly Wieringa, Jacob Pantling, Kate Oglethorpe, Shaun Fitzgerald, Steven Desch, Hilairy Hartnett, Brendan Kelly, Alison Tan, Bernard Steffin, Isaac Eskind, Brandon Langan, Brent Nakashook, Brian Kavanna, Brodie Larocque, David Kavanna, Roland Emingak, Cecilia M. Bitz</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth's Future</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025EF007894" target="_blank">https://doi.org/10.1029/2025EF007894</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">北极海冰</span>
+                        <span class="topic-tag">人工注水增厚</span>
+                        <span class="topic-tag">冰雪反照率</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025EF007894" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究报告了2024至2025年冬季及春季在加拿大剑桥湾开展的一项创新野外科学实验，首次观测并量化了<b>人工注水（海水泵送）</b>对北极海冰生长及春季融化的影响。实验在1×1公里的场地上设置了对照区和经多次海水喷淋的测试区。结果显示，到5月中旬融化期前，注水测试区的海冰厚度比对照区增加了达32厘米，而积雪厚度减少了1至13厘米；进行两次注水的区域比单次注水区域的海冰增厚更为显著。在春季融化阶段，注水区海冰表现出<b>更高的反照率（亮度）</b>和更慢的融化速率。该研究表明，人工注水有望抵消过去50年来北极海冰长期变薄的趋势，为应对气候变暖、延缓北极冰盖融化提供了新型地球工程方案和野外观测基准数据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Mineralogical Evidence for Highly Evolved Th‐Saturated Magma on Mars</section>
+            <section class="paper-authors">Xiaojia Zeng, Xiongyao Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL119974" target="_blank">https://doi.org/10.1029/2025GL119974</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火星遥感</span>
+                        <span class="topic-tag">钍石探测</span>
+                        <span class="topic-tag">岩浆演化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL119974" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究报告了在火星角砾岩陨石NWA 11220的锆石碎片中首次发现<b>钍石（ThSiO₄）</b>微粒，为火星地壳中通过遥感探测到的钍异常提供了首个<b>矿物学证据</b>。这些钍石颗粒呈微米级（<5 μm），与磁铁矿和钛铁矿包体共生。通过<b>透射电子显微镜（TEM）</b>分析表明，由于长期的放射性衰变，钍石和锆石已发生晶格非晶化（metamict），而磁铁矿和钛铁矿仍保持结晶态。该发现不仅证实了火星上曾存在高度演化、钍饱和且高度氧化的岩浆活动，还为火星轨道遥感观测到的钍元素异常提供了关键的“地面真值”校对，极大地深化了我们对火星地壳钍元素储库及早期地质演化历史的认识。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Adaptive expert-guided deep imbalanced regression for global PM2.5 forecasting with temporal convolutional networks and GEOS-FP inputs</section>
+            <section class="paper-authors">Junhyeon Seo, Pawan Gupta</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01437-1" target="_blank">https://doi.org/10.1038/s41612-026-01437-1</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">深度不平衡回归</span>
+                        <span class="topic-tag">PM2.5预测</span>
+                        <span class="topic-tag">混合专家系统</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01437-1" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究开发了一种先进的<b>自适应专家引导深度不平衡回归（DIR）</b>框架，用于解决全球PM2.5空气质量预报中存在的空间空缺及极端污染事件数据不平衡问题。模型通过整合NASA的<b>GEOS-FP气象与气溶胶预报数据</b>和全球地面监测网的实测PM2.5数据，采用<b>时序卷积网络（TCN）</b>与残差混合专家系统（ResMoE）架构进行训练。研究引入了标签分布平滑（LDS）和加权损失函数，自适应地将不同污染程度和气象情境的样本分配给各专业“专家”网络。模型在独立测试中取得了极佳表现（R² = 0.88，均方误差23.4），并成功捕捉到了2025年5月明尼苏达野火期间的PM2.5峰值和时空演变。该方法不仅大幅提升了极值事件的预测精度，还为缺乏地面监测仪器的地区提供了高分辨率的时空重构数据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Internal Wave Characteristics in the Andaman Sea: New Insights From SWOT Observations</section>
+            <section class="paper-authors">Anup Kumar Mandal, Aditya Chaudhary, Seemanth M, Ratheesh Ramakrishnan, Neeraj Agarwal, Rashmi Sharma, R. Venkat Shesu, T. V. S Udaya Bhaskar</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL122284" target="_blank">https://doi.org/10.1029/2026GL122284</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">SWOT卫星</span>
+                        <span class="topic-tag">内孤立波</span>
+                        <span class="topic-tag">海面高度异常</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL122284" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>地表水与海洋地形（SWOT）</b>卫星的高分辨率重复轨道<b>海面高度异常（SSHA）</b>观测数据，对安达曼海自2023年7月起为期一年的<b>内孤立波（ISW）</b>特征进行了深入分析。SWOT卫星首次精准捕捉到了高振幅内孤立波的海面特征，其SSHA超过20厘米。分析显示，内孤立波受大潮调制，并因弱密度跃层而增强。研究首次采用扩展的Miles理论，对SWOT捕捉到的斜向内孤立波相互作用进行了定量解析，计算所得波速（1.25–2.72 m/s）与前人观测高度吻合。在大潮、弱分层和斜向相互作用共同作用下，观测到极端内波振幅达92.9米（对应SSHA 43厘米）。该工作展示了新一代高度计卫星在海洋亚中尺度动力学监测中的巨大潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Long‐Lived Sub‐Micron Desert Dusts are Important Ice‐Nucleating Particles in the Polar Regions</section>
+            <section class="paper-authors">R. J. Herbert, S. R. Arnold, A. C. Jones, B. J. Murray, K. S. Carslaw</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL120664" target="_blank">https://doi.org/10.1029/2025GL120664</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰核粒子</span>
+                        <span class="topic-tag">沙漠尘埃</span>
+                        <span class="topic-tag">极地辐射平衡</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL120664" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>全球气候模型</b>探讨了在大气中滞留时间超过60天的<b>亚微米级沙漠尘埃</b>对极地地区<b>冰核粒子（INPs）</b>的长期贡献。冰核粒子通过改变混合相云的分布和辐射特性，对全球气候系统起着至关重要的作用。模拟结果显示，尽管大颗粒粉尘在排放后迅速沉降，导致总粉尘质量骤减，但长期存在的细颗粒粉尘仍占据极地INP的重要份额。具体而言，这些长寿沙尘贡献了全球年均沙尘INP的22%，其中在北极占17%，而在南大洋占54%。这项研究证明，远离尘源的极地冰云相位及辐射平衡，在极高程度上受到这些微小、长寿粉尘背景值的控制，对理解极地气候变化和改进卫星遥感云相态检索具有重要学术价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Human ignitions dominate the fire regimes of the Brazilian Cerrado</section>
+            <section class="paper-authors">Carlota Segura-Garcia, Thomas A. J. Janssen, Renata Libonati, Lucas S. Menezes, Guilherme Mataveli, Sander Veraverbeke, Matthew W. Jones, Imma Oliveras Menor</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03633-6" target="_blank">https://doi.org/10.1038/s43247-026-03633-6</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火灾成因归因</span>
+                        <span class="topic-tag">塞拉多草原</span>
+                        <span class="topic-tag">人类活动干扰</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03633-6" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用个体火灾事件数据与闪电频次记录，结合一种<b>火灾成因归因算法</b>，定量评估了人类活动与自然闪电对巴西塞拉多（Cerrado）热带稀树草原<b>火灾机制</b>的相对贡献。研究表明，人类活动驱动了该地区近90%的火灾起火事件，在根本上重塑了塞拉多原有的自然火灾格局。相比之下，自然闪电引起的火灾集中在干湿交替季，而人类火灾则贯穿整个干旱季，使火灾季节延长了三倍。更重要的是，人为活动极易引发极端火灾行为，其火灾平均燃烧面积是闪电引发火灾的10倍，燃烧强度高达其2倍，给当地生态系统韧性、生物多样性保护及<b>区域碳循环</b>带来了巨大的生态负荷，凸显了对人为农业及传统用火精准管控的迫切需求。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Nitrogen isotopes in remote lake sediments reveal effectiveness of nitrogen mitigation</section>
+            <section class="paper-authors">Anze Chen, Xin Zhou, John P. Smol, Shiwei Jiang, Hongfei Zhao, Qun Zheng, Xiangzhong Li, Yong Luo, Xiaoyan Liu, Zhuoya Zhang, Zhengtang Guo</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03676-9" target="_blank">https://doi.org/10.1038/s43247-026-03676-9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氮同位素比值</span>
+                        <span class="topic-tag">湖泊沉积物</span>
+                        <span class="topic-tag">大气氮沉降</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03676-9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究通过分析来自东亚、北美和欧洲的51个偏远湖泊的<b>湖泊沉积物核心δ¹⁵N（氮同位素）</b>记录，系统评估了过去一个多世纪里全球人类活动导致的活性氮（Nr）沉降历史及减排政策的成效。研究发现，北美和欧洲湖泊的δ¹⁵N在约1950年（即“大加速”时期）开始加速下降，而东亚湖泊的下降趋势则延迟至1985年左右出现，与各区域的工业化和化肥施用步伐高度契合。随着近年来减排政策的实施，欧洲（1995年左右）和北美（2005年左右）湖泊的沉积物δ¹⁵N出现了显著的<b>反转上升</b>趋势，而东亚湖泊则仅表现为下降趋势的放缓。这一宏观时空规律为各国制定针对性、多组分（如NHₓ和NO_y）的大气氮素污染协同治理策略提供了重要科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Cloud Thermodynamic Phase Retrievals From Simultaneous Shortwave Infrared Multi‐Angle Polarization Measurements</section>
+            <section class="paper-authors">Haofei Wang, Xiaofeng Tan, Kentaroh Suzuki, Peng Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL121721" target="_blank">https://doi.org/10.1029/2026GL121721</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">风云三号G星</span>
+                        <span class="topic-tag">云热力学相态</span>
+                        <span class="topic-tag">偏振多角度测量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL121721" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究基于我国<b>风云三号G星（FY-3G）</b>搭载的短波红外偏振多角度成像仪，开发了一种创新的<b>联合检索算法（SWaP）</b>，用于反演云的热力学相态（暖水云、过冷水云和冰云）。该算法整合了<b>短波红外、水汽吸收和偏振测量</b>数据，克服了单通道反演中分类模糊的局限性。研究人员将SWaP算法应用于台风实例，成功获取了暖水云、过冷水云及冰云的空间三维分布结构。反演出的不同云相态偏振特征和亮度温度属性与理论辐射传输模型预测高度一致。该研究不仅证实了该偏振成像仪的定量应用能力，也为全球能量平衡和水循环研究中关键的云微物理参数反演提供了高精度的数据支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Experimental reexamination of the CH<sub>2</sub>OO and (CH<sub>3</sub>)<sub>2</sub>COO Criegee intermediate reactions with SO<sub>2</sub></section>
+            <section class="paper-authors">Chenyang Xue, Pengcheng Wang, Rabi Chhantyal-Pun, Abdelwahid Mellouki, Véronique Daële, Max R. McGillen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.122099" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.122099</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">Criegee中间体</span>
+                        <span class="topic-tag">二氧化硫氧化</span>
+                        <span class="topic-tag">反应速率常数</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.122099" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用最新研发的<b>相对速率测试技术</b>，在大型大气模拟舱内重新测定了常温常压（1 atm）下最简单的<b>Criegee中间体</b>CH₂OO和二甲基取代Criegee中间体(CH₃)₂COO与二氧化硫（SO₂）的反应速率常数。反应产生的硫酸盐是大气中气溶胶形成和酸雨的关键来源。测得CH₂OO + SO₂的速率常数为3.18×10⁻¹¹ cm³ molecule⁻¹ s⁻¹，与文献中的绝对测量值高度一致。然而，对于(CH₃)₂COO + SO₂，测得速率常数为4.26×10⁻¹⁰ cm³ molecule⁻¹ s⁻¹，比当前的评估数据库推荐值<b>高出3倍以上</b>。这一重要发现表明当前全球大气化学模型可能严重低估了取代型Criegee中间体对大气中二氧化硫的氧化贡献及二次气溶胶的生成效率。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Iron Fertilization of the North Pacific Did Not Drive Long‐Term Pliocene to Quaternary Cooling</section>
+            <section class="paper-authors">Jordan T. Abell, Gisela Winckler, Joshua D. Bridges, Robert F. Anderson, Timothy D. Herbert, Peter Molnar, Carmala Garzione</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">AGU Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025AV002043" target="_blank">https://doi.org/10.1029/2025AV002043</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">铁肥化</span>
+                        <span class="topic-tag">大气二氧化碳</span>
+                        <span class="topic-tag">古气候变冷</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025AV002043" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了上新世晚期至更新世早期北半球大规模永久性冰盖形成的气候驱动机制，重点评估了“<b>铁肥化</b>导致大气二氧化碳（CO₂）浓度降低”这一古气候主流假说。研究人员系统汇编了跨越北太平洋的上新世<b>矿物粉尘</b>与<b>海洋输出生产力</b>代用指标数据集，并对记录进行了严格的科学筛选与过滤。分析结果表明，在上新世时期，北太平洋的粉尘输入量与海洋输出生产力之间并无显著的相关性。这表明，北太平洋的铁肥化过程并未如预期般驱动长期的二氧化碳消减，因而不能解释上新世至第四纪的长期变冷及北半球冰盖的形成。最后，研究利用这些新合成的数据集，重新评估了先前提出的大气粉尘动力学以及北太平洋海洋环流与地球化学的驱动因素，对古气候模拟及现代碳循环研究提供了新的约束。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Foliar Uptake and Translocation of Heavy Metals from Atmospheric Particulate Matter: A Critical Review</section>
+            <section class="paper-authors">Ying Huang, Ruimin Chang, Zhiyan Xie, Zhi Huang, Pengyue Yu, Jianwei Peng, Tingqiang Li, Xiaoe Yang, Yaocheng Deng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.6c02960" target="_blank">https://doi.org/10.1021/acs.est.6c02960</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气颗粒物</span>
+                        <span class="topic-tag">重金属叶面吸收</span>
+                        <span class="topic-tag">植物转运机制</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.6c02960" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该综述系统总结了植物叶片对<b>大气颗粒物（PM）</b>中<b>重金属的吸收与转运机制</b>，重点探讨了颗粒物粒径、重金属化学形态和叶片形态结构之间的相互作用。研究指出，随着工业化和城市化的加剧，大气沉降引起的叶面暴露已成为导致农作物食用部位重金属积累的主要途径。综述梳理了关于重金属进入方式（离子态 vs 颗粒态）、吸收机制（主动 vs 被动）以及相关转运体蛋白的最新争论。证据表明，微米级颗粒主要通过气孔以<b>被动扩散</b>方式进入叶片，而其胞内运输可能涉及主动运输机制；纳米级颗粒则可通过角质层和气孔双重途径穿透。此外，叶片更倾向于吸收离子态重金属，且毛状体（trichome）被证实是另一条关键吸收通道。本综述实现了从传统“根部吸收”到“叶面吸收”的大气物质转运范式转变，对保障农产品安全和评估大气污染物的生态效应具有重要价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">National-scale nitrogen budgets reveal large inefficiencies in Indian agriculture</section>
+            <section class="paper-authors">Deepakshi Babbar, Srinidhi Balasubramanian</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03656-z" target="_blank">https://doi.org/10.1038/s43247-026-03656-z</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氮素循环预算</span>
+                        <span class="topic-tag">投入产出模型</span>
+                        <span class="topic-tag">农业氮流失</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03656-z" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用基于多部门数据的<b>环境扩展投入产出模型</b>，首次全面核算了印度国家尺度下的农田、畜牧业和水产养殖三大农业部门的<b>氮（N）输入、流向与损失预算</b>。结果表明，2020年印度的农业氮素转换效率偏低，仅有50%的输入氮转化为粮食、饲料和燃料等有效产出。其中，农田（56%）、水产养殖（20%）和畜牧业（8%）的氮利用效率差异显著。剩余的氮主要流失至大气与水体中，导致了严重的二次环境污染，流失途径包括：<b>氨气逸失（17%）</b>、地表径流（16%）、淋溶（7%）、氮氧化物（5%）及<b>一氧化二氮（1.5%）</b>。该研究为印度政府实现其2030年“将氮废物减半”的目标提供了精准的定量支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Intensification of summer mesoscale convective systems in East China under global warming</section>
+            <section class="paper-authors">Yutong Lu, John H. Marsham, Douglas J. Parker, Juan Fang, Sinan Gu, Jianping Tang, Deliang Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01441-5" target="_blank">https://doi.org/10.1038/s41612-026-01441-5</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">对流允许模型</span>
+                        <span class="topic-tag">中尺度对流系统</span>
+                        <span class="topic-tag">全球变暖降水</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01441-5" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究采用高分辨率的<b>对流允许模型（CPM）</b>和伪全球变暖方法，对SSP5-8.5高排放情景下中国东部夏季<b>中尺度对流系统（MCSs）</b>的未来演变进行了长达22个夏季的数值投影模拟。结果表明，在全球变暖背景下，未来的中尺度对流系统将呈现出更高的降水强度和更广的对流区域，且对流性降水的增强幅度显著高于层结性降水。研究揭示，<b>对流可用位能（CAPE）</b>和<b>大气柱总水汽量（TCWV）</b>的增加是驱动最大对流降水增强的核心热力学因素，而垂直风剪切则发挥了关键动力调制作用。研究还将TCWV与垂直速度的乘积确定为预测未来MCS降水峰值的有效指标，对评估我国东部未来的极端暴雨和洪涝灾害风险具有重要的预警作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Solar-driven peroxyacid group activation enables＞ 500 h stable hydroxyl-radical defluorination of industrial perfluorophenol wastewater</section>
+            <section class="paper-authors">Yunning Chen, Qixin Zhou, Yan Guo, Zhengkai Wu, Haoying Wang, Yizhou Yan, Xinghao Qi, Liping Liu, Jingbin Han, Qingkun Shang, Yongfa Zhu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-026-73548-5" target="_blank">https://doi.org/10.1038/s41467-026-73548-5</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">光催化脱氟</span>
+                        <span class="topic-tag">全氟酚废水</span>
+                        <span class="topic-tag">羟基自由基</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-026-73548-5" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究设计了一种新型<b>羧基功能化晶态苝酰亚胺光催化剂（Carboxyl-PDI）</b>，用于解决工业废水中高浓度<b>全氟酚（PFP）</b>由于C-F键高键能而极难降解的难题。该催化剂在可见光激发下通过<b>催化过氧酸循环</b>高效产生羟基自由基（·OH），在无需添加外部氧化剂的条件下，实现了对100 mg L⁻¹全氟酚的彻底脱氟，并在太阳光下展现出超500小时的超高运行稳定性。机理研究表明，氢键介导的羧基-过氧酸中间体（-COOOH）有效降低了O-O键的同裂能垒（~0.31 eV），从而促进了·OH的释放。室外连续流反应器测试实现了95.85%的降解率和90.67%的脱氟率，为难降解有机氟污染物的绿色消除提供了极具工业化潜力的光催化方案。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title"><i>Synechococcus</i> dominates the sedimentary record of exported picocyanobacteria in the ocean</section>
+            <section class="paper-authors">Chen Qiu, Jiandong Zhang, Chunshan Li, Lele Lei, Furun Li, Lijuan Long, Sijun Huang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03622-9" target="_blank">https://doi.org/10.1038/s43247-026-03622-9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">聚球藻</span>
+                        <span class="topic-tag">生物碳泵</span>
+                        <span class="topic-tag">碳埋藏</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03622-9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>定量PCR（qPCR）</b>与扩增子高通量测序技术，对南海和印度洋不同深度水柱及海底沉积物中的极细微原绿球藻（Prochlorococcus）和聚球藻（Synechococcus）进行了精确定量与群落结构解析，以揭示其在海洋<b>生物碳泵和碳沉降</b>中的角色。结果显示，虽然原绿球藻在深水中数量较多且主要参与透光层碳素循环，但在深海沉积物中，沉积物群落结构绝大多数由<b>聚球藻（特别是5.1-CRD1和5.1-I进化支）</b>主导。虽然研究估算有接近99%的沉降微型藻类在表层沉积物中被降解，但两者的保存具有强烈的谱系特异性。这表明原绿球藻对深海有机质循环贡献较大，而聚球藻对深海有机碳埋藏和长期<b>碳汇</b>做出了更大贡献，深化了对大洋碳循环过程的认知。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Chemical composition and volatility of organic nitrate products from NO<sub>3</sub> radical initiated oxidation of Δ<sup>3</sup>-carene</section>
+            <section class="paper-authors">Linjie Li, Cheng Wu, Veronica Geretti, Christian Mark Salvador, Epameinondas Tsiligiannis, Michael Priestley, Noora Hyttinen, Mattias Hallquist</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.122084" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.122084</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有机硝酸盐</span>
+                        <span class="topic-tag">二次有机气溶胶</span>
+                        <span class="topic-tag">化学电离质谱</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.122084" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用氧化流动反应器（Go:PAM）结合<b>碘化学电离质谱仪与气体及气溶胶过滤器入口（FIGAERO-CIMS）</b>，探究了夜间主导的NO₃自由基氧化<b>Δ³-蒈烯（Δ³-carene）</b>产生有机硝酸盐（ONs）的化学组分、产率及挥发性特征。实验发现，在相同条件下，Δ³-蒈烯生成的有机硝酸盐信号约为其同分异构体α-蒎烯的4倍。在气相中，十碳一元有机硝酸盐（C₁₀-ONs）占主导地位；而随着氧化剂浓度的增加，促进了高含氧量C₁₀-ONs和碎片化产物的形成。在颗粒相中，由于高效的气-粒凝结和粒子相吸附反应，具有较低挥发性的二十碳二聚体有机硝酸盐（C₂₀-ONs）成为了主要成分。研究测定的蒸气压规律与其气粒分配趋势一致，为定量评估夜间二次有机气溶胶（SOA）的形成和大气中氮氧化物的汇提供了关键参数。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Contact-Electrocatalytic Degradation of Organic Pollutants Driven by Stirring-Type Low-Frequency Mechanical Energy</section>
+            <section class="paper-authors">Jie Luo, Wenyu Fan, Ming Lei, Lihua Zhu, Nan Wang, Heqing Tang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Science & Technology</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acs.est.6c01964" target="_blank">https://doi.org/10.1021/acs.est.6c01964</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">接触电催化</span>
+                        <span class="topic-tag">有机污染物降解</span>
+                        <span class="topic-tag">活性氧</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acs.est.6c01964" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了利用搅拌型低频机械能驱动的<b>接触电催化（CEC）</b>降解有机污染物的物理化学过程。研究在一个极为简单的烧杯-搅拌器系统中，在无任何外部催化剂的条件下，成功实现了对多种有机污染物的催化降解。实验中，浓度为20 μmol L⁻¹的<b>孔雀石绿</b>在5小时内被完全降解（降解速率常数k = 0.68 h⁻¹），同时一系列新兴污染物在12小时内也得到了不同程度的去除。研究表明，降解机制主要归因于在反应器壁与溶液界面处通过CEC产生的<b>活性氧（ROS）</b>，包括羟基自由基（·OH）、超氧自由基（·O₂⁻）和单线态氧（¹O₂）。此外，降解性能高度依赖于反应器材料的摩擦电特性（聚四氟乙烯 > 聚苯乙烯 > 不锈钢 > 玻璃）以及流体动力学条件（提高转速和叶轮直径会增大雷诺数和湍流动能，进而提高界面剪切力）。该发现为自然水体通过物理-化学耦合过程进行自净提供了一种创新的理论解释。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Effects of formaldehyde on the heterogeneous reactions of sulfur dioxide on mineral dust</section>
+            <section class="paper-authors">Liubin Huang, Hengqing Shen, Huihui Wu, Yu Yang, Ping Liu, Zhongming Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.122100" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.122100</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二氧化硫非均相反应</span>
+                        <span class="topic-tag">矿物灰尘颗粒</span>
+                        <span class="topic-tag">甲醛大气化学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.122100" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用结合了<b>原位透射红外光谱（T-FTIR）</b>的流动管反应器，深入探讨了甲醛（HCHO）在不同相对湿度（RH）下对二氧化硫（SO₂）在矿物颗粒物（α-Al₂O₃和SiO₂）表面<b>非均相化学反应</b>的影响。实验结果表明，即使在干燥条件下，甲醛也能与吸附在矿物表面的SO₂相互作用产生<b>羟基甲烷磺酸盐（HMS）</b>。甲醛在此非均相反应中扮演了双刃剑角色：在干燥条件下，它通过竞争表面活性位点抑制了SO₂的吸附；而在高湿度（80% RH）下，它通过提供额外的化学转化通道显著促进了颗粒物对SO₂的摄取，使得SiO₂与高活性α-Al₂O₃之间的非均相反应活性差异大幅收窄。该研究揭示了大气复杂VOCs与无机污染物的协同非均相反应新机制。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Assessing Black Carbon and Iron Oxide Aerosols: A Comparative Study between Urban and Rural Environments in the Southeastern U.S.</section>
+            <section class="paper-authors">Shreya Suri, Lifei Yin, Bin Bai, Yuhan Yang, Dongli Wang, Andrew R. Metcalf, Nathan Chellman, Robert F. Swarthout, James Sherman, Pengfei Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">ACS ES&T Air</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1021/acsestair.5c00400" target="_blank">https://doi.org/10.1021/acsestair.5c00400</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳气溶胶</span>
+                        <span class="topic-tag">氧化铁气溶胶</span>
+                        <span class="topic-tag">辐射光吸收</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1021/acsestair.5c00400" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用改进的<b>单颗粒黑碳光度计（SP2）</b>，对美国东南部城市环境（佐治亚州亚特兰大）和乡村环境（北卡罗来纳州布恩）中的<b>难熔黑碳（rBC）</b>和<b>氧化铁（FeOx）</b>气溶胶浓度进行了对比测量。黑碳和氧化铁是影响短波大气加热和人体健康的关键气溶胶组分。通过分析高分辨率的现场观测数据，研究团队识别了它们潜在的排放源，并定量评估了它们的辐射吸收特性。结果表明，城市环境中的rBC和FeOx浓度及光吸收系数显著高于乡村环境，反映出强烈的人类活动和工业排放贡献。在假设外部混合的条件下，FeOx在城市站点对rBC总光吸收的贡献约为1.3%，而在乡村站点约为0.6%。该研究量化了吸光气溶胶组分的空间变异性，强调了区域性气溶胶源解析对深入理解空气质量和气候反馈效应的重要性。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
