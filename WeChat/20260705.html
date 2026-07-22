@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/07/05</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Widespread controls of precipitation sensitivity on drought recovery of global forests</section>
+            <section class="paper-authors">Yixue Hong, Matthew D. Petrie, Yu Zhang, Yaping Chen, Heng Huang, Hao Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-026-75320-1" target="_blank">https://doi.org/10.1038/s41467-026-75320-1</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">森林干旱恢复</span>
+                        <span class="topic-tag">降水敏感性</span>
+                        <span class="topic-tag">遥感数据集</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-026-75320-1" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究探讨了<b>降水敏感性</b>（SPre）对全球<b>森林干旱恢复</b>能力的调控机制。气候变化下干旱引起的树木死亡频发，但植被生长对降水变化的响应程度（SPre）如何影响干旱后恢复尚缺乏全球直接证据。研究团队整合了多源<b>遥感数据集</b>与气候数据，对过去三十年中极端干旱事件后全球森林的恢复动态进行了定量分析。研究表明，SPre是决定森林干旱恢复的关键因子；与以往线性预期不同，森林干旱恢复力在<b>中等降水敏感性</b>时达到峰值，在过高或过低水平下均显著下降。此外，气候变化已导致全球56%的森林SPre增加，其中30%的区域（特别是<b>亚热带森林</b>）因SPre上升而面临恢复能力减弱。该研究揭示了SPre在全球森林生态系统中的普遍重要性，建议将其纳入生态模型以提高对森林恢复力的预测能力。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>

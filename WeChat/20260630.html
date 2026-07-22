@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/06/30</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Interfacial chemistry of atmospheric microdroplets</section>
+            <section class="paper-authors">Yuwei Li, Shunyao Wang, Tianchen Qin, Yuanlong Huang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01465-x" target="_blank">https://doi.org/10.1038/s41612-026-01465-x</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气微滴</span>
+                        <span class="topic-tag">界面化学反应</span>
+                        <span class="topic-tag">气溶胶与云微物理</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01465-x" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文系统综述了<b>大气微滴（如云滴、海浪喷雾及环境气溶胶）</b>界面物理化学特性的最新研究进展及其对大气化学与气候动力学的影响。文章从大气科学视域出发，总结了微滴界面不同于大块水相（Bulk phase）的独特性质，阐明了微滴作为<b>自主界面微反应器（Autonomous interfacial microreactors）</b>促进加速化学转变与自发氧化还原反应的内在机制。综述归纳了涵盖有机物和无机物在内的多种关键大气反应路径、自发生成活性氧（ROS）的氧化还原过程，以及最新的<b>微观界面光谱与质谱分析技术</b>。研究指出，微滴界面效应极大地改变了大气中主要污染物的沉降、老化与气体-颗粒物分配过程，对重新认识全球元素循环、大气氧化性及气溶胶辐射强迫具有深刻的理论指导意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Towards accurate daily 3D temperature and salinity reconstruction from remote sensing enhanced by explainable AI</section>
+            <section class="paper-authors">Xihong Fang, Yujiao Zheng, Haochen Sun, Siming Huang, Jiangnan He, Wenfang Lu, Young-Heon Jo</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2026-461" target="_blank">https://doi.org/10.5194/essd-2026-461</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">三维温盐重建</span>
+                        <span class="topic-tag">可解释人工智能</span>
+                        <span class="topic-tag">多源遥感融合</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2026-461" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文提出了一种基于Transformer架构（<b>EarthFormer</b>）的可解释人工智能框架，旨在利用多源地表遥感数据实现西北太平洋（105–160°E, 0–40°N）每日19个标准深度层（0.25°分辨率）<b>三维温度和盐度的实时重构</b>。研究以再分析模型为标签数据训练模型，并使用<b>Argo实测浮标数据</b>进行独立验证，温度与盐度的重构均方根误差（RMSE）分别达到<b>0.893 °C（R² = 0.989）</b>和<b>0.141 PSU（R² = 0.827）</b>，精度逼近再分析产品且具备近实时与轻量化计算优势。<b>可解释AI（SHAP/特征贡献）分析</b>揭示，卫星海表盐度（SSS）初始贡献较低（~10%）并非由于物理相关性弱，而是受限于现有SSS遥感数据的质量缺陷；当替换为高精度SSS输入后，SSS的贡献率跃升至<b>~50%</b>，且盐度误差剖面转化为典型的V型结构。该研究展示了XAI在深海遥感反演中的机制解析能力，对改进卫星遥感反演算法具有重大指导价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Opposing effects of sea salt aerosols constrain cloud droplet responses over the Southern Ocean</section>
+            <section class="paper-authors">Jun Shi, Minghuai Wang, Yannian Zhu, Daniel Rosenfeld, Yang Cao, Jihu Liu, Yichuan Wang, Boyang Zheng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01473-x" target="_blank">https://doi.org/10.1038/s41612-026-01473-x</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海盐气溶胶</span>
+                        <span class="topic-tag">云滴数浓度</span>
+                        <span class="topic-tag">南大洋辐射强迫</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01473-x" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用长达20年（2003–2022年）的<b>卫星遥感观测数据</b>与<b>ERA5再分析数据</b>，定量评估了南大洋（60°S以南）海盐气溶胶对云滴数浓度（Nd）及低云辐射效应的影响机制。研究显示，尽管2003–2022年间南大洋上空硫酸盐、粗颗粒海盐（CSS）和细颗粒海盐（FSS）的浓度分别显著增加了<b>47.6%</b>、<b>76.5%</b>和<b>80.6%</b>，但夏季云滴数浓度仅微增了<b>6.6%</b>。<b>神经网络归因分析</b>表明，这种极其微弱的响应源于海盐气溶胶相反的微物理效应：细颗粒海盐（FSS）在低硫酸盐环境下充当云凝结核，促进Nd增加（硫酸盐贡献了约60%的Nd上升趋势）；而高吸湿性的粗颗粒海盐（CSS）通过竞争水汽抑制了云滴激活。这种抵消机制形成了南大洋云微物理的<b>缓冲效应（Buffering mechanism）</b>，强调了在气候模式与气溶胶遥感反演中对海盐气溶胶进行粒径分级建模的必要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Improved NO2 spectral fits for TROPOMI and OMI by removing wavelengths around 430 nm</section>
+            <section class="paper-authors">Jos van Geffen, Henk Eskes, Maarten Sneep, Mark ter Linden, J. Pepijn Veefkind</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-4233-2026" target="_blank">https://doi.org/10.5194/amt-19-4233-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">NO2遥感反演</span>
+                        <span class="topic-tag">TROPOMI与OMI</span>
+                        <span class="topic-tag">DOAS拟合改进</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-4233-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文针对卫星传感器<b>TROPOMI</b>和<b>OMI</b>在二氧化氮（NO₂）拟合过程中受到430 nm附近<b>夫琅禾费吸收线（Fraunhofer line）</b>干扰的问题，提出了移除428–433 nm波段的<b>“NO₂空隙（NO₂-gap）光谱拟合优化策略”</b>。由于该吸收特征受大气旋转拉曼散射（RRS）以及水体振动拉曼散射（VRS）的调制，且随太阳活动周期变化，传统DOAS检索中的可扩展参考光谱无法彻底消除拟合残差。研究表明，采用NO₂空隙法后，开阔水域上空的斜柱浓度（SCD）误差和拟合<b>均方根误差（RMS）降低了10%–20%</b>；在陆地区域，SCD误差和RMS误差亦降低了<b>5%–10%</b>。在海洋区域，SCD下降使得热带地区平流层NO₂柱浓度平均减少最高<b>2 μmol m⁻²</b>；陆地上对对流层NO₂柱浓度的影响在±2 μmol m⁻²以内，不影响数据验证的大局。该优化已成功应用于TROPOMI（v2.9.1）及OMI的最新官方处理系统，极大地提升了大气成分遥感数据的准确性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Warming climate has lengthened global intense tropical cyclone seasons</section>
+            <section class="paper-authors">Jimin Liu, Jeremy Cheuk-Hin Leung, Dingchi Zhao, Daosheng Xu, Hong Huang, Zengliang Zang, Wenshou Tian, Yaoming Ma, Yi Li, Banglin Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-026-74651-3" target="_blank">https://doi.org/10.1038/s41467-026-74651-3</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">强热带气旋</span>
+                        <span class="topic-tag">气旋季节延长</span>
+                        <span class="topic-tag">海洋变暖</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-026-74651-3" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文针对全球气候变暖背景下强热带气旋（Intense TCs）季节长度的变化趋势及其大气海洋驱动机制展开了系统研究。研究利用1980年以来的全球热带气旋最佳路径观测数据及再分析资料，统计分析了各海盆强热带气旋活跃期（Intense TC season）的时间演变特征。结果表明，自1980年以来，全球各海盆强热带气旋季节均呈现出显著的延长趋势，增长速率达到<b>9.9–13.8天/十年</b>（相当于每十年延长<b>7.4%–21.9%</b>）。机制分析表明，这一变化主要归因于<b>海洋变暖</b>显著增加了非传统气旋季节（Off-season）热带气旋发生<b>快速增强（Rapid Intensification）</b>的概率，使得非季节性气旋更容易发展成为强热带气旋；同时背景大气环流的变化也增加了气旋季节性的复杂程度。该研究揭示了气候变化对热带气旋季节性的重大影响，对防灾减灾与沿海风险评估具有重要警示意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global in-situ measurements reveal ecosystem and hydroclimatic differences in escalating soil heat extremes</section>
+            <section class="paper-authors">Björn Lundt, Jian Peng, Almudena García-García</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae7989" target="_blank">https://doi.org/10.1088/1748-9326/ae7989</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">土壤热极端</span>
+                        <span class="topic-tag">地表-大气反馈</span>
+                        <span class="topic-tag">气候变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae7989" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文结合全球<b>FLUXNET</b>、<b>AmeriFlux</b>和<b>ICOS</b>样站的原位土壤与近地表空气温度记录，以及土地利用、气候区、干旱度和土壤质地等数据，系统研究了土壤表层热极端事件的强度、频率和持续时间的长期趋势。研究采用<b>空间平均趋势分析</b>与对比统计方法，评估了土壤与空气极端高温的演变差异。结果显示，在多数站点中，<b>土壤热极端的增加速度显著快于空气热极端</b>：全球平均土壤年最大7天均温增幅达<b>0.78 °C/十年</b>（空气为0.56 °C/十年），且90分位数以上的热天频率增幅达<b>9.33%/十年</b>（空气仅为1.27%/十年）。在<b>温带大陆性气候</b>和<b>半湿润干旱区</b>，由于土壤反复干燥导致蒸发冷却作用减弱，这种放大效应尤为强烈。粗质地土壤和农田的差异最大，而森林虽然能削弱峰值热强度，但极端事件的频率和持续时间仍呈上升趋势。该研究揭示了土壤与大气极端热事件的分化现象，对评估<b>碳损失</b>和<b>农业风险</b>具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The first consistent global gap-free daily 4 km dataset of particulate organic carbon, particulate organic nitrogen and their ratio (1998–2023)</section>
+            <section class="paper-authors">Yu Zhang, Huizeng Liu, Cong Liu, Nan Xu, Lin Yan, Chao Yang, Yongquan Wang, Guofeng Wu, Qingquan Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2026-453" target="_blank">https://doi.org/10.5194/essd-2026-453</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">颗粒有机物</span>
+                        <span class="topic-tag">海洋水色遥感</span>
+                        <span class="topic-tag">无缝高斯过程回归</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2026-453" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文开发并发布了首套1998–2023年全球无缝（Gap-free）每日4公里分辨率的<b>颗粒有机碳（POC）</b>、<b>颗粒有机氮（PON）</b>及其化学计量比（<b>POC:PON</b>）数据集（GGFD-POM）。研究利用<b>OC-CCI v6.0海洋水色遥感数据</b>与哥白尼再分析物理数据，基于3110组匹配的原位观测数据训练了<b>高斯过程回归（GPR）模型</b>（POC与PON的R²分别达到0.87和0.89）；随后应用<b>惩罚最小二乘离散余弦变换（DCT-PLS）</b>补全因云覆盖和采样限制导致的遥感缺失值，构建出无缝场。独立原位验证与<b>三元共置分析（TCA）</b>表明，GGFD-POM数据在准确度和时空连续性上均优于现有的MODIS-Aqua和MULTIOBS产品，能够精准捕捉全球大洋POM的时空演变特征，为深化全球海洋碳氮循环及生物地球化学过程的遥感监测提供了高质量的数据集支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A multi-decadal dataset of surface damage on Antarctic ice shelves (1999–2024)</section>
+            <section class="paper-authors">Leyue Tang, Jonathan L. Bamber, Tian Li, Gang Qiao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2026-414" target="_blank">https://doi.org/10.5194/essd-2026-414</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">南极冰架损伤</span>
+                        <span class="topic-tag">Landsat卫星遥感</span>
+                        <span class="topic-tag">深度学习分割</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2026-414" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文构建了1999–2024年南极9个代表性冰架的高分辨率（30米）多年代际地表损伤数据集。针对南极冰架因变薄退化而削弱支撑作用的问题，研究基于<b>Landsat系列光学卫星影像</b>，引入<b>扩散模型（Diffusion Model）</b>修复了Landsat 7条带丢失（SLC-off）图像；同时利用人工标注的多样化样本训练了<b>深度学习图像分割模型</b>，实现了冰隙、裂缝和严重破碎区等地表损伤结构的自动精准提取。测试集与独立验证冰架上的平均交并比（mIoU）分别达到<b>0.845</b>和<b>0.822</b>，展现出极高的跨时空泛化能力。数据集包含170幅年度地表损伤图，分析显示<b>Pine Island、Thwaites和Larsen B冰架</b>在过去25年间经历了最剧烈的地表损伤扩展。该数据集极大提升了南极冰架损伤记录的时间连续性与空间分辨率，为评估冰架不稳定性及海平面上升预测提供了重要依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Tropical origins of the recent trends in Northern Hemisphere wintertime jet streams</section>
+            <section class="paper-authors">Gwendal Rivière, Sébastien Fromang, Sebastian Schemm</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-026-74980-3" target="_blank">https://doi.org/10.1038/s41467-026-74980-3</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">副热带急流趋势</span>
+                        <span class="topic-tag">热带降水异常</span>
+                        <span class="topic-tag">大气环流遥相关</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-026-74980-3" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文探讨了过去45年来北半球冬季副热带急流（北太平洋与北大西洋急流）位置与强度演变趋势的遥相关动力学机制。研究基于<b>长期大气再分析数据集</b>，结合准常态与瞬态涡旋活动诊断，揭示了热带太平洋降水趋势对中纬度急流变化的调制作用。研究发现，北半球冬季急流的加速与极向移动趋势与<b>北太平洋西部强降水事件</b>的增加密切相关。这种中纬度强降水频发的现象，本质上是由<b>热带太平洋类拉尼娜（La Niña-like）降水异常</b>以及MJO处于第4–6相位时的厄尔尼诺事件所共同驱动的。在这些强降水事件期间，潜热释放与波-涡相互作用导致北太平洋急流极向侧率先加速，随后通过下游响应引起北大西洋急流的相应调整。该研究阐明了热带降水遥相关在中纬度大气环流长期趋势中的核心地位，为评估气候模式对急流变化的模拟能力提供了关键证据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Microphysical evolution and column loading  drive nonlinear regional contrast in black  carbon top-of-atmosphere forcing</section>
+            <section class="paper-authors">Pravash Tiwari, Jason Blake Cohen, Hongrui Gao, Lingxiao Lu, Jun Wang, Oleg Dubovik, Kai Qin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-9149-2026" target="_blank">https://doi.org/10.5194/acp-26-9149-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳辐射强迫</span>
+                        <span class="topic-tag">物理知情机器学习</span>
+                        <span class="topic-tag">卫星遥感观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-9149-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文旨在评估黑碳（BC）气溶胶在顶层大气（TOA）的直接辐射强迫及其非线性特征。研究结合了<b>多平台多波段卫星观测</b>（如MODIS等）、<b>辐射传输模型（RTM）</b>以及<b>物理知情机器学习（ML）</b>框架。以中国徐州和孟加拉国达卡两个对比鲜明的城市群为训练基盘，利用<b>SHAP可解释性分析</b>归因气溶胶微物理特性（如混合状态、气溶胶光学厚度BCAOD与柱数密度）对强迫的贡献。结果表明，ML框架展现出极高预测精度（<b>R² > 0.95</b>，RMSE约1.5–1.8 W m⁻²），成功捕捉到同等黑碳载荷在不同微物理环境下的<b>冷却与加热机制转变</b>。零样本（zero-shot）跨区域迁移至印度德里和赞比亚蒙古时，在强萨瓦纳焚烧区出现负偏差；而通过引入多区域扩展数据集重新训练后，蒙古区域的RMSE降低了<b>68%</b>，偏差大幅收敛。研究证实了基于卫星与机器学习的高精度黑碳辐射效应约束方法的可行性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Standardized Soil Moisture-Temperature Compound Index (SSTCI): Daily scale global data set and event catalogue for compound dry–hot extremes (1961–2023)</section>
+            <section class="paper-authors">Rukhshinda Aftab, Daniel Fiifi Tawia Hagan, Guojie Wang, Baoying Shan, Syed Husnain Shah, Zhou Chensi, Wei Xikun, Fareeha Siddique, Ali Hasan Jaffry, Emmanuel Yeboah</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2026-313" target="_blank">https://doi.org/10.5194/essd-2026-313</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">复合干热极端事件</span>
+                        <span class="topic-tag">SSTCI指数</span>
+                        <span class="topic-tag">全球日尺度数据集</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2026-313" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文构建并发布了1961–2023年全球（不含南极洲）0.1°空间分辨率、日尺度<b>标准化土壤湿度-温度复合指数（SSTCI）</b>及其配套的复合干热事件（CDHEs）编目数据集。针对传统月/季尺度指标及降水代用指标难以捕捉土壤湿度驱动的快速地表-大气反馈这一缺陷，研究结合<b>土壤湿度与温度多源数据</b>，采用标准化联合概率建模方法建立了连续的SSTCI指数。数据集分析表明，近几十年来全球多个区域的<b>复合干热极端事件发生频率显著增加、持续时间明显延长</b>。该事件目录对每次干热事件的起止时间、空间范围和累积强度进行了精准定义与记录。该研究构建的数据集有效弥补了高时间分辨率全球干热复合灾害监测的空白，为评估气候风险及其对水资源、生态系统和农业生产的影响提供了坚实的数据支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Stratospheric Ozone Depletion Causes Southern Ocean Surface Cooling</section>
+            <section class="paper-authors">Shouwei Li, Wei Liu, Liping Zhang, William J. M. Seviour, Gavin A. Schmidt</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL120200" target="_blank">https://doi.org/10.1029/2025GL120200</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">平流层臭氧消耗</span>
+                        <span class="topic-tag">南大洋海温</span>
+                        <span class="topic-tag">阿克曼输送</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL120200" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文通过耦合气候模式模拟，定量评估了1982至2005年间<b>平流层臭氧消耗</b>对南大洋海表温度（SST）变化的瞬态影响及其动力学机制。研究表明，平流层臭氧消耗强化了46°S以南的<b>地表纬向西风</b>，进而驱动向北的<b>阿克曼输送（Ekman transport）</b>增加，促进了冷水向北平流，导致该海域SST显著变冷。与此同时，南大洋跨纬度SST梯度增强，在气候态地表风的推动下进一步加剧了46°S至60°S之间的冷水平流冷却。模拟分析证实，尽管这一冷水平流过程部分被地表热通量变化和混合层下方的垂直平流所补偿，但由臭氧消耗持续诱导的<b>水平冷水平流</b>在维持南大洋SST降温以及<b>南极海冰区域性扩张</b>中起到了核心决定作用。该研究对阐明平流层化学-大气环流-海洋相互作用机制具有重要学术价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Increased Likelihood and Intensification of Global Agricultural Droughts Under Compound Meteorological Droughts and Hot Extremes</section>
+            <section class="paper-authors">Yitong Zhang, Zengchao Hao, Yuting Pang, Guocan Wu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD045918" target="_blank">https://doi.org/10.1029/2025JD045918</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">复合干热极端事件</span>
+                        <span class="topic-tag">农业干旱风险</span>
+                        <span class="topic-tag">随机森林与SHAP分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD045918" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文评估了全球范围内复合气象干旱与高温极端事件（CDHEs）对表层及根系层土壤水分亏缺（即农业干旱）的放大机制与空间异质性。研究利用全球多源气象与土壤湿度数据，对比分析了单纯气象干旱与CDHEs作用下的干旱概率与严重程度差异，并结合<b>随机森林模型与SHAP可解释性归因方法</b>探究了不同气候区的驱动机制。结果表明：与单一气象干旱相比，CDHEs使表层和根系层土壤水分亏缺的发生概率分别增加了<b>50.91%</b>和<b>62.16%</b>，且干旱程度显著加剧。驱动归因显示，在干旱区（Dryland），<b>降水差异</b>是导致土壤水分亏缺加剧的主导因素；而在非干旱区，<b>温度与饱和水汽压差（VPD）</b>分别主导了表层和根系层土壤水分的剧烈下降。此外，研究还发现在1981–2022年间干旱区农业干旱对CDHEs的敏感性有所下降，该发现对全球农业干旱灾害风险评估与遥感监测具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A tale of two hot spells: dominant circulation patterns favouring persistent high temperatures in western Europe</section>
+            <section class="paper-authors">Duncan Pappert, Olivia Martius</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae7f34" target="_blank">https://doi.org/10.1088/1748-9326/ae7f34</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气环流模式</span>
+                        <span class="topic-tag">持续性高温</span>
+                        <span class="topic-tag">CESM2模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae7f34" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用<b>社区地球系统模型2（CESM2）</b>的历史模拟数据集，深入探究了西欧次季节尺度持续性高温热浪的支配大气环流形态及动力学机制。研究采用<b>罗斯贝波（Rossby wave）传播与破碎分析</b>以及大气涡旋相互作用诊断方法，识别出两种主导的环流配置：<b>Ⅰ型事件</b>以显著的上游槽和周期性罗斯贝波包为特征，表现出更明显的纬向波列，通过<b>波-涡相互作用</b>和潜热加热强化并维持局部高压脊；<b>Ⅱ型事件</b>则由大规模气旋反向波破碎主导，风暴路径向极地偏移，形成呈经向倾斜的波列，借助有利的波破碎运动学与<b>涡旋驱动喷流反馈</b>维持地表高温。研究表明，这两类主导形态设定了近地表高温持续的潜在条件，并由波相互作用的时间节点与<b>陆面反馈</b>共同调制。该成果为改进持续性高温事件的预测与气候模式评估提供了关键的动力学诊断框架。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Marine Aerosol to Refinery Emissions: Transport and Evolution of CCN in the Houston Metropolitan Area and Their Impact on Cloud Formation</section>
+            <section class="paper-authors">G. C. Roberts, K. Ranjbar, L. Nichman, M. Wolde, C. S. McCluskey, A. Takeishi, R. Patnaude, S. Patil, G. M. McFarquhar, P. Kollias</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD044628" target="_blank">https://doi.org/10.1029/2025JD044628</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">云凝结核</span>
+                        <span class="topic-tag">气溶胶-云相互作用</span>
+                        <span class="topic-tag">机载原位观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD044628" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用加拿大国家研究委员会（NRC）Convair CV-580研究飞机在ESCAPE观测计划中获取的高分辨率机载观测数据，深入探讨了休斯顿都会区不同气溶胶源（海盐气溶胶与炼油厂排放）对<b>云凝结核（CCN）演变</b>及对对流云微物理特性的影响。研究将休斯顿区域的气溶胶划分为5个主要类型，分析了其<b>数量粒径分布</b>、CCN谱线特征与吸湿性参数（Effective Hygroscopicity）。结果发现，尽管不同来源的气溶胶与CCN浓度跨越了<b>超过两个数量级</b>，但其吸湿性参数整体保持相似。研究进一步将拟合的连续CCN光谱输入<b>一维气溶胶-云包裹模型（1-D cloud parcel model）</b>中，结合实际观测的上升气流速度进行模拟。结果定量揭示了从海洋背景到重工业排放不同背景下CCN演化对深对流云形成和云滴激活的调制机制，为高污染城市海岸带的<b>气溶胶遥感与微物理参数化</b>提供了关键实测约束。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Ice nucleation activity of mineral dust from Morocco and Iceland in immersion freezing mode and its relationship with mineralogy and particle size</section>
+            <section class="paper-authors">Sebastian Vergara-Palacio, Alexei Kiselev, Franziska Vogel, Adolfo González-Romero, Romy Fösig, Xavier Querol, Corinna Hoose, Nsikanabasi Silas Umo, Ottmar Möhler, Konrad Kandler, Carlos Pérez García-Pando, Martina Klose</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-9113-2026" target="_blank">https://doi.org/10.5194/acp-26-9113-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">矿物尘埃</span>
+                        <span class="topic-tag">浸润结冰</span>
+                        <span class="topic-tag">冰核活性</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-9113-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文通过超过300组受控实验室实验，系统评估了来自低纬度摩洛哥和高纬度冰岛的天然土壤尘埃在<b>浸润结冰模式</b>下的冰核活性（INA），重点探讨了粗颗粒与超粗颗粒（直径>10 μm）的矿物成分及粒径对冰核作用的影响。研究利用<b>AIDA/AIDAm云室</b>以及<b>INSEKT和IR-DROFA冻结检测系统</b>，对不同粒径分级样品的冰核活性进行了精确测量。实验结果显示：摩洛哥尘埃表现出较高的冰核活性，与<b>钾长石（K-feldspar）</b>相当，且由于各粒径段中钾长石含量保持稳定，其INA未表现出明显粒径依赖性；相比之下，冰岛尘埃的冰核活性比摩洛哥样品低<b>最高可达100倍</b>，并呈现出随粒径增大而减弱的微弱粒径依赖性，这与粒径增大导致<b>辉石（pyroxene）</b>含量减少密切相关。该研究揭示了大颗粒矿物尘埃在混合相云形成中的关键作用，完善了大气成分与云微物理遥感及气候模式的参数化基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The consistent in-situ global gridded temperature and salinity dataset, CORA OA 1960–2024</section>
+            <section class="paper-authors">Tanguy Szekely, Jean-Renaud Miadana</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2026-376" target="_blank">https://doi.org/10.5194/essd-2026-376</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋温盐数据集</span>
+                        <span class="topic-tag">客观分析</span>
+                        <span class="topic-tag">卫星数据交叉验证</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2026-376" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文介绍了哥白尼海洋服务（Copernicus Marine Service）发布的最新版全球海洋原位温盐网格化客观分析数据集（<b>CORA OA 1960–2024</b>）。该数据集通过融合<b>船舶、浮标及Argo微型漂流浮标</b>等多源历史原位观测记录，采用基于世界海洋图集（WOA23）年代际气候态时空插值的背景场（First Guess）更新方法，构建了覆盖全球0–5500米共187个垂直层、水平分辨率为<b>0.5°</b>的月度温盐场。研究重点比较了该数据集与SST、SSS及其他3D温盐产品的一致性，结果表明在1985–2024年间各产品呈现极好的一致性；特别是在2016年后，该产品表现出对<b>Argo快速盐度漂移（Argo fast salty drift）</b>现象的强鲁棒性。该数据集不仅为海洋与气候变化研究提供了长时序基础数据，也为大气与海洋<b>卫星遥感数据的交叉校验与校准</b>提供了高质量的标准参照。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>

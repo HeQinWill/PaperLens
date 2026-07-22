@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/06/29</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global climate modeling with improved precipitation  characteristics by learning physics (GRIST-MPS v1.0)  from global storm-resolving modeling</section>
+            <section class="paper-authors">Yiming Wang, Yi Zhang, Yilun Han, Wei Xue, Tianru Chen, Yihui Zhou, Xiaohan Li, Haishan Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-19-5553-2026" target="_blank">https://doi.org/10.5194/gmd-19-5553-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">全球气候模型</span>
+                        <span class="topic-tag">机器学习</span>
+                        <span class="topic-tag">降水模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-19-5553-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文提出了GRIST-MPS v1.0框架，旨在通过<b>机器学习（ML）</b>从高分辨率<b>全球风暴解析模型（GSRM）</b>中学习物理过程，以改进粗分辨率<b>全球气候模型（GCM）</b>的降水气候特征。研究利用GRIST模型生成的80天5公里分辨率全球GSRM数据，通过<b>粗粒化</b>和<b>残差法</b>提取物理趋向，构建了替代传统物理参数化的ML物理套件。基于标准化等压面变量输入，混合模型成功实现了稳定的6年AMIP型气候模拟。结合<b>全球降水测量（GPM）</b>数据对比发现，该模型有效缓解了传统GCM中雨带过强和赤道低压带（ITCZ）过宽的偏差，显著改善了热带轻雨过多的问题。网络架构对比显示，<b>ResNet</b>在保持长期模拟稳定性和准确性方面表现最佳，为跨尺度气候模拟融合提供了可行途径。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Drivers of 2023–2024 Atmospheric CO2 Growth: Role of Northern Mid‐to‐High Latitude Land Carbon Cycle</section>
+            <section class="paper-authors">Suman Maity, Yosuke Niwa, Tazu Saeki, Yu Someya, Yukio Yoshida</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL122221" target="_blank">https://doi.org/10.1029/2026GL122221</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">碳通量反演</span>
+                        <span class="topic-tag">二氧化碳增长率</span>
+                        <span class="topic-tag">GOSAT卫星</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL122221" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文探讨了2023–2024年全球<b>大气二氧化碳（CO2）增长率</b>创下历史新高的驱动机制。研究基于<b>温室气体观测卫星（GOSAT）</b>的柱浓度观测数据，利用<b>二氧化碳通量反演模型</b>解析了全球碳通量的时空演变。研究发现，虽然2023–2024年的厄尔尼诺现象普遍增加了非化石源CO2通量，但其驱动特征与2015–2016年事件明显不同：除了赤道热带地区的显著增加（1.11 PgC/年）外，<b>北半球中高纬度陆地</b>的净CO2吸收量出现了显著削弱（0.42 PgC/年）。进一步分析表明，北半球中高纬度的通量变化主要受<b>异常高温</b>驱动，而火灾排放的贡献较弱且呈阵发性，揭示了中高纬度碳循环对极端气候敏感性的增强。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Stratospheric Intrusions Over Hong Kong: Key Dynamical Mechanisms in Summer</section>
+            <section class="paper-authors">Yunhui Xie, Zhixiong Chen, Xiangting Zeng, Renjie Luo, Jiajia Su, Rubin Jiang, Jane Liu, Xiushu Qie, Jianchun Bian, Dan Li, Zhixuan Bai, Hongbo Zhang, Mengmiao Yang, Lei Shu, Xugeng Cheng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD046869" target="_blank">https://doi.org/10.1029/2026JD046869</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">平流层入侵</span>
+                        <span class="topic-tag">臭氧探空</span>
+                        <span class="topic-tag">动力学机制</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD046869" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文揭示了夏季<b>平流层入侵（SI）</b>影响珠江三角洲（香港）臭氧（O3）分布的动力学机制。研究结合长期的<b>臭氧探空（Ozonesonde）观测</b>与再分析数据集，发现夏季SI具有独特的“两步输送”机制：平流层臭氧首先在北纬30°附近注入对流层，随后在偏北风异常驱使下向南长距离输送至香港上空。天气图合成分析表明，这种输送由“双副热带高压、中间西风槽及台风”共同构成的特殊天气系统所促成。定量计算显示，此类间接平流层入侵事件对对流层中层<b>臭氧极值</b>的平均贡献高达37.2 ppbv（占比40.3%），强调了平流层天然源对季风区夏季臭氧短期变率的重要影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Quantification of inmixing of Asian Monsoon air by multi-species classification in a match flight experiment</section>
+            <section class="paper-authors">Jan Kaumanns, Jörn Ungermann, Bärbel Vogel, Sören Johansson, Erik Kretschmer, Felix Plöger, Peter Preuße, Wolfgang Woiwode, Martin Riese</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-9083-2026" target="_blank">https://doi.org/10.5194/acp-26-9083-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">亚洲季风</span>
+                        <span class="topic-tag">三维层析观测</span>
+                        <span class="topic-tag">高层对流层/平流层下部</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-9083-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用“亚洲夏季风高纬度输出探测”（PHILEAS）飞行实验数据，对阿拉斯加海岸附近高空对流层/平流层下部（UTLS）的亚洲季风长丝进行了自匹配飞行研究。研究采用<b>Gimballed Limb Observer for Radiance Imaging of the Atmosphere (GLORIA)</b>机载观测设备，获取了5种微量气体物种的<b>三维层析观测数据</b>。方法上，作者引入<b>高斯混合模型（Gaussian Mixture Model）</b>进行多物种统计分类，成功将气团划分为对流层空气、亚洲夏季风输出（ASMO）、混合空气和平流层空气等5种类型，并结合<b>轨迹计算</b>和<b>平流层化学拉格朗日模型（CLaMS）</b>模拟人工地表来源示踪物。结果表明，观测到了由罗斯贝波打破引起的对流层顶折叠现象，揭示了ASMO空气直接与平流层空气及UTLS混合的三维空间结构，证实了不同特征气团源自亚洲季风区内的特定地表源区。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Refined Modeling of Arctic Circumpolar Building Stock Increases Estimated Mid‐Century Permafrost Degradation Damages</section>
+            <section class="paper-authors">E. Manos, D. A. Streletskiy, C. Witharana, E. Haggerty, A. K. Liljedahl</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth's Future</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026EF008578" target="_blank">https://doi.org/10.1029/2026EF008578</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">深度学习</span>
+                        <span class="topic-tag">冻土退化</span>
+                        <span class="topic-tag">建筑足迹识别</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026EF008578" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用<b>深度学习模型</b>重新量化了环北极地区建筑存量，并评估了中世纪<b>多年冻土退化</b>对基础设施造成的经济损失。研究结合高分辨率遥感影像，采用深度学习算法进行<b>建筑足迹检测</b>与功能分类，并利用环北极数字表面模型（DSM）提取楼层高度，构建了三维建筑模型，发现实际居住总面积比二维足迹面积高出75%。基于<b>蒙特卡洛模拟</b>的风险评估表明，在SSP2-4.5和SSP5-8.5情景下，本世纪中叶环北极建筑损失中位数将分别达760亿和2610亿美元。研究强调了遥感与深度学习在北极遥感监测中的应用潜力，为适应气候变化的精细化决策提供了数据支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Multiscale Dynamic Mechanisms of Drought‐Flood Abrupt Alternation Events in the Yangtze River Basin</section>
+            <section class="paper-authors">Chunxuan Zhao, Yingxiao Sun, Qianrong Ma, Hongjia Lei, Hao Wu, Zhiwei Zhu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD046199" target="_blank">https://doi.org/10.1029/2025JD046199</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">旱涝急转</span>
+                        <span class="topic-tag">多尺度窗口变换</span>
+                        <span class="topic-tag">斜压不稳定性</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD046199" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文基于1961–2022年降水数据，结合<b>标准化加权平均降水指数</b>与游程理论，系统识别了长江流域的<b>旱涝急转（DFAA）</b>事件，并揭示了其多尺度动力学机制。研究在长江流域检测到1097次DFAA事件（含89次区域性事件），发现其转换时间短（小于4天），且在2000年后频率与强度显著增加。方法上，研究运用基于<b>多尺度窗口变换（MWT）</b>的规范传输框架分析了大尺度环流演变。结果表明，正北大西洋振荡增强与中纬度西风减弱共同促成了<b>乌拉尔山阻塞高压（UB）</b>的建立；UB激发的有效位能向下游传播，诱发斜压不稳定性，并在发生期结合北方冷干空气与副热带高压输送的热带水汽，引发旱涝急转，为早期预警提供了重要信号。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">First Kinetic 3‐D Simulations of the High‐Latitude Electrojet Spanning an Entire Turbulent Flux Tube</section>
+            <section class="paper-authors">Meers Oppenheim, Y. Dimant, R. Koontaweepunya, A. Q. Green, S. Evans</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL121042" target="_blank">https://doi.org/10.1029/2025GL121042</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">高纬度电离层</span>
+                        <span class="topic-tag">Farley-Buneman湍流</span>
+                        <span class="topic-tag">粒子网格模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL121042" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文首次对跨越整个高纬度电离层柱的<b>法利-布内曼（Farley–Buneman, FB）湍流</b>开展了全动力学<b>三维粒子网格（3D PIC）模拟</b>，覆盖了从强碰撞区到近无碰撞区的完整磁通量管。研究模拟了空间天气暴期间高纬度电离层湍流等离子体波的非线性演化过程。结果表明，FB湍流初始阶段沿磁场方向产生公里级相干密度扰动，随着湍流饱和，能量向长波段级联并在波矢空间扩展。模拟揭示了湍流引起的<b>电子加热</b>与<b>异常电子输运</b>现象；在105 mV/m的外部电场驱动下，高度积分电导率提升了21%。该工作为解读雷达与火箭观测数据以及改进空间天气模型中的电导率参数化提供了关键物理依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A New Vegetation Health Index Based on Vegetation Optical Depth: Development and Application in Vegetated Australia</section>
+            <section class="paper-authors">Shanlei Sun, Aoge Ma, Qianxue Zu, Qianrong Ma, Yi Liu, Yibo Liu, Mengyuan Mu, Yang Zhou, Wenjian Hua, Botao Zhou, Haishan Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD046923" target="_blank">https://doi.org/10.1029/2026JD046923</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">植被光学深度</span>
+                        <span class="topic-tag">植被健康指数</span>
+                        <span class="topic-tag">干旱监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD046923" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文开发了一种基于<b>植被光学深度（VOD）</b>的新型<b>植被健康指数（VHIVOD）</b>，旨在克服传统NDVI易饱和及受地表影响的局限，提升生态干旱监测能力。研究整合了1990–2024年长期协调的VOD遥感数据集，以澳大利亚植被区为对象进行了应用与验证。通过与<b>总初级生产力（GPP）</b>和土壤水分的相关性分析，结果表明VHIVOD在超过70%的植被区域表现优于传统NDVI-VHI。结构突变检验显示2002年存在显著断点；在1990–2001与2002–2024两个时段内，大部分区域的干旱持续时间与强度均呈减弱趋势。该指标展现出对植被水分和生物量动态的高敏感性，为全球变化下的<b>植被干旱评估</b>提供了更可靠的遥感工具。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Added Value of Three‐Dimensional Planetary Boundary Layer Schemes for Simulating Local‐Scale Circulations Over Complex Terrain on the Tibetan Plateau</section>
+            <section class="paper-authors">Hanying Xu, Cunbo Han, Yunshuai Zhang, Xu Zhang, Timothy W. Juliano, Yaoming Ma</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD046165" target="_blank">https://doi.org/10.1029/2025JD046165</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">青藏高原</span>
+                        <span class="topic-tag">三维行星边界层方案</span>
+                        <span class="topic-tag">局地环流模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD046165" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文评估了<b>WRF模式</b>中一维（1D）与三维（3D）<b>行星边界层（PBL）方案</b>在青藏高原复杂地形下模拟山谷风和湖陆风等<b>局地尺度环流</b>的性能。研究利用珠穆朗玛峰和纳木错地区的地面原位观测数据对6种PBL方案进行了对比检验。结果表明，3D PBL方案因考虑了<b>水平湍流混合</b>，在捕捉白天对流边界层特征方面明显优于1D方案，成功再现了珠峰地区下午强谷风的强度与演变以及纳木错湖风的垂直结构。然而，研究也揭示了3D方案的局限性：在夜间稳定边界层条件下，过度水平扩散平滑了热力梯度，导致其无法模拟出纳木错夜间陆风特征。这为复杂地形下的边界层建模提供了重要改进方向。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">An Atmosphere–Land–Ocean Coupled Global NWP System: Performance Evaluation for Potential Operational Use</section>
+            <section class="paper-authors">Sumit Kumar, Imranali M. Momin, Sukhwinder Kaur, Kondapalli Niranjan Kumar, Jonah Roberts‐Jones, Matthew J. Martin, John P. George, V. S. Prasad</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL120923" target="_blank">https://doi.org/10.1029/2025GL120923</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气海耦合模型</span>
+                        <span class="topic-tag">数值天气预报</span>
+                        <span class="topic-tag">印度夏季风</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL120923" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文评估了新型<b>大气-陆地-海洋耦合全球数值天气预报系统（C-NCUM）</b>在2024年7月印度夏季风短中期预报中的表现。研究将耦合系统与非耦合的运行模型（NCUM）进行对比，并利用<b>全球降水测量（GPM）</b>降水数据、<b>OSTIA海表温度（SST）</b>及再分析湿度场等多元遥感与再分析数据进行检验。研究结果表明，C-NCUM系统显著改善了季风降水与SST变率的模拟效果，有效缓解了西赤道印度洋及核心季风区的湿偏差。通过优化<b>海气相互作用</b>与水汽输送表达，减少了非耦合模型中虚假的低层风场汇聚与海温偏高现象。该研究突出了动态海气耦合在提升季风预报精度方面的实用价值。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
