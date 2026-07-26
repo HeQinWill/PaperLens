@@ -52,7 +52,7 @@ def analyze_paper(info_json: str) -> Tuple[bool, str]:
     Return {"summary": str, "tags": list[str], "score": float}"""
     response = chat.send_message(prompt)
     # print(response.text)
-    return json.loads(response.text)
+    return json.loads(response.text, strict=False)
 
 
 
