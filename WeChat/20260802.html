@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/08/02</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A GEO‐LEO Imager Data Set for Characterizing Rapid Changes of Global Aerosol Properties</section>
+            <section class="paper-authors">R. C. Levy, P. Gupta, Y. R. Shi, L. A. Remer, M. Kim, M. M. Oo, J. Wei, V. R. Sawyer, V. P. Kiliyanpilakkil, R. E. Holz, B. Ramachandran, R. B. Pierce, S. Mattoo</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD046107" target="_blank">https://doi.org/10.1029/2025JD046107</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">GEO-LEO卫星</span>
+                        <span class="topic-tag">气溶胶光学厚度</span>
+                        <span class="topic-tag">暗目标算法</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD046107" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究基于<b>暗目标算法（DTA）</b>，整合了4台低轨（LEO）与4台静止轨（GEO）卫星成像仪数据，构建了2019–2022年全球<b>气溶胶光学厚度（AOD）</b>及相关属性的高时空分辨率数据集（GEO-LEO）。该数据集提供半小时间隔、0.25°网格的近全球合并产品。研究利用地基<b>Sun Photometer（AERONET）</b>观测数据对Level 2反演结果进行了验证，并对Level 3统计数据的观测几何与时间采样偏差进行了诊断。通过2020年澳大利亚山火和2021年北美山火两个典型案例研究证明，GEO-LEO数据集能够精准追踪跨大洋和跨洲际扩散的烟羽动态与强度变化。此外，同化该数据集可显著改善气象模型对气溶胶演化的表征能力。该公开数据集已入库NASA档案，为评估全球气溶胶快速变化提供了重要数据支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Subseasonal Prediction of the Wintertime North Pacific Blocking in AI‐Based Weather Models</section>
+            <section class="paper-authors">Jaeyoung Hwang, Yi Deng, Simchan Yook, Zhenyu You</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD046695" target="_blank">https://doi.org/10.1029/2026JD046695</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">AI气象预报</span>
+                        <span class="topic-tag">阻塞高压</span>
+                        <span class="topic-tag">亚季节预测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD046695" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究评估了三类不同架构的AI气象模型在冬季<b>北太平洋阻塞高压</b>模拟及<b>亚季节预测</b>中的性能，包括全物理模型（ECMWF IFS）、混合模型（NeuralGCM）和纯数据驱动模型（盘古气象Pangu-Weather）。研究通过对比分析不同预报时效下的阻塞频率和动态演化过程。结果显示，在1–2周的短时预报中，所有模型均能较好地复现阻塞频率，但当预报时效延长至3–4周时，模型偏差开始分化：ECMWF IFS高估了阻塞频率，盘古模型倾向于低估7–8天持续时间的阻塞，而NeuralGCM则表现出介于两者之间的双极偏差结构。尽管存在偏差，三类模型均成功捕捉到了阻塞系统的演化过程及湿动力学特征。研究表明，AI模型在2周内保持了良好的亚季节预测技能，且利用热带太平洋的年际和亚季节变率可进一步提升预测准确性，证实了AI模型在极端天气亚季节预测中的潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Diagnosing explainability of machine learning: An example of transformer-based PM<sub>2.5</sub> estimation in Seoul, Korea</section>
+            <section class="paper-authors">Ingyu Park, Chang-Hoi Ho, Hye-Ryun Oh, Ka-Young Kim, Jinwon Kim, Yong-Sang Choi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.122264" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.122264</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5估算</span>
+                        <span class="topic-tag">可解释人工智能</span>
+                        <span class="topic-tag">TimeSformer模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.122264" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究应用<b>可解释人工智能（XAI）</b>方法，对用于韩国首尔冬季<b>PM2.5浓度</b>预报的时空Transformer模型（<b>TimeSformer</b>）的决策过程及物理一致性进行了深入诊断。基于再分析资料训练的模型在重污染事件评估中表现出良好的统计精度（命中率达75.0%）。然而，利用<b>集成梯度（IG）</b>与<b>SHAP方法</b>进行属性归因分析发现，虽然模型正确抓取了大部分与高PM2.5相关的气象特征，但却对位势高度和温度赋予了负归因，这与“高压系统和升温有利于PM2.5累积”的经典大气物理规律相悖。XAI分析表明，数据驱动模型过度依赖与首尔局地强相关的统计特征，而忽视了大尺度天气图景。该研究揭示了纯数据驱动AI模型在表征物理机制上的局限性，强调了在AI架构中引入<b>大气物理约束</b>的必要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Where the river turns old: urbanized deltas imprint a fossil signature on black carbon exported to the ocean</section>
+            <section class="paper-authors">Xin Yi, Xiaofei Geng, Guangcai Zhong, Bolong Zhang, Sanyuan Zhu, Hongxing Jiang, Yangzhi Mo, Chuxin Yao, Shizhen Zhao, Jun Li, Huizheng Che, Gan Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-026-76202-2" target="_blank">https://doi.org/10.1038/s41467-026-76202-2</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">黑碳</span>
+                        <span class="topic-tag">碳十四测年</span>
+                        <span class="topic-tag">城市化三角洲</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-026-76202-2" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究针对化石源黑碳（BC）是否会偏差河流BC的<b>放射性碳（14C）年龄</b>这一问题，沿从森林源头到城市化河口的水陆渐变带，对<b>溶解态黑碳（DBC）</b>与<b>颗粒态黑碳（PBC）</b>进行了追踪与对比分析。研究量化了化石源与生物质源BC的贡献，结果发现，在城市化区域中，化石源BC分别贡献了18±3%的DBC和24±6%的PBC，导致DBC与PBC的表观14C年龄分别偏老1,475–1,972年和1,619–2,877年。进一步成分解析表明，DBC的偏老主要与低缩合度的芳香族化合物相关，而PBC的偏老（尤其是旱季）则由高缩合度的芳香烃驱动。研究证实<b>城市化三角洲</b>是化石源黑碳向海洋输送的关键通道，强调了在利用河流BC的14C年龄评估陆地碳滞留时间时引入<b>土地利用背景</b>的必要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Toward an Advanced Benchmark for Aerosol Radiative Forcing: A Chemically Resolved Sectional Aerosol Scheme in E3SMv3</section>
+            <section class="paper-authors">Gan Luo, Fangqun Yu, Qi Tang, Jishi Zhang, Yunyan Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD046163" target="_blank">https://doi.org/10.1029/2025JD046163</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶辐射强迫</span>
+                        <span class="topic-tag">E3SMv3模型</span>
+                        <span class="topic-tag">微物理方案</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD046163" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">为降低<b>气溶胶辐射强迫</b>估算中的不确定性，本研究在<b>地球系统模型E3SMv3</b>中植入了<b>高级粒子微物理模块（APM）</b>，实现了对气溶胶粒径分布、化学成分及混合状态演化的精细化表征。研究利用MODIS卫星、AERONET地基观测以及美国本土地面观测数据对模型进行了全面评估。结果表明，E3SMv3-APM能够准确再现硫酸盐、硝酸盐和铵盐系统的年平均空间变率，并成功捕捉<b>云凝结核（CCN）</b>和气溶胶光学厚度的空间变化特征。模拟显示，从工业前到现代，表面H2SO4和NH3浓度分别增加了1.1倍和4.5倍，成核速率增长了14倍。现代模拟中气溶胶直接辐射效应为-0.29 W/m²，短波和长波云辐射效应分别为-1.54 W/m²和0.15 W/m²。分析表明自动转化效率与云滴浓度限制参数是驱动短波云辐射效应差异的关键因素。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Investigation of city-scale ozone formation sensitivity using high-resolution precursor observations in the Yangtze River Delta</section>
+            <section class="paper-authors">Muping Chen, Haoran Liu, Chengzhi Xing, Qianqian Hong, Mingwang Xu, Wenjing Su, Chengxin Zhang, Qihou Hu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.122266" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.122266</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">臭氧敏感性</span>
+                        <span class="topic-tag">TROPOMI卫星</span>
+                        <span class="topic-tag">甲醛与二氧化氮比值</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.122266" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>TROPOMI卫星</b>遥感反演的对流层<b>二氧化氮（NO2）</b>与<b>甲醛（HCHO）</b>柱浓度数据，结合长江三角洲（YRD）国家空气质量监测网的地面<b>臭氧（O3）</b>实测数据，通过三次多项式拟合建立了城市尺度的<b>甲醛-NO2比值（FNR）</b>阈值，用以诊断臭氧生成敏感性机制。结果表明，长三角大部分区域由<b>VOC控制区</b>为主导，仅在夏季转为<b>NOx控制区</b>；秋季VOC控制区扩张，冬季受高能耗与低温影响几乎全域处于VOC控制区。在城市与乡村对比中，城区普遍呈现VOC控制，乡村呈现混合型。进一步在合肥市开展的亚城市尺度（10个站点）分析表明，同一城市内不同站点得出的FNR阈值存在显著差异，揭示了城市内部臭氧敏感性的高空间变异性，强调了制定精细化、差异化前体物减排策略的必要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Mid-2000s reversal of North Atlantic warming pattern reshapes hemispheric circulation and Eurasian cold extremes</section>
+            <section class="paper-authors">Yuhan Wu, Xuguang Sun, Xiu-Qun Yang, Zhou Fang, Yi Zhang, Yu Wang, Jiabei Fang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01492-8" target="_blank">https://doi.org/10.1038/s41612-026-01492-8</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">北大西洋海温</span>
+                        <span class="topic-tag">大气环流</span>
+                        <span class="topic-tag">极端寒潮</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01492-8" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究揭示了本世纪2000年代中期<b>北大西洋海表温度（SST）</b>变化趋势发生的纬向反转现象：中纬度加速增暖取代了早期的副极地主导增暖，从而翻转了全盆地范围的纬向海温梯度。研究结合气候内部变率分析，阐明了该海温模式转变所引发的大气级联响应，包括<b>北大西洋中纬度西风急流</b>的向极移动、<b>罗斯贝波导路径</b>的重组以及<b>欧亚遥接型</b>的显著变位。在此影响下，欧亚大陆的<b>极端寒潮热点区域</b>在不同阶段呈现出渐进式向南迁移的特征。研究强调，这种半球尺度的环流重塑源自内部大气变率的持续动态演化，独立于全球变暖信号。该成果表明，进行气候归因与风险评估时必须充分考虑海温空间梯度及模式的动态演化，而非仅依赖盆地平均指标。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Generation of Falling‐Tone Whistler‐Mode Chorus Waves in the Earth's Magnetosphere</section>
+            <section class="paper-authors">Huayue Chen, Xueyi Wang, Rui Chen, Yoshiharu Omura, Lunjin Chen, Hong Zhao, Yi‐Kai Hsieh</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL123750" target="_blank">https://doi.org/10.1029/2026GL123750</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">地球磁层</span>
+                        <span class="topic-tag">Chorus波</span>
+                        <span class="topic-tag">范阿尔文卫星</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL123750" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究针对<b>地球磁层</b>中<b>落频哨声波Chorus（Falling-tone Chorus）</b>的产生机制这一长期悬而未决的问题展开深入探讨。研究利用<b>范阿尔文卫星A（Van Allen Probe A）</b>的观测数据，首次揭示了落频Chorus波源区位于沿波传播方向的磁赤道下游区域，这与升频Chorus波的上游源区形成鲜明对比。研究团队基于典型磁层等离子体参数，首次在代表地球磁层的<b>双极磁场模型</b>中进行了落频Chorus波的数值模拟，成功复现了其下游源区特征。进一步的机理分析表明，落频Chorus波是通过与<b>谐振电子</b>的非线性相互作用被激发的，其波增益与频率漂移均由谐振电流触发。该研究填补了真实磁层条件下Chorus波非线性产生机制的关键空白，对理解高能电子辐射带动态演化具有重要学术价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The formation of secondary organic aerosols from the ozonolysis of β-myrcene and α-pinene mixed systems considering the contribution of Criegee intermediates</section>
+            <section class="paper-authors">Meifang Chen, Shengrui Tong, Xiaofan Lv, Shanshan Yu, Yanyong Xu, Hailiang Zhang, Maofa Ge</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.122259" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.122259</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">二次有机气溶胶</span>
+                        <span class="topic-tag">臭氧分解</span>
+                        <span class="topic-tag">Criegee中间体</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.122259" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用<b>烟雾箱实验</b>与<b>高分辨率质谱技术</b>，深入探讨了α-蒎烯和β-月桂烯单体及其二元混合体系在无光照臭氧分解条件下<b>二次有机气溶胶（SOA）</b>的生成机制，重点解析了<b>Criegee中间体（CIs）</b>介导的化学过程。研究通过添加OH自由基清除剂隔离了臭氧分解反应。结果表明，混合体系中的SOA产率与单体产率呈现良好的线性可加性；颗粒相产物在各混合比例下均以<b>C10化合物</b>为主，交叉反应产物（如C13和C20）对气溶胶质量贡献极小。挥发性分析显示<b>极低挥发性有机化合物（ELVOCs）</b>占颗粒相主导地位。分子水平分析进一步揭示，大碳骨架CIs（如C7-和C10-CIs）倾向于通过单分子降解路径生成低挥发性产物，而小骨架CIs（如C3-CIs）则需通过二聚或低聚反应贡献于颗粒相。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Climate Constraints on the Methane‒Carbon Efficiency of Global Wetlands: Spatiotemporal Drivers and Future Projections</section>
+            <section class="paper-authors">Tingting Zhu, Junjie Li, Junji Yuan, Weixin Ding</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth's Future</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025EF008003" target="_blank">https://doi.org/10.1029/2025EF008003</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">湿地甲烷</span>
+                        <span class="topic-tag">碳循环</span>
+                        <span class="topic-tag">随机森林模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025EF008003" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究整合了多套<b>总初级生产力（GPP）</b>产品与<b>甲烷（CH4）通量</b>数据集，以<b>CH4/GPP比值</b>作为测量生态系统层面甲烷-碳耦合效率的指标，评估了全球湿地甲烷-碳耦合的时空分布特征及其驱动因素。研究利用<b>随机森林模型</b>进行拟合分析，解释了全球CH4/GPP比值81%的空间方差，并证实<b>温度</b>是影响该比值最强的预测因子。空间分布上，北半球高纬度与热带湿地的CH4/GPP比值最高，而温带地区较低。基于四种共享社会经济途径（SSP）情景的未来预测表明，全球平均CH4/GPP比值保持相对稳定，反映出区域间的相互补偿与内在气候约束；但在高排放情景下该比值呈现上升趋势。该研究揭示了湿地甲烷-碳耦合的气候敏感性，对优化地球系统模型中的碳-气候反馈机制具有重要参考价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">PM<sub>2.5</sub> as the dominant air pollutant associated with suicide among people living with HIV/AIDS: A province-wide case-crossover study in China</section>
+            <section class="paper-authors">Ming Cai, Yi Yan, Fangcun Wan, Lianguo Ruan, Weiyi Zhong, Faxue Zhang, Wei Zhu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.122271" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.122271</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">空气污染</span>
+                        <span class="topic-tag">健康风险评估</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.122271" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究采用个体层面的时间分层<b>病例交叉设计（case-crossover design）</b>，基于中国湖北省2017–2023年210例<b>HIV/AIDS感染者（PLWH）</b>的自杀死亡病例，首次评估了短期暴露于六种常见大气污染物（PM2.5、PM10、SO2、NO2、CO、O3）对该高危人群自杀风险的影响。通过<b>条件Logistic回归模型</b>与<b>加权分位数和回归（WQS）</b>分析，研究发现PM2.5短期暴露与自杀风险升高存在显著的单调暴露-响应关系，在滞后4天、5天及累积滞后0–5天均有显著效应（如滞后0–5天OR = 1.41）。在<60岁、男性、未婚、处于HIV阶段及寒冷季节死亡的群体中关联更为明显。模型评估显示，若将PM2.5浓度降至WHO指导值（15 μg/m³），可减少26.7%的自杀死亡病例。WQS回归证实<b>PM2.5</b>是复合空气污染风险中的最主要贡献者。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impacts of El Niño‐Southern Oscillation on Mesoscale Convective Systems in China</section>
+            <section class="paper-authors">Peiyu Wang, Fengfei Song, Sihan Zhang, Lu Dong, Hailong Liu, Lixin Wu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD046769" target="_blank">https://doi.org/10.1029/2026JD046769</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">中尺度对流系统</span>
+                        <span class="topic-tag">ENSO</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD046769" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究基于2001–2020年的<b>卫星观测数据</b>与<b>再分析资料</b>，系统探讨了<b>厄尔尼诺-南方涛动（ENSO）</b>对中国<b>中尺度对流系统（MCS）</b>活动及其降水的调制作用。研究表明，ENSO对MCS的影响具有显著的区域与季节差异：在厄尔尼诺发展年的夏季，长江流域的MCS活动与降水明显减少；而在衰减年的夏季则表现出微弱的增加趋势。对于华南地区，MCS诱导的降水在厄尔尼诺衰减年的春季显著增强。机制分析揭示，垂直运动是驱动长江流域MCS异常的主导因子，而<b>对流可用势能（CAPE）</b>和水汽条件则是华南地区的主要调控因素。极值降水差异的分布形态与总降水高度一致且振幅更大。该成果深化了对ENSO影响中国局地强对流天气过程动力学机制的理解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Responses of atmospheric wet sulfur deposition to emissions in a polluted region of eastern China</section>
+            <section class="paper-authors">Wenlong Lv, Yan Qiu, Yuanjiang Lu, Farong Chen, Zhili Chen, Qiang Shu, Hao Yang, Changchun Huang, Tao Huang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.122267" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.122267</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">湿硫沉降</span>
+                        <span class="topic-tag">二氧化硫</span>
+                        <span class="topic-tag">氨气排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.122267" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究基于2017年中国东部长江三角洲（YRD）典型不同土地利用类型样点的实测数据，并结合1985–2021年长时序列历史排放与沉降数据，系统分析了<b>大气湿硫（S）沉降</b>的时空响应特征。研究表明，月度湿硫沉降通量呈现出郊区 > 城区 > 农田 > 背景点的空间模式，且夏季明显高于冬季，降水是月度变化的主导因素。在历史演变上，湿硫沉降通量于1998年达到峰值后持续下降，沉降热点区域由沿江沿海向长三角西北部动态转移。长时序与空间变异分析证实，湿硫沉降对<b>二氧化硫（SO2）</b>浓度与<b>氨气（NH3）</b>排放表现出强烈的双重响应。尽管协同减排措施已使湿硫沉降大幅降低40.12 kg ha⁻¹ yr⁻¹，但长三角仍有三分之一的区域处于生态风险之中，表明需持续推进SO2与NH3的区域联合控制。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Statistical Study of Betatron and Fermi Electron Acceleration at Dipolarization Fronts</section>
+            <section class="paper-authors">A. Kolokotronis, D. B. Graham, Yu. V. Khotyaintsev, C. Norgren, K. Steinvall, L. Richard</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL122885" target="_blank">https://doi.org/10.1029/2026GL122885</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">磁尾极化前缘</span>
+                        <span class="topic-tag">电子加速</span>
+                        <span class="topic-tag">MMS卫星</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL122885" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究聚焦于<b>地球磁尾重联喷流</b>中的<b>极化前缘（DFs）</b>区域，对电子的<b>Betatron加速</b>与<b>Fermi加速</b>机制进行了系统性的统计学研究。研究团队利用<b>磁层多尺度卫星（MMS）</b>高分辨率观测数据，定量计算了向地传播DFs处的电子能量变化率。统计分析表明，<b>Betatron加速</b>在DFs前沿占主导地位，在此区域可观测到垂直于磁场方向的超热电子通量；而在流出区内部约20个离子惯性长度范围内，<b>Fermi加速</b>对低密度电子群体起主要作用，能将电子能量提升至约100 keV。在空间分布上，Betatron加速在靠近概率最大的X线位置更为显著，而以Fermi加速为主导的事件则更多发生在靠近地球的区域。该成果深化了对磁层高能粒子加速过程的认知。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Atmospheric mercury variability at a terrestrial background site, South-Eastern Australia</section>
+            <section class="paper-authors">Katrina MacSween, Grant C. Edwards</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.122269" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.122269</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气汞</span>
+                        <span class="topic-tag">气团输送</span>
+                        <span class="topic-tag">南半球监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.122269" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究提供了澳大利亚东南部陆地背景站点连续14个月的<b>总气态汞（TGM）</b>与<b>活性汞（RM）</b>的高时间分辨率实测数据，填补了南半球陆地环境中大气汞季节变率及驱动机制研究的匮乏。研究采用Tekran 2537B分析仪获取5分钟连续TGM数据，并结合UNR-RMAS系统获取双周RM数据。结果显示，该站点GEM平均浓度为0.68 ± 0.22 ng m⁻³，低于南半球背景水平。TGM与RM浓度均呈现出显著的季节性特征，即夏季最高（TGM 0.88 ng m⁻³，RM 3.43 pg m⁻³）、冬季最低（TGM 0.43 ng m⁻³，RM 1.93 pg m⁻³）。气团轨迹与主导风向分析表明，暖季的高汞浓度主要受过境悉尼城市群的东北气团及强光化学氧化驱动；而冷季变化则主要受海洋挥发汞的内陆长距离输送控制。研究证实<b>气团输送模式的季节性转换</b>是控制南半球陆地大气汞变异的主导机制。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Evaluation of Low‐Level Clouds, Temperature, and Surface Radiation Using a Model, Two Reanalyses, and Southern Ocean Observations</section>
+            <section class="paper-authors">Kazutoshi Sato, Jun Inoue, Hitoshi Matsui</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL123000" target="_blank">https://doi.org/10.1029/2026GL123000</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">南大洋</span>
+                        <span class="topic-tag">低层云</span>
+                        <span class="topic-tag">地表辐射</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL123000" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究评估了<b>ERA5</b>、<b>MERRA-2</b>再分析资料以及<b>CAM-ATRAS模型</b>在<b>南大洋（SO）</b>地区的<b>低层云</b>属性和<b>地表辐射通量</b>模拟能力。研究利用日本“白濑号”科考船于2022年12月至2023年3月期间在南大洋实测的大气观测数据作为基准进行对比分析。结果表明，ERA5和MERRA-2显著高估了云底高度低于1公里的低层云发生频率；而CAM-ATRAS模型虽然也高估了极低云，但在云出现率和云相态的整体评估中与实测最为一致。然而，受冷偏差和云相态偏差降低云底发射率的影响，所有数据集中均存在<b>下行长波辐射（DLW）</b>被低估的问题。基于CAM-ATRAS的气溶胶敏感性实验进一步表明，增加<b>云凝结核（CCN）</b>浓度会提高低层云出现频率，但对地表辐射通量的影响相对有限。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
