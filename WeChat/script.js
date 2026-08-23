@@ -205,7 +205,7 @@ function updateNavigation(currentDateStr) {
 async function handlePrev() {
     if (!currentDate || isLoading) return;
     setLoading(true);
-    const result = await findExistingDate(currentDate, -1, 30);
+    const result = await findExistingDate(currentDate, -1, 9999);
     setLoading(false);
 
     if (result) {
@@ -226,7 +226,7 @@ async function handleNext() {
     }
 
     setLoading(true);
-    const result = await findExistingDate(currentDate, 1, 30);
+    const result = await findExistingDate(currentDate, 1, 9999);
     setLoading(false);
 
     if (result) {
@@ -270,7 +270,7 @@ async function loadDateFile(date) {
     }
 
     // 文件不存在，尝试向过去回溯探测
-    const fallback = await findExistingDate(date, -1, 30);
+    const fallback = await findExistingDate(date, -1, 9999);
     setLoading(false);
     if (fallback) {
         showBanner(`${formatToInputDate(date)} 暂无推送，已跳转至 ${formatToInputDate(fallback.dateKey)}`);
@@ -328,7 +328,7 @@ async function loadInitialDate() {
     }
 
     // 当天 404，向过去回溯探测最近一期
-    const fallback = await findExistingDate(todayKey, -1, 30);
+    const fallback = await findExistingDate(todayKey, -1, 9999);
     setLoading(false);
     if (fallback) {
         showBanner(`今日（${formatToInputDate(todayKey)}）暂无推送，已跳转至 ${formatToInputDate(fallback.dateKey)}`);
@@ -338,7 +338,7 @@ async function loadInitialDate() {
             <div class="empty-state">
                 <div class="empty-state-icon">📭</div>
                 <div class="empty-state-title">暂无可用推送</div>
-                <div class="empty-state-desc">未找到近 30 天内的论文推送文件</div>
+                <div class="empty-state-desc">未找到任何历史论文推送文件</div>
             </div>
         `;
         if (datePicker) {
