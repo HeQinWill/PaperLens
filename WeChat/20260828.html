@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/08/28</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A consistent climate data record of atmospheric methane from the GOSAT and GOSAT-2 missions</section>
+            <section class="paper-authors">Robert J. Parker, Michael P. Cartwright, Dan Orr, Lakshmi N. Bharathan, Neil Humpage, Alex J. Webb, Peter Somkuti, Hartmut Boesch, Antonio Di Noia, Hiroshi Suto, Matthias Buschmann, Nicholas M. Deutscher, David W. T. Griffith, Frank Hase, Rigel Kivi, Erin McGee, Isamu Morino, Hirofumi Ohyama, Christof Petri, John Robinson, Coleen M. Roehl, Mahesh Kumar Sha, Kei Shiomi, Kimberly Strong, Ralf Sussmann, Yao Té, Voltaire A. Velazco, Mihalis Vrekoussis, Wei Wang, Thorsten Warneke, Damien Weidmann, Debra Wunch, Minqiang Zhou</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2026-625" target="_blank">https://doi.org/10.5194/essd-2026-625</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气甲烷</span>
+                        <span class="topic-tag">GOSAT卫星</span>
+                        <span class="topic-tag">气候数据记录</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2026-625" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">为精准追踪大气甲烷（XCH4）的长期变化趋势，本研究构建了基于<b>GOSAT与GOSAT-2卫星</b>的高一致性<b>气候数据记录（CDR）</b>。研究采用了莱斯特大学Proxy检索算法（v2.0版本），处理了2019至2025年间GOSAT-2获得的约440万条优质陆地与海洋耀斑观测数据，并与GOSAT Proxy v10.0产品保持算法一致。通过12.4万个重叠足迹将GOSAT-2跨锚定至GOSAT，实现了亚ppb级的跨仪器一致性。经<b>TCCON地面网</b>验证，GOSAT-2与TCCON的相关系数达0.910，标准差为16.41 ppb，达到了前代卫星的观测精度。两颗卫星重叠期月均格点数据相关性高达0.95–0.97。最终构建出横跨<b>2009至2025年</b>的连续17年大气甲烷柱浓度时空序列，为温室气体监测与TROPOMI等新一代卫星的交叉对比提供了核心基准。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Hypervision: An on-chip hyperspectral microsystem for online video-rate computational imaging</section>
+            <section class="paper-authors">Liheng Bian, Qinghao Meng, Lianjie Li, Zhen Wang, Yibo Feng, Xuan Peng, Jiajun Zhao, Jingyi Wang, Zhu Yang, Jun Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/science.aef8268" target="_blank">https://doi.org/10.1126/science.aef8268</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">高光谱成像</span>
+                        <span class="topic-tag">芯片微系统</span>
+                        <span class="topic-tag">计算成像</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/science.aef8268" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对高光谱成像中海量空间-光谱数据重建和计算极其耗时的瓶颈，本研究研制了一种用于在线视频速率计算成像的片上<b>高光谱微系统（Hypervision）</b>。该系统设计了16位整数下达9.3 TOPS算力的<b>神经网络处理器（NPU）</b>硬件加速器，并提出了针对轻量化重建网络的拓扑感知结构化剪枝策略。通过与HyperspecI传感器结合，成功构建出约950克的独立可见-近红外高光谱微系统，无需外部电源与计算资源。系统实现了<b>32.9 帧/秒（512×512，61通道）</b>或24.6 帧/秒（1024×1024，16通道）的高清实时高光谱成像，功耗仅约25.3瓦。在<b>空对地监测</b>与智能驾驶中的应用示范验证了其将高光谱计算成像从离线处理推向在线实时感知的巨大潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Improving simulation of Earth system variability through weakly coupled ocean data assimilation in E3SM</section>
+            <section class="paper-authors">Pengfei Shi, L. Ruby Leung, Zhaoxia Pu, Samson Hagos, Karthik Balaguru</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-19-8003-2026" target="_blank">https://doi.org/10.5194/gmd-19-8003-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋数据同化</span>
+                        <span class="topic-tag">E3SM模式</span>
+                        <span class="topic-tag">气候变率</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-19-8003-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究评估了在能源部地球系统模式（<b>E3SMv2</b>）中构建的基于四维集合变分（<b>4DEnVar</b>）的<b>弱耦合海洋数据同化（WCODA）</b>系统对全球及区域气候变率模拟的影响。研究通过将EN4.2.1重分析数据集中的月度<b>海洋温度和盐度数据</b>同化至全耦合模式中，显著提升了模式对年际和十年际气候变率的模拟能力。相比自由运行的耦合模拟，同化实验模拟的全球平均地表气温和降水异常与观测的相关性显著增强，且<b>ENSO</b>、印度洋洋偶极子（IOD）及太平洋/大西洋十年际变率的位相一致性大幅提升。对美国本土的评估显示，同化系统显著增强了对冬季气温与降水的预测技巧。后报实验表明系统不存在明显的初始化冲击，且能再现物理自洽的ENSO遥相关模式，为年代际气候预测奠定了坚实基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Perchloric acid (HClO4) drives atmospheric new particle formation enhanced by dimethylamine, ammonia and sulfuric acid: mechanisms and implications</section>
+            <section class="paper-authors">Shengming Wang, Ziheng Li, Xiangli Shi, Qingzhu Zhang, Wenxing Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-12171-2026" target="_blank">https://doi.org/10.5194/acp-26-12171-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">高氯酸</span>
+                        <span class="topic-tag">新粒子形成</span>
+                        <span class="topic-tag">二甲胺</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-12171-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究探讨了<b>高氯酸（HClO4）</b>在驱动<b>大气新粒子形成（NPF）</b>中的作用及其与二甲胺（DMA）、氨（NH3）和硫酸（SA）的协同机制。研究采用<b>量子化学计算</b>和<b>大气团簇动力学代码（ACDC）</b>，对比分析了不同碱性气体对HClO4基团簇形成的增强潜力。结果表明，DMA和NH3能通过<b>氢键和质子转移</b>与HClO4产生强相互作用。与经典的SA成核相比，HClO4更容易与DMA发生共成核；即便NH3浓度高出DMA达10至100个数量级，PA-DMA体系的团簇形成速率仍远高于PA-NH3体系。含相同数量HClO4和DMA分子的团簇对后续生长起关键作用。该研究揭示了<b>北极边界层</b>中高氯酸促进海盐气溶胶及新粒子形成的新机制，为极地气候变化研究提供了全新视角。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Midwinter enhancement of synoptic-scale extreme PM2.5 pollution in North China</section>
+            <section class="paper-authors">Xiadong An, Wen Chen, Lifang Sheng, Tianjiao Ma, Zelin Cai</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae9c59" target="_blank">https://doi.org/10.1088/1748-9326/ae9c59</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM2.5</span>
+                        <span class="topic-tag">大气环流</span>
+                        <span class="topic-tag">因果推理</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae9c59" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">这篇论文探讨了<b>华北地区</b>冬季极端的<b>PM2.5污染</b>现象及其背后的动力学机制。研究发现，华北地区的极端空气污染事件在1月份发生最为频繁，占冬季总事件的53%，区域平均PM2.5浓度达134.8 μg m–3。利用<b>因果推理框架</b>，研究揭示了这些极端污染事件归因于与<b>北太平洋暴风轨迹（NPST）</b>在仲冬被抑制相吻合的大气环流异常。具体而言，NPST在1月份显著减弱，对应于由涡动热通量激发的反气旋异常。该异常引发北半球中高纬度的<b>罗斯贝波列</b>，导致约10天后东北亚地区形成强烈的异常反气旋。这使得华北地区出现持续的大气停滞与不良通风条件，进而触发极端PM2.5污染。研究结果为制定有针对性的减排策略提供了科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">HailCam: an automated imaging system for real-time measurement of hail size distributions and fall rates</section>
+            <section class="paper-authors">Baolei Lyu, Hui Wang, Tianlei Gao, Zhanfu Yin, Xiaofeng Lou, Yugang Duan, Yihang Huang, Zhiqiang Zhao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-5525-2026" target="_blank">https://doi.org/10.5194/amt-19-5525-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰雹观测</span>
+                        <span class="topic-tag">深度学习</span>
+                        <span class="topic-tag">微物理特征</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-5525-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对现有地面冰雹传感器采样面积小、易受降雨干扰等局限，本文研制了一种自动化成像系统<b>HailCam</b>，用于实时测量<b>冰雹粒径分布</b>与下落速率。系统集成了<b>高清光学成像</b>、自动化颗粒收集以及基于<b>ConvNeXt-Tiny与Mask R-CNN</b>的实时深度学习实例分割算法，在60 cm × 60 cm的采样区域内以1分钟间隔实时捕捉冰雹数量、粒径分布和数量通量。实验室验证表明，系统对5–45 mm合成冰球的粒径测量准确度达91%，计数线性R²为0.9989。在夜间冰雹事件的野外对比测试中，HailCam与OTT Parsivel2雨滴谱仪展现出高度一致的时间演化趋势及统计无显著差异的粒径分布。该仪器为验证<b>雷达冰雹检测算法</b>与约束数值模式提供了关键的高时空分辨率数据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Climate‐Mode Precursors and the Predictability of Amazon Hot and Dry Extremes</section>
+            <section class="paper-authors">Sanaa Hobeichi, Lincoln Muniz Alves, Andréa S. Taschetto, Wil Laura, Nayan Talmale, Lisa V. Alexander</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth's Future</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026EF008496" target="_blank">https://doi.org/10.1029/2026EF008496</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">亚马逊极端气候</span>
+                        <span class="topic-tag">Copula函数</span>
+                        <span class="topic-tag">机器学习预测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026EF008496" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究旨在评估滞后大尺度气候模式对<b>亚马逊极端热干事件</b>的前兆信号及其早期预警能力。研究引入了基于<b>Copula函数</b>的分析框架，评估主要气候驱动因素（如<b>ENSO</b>和热带大西洋变率TAV）与亚马逊降水及温度异常之间的尾部相关性；随后利用<b>机器学习模型</b>评估了基于滞后气候指数对复合热干事件的预测技巧。Copula分析表明，在ENSO和热带大西洋正位相之后更易发生极端高温，特别是在3–5月，高温极端事件可被长达7个月的气候指数信号预测。对于复合热干事件，其可预测性主要由ENSO主导，并在12–2月达到峰值。研究强调，实现可靠预测通常需要至少提前1个月的气候指数输入，这为亚马逊雨林极端气候的防灾减灾提供了重要依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impact of ROMEX Radio Occultation bending angle assimilation on mesoscale weather prediction over the Indian Region</section>
+            <section class="paper-authors">Randhir Singh, Satya P. Ojha, Kudilil Faisal Muhammed, Richard Anthes</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-5509-2026" target="_blank">https://doi.org/10.5194/amt-19-5509-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">GNSS掩星</span>
+                        <span class="topic-tag">数据同化</span>
+                        <span class="topic-tag">中尺度天气预报</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-5509-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究评估了在印度夏季风期间同化<b>ROMEX（掩星建模实验）</b>的<b>GNSS无线电掩星（RO）</b>弯曲角数据对印度地区<b>中尺度天气预报</b>的改善效果。研究基于<b>WRF模式</b>建立了9 km分辨率的循环三维变分（<b>3D-Var</b>）数据同化系统，利用2022年9月的观测开展同化实验。通过对比仅同化常规数据的控制实验与同化RO弯曲角的实验，并利用<b>ERA5再分析数据</b>和<b>IMERG卫星降水数据</b>进行验证。结果表明，同化RO弯曲角数据有效改善了初始场的水汽分布，显著提升了比湿、温度、风场及降水的分析与预报精度。湿总能量范数在分析时刻降低了约20%，在72小时预报中降低了8.5%。这证实了GNSS-RO弯曲角同化对提升季风期极端天气预报能力的显著价值。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
