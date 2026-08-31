@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/08/31</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Misrepresentation of Human Climate Fingerprint in DOE Report</section>
+            <section class="paper-authors">Benjamin D. Santer, Susan Solomon, David W. J. Thompson, Qiang Fu, Andrew E. Dessler</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth's Future</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026EF008831" target="_blank">https://doi.org/10.1029/2026EF008831</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">平流层温度</span>
+                        <span class="topic-tag">人为气候指纹</span>
+                        <span class="topic-tag">卫星遥感校验</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026EF008831" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文针对美国能源部（DOE）2025年7月报告中关于“2000年以来平流层变暖且与气候模型预测的人为影响不符”的观点进行了科学反驳与校验。研究团队重新分析了热带<b>热带下平流层温度（TLS）</b>的<b>卫星观测数据</b>与气候模型模拟结果。研究发现，DOE报告所依据的未经发表的图表使用了错误的观测数据集；当采用经校准纠正的实际卫星观测时，热带TLS的变化趋势与模型预测完全一致，呈现出显著的平流层冷却特征。在热带纬度-高度剖面上，可以高信度辨识出<b>人为活动的气候指纹</b>。该文章纠正了对气候变化科学事实的误导，强调了高质量遥感观测与模式归因在气候政策制定中的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Nitrogen deposition modulates reactive carbon exchange between the biosphere and atmosphere</section>
+            <section class="paper-authors">Yanli Zhang, Yuting Lu, Alex Guenther, Haofan Ran, Qiang Zhang, Ping’an Peng, Xinming Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03987-x" target="_blank">https://doi.org/10.1038/s43247-026-03987-x</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">氮沉降</span>
+                        <span class="topic-tag">挥发性有机物</span>
+                        <span class="topic-tag">生物圈-大气交换</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03987-x" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文基于全球涵盖9个植物功能类型的885组观测数据进行了Meta分析与回归建模，系统评估了人为<b>氮沉降</b>对植物<b>生物源挥发性有机化合物（BVOCs）</b>排放及<b>生物圈-大气活性碳交换</b>的调控作用。研究发现，加氮显著增加了异戊二烯（+52%）、单萜（+39%）和倍半萜（+107%）的排放。剂量响应模型呈现二次曲线关系：BVOCs排放随施氮量增加而上升，并在49–118 kg N/ha/yr的阈值处达到峰值，随后开始下降。1980–2020年间全球氮沉降变化重塑了区域异戊二烯排放潜力（热带增加高达29%，而中国等沉降下降区则有所降低），表明合理的氮管理有助于调控二次有机气溶胶和臭氧前体物。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Observations of Atmospheric Helium and Oxygen With SPHEREx</section>
+            <section class="paper-authors">Howard Hui, Chi H. Nguyen, Ryan Wills, Katrina Bossert, Sean A. Bryan, Kazuma Noda, Jessica Norrell, Yoonsoo P. Bach, James J. Bock, Tzu‐Ching Chang, Shuang‐Shuang Chen, Asantha Cooray, Brendan P. Crill, Olivier Doré, C. Darren Dowell, Andreas L. Faisst, Jae Hwan Kang, Phil M. Korngut, Carey M. Lisse, Daniel C. Masters, Roberta Paladini, Volker Tolls, Michael W. Werner, Yujin Yang, Michael Zemcov</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD047242" target="_blank">https://doi.org/10.1029/2026JD047242</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">SPHEREx卫星</span>
+                        <span class="topic-tag">大气辉光</span>
+                        <span class="topic-tag">近红外遥感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD047242" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文展示了利用天体物理望远镜<b>SPHEREx卫星</b>在680千米太阳同步轨道获取的8个月巡天数据，对地球热圈与外气圈<b>近红外大气辉光</b>（包含Hei 10830Å、Oi 8446Å和Oi 11287Å发射线）进行全球空间与多季节时间制图。与传统下视（Nadir）遥感不同，该研究采用向上仰视视角，通过开发解析框架有效去除了恒星、星系及黄道光等天体物理背景干扰。结果揭示了大气辉光的全球分布、季节变化及其对地理位置和太阳光照的依赖性。研究证明天体物理空间观测平台能有效应用于<b>上层大气成分遥感</b>，为监测大气辉光及其与太阳活动和全球地球物理过程的耦合开辟了新途径。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Coulomb-like creeping segment acts as a stress sensor in Northern Sumatra</section>
+            <section class="paper-authors">Rino Salman, Sharadha Sathiakumar, Rishav Mallick, Lujia Feng, Qiu Qiang, Susilo Susilo, Sidik Tri Wibowo, Emma Hill, Sang-Ho Yun</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03951-9" target="_blank">https://doi.org/10.1038/s43247-026-03951-9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">干涉合成孔径雷达</span>
+                        <span class="topic-tag">断层蠕变</span>
+                        <span class="topic-tag">数值模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03951-9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文结合<b>卫星雷达干涉测量（InSAR）</b>技术与断层动力学<b>数值模拟</b>，揭示了苏门答腊断层北段（阿齐段）的无震蠕变行为与应力响应机制。卫星观测表明，该断层段的蠕变速率在2007–2010年至2017–2023年间大幅下降约60%。数值模型解析出两次明显的蠕变事件：一次是由2004年Mw 9.2级超大逆冲地震的应力传递所触发，另一次是由邻近大陆地震驱动的二次加速。研究发现该断层在段落尺度上表现出近乎速度中性的摩擦特性，打破了传统蠕变断层具备速率强化自稳定摩擦的认知，使其既能发生Mw 6.1级地震又容纳非震蠕变，从而能够作为区域断层<b>天然应力传感器</b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A dual-mineral protection mechanism for organic matter preservation and its implications for Mars habitability and biosignature detection</section>
+            <section class="paper-authors">Tongtong Huang, Jianxun Shen, Li Liu, Jialong Hao, Yan Chen, Jiaxin Xi, Wei Lin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03992-0" target="_blank">https://doi.org/10.1038/s43247-026-03992-0</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有机物保存</span>
+                        <span class="topic-tag">火星宜居性</span>
+                        <span class="topic-tag">生物标志物</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03992-0" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用原位微区分析技术研究了中国柴达木盆地中更新世石膏与盐岩中的固/液包体，揭示了一种黏土矿物与蒸发盐矿物协同作用的<b>双矿物保护机制</b>，为<b>火星生物标志物探测</b>提供了新理论支撑。研究发现在石膏固包体与盐岩液包体内部，β-胡萝卜素和干酪根等<b>有机物</b>被吸附在黏土颗粒表面并被生长中的盐类晶体完全包裹。这种两阶段物理化学防护机制结合了黏土的强吸附性与盐晶体的封闭隔离特性，实现了极端环境中有机物的长期保存。该成果归纳了能够有效保存火星有机质的特定矿物组合，为未来火星样品返回与宜居性探测目标的选择提供了科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Wildfire drives persistent and disproportionate losses of particulate relative to mineral-associated soil organic carbon</section>
+            <section class="paper-authors">Tongxin Hu, Chun Wang, Zhenghu Zhou, Long Sun</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-04001-0" target="_blank">https://doi.org/10.1038/s43247-026-04001-0</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">野火干扰</span>
+                        <span class="topic-tag">土壤有机碳</span>
+                        <span class="topic-tag">全球碳循环</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-04001-0" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文通过对全球210项研究（1050组观测数据）进行系统Meta分析，量化了<b>野火干扰</b>对表层土壤（0–25 cm）中<b>颗粒有机碳（POC）</b>与<b>矿物结合有机碳（MAOC）</b>两类功能差异显著的碳库的影响。研究表明，野火导致POC发生了不成比例的剧烈损失（-24.0%），远高于MAOC（-9.5%），证实易变碳库对火灾更为敏感。时间动态分析揭示，土壤碳损失在火后前20–25年持续加剧，随后才缓慢恢复。1997–2023年间全球因野火累计造成约885.9 Tg的土壤有机碳损失。研究强调气候模型需显式区分不同土壤碳组分，以准确评估火灾引发的<b>陆地-大气碳反馈</b>。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Weak, shallow, dry convection over Angola increases offshore stratocumulus cloud droplet number concentrations</section>
+            <section class="paper-authors">Tyler Tatro, Paquita Zuidema</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03995-x" target="_blank">https://doi.org/10.1038/s43247-026-03995-x</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶与云相互作用</span>
+                        <span class="topic-tag">卫星遥感</span>
+                        <span class="topic-tag">海洋层积云</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03995-x" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文结合再分析数据、<b>极轨卫星遥感观测</b>以及飞机原位测量数据，深入探讨了安哥拉干对流与农业焚烧事件对东南大西洋<b>海洋层积云</b>微物理特性的影响机制。研究发现，在6月至8月上旬，当农业焚烧与安哥拉弱热低压共存时，浅层干对流将烟尘充满陆地边界层，并通过夜间陆风及高压带东风将其输送至海洋边界层。烟尘气溶胶使海洋层积云的<b>云滴数浓度</b>显著增加，但由于气象协同变化同时导致<b>液态水路径</b>减少。在6–7月云层虽薄但反射增强，流出短波辐射增加了月均值的15%–20%，阐明了短波吸收型气溶胶对辐射强迫与云微物理的复杂调控。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Wind‐Driven Circulation Feedbacks Offset Tropical Geoengineered Sea Salt Emissions</section>
+            <section class="paper-authors">Cindy Wang, Leo J. Donner, Naser G. A. Mahfouz</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD047411" target="_blank">https://doi.org/10.1029/2026JD047411</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋盐气溶胶</span>
+                        <span class="topic-tag">地球工程</span>
+                        <span class="topic-tag">大气环流反馈</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD047411" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用NOAA GFDL的<b>CM4耦合气候模型</b>，研究了在热带地区通过人为增加<b>海洋盐气溶胶（SSA）</b>排放进行海洋云增亮（地球工程）时的大气环流反馈机制。研究表明，热带SSA排放会使施加区域降温并削弱赤道至中纬度的温度梯度，进而触发<b>大气环流反馈</b>（包括南大洋西风带削弱）。这种环流反馈抑制了热带和外热带地区的自然SSA排放，抵消了约23%的人为注入SSA质量通量。离线敏感性分析显示，环流反馈对气溶胶质量排放的影响（10%）远大于对颗粒数量通量的影响（1%）。研究强调<b>风速</b>是驱动环流变化引发SSA质量排放改变的主导因素，揭示了地球工程气溶胶注入会因改变环流而削弱预期的气候冷却效应。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Bridging global offshore waves and nearshore coastal conditions with deep learning</section>
+            <section class="paper-authors">Xi Lin, Tianping Xu, Wenfang Lu, Guangyu Yang, Zhan Hu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-04004-x" target="_blank">https://doi.org/10.1038/s43247-026-04004-x</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">深度学习</span>
+                        <span class="topic-tag">近岸波浪</span>
+                        <span class="topic-tag">数据融合降尺度</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-04004-x" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文开发了一种结合深度学习代理模型与观测驱动残差修正子模型的<b>深度学习框架</b>，旨在弥合粗分辨率全球海洋波浪再分析产品（约30千米）与高分辨率<b>近岸波浪数据</b>（约1千米）之间的尺度鸿沟。研究利用英国沿海及全球多区域浮标观测数据对模型进行了测试与验证。基准测试结果表明，该模型在英国沿海近岸波浪模拟中与浮标实测值的决定系数（R²）超过0.90，在全球开放海岸测试中R²超过0.84。该方法突破了传统数值模式在跨区域适用性与高分辨率局部精度之间的平衡难题，实现了高精度、高效率的<b>近岸波浪气候分析</b>与海岸带管理应用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Climate Variations of Autumn Tropical Cyclone Genesis in the Western North Pacific: Roles of Tropical and Midlatitude SST Anomalies</section>
+            <section class="paper-authors">Lingfeng Tao, Lilan Chen, Wei Mei, Xiu‐Qun Yang, Jianyun Gao, Tonghua Su</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD046688" target="_blank">https://doi.org/10.1029/2026JD046688</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热带气旋</span>
+                        <span class="topic-tag">海表温度异常</span>
+                        <span class="topic-tag">气候变率</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD046688" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文结合再分析数据集与<b>大气环流模型（AGCM）</b>模拟，探讨了西北太平洋（WNP）秋季<b>热带气旋（TC）生成</b>的年际与十年际变率机制。研究指出，<b>海表温度异常（SSTA）</b>是调控秋季TC生成的核心因子。在年际尺度上，热带太平洋和印度洋的类似厄尔尼诺型暖SSTA通过激发大气波响应，抑制WNP上空对流并诱导下沉运动，从而抑制TC生成。在十年际尺度上，北太平洋中纬度暖SSTA增大了表面湍流热通量与非绝热加热，削弱了大气正斜性与瞬变涡动活动，在 midlatitude 形成高压脊异常。这种环流变化通过下倾能量传播增强了副热带西风与<b>垂直风切变</b>，不利于TC生成。数值实验验证了上述海气耦合物理机制。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Cosmic Radiation Dose‐Rates for Civil Aviation in the Middle East: Vertical Structure, Solar Modulation, and Comparison With Models</section>
+            <section class="paper-authors">Roy Yaniv, Yoav Yair, Colin Price</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD047316" target="_blank">https://doi.org/10.1029/2026JD047316</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">宇宙辐射</span>
+                        <span class="topic-tag">太阳调制</span>
+                        <span class="topic-tag">高空气球观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD047316" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文研究了中东地区（以色列南部）高空宇宙辐射剂量率的垂直结构及其太阳调制效应。研究团队在2014年10月至2016年8月第24个太阳活动周的下降期，利用<b>高空气球观测平台</b>获取了升至约35千米高度的大气电离与辐射垂直剖面数据，并基于校准的<b>盖革-弥勒计数管</b>计算伽马当量剂量率代理值，同时与<b>EXPACS/PARMA模型</b>进行对比。研究发现，<b>Regener–Pfotzer极大值</b>出现在17–20千米高度；在民航飞行高度（约10千米），测得剂量率在0.9–1.3 μSv/h之间，且与太阳活动呈显著负相关（r = -0.71）。在太阳极小期预测剂量率将增加40%–60%。此外模型对比显示，测量值与电磁辐射分量高度匹配（偏差10%–15%），而环境剂量当量主要由中子贡献。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Urbanization and humidity impact atmospheric deposition of anthropogenic microparticles (including microplastics) in a humid subtropical city</section>
+            <section class="paper-authors">Natalie F. Hernandez, Daisy Youmans, Susanne M. Brander, Elizabeth A. Hasenmueller</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1016/j.atmosenv.2026.122294" target="_blank">https://doi.org/10.1016/j.atmosenv.2026.122294</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">微塑料</span>
+                        <span class="topic-tag">大气沉降</span>
+                        <span class="topic-tag">城市空气质量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1016/j.atmosenv.2026.122294" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文针对美国圣路易斯市的城市与郊区站点开展了为期一年的<b>人为微粒（含微塑料）大气沉降</b>监测研究。分析结果显示，大气微粒沉降通量在未检出至312.9个/m²/天之间，其中<b>城市站点</b>的平均沉降通量（101.7个/m²/天）显著高于郊区（43.3个/m²/天）。形态上以微纤维为主，<b>微塑料</b>占化学分析微粒的41%–49%。时间序列分析表明，<b>相对湿度</b>与微粒沉降通量呈显著正相关。在全球对比中，圣路易斯等中等人口规模湿润城市的微粒沉降量与湿润大都市相当，表明在调控大气人为微粒沉降过程中，气候因子（如湿度）的驱动作用可能强于单纯的人口规模。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Clustering of Right‐Moving Tornadic Supercell Proximity Sounding Profiles Using an Explainable Framework</section>
+            <section class="paper-authors">Zhanxiang Hua, Alexandra Anderson‐Frey, Qin Jiang, Matthew C. Brown</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD046496" target="_blank">https://doi.org/10.1029/2026JD046496</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">超级单体</span>
+                        <span class="topic-tag">机器学习</span>
+                        <span class="topic-tag">探空剖面</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD046496" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文构建了一个可解释的<b>机器学习框架（SOM与RFE）</b>，对右移龙卷风<b>超级单体探空剖面</b>的环境特征进行显式聚类分析与关键特征提取。研究基于虚浮力和风剖面数据，利用<b>自组织映射网络（SOM）</b>将环境探空归类，并使用<b>递归特征消除法（RFE）</b>筛选主导变量。结果表明，位于3千米及10.6千米（接近平衡高度）附近的<b>虚浮力</b>是驱动聚类的最关键因子，它们可作为对流可用势能（CAPE）与对流抑制（CIN）强度的代理指标；同时中层（5千米）风向量与低层（3千米以下）经向风也起到了重要分类作用。基于提取的核心特征评估环境龙卷强度的能力与传统复合参数相当，为龙卷环境评估提供了低维且具解释力的指标。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Socioeconomic and climate uncertainty shape solar electricity costs and storage needs across West Africa</section>
+            <section class="paper-authors">Xiaojing Lin, Xin Sun, Sarah Feron, Raul R. Corder, Bo Bai, Wided Medjroubi, Yadong Yu, Qianzhi Zhang, Shi Chen, Shuangqi Li, Ming Xu, Klaus Hubacek</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03996-w" target="_blank">https://doi.org/10.1038/s43247-026-03996-w</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">太阳能发电</span>
+                        <span class="topic-tag">气候不确定性</span>
+                        <span class="topic-tag">技术经济模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03996-w" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文提出了一个成本拆解与多目标优化框架，评估了西非电力池184个县区在13种气候情景下光伏发电及配套储能（电池与氢能）的经济性与可靠性。研究基于<b>技术经济模型</b>发现，西非基线<b>太阳能发电成本</b>在0.100至0.409美元/千瓦时之间变动，其中利比里亚和塞拉利昂受<b>气候不确定性</b>影响最大，而塞内加尔展现出强投资弹性。地理异质性决定了储能配置策略：部分地区倾向于电池主导，另一些地区则需大容量氢能。优化后的储能配置相比单一光伏系统大幅降低了缺电概率，并在74%的地区减少了弃电率，为缺乏气候数据的地区提供了可调控的应对策略。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">How Do Climatic Factors Directly Influence the Incidence and Risk of Meningococcal Meningitis Across the African Meningitis Belt? A Narrative Literature Review</section>
+            <section class="paper-authors">Molly Cliff, Kanny Diallo, Richard B. Yapi, Axelle B. D. Tano, Sally Jahn, Caroline M. Wainwright, Caroline Trotter</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">GeoHealth</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GH001749" target="_blank">https://doi.org/10.1029/2025GH001749</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">脑膜炎流行</span>
+                        <span class="topic-tag">大气尘埃</span>
+                        <span class="topic-tag">气候驱动机制</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GH001749" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文是一篇关于非洲脑膜炎带<b>脑膜炎双球菌脑膜炎</b>发病率及风险与气候因子直接关联的叙述性文献综述。研究梳理了撒哈拉以南26个国家的气候要素（尘埃、风速、温度、降水和地表覆盖）。统计分析显示，<b>大气尘埃</b>和<b>风速</b>与脑膜炎爆发具有最强的统计相关性和最高的预测概率。多因子相互作用机制表明，低降水与高气温导致土壤干旱化并加剧地表干燥，增强了尘埃被风扬起的能力；而大气尘埃又通过辐射效应抑制降水。研究强调，降水、温度与地表覆盖的变化共同构成了增加大气尘埃的宏观气候机制，从而显著推高了干季脑膜炎的发病与流行风险。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
