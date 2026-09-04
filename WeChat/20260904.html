@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/09/04</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">ABCFlux v2: Arctic–boreal CO2 and CH4 monthly  flux observations and ancillary information  across terrestrial and freshwater ecosystems</section>
+            <section class="paper-authors">Anna-Maria Virkkala, Isabel Wargowsky, Judith Vogt, Simran Madaan, Tiffany Windholz, Kyle A. Arndt, Gerard Rocher-Ros, Mathias Göckede, David Olefeldt, Edward A. G. Schuur, David Bastviken, Richard O'Keefe, McKenzie A. Kuhn, Brendan M. Rogers, Jennifer D. Watts, Kelcy Kent, Kristoffer Aalstad, Kelly Aho, Joonatan Ala-Könni, Haley Alcock, Inge Althuizen, Christopher D. Arp, Jun Asanuma, Mika Aurela, Sivakiruthika Balathandayuthabani, Katrin Attermeyer, Alan Barr, Maialen Barret, Ochirbat Batkhishig, Christina Biasi, Mats P. Björkman, Andrew Black, Elena Blanc-Betes, Pascal Bodmer, Julia Boike, Abdullah Bolek, Frédéric Bouchard, Ingeborg Bussmann, Lea Cabrol, Eleonora Canfora, Sean Carey, Karel Castro-Morales, Namyi Chae, Andreas Christen, Torben R. Christensen, Casper T. Christiansen, Housen Chu, Graham Clark, Francois Clayer, Patrick Crill, Christopher Cunada, Scott J. Davidson, Joshua F. Dean, Sigrid Dengel, Matteo Detto, Catherine Dieleman, Florent Domine, Egor Dyukarev, Colin Edgar, Bo Elberling, Craig A. Emmerton, Eugenie Euskirchen, Grant Falvo, Thomas Friborg, Michelle Garneau, Mariasilvia Giamberini, Mikhail V. Glagolev, Miquel A. Gonzalez-Meler, Gustaf Granath, Jón Guðmundsson, Konsta Happonen, Yoshinobu Harazono, Lorna Harris, Josh Hashemi, Nicholas Hasson, Janna Heerah, Liam Heffernan, Manuel Helbig, Warren Helgason, Michal Heliasz, Greg Henry, Geert Hensgens, Tetsuya Hiyama, Beth Holmes, Macall Hock, David Holl, Jutta Holst, Thomas Holst, Gabriel Hould-Gosselin, Elyn Humphreys, Jacqueline Hung, Jussi Huotari, Hiroki Ikawa, Danil V. Ilyasov, Mamoru Ishikawa, Go Iwahana, Hiroki Iwata, Marcin Antoni Jackowicz-Korczynski, Joachim Jansen, Järvi Järveoja, Vincent E. J. Jassey, Rasmus Jensen, Katharina Jentzsch, Robert G. Jespersen, Carl-Fredrik Johannesson, Cheristy P. Jones, Anders Jonsson, Ji Young Jung, Sari Juutinen, Evan Kane, Jan Karlsson, Sergey Karsanaev, Kuno Kasak, Julia Kelly, Kasha Kempton, Marcus Klaus, George W. Kling, Natascha Kljun, Jacqueline Knutson, Hideki Kobayashi, John Kochendorfer, Kukka-Maaria Kohonen, Pasi Kolari, Mika Korkiakoski, Aino Korrensalo, Pirkko Kortelainen, Egle Koster, Kajar Koster, Ayumi Kotani, Praveena Krishnan, Juliya Kurbatova, Lars Kutzbach, Min Jung Kwon, Ethan D. Kyzivat, Jessica Lagroix, Theodore Langhorst, Elena Lapshina, Tuula Larmola, Klaus S. Larsen, Isabelle Laurion, Justin Ledman, Hanna Lee, A. Joshua Leffler, Lance Lesack, Anders Lindroth, David Lipson, Annalea Lohila, Efrén López-Blanco, Vincent L. St. Louis, Erik Lundin, Miska Luoto, Takashi Machimura, Marta Magnani, Avni Malhotra, Marja Maljanen, Ivan Mammarella, Elisa Männistö, Luca Belelli Marchesini, Phil Marsh, Pertti J. Martkainen, Maija E. Marushchak, Mikhail Mastepanov, Alex Mavrovic, Trofim Maximov, Christina Minions, Daniel F. Nadeau, Marco Montemayor, Tomoaki Morishita, Patrick Murphy, Erin Nicholls, Mats B. Nilsson, Anastasia Niyazova, Jenni Nordén, Koffi Dodji Noumonvi, Hannu Nykanen, Walter Oechel, Anne Ojala, Tomohiro Okadera, Sujan Pal, Alexey V. Panov, Tim Papakyriakou, Dario Papale, Sang-Jong Park, Frans-Jan W. Parmentier, Gilberto Pastorello, Mike Peacock, Matthias Peichl, Roman Petrov, Kyra St. Pierre, Norbert Pirk, Jessica Plein, Vilmantas Preskienis, Anatoly Prokushkin, Jukka Pumpanen, Hilary A. Rains, Niklas Rakos, Aleksi Räsänen, Helena Rautakoski, Riikka Rinnan, Janne Rinne, Adrian Rocha, Nigel Roulet, Alexandre Roy, Anna Rutgersson, Aleksandr F. Sabrekov, Torsten Sachs, Erik Sahlée, Alejandro Salazar, Henrique Oliveira Sawakuchi, Christopher Schulze, Roger Seco, Armando Sepulveda-Jauregui, Svetlana Serikova, Abbey Serrone, Hanna M. Silvennoinen, Sofie Sjogersten, June Skeeter, Jo Snöälv, Sebastian Sobek, Oliver Sonnentag, Emily H. Stanley, Maria Strack, Lena Strom, Patrick Sullivan, Ryan Sullivan, Anna Sytiuk, Torbern Tagesson, Pierre Taillardat, Julie Talbot, Suzanne E. Tank, Mario Tenuta, Irina Terenteva, Frederic Thalasso, Antoine Thiboult, Halldor Thorgeirsson, Fenix Garcia Tigreros, Margaret Torn, Amy Townsend-Small, Claire Treat, Alain Tremblay, Carlo Trotta, Eeva-Stiina Tuittila, Merritt Turetsky, Masahito Ueyama, Muhammad Umair, Aki Vähä, Lona van Delden, Maarten van Hardenbroek, Andrej Varlagin, Ruth K. Varner, Tarmo Virtanen, Elena Veretennikova, Timo Vesala, Carolina Voigt, Jorien E. Vonk, Robert Wagner, Katey Walter Anthony, Qinxue Wang, Masataka Watanabe, Hailey Webb, Jeffrey M. Welker, Andreas Westergaard-Nielsen, Sebastian Westermann, Jeffrey R. White, Christian Wille, Scott N. Williamson, Scott Zolkos, Donatella Zona, Susan M. Natali</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-18-6357-2026" target="_blank">https://doi.org/10.5194/essd-18-6357-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">碳通量数据集</span>
+                        <span class="topic-tag">北极-北方</span>
+                        <span class="topic-tag">甲烷监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-18-6357-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文介绍了新的北极-北方碳通量数据集ABCFlux v2，涵盖陆地（湿地和高地）和淡水（湖泊和河流）生态系统的月尺度CO₂和CH₄通量。该数据集整合了先前合成数据（ABCFlux v1、BAWLD-CH₄、GRiMeDB）以及通用仓库、文献和站点研究者提供的数据，包含1024个站点、23847个通量站月、8182个浓度站月和199个季节观测，共56139个报道通量（GPP、Reco、NEE和CH₄之和），时间跨度1984-2024年。数据通过箱法、涡度协方差、气泡陷阱、冰调查和基于浓度的湍流模型等多种方法获取，并附有方法学和环境元数据。与ABCFlux v1相比，陆地CO₂通量站月增加160%；将BAWLD-CH₄从生长季平均升级为月通量，得到5671个站月的箱法CH₄数据。该数据集由260多位研究者协作完成，提供了北极-北方碳通量网络现状的全面视图，有助于减少碳收支不确定性并增强对气候反馈的理解。数据可通过ORNL DAAC获取。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Observation-based mine-level methane emission factors uncover inventory biases and constrain emissions from Shanxi’s Coal Mines</section>
+            <section class="paper-authors">Shuhui Fu, Xin Tong, Fei Li, Jun Wang, Yongguang Zhang, Zhaocheng Zeng, Zhonghua He, Ge Han, Huilin Chen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae9e4e" target="_blank">https://doi.org/10.1088/1748-9326/ae9e4e</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星甲烷监测</span>
+                        <span class="topic-tag">煤矿排放因子</span>
+                        <span class="topic-tag">清单偏差</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae9e4e" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用2019-2025年间1418个卫星探测的甲烷羽流，归因到中国山西省159个在产地下煤矿，推导出矿井级排放因子（EF），并与安全监管机构（SACMS）和全球煤矿追踪器（GCMT）的清单对比，开发了基于产能分层的自助抽样框架进行尺度提升。观测EF高度异质、右偏、随时间变化，且与产能负相关。清单对比显示，SACMS整体量级一致但系统低估小产能（<1.2 Mt/年）煤矿的EF，而GCMT高估中产能（1.2-3.0 Mt/年）和大产能（≥3.0 Mt/年）煤矿的EF。基于分层自助框架，估算2023年山西高瓦斯和突出矿井的甲烷排放为7.0 [5.6-8.9] Mt/年，全省煤矿甲烷总排放约11.2 [9.3-13.6] Mt/年。研究表明卫星观测羽流能有效约束矿井级EF、揭示清单偏差，并支持基于观测的省级煤矿甲烷估算，为减排策略提供科学依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Helium escaping from the atmosphere of a nearby rocky exoplanet orbiting in a habitable zone</section>
+            <section class="paper-authors">Collin Cherubim, Shreyas Vissapragada, Tim Cunningham, Annabella G. Meech, David Charbonneau, Robin Wordsworth, Aaron Householder, Johanna Teske, Leonardo A. Dos Santos, Nicole L. Wallack, William Misener, Zifan Lin, Andrew McWilliam, Michael Zhang, Jason A. Dittmann, Mercedes López-Morales</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/science.aea9708" target="_blank">https://doi.org/10.1126/science.aea9708</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">系外行星</span>
+                        <span class="topic-tag">氦逃逸</span>
+                        <span class="topic-tag">近红外光谱</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/science.aea9708" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究报告了附近宜居带岩石系外行星LHS 1140b大气中逃逸氦气的近红外光谱观测。2024年的凌日光谱显示氦吸收，但2025年未检测到，表明大气逃逸随时间变化。研究将此解释为上层大气以氦为主且氢消耗，其他挥发性物质被困在较低高度，这与大气分馏模型一致。在同系统中较小且更强辐照的LHS 1140c未检测到氦吸收。该发现为岩石行星大气逃逸提供了直接观测证据，对理解宜居带行星大气演化具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The significance of water vapor isotopes in improving weather prediction</section>
+            <section class="paper-authors">Kinya Toride, Kei Yoshimura, Matthias Schneider, Christopher Diekmann, Farahnaz Khosrawi, Benjamin Ertl, Hayoung Bong</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03917-x" target="_blank">https://doi.org/10.1038/s43247-026-03917-x</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">水汽同位素</span>
+                        <span class="topic-tag">天气预报</span>
+                        <span class="topic-tag">红外探测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03917-x" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究分析了4.5年来自红外大气探测干涉仪（IASI）的对流层中水汽同位素（δD）数据，并将其同化进含同位素的全球谱模型（IGSM），评估了在同时同化温度和比湿的基础上，额外同化δD的增值。结果显示，同化δD改善了0-120小时的风、温度、比湿和位势高度预报，中纬度改进最大；强降水（>3毫米/6小时）技能也有所提高。在粗分辨率配置和有限观测条件下，结果表明同位素信息加强了传输跟踪和水文约束，激励在业务高分辨率预报系统中评估。该研究首次在真实世界中证明水汽同位素同化对天气预报的显著价值，为改进天气预报提供了新方法。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">DEN-SURGE: High-frequency and multi-decadal Danish storm surge reconstruction integrating hydrodynamic modelling, observations, and machine learning</section>
+            <section class="paper-authors">Jian Su, Jacob Woge Nielsen, Kristine Skovgaard Madsen, Morten Andreas Dahl Larsen</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2026-693" target="_blank">https://doi.org/10.5194/essd-2026-693</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">风暴潮重建</span>
+                        <span class="topic-tag">机器学习</span>
+                        <span class="topic-tag">海平面记录</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2026-693" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究介绍了ReSEML v1.0机器学习框架，用于重建复杂海岸线连续的亚小时级极端海平面目录。通过训练堆叠深度学习集成（LSTM+TCN）预测亚小时潮位观测与水动力模型基线之间的当地物理残差，构建了丹麦50个站点1961-2024年连续64年的DEN-SURGE风暴潮目录。该方法修复了传感器故障、填补多年监测缺口，并纠正了数值模拟对峰值低估，生成了质量和物理完整性均优于原始模拟和碎片化观测的AI就绪基准。海岸线被划分为10个聚类进行区域校正，样本外验证显示高水位事件全国平均偏差在±0.4厘米内，均方根误差低于10厘米。与独立历史风暴潮清单交叉验证确认了框架的可靠性。将记录延长至1961年稳定了极值分析曲线，百年一遇回归水平的95%置信区间平均缩减46%。研究也为降尺度未来气候模拟提供了方法桥梁。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Upward transport and segregation of ice-nucleating particles in deep convective clouds</section>
+            <section class="paper-authors">Jonas Schaefer, Sarah Grawe, Hans-Christian Clemen, Stephan Mertes, Johannes Schneider, Bruno Wetzel, Daniel Sauer, Jennifer Wolf, Laura Tomsche, Johanna Mayer, Roland Schrödner, Silvia Henning, Tina Jurkat-Witschas, Christiane Voigt, Helmut Ziereis, Theresa Harlaß, Mira Pöhlker, Frank Stratmann</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-12505-2026" target="_blank">https://doi.org/10.5194/acp-26-12505-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">冰核粒子</span>
+                        <span class="topic-tag">深对流云</span>
+                        <span class="topic-tag">垂直输送</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-12505-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究基于2021年夏季CIRRUS-HL欧洲上空高海拔远程研究飞机（HALO）的机载测量，探讨了<strong>冰核粒子（INP）</strong>在深对流云（DCC）中的垂直输送和分离机制。通过采集对流云入流和出流中的云粒子残留物和气溶胶粒子，并进行离线INP分析，发现入流INP温度谱同时包含高温（T>-15°C）和低温（T<-20°C）活化的INP，而出流谱仅含低温活化的INP。研究将这种分离归因于降水冲刷清除了高温INP，而低温INP（T<-20°C）则有效输送至自由对流层（高达14.5公里），尽管该高度环境温度远低于其冻结温度。DCC出流中INP浓度比上层对流层背景高至少两个数量级，这些INP随后可用于中上层云冰形成。研究改进了一对大气粒子分布和气候变化模型的理解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Cloud-mediated radiative and precipitation pathways link summer Arctic circulation modes to sea-ice melt variability</section>
+            <section class="paper-authors">Haotian Zhang, Yue Sun, Annan Chen, Chuanfeng Zhao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01533-2" target="_blank">https://doi.org/10.1038/s41612-026-01533-2</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">北极环流</span>
+                        <span class="topic-tag">云辐射效应</span>
+                        <span class="topic-tag">海冰融化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01533-2" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用2000-2024年的卫星观测、再分析和海冰产品，考察了夏季北极海冰融化变率与大气环流模态（北极涛动AO、两个偶极型模态DA1和DA2）之间的云介导辐射和降水路径。这些模态组织不同高度和相位依赖的云异常以及净、短波、长波云辐射效应的相干响应。净响应主要由短波云-地表反照率相互作用支配，长波效应较弱但区域相关。降雪和降雨也系统性变化，可改变雪-冰表面状态和反照率。在九个北极亚区，诊断的净能量等效响应（来自长波CRE、云相关短波CRE和反照率相关短波CRE）在AO时为-1.73至7.95厘米，DA1为-8.22至4.95厘米，DA2为-4.69至8.25厘米（每标准差）。与区域夏季海冰厚度响应的比较表明这些路径提供可测量但部分的融化变率调制。研究强调云辐射、地表反照率和降水过程对理解预测北极海冰变化的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Morphology‐Driven Ternary Pattern Space Spans Shallow Marine Clouds</section>
+            <section class="paper-authors">Hadar Roth, Tom Dror, Orit Altaratz, Ilan Koren</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD047650" target="_blank">https://doi.org/10.1029/2026JD047650</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋云分类</span>
+                        <span class="topic-tag">MODIS遥感</span>
+                        <span class="topic-tag">三元相空间</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD047650" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究提出了一种新的浅海云连续分类方法，基于MODIS真彩色图像提取云的形态学属性，利用云量和空隙（被云包围的晴空区域）数量定义的<strong>三元相空间</strong>，以闭合胞、开放胞层积云和积云为三个端元。研究显示相空间能捕捉云的固有混合模式，提供更细致客观的分类方案。聚焦东北和东南太平洋两个区域，结果显示闭合胞主导研究区域东部，而混合态（不纯代表任何端元）主导西部。混合态呈现多种形态，表明该方法将经典模式锚定在统一空间内同时揭示中间态的丰富性和变率。结合CERES辐射通量，云微物理属性在相空间内呈现连贯梯度，验证了该框架。微物理差异反映在辐射行为上，短波辐射通量范围100-350 W/m²。该框架为海洋浅云研究提供了新角度。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Projected changes in extreme windstorms and high-wind cyclone tracks across model resolutions</section>
+            <section class="paper-authors">Rui Zhang, Olivier Asselin, Dominique Paquin, Rebecca J. Barthelmie, Sara C. Pryor</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01526-1" target="_blank">https://doi.org/10.1038/s41612-026-01526-1</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">极端风暴</span>
+                        <span class="topic-tag">模式分辨率</span>
+                        <span class="topic-tag">气候预测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01526-1" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用HighResMIP全球模式集合（低到高分辨率、耦合和大气-only）以及区域动力降尺度模拟，调查了极端风暴及其动力学来源的未来变化。结果显示，美国东北部和加拿大东南部的极端风暴将显著增加，无论分辨率或耦合策略如何，且在区域和全球模拟中一致。这种增加发生在中纬度气旋总数下降的背景下，由更强气旋（包括热带气旋转化）进入该区域驱动。低分辨率模拟产生更频繁且更大的风暴，因为其99百分位风速较低（导致超阈值降低）和较大涡旋长度尺度（高估罗斯贝变形半径）。低分辨率模拟还显示更强低层斜压性和可用位能（APE），但涡动动能（EKE）较弱，表明APE到EKE转换效率较低。研究揭示了东北北美极端风暴风险的稳健增加，并强调定量预测天气尺度灾害需要约25-50公里的大气网格间距，而非传统的100公里。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Two distinct synoptic pathways to extreme humid heat over South China: monsoon-related versus tropical-cyclone-related</section>
+            <section class="paper-authors">Xinyu Li, Zihan Li, Zhen Liu, Riyu Lu, Xingyan Zhou</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae9b2a" target="_blank">https://doi.org/10.1088/1748-9326/ae9b2a</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">极端湿热</span>
+                        <span class="topic-tag">环流分型</span>
+                        <span class="topic-tag">季风与热带气旋</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae9b2a" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究通过环流聚类方法识别出华南夏季极端湿热（EHH）的两种典型天气学类型：<strong>季风型</strong>和<strong>热带气旋型</strong>。季风型表现为热带西太平洋反气旋异常和华南增强的西南气流；热带气旋型则表现为气旋异常和近海热带气旋活动增强。两种类型均产生相当的湿球温度升高，但机制根本不同：季风型中，强西南气流驱动平流水汽替换，增暖由增强的水汽和高云覆盖导致的向下长波辐射主导；热带气旋型中，东北风异常将水汽困于华南，边缘下沉减少低中云量，导致短波辐射增加，加上困留水汽的增强长波，驱动更强增暖。研究揭示了两种类型在大气环流和水汽输送上的差异，为理解华南极端湿热事件的形成和预测提供了新的视角。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Evaluation of smoke mass concentration within the PBL based on observations of fluorescence lidar with several discreet channels</section>
+            <section class="paper-authors">Igor Veselovskii, Mikhail Korenskiy, Boris Barchunov, Nikita Kasianik, Qiaoyun Hu, Philippe Goloub, Thierry Podvin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-5587-2026" target="_blank">https://doi.org/10.5194/amt-19-5587-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">荧光激光雷达</span>
+                        <span class="topic-tag">烟雾浓度</span>
+                        <span class="topic-tag">边界层监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-5587-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究展示了多通道荧光激光雷达可有效分析烟雾-城市气溶胶混合物，并反演行星边界层（PBL）内的烟雾质量浓度，检测阈值约为0.1 µg/m³。2023-2024年间在莫斯科进行的五通道荧光激光雷达测量捕获了从春季到秋季广泛高度范围的多次烟雾事件，2024年4月至10月的67次测量中59次检测到烟雾。后向轨迹分析表明，大部分事件与跨大西洋远距离输送有关，仅12次源于俄罗斯南部火灾。聚焦PBL内烟雾，结果显示北美野火远距离输送的烟雾可下沉并与该层混合，贡献约1 µg/m³的质量浓度；而俄罗斯南部区域野火导致浓度显著升高，观测期间PBL内烟雾质量可达50 µg/m³。该研究证明了荧光激光雷达在烟雾监测和定量反演中的能力，为空气质量监测提供了重要技术手段。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Projected AMOC Weakening Controls Future Diatom Decline in the Subpolar North Atlantic Ocean</section>
+            <section class="paper-authors">S. Doléac, M. Lévy, L. Bopp</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth's Future</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025EF007992" target="_blank">https://doi.org/10.1029/2025EF007992</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">AMOC</span>
+                        <span class="topic-tag">硅藻生产力</span>
+                        <span class="topic-tag">卫星约束</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025EF007992" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用地球系统模式集合，分析了大西洋经向翻转环流（AMOC）减弱对未来亚极地北大西洋硅藻净初级生产力（NPP）下降的影响。首先证明了AMOC强度变化与亚极地北大西洋NO₃可用性之间存在稳健的模式间关系。然后应用涌现约束框架，利用基于卫星的历史NPP和硝酸盐重建来估计硅藻NPP对硝酸盐变化的未来敏感性。结合两种方法得到AMOC减弱与硅藻NPP下降之间约束后的关系。结果显示，AMOC未来减弱幅度是硅藻NPP预测不确定性的主导来源，但在合理AMOC下降范围内，硅藻NPP的下降幅度可能比先前预期更小。研究强调了AMOC变化在海洋生态预测中的关键作用，并展示了利用卫星观测约束未来预测的新方法。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Tradeoffs between nutrient load reductions and greenhouse gas dynamics in constructed agricultural wetlands</section>
+            <section class="paper-authors">Martyn N Futter, Mike Peacock, Emma E Lannergård, Joachim Audet, Faruk Djodjic, John Strand, Tong Liu, Pia Geranmayeh</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae9492" target="_blank">https://doi.org/10.1088/1748-9326/ae9492</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">人工湿地</span>
+                        <span class="topic-tag">温室气体</span>
+                        <span class="topic-tag">营养盐权衡</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae9492" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了人工农业湿地在减少营养负荷与温室气体排放之间的权衡关系。基于瑞典40个自由水面人工湿地（池塘）为期三年的监测数据，分析了水化学、溶解温室气体浓度、总甲烷（CH₄）排放及沉积物性质。研究发现，入水磷浓度与水体溶解CH₄及沉积物磷含量正相关，形成<strong>营养盐滞留与气候影响</strong>的清晰权衡；入水氮浓度则与溶解氧化亚氮（N₂O）浓度正相关，但湿地仍能降低下游溶解氮水平。所有水体均对CO₂过饱和，秋冬季CO₂和N₂O浓度高于夏季，而CH₄通量与溶解浓度呈相反季节模式，且秋冬季冒泡贡献更大。沉积物碳浓度与任何测量参数均无显著关联，表明难以通过设计实现碳封存目的。尽管存在权衡，研究仍支持将人工湿地作为多功能自然解决方案（NBS）用于农业景观中的生态系统服务提供。该研究为理解湿地生态功能与温室气体动态提供了重要数据支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">First Empirical Assessment of Ice Content From a Himalayan Rock Glacier</section>
+            <section class="paper-authors">Matthew W. Peacey, Stephan Harrison, Tristram D. L. Irvine‐Fynn, Yan Hu, Karen Anderson, Ruolin Leng, Zhangyu Sun, Lin Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124533" target="_blank">https://doi.org/10.1029/2026GL124533</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">岩石冰川</span>
+                        <span class="topic-tag">冰含量测量</span>
+                        <span class="topic-tag">遥感探测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124533" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究首次直接测量了喜马拉雅山地区Gokyo活动岩石冰川（海拔4700米以上）的冰含量，利用干涉合成孔径雷达（InSAR）跟踪地表运动和探地雷达（GPR）量化埋藏冰。数据显示地表运动高达1米/年，与全球其他活动岩石冰川一致；地球物理解译揭示了两个埋藏大冰体，厚达28.0（±2.1）米，总淡水储量估计为5.23（-0.81，+0.88）×10⁵立方米。研究强调岩石冰川作为重要淡水水库，在区域变暖加速背景下缓慢释放淡水，对理解高山区水资源有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Contrasting Terrestrial Moisture Controls on Precipitation and Interannual Variability across the Southern and Northern Tibetan Plateau</section>
+            <section class="paper-authors">Peng Qian, Bin Zhu, Chunsong Lu, Tong Zhu, Yufeng Shan, Meng Gao, Hanqing Kang, Yuying Wang, Zifa Wang, Hong Liao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01536-z" target="_blank">https://doi.org/10.1038/s41612-026-01536-z</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">青藏高原</span>
+                        <span class="topic-tag">水汽来源</span>
+                        <span class="topic-tag">陆地中继</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01536-z" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用CESM1中的欧拉水示踪技术、拉格朗日追踪和同位素分析，量化了2003-2021年青藏高原（TP）夏季和冬季降水的湿度来源。结果显示，在欧拉源归因框架内，陆地源主导TP降水的气候平均态和年际变率，对北部TP（NTP）的陆地控制远强于南部TP。陆地源占NTP夏季降水的78.9±12.1%和冬季的68.4±10.0%，主要来自西欧（WEU）、中亚（CA）、北非（NAF）和TP蒸散发。这种陆地主导地位源于大多数远离海洋的水汽在到达TP前已被消耗，海洋水汽（如北大西洋）先在中层大陆（WEU-CA和NAF）降水，再通过蒸散发重新进入大气，随后输送至TP。研究确定了这一陆地“湿度中继”机制，该机制也调节NTP的年际降水变率：湿润NTP夏季增强对流降水，湿润冬季增强大尺度降水。研究表明TP降水主要由上游陆地区域的降水损失和再蒸发分配控制。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Revealing Enhanced Signals of Future Marine Heatwave Changes in the East/Japan Sea Through a High‐Resolution Dynamical Downscaling Ensemble</section>
+            <section class="paper-authors">Seok‐Geun Oh, Kyung‐Geun Lim, Yu‐Kyeong Kang, Seok‐Woo Son, Yang‐Ki Cho</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth's Future</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025EF007760" target="_blank">https://doi.org/10.1029/2025EF007760</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋热浪</span>
+                        <span class="topic-tag">动力降尺度</span>
+                        <span class="topic-tag">未来预测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025EF007760" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用基于ROMS的高分辨率（1/8°）动力降尺度模拟集合，研究东海/日本海（EJS）未来海表温度（SST）和海洋热浪（MHW）的变化。ROMS集合由7个CMIP6模式在四种SSP情景（SSP1-2.6、SSP2-4.5、SSP3-7.0、SSP5-8.5）下驱动，模拟1982-2100年。历史期（1985-2014）ROMS集合在再现SST和MHW特征上优于CMIP6集合，尤其是冬季，得益于对朝鲜海峡对马暖流输送及区域环流的改进模拟。未来预测（2071-2100）表明，ROMS中EJS中部SST增暖和MHW将更强、更持久、空间更异质，而CMIP6呈现较均匀模式，尤其在高排放情景下。空间异质性与对马暖流和东朝鲜暖流增强有关，强化沿路径向盆内的热平流。研究强调高分辨率动力降尺度对理解和准备EJS未来SST和MHW变化的附加价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Two decades of observations capture rapid warming of marginal permafrost across the 0&#xa0;°C threshold</section>
+            <section class="paper-authors">Chenyang Peng, Yu Sheng, Jichun Wu, Jia Liu, Shizhen Li, Yajuan Zao, Dongliang Luo</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01528-z" target="_blank">https://doi.org/10.1038/s41612-026-01528-z</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">多年冻土</span>
+                        <span class="topic-tag">0°C阈值</span>
+                        <span class="topic-tag">地温变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01528-z" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究分析了青藏高原东北部59个钻孔长达二十年的地温记录，包括四个退化接近或越过0°C的站点，探讨边缘多年冻土在0°C阈值附近的快速变暖。偏差校正的ERA5-Land数据显示区域快速变暖（中位数0.56°C/十年），4100-4600米海拔范围内的钻孔普遍一致变暖，2021年起年平均气温上移。尽管大气变暖，多个钻孔长期维持在0°C附近，表明潜热缓冲和深层延迟变暖。随着缓冲减弱，地温上移并快速变暖。退化最快站点的一个约13米厚的晚季亚零层在2021-2023年间消失，此前数年接近零温。剖面变化与talik发展和有限热恢复一致，但年度晚季测量无法确认全年talik条件。植被绿度与不同地温响应一致，表明当地表条件影响退化时间。研究证明边缘冻土可在0°C附近经历快速非线性退化，持续区域变暖可能促进类似转变。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Cooking Impacts PM1 in Suburban New York, With Implications for Respiratory Deposition</section>
+            <section class="paper-authors">Adam De Groodt, Emily B. Franklin, Michael P. Vermeuel, Trey Maddaleno, Yuwei Zhao, Andrew Hallward‐Driemeier, Joseph Ko, Róisín Commane, Dylan B. Millet, Delphine K. Farmer</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD047007" target="_blank">https://doi.org/10.1029/2026JD047007</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">PM1</span>
+                        <span class="topic-tag">烹饪排放</span>
+                        <span class="topic-tag">呼吸沉积</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD047007" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究调查了纽约郊区Mineola在2024年冬季和2023年夏季的亚微米颗粒物（PM1）特征，包括耐火性黑碳（BC）和非耐火性（NR）PM1，研究了季节差异、冬季PM1高值事件的驱动因素及潜在呼吸暴露。结果显示，有机气溶胶（OA）主导冬季（63%）和夏季（86%）NR-PM1，BC占冬季PM1的6%。冬季PM1中一次OA占57%，其中烹饪有机气溶胶（COA）平均贡献29%，但在高值事件中高达81%。夏季OA受野火烟雾和生物源影响，COA平均仅占OA的9%，但偶发增强。冬季COA驱动多次PM1事件，涂层厚度增加。模拟沉积显示城市PM1主要沉积在敏感肺泡区，含BC颗粒加剧沉积。2023年夏季加拿大野火事件按质量加权增强总肺沉积，相对沉积偏向鼻咽部。研究表明烹饪是城市区域PM1的重要全年本地来源，多种来源的BC和NR-PM1对呼吸沉积和社区健康构成威胁。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Time of emergence of climate signals in the abyssal Clarion–Clipperton Zone and implications for deep-sea mining baselines</section>
+            <section class="paper-authors">Rong Wang, Jiabiao Li, Xiaojun Zhuo, Xiaoyan Li, Ni Feng, Yuyang Liang, Xin Zhou, Yejian Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae9c5a" target="_blank">https://doi.org/10.1088/1748-9326/ae9c5a</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">深海采矿</span>
+                        <span class="topic-tag">气候信号</span>
+                        <span class="topic-tag">基线评估</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae9c5a" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用五个CMIP6模式集合，评估了深海克拉里昂-克利珀顿区（CCZ）气候信号的出现时间（Time of Emergence），即气候变化信号何时能从自然变率中区分出来，对深海采矿环境基线至关重要。研究分析了5000米深度温度、溶解氧、pH以及100米处颗粒有机碳输出（作为海底食物供应代理）的信号。以2015-2030年为参考，十年运行平均位移与工业化前控制变率的信噪比（SNR）超过2并持续五年定义为出现信号。结果显示，到2035年仅在个别模式的温度变量中出现；到2050年，34个模式-变量-情景组合中有17个开始出现，16个确认。出现时的变化物理上很小：氧变化小于背景的1%，温度变化千分之几度，远低于可能的生理阈值。食物供应是例外，在SSP5-8.5情景下单一模式中下降15%，且不早于2050年代末。十年记录不足以刻画深海变率，且特定环境利益区与合同区存在差异。最早出现的变量往往生物学影响最小，而最关键的变量其上层供应不由采矿设定，但采矿可能改变传输和海底的供应，归因最难，因此固定历史基线需补充而非依赖。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Spurious Drifts in the ITCZ Location and Associated Atmospheric Circulation in Decadal Climate Predictions</section>
+            <section class="paper-authors">Rashed Mahmood, Makus G. Donat, Bo Christiansen, Francisco J. Doblas‐Reyes</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124719" target="_blank">https://doi.org/10.1029/2026GL124719</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气候预测漂移</span>
+                        <span class="topic-tag">ITCZ位置</span>
+                        <span class="topic-tag">大气环流</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124719" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了年代际气候预测中初始化漂移如何影响大气环流特征的空间位置，特别是热带辐合带（ITCZ）的移动。研究发现，随着预报时间增加，地表温度的不对称变化（南半球变暖、北半球变冷）导致ITCZ、副热带急流和热带降水格局向南移动。这种变化在全域初始化模型中较大，而异常初始化模型从开始就存在ITCZ位置的大偏差。这些大尺度环流模式的人为位置变化对初始化气候预测构成重要挑战，可能削弱当前预测系统预测受大气环流驱动的气候方面的能力。研究强调了评估和校正预测漂移对大气动力学影响的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A high-resolution air-sea synoptic observation dataset from drifting buoys in the Bay of Bengal</section>
+            <section class="paper-authors">Wei Huang, Guihua Wang, Changlin Chen, Gengxin Chen, Weiqiang Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-18-6411-2026" target="_blank">https://doi.org/10.5194/essd-18-6411-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">漂流浮标</span>
+                        <span class="topic-tag">海气相互作用</span>
+                        <span class="topic-tag">高分辨率数据</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-18-6411-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究介绍了2020-2022年间在孟加拉湾部署的五个海气漂流浮标的高分辨率同步观测数据集。浮标以小时级采样，并在热带气旋Nivar、Burevi、Four和Asani期间加密至5分钟间隔，捕获了关键气象参数（气温、海平面气压、风速风向、相对湿度）和海水表面温度的精准同步测量。该数据集为研究孟加拉湾日变化和精细化过程提供了宝贵的现场记录，同时为理解海气耦合、验证高频卫星产品以及改进极端条件下区域数值天气预报模型的参数化提供了关键观测数据。数据可免费获取。研究强调了在极端天气下获取长期高频率同步海气观测的重要性，弥补了当前观测的稀缺性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Non-stationary atmospheric pathways limit seasonal predictability of Eurasian autumn snow impacts on East Asian winter temperature</section>
+            <section class="paper-authors">OkYeon Kim, Suyeon Moon</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01529-y" target="_blank">https://doi.org/10.1038/s41612-026-01529-y</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">积雪影响</span>
+                        <span class="topic-tag">非平稳性</span>
+                        <span class="topic-tag">季节预测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01529-y" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了欧亚秋季积雪对东亚冬季温度影响的非平稳性，指出这种非平稳性反映了动力路径的重组而非积雪强迫的简单丧失。利用多个积雪产品、ERA5诊断和ECMWF SEAS5后报，识别出与东亚冬季温度联系更紧密的十月欧亚积雪空间模态，而非盆地平均积雪量。观测显示积雪记忆部分持续至初冬，但中间大气路径稳定性差：对流层环流调整减弱，积雪-WAFz和WAFz-AO10关系弱、季节和垂直依赖，且不跨期持续显著。尽管中间路径多变，十月积雪-东亚冬季温度关系仍相对稳健。最终东亚温度响应受重组的向下/区域投影限制。SEAS5能较好重现上游积雪预测因子，但在WAFz-AO10阶段失败最明显，所有集合成员均未能重现观测的符号。此对比识别出动力路径保真度（而非仅积雪表示）是季节可预测性的关键约束。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Declining Trend of Arctic Sea‐Ice Extent (1979–2025): Segmented by Abrupt Change Points</section>
+            <section class="paper-authors">Anliang Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL122769" target="_blank">https://doi.org/10.1029/2026GL122769</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">北极海冰</span>
+                        <span class="topic-tag">突变点</span>
+                        <span class="topic-tag">趋势分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL122769" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用1979-2025年北极海冰范围（SIE）数据，调查了长期下降趋势、异常年份、突变点和部分恢复阶段。识别出三个关键极端年份（2012、2020、2025），分别以持续创纪录低值、接近创纪录的年度最小值、以及前所未有的每日纪录低位频率为特征。将月SIE序列分解为趋势、季节和余项分量，并检测出趋势中的突变点（ACPs）为2001、2007、2012和2020年，但每个突变点后均出现海冰部分恢复。研究发现突变点代表SIE变率的显著年尺度扰动，为理解北极海冰的非线性变化提供了新视角。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Multi-decadal shoreline variability at a Mediterranean urban beach: disentangling storm impacts and sea-level influence</section>
+            <section class="paper-authors">Miguel Agulles, Lluís Gómez-Pujol, Marta Marcos</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae9b26" target="_blank">https://doi.org/10.1088/1748-9326/ae9b26</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海岸线变化</span>
+                        <span class="topic-tag">遥感监测</span>
+                        <span class="topic-tag">海平面影响</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae9b26" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用25年高分辨率海岸线位置记录（结合现场监测与遥感观测），分析地中海西部Cala Millor城市海滩对风暴驱动因子和<strong>海平面变化</strong>的响应。研究发现，在风暴尺度上，累积波能是海岸线变化的主导因子，但前期海滩宽度和风暴持续时间也起重要作用，表明海滩响应的多因素性。长期分析显示低频海岸线变率，2007-2015年的海滩恢复与风暴波能减少及北大西洋涛动负相位延长一致。海岸线演变存在明显的沿岸差异，南北段交替变化暗示海滩旋转和沉积物再分配。海平面变率虽对南部和中部区域低频波动有贡献，但尚无确凿证据表明近期加速海平面上升已成为整个海滩长期退化的主导因素。然而，在持续海平面上升情景下，其影响预计将增强，并可能最终成为该海滩及其他类似微潮海滩演变的主导驱动。研究强调了海岸线监测和气候影响评估的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A barycenter-based approach for the multi-model ensembling of subseasonal forecasts</section>
+            <section class="paper-authors">Camille Le Coz, Alexis Tantet, Rémi Flamary, Riwal Plougonven</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-19-8167-2026" target="_blank">https://doi.org/10.5194/gmd-19-8167-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">多模型集合</span>
+                        <span class="topic-tag">亚季节预报</span>
+                        <span class="topic-tag">重心方法</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-19-8167-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究从概率空间角度探讨了多模型集合预报的组合方法，将集合预报视为离散概率分布，并将多模型集合（MME）重构为这些分布的<strong>重心</strong>。比较了基于L2距离（等价于传统池化方法）和Wasserstein距离（更好地保持输入集合分布几何性质）的两种重心。作为概念验证，应用于S2S预测项目数据库中四个模型的组合，针对欧洲冬季的2米温度、10米风速和500hPa位势高度周预报进行评估。两种重心MME具有相同集合均值但不同不确定性表示：L2重心具有更大集合离散度，更易欠自信。在连续排序概率评分（CRPS）方面两者平均表现相似，但Wasserstein重心更频繁地表现更优。研究为多模型集合提供了一种新的理论框架，可改善集合预报的不确定性表达。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Are less predictable tropical cyclones associated with larger damages? Evidence in Japan</section>
+            <section class="paper-authors">Hikari V Yamamoto-Fukuda, Md Rezuanul Islam, Yohei Sawada</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/ae9e51" target="_blank">https://doi.org/10.1088/1748-9326/ae9e51</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热带气旋</span>
+                        <span class="topic-tag">预报误差</span>
+                        <span class="topic-tag">灾害损失</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/ae9e51" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究考察了2006-2023年间登陆日本的32个热带气旋（TC）的预报误差与洪水灾害损失之间的关系，首次在全国范围内量化了联合台风警报中心（JTWC）业务预报精度对实际损失的影响。多元线性回归分析发现，沿轨预报误差（预报位置与实际位置沿行进方向的距离）与建筑和家庭损失显著正相关（p<0.05），表明TC预报位置沿轨偏差越大，住宅和结构影响越大。相反，登陆时间和强度误差与洪水损失无显著统计关联。尽管因果关系尚不明确，研究结果暗示进一步减少轨道误差（尤其是沿轨分量）可能有助于减轻TC相关洪水损失。该研究为评估天气预报改进对灾害损失的实际影响提供了实证方法。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Comparison of Cold and Warm Extremes in the Mediterranean Based on E‐OBS and ERA5‐Land Data Sets</section>
+            <section class="paper-authors">Gessica Cosimato, Fabio Madonna, Fabrizio Marra, Faezeh Karimian Saracks, Emanuele Roberto, Marco Rosoldi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025JD046047" target="_blank">https://doi.org/10.1029/2025JD046047</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">温度极端</span>
+                        <span class="topic-tag">数据集比较</span>
+                        <span class="topic-tag">地中海气候</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025JD046047" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究比较了E-OBS和ERA5-Land两个数据集在地中海地区的近地表温度极端值（暖极端>90百分位，冷极端<10百分位）表现。结果显示，大部分区域的时间一致性较高，1991-2020年（最后十年）事件重叠度暖极端可达74%（86%），冷极端可达64%（80%），但某些分区表现出较弱一致性的结构性离群值。对于暖极端，存在系统偏差：E-OBS在90百分位通常比ERA5-Land高1.1°-1.3°C，但高强度时差异缩小。分布分析显示某些区域负偏斜明显，反映再分析的局部高估。在十年增暖趋势方面，ERA5-Land通常表现出更陡的暖极端趋势（高达0.86°C/十年，E-OBS为0.68°C/十年）。冷极端方面，两者在大部分区域捕捉到一致增暖信号，相关性0.94-0.98，但离群区域显示趋势不一致。复杂地形会放大数据离散，高密度站区显示一致增暖。总体而言，两个数据集均能再现季节性和区域增温信号。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A Causal Examination of the Solar Influence on Holocene Climate</section>
+            <section class="paper-authors">Jordan P. Landers, Julien Emile‐Geay, Alexander K. James, Stephan B. Munch, Deborah Khider, Edouard Bard</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2025GL121120" target="_blank">https://doi.org/10.1029/2025GL121120</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">太阳辐射</span>
+                        <span class="topic-tag">全新世气候</span>
+                        <span class="topic-tag">因果推断</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2025GL121120" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用收敛交叉映射（CCM）因果推断框架，探究了工业化前全新世时期太阳总辐照度（TSI）变化对全球平均表面温度（GMST）和格陵兰GISP2记录的影响。分析了两个温度重建与两个TSI重建在不同时间尺度上的配对，结果显示在约80%的参数配置中检测到TSI对温度的可辨识影响：GISP2的影响更强但显著性不一致，全球平均值影响较弱但持续显著。这表明太阳强迫是全新世全球气候波动的微小但可检测的驱动因素，可能作为评估气候模型是否正确捕捉此类微妙非线性动态的基准。研究为太阳活动与气候关系的经验证据提供了新见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">2026 ECMWF-ESA workshop report: current status, progress and opportunities in machine learning for Earth system observation and prediction</section>
+            <section class="paper-authors">Massimo Bonavita, Rochelle Schneider, Mounia El Baz, Rossella Arcucci, Marc Bocquet, Marcin Chrust, Maryam Pourshamsi, Chiara Maria Cocchiara, Alberto Carrassi, Nina Raoult, Diego Jatobá Dos Santos</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01486-6" target="_blank">https://doi.org/10.1038/s41612-026-01486-6</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">机器学习</span>
+                        <span class="topic-tag">地球观测</span>
+                        <span class="topic-tag">数据同化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01486-6" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该报告总结了2026年4月在意大利博洛尼亚举行的第五届ECMWF-ESA机器学习研讨会成果。会议召集地球系统观测与预测（ESOP）社区，评估机器学习在ESOP应用进展及新方向，聚焦数字孪生、混合ML-物理系统、地球观测（EO）机器学习、端到端数据同化与预测以及高性能计算等主题。为期五天的混合形式研讨会包括57个专家报告和88个海报展示，强调了ML在ESOP中日益增长的规模和复杂性（包括未来运行潜在的端到端工作流程），以及从CPU中心向GPU/TPU中心计算的并行转变，同时出现量子、边缘、神经形态等新范式。报告按五个主题领域总结了当前主题和新兴趋势，所有演讲和录音在线可获。该报告为ML在地球系统观测预测领域的现状提供了全面概览。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
