@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/09/20</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Virtual sensing to enable real-time monitoring of inaccessible locations &amp; unmeasurable parameters</section>
+            <section class="paper-authors">Kazuma Kobayashi, Farid Ahmed, Jaewan Park, Subhankar Sarkar, Seid Koric, Souvik Chakraborty, Syed Bahauddin Alam</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-026-77463-7" target="_blank">https://doi.org/10.1038/s41467-026-77463-7</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">虚拟传感</span>
+                        <span class="topic-tag">神经算子</span>
+                        <span class="topic-tag">实时重建</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-026-77463-7" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文提出一种基于神经算子的虚拟传感框架，用于从稀疏、异构的测量和操作条件中实时重建不可达的内部物理场。该框架以MIMONet（多输入多输出神经算子）为实例，通过共享潜在表征融合异构输入并解码耦合物理场。在三个逐步复杂的工程评估中（受限回流、压水堆子通道、紧凑换热器），MIMONet实现了≤5%的相对重建误差，并在NVIDIA H200上以亚毫秒级推理生成全场预测，比传统高保真CFD模拟快至少五个数量级，在换热器案例中展示了校准的不确定性和噪声鲁棒性。在三个独立真实世界数据集上验证：氢燃料电池电流密度映射、气象塔风速剖面和北大西洋海洋状态。MIMONet比经典虚拟传感基线改进72–84%：燃料电池内部场恢复（10%传感器覆盖）提升84%，轮毂高度风速恢复提升83%。尤其值得注意的是，它从观测到的温度-盐度耦合中恢复了无直接传感器的海面高度，误差比最佳经典预测器低4.1倍，实现了经典插值无法企及的跨模态场恢复。这些结果确立了基于算子的虚拟传感作为无法直接测量关键状态系统的实时场可观测性的实用途径。<br><b>数据</b>：工程模拟和真实世界数据集（燃料电池、气象塔、海洋再分析）；<b>方法</b>：神经算子MIMONet；<b>结论</b>：高精度实时重建不可达场，跨模态恢复能力显著。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Single-fiber hyperspectral imaging via nanophotonic disordered dispersion</section>
+            <section class="paper-authors">Yuchen Ma, Jiachen Wu, Chang-Yin Ji, Liangcai Cao, Guangwei Hu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-026-77550-9" target="_blank">https://doi.org/10.1038/s41467-026-77550-9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">高光谱成像</span>
+                        <span class="topic-tag">纳米光子</span>
+                        <span class="topic-tag">光纤传感</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-026-77550-9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究展示了一种通过纳米光子无序色散实现单光纤高光谱成像的方法。在光纤远端使用无序色散编码器，将高维光谱-角度信息映射为一维光谱测量，再通过稀疏约束重建进行计算解码。无序色散利用非局域纳米光子结构，支持高模式密度和多模耦合，从而实现低相关性压缩编码。系统在±60°视场内实现角度重建，光谱检测范围为400–700nm，并具备对光纤扭曲的鲁棒性。这项工作规避了传统高光谱相机所需的实空间像素化编码器或探测器，为兼容柔性单光纤探头的超紧凑高维成像器提供了途径。该技术有望应用于大气环境遥感中的空气质量监测和成分分析等领域，因其紧凑、灵活的设计适合现场探测。<br><b>数据</b>：实验验证（光谱和角度重建）；<b>方法</b>：无序色散编码与稀疏约束解码；<b>结论</b>：单光纤实现高光谱成像，抗畸变且结构紧凑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Assimilation of SWOT Water Surface Elevation Enhances Simulations of River Dynamics in the Ohio River Basin</section>
+            <section class="paper-authors">Yeosang Yoon, Augusto Getirana, Sujay V. Kumar, Elyssa Collins, Jerry W. Wegiel</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL122610" target="_blank">https://doi.org/10.1029/2026GL122610</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">SWOT</span>
+                        <span class="topic-tag">数据同化</span>
+                        <span class="topic-tag">河流动力学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL122610" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究评估了将SWOT卫星提供的水面高程（WSE）数据同化到大尺度水文模型中，以提高河流动力学模拟的准确性。以俄亥俄河流域为研究区域，采用集合卡尔曼滤波方法，并测试了河网感知的局地化方案。结果表明，在66个USGS水文站中，大部分站点（约60%）的流量模拟技能得到提升，KGE值提高，仅约3%下降，包括那些无SWOT直接过境的站点，说明同化效果超出了直接观测范围，局地化进一步带来增益。影响受质量控制、观测残差不确定性和河网背景的传递约束。与27个重叠站点的SWOT反演流量对比提供了互补验证，支持将WSE作为直接水动力约束。研究证明在真实世界约束下，SWOT WSE同化能改善流量估计，对数据稀少和跨境流域的水资源管理有重要意义。<br><b>数据</b>：SWOT节点级WSE和USGS实测流量；<b>方法</b>：集合卡尔曼滤波数据同化；<b>结论</b>：同化提升流量模拟技能，局地化有效。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Resonance-enhanced integrated acousto-optic beam steering</section>
+            <section class="paper-authors">Yue Yu, Qixuan Lin, Shucheng Fang, Joseph G. Thomas, Yibing Zhou, Zichen Xi, Jun Ji, Yizheng Zhu, Linbo Shao, Bingzhao Li, Mo Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Communications</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41467-026-77864-8" target="_blank">https://doi.org/10.1038/s41467-026-77864-8</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">声光偏转</span>
+                        <span class="topic-tag">集成光学</span>
+                        <span class="topic-tag">光束转向</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41467-026-77864-8" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文介绍了一种集成声光光束转向技术，在薄膜铌酸锂平台上结合光学环形谐振器，显著提升光束转向效率和系统功能。所实现器件达到最高26%的谐振增强光束转向效率和18°的视场。通过集成电光控制，动态锁定环形谐振器至啁啾激光频率，实现了调频连续波激光雷达测距操作。该工作结合了铌酸锂的压电和电光特性，建立了一个紧凑、高效、可扩展的光束转向平台，集成了声光调制和电光控制，面向多功能应用。该技术在自由空间光通信、传感和成像方面具有潜力，并可通过提高遥感传感器的扫描效率和信号处理能力，间接支持大气环境遥感（如空气质量监测、气溶胶反演）中的光学遥感应用。<br><b>数据</b>：器件性能测试（效率、视场）；<b>方法</b>：谐振腔增强声光转向与电光锁定；<b>结论</b>：实现高效谐振增强转向，并支持FMCW激光雷达。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Co‐Occurring Weather Systems Vary by Atmospheric River Scale Across the United States</section>
+            <section class="paper-authors">Diya Kamnani, Travis A. O’Brien, Wei‐Ming Tsai, Kwesi Twentwewa Quagraine, J. David Neelin, Jennifer L. Catto, Yang Zhou, L. Ruby Leung, William R. Boos, Hongsheng Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL123975" target="_blank">https://doi.org/10.1029/2026GL123975</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气河流</span>
+                        <span class="topic-tag">天气系统共现</span>
+                        <span class="topic-tag">极端降水</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL123975" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文研究了大气河流（ARs）与美国境内其他天气系统（锋面、低压系统LPS、中尺度对流系统MCS）的时空重叠特征，使用ERA5再分析数据生成的特征掩膜和卫星数据，量化了不同AR强度尺度下的共现模式。结果显示，AR+锋面组合在大陆大部分地区占主导；在较高AR等级（4-5级）中，涉及MCS的复杂组合在冬季和春季（DJF、MAM）以及西海岸更为常见，而LPS相关共现主要出现在夏季和秋季（JJA、SON），局限于墨西哥湾和太平洋近海生成区。内陆西部某些区域以纯AR事件为主。极端降水呈现季节变化，不同季节由不同共现系统贡献。该研究揭示了AR与其他天气系统的相互作用随尺度和区域的变化规律，有助于改进极端降水的预测和灾害风险评估。<br><b>数据</b>：ERA5特征掩膜与卫星数据；<b>方法</b>：时空重叠统计；<b>结论</b>：复杂共现系统在高等级AR中更频繁，区域性差异显著。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global Projections of Coral Reef Sediment Dissolution in the 21st Century</section>
+            <section class="paper-authors">Tingli Yan, Li‐Qing Jiang, Xianxun Li, Leilei Jiang, Shuzhen Song, Ning Zhao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL125720" target="_blank">https://doi.org/10.1029/2026GL125720</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋酸化</span>
+                        <span class="topic-tag">珊瑚礁</span>
+                        <span class="topic-tag">碳循环</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL125720" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文结合地球系统模型在五种排放路径下的预测与文石饱和度-溶解关系，模拟了至2100年全球珊瑚礁沉积物的溶解情况。在严格减缓情景下，到2100年仅有不到2%的珊瑚礁面积发生溶解；中等排放情景下为30%；高排放情景下几乎所有珊瑚礁都面临溶解。累计碳酸钙损失在高排放路径下达25亿吨，伴随0.7亿吨潜在二氧化碳吸收，虽全球尺度上可忽略，但表明珊瑚礁结构退化。模型得出的文石饱和度在多数地区高于实地观测，提示实际溶解可能比网格化预测更早发生。南中太平洋被视为酸化避难所，需进行珊瑚礁尺度评估。持续高排放可能使珊瑚礁从净碳酸盐沉积转向广泛的结构损失。<br><b>数据</b>：地球系统模型输出和原位观测对比；<b>方法</b>：排放情景模拟与饱和度-溶解关系；<b>结论</b>：高排放将导致大面积珊瑚礁溶解和结构退化。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Capturing Typhoon Rapid Intensification and Abrupt Recurvature Using an IAU‐Based 4DVar Scheme</section>
+            <section class="paper-authors">Siqi Chen, Liwen Wang, Yongzhu Liu, Jiandong Gong, Banglin Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL122470" target="_blank">https://doi.org/10.1029/2026GL122470</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">数据同化</span>
+                        <span class="topic-tag">台风预报</span>
+                        <span class="topic-tag">4DVar</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL122470" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文检验了基于增量分析更新（IAU）的四维变分（4DVar）数据同化方案在预报2023年台风杜苏芮和卡努的快速增强（RI）和突然转向方面的效果。通过减少spin-up影响，IAU方案的平均路径误差稳定在60公里以下，强度预报误差相比控制实验始终减小。机理上，改进源于对分裂副热带高压和台风内部非对称动力结构的更优表征，导致关键引导气流修正。在72小时预报时效内，对强降水（≥50mm）的预报技巧相对提高了60%，表明改进热带气旋初始化对强降水预报具有潜在益处。<br><b>数据</b>：2023年两个台风的观测和同化资料；<b>方法</b>：IAU-based 4DVar同化方案与传统方案对比；<b>结论</b>：IAU方案显著改善路径和强度预报，并提升强降水预报技巧。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Dampened Diurnal Cycles of Hot‐Wet Extremes in Urban Areas Contrast With Thermally Driven Daytime Stress in Rural Landscapes of Beijing‐Tianjin‐Hebei Region</section>
+            <section class="paper-authors">Hanxu Jiang, Boqi Liu, Shuangmei Ma</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL123910" target="_blank">https://doi.org/10.1029/2026GL123910</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热湿极端</span>
+                        <span class="topic-tag">城市热岛</span>
+                        <span class="topic-tag">湿球温度</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL123910" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用2016–2024年夏季京津冀地区1962个自动气象站的观测数据，识别超过阈值的热湿极端事件（HWEs），并分析城市与农村的昼夜差异。结果显示，城市区域经历更多的全天（昼夜连续）和独立夜间热湿极端事件，而农村区域更多受独立白天事件影响，近年来夜间极端事件尤为突出。对湿球温度（Tw）进行热力学分解发现，温度主导昼夜Tw变率（>60%），但城市具有减弱的昼夜热振幅和更大的夜间相对湿度贡献（约36%）。这表明城市夜间湿热风险与相对湿度调节关系更密切，而非绝对湿度，强调在城市热风险缓解中需同时关注夜间湿度条件和降温措施。<br><b>数据</b>：1962个自动站2016–2024年夏季观测；<b>方法</b>：阈值识别和热力学分解；<b>结论</b>：城市夜间湿热更多由相对湿度调节，需重视夜间湿度。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">What Controls Extreme Rainfall Intensity and Location Associated With Line‐Shaped MCSs Over Northern Japan? An Ensemble‐Based Approach</section>
+            <section class="paper-authors">Ryotaro Tahara, Yusuke Hiraga</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD047391" target="_blank">https://doi.org/10.1029/2026JD047391</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">极端降雨</span>
+                        <span class="topic-tag">中尺度对流系统</span>
+                        <span class="topic-tag">水汽输送</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD047391" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文通过对流可分辨集合模拟研究日本北部两个线状中尺度对流系统（MCS）的极端降雨强度和位置的环境控制因素。根据降水强度和位置对集合成员分类，并比较相应的热力和动力环境场。结果表明，降水强度主要由降水区附近的水汽输送量和辐合强度控制；而降水位置则由水汽输送路径和辐合形成位置决定。这些差异与气压场配置有关，尤其是停滞在降水区上游侧的天气尺度低压系统的演变和位置。低压系统靠近降水区会增强低层风、水汽辐合和上升运动，有利于更强降水；低压系统的相对位置也决定了水汽输送路径和辐合位置，从而控制降水发生区域。研究强调准确表示中尺度气压系统的强度和位置对提高预报技能至关重要，并指出分析降水位移因素对流域尺度水文风险评估的必要性。<br><b>数据</b>：对流可分辨集合模拟输出；<b>方法</b>：成员分类和环境场对比；<b>结论</b>：水汽输送强度控制降雨强度，水汽输送路径控制降雨位置。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Ecological and Hydrological Modulation of Land Surface Temperature in the East Asian Monsoon Margin During Pliocene‐Pleistocene Global Cooling</section>
+            <section class="paper-authors">Chen Chen, Hanzhi Zhang, Huayu Lu, Cheng Zhao, Yuqiang Zeng, Jian Yu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124338" target="_blank">https://doi.org/10.1029/2026GL124338</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">古气候</span>
+                        <span class="topic-tag">地表温度</span>
+                        <span class="topic-tag">生态水文</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124338" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用渭河盆地的同生风成沉积物和水生影响的冲积沉积物，通过脂质生物标志物定量重建了上新世-更新世期间的地表温度，以探讨陆地气候对全球变冷的响应。采用源亲和分类器模型验证冲积扇沉积物的变化不会混淆重建的古温度趋势。结果显示，在4.5–2.7 Ma期间持续降温，与全球温度下降一致，随后在早期更新世发生温度反弹，尽管全球仍在变冷。结合区域植被和湿度记录，提出生态-水文耦合反馈以及湖泊热缓冲减弱可能是温度反弹的主要驱动因素。生态-水文调节迫使区域地表反馈逐步抵消背景降温趋势。该研究揭示了陆地生态系统与水文过程对气候变化的复杂调控作用。<br><b>数据</b>：脂质生物标志物和沉积物分类；<b>方法</b>：古温度定量重建与反馈分析；<b>结论</b>：生态-水文反馈导致早期更新世温度反弹。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Beyond Green Cover: Links Between Greenspace Morphology, Configuration, and Heat‐Related Illness in Arizona</section>
+            <section class="paper-authors">Huaqing Wang, Shujuan Li, Simin Gholami, Joseph Hoover, Mackenzie Waller, Kacey Ernst</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">GeoHealth</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GH001978" target="_blank">https://doi.org/10.1029/2026GH001978</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">绿地形态</span>
+                        <span class="topic-tag">热相关疾病</span>
+                        <span class="topic-tag">城市健康</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GH001978" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究使用2016–2023年亚利桑那州2427个普查区组的191021个区组年观测数据（非平衡面板），基于1米高分辨率国家农业影像计划（NAIP）航空影像，量化绿地形态（覆盖率、斑块数量、平均面积、形状复杂度、连通性和距离）与热相关疾病的关系。采用条件空间自回归模型（负二项分布），调整社会人口和地理协变量，并进行敏感性分析。结果显示，较高的绿地覆盖率、聚集度、形状复杂度、连通性和密度与较低的热相关疾病风险显著相关。例如，形状复杂度增加一个标准差对应预期热相关疾病计数下降12.4%（IRR=0.876），绿地覆盖率增加一个标准差下降14.6%（IRR=0.855）。相反，绿地间距离增大与风险增加相关（IRR=1.061）。这些关联在控制局部气候和总体绿地面积后依然稳健。研究强调绿地规划不仅要考虑数量，还需关注空间配置以最大化降温和健康效益。<br><b>数据</b>：NAIP航空影像和健康记录；<b>方法</b>：空间自回归负二项模型；<b>结论</b>：绿地形态多维度影响热相关疾病，配置比数量更重要。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
