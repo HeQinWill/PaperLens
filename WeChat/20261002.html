@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/10/02</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Committed Antarctic Ice Sheet mass loss by the end of the twenty-first century</section>
+            <section class="paper-authors">Yucheng Lin, Xuebin Zhang, Nicholas R. Golledge, Robert E. Kopp, John A. Church, Yi Jin, Chen Zhao, Chris R. Stokes</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Geoscience</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41561-026-02102-1" target="_blank">https://doi.org/10.1038/s41561-026-02102-1</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">南极冰盖质量损失</span>
+                        <span class="topic-tag">机器学习仿真</span>
+                        <span class="topic-tag">海平面上升预测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41561-026-02102-1" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文采用<b>机器学习仿真框架</b>并结合<b>卫星观测数据的贝叶斯校准</b>，定量评估了南极冰盖在21世纪末的质量损失及其对海平面上升的贡献。研究系统量化了大气-海洋模式、冰盖动力学及融化参数化等假设引入的不确定性。结果表明，即使在激进的减排情景下，南极冰盖在21世纪发生<b>质量损失的概率仍≥0.92</b>，即损失已不可避免。高排放情景将显著增加损失幅度（概率≥0.89），在极高排放下，到2100年南极冰盖可能导致高达<b>25.4厘米的海平面上升</b>（中位数为15.7厘米）。研究强调，迅速减排虽不能完全阻止冰盖退化，但能有效限制损失幅度，为沿海风险管理提供关键约束。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Weather station data from the Mount Everest region, Nepal: 3810–8810 m above sea level</section>
+            <section class="paper-authors">Arbindra Khadka, Lester Baker Perry, Tom Matthews, Tenzing Gyalzen Sherpa, Chitra Bahadur Shrestha, Dibas Shrestha, Deepak Aryal, Subash Tuladhar, Niraj Pradhananga, Dinkar Kayastha, Brian Raichle, Peter Athans, Dawa Yangzum Sherpa, Keith Garrett, Garrett Wheeler, Tom Young, Aurora Elmore</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-18-7253-2026" target="_blank">https://doi.org/10.5194/essd-18-7253-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">自动气象站</span>
+                        <span class="topic-tag">珠穆朗玛峰气象观测</span>
+                        <span class="topic-tag">ERA5再分析数据对比</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-18-7253-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文发布了2019至2025年间在尼泊尔珠穆朗玛峰地区建立的<b>高海拔自动气象站（AWS）网络</b>的质量控制气象数据集。该网络覆盖从海拔3,810米（Phortse）至8,810米（Bishop Rock）的六个观测站点，提供了气温、湿度及风速等关键<b>气象要素的高分辨率观测数据</b>。研究对比了南坳站点（South Col）观测值与广泛使用的<b>ERA5再分析数据</b>，揭示了两者在极端高海拔条件下的偏差与差异。研究强调，这些高空实测数据填补了极端环境气候观测的空白，对于深刻理解高山气象变化机制、校验气候模式以及评估下游“亚洲水塔”水资源安全具有无可替代的科学价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">An Arctic climatology of particle number size distributions and cloud condensation nuclei during warm and moist intrusions</section>
+            <section class="paper-authors">Berkay Dönmez, Jakob Boyd Pernov, Romanos Foskinis, Radiance Calmer, Paraskevi Georgakaki, Hélène Angot, Eija Asmi, John Backman, Tak Chan, Radovan Krejci, Peter Tunved, Andreas Massling, Henrik Skov, Alfred Wiedensohler, Athanasios Nenes, Julia Schmale</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01461-1" target="_blank">https://doi.org/10.1038/s41612-026-01461-1</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋叶绿素水华</span>
+                        <span class="topic-tag">大气环流调制</span>
+                        <span class="topic-tag">地球系统模型模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01461-1" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文通过观测数据分析与<b>叶绿素互动式地球系统模型</b>模拟，揭示了高纬度北大西洋浮游植物水华对欧洲陆地生态系统初级生产力的跨界调控机制。研究发现，在水华繁盛年份，<b>叶绿素色素吸收更多短波辐射</b>，导致晚夏混合层海表温度升高，在水华区形成高压并使欧洲上方气压降低。这种气压梯度增强了携带水汽的西风带，使欧洲中部降水增多，生长季<b>总初级生产力（GPP）增加约15%–20%</b>。当模型中叶绿素被固定为常数时，该陆地生产力响应基本消失。研究首次证实了海洋生物活动可以通过调制<b>大气环流</b>直接影响陆地生态系统生产力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Inferring European fossil fuel CO2 emissions  using TROPOMI NO2 data and sector-based  NOx : CO2 emission ratios</section>
+            <section class="paper-authors">Chlöe N. Schooling, Liang Feng, Ingrid Super, Paul I. Palmer</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-13743-2026" target="_blank">https://doi.org/10.5194/acp-26-13743-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">TROPOMI卫星</span>
+                        <span class="topic-tag">二氧化碳排放反演</span>
+                        <span class="topic-tag">集合卡尔曼滤波</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-13743-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文针对化石燃料二氧化碳（ffCO₂）排放难以直接从大气观测中分离的问题，提出了一种<b>卫星驱动的数据同化框架</b>。研究将2021年<b>TROPOMI卫星观测的二氧化氮（NO₂）</b>数据通过<b>集合卡尔曼滤波（EnKF）</b>同化至GEOS-Chem大气传输模型中，并结合基于行业部门的NOx:CO₂排放比，间接推算欧洲地区的ffCO₂排放。结果显示，该方法使欧洲ffCO₂总排放的不确定性从先验的5.6%降低至后验的3.3%，模型与观测的相关性提高了0.12。推算的后验排放展现出更强的季节性（秋冬季较高）及空间集中性，部分国家化石燃料CO₂排放增加了20%–91%，且与地面实测及EDGAR清单具有更好的一致性。这为构建基于卫星数据的温室气体监测与校验系统奠定了基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Rapid urban land uplift enhanced by crustal faults during groundwater recovery</section>
+            <section class="paper-authors">Saho Fukunishi, Jesse Kearse, Yoshihiro Kaneko, Sylvain Barbot</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-03915-z" target="_blank">https://doi.org/10.1038/s43247-026-03915-z</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">城市-暴雨相互作用</span>
+                        <span class="topic-tag">极端降水机制</span>
+                        <span class="topic-tag">热岛与大气动力学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-03915-z" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文综述了<b>城市与极端降雨协同演化</b>的研究进展，综合分析了观测、理论和数值模拟证据，系统探讨了城市对暴雨过程的调制机制与尺度效应。综述指出，城市并非仅仅是被动接受天气变化的受体，其密集的建筑群和人类活动通过<b>改变下垫面粗糙度、热岛效应及气溶胶排放</b>，积极地重塑大气动力学过程，进而增强短历时极端降水。论文提出了城市-暴雨协同演化的理论框架，并评估了城市扩展对城市排水防涝、水资源管理和生态安全的连锁风险。最后，作者明确了未来将<b>城市-风暴相互作用</b>纳入归因分析、未来气候投影及城市韧性规划中的优先方向。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Reduced Longwave Absorption of Magnesium Sulfate Aerosol as an Alternative to Sulfuric Acid for Stratospheric Aerosol Injection</section>
+            <section class="paper-authors">A. Odelskii, S. Malashevich, V. Shahabadi, N. R. VanDerZwan, A. Bain, J. F. Davies, T. C. Preston</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124986" target="_blank">https://doi.org/10.1029/2026GL124986</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">平流层气溶胶注入</span>
+                        <span class="topic-tag">硫酸镁气溶胶</span>
+                        <span class="topic-tag">长波辐射强迫</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124986" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文评估了将<b>硫酸镁（MgSO₄）气溶胶</b>作为平流层气溶胶注入（SAI）中传统硫酸（H₂SO₄）替代方案的可行性。研究利用<b>单粒子光学捕获技术</b>测量了MgSO₄在降低至-50°C过程中的相变与折射率，发现其保持为凝胶相；并通过实测红外光谱常数分析了其光学特性。结果表明，凝胶相MgSO₄缺乏硫酸中强的氢键网络，因此其<b>红外长波吸收能力</b>远低于硫酸。<b>辐射传输计算</b>显示，MgSO₄与H₂SO₄具有相似的短波冷却强迫，但MgSO₄产生的长波加热强迫几乎可忽略不计。因此，在亚微米粒径范围内，单位气溶胶质量的硫酸镁能够提供比硫酸更强的净冷却效应，是缓解全球变暖更具潜力的气溶胶选项。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Tropospheric OH and its trends: new insight into atmospheric processes and implications for methane lifetime</section>
+            <section class="paper-authors">Xuewei Hou, Ryan Hossaini, Oliver Wild, Andrea Mazzeo, Richard J. Pope, Ye Wang, Siyuan Wang, Yuanhong Zhao, James Lee, Bin Zhu, Tianliang Zhao, Alok K. Pandey</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-13767-2026" target="_blank">https://doi.org/10.5194/acp-26-13767-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">羟基自由基</span>
+                        <span class="topic-tag">大气化学传输模型</span>
+                        <span class="topic-tag">甲烷寿命</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-13767-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用<b>FRSGC/UCI大气化学传输模型</b>，定量评估了2000至2017年间排放、气象及化学过程变化对对流层<b>羟基自由基（OH）</b>浓度及其趋势的影响。研究将模型模拟的臭氧和二氧化氮与<b>卫星观测数据</b>进行了对比验证，发现模拟与观测一致性良好，但一氧化碳的偏差可能导致对OH趋势估算的不确定性。定量分析表明，引入水汽紫外吸收、异相反应以及更新OH+NO₂反应速率常数后，全球对流层OH平均浓度分别下降了3.6%、5.8%和7.0%，使<b>甲烷大气寿命</b>增加了4.2%–8.4%；此外考虑海洋乙醛（CH₃CHO）排放使OH减少1.5%。研究揭示了大气氧化能力变化的时空异质性，为深入理解对流层化学及评估全球甲烷消长提供了定量依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">North Atlantic chlorophyll blooms modulate European hydroclimate and terrestrial productivity</section>
+            <section class="paper-authors">Young-Min Yang, Jae-Heung Park, Jong-Yeon Park, Soon-Il An, Jong-Seong Kug, Sang-Wook Yeh, Eun-Young Kwon, June-Yi Lee, Bin Wang, Tim Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Communications Earth & Environment</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s43247-026-04018-5" target="_blank">https://doi.org/10.1038/s43247-026-04018-5</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星大地测量</span>
+                        <span class="topic-tag">地下水恢复</span>
+                        <span class="topic-tag">地壳断层水力阻隔</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s43247-026-04018-5" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文结合<b>卫星大地测量技术（InSAR/GPS）</b>与长达数局的地下水观测数据，深入探讨了日本大坂地区地下水恢复引发的城市地表垂直抬升机制。研究观测到该地区地表以高达12毫米/年的速率广泛抬升，且抬升速率在空间上呈现出被断层切割的突变特征。分析表明，<b>地壳断层充当了水力阻隔屏障</b>，限制了地下水的横向流动，导致两侧水头差及地表抬升速率产生剧烈差异；在无已知断层区域的突变甚至揭示了未被发现的隐伏断层。<b>形变数值模型</b>表明主要抬升源位于500米以浅。该研究为理解城市含水层恢复过程中的非均匀地表变形及断层水力特性提供了重要遥感证据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Instrumental Artefacts Can Reverse Apparent Lightning–Climate Trends</section>
+            <section class="paper-authors">Hannes Wieser, Wolfgang Schulz, Georg J. Mayr</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124367" target="_blank">https://doi.org/10.1029/2026GL124367</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">闪电气候趋势</span>
+                        <span class="topic-tag">观测仪器伪影</span>
+                        <span class="topic-tag">气象再分析重建</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124367" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用奥地利30余年（1992–2024年）的<b>闪电观测记录</b>，揭示了检测技术更新产生的<b>仪器伪影</b>如何颠覆真实的闪电–气候变化趋势。原始观测记录显示地闪（CG）次数显著下降，但基于<b>气象再分析驱动重建模型</b>的分析却证实了地闪发生率呈现强劲的上升趋势，且阿尔卑斯山区的增加最为显著。交叉验证表明，探测硬件和软件的升级（而非实际大气变率）是导致未修正记录产生虚假下降信号的主因。由于全球多个闪电观测网及卫星闪电传感器均经历过类似技术变革，这种偏差可能普遍存在。研究提出的重建方法仅需短期的稳定参考数据，为校正全球闪电观测偏差提供了重要手段。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Global Changes in Precipitation Concentration Through Consecutive Event Organization</section>
+            <section class="paper-authors">Jiajia Su, Chiyuan Miao, Jinlong Hu, Jiachen Ji, Yunmeng Zhao, Jiaojiao Gou</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth's Future</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026EF008471" target="_blank">https://doi.org/10.1029/2026EF008471</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">极端降水事件</span>
+                        <span class="topic-tag">降水时间不均匀性</span>
+                        <span class="topic-tag">全球降水站点分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026EF008471" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文基于全球19,183个地面气象站1980至2022年的<b>每日降水观测数据</b>，从连续降水事件组织的角度定量评估了全球降水浓缩度的变化趋势。研究定义了<b>WE50</b>（贡献年降水量50%的连续最强降水事件的总持续天数）及<b>WE50_event</b>（对应事件数）。结果显示，全球平均WE50为27.8天，WE50_event为9.4个事件，欧洲地区数值最高。趋势分析表明，全球45.7%的站点WE50呈显著下降趋势，表明<b>降水时间集中度增加</b>。进一步分解表明，WE50的下降主要源于连续降水事件持续时间的缩短。该研究揭示了全球变暖背景下降水事件更加不均匀和集中化的新规律，对防洪减灾有重要警示意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Diminished Radiative Cooling With Northward Wildfire Advance in the East Siberian Boreal Region</section>
+            <section class="paper-authors">Michael M. Loranty, Elizabeth E. Webb, Anna C. Talucci, Heather D. Alexander</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL125497" target="_blank">https://doi.org/10.1029/2026GL125497</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">野火北移</span>
+                        <span class="topic-tag">地表反照率</span>
+                        <span class="topic-tag">辐射强迫效应</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL125497" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文评估了东西伯利亚<b>针叶林野火北移</b>对火后地表反照率及<b>辐射强迫</b>的定量影响。研究分析了火后约二十年间的遥感观测数据，对比了不同纬度带的辐射冷却效应。结果显示，在北纬55–60°发生的野火，火后平均辐射强迫为 -1.45 ± 0.56 W m⁻²（显着冷却）；而在北纬65–70°发生的野火，火后辐射强迫仅为 -0.37 ± 0.74 W m⁻²，冷却效应大幅减弱。这种差异主要是由于高纬度地区<b>树木覆盖率较低</b>且火后植被恢复轨迹不同所致。该研究强调，随着西伯利亚野火向北极圈扩展，原本作为负反馈机制的火后反照率冷却效应正显著减弱，这对高纬度气候反馈模式有深远影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">How Well Can the Surface Water and Ocean Topography (SWOT) Satellite Mission Observe Irrigation Canals?</section>
+            <section class="paper-authors">Mridul Sharma, Faisal Hossain, Sarath Suresh, Tamlin Pavelsky, Sanchit Minocha, Shahzaib Khan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124090" target="_blank">https://doi.org/10.1029/2026GL124090</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">SWOT卫星</span>
+                        <span class="topic-tag">灌溉运河观测</span>
+                        <span class="topic-tag">水位遥感监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124090" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文首次系统评估了<b>地表水和海洋地形（SWOT）卫星任务</b>对亚洲22个国家灌溉运河网的监测能力。研究提出了一种全新的<b>置信度（CL）指标</b>，对总长约79.5万公里的运河进行了可观测性分类，并通过原位水位计数据验证了该指标——结果表明高置信度对应着极低的水位检索误差。分析显示，约37.5%的运河具备高可观测置信度，46.9%为中等置信度，仅15.6%为低置信度；可观测性最高的区域集中于印度河流域、印度河-恒河平原、华北平原及湄公河三角洲等集约灌溉区。该研究证明了SWOT卫星在补充传统水文观测、提升<b>农业水资源遥感监测</b>与管理能力方面的巨大应用潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Mapping agricultural dynamics in displacement-affected landscapes using satellite foundation model embeddings</section>
+            <section class="paper-authors">Abena Boatemaa Asare-Ansah, Jamon Van Den Hoek, Adebowale Daniel Adebayo, Xiao-Peng Song, Catherine Nakalembe</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/aeabbc" target="_blank">https://doi.org/10.1088/1748-9326/aeabbc</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">卫星遥感基础模型</span>
+                        <span class="topic-tag">农田动态监测</span>
+                        <span class="topic-tag">机器学习分类</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/aeabbc" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用<b>卫星基础模型嵌入（AlphaEarth）</b>和<b>随机森林机器学习算法</b>，对乌干达北部难民安置区2017至2024年间的<b>高分辨率农田动态</b>进行了首次定量评估。研究结合了样本精度评估与面积估计调整，并采用<b>线性混合效应模型</b>分析了距离难民营边界距离、降水和气温异常等驱动因素。结果表明，整体分类准确率达到0.75-0.87。农田面积呈现剧烈波动：2017-2019年快速扩张，2020年因疫情与洪涝收缩，2022年达到峰值（44.78万公顷），而2024年因援助削减与干旱大幅下降。驱动因素分析表明，农田覆盖率随距难民营距离增加而明显下降，且与<b>降水异常</b>呈显著正相关。该研究为脆弱地区的土地规划与粮食安全评估提供了强有力的遥感数据支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Record‐Breaking Humid Heat in Northern China During Summer 2025 Driven by Kuroshio–Oyashio Extension SST Anomalies</section>
+            <section class="paper-authors">Wenyue He, Huopo Chen, Zhicong Yin, Fei Xie</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124050" target="_blank">https://doi.org/10.1029/2026GL124050</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">极端湿热事件</span>
+                        <span class="topic-tag">黑潮-亲潮延伸体</span>
+                        <span class="topic-tag">海温异常与环流</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124050" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文针对2025年夏季中国北方发生的破纪录<b>极端湿热事件</b>（6月24日至7月13日），探讨了其形成的大气环流异常与海气相互作用机制。研究结合了诊断分析与<b>社区大气模型第5版（CAM5）</b>敏感性数值模拟。结果表明，<b>黑潮-亲潮延伸体（KOE）区域</b>显著的正海表温度（SST）异常增强了向上湍流热通量，削弱了对流层低层的南北温度梯度与斜压性，抑制了瞬变涡旋活动。瞬变涡旋涡度强迫的减少维持了KOE及北方上空持续的正位势高度异常，进而促进了热量和水汽的聚集。研究揭示了海洋热异常驱动中国北方极端湿热的新机制，对气候预测具有重要价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Climate Change Induced Seasonal Amplification of the Indian Ocean CO2 Sink</section>
+            <section class="paper-authors">A. P. Joshi, Kunal Chakraborty, V. V. S. S. Sarma, Prasanna Kanti Ghoshal, B. Sridevi, Zouhair Lachkar</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL123472" target="_blank">https://doi.org/10.1029/2026GL123472</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">印度洋碳汇</span>
+                        <span class="topic-tag">海洋二氧化碳分压</span>
+                        <span class="topic-tag">季节性振幅放大</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL123472" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用长时间序列（1980–2019年）高分辨率<b>观测约束海表pCO₂数据产品</b>，深入探讨了印度洋（IO）海洋碳吸收均值与季节态的变化特征。研究发现，阿拉伯海的二氧化碳通量季节振幅下降了约14%，作为碳源的强度有所减弱；而<b>赤道印度洋</b>的季节振幅增幅最大（约48%），南印度洋增加约23%，孟加拉湾增加约7%。驱动机制分析表明，阿拉伯海和孟加拉湾的振幅变化受<b>风速通量敏感性</b>与海-气pCO₂梯度共同控制，而赤道及南部海域则主要由海-气pCO₂梯度的变化驱动。研究揭示了气候变化对印度洋碳汇 seasonal 调控的放大效应，对准确评估全球海洋碳循环具有重要价值。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The WoKaS-Iso database: workflow for a global  compilation of oxygen-18 and deuterium  records in karst springs and cave drip water  for enhanced understanding of karst systems</section>
+            <section class="paper-authors">Yining Zang, Pauline C. Treble, Kei Yoshimura, Jayson Gabriel Pinza, Fengbo Zhang, Kübra Özdemir Çallı, Xiaojun Mei, Admin Husic, Alena Gessert, Andrej Stroj, Bartolomé Andreo, Bernard Ladouche, Christine Stumpp, Diana Mance, Eleni Zagana, Fen Huang, Giuseppe Sappa, Harald Kunstmann, Heike Brielmann, Hong Zhou, Huaying Wu, Jakob Garvelmann, James Berglund, Jean-Baptiste Charlier, Jens Lange, Juan Antonio Barberá Fornell, Junbing Pu, Konstantina Katsanou, Kun Ren, Laura Toran, Laurence Gill, Maria Filippini, Martin Kralik, Matías Mudarra Martínez, Min Zhao, Mingming Luo, Nico Goldscheider, Nikolaos Lambrakis, Pantaleone De Vita, Qiong Xiao, Shi Yu, Silvia Iacurto, Silvio Coda, Ted McCormack, Vincenzo Allocca, W. George Darling, Walter D'Alessandro, Xulei Guo, Yundi Hu, Zhijun Wang, Eva Kaminsky, Jiří Faimon, Marek Lang, Pavel Pracný, Aurel Persoiu, Andreas Hartmann</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-18-7199-2026" target="_blank">https://doi.org/10.5194/essd-18-7199-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">稳定同位素数据库</span>
+                        <span class="topic-tag">喀斯特水文</span>
+                        <span class="topic-tag">洞穴滴水</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-18-7199-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文介绍了首个全球<b>喀斯特泉水与洞穴滴水稳定同位素数据库（WoKaS-Iso）</b>的构建工作流程与数据集特征。该数据库汇集了1967至2024年间全球241个泉口和74个洞穴（共365个滴水点）的1007条<b>氧-18（δ¹⁸O）和氘（δ²H）时间序列数据</b>，涵盖了中国、美国、欧洲等核心喀斯特地质区。其中绝大多数数据具备小于月度的超高时间分辨率，并集成了泉水流量、滴水速率、降水量及降水同位素等环境变量。研究表明，该数据库克服了以往同位素分析成本高、跨区域对比难的问题，能够显著提升对包气带与含水层动态的理解。该系统化的数据积累为<b>喀斯特水文过程建模</b>及全球地下水可持续管理提供了关键的基础数据支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A tri‑basin matching index improves Indian Summer Monsoon Rainfall predictability</section>
+            <section class="paper-authors">Shi-Yun Yu, Rong-Hua Zhang, Lei Fan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01553-y" target="_blank">https://doi.org/10.1038/s41612-026-01553-y</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">印度夏季季风</span>
+                        <span class="topic-tag">海温异常匹配指数</span>
+                        <span class="topic-tag">经验正交函数分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01553-y" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文提出了一种<b>三洋盆匹配指数（MI）</b>及其<b>经验正交函数分析（MI–EOF）框架</b>，旨在突破传统线性预测模式的局限，提升印度夏季季风降雨（ISMR）的可预测性。研究将归一化ISMR与海表温度异常的点积相结合，识别出三种非平稳的海-气耦合体制：ENSO强度、ENSO生命周期及ENSO空间模式。基于这些体制建立的自适应场景重构框架，将ISMR的重建相关系数从传统多元线性回归的0.73提升到了0.83，并在历史记录中保持稳定。研究证明了季风变率本质上依赖于海-气耦合状态，该方法为理解演化中的<b>跨洋盆海气相互作用</b>及改善季风预测提供了新途径。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Decadal Surge in Tibetan Plateau 20–30‐Day Oscillation Intensity (1995–2005) Linked to Summer NAO Structure and Baroclinic Energy Conversion</section>
+            <section class="paper-authors">Meirong Wang, Jun Wang, Anmin Duan, Shunwu Zhou, Zhu Zhu, Xuepeng Cui, Jianying Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD047302" target="_blank">https://doi.org/10.1029/2026JD047302</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">青藏高原季内振荡</span>
+                        <span class="topic-tag">夏季北大西洋振荡</span>
+                        <span class="topic-tag">斜压能量转换</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD047302" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文揭示了1995至2005年间<b>青藏高原（TP）夏季20–30天季内振荡（ISO）</b>强度的年代际激增现象，并阐明了其与<b>夏季北大西洋振荡（SNAO）</b>之间的远程遥相关机制。研究运用<b>能量学诊断方法</b>分析了ISO增长的动力学过程。结果表明，这一时期SNAO处于正相位且位置偏东，促进了罗斯贝波沿欧亚波导向青藏高原中东部传播；SNAO并未直接强迫季内变率，而是通过调制局地动力环境与垂直运动，触发了强烈的<b>斜压能量转换</b>，在对流层上层提供了补充能量。这维持了ISO的垂直一致性与深对流结构，导致高原季内振荡发生频次与强度的年代际突增。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Radiative impacts of a compound dust-and-rain-on-snow event in Michigan’s Upper Peninsula</section>
+            <section class="paper-authors">Alden Adolph, Ben Kopec, Shawn Brueshaber, Ana Dyreson, David Wallis, Nathaniel Miller, Katie Wing, Sam Hotchkiss, Cora Mullins</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/aea7b5" target="_blank">https://doi.org/10.1088/1748-9326/aea7b5</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">辐射传输模型</span>
+                        <span class="topic-tag">雪反照率</span>
+                        <span class="topic-tag">尘埃沉积</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/aea7b5" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文研究了2025年3月美国密歇根上半岛发生的<b>尘埃沉积与雨雪共存（ROS）复合事件</b>对雪层能量平衡和融化过程的影响。研究结合了<b>现场实地观测</b>（包括光谱雪反照率、液态水含量和雪深）与<b>辐射传输建模</b>方法。研究表明，在降雨开始时，宽带反照率迅速下降，从事件前的0.65降至新雪降落前的0.52。当暴露沙尘表面时，沙尘带来的附加<b>辐射强迫</b>（峰值达105 W m⁻²）可在观测的环境条件下导致每天额外增加4.5–7.8毫米水当量的融雪量。该辐射强迫峰值与欧洲阿尔卑斯山的大型沙尘事件相当。这是首次针对此类复合事件辐射效应的定量报道，揭示了沙尘及ROS事件对加速融雪和增加洪涝风险的巨大潜在影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Relativistic runaway electron avalanches: unified  density-dependent scaling and transport</section>
+            <section class="paper-authors">Liza Hovhannisyan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-19-9289-2026" target="_blank">https://doi.org/10.5194/gmd-19-9289-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">相对论逃逸电子雪崩</span>
+                        <span class="topic-tag">CORSIKA模拟</span>
+                        <span class="topic-tag">雷暴电场</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-19-9289-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用<b>CORSIKA蒙特卡洛模拟软件</b>，对四个高海拔观测站点的<b>雷暴电场</b>中相对论逃逸电子雪崩（RREA）的发展及其后续粒子传播进行了深入研究。研究引入了一个<b>大气密度相关项</b>对传统的雪崩长度经验公式进行修正，成功将不同站点和大气条件下的数据拟合判定系数（R²）从约0.90提升至0.99，建立了统一的定标律。此外，研究还对粒子离开电场加速区后的衰减行为进行了评估，区分了电子和伽马射线分量的传输差异，并结合NIST ESTAR阻止本领数据库重新推导了电子-伽马能量系数（C₁≈1.37）。该成果为利用地面与遥感手段准确解读高空高能大气辐射现象提供了精细的物理模型支持。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Heatwaves drive rapid snowmelt and disrupt streamflow in the western United States</section>
+            <section class="paper-authors">Haonan Guo, Siwei He</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/aeac3a" target="_blank">https://doi.org/10.1088/1748-9326/aeac3a</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热浪事件</span>
+                        <span class="topic-tag">积雪融化速率</span>
+                        <span class="topic-tag">水文遥感监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/aeac3a" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文利用2001至2024年美国西部823个<b>雪地遥测（SNOTEL）站点</b>的观测数据，定量评估了<b>热浪</b>对每日融雪速率及随后河流径流的影响。研究发现，约30%的站点在过去24年中经历过热浪，其中98%的站点表现出高于正常水平的<b>融雪速率</b>；热浪将快速融雪的发生概率从约50%提高到了90%以上，且这种加速融雪效应在热浪结束后仍能持续3至5天，以春季最为显著。然而，虽然加速融雪预期会导致径流激增，但实际仅在55%受影响的流域观测到<b>河流径流突增</b>。该研究揭示了热浪对高山积雪与水资源分配的复杂驱动机制，对改进极端气候下的水资源管理和洪水预警具有重要意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Evaluation of a moist-adiabat cloud-top height retrieval for parallax correction of deep convective clouds across Meteosat generations</section>
+            <section class="paper-authors">Andrzej Z. Kotarba</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-6193-2026" target="_blank">https://doi.org/10.5194/amt-19-6193-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">云顶高度反演</span>
+                        <span class="topic-tag">视差校正</span>
+                        <span class="topic-tag">气象卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-6193-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文评估了一种仅依赖<b>11微米红外亮温</b>及湿绝热线多项式近似的<b>深对流云顶高度（CTH）反演算法</b>，旨在为跨越40余年的Meteosat系列气象卫星数据提供统一的<b>视差校正</b>方法。研究通过170万个对流云匹配点，将反演结果与MODIS、CloudSat/CALIPSO雷达 lidar 剖面以及CLAAS-3产品进行了交叉验证。结果显示，原始算法对CTH有所低估（比星载雷达低估2.7 km），但在经过简单回归偏差修正后，绝对误差降至1.2 km以内，相关系数达0.9。在将该算法应用于SEVIRI图像进行视差校正时，84%（考虑不确定性后达97%）的像素地理定位与基于高阶复杂产品的校正结果完全一致，深对流云发生频率差异小于7%。这表明该简化算法能高质、一致地构建长期对流云气候学数据集。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A Geographically Validated Administrative Wildfire Inventory for Türkiye (2013–2025)</section>
+            <section class="paper-authors">Bikem Ekberzade</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2026-701" target="_blank">https://doi.org/10.5194/essd-2026-701</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">野火清单校验</span>
+                        <span class="topic-tag">NASA VIIRS卫星检测</span>
+                        <span class="topic-tag">地理空间纠错</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2026-701" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文展示了一个经过地理校验的<b>土耳其行政野火清单数据库（2013–2025）</b>，旨在解决官方林业记录中常见的拼写与空间坐标错误问题。研究开发了包含五阶段的地理校验工作流程，融合了行政文本标准化、行政区划边界验证、<b>NASA VIIRS卫星火点/热异常检测</b>以及边界距离评估等手段对原始数据进行纠错与空间恢复。对于无法恢复的记录，采用了保守的陆地坐标插补并标明数据来源旗标，确保了统计数据的完整性与透明度。校验后的数据集显著提高了历史野火记录的地理一致性，为<b>遥感火灾产品校验</b>、野火发生规律分析及地球系统模型模拟提供了更为精确可靠的地理基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Co-evolution of cities and extreme rainfall</section>
+            <section class="paper-authors">Long Yang, James Smith, Remko Uijlenhoet, Valéry Masson, Hayley J. Fowler, Dev Niyogi</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Cities</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s44284-026-00530-z" target="_blank">https://doi.org/10.1038/s44284-026-00530-z</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">空间望远镜</span>
+                        <span class="topic-tag">远红外天文学</span>
+                        <span class="topic-tag">遥感观测技术</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s44284-026-00530-z" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文简要报道了新一代<b>远红外空间望远镜</b>项目的规划与进展。远红外波段在大气层内受水汽吸收严重，地面难以观测，因此基于<b>卫星与空间望远镜平台</b>的观测至关重要。远红外观测能够穿透浓密的气体与尘埃云，对于揭示恒星与行星形成过程、分析星际介质的化学成分（如水汽与复杂有机分子）以及评估<b>大气与天体物理环境</b>具有独特优势。随着新的空间望远镜重新打开远红外观测窗口，天文学家与遥感科学家将获得关于高红移星系、冷尘埃辐射及天体大气成分的高分辨率光谱数据，从而极大推动空间遥感技术与深空探测科学的发展。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
