@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/10/08</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Improved estimation of net ecosystem CO2 exchange over North America using LSTM-based flux  upscaling (2001–2021)</section>
+            <section class="paper-authors">Chengcheng Huang, Wei He, Brendan Byrne, Ngoc Tu Nguyen, Jingfeng Xiao, Hua Yang, Philippe Ciais, Songhan Wang, Xing Li, Han Ma, Peipei Xu, Mengyao Zhao, Hui Chen, Weimin Ju</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-18-7367-2026" target="_blank">https://doi.org/10.5194/essd-18-7367-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">LSTM</span>
+                        <span class="topic-tag">碳通量</span>
+                        <span class="topic-tag">卫星观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-18-7367-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究创建了MemoryFlux数据集，利用长短期记忆（LSTM）深度学习网络，结合通量塔测量和卫星地表观测，对2001-2021年北美区域净生态系统碳交换（NEE）进行升尺度估算，空间分辨率为0.1°×0.1°。与现有升尺度估算不同，MemoryFlux正确识别了中西部玉米带在生长旺季为大的季节性碳汇区域，这一特征此前仅被自上而下的研究揭示。MemoryFlux的季节变化与独立大气反演（OCO-2 v10 MIP和CarbonTracker2022）高度相关（r=0.96和0.97）。年均NEE估计为-1.27±0.12 Pg C yr⁻¹，其幅度比现有升尺度估算（-3.30至-1.68 Pg C yr⁻¹）更接近反演结果（-0.83至-0.70 Pg C yr⁻¹）。此外，MemoryFlux捕捉了与六次严重干旱和洪水事件相关的空间NEE异常模式，表明纳入历史预测信息改善了年际变率和气候极端事件空间异常的表示。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Probabilistic tropical cyclone rainfall generator for flood hazard assessment along the U.S. Atlantic and Gulf Coasts</section>
+            <section class="paper-authors">Hanbeen Kim, Gabriele Villarini, Renato Amorim, Norberto C Nadal-Caraballo, Meredith L Carr</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/aeac6f" target="_blank">https://doi.org/10.1088/1748-9326/aeac6f</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热带气旋降雨</span>
+                        <span class="topic-tag">洪水风险评估</span>
+                        <span class="topic-tag">误差模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/aeac6f" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究提出了一种基于误差校正的概率性热带气旋降雨生成器，用于美国大西洋和墨西哥湾沿岸的洪水风险评估。研究以IPET降雨分析模型为基础模型，在113个局部区域应用了包含确定性和随机分量的乘法误差模型。确定性部分通过总体偏差和降雨依赖偏差模型校正系统误差，随机部分则对残差的边际分布和空间依赖性进行建模。结果显示，IPET模型总体偏差从0.7校正至1.07，接近无偏值1。生成的降雨场在空间上合理，径向降雨剖面变异性得到捕捉，82%的径向区间内参考降雨强度落在模拟的90%范围内。该框架具有通用性，可迁移至世界其他地区，并应用于其他热带气旋降雨模型及观测或模拟的热带气旋路径。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Surface temperatures drive strong seasonality in urban reactive carbon emissions</section>
+            <section class="paper-authors">Michael P. Vermeuel, Dylan B. Millet, Róisín Commane, Timothy J. Griffis, Trey A. Maddaleno, Emily B. Franklin, Katelyn L. Richard, Rose K. Rossell, Jeff Peischl, Delphine K. Farmer</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.aef9622" target="_blank">https://doi.org/10.1126/sciadv.aef9622</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">挥发性有机物</span>
+                        <span class="topic-tag">城市空气质量</span>
+                        <span class="topic-tag">季节性排放</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.aef9622" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究结合高分辨率质谱和涡度协方差，量化了纽约城市/郊区站点夏季和冬季的挥发性有机化合物（VOCs）通量。结果显示排放具有强烈季节性：夏季有两次多的VOCs进行地表-大气交换，摩尔和反应性通量比冬季高2至4倍。夏季以挥发性化学产品（VCPs）、植被和住宅的温度依赖排放为主，乙醇单独占总通量的约25%。冬季温度依赖排放减少，交通源占主导。更新清单与夏季观测在40%内一致，但冬季通量高估超过2.5倍。冬季差异反映了VCP/烹饪排放的高估和缺失的温度依赖挥发。结果强调需要考虑季节性和温度依赖的城市排放，以支持全球变化背景下的污染和减缓评估。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Predicting regional gray swans via translocation: AI weather models and Dubai’s unprecedented 2024 rainfall</section>
+            <section class="paper-authors">Y. Qiang Sun, Pedram Hassanzadeh, Tiffany Shaw, Hamid A. Pahlavan, Adam Marchakitus</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.ady9406" target="_blank">https://doi.org/10.1126/sciadv.ady9406</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">AI天气模型</span>
+                        <span class="topic-tag">极端降水</span>
+                        <span class="topic-tag">灰天鹅事件</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.ady9406" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究分析了AI天气模型（GraphCast、AIFS和FuXi）对2024年迪拜前所未有的暴雨事件的预报能力，该事件降雨量是训练集该地区最高降雨量的两倍。结果显示，GraphCast和AIFS提前8天准确预报了该事件，而FuXi预报了事件但低估了降雨量。微调和感受野分析表明，这些模型成功源于“易位”：在训练期间从其他地区动态相似事件中学习。未发现“外推”（从较弱事件学习）的证据。即使在全局分布尾部的天气预报也很差，这不仅是由于数据不平衡（泛化误差），还由于谱偏差（优化误差）。这些发现展示了AI模型预报“区域”灰天鹅事件的潜力，并通过理解其成功/局限机制来改进。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Fine‐Tuning a Machine‐Learned 3D Cloud Climatology Reveals Aspects of Cloud Cover Trends</section>
+            <section class="paper-authors">Adrià Amell, Simon Pfreundschuh, Patrick Eriksson</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL123369" target="_blank">https://doi.org/10.1029/2026GL123369</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">云气候学</span>
+                        <span class="topic-tag">神经网络</span>
+                        <span class="topic-tag">地球静止卫星</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL123369" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究介绍了Chalmers云冰气候学（CCIC）的关键更新，通过调整其神经网络云概率输出来增强薄云检测。CCIC利用合并的地球静止11微米观测反演，提供连续的三维冻降水质量和云概率估计。更新提供了从局部瞬时反演到长期大尺度平均的稳健信息。研究比较了CCIC和ERA5的多年代际、高度分辨云量趋势，揭示了总云量中微妙但新兴的长期变化。通过利用CCIC的能力，不同云类型和厚度对这些变化的贡献变得更加清晰，有助于调和纯观测数据与ERA5之间的不一致趋势，表明差异源于对高薄云的不同敏感性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Constraints on NOx emission in Thailand using GEMS satellite data</section>
+            <section class="paper-authors">Worapop Thongsame, Daven K. Henze, Gabriele Pfister, Rajesh Kumar, Mary Barth</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-14051-2026" target="_blank">https://doi.org/10.5194/acp-26-14051-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">GEMS卫星</span>
+                        <span class="topic-tag">NOx排放</span>
+                        <span class="topic-tag">WRF-Chem</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-14051-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究利用新一代地球静止卫星GEMS的观测数据，采用自下而上的方法更新了泰国的氮氧化物（NOx）排放清单。研究使用迭代有限差分质量平衡（IFDMB）方法，将GEMS版本3的对流层NO2垂直柱密度与WRF-Chem模型结合，对2023年9月的CAMS-GLOB-ANT排放进行修正。结果显示，基线模拟在泰国大部分地区高估了NO2柱浓度，但泰国北部除外，GEMS在北部（尤其是南邦地区）报告的NO2显著高于TROPOMI，反映了版本3中先验廓线带来的反演不确定性。IFDMB减少了大部分地区的NOx排放，但增加了北部排放，这主要归因于反演伪影而非真实排放低估。修正后的排放改善了相对于GEMS的模型偏差和误差，但与TROPOMI对比时，北部偏差增加，凸显了卫星产品间校准和算法改进的重要性。与地面观测比较显示，IFDMB将NOx峰值时间推迟，因为观测受局地交通源强烈影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">AIMNet2-rxn: A machine-learned potential for generalized reaction modeling on a millions-of-pathways scale</section>
+            <section class="paper-authors">Dylan M. Anstine, Qiyuan Zhao, Roman Zubatyuk, Shuhao Zhang, Veerupaksh Singla, Filipp Nikitin, Brett M. Savoie, Olexandr Isayev</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.aea1557" target="_blank">https://doi.org/10.1126/sciadv.aea1557</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">机器学习势</span>
+                        <span class="topic-tag">反应建模</span>
+                        <span class="topic-tag">量子化学</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.aea1557" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究开发了AIMNet2-rxn，一种用于闭壳碳、氢、氮和氧反应机制建模的通用机器学习原子间势（MLIP），使用约470万范围分离密度泛函理论计算数据集训练。AIMNet2-rxn使反应建模比参考量子力学（QM）方法快约10⁶倍，同时显著优于基于图的ML，重申了使用三维化学信息进行训练的价值。在酰胺形成、质子转移和环加成等著名反应机制测试套件上，AIMNet2-rxn在反应坐标上产生1至2千卡/摩尔精度，无需重新训练或系统特定微调。为利用GPU并行性和AIMNet2-rxn效率，引入了批量爬坡弹性带程序，可在数百万反应规模上实现最小能量路径搜索。作为复杂反应表征的演示，评估了产生羟甲基糠醛（葡萄糖热解实验观测的主要产物）的11步路径的热力学。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The Growing Role of Evaporative Demand in Driving Record‐Breaking Droughts in the Amazon Basin</section>
+            <section class="paper-authors">Yizhou Zhuang, Zhen Lu, Xusheng Tang, Meng Gao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL123820" target="_blank">https://doi.org/10.1029/2026GL123820</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">亚马逊干旱</span>
+                        <span class="topic-tag">蒸散需求</span>
+                        <span class="topic-tag">高温干旱</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL123820" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究通过分解1979-2024年的历史干旱驱动因素，揭示了亚马逊干旱从降水赤字主导到“高温干旱”的转变。结果显示，上升的蒸散需求（以潜在蒸散PET表示）现在成为干旱加剧的主要驱动因素。虽然降水赤字仍是2024年创纪录干旱的主要贡献者，但上升的大气渴求几乎使其严重程度翻倍。PET上升还扩大了总干旱足迹，不成比例地放大了异常（D4）干旱，2024年受影响面积比仅降水赤字时增加了近三倍。PET增加由背景变暖和增加短波辐射共同驱动；在2024年中和任一因素都会使D4干旱覆盖减少25%-33%。与观测确认的旱季云量下降相关，这些复合热力和辐射反馈正在推动亚马逊向日益极端的高温干旱转变。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">The one-Layer Antarctic model for Dynamical Downscaling of Ice–ocean Exchanges (LADDIE) version 2.0</section>
+            <section class="paper-authors">Erwin Lambert, Franka Jesse, Constantijn J. Berends</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-19-9441-2026" target="_blank">https://doi.org/10.5194/gmd-19-9441-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">南极冰架</span>
+                        <span class="topic-tag">海洋模型</span>
+                        <span class="topic-tag">融化模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-19-9441-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本文介绍了二维海洋模型LADDIE版本2.0，用于模拟南极冰架下的上层混合层，以改进冰架底部融化模拟。版本2.0通过并行化、非结构化网格离散化和更稳定的时间步进方案提高了计算性能，并与UFEMISM冰盖模型完全集成，可在同一网格上进行耦合模拟。模型评估显示，LADDIE 2.0与LADDIE 1.0的融化模式一致，但计算时间因并行化可减少一个数量级。在理想化和真实泛南极域（2公里分辨率）中，LADDIE的融化速率、模式和敏感性接近多模型平均值。与四个泛南极卫星估算的比较显示，每个冰架的积分融化速率总体吻合良好，无需区域调参。在120米分辨率下，LADDIE能够重现松岛冰架上观测到的细尺度基底通道网络。在理想化耦合模拟中，与二次融化参数化相比，耦合模拟导致接地线退缩和漂浮以上体积损失增加三倍。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Rise and spread of lead-silver metallurgy deciphered from peatland archives</section>
+            <section class="paper-authors">Hugo Delile, André-Marie Dendievel, Laura Chollet, Iscia Codjo, Adrien Barra, Janne Blichert-Toft</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.aec1413" target="_blank">https://doi.org/10.1126/sciadv.aec1413</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">铅同位素</span>
+                        <span class="topic-tag">泥炭记录</span>
+                        <span class="topic-tag">古冶金</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.aec1413" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究汇编了环境档案中的铅同位素数据，并引入环境匹配强度指数（EMII），应用于泥炭记录以追踪六千年间铅-银矿石供应模式和与采矿相关的综合大气铅信号的变化。EMII揭示了新石器时代/铜石并用时代以希腊Laurion为中心的早期采矿信号，随后是青铜时代通过连接Cyclades、Troad和安纳托利亚海岸的海上路线扩张。从铁器时代起，结果挑战了传统的伊比利亚中心采矿模型，揭示了以西中欧地区为中心、通过主要河流走廊和互补陆路与海路连接的多中心多模式组织。EMII在罗马早期达到第一个主要峰值，在古典时代晚期和中世纪早期下降，从中世纪盛期再次上升。尽管存在时间波动，贡献采矿区域的整体大陆分布基本稳定。该框架通过连接环境档案与采矿、运输和城市需求，为重建金属生产和流通的长期组织提供了可扩展方法。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Effects of Mineralogical Inhomogeneity on Aggregate Dust Optical Properties and Lidar Observables</section>
+            <section class="paper-authors">Dongchen Li, Ping Yang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL125856" target="_blank">https://doi.org/10.1029/2026GL125856</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">沙尘气溶胶</span>
+                        <span class="topic-tag">激光雷达</span>
+                        <span class="topic-tag">光学特性</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL125856" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究开发了一种非均质聚集体模型，为沙尘气溶胶的组成元素分配矿物依赖性折射率，并代表全球矿物体积分数。研究采用不变嵌入T矩阵、改进几何光学和物理几何光学相结合的方法计算单次散射特性，并通过偏振蒙特卡洛辐射传输模拟量化激光雷达观测值。结果显示，矿物学不均匀性对消光效率影响不大，但显著影响单次散射反照率、不对称因子、后向散射、激光雷达比、退偏振和相位矩阵元素，特别是对于有效半径大于约1微米的粒子。模拟的退偏振和后向散射对于非均质聚集体高于均质对应物。均质有效介质模型可以保持消光，但会引入偏振和激光雷达敏感特性的偏差，对沙尘光学和微物理反演产生下游影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Projected 5G Interference Can Degrade Passive Microwave Radiance Assimilation and Alter High‐Impact Weather Forecasts</section>
+            <section class="paper-authors">Behzad Golparvar, Ruo‐Qian Wang, Shaghayegh Vosoughitabar, Michael Wu, Joseph Brodie, Narayan Mandayam</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124671" target="_blank">https://doi.org/10.1029/2026GL124671</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">5G干扰</span>
+                        <span class="topic-tag">微波辐射</span>
+                        <span class="topic-tag">天气预报</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124671" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究量化了预计的地面5G泄漏如何通过县级部署预测、定向天线几何、AMSU-A通道1辐射的人为污染以及UFS-JEDI同化传播。在代表性的2040年情景中，大都市走廊的射频干扰（RFI）产生高达3.75 K的亮温扰动。对于飓风Ida的温带残余，低效率2040 RFI改变了12小时预报，与干净控制相比，局部降水变化高达约10毫米，2米温度差异超过2°C。预报变化出现在干扰源附近和下游，包括未映射5G基础设施的区域。结果确定了相邻频段排放影响高影响预报的两条途径：同化保留的偏差辐射和RFI触发的质量控制拒绝。预报敏感性取决于排放、网络效率和RFI感知同化。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Decarbonizing under water stress: an integrated assessment of Chile’s pathway to carbon neutrality by 2050</section>
+            <section class="paper-authors">Josephine Henze, Silvia R Santos da Silva, Felipe Feijoo, Francisco Flores, Fernando Miralles-Wilhelm, Paelina DeStephano, Page Kyle, Homero Paltán</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/aeac70" target="_blank">https://doi.org/10.1088/1748-9326/aeac70</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">碳中和</span>
+                        <span class="topic-tag">水资源需求</span>
+                        <span class="topic-tag">可再生能源</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/aeac70" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究首次在国家层面应用GCAM-Chile模型，评估智利在缺水背景下，能源和土地部门联合脱碳路径对部门用水需求模式的影响。研究设置了1个参考情景和8种替代碳中和路径，结合能源部门脱碳和不同水平的土地部门减排，并保持流域供水量不变。结果表明，可再生能源驱动的脱碳显著减少了电力部门的取水量，因为发电与热冷却需求脱钩。假设低成本碳捕集与封存技术出现的情景，由于化石能源发电的用水需求更高，电力取水量减少幅度较小。然而，农业灌溉仍是总取水量的主要来源，并在所有情景下持续增长。土地部门减排通过限制农业生产减少灌溉需求，但带来粮食生产权衡。研究揭示了气候政策在缺水地区的关联影响，为智利未来水-能源-土地政策制定提供了重要参考。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Solution-processed organic infrared photodetectors operating beyond 1.4 μm for sensitive environmental monitoring</section>
+            <section class="paper-authors">Yifei Geng, Tengfei Li, Zhenzhen Zhang, Huiqing Hou, Yuze Lin</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Science Advances</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1126/sciadv.aeg4558" target="_blank">https://doi.org/10.1126/sciadv.aeg4558</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">红外探测器</span>
+                        <span class="topic-tag">短波红外</span>
+                        <span class="topic-tag">环境监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1126/sciadv.aeg4558" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究报告了一种成本效益高的有机短波红外（SWIR）成像器，响应超过1.4微米，通过溶液处理集成高探测率有机光电探测器（OPDs）与非晶硅薄膜晶体管。开发的具有（卤化）噻吩融合醌端基的高有序SWIR有机半导体表现出0.68-0.94 eV的超窄光学带隙和低至23 meV的Urbach能量。SWIR OPDs实现0.3微米至1.5-1.7微米的光谱响应，响应度高达约0.1 A/W，在1.4微米处比探测率为2.03-4.60×10¹⁰ Jones。有源矩阵SWIR成像器在模拟海水中实现准确的漏油监测（R²=0.993-0.997）和可靠的废弃纺织品分类（轮廓系数=0.824），展示了其在环境监测中的能力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">An Innovative Approach for Estimating Coseismic Surface Uplifts Using Ionospheric Observations From Remote GNSS Stations: First Application for the 2025 Myanmar Earthquake</section>
+            <section class="paper-authors">Mala S. Bagiya, Shubham K. Rajewar, Kosuke Heki, Vineet K. Gahalaut, Neeraj Gurjar, A. P. Dimri</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL122530" target="_blank">https://doi.org/10.1029/2026GL122530</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">电离层观测</span>
+                        <span class="topic-tag">GNSS</span>
+                        <span class="topic-tag">同震隆起</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL122530" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究提出了一种创新方法，利用距离震中超过300公里的印度-缅甸边境GNSS站观测到的电离层总电子含量（TEC）变率，来估算2025年3月28日缅甸Mw 7.7地震的同震地表隆起。研究识别出TEC时间序列中的三个不同峰值，利用其到达时间和振幅确定了三个声波源的位置和相对强度，并与地震学观测推断的滑动分布进行了比较。研究证明了利用远程GNSS站电离层数据间接约束同震隆起的可行性，为缺乏近场三维形变数据的地震提供了新的约束手段。该方法展示了电离层遥感在地震研究中的潜力。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Enhanced Retrieval of Raindrop Size Distribution by Integrating Disdrometer Observations and Atmospheric Variables With Machine Learning</section>
+            <section class="paper-authors">Limin Lin, Huiling Yuan, Xuwei Bao, Shangshang Yang, Lin Deng, Shuai Zhang, Yuanming Zhao</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL123664" target="_blank">https://doi.org/10.1029/2026GL123664</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">雨滴谱</span>
+                        <span class="topic-tag">机器学习</span>
+                        <span class="topic-tag">参数反演</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL123664" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究开发了一个机器学习（ML）框架，整合雨滴谱仪观测和环境大气变量来反演雨滴大小分布（DSD）参数。传统数值模型通常将DSD形状参数设为常数或仅基于雨滴谱仪观测的经验关系，限制了对DSD变异性的捕捉。研究使用上海11个站点2019-2021年的数据训练了三个ML模型，它们优于传统方法，有效减少偏差并捕捉观测到的DSD变异性。在2022-2025年的独立强降雨和热带气旋验证中保持稳健，提供可靠的DSD和雨率估计。特征分析和消融实验强调了环境因素在提高反演精度中的关键作用，为改进数值模型中的DSD参数化提供了数据驱动途径。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Decadal climate predictions correctly forecast the direction of Northern Hemisphere Wind Stilling but underestimate its magnitude</section>
+            <section class="paper-authors">Paul-Arthur Monerie, Jon I Robson, Reinhard Schiemann, David J Brayshaw, Benjamin W Hutchins, Weihua Cao, Zengyuan Guo</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Environmental Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1088/1748-9326/aeadb6" target="_blank">https://doi.org/10.1088/1748-9326/aeadb6</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">十年气候预测</span>
+                        <span class="topic-tag">近地表风速</span>
+                        <span class="topic-tag">气溶胶</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1088/1748-9326/aeadb6" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用多模式十年尺度气候预测，评估了其对1980年至2010年间北半球近地表风速下降（即“全球静止”现象）的预测能力。研究发现，多模式十年预测能够提前1至10年捕捉到风速下降趋势，但预测模型普遍低估了长期近地表风速趋势的幅度。模型中的风速下降趋势主要由人为外部强迫驱动，其中温室气体浓度变化影响欧洲、北美和东亚的风速趋势，而人为气溶胶排放对印度和中国起关键作用。尽管存在模型局限性，但经过适当校正，十年气候预测可为能源部门提供有用信息。研究强调了改进气候模型对近地表风速模拟的重要性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Homogeneous ice nucleation from water vapour suggested by elongated clouds on Mars</section>
+            <section class="paper-authors">J. Hernández-Bernal, A. Määttänen, A. Spiga, F. Forget</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Geoscience</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41561-026-02089-9" target="_blank">https://doi.org/10.1038/s41561-026-02089-9</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火星云</span>
+                        <span class="topic-tag">冰成核</span>
+                        <span class="topic-tag">云微物理</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41561-026-02089-9" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究使用火星气象模型中的水蒸气均相冰成核模型，证明均相冰成核（无需预先存在的颗粒）可以成功再现Arsia Mons Elongated Cloud的独特特征，这是一种在火星上周期性出现的水冰云，此前在传统云微物理下难以模拟。这一发现强烈表明火星上发生了水蒸气的均相冰成核，挑战了当前对地球上某些云形成过程以及可能其他行星上的假设。均相冰成核需要高过饱和度，此前仅在理论上认为在地球和金星中层云中可能，但从未在自然界观测到。该研究对理解云形成过程具有广泛意义。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Impact of Realistic Detector Response and Azimuthal Drift on the Quantification of Energetic Electron Precipitation Using POES/MetOp</section>
+            <section class="paper-authors">Weichao Tu, Zhi‐Gu Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL126592" target="_blank">https://doi.org/10.1029/2026GL126592</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">电子沉降</span>
+                        <span class="topic-tag">卫星观测</span>
+                        <span class="topic-tag">俯仰角扩散</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL126592" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究首次量化了POES/MetOp卫星上90°和0°望远镜计数率比（CR90/CR0）与俯仰角扩散率（DW）关系的现实探测器响应和方位漂移的综合效应。传统解释假设标称探测器视场并忽略方位漂移。使用全面的漂移-扩散模型，研究发现现实响应导致该关系在扩散减弱时变平，而方位漂移增加CR90/CR0比，造成显著的纵向和半球依赖性。在慢扩散期间忽略这些组合效应会导致DW和降水通量的显著高估，从而高估电离层电离速率。该研究为利用低高度卫星数据解析DW和电子沉降提供了更准确的框架。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurements and Analysis of Light Non‐Methane Hydrocarbon Mole Fractions in 1982–1987 at Six Remote Sites Along the Pacific Rim</section>
+            <section class="paper-authors">A. M. Smith, C. L. Butenhoff, M. A. K. Khalil, A. L. Rice</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD048040" target="_blank">https://doi.org/10.1029/2026JD048040</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">非甲烷碳氢化合物</span>
+                        <span class="topic-tag">太平洋</span>
+                        <span class="topic-tag">长期趋势</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD048040" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究展示了1982-1987年间在太平洋沿岸六个站点（跨越南北半球）收集的先前未发表的全空气样品非甲烷碳氢化合物（NMHCs）测量数据。后向轨迹分析确认主要采样太平洋盆地气团。数据显示乙烷、丙烷、异丁烷和正丁烷平均摩尔分数分别为712±22 ppt、245±13 ppt、55.2±4.4 ppt和87.6±8.7 ppt。与二十年后可比站点测量相比，全球乙烷摩尔分数在1980年代中期至2009-2010年间下降了21%，丙烷和丁烷下降更大，证实了NMHCs的多年下降。1982-1987年五年间未发现太平洋盆地明显长期趋势，但个别站点存在显著趋势，包括北半球短期增加和南半球减少。与1982-83强厄尔尼诺相关的大型多年富集异常出现在所有站点，影响南半球观测趋势。使用GEOS-Chem化学传输模型，基于全球平均测量摩尔分数估计该时期全球乙烷排放为13.4±0.4 Tg/yr。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Discrepancies in Extreme Daily and Monthly Precipitation Trends Between Observations and Earth System Models</section>
+            <section class="paper-authors">Frances V. Davenport, Danielle Touma</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124747" target="_blank">https://doi.org/10.1029/2026GL124747</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">极端降水</span>
+                        <span class="topic-tag">地球系统模型</span>
+                        <span class="topic-tag">趋势分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124747" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究比较了多个观测数据集和三个地球系统模型（ESM）集合中每日和每月极端降水的趋势。结果显示，观测和ESM在每日极端降水正趋势的土地面积百分比方面显示出相似增加，但ESM低估了每日极端正负观测趋势的幅度。对于每月极端降水，ESM模拟的广泛增加比观测在近几十年更为普遍，导致许多近期观测到的每月极端降水下降趋势落在模型分布之外。在高分辨率模拟中也发现了类似结果。这些发现突出了在约束区域极端降水变化幅度方面的持续挑战，并表明ESM在捕捉区域尺度极端降水变化方面存在不足。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Contrasting Effects of Turbulence on Tropical Cyclones During Landfall</section>
+            <section class="paper-authors">Kwun Yip Fung, Ping Zhu, Jun A. Zhang, Xuejin Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124894" target="_blank">https://doi.org/10.1029/2026GL124894</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热带气旋</span>
+                        <span class="topic-tag">边界层湍流</span>
+                        <span class="topic-tag">登陆过程</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124894" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究模拟了三个登陆热带气旋（Beryl、Francine和Milton），以检查增强的行星边界层（PBL）湍流如何影响登陆期间的气旋强度。结果显示，在海洋上，增强的湍流通过加强摩擦辐合和低层入流，增强眼墙上升气流和核心下沉气流，同时增加地表潜热通量，维持较暖的中层核心，从而增强气旋强度。登陆时，增强的湍流通过加强摩擦辐合和低层入流加速气旋衰减，该过程将大陆冷干空气从PBL夹带入中层，降低中层湿静力能并产生较冷的核心。这些结果表明边界层湍流通过动力和热力变化在海洋-陆地过渡中发挥相反作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Role of Unbalanced Jet Streak Circulations in East Asian Dust Storms</section>
+            <section class="paper-authors">Ashok Kumar Pokharel, Michael L. Kaplan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD046356" target="_blank">https://doi.org/10.1029/2026JD046356</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">沙尘暴</span>
+                        <span class="topic-tag">急流</span>
+                        <span class="topic-tag">大气环流</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD046356" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究对三场中国和蒙古的严重沙尘暴进行了中尺度研究，使用观测和高分辨率数值模型数据。分析揭示了三个案例的共同特征：（a）穿越山脉的前驱风在背风侧形成强静力稳定层；（b）急流出口区与该静力稳定层相互作用；（c）山脉背风侧急流出口区地转平衡破坏；（d）作为深层三维质量/动量调整过程的产物，产生低层非地转等变压风（Vis）；（e）发展显著的行星边界层（PBL）湍流动能（TKE）。等变压低层非地转风引起的垂直切变和地表感热通量加热的暖浮力气柱导致显著TKE生成，造成山脉（天山、戈壁阿尔泰和杭爱山）背风侧地表大量沙尘吹蚀。响应这些调整过程，还观察到中尺度γ尺度上显著垂直运动和TKE引起的多条沙尘带。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Benchmarking a new urban scheme in the ORCHIDEE 2.2  land surface model</section>
+            <section class="paper-authors">Morgane Lalonde, Sophie Bastin, Ludovic Oudin, Pedro Felipe Arboleda-Obando, Agnès Ducharne</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-19-9463-2026" target="_blank">https://doi.org/10.5194/gmd-19-9463-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">陆面模型</span>
+                        <span class="topic-tag">城市气候</span>
+                        <span class="topic-tag">能量通量</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-19-9463-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">本研究为ORCHIDEE陆面模型开发了一个单 tile 城市方案，旨在改善城市过程的表征，特别是针对高分辨率应用。方案纳入了反照率、建筑高度、热特性和不透水率等关键城市参数，并提出了一种新颖的基于物理的方法来表示不透水性，通过修改饱和水力传导度来同时考虑地表和地下影响。在20个城市通量塔站点的离线模拟显示，新城市方案在感热和潜热通量方面优于原始裸土表示，平均绝对误差（MAE）评估证实了模型技能的提升，与Urban-PLUMBER比对基准结果一致。方案还捕捉了预期的城市水文特征，如地表径流增加，但某些地下径流减少可能与观测到的城市补给模式不太一致。该工作为ORCHIDEE在流域尺度和高分辨率对流允许模拟中的应用奠定了基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Meter‐Scale Roughness of the Lunar Surface</section>
+            <section class="paper-authors">Hephzibah Christopher, Indujaa Ganesh</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL122440" target="_blank">https://doi.org/10.1029/2026GL122440</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">月球表面</span>
+                        <span class="topic-tag">激光测高</span>
+                        <span class="topic-tag">粗糙度</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL122440" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用月球轨道器激光测高仪（LOLA）的脉冲数据，生成了全球米级表面粗糙度图。LOLA的约5米单足迹内记录了表面起伏信息，使得能够绘制全球米级粗糙度。测绘结果揭示了近期表面改造的迹象，包括粗糙的哥白尼纪撞击坑和与活跃质量运动一致的陡峭坑壁。在极地，永久阴影区比附近阳光照射区域更平滑，与可能的近地表冰一致，而Artemis III候选着陆区表现出多样的粗糙度条件。这些地图补充了现有的较长基线粗糙度产品，为解释雷达遥感观测提供了约束，捕捉了与表面任务相关的空间尺度上的地形变异性，并揭示了月球表面的近期改造。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Distinct Dependencies of Tropical Cyclone Inner‐Core and Outer‐Region Precipitation on Translation Speed and Intensity</section>
+            <section class="paper-authors">Jingzhe Xu, Shuguang Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL125340" target="_blank">https://doi.org/10.1029/2026GL125340</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热带气旋</span>
+                        <span class="topic-tag">卫星降水</span>
+                        <span class="topic-tag">移动速度</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL125340" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究利用卫星降水数据分析热带气旋内核心（IC）和外区（OR）降水如何随移动速度和强度变化。结果显示，内核心降水随移动速度增加而增加，但在较高速度下减少，而外区降水几乎随移动速度线性增加。内核心降水与气旋强度密切相关，无论是否以移动速度为条件，而外区降水主要对较强风暴随强度增加。随着移动速度增加，最大降水位置在北半球向前左象限移动，伴随降雨量显著增加。这些结果表明，内核心降水主要由风暴动力学控制，而外区降水对环境强迫更敏感。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Measurements of the Size and Physical Properties of Marine Particles Using Atomic Force Microscopy: Implications for Marine Biogeochemical Cycles</section>
+            <section class="paper-authors">Y. Yamada, T. Mochizuki, H. Fukuda, T. Nagata, S. Mitarai</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL122474" target="_blank">https://doi.org/10.1029/2026GL122474</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">原子力显微镜</span>
+                        <span class="topic-tag">海洋颗粒</span>
+                        <span class="topic-tag">物理性质</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL122474" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究应用原子力显微镜（AFM）量化海洋颗粒的三维尺寸和物理特性。使用海洋雪捕集器从西北太平洋三个沿岸到近海站点的密度跃层和底边界层收集了368个颗粒。颗粒等效球径（ESD）范围为0.4至32微米，超过70%小于10微米。二维分析将沉降颗粒的ESD高估约1.5倍（体积约3.3倍），相对于三维测量。杨氏模量（0.07-616 MPa）和粘附性（331-2802 pN）变化广泛，与细菌、硅藻和粘液报告值重叠。颗粒物理性质随深度和位置系统变化，表明AFM为颗粒动力学、来源和海洋生物地球化学循环提供了关键约束。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Unusual Enhancement in He(23S) Airglow Brightness Associated With Interplanetary Magnetic Field Northward Turnings During the 2025 New Year's Day Storm</section>
+            <section class="paper-authors">Takanori Nishiyama, Masato Kagitani, Noora Partamies, Daniel Whiter, Takuo T. Tsuda, Yasunobu Ogawa, Fred Sigernes</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124715" target="_blank">https://doi.org/10.1029/2026GL124715</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">大气辉光</span>
+                        <span class="topic-tag">地磁暴</span>
+                        <span class="topic-tag">热层</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124715" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究报告了2025年元旦严重地磁暴期间，与太阳风脉冲变化相关的He(23S)大气辉光的异常增强。多光谱光学观测显示，尖点区的增强与电子和质子极光以及850公里高度He+密度增加同时发生。He(23S)大气辉光的形态与电子极光紧密匹配。观测到的增强归因于电子沉降和上升He+的复合，而沉降He+和α粒子的电荷交换在引起大气辉光中起次要作用。该研究提供了高层热层动力学和空间天气效应的新见解。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Amplified fossil dependence and environmental burden during temperature extremes amid the low-carbon energy transition</section>
+            <section class="paper-authors">Rui Zhong, Yue Qin, Shiyu Li, Liangdian Huang, Gang Yan, Yixuan Zheng, Steven J. Davis, Minghao Qiu, Chuan Zhang, Xin Liu, Huibin Mo, Mengyao Xu, Peidong He, Xinlei Chen, Tong Zhu, Chaopeng Hong</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">npj Climate and Atmospheric Science</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41612-026-01552-z" target="_blank">https://doi.org/10.1038/s41612-026-01552-z</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">能源转型</span>
+                        <span class="topic-tag">极端温度</span>
+                        <span class="topic-tag">环境负担</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41612-026-01552-z" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究探讨了在低碳能源转型背景下，极端温度事件期间化石燃料依赖和环境负担的放大现象。研究分析了温度极端期间能源需求增加如何导致化石燃料使用增加，进而加剧环境负担。这可能包括电力需求激增导致燃煤电厂运行增加，以及供暖或制冷需求上升。研究强调了在能源转型过程中，需要关注极端天气事件对能源系统和环境的影响，并制定适应性策略以减轻这些影响。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Enhancement of Magnetic Flux Transferred to the Magnetotail Due to a Storm‐Time Kelvin‐Helmholtz Instability</section>
+            <section class="paper-authors">Brandon L. Burkholder, Katariina Nykyri, Xuanye Ma, Lauri Holappa, Harsha Gurram, Rachel C. Rice, David Sibeck, Dinesh K. V. Radhakrishnan</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL125752" target="_blank">https://doi.org/10.1029/2026GL125752</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">磁层</span>
+                        <span class="topic-tag">开尔文-亥姆霍兹不稳定性</span>
+                        <span class="topic-tag">磁重连</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL125752" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究使用Multiscale Atmosphere Geospace Environment (MAGE)模拟了2024年10月10-11日地磁暴，量化了由开尔文-亥姆霍兹不稳定性（KHI）和反平行X线共同定位产生的磁通量对磁尾的贡献。在15分钟间隔内，KH不稳定的黎明侧翼磁层顶重连了从亚太阳区添加到北瓣的约13%的磁通量，或约5%的总磁层开放磁通量。研究结果表明，南向IMF条件下，日侧重连和KHI可以相互作用，KHI压缩电流层并增加X线长度，可能增强重连率。如果这种重连将足够的磁通量输送到磁尾，可能扰乱磁尾电流片。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Ice clouds born from Martian waves</section>
+            <section class="paper-authors">Milena Corcos</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Nature Geoscience</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1038/s41561-026-02109-8" target="_blank">https://doi.org/10.1038/s41561-026-02109-8</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">火星</span>
+                        <span class="topic-tag">冰云</span>
+                        <span class="topic-tag">均相成核</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1038/s41561-026-02109-8" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究通过大气模拟表明，火星火山上的重力波可以绕过对尘埃颗粒的需求，通过水蒸气的自发成核产生冰云。这挑战了传统观点，即水冰云的形成通常需要预先存在的尘埃颗粒来诱导水蒸气凝结成冰。研究使用火星气象模型中的水蒸气均相冰成核模型，成功再现了Arsia Mons Elongated Cloud的独特特征，这是一种在火星上周期性出现的水冰云，此前在传统云微物理下难以模拟。这一发现强烈表明火星上发生了水蒸气的均相冰成核，挑战了地球上某些云形成过程以及可能其他行星上的当前假设。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Meter‐Scale Lunar Dust‐Bed Charging and Local Apparent Dust Release Under Ultraviolet Irradiation</section>
+            <section class="paper-authors">Yun Chen, Lifang Li, Tianhao Liu, Ruxian Tang, Bingqian Nan, Yang Li, Hong Jin, Jihong Yan, Xiongyao Li, Xiaoping Zhang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124745" target="_blank">https://doi.org/10.1029/2026GL124745</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">月球尘埃</span>
+                        <span class="topic-tag">紫外照射</span>
+                        <span class="topic-tag">静电充电</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124745" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">该研究开发了一套米级氘灯阵列真空紫外（VUV）系统，结合光路叠加和稳定阵列拼接，产生受控的月球相关光子场用于尘埃床充电。模拟和测量显示中心增强的辐照场，峰值强度为0.73 W/m²，稳定输出超过0.35 W/m²。在高真空下测量了<100 μm月球尘埃模拟物的床尺度平均表面电位，在60分钟VUV暴露后达到3.655 V。空间异质电位分布表明绝缘颗粒床内的电荷保留和再分布。一个可用的垂直安装石英晶体微天平通道记录了45分钟VUV照射下23.42 ng的表观质量损失。这些测量约束了月球相关VUV照射下米级尘埃床充电和局部表观质量变化。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
