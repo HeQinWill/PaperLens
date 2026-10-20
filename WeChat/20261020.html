@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="wechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <div id="loadingText">正在导出...</div>
+    </div>
+    
+    <div class="preview-modal" id="previewModal">
+        <span class="close-preview" id="closePreview">×</span>
+        <div class="preview-container">
+            <img id="previewImage" class="preview-image" src="" alt="预览">
+        </div>
+        <button class="download-button" id="downloadButton">下载图片</button>
+    </div>
+<section class="header">
+    <h1>大气环境遥感论文速递</h1>
+    <section class="date">2026/10/20</section>
+</section>
+<section id="papers-container"><section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Constraining the vertical profiles of aerosol component and heating rate over east Asia through  assimilating CALIOP observations</section>
+            <section class="paper-authors">Yueming Cheng, Tie Dai, Daisuke Goto, Keiya Yumimoto, Tomoaki Nishizawa, Rei Kudo, Min Zhao, Akiko Higurashi, Yoshitaka Jin, Atsushi Shimizu, Haoran Peng, Guangyu Shi, Teruyuki Nakajima</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Chemistry and Physics</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/acp-26-14671-2026" target="_blank">https://doi.org/10.5194/acp-26-14671-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气溶胶组分</span>
+                        <span class="topic-tag">数据同化</span>
+                        <span class="topic-tag">垂直辐射加热</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/acp-26-14671-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">围绕气溶胶组分垂直分布及其对大气短波加热率的影响展开。传统数据同化多基于总光学厚度（AOT），无法有效区分吸收性与散射性粒子。本研究基于<b>WRF-Chem</b>数值模型与局部集合变换卡尔曼滤波（<b>LETKF</b>）方法，构建了组分分辨的数据同化系统，同化了<b>CALIOP-MODIS</b>协同反演的分组分消光剖面（沙尘、海盐、黑碳和水溶性气溶胶），优化了东亚地区三维气溶胶组分结构。结果显示，该系统成功重构了多组分气溶胶的垂直分层，纠正了模型对高空黑碳羽流的低估，精准捕捉了南亚上空自由对流层的黑碳层。经<b>AERONET</b>和<b>AD-Net</b>激光雷达独立验证，单散射反照率（SSA）与消光特性显著改善。高空黑碳羽流引起对流层中部显著增温并减弱低层加热，凸显了分组分垂直观测约束对评估气溶胶辐射效应的关键作用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Probing Atmospheric Gravity‐Wave‐Relevant Representations in a Weather Foundation Model via Multi‐Method Fine‐Tuning</section>
+            <section class="paper-authors">Yanan Guo, Junqiang Song, Chuanfeng Zhao, Xiaoqun Cao, Yikun Yang, Hongze Leng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL124619" target="_blank">https://doi.org/10.1029/2026GL124619</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气象大模型</span>
+                        <span class="topic-tag">重力波动力学</span>
+                        <span class="topic-tag">微调框架</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL124619" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">探讨了基于海量再分析数据预训练的<b>气象大模型（Aurora）</b>是否具备超出常规预报目标的大气次网格物理机制表征能力。研究针对ERA5经T21滤波解析的大气<b>重力波活动动量通量</b>（尺度313–1,820 km），设计了涵盖6种不同参数比例（0.5%至100%可调参数）的<b>多策略微调框架</b>。实验对比表明，预训练权重对纬向动量通量（u'w'）预测增益显著，其中FISH+TADP高效微调策略的标准化误差（38.9%）显著优于随机初始化对照组（41.6%），仅用约1%参数即可恢复全量微调的部分性能。此外，预训练带来的性能提升呈现明显的高度依赖性（在200–300 hPa对流层顶最为明显），证明冻结的大模型主干网络有效编码并正则化了大气重力波物理特征。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">A prototype algorithm for all-sky atmospheric temperature profile retrieval over ocean based on channel optimization for the FY-4M satellite</section>
+            <section class="paper-authors">Yu Wang, Xinbin Ma, Banghai Wu, Qiang Guo, Jing Xi, Rui Li, Xin Wang, Xiaoqing Li</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-6553-2026" target="_blank">https://doi.org/10.5194/amt-19-6553-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">风云四号M星</span>
+                        <span class="topic-tag">被动微波遥感</span>
+                        <span class="topic-tag">大气温度剖面反演</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-6553-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对中国计划于2026年底发射的首颗搭载被动微波载荷的静止气象卫星<b>风云四号M星（FY-4M）</b>，提出了面向海洋上空全天空大气温度剖面反演的原型算法。研究基于<b>信息熵理论</b>与<b>贝叶斯优化技术</b>，对卫星上百个探测通道开展了配置优化。结果显示，引入52.6–57.3 GHz高光谱测温通道后，用于提取水汽和水凝物辅助信息的水汽吸收及窗区通道对测温精度的贡献超越了传统的50与118 GHz氧气吸收通道。在构建的优化通道组合下，晴空与多云条件下的温度反演均方根误差（RMSE）均低于0.5 K，降水条件下保持在0.8 K以内，且计算耗时相比全通道配置减少了14%，实现了反演精度与计算效率的良好平衡，为未来业务化运行奠定了算法基础。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Development and validation of ARMS-gb v2.0: extending fast radiative transfer modeling capability to all-sky conditions  for ground-based microwave radiometer retrievals</section>
+            <section class="paper-authors">Ziyue Huang, Yi-Ning Shi, Fuzhong Weng, Jun Yang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geoscientific Model Development</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/gmd-19-9957-2026" target="_blank">https://doi.org/10.5194/gmd-19-9957-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">地面微波辐射仪</span>
+                        <span class="topic-tag">辐射传输模型</span>
+                        <span class="topic-tag">全天空模拟</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/gmd-19-9957-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">地面微波辐射仪能够实现边界层温湿度的全天候连续监测，但在多云和降水条件下的辐射传输模拟具有较大难度。为此，研究团队开发并验证了快速辐射传输模式<b>ARMS-gb v2.0</b>。该版本新增了大气水凝物吸收与散射模块，并引入<b>加速离散坐标法（ADOM）</b>求解多重散射，结合<b>Mie理论</b>与<b>离散偶极子近似（DDA）</b>构建了云水、雨、冰、雪和霰的物性查找表，同时拓展了切线性与伴随（TL/AD）模块以支持变分同化。基于中国两处台站14与22通道辐射仪的半年实测检验表明，模式在多云非降水条件下的亮温模拟偏差整体控制在1 K以内；在30 GHz与51 GHz通道，均方根误差（RMSE）相较旧版显著降低，有效拓宽了地基微波探测在全天候天气监测中的定量应用。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">GDNat: a global, daily, high-resolution, natural-forcing only temperature data set for attribution research</section>
+            <section class="paper-authors">Robert Fofrich Navarro, Kelly E. McCusker, Steven B. Malevich, Robert E. Kopp</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2026-658" target="_blank">https://doi.org/10.5194/essd-2026-658</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">气候归因研究</span>
+                        <span class="topic-tag">分位数增量映射</span>
+                        <span class="topic-tag">极端温度数据集</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2026-658" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">极端天气事件的人为影响定量归因亟需无人类干扰的气候基准底图。本研究研制了全球首套日尺度、高分辨率（0.25°×0.25°）的无人类强迫温度数据集<b>GDNat</b>（1979–2020年）。研究采用趋势保持的偏差校正方法——<b>分位数增量映射（QDM）</b>，利用<b>CMIP6</b>多模式的历史与纯自然强迫模拟，从欧洲中期天气预报中心<b>ERA5再分析数据</b>中剔除了人为增暖信号，同时完整保留了历史真实天气系统的天气演变形态。区域应用分析表明，在北非、中东、南亚和澳大利亚等区域，2000至2020年间每年日均温超过35℃的极端高温天数平均有15至30天可直接归因于人为增暖。GDNat为评估历史气候极值事件及其影响提供了至关重要的反事实基准。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Cloud Controlling Factor Analysis Reveals E3SMv3 Structural Bias and Mean State Controls on Stratocumulus Radiative Sensitivity</section>
+            <section class="paper-authors">T. A. Myers, T. Aerenson, D. T. McCoy, M. D. Zelinka, J. M. Nugent, H. Brown</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL125263" target="_blank">https://doi.org/10.1029/2026GL125263</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海洋层积云</span>
+                        <span class="topic-tag">辐射敏感性</span>
+                        <span class="topic-tag">E3SM地球系统模型</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL125263" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">海洋层积云是调控地球辐射平衡的关键，但其对气溶胶及气象驱动因子的响应机制在气候模式中仍存很大不确定性。本研究利用美国能源部<b>E3SMv3地球系统模式</b>构建的扰动参数集合（PPE），对涉及云、对流与气溶胶的25个参数进行敏感性试验，评估层积云的<b>辐射敏感性</b>与云控制因子。研究发现，模式结构性缺陷导致其无法重现层积云对海表温度平流的真实响应，并系统性高估了云量及逆温强度、自由对流层湿度和硫酸盐气溶胶光学厚度的辐射响应。机理分析揭示，平均<b>云光学厚度</b>的基准状态决定了云量变化的辐射效应；其中，云水向雨水的<b>自动转化过程</b>被识别为调控层积云辐射敏感性的关键微物理过程。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Improving Micro– and Macro–Algae Speciation Mapping for Management: A Field‐Validated Sentinel‐2 and Sentinel‐3 Intercomparison in the Indian River Lagoon</section>
+            <section class="paper-authors">McKenzie L. Woodman, Edith A. Widder, Warren H. Falls, Joseph D. Ortiz</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">GeoHealth</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GH001817" target="_blank">https://doi.org/10.1029/2026GH001817</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">有害藻华遥感</span>
+                        <span class="topic-tag">Sentinel卫星</span>
+                        <span class="topic-tag">主成分分析</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GH001817" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">有害藻华（HABs）频发严重威胁沿海潟湖水质与海草床生态安全。本研究针对佛罗里达印第安河潟湖，基于三年（2020–2022年）的<b>Sentinel-2多光谱影像（MSI）</b>，结合<b>Sentinel-3 OLCI传感器</b>与野外高光谱实测数据，开发并验证了一种多时相最大方差旋转主成分分析（<b>VPCA</b>）算法。该方法利用可见光导数水面反射率解混光谱信号，成功分离出对应不同藻门、悬浮沉积物及海草床的正交光谱分量。验证结果显示，蓝藻水华（r²=0.865）、甲藻水华（r²达0.978和0.986）以及海草床（r²=0.916）的分类反演精度极高，在空间分辨率达10米尺度上精准实现了微藻与大型藻类的定性与定量空间制图，为水体富营养化监测及溯源治理提供了高效的遥感分析范式。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Declining Surface Solar Radiation Resources in Polar Regions Under Global Warming</section>
+            <section class="paper-authors">Liangke Huang, Ling Xiong, Zhaoliang Zeng, Jianeng Jiang, Ruqing Zhu, Ke Gui, Minghu Ding, Yaqiang Wang, Huizheng Che, Lilong Liu</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Geophysical Research Letters</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026GL125763" target="_blank">https://doi.org/10.1029/2026GL125763</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">地表太阳辐射</span>
+                        <span class="topic-tag">U-Net深度学习</span>
+                        <span class="topic-tag">极地气候变化</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026GL125763" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">地表太阳辐射（SSR）是极地能量收支和太阳能开发的核心物理量，但气候模式在极地辐射模拟上存在显著系统偏差。本研究构建了基于<b>U-Net深度学习架构</b>的校正框架，以欧洲中期预报中心<b>ERA5再分析</b>数据为基准，对12个<b>CMIP6</b>全球气候模式的地表太阳辐射输出进行了系统性偏差校正，将平均偏差降低了最高达91%，并大幅收敛了模式间离散度。基于四类共享社会经济路径（SSPs）的订正预估显示，整个21世纪极地地表太阳辐射及其资源量呈持续下降趋势，且排放情景越高降幅越剧烈。在空间对比上，北极（尤其是格陵兰岛及北极海岸带）的衰减幅度显著强于南极，揭示了北极辐射环境对温室气体增暖驱动的高敏感性。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Airborne performance assessment of the DLR MIRO MGA3 quantum cascade laser spectrometer for fast N2O measurements</section>
+            <section class="paper-authors">Leon Knez, Maximilian Eckl, Paul Waldmann, Alina Fiehn, Magdalena Pühl, Oleg Aseev, Glenn S. Diskin, Joshua P. DiGangi, Yonghoon Choi, Jason A. Miech, Ryan Bennett, Charles K. Gatebe, Jonathan M. Dean-Day, Rajesh Poudyal, Gangwoong Lee, Jeonghwan Kim, Anke Roiger</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-6583-2026" target="_blank">https://doi.org/10.5194/amt-19-6583-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">一氧化二氮监测</span>
+                        <span class="topic-tag">量子级联激光光谱仪</span>
+                        <span class="topic-tag">机载原位观测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-6583-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">聚焦于大气主要温室气体和臭氧消耗物质<b>一氧化二氮（N2O）</b>的高频高精度航空观测。针对机载量子级联激光（<b>QCL</b>）光谱仪易受飞行姿态和水汽波动干扰的瓶颈，研究团队评估了基于MIRO MGA3仪器的机载测量性能，并在荷兰GHGMon与亚洲ASIA-AQ两次航空科考中部署（飞行高度达4500米）。研究提出了适用于热带高湿环境（水汽浓度高达30,000 ppm）的<b>经验水汽校正</b>与专属拟合算法。对比NASA DC-8机载参考仪器，校正后数据精度提升了42%（优于0.2 ppb），采样频率达10 Hz，且对飞机的俯仰和滚转角变化具有强鲁棒性。该成果为在缺乏观测的高湿热带农田上空准确评估N2O排放源与传输过程提供了坚实的技术支撑。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Threefold Land‐Use Forcing Intensifies Twofold Warming of Urban Europe</section>
+            <section class="paper-authors">Basudev Swain, Rui Song, Roy G. Grainger, Marco Vountas</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD046541" target="_blank">https://doi.org/10.1029/2026JD046541</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">城市变暖</span>
+                        <span class="topic-tag">土地利用强迫</span>
+                        <span class="topic-tag">欧洲放大效应</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD046541" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">欧洲地区气温上升速率显著高于全球平均水平，但各类人为驱动因子对欧洲城市变暖的相对贡献仍不明确。本研究联合<b>CMIP5单强迫模拟试验</b>与<b>HadCRUT5地表气温观测数据集</b>，量化了自1850年工业革命以来温室气体（GHG）、人为气溶胶（Aaer）及<b>土地利用（LU）变化强迫</b>对欧洲城市地表气温上升的影响。引入的区域相对全球变暖趋势比值——“欧洲放大因子（EAF）”表明，土地利用强迫强度相当于全球均值的近三倍，驱动欧洲城市增温速率达到全球的两倍。LU强迫展现出最强的增温放大效应（EAF≈3.0），明显高于温室气体强迫（EAF≈2.0），凸显了地表覆盖改变对区域城市变暖的加剧作用，为制定针对性土地利用与减排协同策略提供了理论依据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Tropical Ocean Evaporation‐Temperature Sensitivity to Surface Radiative Property Perturbations in Fully Coupled CESM2</section>
+            <section class="paper-authors">Jian Wei, Ping Yang, Ping Chang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD048440" target="_blank">https://doi.org/10.1029/2026JD048440</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">海表反照率</span>
+                        <span class="topic-tag">蒸发-温度敏感性</span>
+                        <span class="topic-tag">CESM2模式</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD048440" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">热带海洋蒸发是全球降水水汽的关键来源，但其蒸发-温度敏感性对海洋表面辐射特性的响应机制在全耦合地球系统模型中尚不明晰。本研究在全耦合<b>CESM2模式</b>中植入了基于物理机制的<b>海表反照率（OSA）</b>参数化方案及分光谱灰色体有效<b>海表发射率（OSE）</b>方案，并通过海表能量平衡框架定量分解了各辐射扰动的贡献。结果表明，OSA扰动主导了蒸发-温度敏感性的显著增加：反照率改变促使海表升温与大气增湿，增加向下长波辐射，并由低云量增加形成正反馈；相反，OSE调整的影响微乎其微，因发射率减小在长波辐射收支中削弱了热衰减效应。这表明改进OSA参数化对完善气候模式的短波辐射与水文循环模拟至关重要。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Understanding Fast Positive Breakdown Processes Based on a Macro‐Physical Model</section>
+            <section class="paper-authors">Yuhui Jiang, Mingli Chen, Shaoyang Wang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD046300" target="_blank">https://doi.org/10.1029/2026JD046300</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">快速正极性放电</span>
+                        <span class="topic-tag">窄双极性脉冲</span>
+                        <span class="topic-tag">电场积分方程</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD046300" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">窄双极性事件（NBEs）由云内高能放电现象——<b>快速正极性放电（FPB）</b>诱发，但其底层物理微观过程长期缺乏完备机理解释。本研究构建了一种宏观物理NBE模型，将FPB设为在局地增强电场下由微弱电晕放电引发的瞬态流光至电弧转换过程。基于<b>时域电场积分方程</b>，模型自洽模拟了电荷转移、非线性电导变化及电流演化动力学。模拟结果显示，FPB发生并不依赖极端电场，平均场强约300 kV/m、局地峰值达900 kV/m即可激发，该电场可由上方高密度正电荷区与下方大尺度低密度负电荷区构成。模型进一步证实放电沿起始点呈双向传播，其中向上的负极性击穿快速衰减，而向下的正极性击穿持续时间更长并主导了强辐射输出。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">TED: a global temperature-driven thermoelastic displacement dataset for GNSS  reference stations (2000–2023)</section>
+            <section class="paper-authors">Ran Lu, Zhao Li, Lingfeng Ye, Peng Yuan, Yanming Feng</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-18-7575-2026" target="_blank">https://doi.org/10.5194/essd-18-7575-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">热弹性位移</span>
+                        <span class="topic-tag">GNSS基准站</span>
+                        <span class="topic-tag">ERA5地温</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-18-7575-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对浅层地温波动引发的热弹性形变对GNSS高程时间序列产生的毫米级非线性干扰，本研究发布了覆盖全球约14,000个GNSS台站的2000–2023年全球温度驱动<b>垂直热弹性位移（TED）</b>数据集。该数据集采用<b>分层有限元模型</b>构建，由<b>ERA5逐小时土壤温度</b>驱动，并融合了SoilGrids深度依赖性地下介质物理特性，精细刻画了日内及季节尺度的位移特征。全球范围内TED年振幅介于0.2至1.2毫米之间，干旱内陆区域甚至超过1.5毫米；日序列峰峰值波动达2至6毫米。将TED校正应用于GNSS高程时间序列后，约79%台站的加权均方根误差（WRMS）显著降低，降幅普遍达3%–5%（最高可达10%），为高精度地球物理大地测量及参考框架维护提供了关键修正数据。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Optimal Spatiotemporal Perturbation for MJO in Triggering El Niño Events: An Intermediate Coupled Model Study</section>
+            <section class="paper-authors">Jinyu Wang, Mu Mu, Xianghui Fang, Nan Chen, Bo Qin, Chaopeng Ji</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Journal of Geophysical Research: Atmospheres</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.1029/2026JD046512" target="_blank">https://doi.org/10.1029/2026JD046512</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">厄尔尼诺事件</span>
+                        <span class="topic-tag">MJO振荡</span>
+                        <span class="topic-tag">条件非线性最优扰动</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.1029/2026JD046512" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">探讨了<b>马登-朱利安振荡（MJO）</b>风应力异常如何触发厄尔尼诺事件的动力学机制。研究在能够准确刻画厄尔尼诺多样性特征的中等复杂度海气耦合模型（ICM）中，引入了时间拓展的<b>条件非线性最优扰动（CNOP）</b>方法。通过在历史MJO强迫约束空间内、针对12种中性参考态优化风应力扰动，确定了最易诱发厄尔尼诺的最优时空强迫结构。分析表明，当MJO风应力组织为CNOP特定的时空形态时，能诱发海表温度异常（SSTA）的最大幅度持续增暖。虽然目标是年内后期的持续变暖，但最优扰动的强风应力均高度集中于<b>年初阶段（1–3月）</b>，这一早期风应力对后续增暖起主导作用，揭示了MJO在驱动厄尔尼诺中有限但关键的触发效能。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Evaluating EUCLID location accuracy using lightning events near tall structures</section>
+            <section class="paper-authors">Dieter Roel Poelman, Hannes Kohlmann, Wolfgang Schulz</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-6571-2026" target="_blank">https://doi.org/10.5194/amt-19-6571-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">闪电定位精度</span>
+                        <span class="topic-tag">EUCLID网络</span>
+                        <span class="topic-tag">高耸建筑物</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-6571-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">评估了欧洲闪电探测合作网络（<b>EUCLID</b>）在2012至2025年间的定位精度（LA）。研究提出了一种基于<b>高耸建筑物</b>（高度超过150米或位于山脊）作为地面参考真值的聚类验证框架。通过计算建筑物周围500米与外围500米至2千米环形区域内的闪电密度比以筛选目标结构，并采用<b>基于密度的聚类算法</b>精确识别击中建筑物的闪电事件。验证结果表明，EUCLID网络的中位定位精度为124米，95%置信区间达到258米，与盖斯贝格（Gaisberg）和森蒂斯（Säntis）等测风塔的实测观测高度吻合。长时间序列分析还揭示了因传感器持续升级使中位误差逐年下降的趋势，证明该方法可作为大规模、长期评估闪电探测网络性能的高可靠性代理手段。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">EU-wide maps of grassland management using 2022 LUCAS grassland and extended grassland data</section>
+            <section class="paper-authors">Julien Morel, Jon Olav Skøien, Momchil Iordanov, Mattia Rossi, Matteo Marcantonio, Xavier Rottlan-Puig, Linda See, Marijn Van der Velde</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Earth System Science Data Discussions</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/essd-2026-640" target="_blank">https://doi.org/10.5194/essd-2026-640</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">草地管理</span>
+                        <span class="topic-tag">LUCAS调查</span>
+                        <span class="topic-tag">卫星遥感监测</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/essd-2026-640" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">草地是欧洲重要的生态系统，其管理利用强度直接关系到农业系统的固碳与生态韧性。本研究利用2022年<b>LUCAS全欧土地利用调查</b>中采集的超过29,900个原位样点数据，编制了首张涵盖欧盟27国的区域级（NUTS2）草地管理地图。图集详细表征了<b>草地利用类型</b>（割草场、牧场或两用）、<b>管理强度</b>（集约、中度或粗放）、杂草对草本植物比（forb-to-grass ratio）以及利用年限（永久与临时草地）。空间格局分析表明，高集约度草地主要集中在中欧和北欧，而粗放型草地多见于南欧；割草场主导中东欧，牧场则广泛分布于西欧。该成果构建了标准化的地面真实性数据库，能够强有力地支持基于地球观测（EO）的遥感监测及大尺度生态模型评估。</section>
+            </section>
+            <section class="paper-card">
+            <button class="export-button">📤</button>
+            <section class="paper-title">Comprehensive validation of MODIS atmospheric temperature profile data across mainland China using sounding observations</section>
+            <section class="paper-authors">Wenjie Zhang, Mengxi Qu, Ranhao Sun, Jiarui Zhao, Guicai Ning, Aziz Inamov, Zokhid Mamatkulov, Di Zhou, Bakhtiyor Pulatov, Yuanjian Yang</section>
+            <div class="paper-info-container">
+                <div class="paper-info-left">
+                    <section class="paper-journal">Atmospheric Measurement Techniques</section>
+                    <section class="paper-doi"><a href="https://doi.org/10.5194/amt-19-6535-2026" target="_blank">https://doi.org/10.5194/amt-19-6535-2026</a></section>
+                    <section class="topic-tags">
+                        <span class="topic-tag">MODIS</span>
+                        <span class="topic-tag">探空观测</span>
+                        <span class="topic-tag">温度剖面验证</span>
+                    </section>
+                </div>
+                <div class="paper-info-right">
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://doi.org/10.5194/amt-19-6535-2026" alt="QR Code" />
+                </div>
+            </div>
+            <section class="abstract-content">针对中国大陆区域<b>MODIS大气剖面产品（MOD07_L2）</b>温度反演精度缺乏系统验证的问题，本研究利用2003至2020年间74个探空台站长达18年的常规探空数据开展了全面评估。重点分析了不同高度层温度、<b>低对流层稳定性（LTS）</b>及<b>温度逆温层（TIL）</b>的探测能力。结果表明，MOD07_L2的温度反演精度夜间普遍优于白天，且高层（400–620 hPa）表现显著优于低层（850–1000 hPa）；低空850与920 hPa处白天存在明显的负偏差。在层结参数方面，白天MODIS反演的LTS精度（r = 0.74, RMSE = 4.52 K）显著高于夜间；但对逆温层（TIL）的识别能力极为有限（白天识别率仅6.6%，夜间为13.1%）。该研究为高分辨率垂直温度产品在生态与水文气象模拟中的合理应用提供了重要参考。</section>
+            </section>
+            </section>
+<div class="export-all-container">
+    <button id="exportAllButton" class="export-all-button">📤一键导出所有论文卡片</button>
+</div>
+<section class="footer">
+    论文总结由AI生成，如有失偏颇，敬请指正！<br>关注本公众号，获取更多大气环境遥感科学研究动态
+</section>
+</body>
+<script src="./printcard.js"></script>
+</html>
