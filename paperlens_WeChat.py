@@ -75,7 +75,7 @@ def analyze_paper_with_fallback(df_chunk: pd.DataFrame, primary_model: str = "ge
         print(f"[Warning] Primary model ({primary_model}) failed: {e1}")
 
     # 2. Try a different Gemini model before splitting
-    fallback_model = "gemini-3.6-flash"
+    fallback_model = "gemini-3.8-flash"
     try:
         print(f"[Fallback] Retrying batch ({len(df_chunk)} papers) with fallback model ({fallback_model})...")
         return analyze_paper_single_batch(info_json, model_name=fallback_model)
@@ -143,7 +143,7 @@ def analyze_paper_openai(info_json: str) -> List[Dict]:
 
     try:
         response = client.chat.completions.create(
-            model="deepseek-ai/DeepSeek-V4-Flash", 
+            model="THUDM/GLM-4-9B-0414", 
             messages=[
                 {'role': 'system', 'content': system_instruction},
                 {'role': 'user', 'content': prompt}
